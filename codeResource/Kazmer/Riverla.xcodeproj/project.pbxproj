@@ -320,7 +320,7 @@
 		AEA87FE11A81CAD600ACC3BA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA87FE01A81CAD500ACC3BA /* AVFoundation.framework */; };
 		B1DE18B32E0E483700BD7B53 /* WaitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DE18B22E0E483700BD7B53 /* WaitViewController.m */; };
 		B1E0D75A2E38A17C008BB11D /* DisCorveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E0D7592E38A17C008BB11D /* DisCorveyViewController.m */; };
-		B1F189702E011C1100E24425 /* HolisticSaver.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1F1896F2E011C1100E24425 /* HolisticSaver.bundle */; };
+		B1F189702E011C1100E24425 /* DrawSortAdapter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1F1896F2E011C1100E24425 /* DrawSortAdapter.bundle */; };
 		B1F189752E011C6E00E24425 /* SSZipArchiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F189722E011C6E00E24425 /* SSZipArchiveManager.m */; };
 		B1F189762E011C6E00E24425 /* UIImage+ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F189742E011C6E00E24425 /* UIImage+ZipArchive.m */; };
 		B808E73E26F23E3D00E302F6 /* NTESUserQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B808E73D26F23E3D00E302F6 /* NTESUserQRCodeViewController.m */; };
@@ -1123,7 +1123,7 @@
 		B1DE18B22E0E483700BD7B53 /* WaitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaitViewController.m; sourceTree = "<group>"; };
 		B1E0D7582E38A17C008BB11D /* DisCorveyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisCorveyViewController.h; sourceTree = "<group>"; };
 		B1E0D7592E38A17C008BB11D /* DisCorveyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisCorveyViewController.m; sourceTree = "<group>"; };
-		B1F1896F2E011C1100E24425 /* HolisticSaver.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HolisticSaver.bundle; sourceTree = "<group>"; };
+		B1F1896F2E011C1100E24425 /* DrawSortAdapter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DrawSortAdapter.bundle; sourceTree = "<group>"; };
 		B1F189712E011C6E00E24425 /* SSZipArchiveManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSZipArchiveManager.h; sourceTree = "<group>"; };
 		B1F189722E011C6E00E24425 /* SSZipArchiveManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSZipArchiveManager.m; sourceTree = "<group>"; };
 		B1F189732E011C6E00E24425 /* UIImage+ZipArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZipArchive.h"; sourceTree = "<group>"; };
@@ -2241,7 +2241,7 @@
 				879C572E228444DB00F09955 /* FFFConfig.h */,
 				879C572F228444DC00F09955 /* FFFConfig.m */,
 				AE5882F51A6F47E10070536A /* Images.xcassets */,
-				B1F1896F2E011C1100E24425 /* HolisticSaver.bundle */,
+				B1F1896F2E011C1100E24425 /* DrawSortAdapter.bundle */,
 				AEB8367F1A772C2F00E7493E /* Runner-Prefix.pch */,
 				6195CD3E1A8C74DB00F3E239 /* NTESGlobalMacro.h */,
 				4278082C2C12BA7C00C18684 /* SNGradientHelper.h */,
@@ -3566,7 +3566,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1F189702E011C1100E24425 /* HolisticSaver.bundle in Resources */,
+				B1F189702E011C1100E24425 /* DrawSortAdapter.bundle in Resources */,
 				427B551229F9071C00F6DC42 /* InfoPlist.strings in Resources */,
 				AE5882F61A6F47E10070536A /* Images.xcassets in Resources */,
 			);
