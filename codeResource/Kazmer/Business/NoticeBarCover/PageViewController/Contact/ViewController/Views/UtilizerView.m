@@ -208,7 +208,7 @@ typedef struct {
     //: self.titleLabel.text = member.showName;
     self.titleLabel.text = member.representation;
     //: self.memberId = [member memberId];
-    self.memberId = [member show];
+    self.memberId = [member dataWith];
     //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:self.memberId skinColour_strong:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

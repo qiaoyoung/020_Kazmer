@@ -19,7 +19,7 @@
 - (NSString *)need;
 
 //: - (NSString *)memberId;
-- (NSString *)show;
+- (NSString *)dataWith;
 
 //: - (NSString *)showName;
 - (NSString *)representation;

@@ -100,7 +100,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)dataName {
+- (NSString *)background {
     //: NSString *title = [[NTESSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[KeyCenter max] time:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -135,13 +135,13 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)needId{
+- (NSString *)dataWith{
     //: return self.info.infoId;
     return self.info.infoId;
 }
 
 //: - (NSString *)showName{
-- (NSString *)sound{
+- (NSString *)representation{
     //: return self.info.showName;
     return self.info.showName;
 }
@@ -153,7 +153,7 @@
 }
 
 //: - (id)sortKey {
-- (id)elect {
+- (id)outsideScale {
     //: return [[NTESSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[KeyCenter max] torso:self.info.showName].shortSpelling;
 }

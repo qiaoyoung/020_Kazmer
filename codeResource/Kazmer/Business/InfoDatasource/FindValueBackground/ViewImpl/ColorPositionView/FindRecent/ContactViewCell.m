@@ -173,7 +173,7 @@ typedef struct {
     //: [self refreshTitle:member.showName];
     [self max:member.representation];
     //: self.memberId = member.memberId;
-    self.memberId = member.show;
+    self.memberId = member.dataWith;
     //: NSURL *url = member.avatarUrlString ? [NSURL URLWithString:member.avatarUrlString] : nil;
     NSURL *url = member.pathTitle ? [NSURL URLWithString:member.pathTitle] : nil;
     //: [_avatarImageView nim_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"head_default"] options:SDWebImageRetryFailed];
@@ -185,7 +185,7 @@ typedef struct {
     //: [self refreshTitle:member.showName];
     [self max:member.representation];
     //: self.memberId = [member memberId];
-    self.memberId = [member show];
+    self.memberId = [member dataWith];
     //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:self.memberId skinColour_strong:nil];
     //: [self refreshAvatar:info];

@@ -62,7 +62,7 @@ Byte k_removeTitle[] = {41, 20, 11, 130, 5, 3, 38, 63, 105, 173, 114, 114, 101, 
 }
 
 //: - (NSString *)memberId{
-- (NSString *)show{
+- (NSString *)dataWith{
     //: return self.teamId;
     return self.teamId;
 }

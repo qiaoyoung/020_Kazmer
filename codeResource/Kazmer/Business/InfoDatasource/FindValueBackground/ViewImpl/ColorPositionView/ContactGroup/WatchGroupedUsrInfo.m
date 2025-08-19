@@ -69,7 +69,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)show{
+- (NSString *)dataWith{
     //: return self.userId;
     return self.userId;
 }
@@ -162,7 +162,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)show{
+- (NSString *)dataWith{
     //: return self.userId;
     return self.userId;
 }
@@ -250,7 +250,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)show{
+- (NSString *)dataWith{
     //: return self.teamId;
     return self.teamId;
 }

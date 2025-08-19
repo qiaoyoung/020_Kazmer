@@ -101,7 +101,7 @@
     //: for (id<NIMGroupMemberProtocol>member in members) {
     for (id<VarnaSessionProtocolUser>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member show] isEqualToString:me]) {
+        if ([[member dataWith] isEqualToString:me]) {
             //: continue;
             continue;
         }

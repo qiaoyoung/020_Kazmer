@@ -713,7 +713,7 @@
     //: cell.accessoryBtn.hidden = NO;
     cell.accessoryBtn.hidden = NO;
     //: cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem memberId]];
-    cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem show]];
+    cell.accessoryBtn.selected = [_selectecContacts containsObject:[contactItem dataWith]];
     //: [cell refreshItem:contactItem];
     [cell upgrade:contactItem];
     //: return cell;
@@ -746,7 +746,7 @@
     id<VarnaSessionProtocolUser> member = arr[indexPath.row];
 
     //: NSString *memberId = [(id<NIMGroupMemberProtocol>)member memberId];
-    NSString *memberId = [(id<VarnaSessionProtocolUser>)member show];
+    NSString *memberId = [(id<VarnaSessionProtocolUser>)member dataWith];
     //: WatchContactDataCell *cell = (WatchContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
     ContactViewCell *cell = (ContactViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     //: WatchKitInfo *info;

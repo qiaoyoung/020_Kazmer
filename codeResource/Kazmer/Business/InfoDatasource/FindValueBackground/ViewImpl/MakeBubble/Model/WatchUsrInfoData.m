@@ -53,7 +53,7 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)show{
+- (NSString *)dataWith{
     //: return self.info.infoId;
     return self.info.infoId;
 }
