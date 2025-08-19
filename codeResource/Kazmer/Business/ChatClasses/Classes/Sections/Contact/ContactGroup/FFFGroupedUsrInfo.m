@@ -1,3 +1,5 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  NTESGroupedUsrInfo.m
 //  NIM
@@ -6,168 +8,264 @@
 //  Copyright (c) 2015年 Netease. All rights reserved.
 //
 
+// __M_A_C_R_O__
+//: #import "FFFGroupedUsrInfo.h"
 #import "FFFGroupedUsrInfo.h"
-#import "FFFSpellingCenter.h"
-#import "FFFKitInfoFetchOption.h"
+//: #import "FFFSpellingCenter.h"
+#import "ViewSize.h"
+//: #import "FFFKitInfoFetchOption.h"
+#import "CoverTingContent.h"
 
-@interface NIMGroupUser()
+//: @interface NIMGroupUser()
+@interface RecordUser()
 
-@property (nonatomic,copy)   NSString *userId;
-@property (nonatomic,strong) FFFKitInfo *info;
-
-@end
-
-@implementation NIMGroupUser
-
-- (instancetype)initWithUserId:(NSString *)userId{
-    self = [super init];
-    if (self) {
-        _userId = userId;
-        _info = [[MyUserKit sharedKit] infoByUser:userId option:nil];
-    }
-    return self;
-}
-
-- (NSString *)groupTitle{
-    NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
-    unichar character = [title characterAtIndex:0];
-    if (character >= 'A' && character <= 'Z') {
-        return title;
-    }else{
-        return @"#";
-    }
-}
-
-- (NSString *)showName{
-    return self.info.showName;
-}
-
-- (NSString *)memberId{
-    return self.userId;
-}
-
-- (id)sortKey{
-    return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
-}
-
-- (UIImage *)avatarImage {
-    return self.info.avatarImage;
-}
-
-
-- (NSString *)avatarUrlString {
-    return self.info.avatarUrlString;
-}
-
-
-@end
-
-@interface NIMGroupTeamMember()
-
+//: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-@property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) FFFKitInfo *info;
+@property (nonatomic,strong) TingMessage *info;
 
+//: @end
 @end
 
-@implementation NIMGroupTeamMember
+//: @implementation NIMGroupUser
+@implementation RecordUser
 
-- (instancetype)initWithUserId:(NSString *)userId
-                       session:(NIMSession *)session {
+//: - (instancetype)initWithUserId:(NSString *)userId{
+- (instancetype)initWithItemMenu:(NSString *)userId{
+    //: self = [super init];
     self = [super init];
+    //: if (self) {
     if (self) {
+        //: _userId = userId;
         _userId = userId;
-        FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
-        option.session = session;
-        _info = [[MyUserKit sharedKit] infoByUser:userId option:option];
+        //: _info = [[MyUserKit sharedKit] infoByUser:userId option:nil];
+        _info = [[ButtonKit sheerOption] past:userId skinColour_strong:nil];
     }
+    //: return self;
     return self;
 }
 
-- (NSString *)groupTitle{
-    NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+//: - (NSString *)groupTitle{
+- (NSString *)need{
+    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    NSString *title = [[ViewSize stormCenter] atLetter:self.info.showName].capitalizedString;
+    //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
+    //: if (character >= 'A' && character <= 'Z') {
     if (character >= 'A' && character <= 'Z') {
+        //: return title;
         return title;
+    //: }else{
     }else{
+        //: return @"#";
         return @"#";
     }
 }
 
-- (id)sortKey{
-    return [[FFFSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
-}
-
-- (NSString *)showName{
+//: - (NSString *)showName{
+- (NSString *)representation{
+    //: return self.info.showName;
     return self.info.showName;
 }
 
-- (NSString *)memberId{
+//: - (NSString *)memberId{
+- (NSString *)show{
+    //: return self.userId;
     return self.userId;
 }
 
-- (UIImage *)avatarImage {
+//: - (id)sortKey{
+- (id)off{
+    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    return [[ViewSize stormCenter] format:self.info.showName].shortSpelling;
+}
+
+//: - (UIImage *)avatarImage {
+- (UIImage *)objectBlock {
+    //: return self.info.avatarImage;
     return self.info.avatarImage;
 }
 
-- (NSString *)avatarUrlString {
+
+//: - (NSString *)avatarUrlString {
+- (NSString *)pathTitle {
+    //: return self.info.avatarUrlString;
     return self.info.avatarUrlString;
 }
 
+
+//: @end
 @end
 
-@interface NIMGroupTeam()
+//: @interface NIMGroupTeamMember()
+@interface ImageInfo()
 
-@property (nonatomic,copy) NSString *teamId;
-@property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,copy) NSString *userId;
+@property (nonatomic,copy) NSString *userId;
+//: @property (nonatomic,strong) FFFKitInfo *info;
+@property (nonatomic,strong) TingMessage *info;
 
+//: @end
 @end
 
-@implementation NIMGroupTeam
+//: @implementation NIMGroupTeamMember
+@implementation ImageInfo
 
-- (instancetype)initWithTeamId:(NSString *)teamId
-                      teamType:(NIMKitTeamType)teamType {
+//: - (instancetype)initWithUserId:(NSString *)userId
+- (instancetype)initWithBarroom:(NSString *)userId
+                       //: session:(NIMSession *)session {
+                       end:(NIMSession *)session {
+    //: self = [super init];
     self = [super init];
+    //: if (self) {
     if (self) {
+        //: _userId = userId;
+        _userId = userId;
+        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        CoverTingContent *option = [[CoverTingContent alloc] init];
+        //: option.session = session;
+        option.session = session;
+        //: _info = [[MyUserKit sharedKit] infoByUser:userId option:option];
+        _info = [[ButtonKit sheerOption] past:userId skinColour_strong:option];
+    }
+    //: return self;
+    return self;
+}
+
+//: - (NSString *)groupTitle{
+- (NSString *)need{
+    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    NSString *title = [[ViewSize stormCenter] atLetter:self.representation].capitalizedString;
+    //: unichar character = [title characterAtIndex:0];
+    unichar character = [title characterAtIndex:0];
+    //: if (character >= 'A' && character <= 'Z') {
+    if (character >= 'A' && character <= 'Z') {
+        //: return title;
+        return title;
+    //: }else{
+    }else{
+        //: return @"#";
+        return @"#";
+    }
+}
+
+//: - (id)sortKey{
+- (id)off{
+    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
+    return [[ViewSize stormCenter] format:self.representation].shortSpelling;
+}
+
+//: - (NSString *)showName{
+- (NSString *)representation{
+    //: return self.info.showName;
+    return self.info.showName;
+}
+
+//: - (NSString *)memberId{
+- (NSString *)show{
+    //: return self.userId;
+    return self.userId;
+}
+
+//: - (UIImage *)avatarImage {
+- (UIImage *)objectBlock {
+    //: return self.info.avatarImage;
+    return self.info.avatarImage;
+}
+
+//: - (NSString *)avatarUrlString {
+- (NSString *)pathTitle {
+    //: return self.info.avatarUrlString;
+    return self.info.avatarUrlString;
+}
+
+//: @end
+@end
+
+//: @interface NIMGroupTeam()
+@interface CellBottom()
+
+//: @property (nonatomic,copy) NSString *teamId;
+@property (nonatomic,copy) NSString *teamId;
+//: @property (nonatomic,strong) FFFKitInfo *info;
+@property (nonatomic,strong) TingMessage *info;
+
+//: @end
+@end
+
+//: @implementation NIMGroupTeam
+@implementation CellBottom
+
+//: - (instancetype)initWithTeamId:(NSString *)teamId
+- (instancetype)initWithGegenschein:(NSString *)teamId
+                      //: teamType:(NIMKitTeamType)teamType {
+                      globule:(NIMKitTeamType)teamType {
+    //: self = [super init];
+    self = [super init];
+    //: if (self) {
+    if (self) {
+        //: _teamId = teamId;
         _teamId = teamId;
+        //: if (teamType == NIMKitTeamTypeNomal) {
         if (teamType == NIMKitTeamTypeNomal) {
-            _info = [[MyUserKit sharedKit] infoByTeam:teamId option:nil];
+            //: _info = [[MyUserKit sharedKit] infoByTeam:teamId option:nil];
+            _info = [[ButtonKit sheerOption] pressMedia:teamId sizeOption:nil];
+        //: } else if (teamType == NIMKitTeamTypeSuper) {
         } else if (teamType == NIMKitTeamTypeSuper) {
-            _info = [[MyUserKit sharedKit] infoBySuperTeam:teamId option:nil];
+            //: _info = [[MyUserKit sharedKit] infoBySuperTeam:teamId option:nil];
+            _info = [[ButtonKit sheerOption] tiddler:teamId ting:nil];
         }
     }
+    //: return self;
     return self;
 }
 
-- (NSString *)groupTitle{
-    NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+//: - (NSString *)groupTitle{
+- (NSString *)need{
+    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    NSString *title = [[ViewSize stormCenter] atLetter:self.representation].capitalizedString;
+    //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
+    //: if (character >= 'A' && character <= 'Z') {
     if (character >= 'A' && character <= 'Z') {
+        //: return title;
         return title;
+    //: }else{
     }else{
+        //: return @"#";
         return @"#";
     }
 }
 
-- (id)sortKey{
-    return [[FFFSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
+//: - (id)sortKey{
+- (id)off{
+    //: return [[FFFSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
+    return [[ViewSize stormCenter] format:[self representation]].shortSpelling;
 }
 
-- (NSString *)showName{
+//: - (NSString *)showName{
+- (NSString *)representation{
+    //: return self.info.showName;
     return self.info.showName;
 }
 
-- (NSString *)memberId{
+//: - (NSString *)memberId{
+- (NSString *)show{
+    //: return self.teamId;
     return self.teamId;
 }
 
-- (UIImage *)avatarImage {
+//: - (UIImage *)avatarImage {
+- (UIImage *)objectBlock {
+    //: return self.info.avatarImage;
     return self.info.avatarImage;
 }
 
-- (NSString *)avatarUrlString {
+//: - (NSString *)avatarUrlString {
+- (NSString *)pathTitle {
+    //: return self.info.avatarUrlString;
     return self.info.avatarUrlString;
 }
 
+//: @end
 @end
-
-

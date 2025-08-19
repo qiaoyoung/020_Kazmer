@@ -1,122 +1,171 @@
+// __DEBUG__
+// __CLOSE_PRINT__
 //
 //  FFFSessionPrivateProtocol.h
-// MyUserKit
+// ButtonKit
 //
 //  Created by chris on 2016/11/7.
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
+//: #import "FFFSessionViewController.h"
+#import "CollectionViewController.h"
 
-#ifndef FFFSessionPrivateProtocol_h
-#define FFFSessionPrivateProtocol_h
+// __M_A_C_R_O__
 
-#import "FFFSessionViewController.h"
-
+//: @class NIMMessage;
 @class NIMMessage;
-@class FFFMessageModel;
+//: @class FFFMessageModel;
+@class CentralProcessingUnitModel;
 
-@interface NIMSessionMessageOperateResult : NSObject
+//: @interface NIMSessionMessageOperateResult : NSObject
+@interface PinResult : NSObject
 
+//: @property (nonatomic,copy) NSArray *indexpaths;
 @property (nonatomic,copy) NSArray *indexpaths;
 
+//: @property (nonatomic,copy) NSArray *messageModels;
 @property (nonatomic,copy) NSArray *messageModels;
 
+//: @end
 @end
 
-@protocol NIMSessionDataSource <NSObject>
+//: @protocol NIMSessionDataSource <NSObject>
+@protocol SizeSource <NSObject>
 
-- (NSArray *)items;
+//: - (NSArray *)items;
+- (NSArray *)addHidden;
 
-- (NIMSessionMessageOperateResult *)addMessageModels:(NSArray *)models;
+//: - (NIMSessionMessageOperateResult *)addMessageModels:(NSArray *)models;
+- (PinResult *)nameUp:(NSArray *)models;
 
-- (NIMSessionMessageOperateResult *)insertMessageModels:(NSArray *)models;
+//: - (NIMSessionMessageOperateResult *)insertMessageModels:(NSArray *)models;
+- (PinResult *)notice:(NSArray *)models;
 
-- (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model;
+- (PinResult *)clean:(CentralProcessingUnitModel *)model;
 
-- (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model;
+- (PinResult *)anTheoreticalAccount:(CentralProcessingUnitModel *)model;
 
-- (FFFMessageModel *)findModel:(NIMMessage *)message;
+//: - (FFFMessageModel *)findModel:(NIMMessage *)message;
+- (CentralProcessingUnitModel *)colorModel:(NIMMessage *)message;
 
-- (NSInteger)indexAtModelArray:(FFFMessageModel *)model;
+//: - (NSInteger)indexAtModelArray:(FFFMessageModel *)model;
+- (NSInteger)current:(CentralProcessingUnitModel *)model;
 
-- (NSArray *)deleteModels:(NSRange)range;
+//: - (NSArray *)deleteModels:(NSRange)range;
+- (NSArray *)accumulation:(NSRange)range;
 
-- (void)resetMessages:(void(^)(NSError *error))handler;
+//: - (void)resetMessages:(void(^)(NSError *error))handler;
+- (void)details:(void(^)(NSError *error))handler;
 
-- (void)enhancedResetMessages:(void(^)(NSError *error, NSArray *))handler;
+//: - (void)enhancedResetMessages:(void(^)(NSError *error, NSArray *))handler;
+- (void)trademark:(void(^)(NSError *error, NSArray *))handler;
 
-- (void)loadHistoryMessagesWithComplete:(void(^)(NSInteger index, NSArray *messages , NSError *error))handler;
+//: - (void)loadHistoryMessagesWithComplete:(void(^)(NSInteger index, NSArray *messages , NSError *error))handler;
+- (void)withReplacement:(void(^)(NSInteger index, NSArray *messages , NSError *error))handler;
 
-- (void)loadNewMessagesWithComplete:(void(^)(NSInteger index, NSArray *messages , NSError *error))handler;
+//: - (void)loadNewMessagesWithComplete:(void(^)(NSInteger index, NSArray *messages , NSError *error))handler;
+- (void)masterKey:(void(^)(NSInteger index, NSArray *messages , NSError *error))handler;
 
-- (void)checkAttachmentState:(NSArray *)messages;
+//: - (void)checkAttachmentState:(NSArray *)messages;
+- (void)barnburner:(NSArray *)messages;
 
-- (NSDictionary *)checkReceipts:(NSArray<NIMMessageReceipt *> *)receipts;
+//: - (NSDictionary *)checkReceipts:(NSArray<NIMMessageReceipt *> *)receipts;
+- (NSDictionary *)changeScale:(NSArray<NIMMessageReceipt *> *)receipts;
 
-- (void)sendMessageReceipt:(NSArray *)messages;
+//: - (void)sendMessageReceipt:(NSArray *)messages;
+- (void)insideShow:(NSArray *)messages;
 
-- (void)cleanCache;
+//: - (void)cleanCache;
+- (void)ting;
 
-- (void)refreshMessageModelShowSelect:(BOOL)isShow;
+//: - (void)refreshMessageModelShowSelect:(BOOL)isShow;
+- (void)color:(BOOL)isShow;
 
-- (void)loadMessagePins:(void (^)(NSError *))handler;
+//: - (void)loadMessagePins:(void (^)(NSError *))handler;
+- (void)occurrent:(void (^)(NSError *))handler;
 
 // 展示message之前做额外配置
-- (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+- (void)outTable:(CentralProcessingUnitModel *)model;
 
-- (void)addPinForMessage:(NIMMessage *)message callback:(void (^)(NSError *))handler;
+//: - (void)addPinForMessage:(NIMMessage *)message callback:(void (^)(NSError *))handler;
+- (void)more:(NIMMessage *)message message:(void (^)(NSError *))handler;
 
-- (void)removePinForMessage:(NIMMessage *)message callback:(void (^)(NSError *))handler;
+//: - (void)removePinForMessage:(NIMMessage *)message callback:(void (^)(NSError *))handler;
+- (void)removeWithinStyle:(NIMMessage *)message immobilize:(void (^)(NSError *))handler;
 
+//: @end
 @end
 
 
-@protocol NIMSessionLayoutDelegate <NSObject>
+//: @protocol NIMSessionLayoutDelegate <NSObject>
+@protocol SoapDelegate <NSObject>
 
-- (void)onRefresh;
+//: - (void)onRefresh;
+- (void)appearRed;
 
+//: @end
 @end
 
-@protocol NIMSessionLayout <NSObject>
+//: @protocol NIMSessionLayout <NSObject>
+@protocol RepresentationEdge <NSObject>
 
-- (void)update:(NSIndexPath *)indexPath;
+//: - (void)update:(NSIndexPath *)indexPath;
+- (void)row:(NSIndexPath *)indexPath;
 
-- (void)insert:(NSArray *)indexPaths animated:(BOOL)animated;
+//: - (void)insert:(NSArray *)indexPaths animated:(BOOL)animated;
+- (void)plugCountoTopFind:(NSArray *)indexPaths alongDoing:(BOOL)animated;
 
-- (void)remove:(NSArray *)indexPaths;
+//: - (void)remove:(NSArray *)indexPaths;
+- (void)messageDelete:(NSArray *)indexPaths;
 
-- (BOOL)canInsertChatroomMessages;
+//: - (BOOL)canInsertChatroomMessages;
+- (BOOL)comment;
 
-- (void)calculateContent:(FFFMessageModel *)model;
+//: - (void)calculateContent:(FFFMessageModel *)model;
+- (void)collection:(CentralProcessingUnitModel *)model;
 
-- (void)reloadTable;
+//: - (void)reloadTable;
+- (void)sessionTable;
 
-- (void)resetLayout;
+//: - (void)resetLayout;
+- (void)key;
 
-- (void)changeLayout:(CGFloat)inputViewHeight;
+//: - (void)changeLayout:(CGFloat)inputViewHeight;
+- (void)nameLayout:(CGFloat)inputViewHeight;
 
-- (void)setDelegate:(id<NIMSessionLayoutDelegate>)delegate;
+//: - (void)setDelegate:(id<NIMSessionLayoutDelegate>)delegate;
+- (void)setParadigmDelegate:(id<SoapDelegate>)delegate;
 
-- (void)layoutAfterRefresh;
+//: - (void)layoutAfterRefresh;
+- (void)reload;
 
-- (void)adjustOffset:(NSInteger)row;
+//: - (void)adjustOffset:(NSInteger)row;
+- (void)offsetHighlightEnableset:(NSInteger)row;
 
-- (void)dismissReplyContent;
+//: - (void)dismissReplyContent;
+- (void)scoff;
 
-- (NSInteger)numberOfRows;
+//: - (NSInteger)numberOfRows;
+- (NSInteger)limit;
 
+//: @end
 @end
 
 
 
 
 
-@interface FFFSessionViewController(Interactor)
+//: @interface FFFSessionViewController(Interactor)
+@interface CollectionViewController(Interactor)
 
-- (void)setInteractor:(id<NIMSessionInteractor>) interactor;
+//: - (void)setInteractor:(id<NIMSessionInteractor>) interactor;
+- (void)setInteractor:(id<StuffTotaleractor>) interactor;
 
-- (void)setTableDelegate:(id<UITableViewDelegate, UITableViewDataSource>) tableDelegate;
+//: - (void)setTableDelegate:(id<UITableViewDelegate, UITableViewDataSource>) tableDelegate;
+- (void)setCreate:(id<UITableViewDelegate, UITableViewDataSource>) tableDelegate;
 
+//: @end
 @end
-
-
-#endif /* FFFSessionPrivateProtocol_h */
