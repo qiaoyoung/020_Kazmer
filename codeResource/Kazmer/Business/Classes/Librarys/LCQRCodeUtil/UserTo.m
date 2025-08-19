@@ -255,7 +255,7 @@ void sectionSize (void *info, const void *data, size_t size){
     uint32_t* pCurPtr = rgbImageBuf;
     //: for (int i = 0; i < pixelNum; i++, pCurPtr++){
     for (int i = 0; i < pixelNum; i++, pCurPtr++){
-        //: if ((*pCurPtr & 0xFFFFFF00) < 0x99999900){
+        //: if ((*pCurPtr & 0xFFFWatch00) < 0x99999900){
         if ((*pCurPtr & 0xFFFFFF00) < 0x99999900){
             // change color
             //: uint8_t* ptr = (uint8_t*)pCurPtr;

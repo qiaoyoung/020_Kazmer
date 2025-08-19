@@ -26,7 +26,7 @@
 
 
 
-//: @interface FFFInputEmoticonButton : UIButton
+//: @interface WatchInputEmoticonButton : UIButton
 @interface OldButton : UIButton
 
 //: @property (nonatomic, strong) NIMInputEmoticon *emoticonData;
@@ -38,7 +38,7 @@
 //: @property (nonatomic, weak) id<NIMEmoticonButtonTouchDelegate> delegate;
 @property (nonatomic, weak) id<OnDelegate> delegate;
 
-//: + (FFFInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate;
+//: + (WatchInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate;
 + (OldButton*)conference:(ButtonTableEmoticon*)data delegateBe:(NSString*)catalogID glitter:( id<OnDelegate>)delegate;
 
 //: - (void)onIconSelected:(id)sender;

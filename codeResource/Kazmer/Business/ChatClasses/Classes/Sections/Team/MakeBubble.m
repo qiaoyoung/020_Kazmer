@@ -350,9 +350,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamHelper.h"
+//: #import "WatchTeamHelper.h"
 #import "MakeBubble.h"
-//: #import "FFFTeamCardRowItem.h"
+//: #import "WatchTeamCardRowItem.h"
 #import "ShowKey.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
@@ -366,7 +366,7 @@ static NSString *const kBackId = @"kTeamHelperValue";
 //: static NSString *const kTeamHelperImg = @"kTeamHelperImg";
 static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
 
-//: @implementation FFFTeamHelper
+//: @implementation WatchTeamHelper
 @implementation MakeBubble
 
 //: #pragma mark - 验证方式
@@ -379,7 +379,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamJoinModeNoAuth),
                          kBackId : @(NIMTeamJoinModeNoAuth),
-                         //: kTeamHelperText : [FFFTeamHelper jonModeText:NIMTeamJoinModeNoAuth],
+                         //: kTeamHelperText : [WatchTeamHelper jonModeText:NIMTeamJoinModeNoAuth],
                          user_shareMinId : [MakeBubble title:NIMTeamJoinModeNoAuth],
                          //: kTeamHelperImg: @"ic_all_yes",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].main_dancerId,
@@ -389,7 +389,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamJoinModeNeedAuth),
                          kBackId : @(NIMTeamJoinModeNeedAuth),
-                         //: kTeamHelperText : [FFFTeamHelper jonModeText:NIMTeamJoinModeNeedAuth],
+                         //: kTeamHelperText : [WatchTeamHelper jonModeText:NIMTeamJoinModeNeedAuth],
                          user_shareMinId : [MakeBubble title:NIMTeamJoinModeNeedAuth],
                          //: kTeamHelperImg: @"ic_yanzheng_yes",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].kPatrolPath,
@@ -399,7 +399,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamJoinModeRejectAll),
                          kBackId : @(NIMTeamJoinModeRejectAll),
-                         //: kTeamHelperText : [FFFTeamHelper jonModeText:NIMTeamJoinModeRejectAll],
+                         //: kTeamHelperText : [WatchTeamHelper jonModeText:NIMTeamJoinModeRejectAll],
                          user_shareMinId : [MakeBubble title:NIMTeamJoinModeRejectAll],
                          //: kTeamHelperImg: @"ic_all_no",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].dreamMatteKey,
@@ -417,15 +417,15 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     switch (mode) {
         //: case NIMTeamJoinModeNoAuth:
         case NIMTeamJoinModeNoAuth:
-            //: return [FFFLanguageManager getTextWithKey:@"Allow_anyone"];
+            //: return [WatchLanguageManager getTextWithKey:@"Allow_anyone"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].showOriginText];//@"允许任何人".;
         //: case NIMTeamJoinModeNeedAuth:
         case NIMTeamJoinModeNeedAuth:
-            //: return [FFFLanguageManager getTextWithKey:@"Need_verification"];
+            //: return [WatchLanguageManager getTextWithKey:@"Need_verification"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].userThreshId];//@"需要验证".;
         //: case NIMTeamJoinModeRejectAll:
         case NIMTeamJoinModeRejectAll:
-            //: return [FFFLanguageManager getTextWithKey:@"Reject_anyone"];
+            //: return [WatchLanguageManager getTextWithKey:@"Reject_anyone"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].dreamEconomistMsg];//@"拒绝任何人".;
         //: default:
         default:
@@ -434,8 +434,8 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     }
 }
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)joinModeItemsWithSeleced:(NIMTeamJoinMode)mode {
-+ (NSMutableArray<id <FFFKitSelectCardData>> *)bottom:(NIMTeamJoinMode)mode {
+//: + (NSMutableArray<id <WatchKitSelectCardData>> *)joinModeItemsWithSeleced:(NIMTeamJoinMode)mode {
++ (NSMutableArray<id <WatchKitSelectCardData>> *)bottom:(NIMTeamJoinMode)mode {
     //: return [self itemsWithListDic:[self allJoinModes] selectValue:mode];
     return [self background:[self fraught] search:mode];
 }
@@ -450,7 +450,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamInviteModeManager),
                          kBackId : @(NIMTeamInviteModeManager),
-                         //: kTeamHelperText : [FFFTeamHelper InviteModeText:NIMTeamInviteModeManager],
+                         //: kTeamHelperText : [WatchTeamHelper InviteModeText:NIMTeamInviteModeManager],
                          user_shareMinId : [MakeBubble with:NIMTeamInviteModeManager],
                          //: kTeamHelperImg: @"ic_guanliyuan",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].appTallyData,
@@ -460,7 +460,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamInviteModeAll),
                          kBackId : @(NIMTeamInviteModeAll),
-                         //: kTeamHelperText : [FFFTeamHelper InviteModeText:NIMTeamInviteModeAll],
+                         //: kTeamHelperText : [WatchTeamHelper InviteModeText:NIMTeamInviteModeAll],
                          user_shareMinId : [MakeBubble with:NIMTeamInviteModeAll],
                          //: kTeamHelperImg: @"ic_all",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].mDemandUntilKey,
@@ -478,11 +478,11 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     switch (mode) {
         //: case NIMTeamInviteModeManager:
         case NIMTeamInviteModeManager:
-            //: return [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"];
+            //: return [WatchLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].m_arrestThanksName];//@"管理员".;
         //: case NIMTeamInviteModeAll:
         case NIMTeamInviteModeAll:
-            //: return [FFFLanguageManager getTextWithKey:@"Group_Everyone"];
+            //: return [WatchLanguageManager getTextWithKey:@"Group_Everyone"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].mainRepairUrl];//@"所有人".;
         //: default:
         default:
@@ -491,8 +491,8 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     }
 }
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)InviteModeItemsWithSeleced:(NIMTeamInviteMode)mode {
-+ (NSMutableArray<id <FFFKitSelectCardData>> *)pastSeleced:(NIMTeamInviteMode)mode {
+//: + (NSMutableArray<id <WatchKitSelectCardData>> *)InviteModeItemsWithSeleced:(NIMTeamInviteMode)mode {
++ (NSMutableArray<id <WatchKitSelectCardData>> *)pastSeleced:(NIMTeamInviteMode)mode {
     //: return [self itemsWithListDic:[self allInviteModes] selectValue:mode];
     return [self background:[self message] search:mode];
 }
@@ -507,7 +507,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamBeInviteModeNeedAuth),
                          kBackId : @(NIMTeamBeInviteModeNeedAuth),
-                         //: kTeamHelperText : [FFFTeamHelper beInviteModeText:NIMTeamBeInviteModeNeedAuth],
+                         //: kTeamHelperText : [WatchTeamHelper beInviteModeText:NIMTeamBeInviteModeNeedAuth],
                          user_shareMinId : [MakeBubble property:NIMTeamBeInviteModeNeedAuth],
                          //: kTeamHelperImg: @"ic_yanzheng_yes",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].kPatrolPath,
@@ -517,7 +517,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamBeInviteModeNoAuth),
                          kBackId : @(NIMTeamBeInviteModeNoAuth),
-                         //: kTeamHelperText : [FFFTeamHelper beInviteModeText:NIMTeamBeInviteModeNoAuth],
+                         //: kTeamHelperText : [WatchTeamHelper beInviteModeText:NIMTeamBeInviteModeNoAuth],
                          user_shareMinId : [MakeBubble property:NIMTeamBeInviteModeNoAuth],
                          //: kTeamHelperImg: @"ic_yanzheng_no",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].m_educationalName,
@@ -535,11 +535,11 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     switch (mode) {
         //: case NIMTeamBeInviteModeNeedAuth:
         case NIMTeamBeInviteModeNeedAuth:
-            //: return [FFFLanguageManager getTextWithKey:@"Need_verification"];
+            //: return [WatchLanguageManager getTextWithKey:@"Need_verification"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].userThreshId];//@"需要验证".;
         //: case NIMTeamBeInviteModeNoAuth:
         case NIMTeamBeInviteModeNoAuth:
-            //: return [FFFLanguageManager getTextWithKey:@"No_Need_verification"];
+            //: return [WatchLanguageManager getTextWithKey:@"No_Need_verification"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].mMessageUrl];//@"不需要验证".;
         //: default:
         default:
@@ -548,8 +548,8 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     }
 }
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)beInviteModeItemsWithSeleced:(NIMTeamBeInviteMode)mode {
-+ (NSMutableArray<id <FFFKitSelectCardData>> *)name:(NIMTeamBeInviteMode)mode {
+//: + (NSMutableArray<id <WatchKitSelectCardData>> *)beInviteModeItemsWithSeleced:(NIMTeamBeInviteMode)mode {
++ (NSMutableArray<id <WatchKitSelectCardData>> *)name:(NIMTeamBeInviteMode)mode {
     //: return [self itemsWithListDic:[self allBeInviteModes] selectValue:mode];
     return [self background:[self betweenMaxModes] search:mode];
 }
@@ -564,7 +564,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamUpdateInfoModeManager),
                          kBackId : @(NIMTeamUpdateInfoModeManager),
-                         //: kTeamHelperText : [FFFTeamHelper updateInfoModeText:NIMTeamUpdateInfoModeManager],
+                         //: kTeamHelperText : [WatchTeamHelper updateInfoModeText:NIMTeamUpdateInfoModeManager],
                          user_shareMinId : [MakeBubble message:NIMTeamUpdateInfoModeManager],
                          //: kTeamHelperImg: @"ic_guanliyuan",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].appTallyData,
@@ -574,7 +574,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamUpdateInfoModeAll),
                          kBackId : @(NIMTeamUpdateInfoModeAll),
-                         //: kTeamHelperText : [FFFTeamHelper updateInfoModeText:NIMTeamUpdateInfoModeAll],
+                         //: kTeamHelperText : [WatchTeamHelper updateInfoModeText:NIMTeamUpdateInfoModeAll],
                          user_shareMinId : [MakeBubble message:NIMTeamUpdateInfoModeAll],
                          //: kTeamHelperImg: @"ic_all",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].mDemandUntilKey,
@@ -592,11 +592,11 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     switch (mode) {
         //: case NIMTeamUpdateInfoModeManager:
         case NIMTeamUpdateInfoModeManager:
-            //: return [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"];
+            //: return [WatchLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].m_arrestThanksName];//@"管理员".;
         //: case NIMTeamUpdateInfoModeAll:
         case NIMTeamUpdateInfoModeAll:
-            //: return [FFFLanguageManager getTextWithKey:@"Group_Everyone"];
+            //: return [WatchLanguageManager getTextWithKey:@"Group_Everyone"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].mainRepairUrl];//@"所有人".;
         //: default:
         default:
@@ -605,8 +605,8 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     }
 }
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)updateInfoModeItemsWithSeleced:(NIMTeamUpdateInfoMode)mode {
-+ (NSMutableArray<id <FFFKitSelectCardData>> *)signalSeleced:(NIMTeamUpdateInfoMode)mode {
+//: + (NSMutableArray<id <WatchKitSelectCardData>> *)updateInfoModeItemsWithSeleced:(NIMTeamUpdateInfoMode)mode {
++ (NSMutableArray<id <WatchKitSelectCardData>> *)signalSeleced:(NIMTeamUpdateInfoMode)mode {
     //: return [self itemsWithListDic:[self allUpdateInfoModes] selectValue:mode];
     return [self background:[self modify] search:mode];
 }
@@ -621,7 +621,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamNotifyStateAll),
                          kBackId : @(NIMTeamNotifyStateAll),
-                         //: kTeamHelperText : [FFFTeamHelper notifyStateText:NIMTeamNotifyStateAll],
+                         //: kTeamHelperText : [WatchTeamHelper notifyStateText:NIMTeamNotifyStateAll],
                          user_shareMinId : [MakeBubble findFrame:NIMTeamNotifyStateAll],
                          //: kTeamHelperImg: @"ic_reminde_all",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].appDiskContent,
@@ -631,7 +631,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamNotifyStateNone),
                          kBackId : @(NIMTeamNotifyStateNone),
-                         //: kTeamHelperText : [FFFTeamHelper notifyStateText:NIMTeamNotifyStateNone],
+                         //: kTeamHelperText : [WatchTeamHelper notifyStateText:NIMTeamNotifyStateNone],
                          user_shareMinId : [MakeBubble findFrame:NIMTeamNotifyStateNone],
                          //: kTeamHelperImg: @"ic_reminde_all_no",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].dream_developerData,
@@ -641,7 +641,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamNotifyStateOnlyManager),
                          kBackId : @(NIMTeamNotifyStateOnlyManager),
-                         //: kTeamHelperText : [FFFTeamHelper notifyStateText:NIMTeamNotifyStateOnlyManager],
+                         //: kTeamHelperText : [WatchTeamHelper notifyStateText:NIMTeamNotifyStateOnlyManager],
                          user_shareMinId : [MakeBubble findFrame:NIMTeamNotifyStateOnlyManager],
                          //: kTeamHelperImg: @"ic_reminde_manager",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].show_heavyStr,
@@ -661,7 +661,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamNotifyStateAll),
                          kBackId : @(NIMTeamNotifyStateAll),
-                         //: kTeamHelperText : [FFFTeamHelper notifyStateText:NIMTeamNotifyStateAll],
+                         //: kTeamHelperText : [WatchTeamHelper notifyStateText:NIMTeamNotifyStateAll],
                          user_shareMinId : [MakeBubble findFrame:NIMTeamNotifyStateAll],
                          //: kTeamHelperImg: @"ic_reminde_all",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].appDiskContent,
@@ -671,7 +671,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NIMTeamNotifyStateNone),
                          kBackId : @(NIMTeamNotifyStateNone),
-                         //: kTeamHelperText : [FFFTeamHelper notifyStateText:NIMTeamNotifyStateNone],
+                         //: kTeamHelperText : [WatchTeamHelper notifyStateText:NIMTeamNotifyStateNone],
                          user_shareMinId : [MakeBubble findFrame:NIMTeamNotifyStateNone],
                          //: kTeamHelperImg: @"ic_reminde_all_no",
                          k_indexContentResourceMessage: [EconomistMeaningData sharedInstance].dream_developerData,
@@ -689,15 +689,15 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     switch (state) {
         //: case NIMTeamNotifyStateAll:
         case NIMTeamNotifyStateAll:
-            //: return [FFFLanguageManager getTextWithKey:@"group_info_activity_team_notify_all"];
+            //: return [WatchLanguageManager getTextWithKey:@"group_info_activity_team_notify_all"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].mGivingPath];//@"提醒所有消息".;
         //: case NIMTeamNotifyStateNone:
         case NIMTeamNotifyStateNone:
-            //: return [FFFLanguageManager getTextWithKey:@"group_info_activity_team_notify_mute"];
+            //: return [WatchLanguageManager getTextWithKey:@"group_info_activity_team_notify_mute"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].mainShowKey];//@"不提醒任何消息".;
         //: case NIMTeamNotifyStateOnlyManager:
         case NIMTeamNotifyStateOnlyManager:
-            //: return [FFFLanguageManager getTextWithKey:@"group_info_activity_team_notify_manager"];
+            //: return [WatchLanguageManager getTextWithKey:@"group_info_activity_team_notify_manager"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].app_principalValue];//@"只提醒管理员消息".;
         //: default:
         default:
@@ -706,14 +706,14 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     }
 }
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)notifyStateItemsWithSeleced:(NIMTeamNotifyState)state {
-+ (NSMutableArray<id <FFFKitSelectCardData>> *)tingViewSeleced:(NIMTeamNotifyState)state {
+//: + (NSMutableArray<id <WatchKitSelectCardData>> *)notifyStateItemsWithSeleced:(NIMTeamNotifyState)state {
++ (NSMutableArray<id <WatchKitSelectCardData>> *)tingViewSeleced:(NIMTeamNotifyState)state {
     //: return [self itemsWithListDic:[self allNotifyStates] selectValue:state];
     return [self background:[self everyLast] search:state];
 }
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)superNotifyStateItemsWithSeleced:(NIMTeamNotifyState)state {
-+ (NSMutableArray<id <FFFKitSelectCardData>> *)label:(NIMTeamNotifyState)state {
+//: + (NSMutableArray<id <WatchKitSelectCardData>> *)superNotifyStateItemsWithSeleced:(NIMTeamNotifyState)state {
++ (NSMutableArray<id <WatchKitSelectCardData>> *)label:(NIMTeamNotifyState)state {
     //: return [self itemsWithListDic:[self allSuperNotifyStates] selectValue:state];
     return [self background:[self standIn] search:state];
 }
@@ -728,7 +728,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(YES),
                          kBackId : @(YES),
-                         //: kTeamHelperText : [FFFTeamHelper teamMuteText:YES]
+                         //: kTeamHelperText : [WatchTeamHelper teamMuteText:YES]
                          user_shareMinId : [MakeBubble text:YES]
                          //: },
                          },
@@ -736,7 +736,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
                      @{
                          //: kTeamHelperValue : @(NO),
                          kBackId : @(NO),
-                         //: kTeamHelperText : [FFFTeamHelper teamMuteText:NO]
+                         //: kTeamHelperText : [WatchTeamHelper teamMuteText:NO]
                          user_shareMinId : [MakeBubble text:NO]
                          //: },
                          },
@@ -747,12 +747,12 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
 }
 //: + (NSString *)teamMuteText:(BOOL)isMute {
 + (NSString *)text:(BOOL)isMute {
-    //: return isMute ? [FFFLanguageManager getTextWithKey:@"group_info_activity_open"] : [FFFLanguageManager getTextWithKey:@"group_info_activity_close"];
+    //: return isMute ? [WatchLanguageManager getTextWithKey:@"group_info_activity_open"] : [WatchLanguageManager getTextWithKey:@"group_info_activity_close"];
     return isMute ? [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].notiParishPath] : [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].dreamTowardsUrl];
 }
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)teamMuteItemsWithSeleced:(BOOL)isMute {
-+ (NSMutableArray<id <FFFKitSelectCardData>> *)max:(BOOL)isMute {
+//: + (NSMutableArray<id <WatchKitSelectCardData>> *)teamMuteItemsWithSeleced:(BOOL)isMute {
++ (NSMutableArray<id <WatchKitSelectCardData>> *)max:(BOOL)isMute {
     //: return [self itemsWithListDic:[self allTeamMuteState] selectValue:isMute];
     return [self background:[self index] search:isMute];
 }
@@ -765,19 +765,19 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     switch (type) {
         //: case NIMTeamMemberTypeNormal:
         case NIMTeamMemberTypeNormal:
-            //: return [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
+            //: return [WatchLanguageManager getTextWithKey:@"group_info_activity_team_member"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].user_studyName];//@"普通成员".;
         //: case NIMTeamMemberTypeOwner:
         case NIMTeamMemberTypeOwner:
-            //: return [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
+            //: return [WatchLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].notiAtFormat];//@"群主".;
         //: case NIMTeamMemberTypeManager:
         case NIMTeamMemberTypeManager:
-            //: return [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"];
+            //: return [WatchLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].m_arrestThanksName];//@"管理员".;
         //: default:
         default:
-            //: return [FFFLanguageManager getTextWithKey:@"online_state_event_manager_unknown"];
+            //: return [WatchLanguageManager getTextWithKey:@"online_state_event_manager_unknown"];
             return [PaintedNaturalLanguageTo exhibit:[EconomistMeaningData sharedInstance].kDestinationName];//@"未知".;
     }
 }
@@ -821,7 +821,7 @@ static NSString *const k_indexContentResourceMessage = @"kTeamHelperImg";
     NSMutableArray *items = [[NSMutableArray alloc] init];
     //: for (NSDictionary *dic in listDic) {
     for (NSDictionary *dic in listDic) {
-        //: FFFTeamCardRowItem *item = [[FFFTeamCardRowItem alloc] init];
+        //: WatchTeamCardRowItem *item = [[WatchTeamCardRowItem alloc] init];
         ShowKey *item = [[ShowKey alloc] init];
         //: item.value = dic[kTeamHelperValue];
         item.value = dic[kBackId];

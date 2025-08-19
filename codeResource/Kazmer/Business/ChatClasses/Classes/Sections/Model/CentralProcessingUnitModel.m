@@ -49,14 +49,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WatchKitQuickCommentUtil.h"
 #import "NameUtilPath.h"
 
-//: @interface FFFMessageModel()
+//: @interface WatchMessageModel()
 @interface CentralProcessingUnitModel()
 
 //: @property (nonatomic,strong) NSMutableDictionary *contentSizeInfo;
@@ -67,7 +67,7 @@
 //: @end
 @end
 
-//: @implementation FFFMessageModel
+//: @implementation WatchMessageModel
 @implementation CentralProcessingUnitModel
 
 //: @synthesize contentViewInsets = _contentViewInsets;
@@ -146,7 +146,7 @@
 //: - (BOOL)isEqual:(id)object
 - (BOOL)isEqual:(id)object
 {
-    //: if (![object isKindOfClass:[FFFMessageModel class]])
+    //: if (![object isKindOfClass:[WatchMessageModel class]])
     if (![object isKindOfClass:[CentralProcessingUnitModel class]])
     {
         //: return NO;
@@ -155,7 +155,7 @@
     //: else
     else
     {
-        //: FFFMessageModel *model = object;
+        //: WatchMessageModel *model = object;
         CentralProcessingUnitModel *model = object;
         //: return [self.message isEqual:model.message];
         return [self.message isEqual:model.message];
@@ -172,7 +172,7 @@
     {
         //: [self updateLayoutConfig];
         [self data];
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
         //: size = [layoutConfig contentSize:self cellWidth:width];
         size = [layoutConfig event:self size:width];
@@ -189,7 +189,7 @@
     //: if (UIEdgeInsetsEqualToEdgeInsets(_contentViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_contentViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
         //: _contentViewInsets = [layoutConfig contentViewInsets:self];
         _contentViewInsets = [layoutConfig media:self];
@@ -203,7 +203,7 @@
     //: if (UIEdgeInsetsEqualToEdgeInsets(_bubbleViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_bubbleViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
         //: _bubbleViewInsets = [layoutConfig cellInsets:self];
         _bubbleViewInsets = [layoutConfig month:self];
@@ -215,7 +215,7 @@
 //: - (CGSize)replyContentSize:(CGFloat)width
 - (CGSize)button:(CGFloat)width
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
     //: CGSize size = [layoutConfig replyContentSize:self cellWidth:width];
     CGSize size = [layoutConfig closeWidth:self userManager:width];
@@ -228,7 +228,7 @@
     //: if (UIEdgeInsetsEqualToEdgeInsets(_replyContentViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_replyContentViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
         //: _replyContentViewInsets = [layoutConfig replyContentViewInsets:self];
         _replyContentViewInsets = [layoutConfig viewInsets:self];
@@ -242,7 +242,7 @@
     //: if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
         //: _replyBubbleViewInsets = [layoutConfig replyCellInsets:self];
         _replyBubbleViewInsets = [layoutConfig icon:self];
@@ -255,7 +255,7 @@
 //: - (void)updateLayoutConfig
 - (void)data
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
 
     //: _shouldShowAvatar = [layoutConfig shouldShowAvatar:self];
@@ -337,7 +337,7 @@
             //: if (result.count > 0)
             if (result.count > 0)
             {
-                //: _emoticonsContainerSize = [FFFKitQuickCommentUtil containerSizeWithComments:result];
+                //: _emoticonsContainerSize = [WatchKitQuickCommentUtil containerSizeWithComments:result];
                 _emoticonsContainerSize = [NameUtilPath power:result];
             }
             //: completion(result);

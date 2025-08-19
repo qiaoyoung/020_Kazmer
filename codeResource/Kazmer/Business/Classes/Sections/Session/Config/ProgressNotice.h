@@ -12,9 +12,9 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFSessionConfig;
+//: @class WatchSessionConfig;
 @class MessagePinImage;
-//: @interface NTESSessionConfig : NSObject<FFFSessionConfig>
+//: @interface NTESSessionConfig : NSObject<WatchSessionConfig>
 @interface ProgressNotice : NSObject<MessagePinImage>
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;

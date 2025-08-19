@@ -49,20 +49,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSwitcherCell.h"
+//: #import "WatchKitSwitcherCell.h"
 #import "SightView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @interface FFFKitSwitcherCell ()
+//: @interface WatchKitSwitcherCell ()
 @interface SightView ()
 
 //: @end
 @end
 
-//: @implementation FFFKitSwitcherCell
+//: @implementation WatchKitSwitcherCell
 @implementation SightView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

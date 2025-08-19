@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputAtCache.h"
+//: #import "WatchInputAtCache.h"
 #import "TimeCache.h"
 
-//: @interface FFFInputAtCache()
+//: @interface WatchInputAtCache()
 @interface TimeCache()
 
 //: @property (nonatomic,strong) NSMutableArray *items;
@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputAtCache
+//: @implementation WatchInputAtCache
 @implementation TimeCache
 
 //: - (instancetype)init

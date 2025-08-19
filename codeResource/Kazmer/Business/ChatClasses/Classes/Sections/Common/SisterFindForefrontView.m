@@ -64,15 +64,15 @@
 #pragma mark - ToMax
 
 // __M_A_C_R_O__
-//: #import "FFFMemberGroupView.h"
+//: #import "WatchMemberGroupView.h"
 #import "SisterFindForefrontView.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "WatchCardHeaderCell.h"
 #import "RecentFrameReusableView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFCardOperationItem.h"
+//: #import "WatchCardOperationItem.h"
 #import "TimeImage.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WatchTeamCardMemberItem.h"
 #import "CoatButtonBar.h"
 
 //: @implementation NIMMemebrGroupData
@@ -98,10 +98,10 @@
 //: @end
 @end
 
-//: #pragma mark - FFFMemberGroupView
+//: #pragma mark - WatchMemberGroupView
 #pragma mark - SisterFindForefrontView
 
-//: @interface FFFMemberGroupView()<UICollectionViewDataSource,UICollectionViewDelegate,FFFCardHeaderCellDelegate>
+//: @interface WatchMemberGroupView()<UICollectionViewDataSource,UICollectionViewDelegate,WatchCardHeaderCellDelegate>
 @interface SisterFindForefrontView()<UICollectionViewDataSource,UICollectionViewDelegate,NumericalCountRed>
 
 //: @property (nonatomic,strong) NSMutableArray *data;
@@ -113,7 +113,7 @@
 //: @end
 @end
 
-//: @implementation FFFMemberGroupView
+//: @implementation WatchMemberGroupView
 @implementation SisterFindForefrontView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -224,7 +224,7 @@
 
 //: - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell;
+    //: WatchCardHeaderCell *cell;
     RecentFrameReusableView *cell;
     //: NIMMemebrGroupData *data = [self dataAtIndexPath:indexPath];
     ToMax *data = [self randomShow:indexPath];
@@ -253,9 +253,9 @@
     return self.data[index];
 }
 
-//: #pragma mark - FFFCardHeaderCellDelegate
+//: #pragma mark - WatchCardHeaderCellDelegate
 #pragma mark - NumericalCountRed
-//: - (void)cellDidSelected:(FFFCardHeaderCell *)cell{
+//: - (void)cellDidSelected:(WatchCardHeaderCell *)cell{
 - (void)timeTitle:(RecentFrameReusableView *)cell{
     //: NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
@@ -272,7 +272,7 @@
     }
 }
 
-//: - (void)cellShouldBeRemoved:(FFFCardHeaderCell*)cell{
+//: - (void)cellShouldBeRemoved:(WatchCardHeaderCell*)cell{
 - (void)willed:(RecentFrameReusableView*)cell{
     //: NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
     NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
@@ -324,7 +324,7 @@
         _collectionView.delegate = self;
         //: _collectionView.dataSource = self;
         _collectionView.dataSource = self;
-        //: [_collectionView registerClass:[FFFCardHeaderCell class] forCellWithReuseIdentifier:@"collectionCell"];
+        //: [_collectionView registerClass:[WatchCardHeaderCell class] forCellWithReuseIdentifier:@"collectionCell"];
         [_collectionView registerClass:[RecentFrameReusableView class] forCellWithReuseIdentifier:[GoryData sharedInstance].mApePath];
     }
     //: return _collectionView;
@@ -339,9 +339,9 @@
 
 //: #pragma mark - Private
 #pragma mark - Private
-//: - (FFFCardHeaderCell *)buildUserCell:(NIMMemebrGroupData *)data indexPath:(NSIndexPath *)indexPath{
+//: - (WatchCardHeaderCell *)buildUserCell:(NIMMemebrGroupData *)data indexPath:(NSIndexPath *)indexPath{
 - (RecentFrameReusableView *)voice:(ToMax *)data ignitionKey:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    //: WatchCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     RecentFrameReusableView *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:[GoryData sharedInstance].mApePath forIndexPath:indexPath];
     //: NIMCardMemberItem *item = [[NIMCardMemberItem alloc] init];
     TitleTimeMessage *item = [[TitleTimeMessage alloc] init];
@@ -356,11 +356,11 @@
     return cell;
 }
 
-//: - (FFFCardHeaderCell *)buildOperatorCell:(NIMKitCardHeaderOpeator)operator indexPath:(NSIndexPath *)indexPath{
+//: - (WatchCardHeaderCell *)buildOperatorCell:(NIMKitCardHeaderOpeator)operator indexPath:(NSIndexPath *)indexPath{
 - (RecentFrameReusableView *)managerShowClean:(NIMKitCardHeaderOpeator)operator change:(NSIndexPath *)indexPath{
-    //: FFFCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
+    //: WatchCardHeaderCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell" forIndexPath:indexPath];
     RecentFrameReusableView *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:[GoryData sharedInstance].mApePath forIndexPath:indexPath];
-    //: FFFCardOperationItem *item = [[FFFCardOperationItem alloc] initWithOperation:operator];
+    //: WatchCardOperationItem *item = [[WatchCardOperationItem alloc] initWithOperation:operator];
     TimeImage *item = [[TimeImage alloc] initWithChorus:operator];
     //: if (self.operatorTitle[@(operator)]) {
     if (self.operatorTitle[@(operator)]) {

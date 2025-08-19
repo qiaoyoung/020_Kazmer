@@ -14,7 +14,7 @@
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface NTESCellLayoutConfig : FFFCellLayoutConfig<FFFCellLayoutConfig>
+//: @interface NTESCellLayoutConfig : WatchCellLayoutConfig<WatchCellLayoutConfig>
 @interface OldLayoutConfig : PinFrame<PinFrame>
 
 //: @end

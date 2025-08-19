@@ -94,9 +94,9 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "WatchKitDataProviderImpl.h"
 #import "InputImpl.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
@@ -228,7 +228,7 @@
 //: #pragma mark - data provider impl
 #pragma mark - data provider impl
 
-//: @interface FFFKitDataProviderImpl()<NIMUserManagerDelegate,
+//: @interface WatchKitDataProviderImpl()<NIMUserManagerDelegate,
 @interface InputImpl()<NIMUserManagerDelegate,
                                     //: NIMTeamManagerDelegate,
                                     NIMTeamManagerDelegate,
@@ -250,7 +250,7 @@
 @end
 
 
-//: @implementation FFFKitDataProviderImpl
+//: @implementation WatchKitDataProviderImpl
 @implementation InputImpl
 
 //: - (instancetype)init{
@@ -290,27 +290,27 @@
 
 //: #pragma mark - public api
 #pragma mark - public api
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (WatchKitInfo *)infoByUser:(NSString *)userId
 - (TingMessage *)past:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(WatchKitInfoFetchOption *)option
                     skinColour_strong:(CoverTingContent *)option
 {
     //: NIMSession *session = option.message.session?:option.session;
     NIMSession *session = option.message.session?:option.session;
-    //: FFFKitInfo *info = [self infoByUser:userId session:session option:option];
+    //: WatchKitInfo *info = [self infoByUser:userId session:session option:option];
     TingMessage *info = [self key:userId load:session center_strong:option];
     //: return info;
     return info;
 }
 
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (WatchKitInfo *)infoByTeam:(NSString *)teamId
 - (TingMessage *)pressMedia:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(WatchKitInfoFetchOption *)option
                     sizeOption:(CoverTingContent *)option
 {
     //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:teamId];
     NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:teamId];
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: WatchKitInfo *info = [[WatchKitInfo alloc] init];
     TingMessage *info = [[TingMessage alloc] init];
     //: info.showName = team.teamName;
     info.showName = team.teamName;
@@ -324,14 +324,14 @@
     return info;
 }
 
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (WatchKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (TingMessage *)tiddler:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option
+                         //: option:(WatchKitInfoFetchOption *)option
                          ting:(CoverTingContent *)option
 {
     //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:teamId];
     NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:teamId];
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: WatchKitInfo *info = [[WatchKitInfo alloc] init];
     TingMessage *info = [[TingMessage alloc] init];
     //: info.showName = team.teamName;
     info.showName = team.teamName;
@@ -352,11 +352,11 @@
     NIMMessageType messageType = replyedMessage.messageType;
     //: NSString *content = @"未知消息".nim_localized;
     NSString *content = [RepresentativeData notiRiotStr].messageWith;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
     CoverTingContent *option = [[CoverTingContent alloc] init];
     //: option.message = replyedMessage;
     option.message = replyedMessage;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:replyedMessage.from option:option];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:replyedMessage.from option:option];
     TingMessage *info = [[ButtonKit sheerOption] past:replyedMessage.from skinColour_strong:option];
     //: NSString *from = info.showName;
     NSString *from = info.showName;
@@ -433,16 +433,16 @@
 //: #pragma mark - 用户信息拼装
 #pragma mark - 用户信息拼装
 //会话中用户信息
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (WatchKitInfo *)infoByUser:(NSString *)userId
 - (TingMessage *)key:(NSString *)userId
                    //: session:(NIMSession *)session
                    load:(NIMSession *)session
-                    //: option:(FFFKitInfoFetchOption *)option
+                    //: option:(WatchKitInfoFetchOption *)option
                     center_strong:(CoverTingContent *)option
 {
     //: NIMSessionType sessionType = session.sessionType;
     NIMSessionType sessionType = session.sessionType;
-    //: FFFKitInfo *info;
+    //: WatchKitInfo *info;
     TingMessage *info;
 
     //: switch (sessionType) {
@@ -502,7 +502,7 @@
             [self.request keyInIds:@[userId]];
         }
 
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[WatchKitInfo alloc] init];
         info = [[TingMessage alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -519,21 +519,21 @@
 
 //: #pragma mark - P2P 用户信息
 #pragma mark - P2P 用户信息
-//: - (FFFKitInfo *)userInfoInP2P:(NSString *)userId
+//: - (WatchKitInfo *)userInfoInP2P:(NSString *)userId
 - (TingMessage *)tillSession:(NSString *)userId
-                       //: option:(FFFKitInfoFetchOption *)option
+                       //: option:(WatchKitInfoFetchOption *)option
                        dueDate:(CoverTingContent *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
     NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
     //: NIMUserInfo *userInfo = user.userInfo;
     NIMUserInfo *userInfo = user.userInfo;
-    //: FFFKitInfo *info;
+    //: WatchKitInfo *info;
     TingMessage *info;
     //: if (userInfo)
     if (userInfo)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[WatchKitInfo alloc] init];
         info = [[TingMessage alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -557,11 +557,11 @@
 
 //: #pragma mark - 群组用户信息
 #pragma mark - 群组用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (WatchKitInfo *)userInfo:(NSString *)userId
 - (TingMessage *)at:(NSString *)userId
                   //: inTeam:(NSString *)teamId
                   searched:(NSString *)teamId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(WatchKitInfoFetchOption *)option
                   anTing:(CoverTingContent *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
@@ -573,13 +573,13 @@
                                                                  //: inTeam:teamId];
                                                                  inTeam:teamId];
 
-    //: FFFKitInfo *info;
+    //: WatchKitInfo *info;
     TingMessage *info;
 
     //: if (userInfo || member)
     if (userInfo || member)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[WatchKitInfo alloc] init];
         info = [[TingMessage alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -603,11 +603,11 @@
 
 //: #pragma mark - 超大群用户信息
 #pragma mark - 超大群用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (WatchKitInfo *)userInfo:(NSString *)userId
 - (TingMessage *)endUser:(NSString *)userId
              //: inSuperTeam:(NSString *)teamId
              of:(NSString *)teamId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(WatchKitInfoFetchOption *)option
                   system:(CoverTingContent *)option
 {
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:userId];
@@ -619,13 +619,13 @@
                                                                       //: inTeam:teamId];
                                                                       inTeam:teamId];
 
-    //: FFFKitInfo *info;
+    //: WatchKitInfo *info;
     TingMessage *info;
 
     //: if (userInfo || member)
     if (userInfo || member)
     {
-        //: info = [[FFFKitInfo alloc] init];
+        //: info = [[WatchKitInfo alloc] init];
         info = [[TingMessage alloc] init];
         //: info.infoId = userId;
         info.infoId = userId;
@@ -650,14 +650,14 @@
 
 //: #pragma mark - 聊天室用户信息
 #pragma mark - 聊天室用户信息
-//: - (FFFKitInfo *)userInfo:(NSString *)userId
+//: - (WatchKitInfo *)userInfo:(NSString *)userId
 - (TingMessage *)input:(NSString *)userId
               //: inChatroom:(NSString *)roomId
               messageForbid:(NSString *)roomId
-                  //: option:(FFFKitInfoFetchOption *)option
+                  //: option:(WatchKitInfoFetchOption *)option
                   pin:(CoverTingContent *)option
 {
-    //: FFFKitInfo *info = [[FFFKitInfo alloc] init];
+    //: WatchKitInfo *info = [[WatchKitInfo alloc] init];
     TingMessage *info = [[TingMessage alloc] init];
     //: info.infoId = userId;
     info.infoId = userId;
@@ -726,7 +726,7 @@
 - (NSString *)nicknameInPut:(NIMUser *)user
                           //: nick:(NSString *)nick
                           change:(NSString *)nick
-                        //: option:(FFFKitInfoFetchOption *)option
+                        //: option:(WatchKitInfoFetchOption *)option
                         tool:(CoverTingContent *)option
 {
     //: NSString *name = nil;

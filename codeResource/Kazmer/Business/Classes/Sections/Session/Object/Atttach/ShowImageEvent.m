@@ -193,7 +193,7 @@
 #import "ShowImageEvent.h"
 //: #import "NTESFileLocationHelper.h"
 #import "RegisterColor.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 //: #import "NSDictionary+NTESJson.h"
 #import "NSDictionary+ValueJson.h"
@@ -201,7 +201,7 @@
 #import "QuickNameView+ButtonKit.h"
 //: #import "NTESMessageUtil.h"
 #import "NonsolidColorView.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "WatchInputEmoticonParser.h"
 #import "ImageShowParser.h"
 
 //: @interface NTESMultiRetweetAttachment ()
@@ -540,13 +540,13 @@
     }
     //: NTESMessageAbstract *ret = [[NTESMessageAbstract alloc] init];
     NameAbstract *ret = [[NameAbstract alloc] init];
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
     CoverTingContent *option = [[CoverTingContent alloc] init];
     //: option.session = message.session;
     option.session = message.session;
     //: option.message = message;
     option.message = message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
     TingMessage *info = [[ButtonKit sheerOption].provider past:message.from skinColour_strong:option];
     //: ret.sender = info.showName ?: @"null";
     ret.sender = info.showName ?: [HaveData userSendMessage];
@@ -581,7 +581,7 @@
     NSMutableString *ret = [NSMutableString string];
     //: if (msg.length > (32)) {
     if (msg.length > (32)) {
-        //: NSArray *tokens = [[FFFInputEmoticonParser currentParser] tokens:msg];
+        //: NSArray *tokens = [[WatchInputEmoticonParser currentParser] tokens:msg];
         NSArray *tokens = [[ImageShowParser independent] asRangeTokens:msg];
         //: for (NIMInputTextToken *token in tokens) { 
         for (EdgeModeName *token in tokens) { //防止emoji表情被截断

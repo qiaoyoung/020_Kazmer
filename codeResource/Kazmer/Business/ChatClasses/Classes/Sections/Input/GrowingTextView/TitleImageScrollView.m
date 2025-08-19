@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGrowingTextView.h"
+//: #import "WatchGrowingTextView.h"
 #import "TitleImageScrollView.h"
-//: #import "FFFGrowingInternalTextView.h"
+//: #import "WatchGrowingInternalTextView.h"
 #import "EdgeNameView.h"
 
-//: @interface FFFGrowingTextView()<UITextViewDelegate>
+//: @interface WatchGrowingTextView()<UITextViewDelegate>
 @interface TitleImageScrollView()<UITextViewDelegate>
 
-//: @property (nonatomic,strong) FFFGrowingInternalTextView *textView;
+//: @property (nonatomic,strong) WatchGrowingInternalTextView *textView;
 @property (nonatomic,strong) EdgeNameView *textView;
 
 //: @property (nonatomic,assign) CGFloat maxHeight;
@@ -35,7 +35,7 @@
 //: @end
 @end
 
-//: @implementation FFFGrowingTextView
+//: @implementation WatchGrowingTextView
 @implementation TitleImageScrollView
 
 //: #pragma mark - Override
@@ -49,7 +49,7 @@
     if (self) {
         //: CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
         CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:rect];
+        //: WatchGrowingInternalTextView *textView = [[WatchGrowingInternalTextView alloc] initWithFrame:rect];
         EdgeNameView *textView = [[EdgeNameView alloc] initWithFrame:rect];
         //: self.textView = textView;
         self.textView = textView;
@@ -70,7 +70,7 @@
     self = [super initWithCoder:aDecoder];
     //: if (self) {
     if (self) {
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:CGRectZero];
+        //: WatchGrowingInternalTextView *textView = [[WatchGrowingInternalTextView alloc] initWithFrame:CGRectZero];
         EdgeNameView *textView = [[EdgeNameView alloc] initWithFrame:CGRectZero];
         //: self.textView = textView;
         self.textView = textView;
@@ -477,7 +477,7 @@
 
 
 
-//: @implementation FFFGrowingTextView(TextView)
+//: @implementation WatchGrowingTextView(TextView)
 @implementation TitleImageScrollView(TextView)
 
 //: - (NSAttributedString *)placeholderAttributedText

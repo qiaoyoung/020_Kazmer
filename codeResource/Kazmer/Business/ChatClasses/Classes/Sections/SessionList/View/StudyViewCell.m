@@ -69,20 +69,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionListCell.h"
+//: #import "WatchSessionListCell.h"
 #import "StudyViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "NTESBadgeView.h"
 #import "PinBadgeView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 
-//: @implementation FFFSessionListCell
+//: @implementation WatchSessionListCell
 @implementation StudyViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -113,7 +113,7 @@
         //: self.layer.shadowRadius = 3;
         self.layer.shadowRadius = 3;
 
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _avatarImageView = [[WatchAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _avatarImageView = [[RecordControl alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [self.contentView addSubview:_avatarImageView];
         [self.contentView addSubview:_avatarImageView];
@@ -184,7 +184,7 @@
 //    }else{
 //        self.badgeView.hidden = YES;
 
-        //: FFFKitInfo *info = nil;
+        //: WatchKitInfo *info = nil;
         TingMessage *info = nil;
         //: if (recent.session.sessionType == NIMSessionTypeTeam) {
         if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -212,7 +212,7 @@
 
         //: } else if (recent.session.sessionType == NIMSessionTypeP2P) {
         } else if (recent.session.sessionType == NIMSessionTypeP2P) {
-            //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+            //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
             CoverTingContent *option = [[CoverTingContent alloc] init];
             //: option.session = recent.session;
             option.session = recent.session;

@@ -27,22 +27,22 @@ HelicopterData app_sexyNameMessage = (HelicopterData){220, (Byte []){180, 185, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "objc/runtime.h"
 #import "objc/runtime.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
-//: #import "FFFKitUrlManager.h"
+//: #import "WatchKitUrlManager.h"
 #import "KitShow.h"
 
-//: @interface FFFAvatarImageView()
+//: @interface WatchAvatarImageView()
 @interface RecordControl()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -51,7 +51,7 @@ HelicopterData app_sexyNameMessage = (HelicopterData){220, (Byte []){180, 185, 1
 //: @end
 @end
 
-//: @implementation FFFAvatarImageView
+//: @implementation WatchAvatarImageView
 @implementation RecordControl
 
 //: - (id)initWithFrame:(CGRect)frame
@@ -214,7 +214,7 @@ HelicopterData app_sexyNameMessage = (HelicopterData){220, (Byte []){180, 185, 1
 //: - (void)setAvatarBySession:(NIMSession *)session
 - (void)setIcon:(NIMSession *)session
 {
-    //: FFFKitInfo *info = nil;
+    //: WatchKitInfo *info = nil;
     TingMessage *info = nil;
     //: if (session.sessionType == NIMSessionTypeTeam) {
     if (session.sessionType == NIMSessionTypeTeam) {
@@ -232,7 +232,7 @@ HelicopterData app_sexyNameMessage = (HelicopterData){220, (Byte []){180, 185, 1
         info.avatarImage = [UIImage imageNamed:StringFromHelicopterData(&app_sexyNameMessage)];
     //: } else {
     } else {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
         CoverTingContent *option = [[CoverTingContent alloc] init];
         //: option.session = session;
         option.session = session;
@@ -246,13 +246,13 @@ HelicopterData app_sexyNameMessage = (HelicopterData){220, (Byte []){180, 185, 1
 //: - (void)setAvatarByMessage:(NIMMessage *)message
 - (void)setStyleMessage:(NIMMessage *)message
 {
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
     CoverTingContent *option = [[CoverTingContent alloc] init];
     //: option.message = message;
     option.message = message;
     //: NSString *from = message.from;
     NSString *from = message.from;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:from option:option];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:from option:option];
     TingMessage *info = [[ButtonKit sheerOption] past:from skinColour_strong:option];
     //: [self setImageWithUrlString:info.avatarUrlString placeholderImage:info.avatarImage options:0];
     [self copernicanSystem:info.avatarUrlString container:info.avatarImage nameMentalPictureWithBucketAuditoryImagePlaceholderOptions:0];
@@ -288,7 +288,7 @@ HelicopterData app_sexyNameMessage = (HelicopterData){220, (Byte []){180, 185, 1
     __block NSURL *targetUrl = nil;
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [[FFFKitUrlManager shareManager] queryQriginalUrlWithShortUrl:urlString completion:^(NSString *originalUrl, NSError *error) {
+    //: [[WatchKitUrlManager shareManager] queryQriginalUrlWithShortUrl:urlString completion:^(NSString *originalUrl, NSError *error) {
     [[KitShow cornerShare] valueCompletion:urlString beyondScreenForce:^(NSString *originalUrl, NSError *error) {
         //: if (urlString && !error) {
         if (urlString && !error) {

@@ -99,11 +99,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTableAdapter.h"
+//: #import "WatchSessionTableAdapter.h"
 #import "QuickHearingArrayAdapter.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFMessageCellFactory.h"
+//: #import "WatchMessageCellFactory.h"
 #import "PinFactory.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -112,16 +112,16 @@
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
 
-//: @interface FFFSessionTableAdapter()
+//: @interface WatchSessionTableAdapter()
 @interface QuickHearingArrayAdapter()
 
-//: @property (nonatomic,strong) FFFMessageCellFactory *cellFactory;
+//: @property (nonatomic,strong) WatchMessageCellFactory *cellFactory;
 @property (nonatomic,strong) PinFactory *cellFactory;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTableAdapter
+//: @implementation WatchSessionTableAdapter
 @implementation QuickHearingArrayAdapter
 
 //: - (instancetype)init
@@ -131,7 +131,7 @@
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _cellFactory = [[FFFMessageCellFactory alloc] init];
+        //: _cellFactory = [[WatchMessageCellFactory alloc] init];
         _cellFactory = [[PinFactory alloc] init];
     }
     //: return self;
@@ -159,20 +159,20 @@
     UITableViewCell *cell = nil;
     //: id model = [[self.interactor items] objectAtIndex:indexPath.row];
     id model = [[self.interactor provider] objectAtIndex:indexPath.row];
-    //: if ([model isKindOfClass:[FFFMessageModel class]]) {
+    //: if ([model isKindOfClass:[WatchMessageModel class]]) {
     if ([model isKindOfClass:[CentralProcessingUnitModel class]]) {
         //: cell = [self.cellFactory cellInTable:tableView
         cell = [self.cellFactory restoreMode:tableView
                                    //: forMessageMode:model];
                                    table:model];
-        //: [(FFFMessageCell *)cell setDelegate:self.delegate];
+        //: [(WatchMessageCell *)cell setDelegate:self.delegate];
         [(ModelViewCell *)cell setDelegate:self.delegate];
         //: [self.interactor willDisplayMessageModel:model];
         [self.interactor everyLast:model];
-        //: [(FFFMessageCell *)cell refreshData:model];
+        //: [(WatchMessageCell *)cell refreshData:model];
         [(ModelViewCell *)cell accumulationRestore:model];
     }
-    //: else if ([model isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([model isKindOfClass:[WatchTimestampModel class]])
     else if ([model isKindOfClass:[EnableName class]])
     {
         //: cell = [self.cellFactory cellInTable:tableView
@@ -222,10 +222,10 @@
     CGFloat cellHeight = 0;
     //: id modelInArray = [[self.interactor items] objectAtIndex:indexPath.row];
     id modelInArray = [[self.interactor provider] objectAtIndex:indexPath.row];
-    //: if ([modelInArray isKindOfClass:[FFFMessageModel class]])
+    //: if ([modelInArray isKindOfClass:[WatchMessageModel class]])
     if ([modelInArray isKindOfClass:[CentralProcessingUnitModel class]])
     {
-        //: FFFMessageModel *model = (FFFMessageModel *)modelInArray;
+        //: WatchMessageModel *model = (WatchMessageModel *)modelInArray;
         CentralProcessingUnitModel *model = (CentralProcessingUnitModel *)modelInArray;
 
         // 撤回的消息 发送自定义消息
@@ -338,10 +338,10 @@
 
 
     }
-    //: else if ([modelInArray isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([modelInArray isKindOfClass:[WatchTimestampModel class]])
     else if ([modelInArray isKindOfClass:[EnableName class]])
     {
-        //: cellHeight = [(FFFTimestampModel *)modelInArray height];
+        //: cellHeight = [(WatchTimestampModel *)modelInArray height];
         cellHeight = [(EnableName *)modelInArray height];
     }
     //: else

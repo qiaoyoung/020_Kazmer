@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WatchCardDataSourceProtocol.h"
+#import "WatchCardDataSourceProtocol.h"
 
-//: @interface FFFCardOperationItem : NSObject<FFFKitCardHeaderData>
-@interface TimeImage : NSObject<FFFKitCardHeaderData>
+//: @interface WatchCardOperationItem : NSObject<WatchKitCardHeaderData>
+@interface TimeImage : NSObject<WatchKitCardHeaderData>
 
 //: @property(nonatomic,copy) NSString *title;
 @property(nonatomic,copy) NSString *title;

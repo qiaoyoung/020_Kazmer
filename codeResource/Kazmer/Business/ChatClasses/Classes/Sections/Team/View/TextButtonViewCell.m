@@ -62,25 +62,25 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberCardHeaderCell.h"
+//: #import "WatchTeamMemberCardHeaderCell.h"
 #import "TextButtonViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WatchUsrInfoData.h"
+#import "WatchUsrInfoData.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 
-//: @interface FFFTeamMemberCardHeaderCell()
+//: @interface WatchTeamMemberCardHeaderCell()
 @interface TextButtonViewCell()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatarView;
+//: @property (nonatomic,strong) WatchAvatarImageView *avatarView;
 @property (nonatomic,strong) RecordControl *avatarView;
 
 //: @property (nonatomic,strong) UILabel *nickLabel;
@@ -89,7 +89,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamMemberCardHeaderCell
+//: @implementation WatchTeamMemberCardHeaderCell
 @implementation TextButtonViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -110,7 +110,7 @@
 
 //: - (void)refreshData:(NIMCommonTableRow *)rowData tableView:(UITableView *)tableView;{
 - (void)light:(CommonRow *)rowData manager:(UITableView *)tableView;{
-    //: FFFKitInfo *userInfo = rowData.extraInfo[@"user"];
+    //: WatchKitInfo *userInfo = rowData.extraInfo[@"user"];
     TingMessage *userInfo = rowData.extraInfo[[StrangeMarkData sharedInstance].kTableRegnantPath];
     //: NSLog(@"userInfo===%@",userInfo);
     //: NSURL *avatarURL;
@@ -146,12 +146,12 @@
 }
 
 
-//: - (FFFAvatarImageView *)avatarView
+//: - (WatchAvatarImageView *)avatarView
 - (RecordControl *)avatarView
 {
     //: if (!_avatarView) {
     if (!_avatarView) {
-        //: _avatarView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(125, 52, 70, 70)];
+        //: _avatarView = [[WatchAvatarImageView alloc] initWithFrame:CGRectMake(125, 52, 70, 70)];
         _avatarView = [[RecordControl alloc] initWithFrame:CGRectMake(125, 52, 70, 70)];
         //: _avatarView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
         _avatarView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;

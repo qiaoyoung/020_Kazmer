@@ -72,7 +72,7 @@ Byte appAtFormat[] = {13, 7, 50, 11, 45, 58, 60, 40, 82, 70, 150, 85, 98, 98, 98
 //: - (void)refreshWithModel:(NIMTeamMember *)member
 - (void)domain:(NIMTeamMember *)member
 {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:member.userId skinColour_strong:nil];
     //: self.titleLabel.text = info.showName;
     self.titleLabel.text = info.showName;

@@ -70,11 +70,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactPickedView.h"
+//: #import "WatchContactPickedView.h"
 #import "ColorPositionView.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
@@ -89,7 +89,7 @@ enum RefreshType
 //: };
 };
 
-//: @interface NIMContactSelectAvatarView : FFFAvatarImageView
+//: @interface NIMContactSelectAvatarView : WatchAvatarImageView
 @interface BackgroundControl : RecordControl
 
 //: @property (nonatomic, strong) NSString *userId;
@@ -125,7 +125,7 @@ enum RefreshType
 @end
 
 
-//: @interface FFFContactPickedView()
+//: @interface WatchContactPickedView()
 @interface ColorPositionView()
 
 //: @property (nonatomic, strong) UIScrollView *scrollView;
@@ -140,7 +140,7 @@ enum RefreshType
 //: @end
 @end
 
-//: @implementation FFFContactPickedView
+//: @implementation WatchContactPickedView
 @implementation ColorPositionView
 
 //: - (instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -284,7 +284,7 @@ enum RefreshType
 }
 
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info
+//: - (void)addMemberInfo:(WatchKitInfo *)info
 - (void)colorTo:(TingMessage *)info
 {
 
@@ -300,7 +300,7 @@ enum RefreshType
     [self untouched:avatar];
 }
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info
+//: - (void)removeMemberInfo:(WatchKitInfo *)info
 - (void)someShow:(TingMessage *)info
 {
     //: NSInteger i = 0;

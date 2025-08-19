@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCellFactory.h"
+//: #import "WatchMessageCellFactory.h"
 #import "PinFactory.h"
 //: #import "NTESTimestampCell.h"
 #import "SessionCompartmentTimestampCell.h"
@@ -19,17 +19,17 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESMessageCellFactory : FFFMessageCellFactory
+//: @interface NTESMessageCellFactory : WatchMessageCellFactory
 @interface KeyCellFactory : PinFactory
 
 //: - (NTESMergeMessageCell *)ntesCellInTable:(UITableView*)tableView
 - (MessageCell *)max:(UITableView*)tableView
-                           //: forMessageMode:(FFFMessageModel *)model;
+                           //: forMessageMode:(WatchMessageModel *)model;
                            with:(CentralProcessingUnitModel *)model;
 
 //: - (NTESTimestampCell *)ntesCellInTable:(UITableView *)tableView
 - (SessionCompartmentTimestampCell *)compartment:(UITableView *)tableView
-                          //: forTimeModel:(FFFTimestampModel *)model;
+                          //: forTimeModel:(WatchTimestampModel *)model;
                           valueIn:(EnableName *)model;
 
 //: @end

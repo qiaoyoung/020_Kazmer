@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 
-//: @implementation FFFKitInfoFetchOption
+//: @implementation WatchKitInfoFetchOption
 @implementation CoverTingContent
 
 //: @end

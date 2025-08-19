@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @protocol FFFKitMediaPickerDelegate <NSObject>
+//: @protocol WatchKitMediaPickerDelegate <NSObject>
 @protocol ColorTitle <NSObject>
 
 //: - (void)onPickerSelectedWithType:(PHAssetMediaType)type

@@ -18,12 +18,12 @@ Byte k_removeTitle[] = {41, 20, 11, 130, 5, 3, 38, 63, 105, 173, 114, 114, 101, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamInfoData.h"
+//: #import "WatchTeamInfoData.h"
 #import "FormattingBubble.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "WatchSpellingCenter.h"
 #import "ViewSize.h"
 
-//: @implementation FFFTeamInfoData
+//: @implementation WatchTeamInfoData
 @implementation FormattingBubble
 
 //: - (instancetype)initWithTeam:(NIMTeam *)team{
@@ -45,7 +45,7 @@ Byte k_removeTitle[] = {41, 20, 11, 130, 5, 3, 38, 63, 105, 173, 114, 114, 101, 
 
 //: - (NSString *)groupTitle{
 - (NSString *)need{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.teamName].capitalizedString;
+    //: NSString *title = [[WatchSpellingCenter sharedCenter] firstLetter:self.teamName].capitalizedString;
     NSString *title = [[ViewSize stormCenter] atLetter:self.teamName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -69,7 +69,7 @@ Byte k_removeTitle[] = {41, 20, 11, 130, 5, 3, 38, 63, 105, 173, 114, 114, 101, 
 
 //: - (id)sortKey{
 - (id)off{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.teamName].shortSpelling;
+    //: return [[WatchSpellingCenter sharedCenter] spellingForString:self.teamName].shortSpelling;
     return [[ViewSize stormCenter] format:self.teamName].shortSpelling;
 }
 

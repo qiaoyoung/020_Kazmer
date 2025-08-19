@@ -120,7 +120,7 @@
 // __M_A_C_R_O__
 //: #import "NTESCustomSysNotificationSender.h"
 #import "BarEmptyView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 //: #import "NTESBundleSetting.h"
 #import "NameTing.h"
@@ -298,11 +298,11 @@
     notification.sendToOnlineUsersOnly = NO;
     //: notification.env = [[NTESBundleSetting sharedConfig] messageEnv];
     notification.env = [[NameTing pin] from];
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
     CoverTingContent *option = [[CoverTingContent alloc] init];
     //: option.session = [NIMSession session:teamId type:NIMSessionTypeTeam];
     option.session = [NIMSession session:teamId type:NIMSessionTypeTeam];
-    //: FFFKitInfo *me = [[MyUserKit sharedKit] infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option];
+    //: WatchKitInfo *me = [[MyUserKit sharedKit] infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option];
     TingMessage *me = [[ButtonKit sheerOption] past:[NIMSDK sharedSDK].loginManager.currentAccount skinColour_strong:option];
 
     //: notification.apnsContent = [NSString stringWithFormat:@"%@%@",me.showName,@"正在呼叫您".ntes_localized];

@@ -9,66 +9,66 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellLayoutConfig.h"
+//: #import "WatchCellLayoutConfig.h"
 #import "PinFrame.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "WatchSessionUnknowContentView.h"
 #import "MasterControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WatchBaseSessionContentConfig.h"
+#import "WatchBaseSessionContentConfig.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFCellLayoutConfig()
+//: @interface WatchCellLayoutConfig()
 @interface PinFrame()
 
 //: @end
 @end
 
-//: @implementation FFFCellLayoutConfig
+//: @implementation WatchCellLayoutConfig
 @implementation PinFrame
 
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth{
+//: - (CGSize)contentSize:(WatchMessageModel *)model cellWidth:(CGFloat)cellWidth{
 - (CGSize)event:(CentralProcessingUnitModel *)model size:(CGFloat)cellWidth{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[WatchSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<TableAccumulationReplacement>config = [[AccumulationFactory commonValue] feel:model.message];
     //: return [config contentSize:cellWidth message:model.message];
     return [config year:cellWidth table:model.message];
 }
 
-//: - (NSString *)cellContent:(FFFMessageModel *)model{
+//: - (NSString *)cellContent:(WatchMessageModel *)model{
 - (NSString *)availableName:(CentralProcessingUnitModel *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[WatchSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<TableAccumulationReplacement>config = [[AccumulationFactory commonValue] feel:model.message];
     //: NSString *cellContent = [config cellContent:model.message];
     NSString *cellContent = [config textDistance:model.message];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"WatchSessionUnknowContentView";
     return cellContent.length ? cellContent : @"MasterControl";
 }
 
 
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)contentViewInsets:(WatchMessageModel *)model{
 - (UIEdgeInsets)media:(CentralProcessingUnitModel *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[WatchSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<TableAccumulationReplacement>config = [[AccumulationFactory commonValue] feel:model.message];
     //: return [config contentViewInsets:model.message];
     return [config contentInsets:model.message];
 }
 
 
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)cellInsets:(WatchMessageModel *)model
 - (UIEdgeInsets)month:(CentralProcessingUnitModel *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"WatchSessionNotificationContentView"]) {
     if ([[self availableName:model] isEqualToString:@"AssemblageControl"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -99,19 +99,19 @@
 
 }
 
-//: - (UIEdgeInsets)replyContentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)replyContentViewInsets:(WatchMessageModel *)model{
 - (UIEdgeInsets)viewInsets:(CentralProcessingUnitModel *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[WatchSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<TableAccumulationReplacement>config = [[AccumulationFactory commonValue] title:model.repliedMessage];
     //: return [config contentViewInsets:model.repliedMessage];
     return [config contentInsets:model.repliedMessage];
 }
 
 
-//: - (UIEdgeInsets)replyCellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)replyCellInsets:(WatchMessageModel *)model
 - (UIEdgeInsets)icon:(CentralProcessingUnitModel *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"WatchSessionNotificationContentView"]) {
     if ([[self availableName:model] isEqualToString:@"AssemblageControl"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -142,25 +142,25 @@
 
 }
 
-//: - (CGSize)replyContentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth {
+//: - (CGSize)replyContentSize:(WatchMessageModel *)model cellWidth:(CGFloat)cellWidth {
 - (CGSize)closeWidth:(CentralProcessingUnitModel *)model userManager:(CGFloat)cellWidth {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[WatchSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<TableAccumulationReplacement>config = [[AccumulationFactory commonValue] title:model.repliedMessage];
     //: return [config contentSize:cellWidth message:model.repliedMessage];
     return [config year:cellWidth table:model.repliedMessage];
 }
 
-//: - (NSString *)replyContent:(FFFMessageModel *)model {
+//: - (NSString *)replyContent:(WatchMessageModel *)model {
 - (NSString *)with:(CentralProcessingUnitModel *)model {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[WatchSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<TableAccumulationReplacement>config = [[AccumulationFactory commonValue] title:model.repliedMessage];
     //: NSString *cellContent = [config cellContent:model.repliedMessage];
     NSString *cellContent = [config textDistance:model.repliedMessage];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"WatchSessionUnknowContentView";
     return cellContent.length ? cellContent : @"MasterControl";
 }
 
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model
+//: - (BOOL)shouldShowAvatar:(WatchMessageModel *)model
 - (BOOL)presentActivity:(CentralProcessingUnitModel *)model
 {
     //: return [[MyUserKit sharedKit].config setting:model.message].showAvatar;
@@ -168,7 +168,7 @@
 }
 
 
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowNickName:(WatchMessageModel *)model{
 - (BOOL)send:(CentralProcessingUnitModel *)model{
     //: NIMMessage *message = model.message;
     NIMMessage *message = model.message;
@@ -198,28 +198,28 @@
 }
 
 
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model
+//: - (BOOL)shouldShowLeft:(WatchMessageModel *)model
 - (BOOL)statusLeft:(CentralProcessingUnitModel *)model
 {
     //: return !model.message.isOutgoingMsg;
     return !model.message.isOutgoingMsg;
 }
 
-//: - (CGPoint)avatarMargin:(FFFMessageModel *)model
+//: - (CGPoint)avatarMargin:(WatchMessageModel *)model
 - (CGPoint)line:(CentralProcessingUnitModel *)model
 {
     //: return CGPointMake(8.f, 0.f);
     return CGPointMake(8.f, 0.f);
 }
 
-//: - (CGSize)avatarSize:(FFFMessageModel *)model
+//: - (CGSize)avatarSize:(WatchMessageModel *)model
 - (CGSize)magnitudeernalRepresentation:(CentralProcessingUnitModel *)model
 {
     //: return CGSizeMake(36, 36);
     return CGSizeMake(36, 36);
 }
 
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model
+//: - (CGPoint)nickNameMargin:(WatchMessageModel *)model
 - (CGPoint)showTotal:(CentralProcessingUnitModel *)model
 {
     //: return [self shouldShowAvatar:model] ? CGPointMake([self avatarSize:model].width + 15.f, -3.f) : CGPointMake(10.f, -3.f);
@@ -227,21 +227,21 @@
 }
 
 
-//: - (NSArray *)customViews:(FFFMessageModel *)model
+//: - (NSArray *)customViews:(WatchMessageModel *)model
 - (NSArray *)cellViews:(CentralProcessingUnitModel *)model
 {
     //: return nil;
     return nil;
 }
 
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model
+//: - (BOOL)disableRetryButton:(WatchMessageModel *)model
 - (BOOL)emptyPower:(CentralProcessingUnitModel *)model
 {
 
     //: if (model.message.session.sessionType == NIMSessionTypeTeam)
     if (model.message.session.sessionType == NIMSessionTypeTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig statusLeft:model];
@@ -261,7 +261,7 @@
     //: else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig statusLeft:model];
@@ -294,10 +294,10 @@
     }
 }
 
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model
+//: - (BOOL)shouldDisplayBubbleBackground:(WatchMessageModel *)model
 - (BOOL)clickBackground:(CentralProcessingUnitModel *)model
 {
-    //: id<CCCSessionContentConfig> config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig> config = [[WatchSessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<TableAccumulationReplacement> config = [[AccumulationFactory commonValue] feel:model.message];
     //: if ([config respondsToSelector:@selector(enableBackgroundBubbleView:)])
     if ([config respondsToSelector:@selector(threadded:)])

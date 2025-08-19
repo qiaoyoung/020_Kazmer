@@ -9,11 +9,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "WatchGroupedUsrInfo.h"
+#import "WatchGroupedUsrInfo.h"
+//: #import "WatchSpellingCenter.h"
 #import "ViewSize.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 
 //: @interface NIMGroupUser()
@@ -21,7 +21,7 @@
 
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WatchKitInfo *info;
 @property (nonatomic,strong) TingMessage *info;
 
 //: @end
@@ -47,7 +47,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)need{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    //: NSString *title = [[WatchSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[ViewSize stormCenter] atLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -76,7 +76,7 @@
 
 //: - (id)sortKey{
 - (id)off{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    //: return [[WatchSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[ViewSize stormCenter] format:self.info.showName].shortSpelling;
 }
 
@@ -102,7 +102,7 @@
 
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WatchKitInfo *info;
 @property (nonatomic,strong) TingMessage *info;
 
 //: @end
@@ -121,7 +121,7 @@
     if (self) {
         //: _userId = userId;
         _userId = userId;
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
         CoverTingContent *option = [[CoverTingContent alloc] init];
         //: option.session = session;
         option.session = session;
@@ -134,7 +134,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)need{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    //: NSString *title = [[WatchSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
     NSString *title = [[ViewSize stormCenter] atLetter:self.representation].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -151,7 +151,7 @@
 
 //: - (id)sortKey{
 - (id)off{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
+    //: return [[WatchSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
     return [[ViewSize stormCenter] format:self.representation].shortSpelling;
 }
 
@@ -187,7 +187,7 @@
 
 //: @property (nonatomic,copy) NSString *teamId;
 @property (nonatomic,copy) NSString *teamId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WatchKitInfo *info;
 @property (nonatomic,strong) TingMessage *info;
 
 //: @end
@@ -222,7 +222,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)need{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    //: NSString *title = [[WatchSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
     NSString *title = [[ViewSize stormCenter] atLetter:self.representation].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -239,7 +239,7 @@
 
 //: - (id)sortKey{
 - (id)off{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
+    //: return [[WatchSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
     return [[ViewSize stormCenter] format:[self representation]].shortSpelling;
 }
 

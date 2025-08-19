@@ -195,7 +195,7 @@ typedef struct {
 #import "OldUtil.h"
 //: #import "M80AttributedLabel.h"
 #import "QuickNameView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 
 //: @interface NTESRedPacketTipAttachment()
@@ -282,7 +282,7 @@ typedef struct {
     //: NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     // 领取别人的红包
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
     CoverTingContent *option = [[CoverTingContent alloc] init];
     //: option.message = self.message;
     option.message = self.message;
@@ -306,7 +306,7 @@ typedef struct {
     //: else if ([currentUserId isEqualToString:self.openPacketId])
     else if ([currentUserId isEqualToString:self.openPacketId])
     {
-        //: FFFKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
+        //: WatchKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
         TingMessage * sendUserInfo = [[ButtonKit sheerOption] past:self.sendPacketId skinColour_strong:option];
         //: NSString * name = sendUserInfo.showName;
         NSString * name = sendUserInfo.showName;
@@ -324,7 +324,7 @@ typedef struct {
     //: else if ([currentUserId isEqualToString:self.sendPacketId])
     else if ([currentUserId isEqualToString:self.sendPacketId])
     {
-        //: FFFKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
+        //: WatchKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
         TingMessage * openUserInfo = [[ButtonKit sheerOption] past:self.openPacketId skinColour_strong:option];
         //: NSString * name = openUserInfo.showName;
         NSString * name = openUserInfo.showName;

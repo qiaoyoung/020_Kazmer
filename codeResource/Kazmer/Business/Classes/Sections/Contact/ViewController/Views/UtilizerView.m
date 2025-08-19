@@ -118,7 +118,7 @@ typedef struct {
 #import "UtilizerView.h"
 //: #import "NTESSessionUtil.h"
 #import "OldUtil.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -209,7 +209,7 @@ typedef struct {
     self.titleLabel.text = member.representation;
     //: self.memberId = [member memberId];
     self.memberId = [member show];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:self.memberId skinColour_strong:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
@@ -226,7 +226,7 @@ typedef struct {
     self.titleLabel.text = team.teamName;
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] pressMedia:self.memberId sizeOption:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

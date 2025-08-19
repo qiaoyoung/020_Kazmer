@@ -153,12 +153,12 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRegisterNickNameViewController.h"
+//: #import "WatchRegisterNickNameViewController.h"
 #import "ObjectViewController.h"
-//: #import "FFFRegisterAvatarViewController.h"
+//: #import "WatchRegisterAvatarViewController.h"
 #import "AvatarViewController.h"
 
-//: @interface FFFRegisterNickNameViewController ()<UITextFieldDelegate>
+//: @interface WatchRegisterNickNameViewController ()<UITextFieldDelegate>
 @interface ObjectViewController ()<UITextFieldDelegate>
 
 //: @property (nonatomic, strong) UIButton *closeBtn;
@@ -195,7 +195,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFRegisterNickNameViewController
+//: @implementation WatchRegisterNickNameViewController
 @implementation ObjectViewController
 
 //: - (void)viewDidLoad {
@@ -242,7 +242,7 @@ typedef struct {
     titleLabel.textColor = [UIColor blackColor];
     //: titleLabel.font = [UIFont boldSystemFontOfSize:24];
     titleLabel.font = [UIFont boldSystemFontOfSize:24];
-    //: titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+    //: titleLabel.text = [WatchLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
     titleLabel.text = [PaintedNaturalLanguageTo exhibit:[[RugData sharedInstance] dream_timeFreedUrl]];
     //: titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -256,7 +256,7 @@ typedef struct {
     self.accountLabel.font = [UIFont systemFontOfSize:14];
     //: self.accountLabel.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     self.accountLabel.textColor = [UIColor min:[[RugData sharedInstance] kNameText]];
-    //: self.accountLabel.text = [FFFLanguageManager getTextWithKey:@"register_good_nick"];
+    //: self.accountLabel.text = [WatchLanguageManager getTextWithKey:@"register_good_nick"];
     self.accountLabel.text = [PaintedNaturalLanguageTo exhibit:[[RugData sharedInstance] userStrangeMessage]];
     //: self.accountLabel.textAlignment = NSTextAlignmentCenter;
     self.accountLabel.textAlignment = NSTextAlignmentCenter;
@@ -294,7 +294,7 @@ typedef struct {
     self.accountTextfield.font = [UIFont systemFontOfSize:16];
     //: self.accountTextfield.textColor = [UIColor colorWithHexString:@"#333333"];
     self.accountTextfield.textColor = [UIColor min:[[RugData sharedInstance] appConvinceMessage]];
-    //: self.accountTextfield.placeholder = [FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"];
+    //: self.accountTextfield.placeholder = [WatchLanguageManager getTextWithKey:@"register_avtivity3_nick"];
     self.accountTextfield.placeholder = [PaintedNaturalLanguageTo exhibit:[[RugData sharedInstance] user_membershipId]];
     //: self.accountTextfield.delegate = self;
     self.accountTextfield.delegate = self;
@@ -323,7 +323,7 @@ typedef struct {
     self.registButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [self.registButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+    //: [self.registButton setTitle:[WatchLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
     [self.registButton setTitle:[PaintedNaturalLanguageTo exhibit:[[RugData sharedInstance] showCloseMsg]] forState:UIControlStateNormal];
     //: [self.view addSubview:self.registButton];
     [self.view addSubview:self.registButton];
@@ -337,7 +337,7 @@ typedef struct {
 {
     //: if (_accountTextfield.text.length == 0) {
     if (_accountTextfield.text.length == 0) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"]
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"register_avtivity3_nick"]
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[[RugData sharedInstance] user_membershipId]]
                     //: duration:2.0
                     duration:2.0
@@ -348,7 +348,7 @@ typedef struct {
     }
     //: if ([_accountTextfield.text isEqualToString:self.accountName]) {
     if ([_accountTextfield.text isEqualToString:self.accountName]) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"nickname_same_account"]
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"nickname_same_account"]
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[[RugData sharedInstance] mainCompanyMsg]]
                     //: duration:2.0
                     duration:2.0
@@ -359,7 +359,7 @@ typedef struct {
     }
 
 
-    //: FFFRegisterAvatarViewController *vc = [[FFFRegisterAvatarViewController alloc]init];
+    //: WatchRegisterAvatarViewController *vc = [[WatchRegisterAvatarViewController alloc]init];
     AvatarViewController *vc = [[AvatarViewController alloc]init];
     //: vc.nickName = self.accountTextfield.text;
     vc.nickName = self.accountTextfield.text;

@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitEvent.h"
+//: #import "WatchKitEvent.h"
 #import "CoverShowEvent.h"
 
-//: NSString *const FFFKitEventNameTapContent = @"FFFKitEventNameTapContent";
-NSString *const appCommentStr = @"FFFKitEventNameTapContent";
-//: NSString *const FFFKitEventNameTapLabelLink = @"FFFKitEventNameTapLabelLink";
-NSString *const dream_topMessage = @"FFFKitEventNameTapLabelLink";
-//: NSString *const FFFKitEventNameTapAudio = @"FFFKitEventNameTapAudio";
-NSString *const m_originalMsg = @"FFFKitEventNameTapAudio";
+//: NSString *const WatchKitEventNameTapContent = @"WatchKitEventNameTapContent";
+NSString *const appCommentStr = @"WatchKitEventNameTapContent";
+//: NSString *const WatchKitEventNameTapLabelLink = @"WatchKitEventNameTapLabelLink";
+NSString *const dream_topMessage = @"WatchKitEventNameTapLabelLink";
+//: NSString *const WatchKitEventNameTapAudio = @"WatchKitEventNameTapAudio";
+NSString *const m_originalMsg = @"WatchKitEventNameTapAudio";
 
-//: NSString *const FFFKitEventNameTapRepliedContent = @"FFFKitEventNameTapRepliedContent";
-NSString *const kKitValue = @"FFFKitEventNameTapRepliedContent";
+//: NSString *const WatchKitEventNameTapRepliedContent = @"WatchKitEventNameTapRepliedContent";
+NSString *const kKitValue = @"WatchKitEventNameTapRepliedContent";
 
 
-//: @implementation FFFKitEvent
+//: @implementation WatchKitEvent
 @implementation CoverShowEvent
 
 //: @end

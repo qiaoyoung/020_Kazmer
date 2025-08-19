@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFQuickCommentCell.h"
+//: #import "WatchQuickCommentCell.h"
 #import "BarButtonView.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WatchKitQuickCommentUtil.h"
 #import "NameUtilPath.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
@@ -22,7 +22,7 @@
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+ButtonKit.h"
 
-//: @interface FFFQuickCommentCell ()
+//: @interface WatchQuickCommentCell ()
 @interface BarButtonView ()
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;
@@ -33,7 +33,7 @@
 //: @end
 @end
 
-//: @implementation FFFQuickCommentCell
+//: @implementation WatchQuickCommentCell
 @implementation BarButtonView
 
 
@@ -45,7 +45,7 @@
     //: if (self)
     if (self)
     {
-        //: _textLabel = [FFFKitQuickCommentUtil newCommentLabel];
+        //: _textLabel = [WatchKitQuickCommentUtil newCommentLabel];
         _textLabel = [NameUtilPath table];
         //: [self.contentView addSubview:_textLabel];
         [self.contentView addSubview:_textLabel];
@@ -66,12 +66,12 @@
     return self;
 }
 
-//: - (void)refreshWithData:(NSArray *)comments model:(FFFMessageModel *)data
+//: - (void)refreshWithData:(NSArray *)comments model:(WatchMessageModel *)data
 - (void)beyondQuantity:(NSArray *)comments image:(CentralProcessingUnitModel *)data
 {
-    //: self.textLabel.textColor = data.shouldShowLeft ? [UIColor colorWithHex:0x000000 alpha:1] : [UIColor colorWithHex:0xFFFFFF alpha:1];
+    //: self.textLabel.textColor = data.shouldShowLeft ? [UIColor colorWithHex:0x000000 alpha:1] : [UIColor colorWithHex:0xFFFWatch alpha:1];
     self.textLabel.textColor = data.shouldShowLeft ? [UIColor threadColor:0x000000 sureAcross:1] : [UIColor threadColor:0xFFFFFF sureAcross:1];
-    //: [self.textLabel nim_setText:[FFFKitQuickCommentUtil commentsContent:comments]];
+    //: [self.textLabel nim_setText:[WatchKitQuickCommentUtil commentsContent:comments]];
     [self.textLabel stay:[NameUtilPath arrayBy:comments]];
 }
 

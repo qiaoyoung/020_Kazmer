@@ -48,31 +48,31 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTimestampCell.h"
+//: #import "WatchSessionTimestampCell.h"
 #import "ObjectViewCell.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "WatchCellConfig.h"
+#import "WatchCellConfig.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFTimestampModel.h"
+//: #import "WatchTimestampModel.h"
 #import "EnableName.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFSessionTimestampCell()
+//: @interface WatchSessionTimestampCell()
 @interface ObjectViewCell()
 
-//: @property (nonatomic,strong) FFFTimestampModel *model;
+//: @property (nonatomic,strong) WatchTimestampModel *model;
 @property (nonatomic,strong) EnableName *model;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTimestampCell
+//: @implementation WatchSessionTimestampCell
 @implementation ObjectViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -120,7 +120,7 @@
 }
 
 
-//: - (void)refreshData:(FFFTimestampModel *)data{
+//: - (void)refreshData:(WatchTimestampModel *)data{
 - (void)contextData:(EnableName *)data{
     //: if (self.model == data) {
     if (self.model == data) {
@@ -131,16 +131,16 @@
     self.model = data;
     //: if([self checkData]){
     if([self rawDataShare]){
-        //: FFFTimestampModel *model = (FFFTimestampModel *)data;
+        //: WatchTimestampModel *model = (WatchTimestampModel *)data;
         EnableName *model = (EnableName *)data;
-        //: [_timeLabel setText:[FFFKitUtil showTime:model.messageTime showDetail:YES]];
+        //: [_timeLabel setText:[WatchKitUtil showTime:model.messageTime showDetail:YES]];
         [_timeLabel setText:[ObjectUtil pinTextDetail:model.messageTime keyDoing:YES]];
     }
 }
 
 //: - (BOOL)checkData{
 - (BOOL)rawDataShare{
-    //: return [self.model isKindOfClass:[FFFTimestampModel class]];
+    //: return [self.model isKindOfClass:[WatchTimestampModel class]];
     return [self.model isKindOfClass:[EnableName class]];
 }
 

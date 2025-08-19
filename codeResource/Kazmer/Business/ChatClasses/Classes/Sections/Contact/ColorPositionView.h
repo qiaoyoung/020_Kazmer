@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFKitInfo;
+//: @class WatchKitInfo;
 @class TingMessage;
 
-//: @protocol FFFContactPickedViewDelegate <NSObject>
+//: @protocol WatchContactPickedViewDelegate <NSObject>
 @protocol TingDelegate <NSObject>
 
 //: - (void)removeUser:(NSString *)userId;
@@ -24,16 +24,16 @@
 //: @end
 @end
 
-//: @interface FFFContactPickedView : UIView <UIScrollViewDelegate>
+//: @interface WatchContactPickedView : UIView <UIScrollViewDelegate>
 @interface ColorPositionView : UIView <UIScrollViewDelegate>
 
-//: @property (nonatomic, weak) id<FFFContactPickedViewDelegate> delegate;
+//: @property (nonatomic, weak) id<WatchContactPickedViewDelegate> delegate;
 @property (nonatomic, weak) id<TingDelegate> delegate;
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info;
+//: - (void)removeMemberInfo:(WatchKitInfo *)info;
 - (void)someShow:(TingMessage *)info;
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info;
+//: - (void)addMemberInfo:(WatchKitInfo *)info;
 - (void)colorTo:(TingMessage *)info;
 
 //: @end

@@ -170,39 +170,39 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectViewController.h"
+//: #import "WatchContactSelectViewController.h"
 #import "NominateViewController.h"
-//: #import "FFFContactSelectTabView.h"
+//: #import "WatchContactSelectTabView.h"
 #import "SpatialArrangementImageWeltanschauungView.h"
-//: #import "FFFContactPickedView.h"
+//: #import "WatchContactPickedView.h"
 #import "ColorPositionView.h"
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
+//: #import "WatchGroupedUsrInfo.h"
+#import "WatchGroupedUsrInfo.h"
 //: #import "UserGroupedData.h"
 #import "ObjectImage.h"
-//: #import "FFFContactDataCell.h"
+//: #import "WatchContactDataCell.h"
 #import "ContactViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSetGroupNameView.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
+//: #import "WatchSetGroupNameView.h"
 #import "VanguardView.h"
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "WatchGroupAvatarViewController.h"
 #import "OptionViewController.h"
 
-//: @interface FFFContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, FFFContactPickedViewDelegate>{
+//: @interface WatchContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, WatchContactPickedViewDelegate>{
 @interface NominateViewController ()<UITableViewDataSource, UITableViewDelegate, TingDelegate>{
     //: NSMutableArray *_selectecContacts;
     NSMutableArray *_selectecContacts;
 }
 //: @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) UITableView *tableView;
-//: @property(nonatomic, strong) FFFSetGroupNameView *setGroupnameView;
+//: @property(nonatomic, strong) WatchSetGroupNameView *setGroupnameView;
 @property(nonatomic, strong) VanguardView *setGroupnameView;
 //: @property(nonatomic, strong) UIView *headerview;
 @property(nonatomic, strong) UIView *headerview;
@@ -213,7 +213,7 @@
 //: @property(nonatomic, strong) UIImage *headPortrait;
 @property(nonatomic, strong) UIImage *headPortrait;
 
-//: @property (strong, nonatomic) FFFContactSelectTabView *selectIndicatorView;
+//: @property (strong, nonatomic) WatchContactSelectTabView *selectIndicatorView;
 @property (strong, nonatomic) SpatialArrangementImageWeltanschauungView *selectIndicatorView;
 
 //: @property (nonatomic, assign) NSInteger maxSelectCount;
@@ -230,7 +230,7 @@
 //: @end
 @end
 
-//: @implementation FFFContactSelectViewController
+//: @implementation WatchContactSelectViewController
 @implementation NominateViewController
 
 //: - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -247,7 +247,7 @@
     return self;
 }
 
-//: - (instancetype)initWithConfig:(id<FFFContactSelectConfig>) config{
+//: - (instancetype)initWithConfig:(id<WatchContactSelectConfig>) config{
 - (instancetype)initWithColorPlace:(id<FindRecent>) config{
     //: self = [self initWithNibName:nil bundle:nil];
     self = [self initWithNibName:nil bundle:nil];
@@ -346,7 +346,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"select_contact"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[SkiManData sharedInstance].k_repairAddStr];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -468,7 +468,7 @@
     [vc presentViewController:[[UINavigationController alloc] initWithRootViewController:self] animated:YES completion:nil];
 }
 
-//: - (void)setConfig:(id<FFFContactSelectConfig>)config{
+//: - (void)setConfig:(id<WatchContactSelectConfig>)config{
 - (void)setConfig:(id<FindRecent>)config{
     //: _config = config;
     _config = config;
@@ -510,7 +510,7 @@
 
     //: if (_selectecContacts.count == 0) {
     if (_selectecContacts.count == 0) {
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
+        //: [SVProgressHUD showMessage:[WatchLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
         [SVProgressHUD index:[PaintedNaturalLanguageTo exhibit:[SkiManData sharedInstance].m_excessDeleteStr]];
         //: return;
         return;
@@ -540,7 +540,7 @@
                         [self.delegate messaged:_selectecContacts];
                     }
 
-                    //: FFFGroupAvatarViewController *vc = [[FFFGroupAvatarViewController alloc]init];
+                    //: WatchGroupAvatarViewController *vc = [[WatchGroupAvatarViewController alloc]init];
                     OptionViewController *vc = [[OptionViewController alloc]init];
                     //: vc.groupName = groupName;
                     vc.groupName = groupName;
@@ -664,7 +664,7 @@
     _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];
     //: for (NSString *selectId in _selectecContacts) {
     for (NSString *selectId in _selectecContacts) {
-        //: FFFKitInfo *info;
+        //: WatchKitInfo *info;
         TingMessage *info;
         //: info = [self.config getInfoById:selectId];
         info = [self.config random:selectId];
@@ -703,11 +703,11 @@
     //: id<NIMGroupMemberProtocol> contactItem = arr[indexPath.row];
     id<VarnaSessionProtocolUser> contactItem = arr[indexPath.row];
 
-    //: FFFContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
+    //: WatchContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
     ContactViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[SkiManData sharedInstance].user_cabinFormat];
     //: if (cell == nil) {
     if (cell == nil) {
-        //: cell = [[FFFContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
+        //: cell = [[WatchContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
         cell = [[ContactViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[SkiManData sharedInstance].user_cabinFormat];
     }
     //: cell.accessoryBtn.hidden = NO;
@@ -747,9 +747,9 @@
 
     //: NSString *memberId = [(id<NIMGroupMemberProtocol>)member memberId];
     NSString *memberId = [(id<VarnaSessionProtocolUser>)member show];
-    //: FFFContactDataCell *cell = (FFFContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
+    //: WatchContactDataCell *cell = (WatchContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
     ContactViewCell *cell = (ContactViewCell *)[tableView cellForRowAtIndexPath:indexPath];
-    //: FFFKitInfo *info;
+    //: WatchKitInfo *info;
     TingMessage *info;
     //: info = [self.config getInfoById:memberId];
     info = [self.config random:memberId];
@@ -803,7 +803,7 @@
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (FFFContactSelectTabView *)selectIndicatorView{
+//: - (WatchContactSelectTabView *)selectIndicatorView{
 - (SpatialArrangementImageWeltanschauungView *)selectIndicatorView{
     //: if (_selectIndicatorView) {
     if (_selectIndicatorView) {
@@ -811,7 +811,7 @@
         return _selectIndicatorView;
     }
 
-    //: _selectIndicatorView = [[FFFContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
+    //: _selectIndicatorView = [[WatchContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
     _selectIndicatorView = [[SpatialArrangementImageWeltanschauungView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice tingHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
     //: _selectIndicatorView.doneButton.hidden = YES;
     _selectIndicatorView.doneButton.hidden = YES;
@@ -819,11 +819,11 @@
     return _selectIndicatorView;
 }
 
-//: - (FFFSetGroupNameView *)setGroupnameView{
+//: - (WatchSetGroupNameView *)setGroupnameView{
 - (VanguardView *)setGroupnameView{
     //: if(!_setGroupnameView){
     if(!_setGroupnameView){
-        //: _setGroupnameView = [[FFFSetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _setGroupnameView = [[WatchSetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _setGroupnameView = [[VanguardView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     }
     //: return _setGroupnameView;

@@ -13,19 +13,19 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitTimerHolder.h"
+//: #import "WatchKitTimerHolder.h"
 #import "UserCell.h"
 
 //: @class NIMKitFirerInfo;
 @class TimeInfo;
 
-//: @interface FFFKitNotificationFirer : NSObject<FFFKitTimerHolderDelegate>
+//: @interface WatchKitNotificationFirer : NSObject<WatchKitTimerHolderDelegate>
 @interface MessageObject : NSObject<AssemblageDelegate>
 
 //: @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 
-//: @property (nonatomic,strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic,strong) WatchKitTimerHolder *timer;
 @property (nonatomic,strong) UserCell *timer;
 
 //: @property (nonatomic,assign) NSTimeInterval timeInterval;

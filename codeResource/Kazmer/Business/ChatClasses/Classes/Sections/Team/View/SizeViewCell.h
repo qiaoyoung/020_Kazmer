@@ -21,7 +21,7 @@ extern NSString *const show_messageIdent;
 //: extern NSString *const kTeamMemberInfo;
 extern NSString *const noti_collectionId;
 
-//: @protocol FFFTeamMemberListCellActionDelegate <NSObject>
+//: @protocol WatchTeamMemberListCellActionDelegate <NSObject>
 @protocol OldQuery <NSObject>
 
 //: - (void)didSelectAddOpeartor;
@@ -31,7 +31,7 @@ extern NSString *const noti_collectionId;
 @end
 
 
-//: @interface FFFTeamMemberListCell : UITableViewCell
+//: @interface WatchTeamMemberListCell : UITableViewCell
 @interface SizeViewCell : UITableViewCell
 
 
@@ -44,7 +44,7 @@ extern NSString *const noti_collectionId;
 //: @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 
-//: @property(nonatomic, weak) id<FFFTeamMemberListCellActionDelegate>delegate;
+//: @property(nonatomic, weak) id<WatchTeamMemberListCellActionDelegate>delegate;
 @property(nonatomic, weak) id<OldQuery>delegate;
 
 //: @end

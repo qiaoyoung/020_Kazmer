@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellProtocol.h
+//  WatchMessageCellProtocol.h
 // ButtonKit
 //
 //  Created by NetEase.
@@ -9,23 +9,23 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "WatchCellConfig.h"
+#import "WatchCellConfig.h"
 
 // __M_A_C_R_O__
 
-//: @class FFFMessageModel;
+//: @class WatchMessageModel;
 @class CentralProcessingUnitModel;
 //: @class NIMMessage;
 @class NIMMessage;
 //: @class NIMQuickComment;
 @class NIMQuickComment;
-//: @class FFFKitEvent;
+//: @class WatchKitEvent;
 @class CoverShowEvent;
-//: @class FFFTextView;
+//: @class WatchTextView;
 @class ReplacementNameView;
 
-//: @protocol FFFMessageCellDelegate <NSObject>
+//: @protocol WatchMessageCellDelegate <NSObject>
 @protocol ModeQueryTime <NSObject>
 
 //: @optional
@@ -42,7 +42,7 @@
 
 //: #pragma mark - 点击事件
 #pragma mark - 点击事件
-//: - (BOOL)onTapCell:(FFFKitEvent *)event;
+//: - (BOOL)onTapCell:(WatchKitEvent *)event;
 - (BOOL)hides:(CoverShowEvent *)event;
 
 //: - (BOOL)onLongPressCell:(NIMMessage *)message

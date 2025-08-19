@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
 
 //: extern NSString *const NIMDemoEventNameOpenRedPacket; 
 extern NSString *const user_maxMessage; //自定义消息打开红包
 
-//: @interface NTESSessionRedPacketContentView : FFFSessionMessageContentView
+//: @interface NTESSessionRedPacketContentView : WatchSessionMessageContentView
 @interface FoamControl : ThoughtImageControl
 
 //: @end

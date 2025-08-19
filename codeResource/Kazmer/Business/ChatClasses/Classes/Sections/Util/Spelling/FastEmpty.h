@@ -12,10 +12,10 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface FFFPinyinConverter : NSObject
+//: @interface WatchPinyinConverter : NSObject
 @interface FastEmpty : NSObject
 
-//: + (FFFPinyinConverter *)sharedInstance;
+//: + (WatchPinyinConverter *)sharedInstance;
 + (FastEmpty *)shared;
 
 //: - (NSString *)toPinyin: (NSString *)source;

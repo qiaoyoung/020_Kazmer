@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "WatchCellConfig.h"
+#import "WatchCellConfig.h"
 
-//: @interface FFFCellLayoutConfig : NSObject<FFFCellLayoutConfig>
+//: @interface WatchCellLayoutConfig : NSObject<WatchCellLayoutConfig>
 @interface PinFrame : NSObject<PinFrame>
 
 //: @end

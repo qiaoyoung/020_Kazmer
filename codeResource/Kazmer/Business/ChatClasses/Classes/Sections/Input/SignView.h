@@ -11,20 +11,20 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WatchInputProtocol.h"
+#import "WatchInputProtocol.h"
+//: #import "WatchSessionConfig.h"
 #import "MessagePinImage.h"
-//: #import "FFFInputToolBar.h"
+//: #import "WatchInputToolBar.h"
 #import "OldFrameView.h"
-//: #import "FFFInputAtCache.h"
+//: #import "WatchInputAtCache.h"
 #import "TimeCache.h"
 
-//: @class FFFInputMoreContainerView;
+//: @class WatchInputMoreContainerView;
 @class EdgePositionView;
-//: @class FFFInputEmoticonContainerView;
+//: @class WatchInputEmoticonContainerView;
 @class SpecsView;
-//: @class FFFReplyContentView;
+//: @class WatchReplyContentView;
 @class AnswerView;
 
 
@@ -56,7 +56,7 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @end
 @end
 
-//: @interface FFFInputView : UIView
+//: @interface WatchInputView : UIView
 @interface SignView : UIView
 
 //: @property (nonatomic, strong) NIMSession *session;
@@ -68,24 +68,24 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @property (assign, nonatomic, getter=isRecording) BOOL recording;
 @property (assign, nonatomic, getter=isRecording) BOOL recording;
 
-//: @property (strong, nonatomic) FFFInputToolBar *toolBar;
+//: @property (strong, nonatomic) WatchInputToolBar *toolBar;
 @property (strong, nonatomic) OldFrameView *toolBar;
-//: @property (strong, nonatomic) FFFInputMoreContainerView *moreContainer;
+//: @property (strong, nonatomic) WatchInputMoreContainerView *moreContainer;
 @property (strong, nonatomic) EdgePositionView *moreContainer;
 //: @property (strong, nonatomic) UIView *emoticonContainer;
 @property (strong, nonatomic) UIView *emoticonContainer;
 
-//: @property (nonatomic, strong) FFFReplyContentView *replyedContent;
+//: @property (nonatomic, strong) WatchReplyContentView *replyedContent;
 @property (nonatomic, strong) AnswerView *replyedContent;
 
 //: @property (nonatomic, assign) NIMInputStatus status;
 @property (nonatomic, assign) NIMInputStatus status;
-//: @property (nonatomic, strong) FFFInputAtCache *atCache;
+//: @property (nonatomic, strong) WatchInputAtCache *atCache;
 @property (nonatomic, strong) TimeCache *atCache;
 
 //: - (instancetype)initWithFrame:(CGRect)frame
 - (instancetype)initWithLabelConfig:(CGRect)frame
-                       //: config:(id<FFFSessionConfig>)config;
+                       //: config:(id<WatchSessionConfig>)config;
                        tool:(id<MessagePinImage>)config;
 
 //: - (void)reset;

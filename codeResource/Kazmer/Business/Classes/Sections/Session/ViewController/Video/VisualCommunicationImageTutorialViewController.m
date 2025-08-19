@@ -10,7 +10,7 @@ Byte k_sendId[] = {18, 5, 20, 13, 155, 28, 155, 189, 128, 195, 72, 181, 235, 28,
 //: player_play
 Byte app_stateValue[] = {60, 11, 7, 9, 161, 131, 153, 210, 80, 105, 101, 90, 114, 94, 107, 88, 105, 101, 90, 114, 129};
 
-//: #ffffff
+//: #fffWatch
 Byte mainSeizeNowhereIdent[] = {58, 7, 86, 11, 45, 79, 198, 217, 8, 89, 209, 205, 16, 16, 16, 16, 16, 16, 193};
 
 //: group_info_activity_update_failed
@@ -25,7 +25,7 @@ Byte notiDominatePath[] = {49, 4, 50, 12, 118, 11, 146, 3, 245, 129, 179, 43, 25
 //: ic_close_w
 Byte dreamRepresentativeId[] = {21, 10, 15, 14, 85, 215, 241, 246, 52, 106, 193, 208, 196, 100, 90, 84, 80, 84, 93, 96, 100, 86, 80, 104, 165};
 
-//: #66FFFFFF
+//: #66FFFWatch
 Byte app_separationControlMsg[] = {69, 9, 47, 9, 155, 228, 140, 5, 87, 244, 7, 7, 23, 23, 23, 23, 23, 23, 105};
 
 //: friend_verify_avtivity_net_error
@@ -299,7 +299,7 @@ Byte main_deliverNecessaryPath[] = {66, 12, 35, 9, 155, 232, 128, 127, 212, 195,
     //: self.progressSlider.maximumTrackTintColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];
     self.progressSlider.maximumTrackTintColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];
 //    self.progressSlider.thumbTintColor = ThemeColor;
-    //: [self.progressSlider setThumbImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff"] radius:3.0] forState:UIControlStateNormal];
+    //: [self.progressSlider setThumbImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#fffWatch"] radius:3.0] forState:UIControlStateNormal];
     [self.progressSlider setThumbImage:[UIImage add:[UIColor min:StringFromMagnituderusionData(mainSeizeNowhereIdent)] quantityFloat:3.0] forState:UIControlStateNormal];
     //: self.progressSlider.layer.cornerRadius = 3;
     self.progressSlider.layer.cornerRadius = 3;
@@ -318,7 +318,7 @@ Byte main_deliverNecessaryPath[] = {66, 12, 35, 9, 155, 232, 128, 127, 212, 195,
     _btnRate.backgroundColor = [UIColor blackColor];
     //: _btnRate.layer.cornerRadius = 9;
     _btnRate.layer.cornerRadius = 9;
-    //: _btnRate.layer.borderColor = [UIColor colorWithHexString:@"#66FFFFFF"].CGColor;
+    //: _btnRate.layer.borderColor = [UIColor colorWithHexString:@"#66FFFWatch"].CGColor;
     _btnRate.layer.borderColor = [UIColor min:StringFromMagnituderusionData(app_separationControlMsg)].CGColor;
     //: _btnRate.layer.borderWidth = 1;
     _btnRate.layer.borderWidth = 1;
@@ -326,7 +326,7 @@ Byte main_deliverNecessaryPath[] = {66, 12, 35, 9, 155, 232, 128, 127, 212, 195,
     [_btnRate addTarget:self action:@selector(keyDomain:) forControlEvents:UIControlEventTouchUpInside];
     //: _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
     _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
-    //: [_btnRate setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+    //: [_btnRate setTitleColor:[UIColor colorWithHexString:@"#fffWatch"] forState:UIControlStateNormal];
     [_btnRate setTitleColor:[UIColor min:StringFromMagnituderusionData(mainSeizeNowhereIdent)] forState:UIControlStateNormal];
     //: [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
     [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
@@ -350,7 +350,7 @@ Byte main_deliverNecessaryPath[] = {66, 12, 35, 9, 155, 232, 128, 127, 212, 195,
                 [wself backgroundTop];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromMagnituderusionData(dream_survivalContent)]
                              //: duration:2
                              duration:2
@@ -466,7 +466,7 @@ Byte main_deliverNecessaryPath[] = {66, 12, 35, 9, 155, 232, 128, 127, 212, 195,
     } completionHandler:^(BOOL success, NSError * _Nullable error) {
         //: dispatch_async(dispatch_get_main_queue(), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            //: NSString *toast = (success)?[FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+            //: NSString *toast = (success)?[WatchLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[WatchLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
             NSString *toast = (success)?[PaintedNaturalLanguageTo exhibit:StringFromMagnituderusionData(main_mediaMsg)] :[PaintedNaturalLanguageTo exhibit:StringFromMagnituderusionData(main_markData)];
             //: [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
             [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
@@ -782,7 +782,7 @@ Byte main_deliverNecessaryPath[] = {66, 12, 35, 9, 155, 232, 128, 127, 212, 195,
 
 //        //设置滑块图片样式
         // 1 通过颜色创建 Image
-        //: UIImage *normalImage = [UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff"] radius:7.0];
+        //: UIImage *normalImage = [UIImage createImageWithColor:[UIColor colorWithHexString:@"#fffWatch"] radius:7.0];
         UIImage *normalImage = [UIImage add:[UIColor min:StringFromMagnituderusionData(mainSeizeNowhereIdent)] quantityFloat:7.0];
 
         //        UIView *normalImageView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 8)];
@@ -803,8 +803,8 @@ Byte main_deliverNecessaryPath[] = {66, 12, 35, 9, 155, 232, 128, 127, 212, 195,
 //        [_videoSlider setThumbImage:highlightImage forState:UIControlStateHighlighted];
 
 //        _videoSlider.trackColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];//轨道的颜色
-//        _videoSlider.bufferColor = RGB_COLOR_String(@"#ffffff");//缓冲的颜色
-//        _videoSlider.thumbValueColor = RGB_COLOR_String(@"#ffffff");///播放进度的颜色
+//        _videoSlider.bufferColor = RGB_COLOR_String(@"#fffWatch");//缓冲的颜色
+//        _videoSlider.thumbValueColor = RGB_COLOR_String(@"#fffWatch");///播放进度的颜色
         ///
         //: _videoSlider.trackHeight = 6;
         _videoSlider.trackHeight = 6;

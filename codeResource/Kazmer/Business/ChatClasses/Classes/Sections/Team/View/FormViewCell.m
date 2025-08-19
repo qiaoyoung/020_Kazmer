@@ -34,10 +34,10 @@ ColorfulData user_evaluateMsg = (ColorfulData){106, (Byte []){73, 88, 41, 89, 90
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupEditTableViewCell.h"
+//: #import "WatchGroupEditTableViewCell.h"
 #import "FormViewCell.h"
 
-//: @implementation FFFGroupEditTableViewCell
+//: @implementation WatchGroupEditTableViewCell
 @implementation FormViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

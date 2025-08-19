@@ -70,14 +70,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WatchKitFileLocationHelper.h"
 #import "ButtonHelper.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 //: #import <sys/stat.h>
 #import <sys/stat.h>
 
-//: @interface FFFKitFileLocationHelper ()
+//: @interface WatchKitFileLocationHelper ()
 @interface ButtonHelper ()
 //: + (NSString *)filepathForDir: (NSString *)dirname filename: (NSString *)filename;
 + (NSString *)labelFilename: (NSString *)dirname lengthTool: (NSString *)filename;
@@ -85,7 +85,7 @@
 @end
 
 
-//: @implementation FFFKitFileLocationHelper
+//: @implementation WatchKitFileLocationHelper
 @implementation ButtonHelper
 //: + (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL
 + (BOOL)disableUrl:(NSURL *)URL
@@ -138,7 +138,7 @@
                                                             //: error:nil];
                                                             error:nil];
         }
-        //: [FFFKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
+        //: [WatchKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
         [ButtonHelper disableUrl:[NSURL fileURLWithPath:appDocumentPath]];
     //: });
     });
@@ -157,7 +157,7 @@
 //: + (NSString *)userDirectory
 + (NSString *)language
 {
-    //: NSString *documentPath = [FFFKitFileLocationHelper getAppDocumentPath];
+    //: NSString *documentPath = [WatchKitFileLocationHelper getAppDocumentPath];
     NSString *documentPath = [ButtonHelper with];
     //: NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
     NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
@@ -188,7 +188,7 @@
 //: + (NSString *)resourceDir: (NSString *)resouceName
 + (NSString *)betweenColorDir: (NSString *)resouceName
 {
-    //: NSString *dir = [[FFFKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
+    //: NSString *dir = [[WatchKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
     NSString *dir = [[ButtonHelper language] stringByAppendingPathComponent:resouceName];
     //: if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
     if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
@@ -210,7 +210,7 @@
 //: + (NSString *)filepathForVideo:(NSString *)filename
 + (NSString *)info:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"video"
+    //: return [WatchKitFileLocationHelper filepathForDir:@"video"
     return [ButtonHelper labelFilename:[[PloyOhoData sharedInstance] app_inflationData]
                                          //: filename:filename];
                                          lengthTool:filename];
@@ -219,7 +219,7 @@
 //: + (NSString *)filepathForImage:(NSString *)filename
 + (NSString *)nim:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"image"
+    //: return [WatchKitFileLocationHelper filepathForDir:@"image"
     return [ButtonHelper labelFilename:[[PloyOhoData sharedInstance] userCabinData]
                                          //: filename:filename];
                                          lengthTool:filename];
@@ -250,7 +250,7 @@
                     //: filename:(NSString *)filename
                     lengthTool:(NSString *)filename
 {
-    //: return [[FFFKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
+    //: return [[WatchKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
     return [[ButtonHelper betweenColorDir:dirname] stringByAppendingPathComponent:filename];
 }
 

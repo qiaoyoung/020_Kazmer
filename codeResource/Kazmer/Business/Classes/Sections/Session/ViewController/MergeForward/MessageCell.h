@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAdvancedMessageCell.h"
+//: #import "WatchAdvancedMessageCell.h"
 #import "KeyMessageCell.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESMergeMessageCell : FFFAdvancedMessageCell
+//: @interface NTESMergeMessageCell : WatchAdvancedMessageCell
 @interface MessageCell : KeyMessageCell
 
 //: @end

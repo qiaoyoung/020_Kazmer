@@ -170,24 +170,24 @@
 //  
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardViewController.h"
+//: #import "WatchTeamCardViewController.h"
 #import "ChronicleViewController.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitColorButtonCell.h"
+//: #import "WatchKitColorButtonCell.h"
 #import "MakeModeView.h"
-//: #import "FFFTeamMemberListCell.h"
+//: #import "WatchTeamMemberListCell.h"
 #import "SizeViewCell.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFTeamCardSelectedViewController.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
+//: #import "WatchTeamCardSelectedViewController.h"
 #import "ForefrontViewController.h"
-//: #import "FFFGroupEditTableViewCell.h"
+//: #import "WatchGroupEditTableViewCell.h"
 #import "FormViewCell.h"
 
-//: @interface FFFTeamCardViewController () <UITableViewDataSource,
+//: @interface WatchTeamCardViewController () <UITableViewDataSource,
 @interface ChronicleViewController () <UITableViewDataSource,
                                          //: UITableViewDelegate,
                                          UITableViewDelegate,
@@ -200,7 +200,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardViewController
+//: @implementation WatchTeamCardViewController
 @implementation ChronicleViewController
 
 //: - (void)viewDidLoad {
@@ -284,7 +284,7 @@
 
 //: - (UIAlertAction *)makeCancelAction {
 - (UIAlertAction *)withRecent {
-    //: UIAlertAction *cancel = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+    //: UIAlertAction *cancel = [UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[SumimateData sharedInstance].showColorStr]
                                                      //: style:UIAlertActionStyleCancel
                                                      style:UIAlertActionStyleCancel
@@ -610,11 +610,11 @@
 {
     //: NSString *identifier = [NSString stringWithFormat:@"builidCommonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SumimateData sharedInstance].main_teamMonthData,(long)indexPath.section,(long)indexPath.row];
-    //: FFFGroupEditTableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WatchGroupEditTableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     FormViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFGroupEditTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WatchGroupEditTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[FormViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: CGFloat left = 60.f;
         CGFloat left = 60.f;
@@ -708,12 +708,12 @@
     }
     //: if (bodyData.type == TeamCardRowItemTypeSelected) {
     if (bodyData.type == TeamCardRowItemTypeSelected) {
-        //: FFFTeamCardSelectedViewController *vc = [FFFTeamCardSelectedViewController instanceWithTitle:bodyData.title
+        //: WatchTeamCardSelectedViewController *vc = [WatchTeamCardSelectedViewController instanceWithTitle:bodyData.title
         ForefrontViewController *vc = [ForefrontViewController label:bodyData.title
                                                                                //: items:bodyData.optionItems
                                                                                pieceKey:bodyData.optionItems
-                                                                              //: result:^(id<FFFKitSelectCardData> _Nonnull item) {
-                                                                              warpath:^(id<FFFKitSelectCardData> _Nonnull item) {
+                                                                              //: result:^(id<WatchKitSelectCardData> _Nonnull item) {
+                                                                              warpath:^(id<WatchKitSelectCardData> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
               if (bodyData.selectedBlock) {
                   //: bodyData.selectedBlock(item);
@@ -745,17 +745,17 @@
 //    tableButtonCell
     //: NSString *identifier = [NSString stringWithFormat:@"tableButtonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SumimateData sharedInstance].m_shoveFormat,(long)indexPath.section,(long)indexPath.row];
-    //: FFFKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WatchKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     MakeModeView * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WatchKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[MakeModeView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //: cell.button.style = FFFKitColorButtonCellStyleRed;
-    cell.button.style = FFFKitColorButtonCellStyleRed;
+    //: cell.button.style = WatchKitColorButtonCellStyleRed;
+    cell.button.style = WatchKitColorButtonCellStyleRed;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
@@ -764,17 +764,17 @@
 
 //: - (UITableViewCell*)builidBlueButtonCell:(id<NTESCardBodyData>) bodyData{
 - (UITableViewCell*)magnituderyShow:(id<NTESCardBodyData>) bodyData{
-    //: FFFKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableButtonCell"];
+    //: WatchKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableButtonCell"];
     MakeModeView * cell = [self.tableView dequeueReusableCellWithIdentifier:[SumimateData sharedInstance].dream_responseUrl];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableButtonCell"];
+        //: cell = [[WatchKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableButtonCell"];
         cell = [[MakeModeView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[SumimateData sharedInstance].dream_responseUrl];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //: cell.button.style = FFFKitColorButtonCellStyleBlue;
-    cell.button.style = FFFKitColorButtonCellStyleBlue;
+    //: cell.button.style = WatchKitColorButtonCellStyleBlue;
+    cell.button.style = WatchKitColorButtonCellStyleBlue;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     //: return cell;
@@ -783,11 +783,11 @@
 
 //: - (UITableViewCell*)builidTeamMemberCell:(id<NTESCardBodyData>) bodyData{
 - (UITableViewCell*)style:(id<NTESCardBodyData>) bodyData{
-    //: FFFTeamMemberListCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableMemberCell"];
+    //: WatchTeamMemberListCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableMemberCell"];
     SizeViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:[SumimateData sharedInstance].noti_pieceStudyIdent];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFTeamMemberListCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"tableMemberCell"];
+        //: cell = [[WatchTeamMemberListCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"tableMemberCell"];
         cell = [[SizeViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[SumimateData sharedInstance].noti_pieceStudyIdent];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -841,13 +841,13 @@
 {
     //: NSString *identifier = [NSString stringWithFormat:@"TableSwitch%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SumimateData sharedInstance].show_teamTitle,(long)indexPath.section,(long)indexPath.row];
-    //: FFFTeamSwitchTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WatchTeamSwitchTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     TableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFTeamSwitchTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WatchTeamSwitchTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: CGFloat left = 60.f;
         CGFloat left = 60.f;
@@ -920,7 +920,7 @@
 
 //: #pragma mark - Setter
 #pragma mark - Setter
-//: - (void)setDatas:(NSArray<NSArray<FFFTeamCardRowItem *> *> *)datas {
+//: - (void)setDatas:(NSArray<NSArray<WatchTeamCardRowItem *> *> *)datas {
 - (void)setDatas:(NSArray<NSArray<ShowKey *> *> *)datas {
     //: _datas = datas;
     _datas = datas;
@@ -988,10 +988,10 @@
 //: - (UIView *)didGetHeaderView { return [UIView new]; }
 - (UIView *)sizeMedia { return [UIView new]; }
 
-//: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell {}
+//: - (void)didBuildTeamMemberCell:(WatchTeamMemberListCell *)cell {}
 - (void)teamRed:(SizeViewCell *)cell {}
 
-//: - (void)didBuildTeamSwitchCell:(FFFTeamSwitchTableViewCell *)cell {}
+//: - (void)didBuildTeamSwitchCell:(WatchTeamSwitchTableViewCell *)cell {}
 - (void)format:(TableViewCell *)cell {}
 
 //: - (void)reloadTableViewData {};

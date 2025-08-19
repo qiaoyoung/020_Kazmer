@@ -551,7 +551,7 @@
 #import "RecentModeView.h"
 //: #import "NTESContactDataCell.h"
 #import "PlacementToCompartmentView.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WatchContactSelectViewController.h"
 #import "NominateViewController.h"
 //: #import "NTESUserUtil.h"
 #import "RecordUtil.h"
@@ -583,7 +583,7 @@
 #import <FFDropDownMenu/FFDropDownMenuView.h>
 //: #import "NTESFriendListTableViewCell.h"
 #import "UtilizerView.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WatchKitFileLocationHelper.h"
 #import "ButtonHelper.h"
 
 //: static const NSString *contactCellUtilIcon = @"icon";
@@ -604,7 +604,7 @@ static const NSString *k_sizeData = @"selName";
 @interface CrimsonViewController ()<MakeTime,NIMUserManagerDelegate,NIMSystemNotificationManagerDelegate,
 //: NTESContactUtilCellDelegate,
 EmptySize,
-//: FFFContactDataCellDelegate,
+//: WatchContactDataCellDelegate,
 ZoneDelegate,
 //: NIMLoginManagerDelegate,
 NIMLoginManagerDelegate,
@@ -806,7 +806,7 @@ MannerDelegate> {
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [WatchLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].show_nameContent];
 
 
@@ -842,7 +842,7 @@ MannerDelegate> {
 
             //: NSMutableDictionary *myfriend = [NSMutableDictionary dictionaryWithCapacity:0];
             NSMutableDictionary *myfriend = [NSMutableDictionary dictionaryWithCapacity:0];
-            //: [myfriend setObject:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_friend"] forKey:@"name"];
+            //: [myfriend setObject:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_friend"] forKey:@"name"];
             [myfriend setObject:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].mBarTitle] forKey:[ImaginationImageData sharedInstance].userUpgradeBubbleMessage];
             //: [myfriend setObject:friendIds forKey:@"ids"];
             [myfriend setObject:friendIds forKey:[ImaginationImageData sharedInstance].appPointFormat];
@@ -904,7 +904,7 @@ MannerDelegate> {
     _btnfriend.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_btnfriend setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
+    //: [_btnfriend setTitle:[WatchLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
     [_btnfriend setTitle:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].k_pressedStr] forState:UIControlStateNormal];
     //: [_btnfriend addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btnfriend addTarget:self action:@selector(mentalPicture:) forControlEvents:UIControlEventTouchUpInside];
@@ -923,7 +923,7 @@ MannerDelegate> {
     _btngroup.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btngroup setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_btngroup setTitleColor:[UIColor min:[ImaginationImageData sharedInstance].main_curId] forState:UIControlStateNormal];
-    //: [_btngroup setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_btngroup setTitle:[WatchLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_btngroup setTitle:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].noti_pictureTitle] forState:UIControlStateNormal];
     //: [_btngroup addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btngroup addTarget:self action:@selector(mentalPicture:) forControlEvents:UIControlEventTouchUpInside];
@@ -1272,7 +1272,7 @@ MannerDelegate> {
     return _searchIgoreCase;
 }
 
-//: #pragma mark - FFFContactDataCellDelegate
+//: #pragma mark - WatchContactDataCellDelegate
 #pragma mark - ZoneDelegate
 //: - (void)onPressAvatar:(NSString *)memberId{
 - (void)optionLoad:(NSString *)memberId{
@@ -1428,7 +1428,7 @@ MannerDelegate> {
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
     NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -1518,7 +1518,7 @@ MannerDelegate> {
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [WatchLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].show_atUrl];
 //            [SVProgressHUD show];
 
@@ -1542,7 +1542,7 @@ MannerDelegate> {
                     [self show:option.name cropId:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].mainChangeDateFormat] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -1566,9 +1566,9 @@ MannerDelegate> {
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image value:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [WatchKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [ButtonHelper withKey:[ImaginationImageData sharedInstance].main_infoDoingTitle];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[WatchKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[ButtonHelper with] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -1589,7 +1589,7 @@ MannerDelegate> {
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].showEndData]
                              //: duration:2
                              duration:2
@@ -1603,7 +1603,7 @@ MannerDelegate> {
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].showEndData]
                     //: duration:2
                     duration:2
@@ -1794,13 +1794,13 @@ MannerDelegate> {
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WatchLanguageManager getTextWithKey:@"warm_prompt"] message:[WatchLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].m_imageViewTitle] message:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].main_circleMsg] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].appBarCommentName] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].dream_showKey] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1835,7 +1835,7 @@ MannerDelegate> {
         option.type = NIMTeamTypeAdvanced;
         //: option.joinMode = NIMTeamJoinModeNoAuth;
         option.joinMode = NIMTeamJoinModeNoAuth;
-        //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+        //: option.postscript = [WatchLanguageManager getTextWithKey:@"invite_you_group"];
         option.postscript = [PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].show_atUrl];
         //: [SVProgressHUD show];
         [SVProgressHUD show];
@@ -1857,7 +1857,7 @@ MannerDelegate> {
                 [wself show:option.name cropId:teamId];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].mainChangeDateFormat] duration:2.0 position:CSToastPositionCenter];
             }
         //: }];
@@ -1916,7 +1916,7 @@ MannerDelegate> {
         labedit.font = [UIFont systemFontOfSize:14];
         //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
         labedit.textColor = [UIColor min:[ImaginationImageData sharedInstance].mCommentFormat];
-        //: labedit.text = [FFFLanguageManager getTextWithKey:@"notification"];
+        //: labedit.text = [WatchLanguageManager getTextWithKey:@"notification"];
         labedit.text = [PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].kMonthMsg];
         //: [editView addSubview:labedit];
         [editView addSubview:labedit];
@@ -1947,7 +1947,7 @@ MannerDelegate> {
         lablang.font = [UIFont systemFontOfSize:14];
         //: lablang.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lablang.textColor = [UIColor min:[ImaginationImageData sharedInstance].mCommentFormat];
-        //: lablang.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+        //: lablang.text = [WatchLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
         lablang.text = [PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].app_commentSuccessUrl];
         //: [langView addSubview:lablang];
         [langView addSubview:lablang];
@@ -1991,7 +1991,7 @@ MannerDelegate> {
         labedit.font = [UIFont systemFontOfSize:14];
         //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
         labedit.textColor = [UIColor min:[ImaginationImageData sharedInstance].mCommentFormat];
-        //: labedit.text = [FFFLanguageManager getTextWithKey:@"notification"];
+        //: labedit.text = [WatchLanguageManager getTextWithKey:@"notification"];
         labedit.text = [PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].kMonthMsg];
         //: [editView addSubview:labedit];
         [editView addSubview:labedit];
@@ -2022,7 +2022,7 @@ MannerDelegate> {
         lablang.font = [UIFont systemFontOfSize:14];
         //: lablang.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lablang.textColor = [UIColor min:[ImaginationImageData sharedInstance].mCommentFormat];
-        //: lablang.text = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+        //: lablang.text = [WatchLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
         lablang.text = [PaintedNaturalLanguageTo exhibit:[ImaginationImageData sharedInstance].kFormatUpMsg];
         //: [langView addSubview:lablang];
         [langView addSubview:lablang];

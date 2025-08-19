@@ -40,7 +40,7 @@ Byte userCornerBarStateId[] = {17, 7, 3, 69, 68, 51, 52, 66, 52, 35, 97};
 //: friend_circle_adapter_delete
 Byte show_hateMessage[] = {23, 28, 7, 81, 19, 31, 21, 101, 116, 101, 108, 101, 100, 95, 114, 101, 116, 112, 97, 100, 97, 95, 101, 108, 99, 114, 105, 99, 95, 100, 110, 101, 105, 114, 102, 161};
 
-//: #ffffff
+//: #fffWatch
 Byte main_scramMsg[] = {37, 7, 5, 89, 225, 102, 102, 102, 102, 102, 102, 35, 173};
 
 //: Group_chat
@@ -227,10 +227,10 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 // __M_A_C_R_O__
 //: #import "NTESPersonalCardViewController.h"
 #import "ApproximateViewController.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WatchCommonTableDelegate.h"
 #import "BarPage.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 //: #import "SVProgressHUD.h"
@@ -249,7 +249,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 #import "RecordUtil.h"
 //: #import "HMDataPicker.h"
 #import "CellValueView.h"
-//: #import "FFFRemarksView.h"
+//: #import "WatchRemarksView.h"
 #import "BubbleView.h"
 //: #import "NTESOpinionBackViewController.h"
 #import "OldViewController.h"
@@ -273,15 +273,15 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 #import "EmptyViewController.h"
 //: #import "CCCContactsViewController.h"
 #import "CrimsonViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WatchContactSelectViewController.h"
 #import "NominateViewController.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WatchKitFileLocationHelper.h"
 #import "ButtonHelper.h"
 
 //: @interface NTESPersonalCardViewController ()<NIMUserManagerDelegate,HMDataPickerDelegate,NTESReportDelegate,NTESReportNextDelegate>
 @interface ApproximateViewController ()<NIMUserManagerDelegate,ToMessage,MakeupDelegate,SoapBubbleKey>
 
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) WatchCommonTableDelegate *delegator;
 @property (nonatomic,strong) BarPage *delegator;
 
 //: @property (nonatomic,copy ) NSArray *data;
@@ -349,7 +349,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 
 //: @property (nonatomic, strong) ZMONReportUserView *reprotView;
 @property (nonatomic, strong) KeyShowView *reprotView;
-//: @property (nonatomic, strong) FFFRemarksView *changeRemarksView;
+//: @property (nonatomic, strong) WatchRemarksView *changeRemarksView;
 @property (nonatomic, strong) BubbleView *changeRemarksView;
 //: @property (nonatomic, strong) ZMONCustomLoadingView *loadingView;
 @property (nonatomic, strong) QueryStubView *loadingView;
@@ -458,7 +458,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
             //: NSString *avatar = [data newStringValueForKey:@"avatar"];
             NSString *avatar = [data record:StringFromConventData(notiCurValue)];
 
-            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[FFFLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
+            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[WatchLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
             NSString *str = [NSString stringWithFormat:@"%@:%@",[PaintedNaturalLanguageTo exhibit:StringFromConventData(m_regnantUrl)],self.userAcount];
             //: self.accountId.text = str;
             self.accountId.text = str;
@@ -576,9 +576,9 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
                     //: self.switchNotice.on = needNotify;
                     self.switchNotice.on = needNotify;
 
-                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [WatchLanguageManager getTextWithKey:@"未设置"];
                     self.labRemark.text = self.user.alias.length ? self.user.alias : [PaintedNaturalLanguageTo exhibit:StringFromConventData(kTeamValue)];
-                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [WatchLanguageManager getTextWithKey:@"未设置"];
                     self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [PaintedNaturalLanguageTo exhibit:StringFromConventData(kTeamValue)];
 
                     //: if(isMyFriend){
@@ -653,7 +653,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 //        [SVProgressHUD dismiss];
         //: [self.loadingView animationClose];
         [self.loadingView impendentImage];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"add_friend_request_fail"]
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"add_friend_request_fail"]
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(main_quickId)]
                     //: duration:2.0
                     duration:2.0
@@ -749,11 +749,11 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
             [self.loadingView impendentImage];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(show_valueFishingContainerMessage)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(showWorkplaceKey)] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself model];
@@ -769,11 +769,11 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
             [self.loadingView impendentImage];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(kSeparationMsg)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(kTerriblyId)] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself model];
@@ -799,7 +799,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         [self.loadingView impendentImage];
         //: if (error) {
         if (error) {
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
+            //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
             [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(userCropId)] duration:2.0f position:CSToastPositionCenter];
             //: [wself refresh];
             [wself model];
@@ -865,7 +865,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [WatchLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [PaintedNaturalLanguageTo exhibit:StringFromConventData(kRegnantFormat)];
 //            [SVProgressHUD show];
 
@@ -885,7 +885,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
                     [self.navigationController pushViewController:vc animated:YES];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(kShowerName)] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -925,7 +925,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
     NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -946,9 +946,9 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image value:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [WatchKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [ButtonHelper withKey:StringFromConventData(k_regulationFormat)];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[WatchKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[ButtonHelper with] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -969,7 +969,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(user_rehabUrl)]
                              //: duration:2
                              duration:2
@@ -983,7 +983,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(user_rehabUrl)]
                     //: duration:2
                     duration:2
@@ -1007,7 +1007,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         NSString *canAddFriend = [_teamSetingConfig record:StringFromConventData(mPremiseFormat)];
         //: if (canAddFriend.integerValue <= 0) {
         if (canAddFriend.integerValue <= 0) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
+            //: [SVProgressHUD showMessage:[WatchLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
             [SVProgressHUD index:[PaintedNaturalLanguageTo exhibit:StringFromConventData(mainPlaceStr)]];
             //: return;
             return;
@@ -1034,13 +1034,13 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [WatchLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [PaintedNaturalLanguageTo exhibit:StringFromConventData(dream_scramMaxValue)];//@"添加成功"
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [WatchLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [PaintedNaturalLanguageTo exhibit:StringFromConventData(k_shootMinUrl)];//@"请求成功"
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [WatchLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [PaintedNaturalLanguageTo exhibit:StringFromConventData(dreamStatusStr)];//@"添加失败"
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [WatchLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [PaintedNaturalLanguageTo exhibit:StringFromConventData(main_quickId)];//@"请求失败"
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -1114,7 +1114,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 - (void)commentDate{
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;//@"删除好友后，将同时解除双方的好友关系"
-    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
+    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[PaintedNaturalLanguageTo exhibit:StringFromConventData(main_viewFormat)] message:[PaintedNaturalLanguageTo exhibit:StringFromConventData(notiCabinId)] delegate:nil cancelButtonTitle:[PaintedNaturalLanguageTo exhibit:StringFromConventData(userRepairIdent)] otherButtonTitles:[PaintedNaturalLanguageTo exhibit:StringFromConventData(dream_showMarkIdent)], nil];
     //: [alert showAlertWithCompletionHandler:^(NSInteger index) {
     [alert heritage:^(NSInteger index) {
@@ -1137,7 +1137,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
                 [self.loadingView impendentImage];
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(main_allName)] duration:2.0f position:CSToastPositionCenter];
                     //: [wself refresh];
                     [wself model];
@@ -1145,7 +1145,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
                     [self textSession];
                 //: }else{
                 }else{
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(dream_viaMessage)] duration:2.0f position:CSToastPositionCenter];
                 }
             //: }];
@@ -1406,9 +1406,9 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
             [_messageBtn addTarget:self action:@selector(bubbleTing) forControlEvents:UIControlEventTouchUpInside];
             //: _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#fffWatch"] forState:UIControlStateNormal];
             [_messageBtn setTitleColor:[UIColor min:StringFromConventData(main_scramMsg)] forState:UIControlStateNormal];
-            //: [_messageBtn setTitle:[FFFLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitle:[WatchLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
             [_messageBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromConventData(kBubbleData)] forState:UIControlStateNormal];
             //: _messageBtn.layer.cornerRadius = 22;
             _messageBtn.layer.cornerRadius = 22;
@@ -1425,9 +1425,9 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
             [_groupBtn addTarget:self action:@selector(inscriptionShould) forControlEvents:UIControlEventTouchUpInside];
             //: _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#fffWatch"] forState:UIControlStateNormal];
             [_groupBtn setTitleColor:[UIColor min:StringFromConventData(main_scramMsg)] forState:UIControlStateNormal];
-            //: [_groupBtn setTitle:[FFFLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitle:[WatchLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
             [_groupBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromConventData(kRefreshKey)] forState:UIControlStateNormal];
             //: _groupBtn.layer.cornerRadius = 22;
             _groupBtn.layer.cornerRadius = 22;
@@ -1497,7 +1497,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         self.labTitlenotice.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitlenotice.textColor = [UIColor blackColor];
         self.labTitlenotice.textColor = [UIColor blackColor];
-        //: self.labTitlenotice.text = [FFFLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
+        //: self.labTitlenotice.text = [WatchLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
         self.labTitlenotice.text = [PaintedNaturalLanguageTo exhibit:StringFromConventData(appCombinationIdent)];
         //: [noticeView addSubview:self.labTitlenotice];
         [noticeView addSubview:self.labTitlenotice];
@@ -1532,7 +1532,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         self.labTitleBlack.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleBlack.textColor = [UIColor blackColor];
         self.labTitleBlack.textColor = [UIColor blackColor];
-        //: self.labTitleBlack.text = [FFFLanguageManager getTextWithKey:@"func_viewholder_black"];
+        //: self.labTitleBlack.text = [WatchLanguageManager getTextWithKey:@"func_viewholder_black"];
         self.labTitleBlack.text = [PaintedNaturalLanguageTo exhibit:StringFromConventData(user_closeValue)];
         //: [blackView addSubview:self.labTitleBlack];
         [blackView addSubview:self.labTitleBlack];
@@ -1547,7 +1547,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         blackBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         //: [blackBtn setTitleColor:[UIColor colorWithHexString:@"#4B43DE"] forState:UIControlStateNormal];
         [blackBtn setTitleColor:[UIColor min:StringFromConventData(userCornerBarStateId)] forState:UIControlStateNormal];
-        //: [blackBtn setTitle:[FFFLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
+        //: [blackBtn setTitle:[WatchLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
         [blackBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromConventData(dreamPictureData)] forState:UIControlStateNormal];
         //: [blackView addSubview:blackBtn];
         [blackView addSubview:blackBtn];
@@ -1622,7 +1622,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         self.labTitleRemark.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleRemark.textColor = [UIColor blackColor];
         self.labTitleRemark.textColor = [UIColor blackColor];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [WatchLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [PaintedNaturalLanguageTo exhibit:StringFromConventData(mKeyWorkplaceName)];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -1689,7 +1689,7 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         self.labTitleResport.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleResport.textColor = [UIColor blackColor];
         self.labTitleResport.textColor = [UIColor blackColor];
-        //: self.labTitleResport.text = [FFFLanguageManager getTextWithKey:@"report_activity_title"];
+        //: self.labTitleResport.text = [WatchLanguageManager getTextWithKey:@"report_activity_title"];
         self.labTitleResport.text = [PaintedNaturalLanguageTo exhibit:StringFromConventData(notiTeamKey)];
         //: [reportView addSubview:self.labTitleResport];
         [reportView addSubview:self.labTitleResport];
@@ -1709,11 +1709,11 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         self.btnAdd.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnAdd setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnAdd setTitleColor:[UIColor min:StringFromConventData(kSkyTitle)] forState:UIControlStateNormal];
-        //: [self.btnAdd setTitle:[FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
+        //: [self.btnAdd setTitle:[WatchLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
         [self.btnAdd setTitle:[PaintedNaturalLanguageTo exhibit:StringFromConventData(showItemRegulationValue)] forState:UIControlStateNormal];
         //: [self.btnAdd addTarget:self action:@selector(addFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnAdd addTarget:self action:@selector(holderBrother) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
         self.btnAdd.backgroundColor = [UIColor min:StringFromConventData(main_scramMsg)];
         //: self.btnAdd.layer.borderWidth = 1;
         self.btnAdd.layer.borderWidth = 1;
@@ -1732,11 +1732,11 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
         self.btnDelete.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnDelete setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnDelete setTitleColor:[UIColor min:StringFromConventData(kSkyTitle)] forState:UIControlStateNormal];
-        //: [self.btnDelete setTitle:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
+        //: [self.btnDelete setTitle:[WatchLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
         [self.btnDelete setTitle:[PaintedNaturalLanguageTo exhibit:StringFromConventData(show_hateMessage)] forState:UIControlStateNormal];
         //: [self.btnDelete addTarget:self action:@selector(deleteFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnDelete addTarget:self action:@selector(commentDate) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
         self.btnDelete.backgroundColor = [UIColor min:StringFromConventData(main_scramMsg)];
         //: self.btnDelete.layer.borderWidth = 1;
         self.btnDelete.layer.borderWidth = 1;
@@ -1751,12 +1751,12 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
     return _personView;
 }
 
-//: - (FFFRemarksView *)changeRemarksView
+//: - (WatchRemarksView *)changeRemarksView
 - (BubbleView *)changeRemarksView
 {
     //: if(!_changeRemarksView){
     if(!_changeRemarksView){
-        //: _changeRemarksView = [[FFFRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _changeRemarksView = [[WatchRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _changeRemarksView = [[BubbleView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 //        _changeRemarksView.hidden = YES;
 
@@ -1846,11 +1846,11 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 
                    //: if (!error) {
                    if (!error) {
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(show_valueFishingContainerMessage)] duration:2.0f position:CSToastPositionCenter];
                    //: }else{
                    }else{
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(showWorkplaceKey)] duration:2.0f position:CSToastPositionCenter];
 
                    }
@@ -1904,11 +1904,11 @@ Byte appWorkplaceContent[] = {92, 6, 4, 144, 101, 108, 105, 98, 111, 109, 116};
 
             //: if (!error) {
             if (!error) {
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(main_allName)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromConventData(dream_viaMessage)] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];

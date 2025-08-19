@@ -61,11 +61,11 @@
 // __M_A_C_R_O__
 //: #import "NTESMergeMessageCell.h"
 #import "MessageCell.h"
-//: #import "FFFBadgeView.h"
+//: #import "WatchBadgeView.h"
 #import "NameSessionView.h"
-//: #import "FFFSessionTextContentView.h"
+//: #import "WatchSessionTextContentView.h"
 #import "InfoControl.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "M80AttributedLabel.h"
 #import "QuickNameView.h"
@@ -169,7 +169,7 @@
     return _timeLab;
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data {
+//: - (void)refreshData:(WatchMessageModel *)data {
 - (void)accumulationRestore:(CentralProcessingUnitModel *)data {
     //: [super refreshData:data];
     [super accumulationRestore:data];
@@ -188,8 +188,8 @@
         //: _timeLab.text = timeInfo ?: @"00:00";
         _timeLab.text = timeInfo ?: [RoyalCharterData dreamOfSexyName];
 
-        //: self.bubbleView.layoutStyle = FFFSessionMessageContentViewLayoutLeft;
-        self.bubbleView.layoutStyle = FFFSessionMessageContentViewLayoutLeft;
+        //: self.bubbleView.layoutStyle = WatchSessionMessageContentViewLayoutLeft;
+        self.bubbleView.layoutStyle = WatchSessionMessageContentViewLayoutLeft;
     }
 
     //: self.bubbleView.bubbleImageView.hidden = YES;
@@ -201,9 +201,9 @@
 
     //: id bubbleView = self.bubbleView;
     id bubbleView = self.bubbleView;
-    //: if ([bubbleView isKindOfClass:[FFFSessionTextContentView class]]) {
+    //: if ([bubbleView isKindOfClass:[WatchSessionTextContentView class]]) {
     if ([bubbleView isKindOfClass:[InfoControl class]]) {
-        //: ((FFFSessionTextContentView *)bubbleView).textView.textColor = [UIColor blackColor];
+        //: ((WatchSessionTextContentView *)bubbleView).textView.textColor = [UIColor blackColor];
         ((InfoControl *)bubbleView).textView.textColor = [UIColor blackColor];
     }
 }

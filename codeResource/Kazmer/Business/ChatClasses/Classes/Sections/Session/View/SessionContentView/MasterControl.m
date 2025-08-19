@@ -9,22 +9,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "WatchSessionUnknowContentView.h"
 #import "MasterControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 
-//: @interface FFFSessionUnknowContentView()
+//: @interface WatchSessionUnknowContentView()
 @interface MasterControl()
 
 //: @property (nonatomic,strong) UILabel *label;
@@ -33,7 +33,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionUnknowContentView
+//: @implementation WatchSessionUnknowContentView
 @implementation MasterControl
 
 //: -(instancetype)initSessionMessageContentView
@@ -54,14 +54,14 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(WatchMessageModel *)data{
 - (void)lengthAt:(CentralProcessingUnitModel *)data{
     //: [super refresh:data];
     [super lengthAt:data];
     //: NSString *text = @"";
     NSString *text = @"";
 //    NSString *text = @"未知类型消息".nim_localized;
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SubObject *setting = [[ButtonKit sheerOption].config date:data.message];
 
     //: self.label.textColor = setting.textColor;

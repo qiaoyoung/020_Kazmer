@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFXMLReader.h"
+//: #import "WatchXMLReader.h"
 #import "QuickReader.h"
 
-//: NSString *const kFFFXMLReaderTextNodeKey = @"text";
+//: NSString *const kWatchXMLReaderTextNodeKey = @"text";
 NSString *const userTingNameUrl = @"text";
-//: NSString *const kFFFXMLReaderAttributePrefix = @"@";
+//: NSString *const kWatchXMLReaderAttributePrefix = @"@";
 NSString *const kControlKeyIdent = @"@";
 
-//: @interface FFFXMLReader ()
+//: @interface WatchXMLReader ()
 @interface QuickReader ()
 
 //: @property (nonatomic, strong) NSMutableArray *dictionaryStack;
@@ -31,7 +31,7 @@ NSString *const kControlKeyIdent = @"@";
 @end
 
 
-//: @implementation FFFXMLReader
+//: @implementation WatchXMLReader
 @implementation QuickReader
 
 //: #pragma mark - Public methods
@@ -40,7 +40,7 @@ NSString *const kControlKeyIdent = @"@";
 //: + (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)error
 + (NSDictionary *)secretUser:(NSData *)data back:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: WatchXMLReader *reader = [[WatchXMLReader alloc] initWithError:error];
     QuickReader *reader = [[QuickReader alloc] initWithExhibit:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:0];
     NSDictionary *rootDictionary = [reader scale:data childWithLine:0];
@@ -53,14 +53,14 @@ NSString *const kControlKeyIdent = @"@";
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data error:error];
+    //: return [WatchXMLReader dictionaryForXMLData:data error:error];
     return [QuickReader secretUser:data back:error];
 }
 
-//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)max:(NSData *)data reach:(FFFXMLReaderOptions)options message:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(WatchXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)max:(NSData *)data reach:(WatchXMLReaderOptions)options message:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: WatchXMLReader *reader = [[WatchXMLReader alloc] initWithError:error];
     QuickReader *reader = [[QuickReader alloc] initWithExhibit:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:options];
     NSDictionary *rootDictionary = [reader scale:data childWithLine:options];
@@ -68,12 +68,12 @@ NSString *const kControlKeyIdent = @"@";
     return rootDictionary;
 }
 
-//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)level:(NSString *)string manager:(FFFXMLReaderOptions)options should:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(WatchXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)level:(NSString *)string manager:(WatchXMLReaderOptions)options should:(NSError **)error
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data options:options error:error];
+    //: return [WatchXMLReader dictionaryForXMLData:data options:options error:error];
     return [QuickReader max:data reach:options message:error];
 }
 
@@ -96,8 +96,8 @@ NSString *const kControlKeyIdent = @"@";
     return self;
 }
 
-//: - (NSDictionary *)objectWithData:(NSData *)data options:(FFFXMLReaderOptions)options
-- (NSDictionary *)scale:(NSData *)data childWithLine:(FFFXMLReaderOptions)options
+//: - (NSDictionary *)objectWithData:(NSData *)data options:(WatchXMLReaderOptions)options
+- (NSDictionary *)scale:(NSData *)data childWithLine:(WatchXMLReaderOptions)options
 {
     // Clear out any old data
     //: self.dictionaryStack = [[NSMutableArray alloc] init];
@@ -113,12 +113,12 @@ NSString *const kControlKeyIdent = @"@";
     //: NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
 
-    //: [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    //: [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    //: [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
-    [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
+    //: [parser setShouldProcessNamespaces:(options & WatchXMLReaderOptionsProcessNamespaces)];
+    [parser setShouldProcessNamespaces:(options & WatchXMLReaderOptionsProcessNamespaces)];
+    //: [parser setShouldReportNamespacePrefixes:(options & WatchXMLReaderOptionsReportNamespacePrefixes)];
+    [parser setShouldReportNamespacePrefixes:(options & WatchXMLReaderOptionsReportNamespacePrefixes)];
+    //: [parser setShouldResolveExternalEntities:(options & WatchXMLReaderOptionsResolveExternalEntities)];
+    [parser setShouldResolveExternalEntities:(options & WatchXMLReaderOptionsResolveExternalEntities)];
 
     //: parser.delegate = self;
     parser.delegate = self;
@@ -216,7 +216,7 @@ NSString *const kControlKeyIdent = @"@";
         // trim after concatenating
         //: NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kFFFXMLReaderTextNodeKey];
+        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kWatchXMLReaderTextNodeKey];
         [dictInProgress setObject:[trimmedString mutableCopy] forKey:userTingNameUrl];
 
         // Reset the text

@@ -122,7 +122,7 @@ typedef struct {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(WatchMessageModel *)model{
 - (void)lengthAt:(CentralProcessingUnitModel *)model{
     //: [super refresh:model];
     [super lengthAt:model];
@@ -191,7 +191,7 @@ typedef struct {
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(modelled:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
         CoverShowEvent *event = [[CoverShowEvent alloc] init];
         //: event.eventName = NTESShowRedPacketDetailEvent;
         event.eventName = mValueDateName;

@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFGrowingInternalTextView : UITextView
+//: @interface WatchGrowingInternalTextView : UITextView
 @interface EdgeNameView : UITextView
 
 //: @property (nonatomic,strong) NSAttributedString *placeholderAttributedText;

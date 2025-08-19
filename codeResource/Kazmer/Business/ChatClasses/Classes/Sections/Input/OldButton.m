@@ -9,29 +9,29 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonButton.h"
+//: #import "WatchInputEmoticonButton.h"
 #import "OldButton.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
 //:  
  
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitDevice.h"
+//: #import "WatchKitDevice.h"
 #import "ButtonDevice.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+ButtonKit.h"
 //: #import "SSZipArchiveManager.h"
 #import "EmptyTing.h"
 
-//: @implementation FFFInputEmoticonButton
+//: @implementation WatchInputEmoticonButton
 @implementation OldButton
 
-//: + (FFFInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
+//: + (WatchInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
 + (OldButton*)conference:(ButtonTableEmoticon*)data delegateBe:(NSString*)catalogID glitter:( id<OnDelegate>)delegate{
-    //: FFFInputEmoticonButton* icon = [[FFFInputEmoticonButton alloc] init];
+    //: WatchInputEmoticonButton* icon = [[WatchInputEmoticonButton alloc] init];
     OldButton* icon = [[OldButton alloc] init];
     //: [icon addTarget:icon action:@selector(onIconSelected:) forControlEvents:UIControlEventTouchUpInside];
     [icon addTarget:icon action:@selector(lipograming:) forControlEvents:UIControlEventTouchUpInside];

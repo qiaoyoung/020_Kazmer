@@ -385,7 +385,7 @@ static BarTo *mainMinPathKey = nil;
 
     //: } failed:^(id responseObject, NSError *error) {
     } tagStandard:^(id responseObject, NSError *error) {
-        //: !complete ? : complete(NO,[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
+        //: !complete ? : complete(NO,[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
         !complete ? : complete(NO,[PaintedNaturalLanguageTo exhibit:[[ColorRemindData sharedInstance] appControlShipStr]]);
     //: }];
     }];
@@ -539,7 +539,7 @@ static BarTo *mainMinPathKey = nil;
 
         //: } failed:^(id responseObject, NSError *error) {
         } container:^(id responseObject, NSError *error) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
+            //: [SVProgressHUD showMessage:[WatchLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
             [SVProgressHUD index:[PaintedNaturalLanguageTo exhibit:[[ColorRemindData sharedInstance] user_workplaceKey]]];
 
         //: }];

@@ -158,10 +158,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRemarksView.h"
+//: #import "WatchRemarksView.h"
 #import "BubbleView.h"
 
-//: @interface FFFRemarksView ()<UITextFieldDelegate>
+//: @interface WatchRemarksView ()<UITextFieldDelegate>
 @interface BubbleView ()<UITextFieldDelegate>
 
 //: @property (nonatomic,assign) NSInteger inputLimit;
@@ -186,7 +186,7 @@
 //: @end
 @end
 
-//: @implementation FFFRemarksView
+//: @implementation WatchRemarksView
 @implementation BubbleView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -262,7 +262,7 @@
 {
     //: self.user = user;
     self.user = user;
-    //: self.titleLabel.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+    //: self.titleLabel.text = [WatchLanguageManager getTextWithKey:@"message_remark_name"];
     self.titleLabel.text = [PaintedNaturalLanguageTo exhibit:[NameCharterData sharedInstance].kBarreFormat];
     //: self.searchField.text = user.alias;
     self.searchField.text = user.alias;
@@ -278,7 +278,7 @@
 //    self.box.frame = CGRectMake(0, SCREEN_HEIGHT-180, SCREEN_WIDTH, 180);
     //: if (!self.searchField.text.length) {
     if (!self.searchField.text.length) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_input_beizhu"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_input_beizhu"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[PaintedNaturalLanguageTo exhibit:[NameCharterData sharedInstance].dream_tablePictureName] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -299,7 +299,7 @@
         [SVProgressHUD dismiss];
         //: if (!error) {
         if (!error) {
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [wself makeToast:[PaintedNaturalLanguageTo exhibit:[NameCharterData sharedInstance].mainMeatContent]
                          //: duration:2
                          duration:2
@@ -311,7 +311,7 @@
 
         //: }else{
         }else{
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself makeToast:[PaintedNaturalLanguageTo exhibit:[NameCharterData sharedInstance].show_myUrl]
                          //: duration:2
                          duration:2
@@ -428,7 +428,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:[NameCharterData sharedInstance].notiScaleValueStr] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:[NameCharterData sharedInstance].dreamOfUrl] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -455,7 +455,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:[NameCharterData sharedInstance].app_scribeCartContent] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor min:[NameCharterData sharedInstance].notiShowerIdent];
@@ -493,7 +493,7 @@
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: _searchField.placeholder = [WatchLanguageManager getTextWithKey:@"message_remark_name"];
         _searchField.placeholder = [PaintedNaturalLanguageTo exhibit:[NameCharterData sharedInstance].kBarreFormat];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

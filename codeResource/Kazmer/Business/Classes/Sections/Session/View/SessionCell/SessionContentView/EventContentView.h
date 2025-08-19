@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
 //: #import "M80AttributedLabel.h"
 #import "QuickNameView.h"
@@ -18,7 +18,7 @@
 static NSString *const mValueDateName = @"NTESShowRedPacketDetailEvent";
 
 
-//: @interface NTESSessionRedPacketTipContentView : FFFSessionMessageContentView
+//: @interface NTESSessionRedPacketTipContentView : WatchSessionMessageContentView
 @interface EventContentView : ThoughtImageControl
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;

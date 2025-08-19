@@ -314,7 +314,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:[[FreedInfoData sharedInstance] mainMatteMessage]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"reject"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"reject"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[FreedInfoData sharedInstance] noti_originInsistUrl]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -345,7 +345,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"agree"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"agree"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[FreedInfoData sharedInstance] k_muscleName]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor min:[[FreedInfoData sharedInstance] noti_fiftyPath]];

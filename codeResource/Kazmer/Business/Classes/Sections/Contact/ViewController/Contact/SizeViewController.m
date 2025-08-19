@@ -377,7 +377,7 @@
     contentLabel.textColor = [UIColor min:[QuantityCropCountData sharedInstance].appCloseValue];
     //: contentLabel.textAlignment = NSTextAlignmentCenter;
     contentLabel.textAlignment = NSTextAlignmentCenter;
-    //: contentLabel.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+    //: contentLabel.text = [WatchLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
     contentLabel.text = [PaintedNaturalLanguageTo exhibit:[QuantityCropCountData sharedInstance].user_nameMediaFormat];//@"扫描二维码，加我为好友";
     //: [contentView addSubview:contentLabel];
     [contentView addSubview:contentLabel];
@@ -552,7 +552,7 @@
           if (error) {
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{
-                  //: NSString *failed = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+                  //: NSString *failed = [WatchLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
                   NSString *failed = [PaintedNaturalLanguageTo exhibit:[QuantityCropCountData sharedInstance].k_manMessage];//@"保存失败"
                   //: [SVProgressHUD showMessage:failed];
                   [SVProgressHUD index:failed];
@@ -560,7 +560,7 @@
               });
           //: } else {
           } else {
-              //: NSString *success = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"];
+              //: NSString *success = [WatchLanguageManager getTextWithKey:@"group_info_activity_update_success"];
               NSString *success = [PaintedNaturalLanguageTo exhibit:[QuantityCropCountData sharedInstance].mainMediaValue];//保存成功
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{

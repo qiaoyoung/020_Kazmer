@@ -11,12 +11,12 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
-//: #import "FFFKitInfo.h"
+//: #import "WatchContactDefines.h"
+#import "WatchContactDefines.h"
+//: #import "WatchKitInfo.h"
 #import "TingMessage.h"
 
-//: @protocol FFFContactDataCellDelegate <NSObject>
+//: @protocol WatchContactDataCellDelegate <NSObject>
 @protocol ZoneDelegate <NSObject>
 
 //: - (void)onPressAvatar:(NSString *)memberId;
@@ -25,23 +25,23 @@
 //: @end
 @end
 
-//: @class FFFAvatarImageView;
+//: @class WatchAvatarImageView;
 @class RecordControl;
 
-//: @interface FFFContactDataCell : UITableViewCell
+//: @interface WatchContactDataCell : UITableViewCell
 @interface ContactViewCell : UITableViewCell
 
 //: @property (nonatomic,copy) NSString *memberId;
 @property (nonatomic,copy) NSString *memberId;
 
-//: @property (nonatomic,strong) FFFAvatarImageView * avatarImageView;
+//: @property (nonatomic,strong) WatchAvatarImageView * avatarImageView;
 @property (nonatomic,strong) RecordControl * avatarImageView;
 //: @property (nonatomic,strong) UILabel *labName;
 @property (nonatomic,strong) UILabel *labName;
 //: @property (nonatomic,strong) UIButton *accessoryBtn;
 @property (nonatomic,strong) UIButton *accessoryBtn;
 
-//: @property (nonatomic,weak) id<FFFContactDataCellDelegate> delegate;
+//: @property (nonatomic,weak) id<WatchContactDataCellDelegate> delegate;
 @property (nonatomic,weak) id<ZoneDelegate> delegate;
 
 //: - (void)refreshUser:(id<NIMGroupMemberProtocol>)member;

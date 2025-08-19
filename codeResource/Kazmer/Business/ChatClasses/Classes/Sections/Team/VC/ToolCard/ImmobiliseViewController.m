@@ -152,20 +152,20 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCreateTeamAnnouncement.h"
+//: #import "WatchCreateTeamAnnouncement.h"
 #import "ImmobiliseViewController.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
+//: #import "WatchKitKeyboardInfo.h"
 #import "UserInfo.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "UITextView+Util.h"
 #import "UITextView+Util.h"
 
-//: @interface FFFCreateTeamAnnouncement () <UITextFieldDelegate, UITextViewDelegate>
+//: @interface WatchCreateTeamAnnouncement () <UITextFieldDelegate, UITextViewDelegate>
 @interface ImmobiliseViewController () <UITextFieldDelegate, UITextViewDelegate>
 //: @property (strong, nonatomic) UITextField *titleTextField;
 @property (strong, nonatomic) UITextField *titleTextField;
@@ -180,7 +180,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFCreateTeamAnnouncement
+//: @implementation WatchCreateTeamAnnouncement
 @implementation ImmobiliseViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -238,7 +238,7 @@ typedef struct {
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Group_description"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"Group_description"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[FashionData k_tubeGuidanceMsg]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -283,7 +283,7 @@ typedef struct {
 
     //: self.titleTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 10, [[UIScreen mainScreen] bounds].size.width-60, 30)];
     self.titleTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 10, [[UIScreen mainScreen] bounds].size.width-60, 30)];
-    //: self.titleTextField.placeholder = [FFFLanguageManager getTextWithKey:@"Announcement_title"];
+    //: self.titleTextField.placeholder = [WatchLanguageManager getTextWithKey:@"Announcement_title"];
     self.titleTextField.placeholder = [PaintedNaturalLanguageTo exhibit:[FashionData appShirtPath]];
     //: self.titleTextField.font = [UIFont systemFontOfSize:18.f];
     self.titleTextField.font = [UIFont systemFontOfSize:18.f];
@@ -311,7 +311,7 @@ typedef struct {
     self.contentTextView.font = [UIFont systemFontOfSize:14.f];
     //: self.contentTextView.delegate = self;
     self.contentTextView.delegate = self;
-    //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
+    //: self.contentTextView.placeholder = [WatchLanguageManager getTextWithKey:@"Please_enter_content"];
     self.contentTextView.placeholder = [PaintedNaturalLanguageTo exhibit:[FashionData kSystemRemovalRegainContent]];
     //: self.contentTextView.text = self.defaultContent;
     self.contentTextView.text = self.defaultContent;
@@ -330,7 +330,7 @@ typedef struct {
     submitButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+    //: [submitButton setTitle:[WatchLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
     [submitButton setTitle:[PaintedNaturalLanguageTo exhibit:[FashionData noti_circlePath]] forState:UIControlStateNormal];
     //: [submitButton addTarget:self action:@selector(onSave:) forControlEvents:UIControlEventTouchUpInside];
     [submitButton addTarget:self action:@selector(shouldsed:) forControlEvents:UIControlEventTouchUpInside];

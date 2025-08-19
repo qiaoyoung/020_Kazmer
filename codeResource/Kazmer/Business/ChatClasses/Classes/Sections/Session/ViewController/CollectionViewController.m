@@ -363,68 +363,68 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "WatchSessionConfigurateProtocol.h"
+#import "WatchSessionConfigurateProtocol.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageCellProtocol.h"
+#import "WatchMessageCellProtocol.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
-//: #import "FFFBadgeView.h"
+//: #import "WatchBadgeView.h"
 #import "NameSessionView.h"
 //: #import "UITableView+NIMScrollToBottom.h"
 #import "UITableView+NIMScrollToBottom.h"
-//: #import "FFFMessageMaker.h"
+//: #import "WatchMessageMaker.h"
 #import "ImpendentMaker.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFSessionConfigurator.h"
+//: #import "WatchSessionConfigurator.h"
 #import "MaxConfigurator.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
-//: #import "FFFKitTitleView.h"
+//: #import "WatchKitTitleView.h"
 #import "DoingToView.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "WatchKitKeyboardInfo.h"
 #import "UserInfo.h"
-//: #import "FFFReplyContentView.h"
+//: #import "WatchReplyContentView.h"
 #import "AnswerView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
+//: #import "WatchKitQuickCommentUtil.h"
 #import "NameUtilPath.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "WatchBubbleMenuView.h"
 #import "BroadcastView.h"
-//: #import "FFFTextView.h"
+//: #import "WatchTextView.h"
 #import "ReplacementNameView.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
 //: #import "NSObject+tyl_internalIdentifier.h"
 #import "NSObject+SumrinsicIdentifier.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "WatchBubbleMenuView.h"
 #import "BroadcastView.h"
-//: #import "FFFBubbleButtonModel.h"
+//: #import "WatchBubbleButtonModel.h"
 #import "PageCountImage.h"
 //:  
  
-//: #import "FFFInputAudioView.h"
+//: #import "WatchInputAudioView.h"
 #import "InputMessageView.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
 //: #import "NTESPersonalCardViewController.h"
 #import "ApproximateViewController.h"
-//: #import "FFFTeamCardViewController.h"
+//: #import "WatchTeamCardViewController.h"
 #import "ChronicleViewController.h"
-//: #import "FFFAdvancedTeamCardViewController.h"
+//: #import "WatchAdvancedTeamCardViewController.h"
 #import "ValueToViewController.h"
 //: #import "PhotoContainerView.h"
 #import "CuttingEdgeRadiogramTroughView.h"
 //: #import "SSZipArchiveManager.h"
 #import "EmptyTing.h"
 
-//: @interface FFFSessionViewController ()<NIMMediaManagerDelegate,NIMInputDelegate,FFFTeamCardViewControllerDelegate,NIMConversationManagerDelegate,CustomUISeletePhotosDelegate,UIGestureRecognizerDelegate>
+//: @interface WatchSessionViewController ()<NIMMediaManagerDelegate,NIMInputDelegate,WatchTeamCardViewControllerDelegate,NIMConversationManagerDelegate,CustomUISeletePhotosDelegate,UIGestureRecognizerDelegate>
 @interface CollectionViewController ()<NIMMediaManagerDelegate,CloseDelegate,ModePath,NIMConversationManagerDelegate,EnableButton,UIGestureRecognizerDelegate>
 
 //: @property (nonatomic,readwrite) NIMMessage *messageForMenu;
@@ -439,7 +439,7 @@ typedef struct {
 //: @property (nonatomic,strong) NSIndexPath *lastVisibleIndexPathBeforeRotation;
 @property (nonatomic,strong) NSIndexPath *lastVisibleIndexPathBeforeRotation;
 
-//: @property (nonatomic,strong) FFFSessionConfigurator *configurator;
+//: @property (nonatomic,strong) WatchSessionConfigurator *configurator;
 @property (nonatomic,strong) MaxConfigurator *configurator;
 
 //: @property (nonatomic,strong) UITapGestureRecognizer *tableViewTapGesture;
@@ -447,7 +447,7 @@ typedef struct {
 
 //: @property (nonatomic,assign) NSInteger sessionUnreadCount;
 @property (nonatomic,assign) NSInteger sessionUnreadCount;
-//: @property (nonatomic,strong) FFFBadgeView *badgeView;
+//: @property (nonatomic,strong) WatchBadgeView *badgeView;
 @property (nonatomic,strong) NameSessionView *badgeView;
 //: @property (nonatomic,strong) UIImageView *headerImage;
 @property (nonatomic,strong) UIImageView *headerImage;
@@ -462,7 +462,7 @@ typedef struct {
 @property (nonatomic, strong) UIView *topview;
 //: @property (nonatomic, strong) UIButton *btnAudio;
 @property (nonatomic, strong) UIButton *btnAudio;
-//: @property (nonatomic, strong) FFFInputAudioView *audioContent;
+//: @property (nonatomic, strong) WatchInputAudioView *audioContent;
 @property (nonatomic, strong) InputMessageView *audioContent;
 
 //: @property (nonatomic, strong) UIView *photopicview;
@@ -474,7 +474,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFSessionViewController
+//: @implementation WatchSessionViewController
 @implementation CollectionViewController
 
 //: - (instancetype)initWithSession:(NIMSession *)session{
@@ -744,7 +744,7 @@ typedef struct {
 
     //: self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
     self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
-     //: _badgeView = [FFFBadgeView viewWithBadgeTip:@""];
+     //: _badgeView = [WatchBadgeView viewWithBadgeTip:@""];
      _badgeView = [NameSessionView title:@""];
     //: _badgeView.frame = CGRectMake(backBtn.right+5, backBtn.top+8, 24, 24);
     _badgeView.frame = CGRectMake(backBtn.right+5, backBtn.top+8, 24, 24);
@@ -861,7 +861,7 @@ typedef struct {
             [SVProgressHUD dismiss];
             //: if (error) {
             if (error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] kCrowdedValue]] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];
@@ -878,9 +878,9 @@ typedef struct {
 }
 //: - (void)enterTeamCard:(id)sender {
 - (void)reportCard:(id)sender {
-    //: FFFTeamCardViewController *vc = nil;
+    //: WatchTeamCardViewController *vc = nil;
     ChronicleViewController *vc = nil;
-    //: FFFTeamCardViewControllerOption *option = [[FFFTeamCardViewControllerOption alloc] init];
+    //: WatchTeamCardViewControllerOption *option = [[WatchTeamCardViewControllerOption alloc] init];
     NakedOptionRecent *option = [[NakedOptionRecent alloc] init];
     //: option.isTop = [NIMSDK.sharedSDK.chatExtendManager stickTopInfoForSession:self.session] != nil;
     option.isTop = [NIMSDK.sharedSDK.chatExtendManager stickTopInfoForSession:self.session] != nil;
@@ -889,7 +889,7 @@ typedef struct {
     NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.session.sessionId];
     //: if(team.type == NIMTeamTypeAdvanced){
     if(team.type == NIMTeamTypeAdvanced){
-            //: vc = [[FFFAdvancedTeamCardViewController alloc] initWithTeam:team
+            //: vc = [[WatchAdvancedTeamCardViewController alloc] initWithTeam:team
             vc = [[ValueToViewController alloc] initWithGlitter:team
                                                                  //: session:self.session
                                                                  withOption:self.session
@@ -967,7 +967,7 @@ typedef struct {
     //: if ([self shouldShowInputView])
     if ([self phase])
     {
-        //: self.sessionInputView = [[FFFInputView alloc] initWithFrame:CGRectMake(0, 0, self.view.nim_width,0) config:self.sessionConfig];
+        //: self.sessionInputView = [[WatchInputView alloc] initWithFrame:CGRectMake(0, 0, self.view.nim_width,0) config:self.sessionConfig];
         self.sessionInputView = [[SignView alloc] initWithLabelConfig:CGRectMake(0, 0, self.view.nim_width,0) tool:self.sessionConfig];
         //: self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
@@ -993,7 +993,7 @@ typedef struct {
 //: - (void)setupConfigurator
 - (void)remote
 {
-    //: _configurator = [[FFFSessionConfigurator alloc] init];
+    //: _configurator = [[WatchSessionConfigurator alloc] init];
     _configurator = [[MaxConfigurator alloc] init];
     //: [_configurator setup:self];
     [_configurator messageAt:self];
@@ -1032,7 +1032,7 @@ typedef struct {
     //: [self.sessionInputView endEditing:YES];
     [self.sessionInputView endEditing:YES];
     // 隐藏长按弹窗
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [WatchBubbleMenuView.shareMenuView removeFromSuperview];
     [BroadcastView.dismissDisappear removeFromSuperview];
     //: [self.navigationController.navigationBar setHidden:NO];
     [self.navigationController.navigationBar setHidden:NO];
@@ -1062,7 +1062,7 @@ typedef struct {
 //: - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    [self.serviceContentTextView hideTextSelection];
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [WatchBubbleMenuView.shareMenuView removeFromSuperview];
     [BroadcastView.dismissDisappear removeFromSuperview];
     //: [self.view endEditing:YES];
     [self.view endEditing:YES];
@@ -1072,7 +1072,7 @@ typedef struct {
 - (void)barScroll:(UIScrollView *)scrollView {
     //: if ([scrollView isKindOfClass:[UITextView class]]) {
     if ([scrollView isKindOfClass:[UITextView class]]) {
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [WatchBubbleMenuView.shareMenuView removeFromSuperview];
         [BroadcastView.dismissDisappear removeFromSuperview];
     }
     //: [self.view endEditing:YES];
@@ -1121,8 +1121,8 @@ typedef struct {
 }
 
 
-//: #pragma mark - FFFSessionConfiguratorDelegate
-#pragma mark - FFFSessionConfiguratorDelegate
+//: #pragma mark - WatchSessionConfiguratorDelegate
+#pragma mark - WatchSessionConfiguratorDelegate
 
 //: - (void)didFetchMessageData
 - (void)onExist
@@ -1172,7 +1172,7 @@ typedef struct {
             break;
         //: case NIMSessionTypeP2P:{
         case NIMSessionTypeP2P:{
-            //: title = [FFFKitUtil showNick:self.session.sessionId inSession:self.session];
+            //: title = [WatchKitUtil showNick:self.session.sessionId inSession:self.session];
             title = [ObjectUtil message:self.session.sessionId sessionView:self.session];
         }
             //: break;
@@ -1262,7 +1262,7 @@ typedef struct {
             //: NSString *urlString = imageObject.url;
             NSString *urlString = imageObject.url;
 
-            //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+            //: NSMutableDictionary *dic = [[WatchConfig sharedConfig] Gdic];
             NSMutableDictionary *dic = [[RecordInput file] Gdic];
             //: NSData *data = [dic objectForKey:message.messageId];
             NSData *data = [dic objectForKey:message.messageId];
@@ -1330,7 +1330,7 @@ typedef struct {
 
         //: UIViewController *topvc = [self getTopMostController];
         UIViewController *topvc = [self error];
-        //: if (![topvc isKindOfClass:NSClassFromString(@"NTESSessionViewController")] && ![topvc isKindOfClass:[FFFSessionViewController class]]) {
+        //: if (![topvc isKindOfClass:NSClassFromString(@"NTESSessionViewController")] && ![topvc isKindOfClass:[WatchSessionViewController class]]) {
         if (![topvc isKindOfClass:NSClassFromString(@"BroadcastViewController")] && ![topvc isKindOfClass:[CollectionViewController class]]) {
             //: return;
             return;
@@ -1421,7 +1421,7 @@ typedef struct {
 - (void)setObject:(BOOL)ban {
     //: if (ban){
     if (ban){
-        //: [self.sessionInputView setInputTextPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_administrator_speak"] color:[UIColor redColor]];
+        //: [self.sessionInputView setInputTextPlaceHolder:[WatchLanguageManager getTextWithKey:@"message_administrator_speak"] color:[UIColor redColor]];
         [self.sessionInputView holderDisplay:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] main_introductionContent]] flushMessage:[UIColor redColor]];
         //: self.sessionInputView.userInteractionEnabled = NO;
         self.sessionInputView.userInteractionEnabled = NO;
@@ -1429,7 +1429,7 @@ typedef struct {
         self.canTapVoiceBtn = NO;
     //: } else {
     } else {
-        //: [self.sessionInputView setInputTextPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"] color:[UIColor grayColor]];
+        //: [self.sessionInputView setInputTextPlaceHolder:[WatchLanguageManager getTextWithKey:@"message_please_enter_content"] color:[UIColor grayColor]];
         [self.sessionInputView holderDisplay:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] userThreatenId]] flushMessage:[UIColor grayColor]];
         //: self.sessionInputView.userInteractionEnabled = YES;
         self.sessionInputView.userInteractionEnabled = YES;
@@ -1498,7 +1498,7 @@ typedef struct {
     //: if ([message.session isEqual:_session])
     if ([message.session isEqual:_session])
     {
-        //: FFFMessageModel *model = [self.interactor findMessageModel:message];
+        //: WatchMessageModel *model = [self.interactor findMessageModel:message];
         CentralProcessingUnitModel *model = [self.interactor towardMessage:message];
         //下完缩略图之后，因为比例有变化，重新刷下宽高。
         //: [model cleanCache];
@@ -1604,7 +1604,7 @@ typedef struct {
     if(!error) {
         //: if ([self recordFileCanBeSend:filePath]) {
         if ([self putUp:filePath]) {
-            //: [self sendMessage:[FFFMessageMaker msgWithAudio:filePath]];
+            //: [self sendMessage:[WatchMessageMaker msgWithAudio:filePath]];
             [self maxTeam:[ImpendentMaker info:filePath]];
         //: }else{
         }else{
@@ -1685,7 +1685,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] kCrowdedValue]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -1695,7 +1695,7 @@ typedef struct {
             }];
 
 }
-//: - (BOOL)onTapMediaItem:(FFFMediaItem *)item{
+//: - (BOOL)onTapMediaItem:(WatchMediaItem *)item{
 - (BOOL)colorBlueItem:(InfoMakeBar *)item{
     //: SEL sel = item.selctor;
     SEL sel = item.selctor;
@@ -1731,7 +1731,7 @@ typedef struct {
         [users addObject:self.session.sessionId];
     }
 
-    //: NIMMessage *message = [FFFMessageMaker msgWithText:text];
+    //: NIMMessage *message = [WatchMessageMaker msgWithText:text];
     NIMMessage *message = [ImpendentMaker colorColumn:text];
     //: if (atUsers.count)
     if (atUsers.count)
@@ -1743,7 +1743,7 @@ typedef struct {
         //: apnsOption.forcePush = YES;
         apnsOption.forcePush = YES;
 
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
         CoverTingContent *option = [[CoverTingContent alloc] init];
         //: option.session = self.session;
         option.session = self.session;
@@ -1772,7 +1772,7 @@ typedef struct {
         [users addObject:self.session.sessionId];
     }
 
-    //: NIMMessage *message = [FFFMessageMaker msgWithText:text];
+    //: NIMMessage *message = [WatchMessageMaker msgWithText:text];
     NIMMessage *message = [ImpendentMaker colorColumn:text];
     //: NSString *type = @"";
     NSString *type = @"";
@@ -1814,11 +1814,11 @@ typedef struct {
         contents = [NSString stringWithFormat:@"%zd\"",(NSInteger)((audioObject.duration+500)/1000)];
     }
 
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
     CoverTingContent *option = [[CoverTingContent alloc] init];
     //: option.message = replymessage;
     option.message = replymessage;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:replymessage.from option:option];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:replymessage.from option:option];
     TingMessage *info = [[ButtonKit sheerOption] past:replymessage.from skinColour_strong:option];
 
     //: NSDictionary *dic = @{
@@ -1847,7 +1847,7 @@ typedef struct {
         //: apnsOption.forcePush = YES;
         apnsOption.forcePush = YES;
 
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
         CoverTingContent *option = [[CoverTingContent alloc] init];
         //: option.session = self.session;
         option.session = self.session;
@@ -1889,7 +1889,7 @@ typedef struct {
                       //: compltion:^(NSMapTable *result)
                       channelize:^(NSMapTable *result)
      {
-        //: NIMQuickComment *oldComment = [FFFKitQuickCommentUtil myCommentFromComments:0 keys:@[@(number)] comments:result];
+        //: NIMQuickComment *oldComment = [WatchKitQuickCommentUtil myCommentFromComments:0 keys:@[@(number)] comments:result];
         NIMQuickComment *oldComment = [NameUtilPath necessary:0 saloon:@[@(number)] title:result];
         //: BOOL contains = oldComment ? YES : NO;
         BOOL contains = oldComment ? YES : NO;
@@ -1905,7 +1905,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] kCrowdedValue]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -1928,7 +1928,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] kCrowdedValue]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -1982,10 +1982,10 @@ typedef struct {
 //    [self sendMessage:message];
 //
 
-    //: NIMMessage *message = [FFFMessageMaker msgWithImageData:imageData extension:@""];
+    //: NIMMessage *message = [WatchMessageMaker msgWithImageData:imageData extension:@""];
     NIMMessage *message = [ImpendentMaker noWill:imageData model_strong:@""];
 //    message.messageSubType = 77;//标记gif用
-    //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+    //: NSMutableDictionary *dic = [[WatchConfig sharedConfig] Gdic];
     NSMutableDictionary *dic = [[RecordInput file] Gdic];
 //    NSData *imageData = UIImagePNGRepresentation(image);
     //: [dic setObject:imageData forKey:message.messageId];
@@ -1994,7 +1994,7 @@ typedef struct {
     //: [self sendMessage:message];
     [self maxTeam:message];
 
-    //: [self.sessionInputView.toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+    //: [self.sessionInputView.toolBar setPlaceHolder:[WatchLanguageManager getTextWithKey:@"message_please_enter_content"]];
     [self.sessionInputView.toolBar setUtiliser:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] userThreatenId]]];
 
 //    [self.sessionInputView endEditing:YES];
@@ -2072,15 +2072,15 @@ typedef struct {
     [self container:message];
 }
 
-//: #pragma mark - FFFMessageCellDelegate
+//: #pragma mark - WatchMessageCellDelegate
 #pragma mark - ModeQueryTime
-//: - (BOOL)onTapCell:(FFFKitEvent *)event{
+//: - (BOOL)onTapCell:(WatchKitEvent *)event{
 - (BOOL)hides:(CoverShowEvent *)event{
     //: BOOL handle = NO;
     BOOL handle = NO;
     //: NSString *eventName = event.eventName;
     NSString *eventName = event.eventName;
-    //: if ([eventName isEqualToString:FFFKitEventNameTapAudio])
+    //: if ([eventName isEqualToString:WatchKitEventNameTapAudio])
     if ([eventName isEqualToString:m_originalMsg])
     {
         //: [self.interactor mediaAudioPressed:event.messageModel];
@@ -2131,7 +2131,7 @@ typedef struct {
     //: if ([self shouldShowMenuByMessage:message])
     if ([self exhibit:message])
     {
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [WatchBubbleMenuView.shareMenuView removeFromSuperview];
         [BroadcastView.dismissDisappear removeFromSuperview];
         //: [self showMenuWithMessage:message withView:view];
         [self redView:message exceptTeam:view];
@@ -2226,7 +2226,7 @@ typedef struct {
                 //: return;
                 return;
             }
-            //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+            //: [weakSelf.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
             [weakSelf.view makeToast:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] kCrowdedValue]] duration:2 position:CSToastPositionCenter];
         //: }];
         }];
@@ -2250,7 +2250,7 @@ typedef struct {
                 //: return;
                 return;
             }
-            //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+            //: [weakSelf.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
             [weakSelf.view makeToast:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] kCrowdedValue]] duration:2 position:CSToastPositionCenter];
         //: }];
         }];
@@ -2260,7 +2260,7 @@ typedef struct {
 
 //: #pragma mark - 配置项
 #pragma mark - 配置项
-//: - (id<FFFSessionConfig>)sessionConfig
+//: - (id<WatchSessionConfig>)sessionConfig
 - (id<MessagePinImage>)sessionConfig
 {
     //: return nil; 
@@ -2408,7 +2408,7 @@ typedef struct {
     [UIMenuController sharedMenuController].menuItems = nil;
 }
 
-//: - (void)onTapMenuItemCopy:(FFFMediaItem *)item
+//: - (void)onTapMenuItemCopy:(WatchMediaItem *)item
 - (void)onTapMenuItemCopy:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -2429,7 +2429,7 @@ typedef struct {
     }
 }
 
-//: - (void)onTapMenuItemDelete:(FFFMediaItem *)item
+//: - (void)onTapMenuItemDelete:(WatchMediaItem *)item
 - (void)roundCut:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -2456,9 +2456,9 @@ typedef struct {
     [self.interactor quickShared:messages];
 }
 
-//: - (FFFMessageModel *)uiDeleteMessage:(NIMMessage *)message{
+//: - (WatchMessageModel *)uiDeleteMessage:(NIMMessage *)message{
 - (CentralProcessingUnitModel *)color:(NIMMessage *)message{
-    //: FFFMessageModel *model = [self.interactor deleteMessage:message];
+    //: WatchMessageModel *model = [self.interactor deleteMessage:message];
     CentralProcessingUnitModel *model = [self.interactor full:message];
     //: if (model.shouldShowReadLabel && model.message.session.sessionType == NIMSessionTypeP2P)
     if (model.shouldShowReadLabel && model.message.session.sessionType == NIMSessionTypeP2P)
@@ -2510,7 +2510,7 @@ typedef struct {
     [self.customAlbumView.albumPickerView.selectedAssets removeAllObjects];
     //: [self.customAlbumView.albumPickerView.collectionView reloadData];
     [self.customAlbumView.albumPickerView.collectionView reloadData];
-    //: [self.customAlbumView.confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+    //: [self.customAlbumView.confirmButton setTitle:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
     [self.customAlbumView.confirmButton setTitle:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] app_meltNeatId]] forState:UIControlStateNormal];
     //: [self.customAlbumView animationShow];
     [self.customAlbumView title];
@@ -2553,7 +2553,7 @@ typedef struct {
                 if (path) {
                     //: NSLog(@"视频路径: %@", path);
                     // 使用路径...
-                    //: NIMMessage *message = [FFFMessageMaker msgWithVideo:path];
+                    //: NIMMessage *message = [WatchMessageMaker msgWithVideo:path];
                     NIMMessage *message = [ImpendentMaker video:path];
                     //: [self sendMessage:message];
                     [self maxTeam:message];
@@ -2574,10 +2574,10 @@ typedef struct {
             [self tingKey:asset input:^(UIImage *image) {
                 //: if (image) {
                 if (image) {
-                    //: NIMMessage *message = [FFFMessageMaker msgWithImage:image];
+                    //: NIMMessage *message = [WatchMessageMaker msgWithImage:image];
                     NIMMessage *message = [ImpendentMaker source:image];
 
-                    //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+                    //: NSMutableDictionary *dic = [[WatchConfig sharedConfig] Gdic];
                     NSMutableDictionary *dic = [[RecordInput file] Gdic];
                     //: NSData *imageData = UIImagePNGRepresentation(image);
                     NSData *imageData = UIImagePNGRepresentation(image);
@@ -2770,21 +2770,21 @@ typedef struct {
 
 //: #pragma mark - NIMMeidaButton
 #pragma mark - NIMMeidaButton
-//: - (void)onTapMediaItemPicture:(FFFMediaItem *)item
+//: - (void)onTapMediaItemPicture:(WatchMediaItem *)item
 - (void)alongReferChiaroscuro:(InfoMakeBar *)item
 {
     //: [self.interactor mediaPicturePressed];
     [self.interactor button];
 }
 
-//: - (void)onTapMediaItemShoot:(FFFMediaItem *)item
+//: - (void)onTapMediaItemShoot:(WatchMediaItem *)item
 - (void)cancel:(InfoMakeBar *)item
 {
     //: [self.interactor mediaShootPressed];
     [self.interactor shootNumber];
 }
 
-//: - (void)onTapMediaItemLocation:(FFFMediaItem *)item
+//: - (void)onTapMediaItemLocation:(WatchMediaItem *)item
 - (void)name:(InfoMakeBar *)item
 {
 //    [self.interactor mediaLocationPressed];
@@ -2802,7 +2802,7 @@ typedef struct {
 {
 //    BroadcastView.shareMenuView.praiseView.hidden = YES;
 //    BroadcastView.shareMenuView.buttonsBgView.hidden = NO;
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [WatchBubbleMenuView.shareMenuView removeFromSuperview];
     [BroadcastView.dismissDisappear removeFromSuperview];
     //: [self.sessionInputView endEditing:YES];
     [self.sessionInputView endEditing:YES];
@@ -2910,12 +2910,12 @@ typedef struct {
 //: - (void)setUpTitleView
 - (void)reclineView
 {
-    //: FFFKitTitleView *titleView = (FFFKitTitleView *)self.navigationItem.titleView;
+    //: WatchKitTitleView *titleView = (WatchKitTitleView *)self.navigationItem.titleView;
     DoingToView *titleView = (DoingToView *)self.navigationItem.titleView;
-    //: if (!titleView || ![titleView isKindOfClass:[FFFKitTitleView class]])
+    //: if (!titleView || ![titleView isKindOfClass:[WatchKitTitleView class]])
     if (!titleView || ![titleView isKindOfClass:[DoingToView class]])
     {
-        //: titleView = [[FFFKitTitleView alloc] initWithFrame:CGRectZero];
+        //: titleView = [[WatchKitTitleView alloc] initWithFrame:CGRectZero];
         titleView = [[DoingToView alloc] initWithFrame:CGRectZero];
         //: self.navigationItem.titleView = titleView;
         self.navigationItem.titleView = titleView;
@@ -3044,7 +3044,7 @@ typedef struct {
 //: - (void)showMenuWithMessage:(NIMMessage *)message withView:(UIView *)view {
 - (void)redView:(NIMMessage *)message exceptTeam:(UIView *)view {
 
-    //: [[FFFBubbleMenuView shareMenuView] removeFromSuperview];
+    //: [[WatchBubbleMenuView shareMenuView] removeFromSuperview];
     [[BroadcastView dismissDisappear] removeFromSuperview];
 
     //: NSArray *btns = [self genMediaButtonsWithMessage:message];
@@ -3062,7 +3062,7 @@ typedef struct {
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: [[FFFBubbleMenuView shareMenuView] showViewWithButtonModels:btns cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(FFFMediaItem *item) {
+        //: [[WatchBubbleMenuView shareMenuView] showViewWithButtonModels:btns cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(WatchMediaItem *item) {
         [[BroadcastView dismissDisappear] accountIn:btns openBlock:cursorStartRectToWindow queryion:tempRect bubble:^(InfoMakeBar *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -3071,7 +3071,7 @@ typedef struct {
             //: [self onTapMediaItem:item];
             [self colorBlueItem:item];
 
-            //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+            //: [WatchBubbleMenuView.shareMenuView removeFromSuperview];
             [BroadcastView.dismissDisappear removeFromSuperview];
         //: }praiseBlock:^(NSInteger tag) {
         }show:^(NSInteger tag) {
@@ -3095,7 +3095,7 @@ typedef struct {
                       //: compltion:^(NSMapTable *result)
                       channelize:^(NSMapTable *result)
      {
-        //: NIMQuickComment *oldComment = [FFFKitQuickCommentUtil myCommentFromComments:0 keys:@[@(index)] comments:result];
+        //: NIMQuickComment *oldComment = [WatchKitQuickCommentUtil myCommentFromComments:0 keys:@[@(index)] comments:result];
         NIMQuickComment *oldComment = [NameUtilPath necessary:0 saloon:@[@(index)] title:result];
         //: BOOL contains = oldComment ? YES : NO;
         BOOL contains = oldComment ? YES : NO;
@@ -3109,7 +3109,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] kCrowdedValue]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -3132,7 +3132,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] kCrowdedValue]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -3165,10 +3165,10 @@ typedef struct {
         items = [self.sessionConfig tableOfTextsToInscription:message];
     }
 
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(WatchMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(InfoMakeBar *item, NSUInteger idx, BOOL *stop) {
 
-        //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+        //: WatchBubbleButtonModel *model = [[WatchBubbleButtonModel alloc] init];
         PageCountImage *model = [[PageCountImage alloc] init];
         //: model.normalImage = item.normalImage;
         model.normalImage = item.normalImage;
@@ -3337,7 +3337,7 @@ typedef struct {
         btnAlbum.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [btnAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btnAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        //: [btnAlbum setTitle:[FFFLanguageManager getTextWithKey:@"message_send_album"] forState:UIControlStateNormal];
+        //: [btnAlbum setTitle:[WatchLanguageManager getTextWithKey:@"message_send_album"] forState:UIControlStateNormal];
         [btnAlbum setTitle:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] kConsultantIdent]] forState:UIControlStateNormal];
         //: [btnAlbum layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleTop) imageTitleSpace:10];
         [btnAlbum title:(MKButtonEdgeInsetsStyleTop) tillVideo:10];
@@ -3358,7 +3358,7 @@ typedef struct {
         btnShot.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [btnShot setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btnShot setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        //: [btnShot setTitle:[FFFLanguageManager getTextWithKey:@"message_send_camera"] forState:UIControlStateNormal];
+        //: [btnShot setTitle:[WatchLanguageManager getTextWithKey:@"message_send_camera"] forState:UIControlStateNormal];
         [btnShot setTitle:[PaintedNaturalLanguageTo exhibit:[[DeerData sharedInstance] notiTechnologicId]] forState:UIControlStateNormal];
         //: [btnShot layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleTop) imageTitleSpace:10];
         [btnShot title:(MKButtonEdgeInsetsStyleTop) tillVideo:10];
@@ -3369,12 +3369,12 @@ typedef struct {
     return _photopicview;
 }
 
-//: - (FFFInputAudioView *)audioContent
+//: - (WatchInputAudioView *)audioContent
 - (InputMessageView *)audioContent
 {
     //: if(!_audioContent){
     if(!_audioContent){
-        //: _audioContent = [[FFFInputAudioView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _audioContent = [[WatchInputAudioView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _audioContent = [[InputMessageView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 //        _audioContent.hidden = YES;
     }

@@ -115,8 +115,8 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESNoticationUtil.h"
 #import "ToUtil.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 
 //: @implementation NTESNoticationUtil
 @implementation ToUtil

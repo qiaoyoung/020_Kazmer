@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFGrowingTextView;
+//: @class WatchGrowingTextView;
 @class TitleImageScrollView;
 
-//: @protocol FFFGrowingTextViewDelegate <NSObject>
+//: @protocol WatchGrowingTextViewDelegate <NSObject>
 @protocol EmptyMode <NSObject>
 //: @optional
 @optional
@@ -29,22 +29,22 @@
 //: - (BOOL)shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)range;
 - (BOOL)underName:(NSTextAttachment *)textAttachment searchKey:(NSRange)range;
 
-//: - (void)textViewDidBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidBeginEditing:(WatchGrowingTextView *)growingTextView;
 - (void)enabling:(TitleImageScrollView *)growingTextView;
 
-//: - (void)textViewDidChangeSelection:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChangeSelection:(WatchGrowingTextView *)growingTextView;
 - (void)withSelection:(TitleImageScrollView *)growingTextView;
 
-//: - (void)textViewDidEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidEndEditing:(WatchGrowingTextView *)growingTextView;
 - (void)cleanBe:(TitleImageScrollView *)growingTextView;
 
-//: - (BOOL)textViewShouldBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldBeginEditing:(WatchGrowingTextView *)growingTextView;
 - (BOOL)sizing:(TitleImageScrollView *)growingTextView;
 
-//: - (BOOL)textViewShouldEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldEndEditing:(WatchGrowingTextView *)growingTextView;
 - (BOOL)ended:(TitleImageScrollView *)growingTextView;
 
-//: - (void)textViewDidChange:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChange:(WatchGrowingTextView *)growingTextView;
 - (void)cameraColor:(TitleImageScrollView *)growingTextView;
 
 //: - (void)willChangeHeight:(CGFloat)height;
@@ -56,10 +56,10 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView : UIScrollView
+//: @interface WatchGrowingTextView : UIScrollView
 @interface TitleImageScrollView : UIScrollView
 
-//: @property (nonatomic,weak) id<FFFGrowingTextViewDelegate> textViewDelegate;
+//: @property (nonatomic,weak) id<WatchGrowingTextViewDelegate> textViewDelegate;
 @property (nonatomic,weak) id<EmptyMode> textViewDelegate;
 
 //: @property (nonatomic,assign) NSInteger minNumberOfLines;
@@ -74,7 +74,7 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView(TextView)
+//: @interface WatchGrowingTextView(TextView)
 @interface TitleImageScrollView(TextView)
 
 //: @property (nonatomic,copy) NSAttributedString *placeholderAttributedText;

@@ -539,35 +539,35 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLanguageManager.h"
+//: #import "WatchLanguageManager.h"
 #import "PaintedNaturalLanguageTo.h"
-//: #import "FFFXMLReader.h"
+//: #import "WatchXMLReader.h"
 #import "QuickReader.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "SSZipArchiveManager.h"
 #import "EmptyTing.h"
 
-//: @interface FFFLanguageManager ()<NSXMLParserDelegate>
+//: @interface WatchLanguageManager ()<NSXMLParserDelegate>
 @interface PaintedNaturalLanguageTo ()<NSXMLParserDelegate>
 //: @property (nonatomic ,strong) NSString *currentElementName;
 @property (nonatomic ,strong) NSString *currentElementName;
 //: @end
 @end
 
-//: @implementation FFFLanguageManager
+//: @implementation WatchLanguageManager
 @implementation PaintedNaturalLanguageTo
 
-//: static FFFLanguageManager *shareInstance = nil;
+//: static WatchLanguageManager *shareInstance = nil;
 static PaintedNaturalLanguageTo *showCornerBackText = nil;
 
-//: + (FFFLanguageManager *)shareInstance{
+//: + (WatchLanguageManager *)shareInstance{
 + (PaintedNaturalLanguageTo *)marginSource{
     //: @synchronized(self) {
     @synchronized(self) {
         //: if (shareInstance == nil) {
         if (showCornerBackText == nil) {
-            //: shareInstance = [[FFFLanguageManager alloc] init];
+            //: shareInstance = [[WatchLanguageManager alloc] init];
             showCornerBackText = [[PaintedNaturalLanguageTo alloc] init];
             //: shareInstance.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
             showCornerBackText.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
@@ -579,7 +579,7 @@ static PaintedNaturalLanguageTo *showCornerBackText = nil;
 
 //: + (NSString *)getTextWithKey:(NSString *)key{
 + (NSString *)exhibit:(NSString *)key{
-    //: NSMutableDictionary *dict = [FFFLanguageManager shareInstance].langDict;
+    //: NSMutableDictionary *dict = [WatchLanguageManager shareInstance].langDict;
     NSMutableDictionary *dict = [PaintedNaturalLanguageTo marginSource].langDict;
     //: NSString *value = [dict objectForKey:key];
     NSString *value = [dict objectForKey:key];
@@ -784,7 +784,7 @@ static PaintedNaturalLanguageTo *showCornerBackText = nil;
     if (error) {
         //: NSLog(@"error : %@", error);
     }
-    //: NSDictionary *result = [FFFXMLReader dictionaryForXMLData:xmlData error:&error];
+    //: NSDictionary *result = [WatchXMLReader dictionaryForXMLData:xmlData error:&error];
     NSDictionary *result = [QuickReader secretUser:xmlData back:&error];
 //    NSDictionary *result = [NSDictionary dictionaryWithXML:xmlData];
 

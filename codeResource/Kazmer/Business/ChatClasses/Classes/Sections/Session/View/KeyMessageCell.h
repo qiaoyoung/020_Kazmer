@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFMessageCell.h"
+//: #import "WatchMessageCell.h"
 #import "ModelViewCell.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFAdvancedMessageCell : FFFMessageCell
+//: @interface WatchAdvancedMessageCell : WatchMessageCell
 @interface KeyMessageCell : ModelViewCell
 
 //: @property (nonatomic,strong) UIButton *replyButton;

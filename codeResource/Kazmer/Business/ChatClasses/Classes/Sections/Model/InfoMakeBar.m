@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMediaItem.h"
+//: #import "WatchMediaItem.h"
 #import "InfoMakeBar.h"
 
-//: @implementation FFFMediaItem
+//: @implementation WatchMediaItem
 @implementation InfoMakeBar
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (WatchMediaItem *)item:(NSString *)selector
 + (InfoMakeBar *)icon:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            message:(UIImage *)normalImage
@@ -24,7 +24,7 @@
                  //: title:(NSString *)title
                  sub:(NSString *)title
 {
-    //: FFFMediaItem *item = [[FFFMediaItem alloc] init];
+    //: WatchMediaItem *item = [[WatchMediaItem alloc] init];
     InfoMakeBar *item = [[InfoMakeBar alloc] init];
     //: item.selctor = NSSelectorFromString(selector);
     item.selctor = NSSelectorFromString(selector);

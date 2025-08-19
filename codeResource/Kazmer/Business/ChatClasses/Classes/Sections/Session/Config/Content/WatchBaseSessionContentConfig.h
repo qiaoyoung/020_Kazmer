@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.h
+//  WatchBaseSessionContentConfig.h
 // ButtonKit
 //
 //  Created by amao on 9/15/15.
@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 
 //: @protocol CCCSessionContentConfig <NSObject>
 @protocol TableAccumulationReplacement <NSObject>
@@ -39,7 +39,7 @@
 //: @end
 @end
 
-//: @interface FFFSessionContentConfigFactory : NSObject
+//: @interface WatchSessionContentConfigFactory : NSObject
 @interface AccumulationFactory : NSObject
 //: + (instancetype)sharedFacotry;
 + (instancetype)commonValue;

@@ -93,19 +93,19 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectConfig.h"
+//: #import "WatchContactSelectConfig.h"
 #import "FindRecent.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 //: #import "UserGroupedData.h"
 #import "ObjectImage.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
-//: #import "FFFKitInfo.h"
+//: #import "WatchKitInfo.h"
 #import "TingMessage.h"
 
 //: @implementation NIMContactFriendSelectConfig : NSObject
@@ -119,7 +119,7 @@ typedef struct {
 
 //: - (NSString *)title{
 - (NSString *)record{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [WatchLanguageManager getTextWithKey:@"select_contact"];
     return [PaintedNaturalLanguageTo exhibit:[SubscribeData sharedInstance].kCircleTitle];
 }
 
@@ -199,9 +199,9 @@ typedef struct {
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (WatchKitInfo *)getInfoById:(NSString *)selectedId {
 - (TingMessage *)random:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: WatchKitInfo *info = nil;
     TingMessage *info = nil;
     //: info = [[MyUserKit sharedKit] infoByUser:selectedId option:nil];
     info = [[ButtonKit sheerOption] past:selectedId skinColour_strong:nil];
@@ -230,7 +230,7 @@ typedef struct {
 
 //: - (NSString *)title{
 - (NSString *)record{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [WatchLanguageManager getTextWithKey:@"select_contact"];
     return [PaintedNaturalLanguageTo exhibit:[SubscribeData sharedInstance].kCircleTitle];
 }
 
@@ -373,11 +373,11 @@ typedef struct {
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (WatchKitInfo *)getInfoById:(NSString *)selectedId {
 - (TingMessage *)random:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: WatchKitInfo *info = nil;
     TingMessage *info = nil;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
     CoverTingContent *option = [[CoverTingContent alloc] init];
     //: option.session = _session;
     option.session = _session;
@@ -499,9 +499,9 @@ typedef struct {
     return nil;
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (WatchKitInfo *)getInfoById:(NSString *)selectedId {
 - (TingMessage *)random:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: WatchKitInfo *info = nil;
     TingMessage *info = nil;
     //: if (_teamType == NIMKitTeamTypeNomal) {
     if (_teamType == NIMKitTeamTypeNomal) {

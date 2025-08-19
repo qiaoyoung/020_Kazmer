@@ -149,7 +149,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentView.h"
+//: #import "WatchReplyedTextContentView.h"
 #import "FindControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
@@ -158,12 +158,12 @@
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFReplyedTextContentView ()<M80AttributedLabelDelegate>
+//: @interface WatchReplyedTextContentView ()<M80AttributedLabelDelegate>
 @interface FindControl ()<PlaceMax>
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentView
+//: @implementation WatchReplyedTextContentView
 @implementation FindControl
 
 //: - (instancetype)initSessionMessageContentView {
@@ -182,7 +182,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(WatchMessageModel *)data {
 - (void)lengthAt:(CentralProcessingUnitModel *)data {
     //: [super refresh:data];
     [super lengthAt:data];
@@ -357,7 +357,7 @@
 
     }
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
     SubObject *setting = [[ButtonKit sheerOption].config empty:data.message];
     //: self.textLabel.textColor = setting.replyedTextColor;
     self.textLabel.textColor = setting.replyedTextColor;
@@ -473,9 +473,9 @@
 - (void)image:(QuickNameView *)label
              //: clickedOnLink:(id)linkData{
              center:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
     CoverShowEvent *event = [[CoverShowEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = WatchKitEventNameTapLabelLink;
     event.eventName = dream_topMessage;
     //: event.messageModel = self.model;
     event.messageModel = self.model;
@@ -490,7 +490,7 @@
 - (void)searched:(id)sender
 {
 //    CoverShowEvent *event = [[CoverShowEvent alloc] init];
-//    event.eventName = FFFKitEventNameTapRepliedContent;
+//    event.eventName = WatchKitEventNameTapRepliedContent;
 //    event.messageModel = self.model;
 //    [self.delegate onCatchEvent:event];
 }

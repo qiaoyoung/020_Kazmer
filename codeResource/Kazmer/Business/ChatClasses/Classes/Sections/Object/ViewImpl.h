@@ -11,19 +11,19 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WatchSessionConfigurateProtocol.h"
+#import "WatchSessionConfigurateProtocol.h"
+//: #import "WatchSessionPrivateProtocol.h"
+#import "WatchSessionPrivateProtocol.h"
+//: #import "WatchSessionConfig.h"
 #import "MessagePinImage.h"
 
-//: @interface FFFSessionDataSourceImpl : NSObject<NIMSessionDataSource>
+//: @interface WatchSessionDataSourceImpl : NSObject<NIMSessionDataSource>
 @interface ViewImpl : NSObject<SizeSource>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithValue:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<WatchSessionConfig>)sessionConfig;
                          pastSearched:(id<MessagePinImage>)sessionConfig;
 
 //: @end

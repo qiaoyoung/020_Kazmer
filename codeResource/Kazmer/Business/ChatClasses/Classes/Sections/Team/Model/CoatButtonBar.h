@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WatchCardDataSourceProtocol.h"
+#import "WatchCardDataSourceProtocol.h"
 
-//: @interface NIMCardMemberItem : NSObject<FFFKitCardHeaderData>
-@interface TitleTimeMessage : NSObject<FFFKitCardHeaderData>
+//: @interface NIMCardMemberItem : NSObject<WatchKitCardHeaderData>
+@interface TitleTimeMessage : NSObject<WatchKitCardHeaderData>
 
 //: @property (nonatomic, copy) NSString *userId;
 @property (nonatomic, copy) NSString *userId;
@@ -23,8 +23,8 @@
 //: @end
 @end
 
-//: @interface FFFTeamCardMemberItem : NSObject<FFFKitCardHeaderData>
-@interface CoatButtonBar : NSObject<FFFKitCardHeaderData>
+//: @interface WatchTeamCardMemberItem : NSObject<WatchKitCardHeaderData>
+@interface CoatButtonBar : NSObject<WatchKitCardHeaderData>
 
 //: @property (nonatomic, readonly) NIMTeamMember *member;
 @property (nonatomic, readonly) NIMTeamMember *member;

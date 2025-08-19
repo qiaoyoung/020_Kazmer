@@ -18,9 +18,9 @@ Byte main_cartCabinData[] = {59, 29, 71, 13, 70, 203, 148, 186, 210, 168, 216, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonParser.h"
+//: #import "WatchInputEmoticonParser.h"
 #import "ImageShowParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
 
 //: @implementation NIMInputTextToken
@@ -28,7 +28,7 @@ Byte main_cartCabinData[] = {59, 29, 71, 13, 70, 203, 148, 186, 210, 168, 216, 1
 //: @end
 @end
 
-//: @interface FFFInputEmoticonParser ()
+//: @interface WatchInputEmoticonParser ()
 @interface ImageShowParser ()
 //: @property (nonatomic,strong) NSCache *tokens;
 @property (nonatomic,strong) NSCache *tokens;
@@ -36,18 +36,18 @@ Byte main_cartCabinData[] = {59, 29, 71, 13, 70, 203, 148, 186, 210, 168, 216, 1
 @end
 
 
-//: @implementation FFFInputEmoticonParser
+//: @implementation WatchInputEmoticonParser
 @implementation ImageShowParser
 //: + (instancetype)currentParser
 + (instancetype)independent
 {
-    //: static FFFInputEmoticonParser *instance = nil;
+    //: static WatchInputEmoticonParser *instance = nil;
     static ImageShowParser *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFInputEmoticonParser alloc] init];
+        //: instance = [[WatchInputEmoticonParser alloc] init];
         instance = [[ImageShowParser alloc] init];
     //: });
     });
@@ -124,7 +124,7 @@ Byte main_cartCabinData[] = {59, 29, 71, 13, 70, 203, 148, 186, 210, 168, 216, 1
                        usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
                            //: NSString *rangeText = [text substringWithRange:result.range];
                            NSString *rangeText = [text substringWithRange:result.range];
-                           //: if ([[FFFInputEmoticonManager sharedManager] emoticonByTag:rangeText])
+                           //: if ([[WatchInputEmoticonManager sharedManager] emoticonByTag:rangeText])
                            if ([[TitleToManager draw] data:rangeText])
                            {
                                //: if (result.range.location > index)

@@ -13,7 +13,7 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WatchTeamMemberListDataSource.h"
 #import "EventColor.h"
 
 //: extern NSString * _Nonnull const kNIMTeamListDataTeamInfoUpdate;
@@ -24,7 +24,7 @@ extern NSString * _Nonnull const app_textKey;
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFTeamListDataManager : NSObject<FFFTeamMemberListDataSource>
+//: @interface WatchTeamListDataManager : NSObject<WatchTeamMemberListDataSource>
 @interface MetadataManager : NSObject<EventColor>
 
 //当前群

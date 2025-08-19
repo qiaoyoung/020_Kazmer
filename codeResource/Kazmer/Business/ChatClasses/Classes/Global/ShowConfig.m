@@ -272,11 +272,11 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitConfig.h"
+//: #import "WatchKitConfig.h"
 #import "ShowConfig.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFMediaItem.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
+//: #import "WatchMediaItem.h"
 #import "InfoMakeBar.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
@@ -285,7 +285,7 @@ typedef struct {
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFKitSettings()
+//: @interface WatchKitSettings()
 @interface ZoneSettings()
 {
     //: BOOL _isRight;
@@ -299,7 +299,7 @@ typedef struct {
 @end
 
 
-//: @implementation FFFKitConfig
+//: @implementation WatchKitConfig
 @implementation ShowConfig
 
 //: - (instancetype) init
@@ -320,31 +320,31 @@ typedef struct {
 //: - (NSArray *)defaultMediaItems
 - (NSArray *)emptyItems
 {
-    //: return @[[FFFMediaItem item:@"onTapMediaItemPicture:"
+    //: return @[[WatchMediaItem item:@"onTapMediaItemPicture:"
     return @[[InfoMakeBar icon:[TechData m_minPath]
            //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
            message:[UIImage imageNamed:[TechData dreamRacialValue]]
          //: selectedImage:[UIImage imageNamed:@"bk_media_picture_normal"]
          name:[UIImage imageNamed:[TechData dreamRacialValue]]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
+                 //: title:[WatchLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
                  sub:[PaintedNaturalLanguageTo exhibit:[TechData appExceptMessage]]],//@"相册".
 
-    //: [FFFMediaItem item:@"onTapMediaItemShoot:"
+    //: [WatchMediaItem item:@"onTapMediaItemShoot:"
     [InfoMakeBar icon:[TechData userTitleLanceId]
            //: normalImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
            message:[UIImage imageNamed:[TechData notiShowPointFormat]]
          //: selectedImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
          name:[UIImage imageNamed:[TechData notiShowPointFormat]]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
+                 //: title:[WatchLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
                  sub:[PaintedNaturalLanguageTo exhibit:[TechData kStateStyleIdent]]],//@"拍摄".
 
-    //: [FFFMediaItem item:@"onTapMediaItemLocation:"
+    //: [WatchMediaItem item:@"onTapMediaItemLocation:"
     [InfoMakeBar icon:[TechData dreamCoachValue]
            //: normalImage:[UIImage imageNamed:@"bk_media_position_normal"]
            message:[UIImage imageNamed:[TechData show_afterwardMsg]]
          //: selectedImage:[UIImage imageNamed:@"bk_media_position_normal"]
          name:[UIImage imageNamed:[TechData show_afterwardMsg]]
-                 //: title:[FFFLanguageManager getTextWithKey:@"Audios"]],//@"位置".
+                 //: title:[WatchLanguageManager getTextWithKey:@"Audios"]],//@"位置".
                  sub:[PaintedNaturalLanguageTo exhibit:[TechData kCoveQuickMessage]]],//@"位置".
 
     //: ];
@@ -359,13 +359,13 @@ typedef struct {
     //: if (message.messageType == NIMMessageTypeText)
     if (message.messageType == NIMMessageTypeText)
     {
-        //: [menuItems addObject:[FFFMediaItem item:@"onTapMenuItemCopy:"
+        //: [menuItems addObject:[WatchMediaItem item:@"onTapMenuItemCopy:"
         [menuItems addObject:[InfoMakeBar icon:[TechData main_collectorMsg]
                                     //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
                                     message:[UIImage imageNamed:[TechData dreamRacialValue]]
                                   //: selectedImage:[UIImage imageNamed:@"bk_media_picture_pressed"]
                                   name:[UIImage imageNamed:[TechData showBronzeAccordName]]
-                                          //: title:[FFFLanguageManager getTextWithKey:@"复制"]]];
+                                          //: title:[WatchLanguageManager getTextWithKey:@"复制"]]];
                                           sub:[PaintedNaturalLanguageTo exhibit:@"复制"]]];
     }
 
@@ -395,7 +395,7 @@ typedef struct {
     _messageLimit = 20;
     //: _recordMaxDuration = 60.f;
     _recordMaxDuration = 60.f;
-    //: _placeholder = [FFFLanguageManager getTextWithKey:@"message_please_enter_content"];
+    //: _placeholder = [WatchLanguageManager getTextWithKey:@"message_please_enter_content"];
     _placeholder = [PaintedNaturalLanguageTo exhibit:[TechData dreamPlaceHeroData]];//@"请输入消息".;
     //: _inputMaxLength = 1000;
     _inputMaxLength = 1000;
@@ -411,16 +411,16 @@ typedef struct {
     _avatarType = NIMKitAvatarTypeRounded;
     //: _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
     _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
-    //: _leftBubbleSettings = [[FFFKitSettings alloc] init:NO];
+    //: _leftBubbleSettings = [[WatchKitSettings alloc] init:NO];
     _leftBubbleSettings = [[ZoneSettings alloc] initShared:NO];
-    //: _rightBubbleSettings = [[FFFKitSettings alloc] init:YES];
+    //: _rightBubbleSettings = [[WatchKitSettings alloc] init:YES];
     _rightBubbleSettings = [[ZoneSettings alloc] initShared:YES];
 }
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message
+//: - (WatchKitSetting *)setting:(NIMMessage *)message
 - (SubObject *)date:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: WatchKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     ZoneSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: switch (message.messageType) {
     switch (message.messageType) {
@@ -497,10 +497,10 @@ typedef struct {
     return settings.unsupportSetting;
 }
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message
+//: - (WatchKitSetting *)repliedSetting:(NIMMessage *)message
 - (SubObject *)empty:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: WatchKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     ZoneSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: return settings.repliedSetting;
     return settings.repliedSetting;
@@ -510,7 +510,7 @@ typedef struct {
 @end
 
 
-//: @implementation FFFKitSettings
+//: @implementation WatchKitSettings
 @implementation ZoneSettings
 
 //: - (instancetype)init:(BOOL)isRight
@@ -566,7 +566,7 @@ typedef struct {
 //: - (void)applyDefaultRepliedSettings
 - (void)cellEnable
 {
-    //: _repliedSetting = [[FFFKitSetting alloc] init];
+    //: _repliedSetting = [[WatchKitSetting alloc] init];
     _repliedSetting = [[SubObject alloc] init];
     //: _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData noti_originStr]) : UIEdgeInsetsFromString([TechData noti_originStr]);
@@ -581,7 +581,7 @@ typedef struct {
 //: - (void)applyDefaultTextSettings
 - (void)draftCopy
 {
-    //: _textSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _textSetting = [[WatchKitSetting alloc] init:_isRight];
     _textSetting = [[SubObject alloc] initShared:_isRight];
     //: _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData noti_originStr]) : UIEdgeInsetsFromString([TechData noti_originStr]);
@@ -596,7 +596,7 @@ typedef struct {
 //: - (void)applyDefaultAudioSettings
 - (void)extend
 {
-    //: _audioSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _audioSetting = [[WatchKitSetting alloc] init:_isRight];
     _audioSetting = [[SubObject alloc] initShared:_isRight];
     //: _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData noti_originStr]) : UIEdgeInsetsFromString([TechData noti_originStr]);
@@ -611,7 +611,7 @@ typedef struct {
 //: - (void)applyDefaultVideoSettings
 - (void)team
 {
-    //: _videoSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _videoSetting = [[WatchKitSetting alloc] init:_isRight];
     _videoSetting = [[SubObject alloc] initShared:_isRight];
     //: _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData dream_admitName]) : UIEdgeInsetsFromString([TechData main_freedTitle]);
@@ -624,7 +624,7 @@ typedef struct {
 //: - (void)applyDefaultFileSettings
 - (void)name
 {
-    //: _fileSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _fileSetting = [[WatchKitSetting alloc] init:_isRight];
     _fileSetting = [[SubObject alloc] initShared:_isRight];
     //: _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData dream_admitName]) : UIEdgeInsetsFromString([TechData main_freedTitle]);
@@ -637,7 +637,7 @@ typedef struct {
 //: - (void)applyDefaultImageSettings
 - (void)betwixt
 {
-    //: _imageSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _imageSetting = [[WatchKitSetting alloc] init:_isRight];
     _imageSetting = [[SubObject alloc] initShared:_isRight];
     //: _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData dream_admitName]) : UIEdgeInsetsFromString([TechData main_freedTitle]);
@@ -648,7 +648,7 @@ typedef struct {
 //: - (void)applyDefaultLocationSettings
 - (void)quick
 {
-    //: _locationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _locationSetting = [[WatchKitSetting alloc] init:_isRight];
     _locationSetting = [[SubObject alloc] initShared:_isRight];
     //: _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData dream_admitName]) : UIEdgeInsetsFromString([TechData main_freedTitle]);
@@ -663,7 +663,7 @@ typedef struct {
 //: - (void)applyDefaultTipSettings
 - (void)endUser
 {
-    //: _tipSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _tipSetting = [[WatchKitSetting alloc] init:_isRight];
     _tipSetting = [[SubObject alloc] initShared:_isRight];
     //: _tipSetting.contentInsets = UIEdgeInsetsZero;
     _tipSetting.contentInsets = UIEdgeInsetsZero;
@@ -684,7 +684,7 @@ typedef struct {
 //: - (void)applyDefaultRtcCallRecordSettings
 - (void)voice
 {
-    //: _rtcCallRecordSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _rtcCallRecordSetting = [[WatchKitSetting alloc] init:_isRight];
     _rtcCallRecordSetting = [[SubObject alloc] initShared:_isRight];
     //: _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{9,11,9,15}") : UIEdgeInsetsFromString(@"{9,15,9,9}");
     _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData noti_stateMessage]) : UIEdgeInsetsFromString([TechData userNineValue]);
@@ -700,7 +700,7 @@ typedef struct {
 //: - (void)applyDefaultUnsupportSettings
 - (void)by
 {
-    //: _unsupportSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _unsupportSetting = [[WatchKitSetting alloc] init:_isRight];
     _unsupportSetting = [[SubObject alloc] initShared:_isRight];
     //: _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{10,10,10,10}") : UIEdgeInsetsFromString(@"{10,10,10,10}");
     _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData mainWorkerMsg]) : UIEdgeInsetsFromString([TechData mainWorkerMsg]);
@@ -716,7 +716,7 @@ typedef struct {
 //: - (void)applyDefaultTeamNotificationSettings
 - (void)pull
 {
-    //: _teamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _teamNotificationSetting = [[WatchKitSetting alloc] init:_isRight];
     _teamNotificationSetting = [[SubObject alloc] initShared:_isRight];
     //: _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -737,7 +737,7 @@ typedef struct {
 //: - (void)applyDefaultSuperTeamNotificationSettings
 - (void)language
 {
-    //: _superTeamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _superTeamNotificationSetting = [[WatchKitSetting alloc] init:_isRight];
     _superTeamNotificationSetting = [[SubObject alloc] initShared:_isRight];
     //: _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -758,7 +758,7 @@ typedef struct {
 //: - (void)applyDefaultChatroomNotificationSettings
 - (void)isMax
 {
-    //: _chatroomNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _chatroomNotificationSetting = [[WatchKitSetting alloc] init:_isRight];
     _chatroomNotificationSetting = [[SubObject alloc] initShared:_isRight];
     //: _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -779,7 +779,7 @@ typedef struct {
 //: - (void)applyDefaultNetcallNotificationSettings
 - (void)tapSettings
 {
-    //: _netcallNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _netcallNotificationSetting = [[WatchKitSetting alloc] init:_isRight];
     _netcallNotificationSetting = [[SubObject alloc] initShared:_isRight];
     //: _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{11,11,9,15}") : UIEdgeInsetsFromString(@"{11,15,9,9}");
     _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString([TechData m_hateIdent]) : UIEdgeInsetsFromString([TechData app_helicopterStatusFormat]);

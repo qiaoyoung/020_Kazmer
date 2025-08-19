@@ -9,35 +9,35 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionDataSourceImpl.h"
+//: #import "WatchSessionDataSourceImpl.h"
 #import "ViewImpl.h"
-//: #import "FFFSessionMsgDatasource.h"
+//: #import "WatchSessionMsgDatasource.h"
 #import "InfoDatasource.h"
 
-//: @interface FFFSessionDataSourceImpl()
+//: @interface WatchSessionDataSourceImpl()
 @interface ViewImpl()
 
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) FFFSessionMsgDatasource *dataSource;
+//: @property (nonatomic,strong) WatchSessionMsgDatasource *dataSource;
 @property (nonatomic,strong) InfoDatasource *dataSource;
 
 //: @property (nonatomic,strong) NSMutableArray *pendingMessages; 
 @property (nonatomic,strong) NSMutableArray *pendingMessages; //缓存的插入消息,聊天室需要在另外个线程计算高度,减少UI刷新
 
-//: @property (nonatomic,strong) id<FFFSessionConfig>sessionConfig;
+//: @property (nonatomic,strong) id<WatchSessionConfig>sessionConfig;
 @property (nonatomic,strong) id<MessagePinImage>sessionConfig;
 
 //: @end
 @end
 
-//: @implementation FFFSessionDataSourceImpl
+//: @implementation WatchSessionDataSourceImpl
 @implementation ViewImpl
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithValue:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<WatchSessionConfig>)sessionConfig
                          pastSearched:(id<MessagePinImage>)sessionConfig
 {
     //: self = [super init];
@@ -50,7 +50,7 @@
         _sessionConfig =sessionConfig;
         //: _pendingMessages = [[NSMutableArray alloc] init];
         _pendingMessages = [[NSMutableArray alloc] init];
-        //: _dataSource = [[FFFSessionMsgDatasource alloc] initWithSession:_session config:_sessionConfig];
+        //: _dataSource = [[WatchSessionMsgDatasource alloc] initWithSession:_session config:_sessionConfig];
         _dataSource = [[InfoDatasource alloc] initWithConfig:_session max:_sessionConfig];
     }
     //: return self;
@@ -94,7 +94,7 @@
     return result;
 }
 
-//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model
+//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(WatchMessageModel *)model
 - (PinResult *)clean:(CentralProcessingUnitModel *)model
 {
     //: NSArray *indexs = [self.dataSource deleteMessageModel:model];
@@ -118,7 +118,7 @@
     return result;
 }
 
-//: - (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model
+//: - (NIMSessionMessageOperateResult *)updateMessageModel:(WatchMessageModel *)model
 - (PinResult *)anTheoreticalAccount:(CentralProcessingUnitModel *)model
 {
     //: NSInteger index = [self.dataSource indexAtModelArray:model];
@@ -137,7 +137,7 @@
     return result;
 }
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel *)model
+//: - (NSInteger)indexAtModelArray:(WatchMessageModel *)model
 - (NSInteger)current:(CentralProcessingUnitModel *)model
 {
     //: return [self.dataSource indexAtModelArray:model];
@@ -151,13 +151,13 @@
     return [self.dataSource tapKey:range];
 }
 
-//: - (FFFMessageModel *)findModel:(NIMMessage *)message{
+//: - (WatchMessageModel *)findModel:(NIMMessage *)message{
 - (CentralProcessingUnitModel *)colorModel:(NIMMessage *)message{
-    //: FFFMessageModel *model;
+    //: WatchMessageModel *model;
     CentralProcessingUnitModel *model;
-    //: for (FFFMessageModel *item in self.dataSource.items.reverseObjectEnumerator.allObjects) {
+    //: for (WatchMessageModel *item in self.dataSource.items.reverseObjectEnumerator.allObjects) {
     for (CentralProcessingUnitModel *item in self.dataSource.items.reverseObjectEnumerator.allObjects) {
-        //: if ([item isKindOfClass:[FFFMessageModel class]] && [item.message.messageId isEqual:message.messageId]) {
+        //: if ([item isKindOfClass:[WatchMessageModel class]] && [item.message.messageId isEqual:message.messageId]) {
         if ([item isKindOfClass:[CentralProcessingUnitModel class]] && [item.message.messageId isEqual:message.messageId]) {
             //: model = item;
             model = item;
@@ -214,7 +214,7 @@
     [self.dataSource address:handler];
 }
 
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model
+//: - (void)willDisplayMessageModel:(WatchMessageModel *)model
 - (void)outTable:(CentralProcessingUnitModel *)model
 {
     //: [self.dataSource willDisplayMessageModel:model];
@@ -248,9 +248,9 @@
             //: message = item;
             message = item;
         }
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[WatchMessageModel class]]) {
         if ([item isKindOfClass:[CentralProcessingUnitModel class]]) {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(WatchMessageModel *)item message];
             message = [(CentralProcessingUnitModel *)item message];
         }
         //: if (message && !message.isOutgoingMsg
@@ -298,9 +298,9 @@
     for (NSInteger i = [[self.dataSource items] count] - 1; i >= 0; i--) {
         //: id item = [[self.dataSource items] objectAtIndex:i];
         id item = [[self.dataSource items] objectAtIndex:i];
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[WatchMessageModel class]]) {
         if ([item isKindOfClass:[CentralProcessingUnitModel class]]) {
-            //: FFFMessageModel *model = (FFFMessageModel *)item;
+            //: WatchMessageModel *model = (WatchMessageModel *)item;
             CentralProcessingUnitModel *model = (CentralProcessingUnitModel *)item;
             //: NIMMessage *message = [model message];
             NIMMessage *message = [model message];
@@ -376,10 +376,10 @@
     {
         //: id item = [[self.dataSource items] objectAtIndex:i];
         id item = [[self.dataSource items] objectAtIndex:i];
-        //: if ([item isKindOfClass:[FFFMessageModel class]])
+        //: if ([item isKindOfClass:[WatchMessageModel class]])
         if ([item isKindOfClass:[CentralProcessingUnitModel class]])
         {
-            //: FFFMessageModel *model = (FFFMessageModel *)item;
+            //: WatchMessageModel *model = (WatchMessageModel *)item;
             CentralProcessingUnitModel *model = (CentralProcessingUnitModel *)item;
             //: NIMMessage *message = [model message];
             NIMMessage *message = [model message];
@@ -473,10 +473,10 @@
             //: message = item;
             message = item;
         }
-        //: else if ([item isKindOfClass:[FFFMessageModel class]])
+        //: else if ([item isKindOfClass:[WatchMessageModel class]])
         else if ([item isKindOfClass:[CentralProcessingUnitModel class]])
         {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(WatchMessageModel *)item message];
             message = [(CentralProcessingUnitModel *)item message];
         }
         //: if (message)
@@ -522,10 +522,10 @@
             //: message = item;
             message = item;
         }
-        //: else if ([item isKindOfClass:[FFFMessageModel class]])
+        //: else if ([item isKindOfClass:[WatchMessageModel class]])
         else if ([item isKindOfClass:[CentralProcessingUnitModel class]])
         {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(WatchMessageModel *)item message];
             message = [(CentralProcessingUnitModel *)item message];
         }
         //: if (message)

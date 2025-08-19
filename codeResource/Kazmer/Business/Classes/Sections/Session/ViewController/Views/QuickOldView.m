@@ -453,7 +453,7 @@ typedef struct {
         _unitLabel.textColor = [UIColor whiteColor];
         //: _unitLabel.font = [UIFont systemFontOfSize:15];
         _unitLabel.font = [UIFont systemFontOfSize:15];
-        //: _unitLabel.text = [FFFLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
+        //: _unitLabel.text = [WatchLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
         _unitLabel.text = [PaintedNaturalLanguageTo exhibit:[ShootData sharedInstance].dreamStrengthenFormat];
         //: [_backView addSubview:_unitLabel];
         [_backView addSubview:_unitLabel];
@@ -710,7 +710,7 @@ typedef struct {
 -(void)reload:(NSString *)userID{
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:userID skinColour_strong:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

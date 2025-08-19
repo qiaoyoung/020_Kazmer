@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfo.h"
+//: #import "WatchKitInfo.h"
 #import "TingMessage.h"
 
-//: @implementation FFFKitInfo
+//: @implementation WatchKitInfo
 @implementation TingMessage
 
 //: @end

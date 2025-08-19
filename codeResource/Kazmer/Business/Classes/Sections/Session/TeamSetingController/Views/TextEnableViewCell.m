@@ -99,29 +99,29 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupMemberTableViewCell.h"
+//: #import "WatchGroupMemberTableViewCell.h"
 #import "TextEnableViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFTeamHelper.h"
+//: #import "WatchTeamHelper.h"
 #import "MakeBubble.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
 
-//: @interface FFFGroupMemberTableViewCell()
+//: @interface WatchGroupMemberTableViewCell()
 @interface TextEnableViewCell()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
-@property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<WatchKitCardHeaderData> data;
+@property (nonatomic,strong) id<WatchKitCardHeaderData> data;
 
 //: @end
 @end
 
-//: @implementation FFFGroupMemberTableViewCell
+//: @implementation WatchGroupMemberTableViewCell
 @implementation TextEnableViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -150,14 +150,14 @@
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)read:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFGroupMemberTableViewCell";
+    //: static NSString *identifier = @"WatchGroupMemberTableViewCell";
     static NSString *identifier = @"TextEnableViewCell";
-    //: FFFGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WatchGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     TextEnableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WatchGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[TextEnableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: cell.backgroundColor = [UIColor colorWithHexString:@"#F6F6F6"];
         cell.backgroundColor = [UIColor min:[FreedData dream_duringPath]];
@@ -218,7 +218,7 @@
     self.userId = UserId;
 }
 
-//: - (void)setUserInfo:(FFFKitInfo *)userInfo
+//: - (void)setUserInfo:(WatchKitInfo *)userInfo
 - (void)setUserInfo:(TingMessage *)userInfo
 {
     //: self.userInfo = userInfo;

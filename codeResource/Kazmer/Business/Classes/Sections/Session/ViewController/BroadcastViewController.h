@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "WatchSessionViewController.h"
 #import "CollectionViewController.h"
 
 //: extern NSString *kNTESDemoRevokeMessageFromMeNotication;
 extern NSString *dreamLetterId;
 
-//: @interface NTESSessionViewController : FFFSessionViewController
+//: @interface NTESSessionViewController : WatchSessionViewController
 @interface BroadcastViewController : CollectionViewController
 
 //: @property (nonatomic,assign) BOOL disableCommandTyping; 

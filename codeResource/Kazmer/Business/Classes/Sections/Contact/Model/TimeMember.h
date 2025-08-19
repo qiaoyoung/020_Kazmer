@@ -15,7 +15,7 @@
 //: @interface NTESContactDataMember : NSObject
 @interface TimeMember : NSObject
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WatchKitInfo *info;
 @property (nonatomic,strong) TingMessage *info;
 
 //: @end

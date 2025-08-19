@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
 
-//: @interface FFFSessionFileTransContentView : FFFSessionMessageContentView
+//: @interface WatchSessionFileTransContentView : WatchSessionMessageContentView
 @interface RectoView : ThoughtImageControl
 
 //: @property (nonatomic,strong,readonly) UIImageView *imageView;

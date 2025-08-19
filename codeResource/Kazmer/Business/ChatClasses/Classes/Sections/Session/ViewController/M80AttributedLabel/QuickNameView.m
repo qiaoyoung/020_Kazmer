@@ -13,7 +13,7 @@
 #import "QuickNameView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFTextHighlight.h"
+//: #import "WatchTextHighlight.h"
 #import "EmptyColorTextHighlight.h"
 
 //: static NSString* const M80EllipsesCharacter = @"\u2026";
@@ -284,7 +284,7 @@ static NSString* const show_pointIdent = @"\u2026";
             //: NSString *emoString = [attrM.string substringWithRange:range];
             NSString *emoString = [attrM.string substringWithRange:range];
 
-            //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:emoString];
+            //: NIMInputEmoticon *emoticon = [[WatchInputEmoticonManager sharedManager] emoticonByTag:emoString];
             ButtonTableEmoticon *emoticon = [[TitleToManager draw] data:emoString];
 
             //: UIImage *image = [UIImage nim_emoticonInKit:emoticon.filename];
@@ -319,10 +319,10 @@ static NSString* const show_pointIdent = @"\u2026";
                     [emoText yy_setAttribute:NSKernAttributeName value:@(-1)];
                 }
 
-                //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+                //: WatchTextHighlight *highlight = [[WatchTextHighlight alloc] init];
                 EmptyColorTextHighlight *highlight = [[EmptyColorTextHighlight alloc] init];
-                //: highlight.type = FFFTextHighlightTypeEmoji;
-                highlight.type = FFFTextHighlightTypeEmoji;
+                //: highlight.type = WatchTextHighlightTypeEmoji;
+                highlight.type = WatchTextHighlightTypeEmoji;
                 //: highlight.text = emoString;
                 highlight.text = emoString;
                 //: [emoText yy_setTextHighlight:highlight range:NSMakeRange(0, emoText.length)];

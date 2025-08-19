@@ -124,7 +124,7 @@ Byte dream_containerMsg[] = {60, 7, 8, 6, 151, 176, 207, 199, 65, 70, 55, 70, 54
     //: self.sureBtn.frame = CGRectMake(width+40, 202-height-15, width, height);
     self.sureBtn.frame = CGRectMake(width+40, 202-height-15, width, height);
 
-    //: self.titleLabel.text = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
+    //: self.titleLabel.text = [WatchLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
     self.titleLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromManData(main_genetBarChampionName)];
 //    self.numLabel.text = [NSString stringWithFormat:@"%lu/%ld",self.searchField.text.length,(long)(unsigned long)self.inputLimit];
 
@@ -253,7 +253,7 @@ Byte dream_containerMsg[] = {60, 7, 8, 6, 151, 176, 207, 199, 65, 70, 55, 70, 54
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:StringFromManData(show_peopleMsg)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromManData(app_ninePath)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -280,7 +280,7 @@ Byte dream_containerMsg[] = {60, 7, 8, 6, 151, 176, 207, 199, 65, 70, 55, 70, 54
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromManData(app_keyId)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor min:StringFromManData(notiPressedMsg)];
@@ -318,7 +318,7 @@ Byte dream_containerMsg[] = {60, 7, 8, 6, 151, 176, 207, 199, 65, 70, 55, 70, 54
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 0, [[UIScreen mainScreen] bounds].size.width-80-30, 48)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 0, [[UIScreen mainScreen] bounds].size.width-80-30, 48)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
+        //: _searchField.placeholder = [WatchLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
         _searchField.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromManData(main_genetBarChampionName)];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

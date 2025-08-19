@@ -225,7 +225,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
             [[NIMSDK sharedSDK].teamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_ok"]
+                    //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"message_helper_already_ok"]
                     [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(dreamUpKey)]
                                                       //: duration:2
                                                       duration:2
@@ -239,7 +239,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(userCornerAllNameMessage)]
                                                           //: duration:2
                                                           duration:2
@@ -264,7 +264,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
             [[NIMSDK sharedSDK].superTeamManager passApplyToTeam:notification.targetID userId:notification.sourceID completion:^(NSError *error, NIMTeamApplyStatus applyStatus) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_ok"]
+                    //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"message_helper_already_ok"]
                     [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(dreamUpKey)]
                                                       //: duration:2
                                                       duration:2
@@ -282,7 +282,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(userCornerAllNameMessage)]
                                                           //: duration:2
                                                           duration:2
@@ -325,7 +325,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(userCornerAllNameMessage)]
                                                           //: duration:2
                                                           duration:2
@@ -334,7 +334,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(showBubblePath)]
                                                           //: duration:2
                                                           duration:2
@@ -379,7 +379,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(userCornerAllNameMessage)]
                                                           //: duration:2
                                                           duration:2
@@ -388,7 +388,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(showBubblePath)]
                                                           //: duration:2
                                                           duration:2
@@ -424,7 +424,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                                                  completion:^(NSError *error) {
                                                      //: if (!error) {
                                                      if (!error) {
-                                                         //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"successful_authentication"]//@"验证成功".ntes_localized
+                                                         //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"successful_authentication"]//@"验证成功".ntes_localized
                                                          [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(showValueIdent)]//@"验证成功".ntes_localized
                                                                                            //: duration:2
                                                                                            duration:2
@@ -456,7 +456,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                                                      //: else
                                                      else
                                                      {
-                                                         //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"fail_authentication"]//@"验证失败,请重试".ntes_localized
+                                                         //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"fail_authentication"]//@"验证失败,请重试".ntes_localized
                                                          [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(dreamFreedNameForUrl)]//@"验证失败,请重试".ntes_localized
                                                                                            //: duration:2
                                                                                            duration:2
@@ -498,7 +498,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
             [[NIMSDK sharedSDK].teamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(k_centerTitle)]
                                                       //: duration:2
                                                       duration:2
@@ -516,7 +516,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(userCornerAllNameMessage)]
                                                           //: duration:2
                                                           duration:2
@@ -541,7 +541,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
             [[NIMSDK sharedSDK].superTeamManager rejectApplyToTeam:notification.targetID userId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(k_centerTitle)]
                                                       //: duration:2
                                                       duration:2
@@ -559,7 +559,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(userCornerAllNameMessage)]
                                                           //: duration:2
                                                           duration:2
@@ -584,7 +584,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
             [[NIMSDK sharedSDK].teamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(k_centerTitle)]
                                                       //: duration:2
                                                       duration:2
@@ -602,7 +602,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(userCornerAllNameMessage)]
                                                           //: duration:2
                                                           duration:2
@@ -611,7 +611,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(showBubblePath)]
                                                           //: duration:2
                                                           duration:2
@@ -637,7 +637,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
             [[NIMSDK sharedSDK].superTeamManager rejectInviteWithTeam:notification.targetID invitorId:notification.sourceID rejectReason:@"" completion:^(NSError *error) {
                 //: if (!error) {
                 if (!error) {
-                    //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                    //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"message_helper_already_no"]
                     [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(k_centerTitle)]
                                                       //: duration:2
                                                       duration:2
@@ -655,7 +655,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                 }else {
                     //: if(error.code == NIMRemoteErrorCodeTimeoutError) {
                     if(error.code == NIMRemoteErrorCodeTimeoutError) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(userCornerAllNameMessage)]
                                                           //: duration:2
                                                           duration:2
@@ -664,7 +664,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                     }
                     //: else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
                     else if (error.code == NIMRemoteErrorCodeTeamNotExists) {
-                        //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
+                        //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_team_not_exist"]
                         [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(showBubblePath)]
                                                           //: duration:2
                                                           duration:2
@@ -700,7 +700,7 @@ Byte appSalmonIdent[] = {67, 12, 8, 56, 190, 205, 51, 246, 159, 138, 229, 144, 1
                                                  completion:^(NSError *error) {
                                                      //: if (!error) {
                                                      if (!error) {
-                                                         //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"message_helper_already_no"]
+                                                         //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"message_helper_already_no"]
                                                          [wself makeToast:[PaintedNaturalLanguageTo exhibit:StringFromPowerCartData(k_centerTitle)]
                                                                                            //: duration:2
                                                                                            duration:2

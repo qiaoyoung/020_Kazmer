@@ -27,14 +27,14 @@ Byte mPoolPath[] = {67, 19, 40, 13, 170, 202, 119, 199, 139, 90, 210, 187, 86, 6
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardOperationItem.h"
+//: #import "WatchCardOperationItem.h"
 #import "TimeImage.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 
-//: @interface FFFCardOperationItem()
+//: @interface WatchCardOperationItem()
 @interface TimeImage()
 
 //: @property(nonatomic,assign) NIMKitCardHeaderOpeator opera;
@@ -43,7 +43,7 @@ Byte mPoolPath[] = {67, 19, 40, 13, 170, 202, 119, 199, 139, 90, 210, 187, 86, 6
 //: @end
 @end
 
-//: @implementation FFFCardOperationItem
+//: @implementation WatchCardOperationItem
 @implementation TimeImage
 
 //: - (instancetype)initWithOperation:(NIMKitCardHeaderOpeator)opera{

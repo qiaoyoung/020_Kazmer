@@ -1,20 +1,20 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFSessionPrivateProtocol.h
+//  WatchSessionPrivateProtocol.h
 // ButtonKit
 //
 //  Created by chris on 2016/11/7.
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
-//: #import "FFFSessionViewController.h"
+//: #import "WatchSessionViewController.h"
 #import "CollectionViewController.h"
 
 // __M_A_C_R_O__
 
 //: @class NIMMessage;
 @class NIMMessage;
-//: @class FFFMessageModel;
+//: @class WatchMessageModel;
 @class CentralProcessingUnitModel;
 
 //: @interface NIMSessionMessageOperateResult : NSObject
@@ -41,16 +41,16 @@
 //: - (NIMSessionMessageOperateResult *)insertMessageModels:(NSArray *)models;
 - (PinResult *)notice:(NSArray *)models;
 
-//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(WatchMessageModel *)model;
 - (PinResult *)clean:(CentralProcessingUnitModel *)model;
 
-//: - (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)updateMessageModel:(WatchMessageModel *)model;
 - (PinResult *)anTheoreticalAccount:(CentralProcessingUnitModel *)model;
 
-//: - (FFFMessageModel *)findModel:(NIMMessage *)message;
+//: - (WatchMessageModel *)findModel:(NIMMessage *)message;
 - (CentralProcessingUnitModel *)colorModel:(NIMMessage *)message;
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel *)model;
+//: - (NSInteger)indexAtModelArray:(WatchMessageModel *)model;
 - (NSInteger)current:(CentralProcessingUnitModel *)model;
 
 //: - (NSArray *)deleteModels:(NSRange)range;
@@ -87,7 +87,7 @@
 - (void)occurrent:(void (^)(NSError *))handler;
 
 // 展示message之前做额外配置
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(WatchMessageModel *)model;
 - (void)outTable:(CentralProcessingUnitModel *)model;
 
 //: - (void)addPinForMessage:(NIMMessage *)message callback:(void (^)(NSError *))handler;
@@ -124,7 +124,7 @@
 //: - (BOOL)canInsertChatroomMessages;
 - (BOOL)comment;
 
-//: - (void)calculateContent:(FFFMessageModel *)model;
+//: - (void)calculateContent:(WatchMessageModel *)model;
 - (void)collection:(CentralProcessingUnitModel *)model;
 
 //: - (void)reloadTable;
@@ -158,7 +158,7 @@
 
 
 
-//: @interface FFFSessionViewController(Interactor)
+//: @interface WatchSessionViewController(Interactor)
 @interface CollectionViewController(Interactor)
 
 //: - (void)setInteractor:(id<NIMSessionInteractor>) interactor;

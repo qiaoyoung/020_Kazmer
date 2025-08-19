@@ -415,14 +415,14 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
     Reachability *reachability = [note object];
     //: if ([reachability currentReachabilityStatus] != NotReachable) {
     if ([reachability currentReachabilityStatus] != NotReachable) {
-        //: [[FFFConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
+        //: [[WatchConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
         [[RecordInput file] maxToCompletionUp:^(BOOL success) {
             //: if (success) {
             if (success) {
-                //: NSLog(@"域名更新成功: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+                //: NSLog(@"域名更新成功: %@", [[WatchConfig sharedConfig] getCurrentDomain]);
             //: } else {
             } else {
-                //: NSLog(@"使用默认域名: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+                //: NSLog(@"使用默认域名: %@", [[WatchConfig sharedConfig] getCurrentDomain]);
             }
         //: }]; 
         }]; // 网络恢复时更新域名
@@ -524,19 +524,19 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
         NSString *title = @"";
         //: if(idx == 0){
         if(idx == 0){
-            //: title = [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"];
+            //: title = [WatchLanguageManager getTextWithKey:@"activity_user_profile_chat"];
             title = [PaintedNaturalLanguageTo exhibit:[[CarbamideData sharedInstance] user_publisherValue]];
         //: }else if (idx == 1){
         }else if (idx == 1){
-            //: title = [FFFLanguageManager getTextWithKey:@"discovery"];
+            //: title = [WatchLanguageManager getTextWithKey:@"discovery"];
             title = [PaintedNaturalLanguageTo exhibit:[[CarbamideData sharedInstance] dream_onFormat]];
         //: }else if (idx == 2){
         }else if (idx == 2){
-            //: title = [FFFLanguageManager getTextWithKey:@"contacts_list_title"];
+            //: title = [WatchLanguageManager getTextWithKey:@"contacts_list_title"];
             title = [PaintedNaturalLanguageTo exhibit:[[CarbamideData sharedInstance] mMuscleAccentValue]];
         //: }else if (idx == 3){
         }else if (idx == 3){
-            //: title = [FFFLanguageManager getTextWithKey:@"main_tab_my"];
+            //: title = [WatchLanguageManager getTextWithKey:@"main_tab_my"];
             title = [PaintedNaturalLanguageTo exhibit:[[CarbamideData sharedInstance] app_heavilyId]];
         }
 
@@ -839,7 +839,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeMessageList) : @{
                              //: @"vc" : @"NTESSessionListViewController",
                              @"vc" : @"ShowSessionViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"],
+                             //: @"title" : [WatchLanguageManager getTextWithKey:@"activity_user_profile_chat"],
                              [[CarbamideData sharedInstance] kKeyText] : [PaintedNaturalLanguageTo exhibit:[[CarbamideData sharedInstance] user_publisherValue]],
                              //: @"image" : @"icon_message_normal",
                              [[CarbamideData sharedInstance] showToStr] : [[CarbamideData sharedInstance] show_deadlineKey],
@@ -853,7 +853,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeChatroomList): @{
                              //: @"vc" : @"DisCorveyViewController",
                              @"vc" : @"AntediluvianViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"discovery"],
+                             //: @"title" : [WatchLanguageManager getTextWithKey:@"discovery"],
                              [[CarbamideData sharedInstance] kKeyText] : [PaintedNaturalLanguageTo exhibit:[[CarbamideData sharedInstance] dream_onFormat]],
                              //: @"image" : @"icon_discovery_normal",
                              [[CarbamideData sharedInstance] showToStr] : [[CarbamideData sharedInstance] dreamImageRepairItchMsg],
@@ -865,7 +865,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeContact) : @{
                              //: @"vc" : @"CCCContactsViewController",
                              @"vc" : @"CrimsonViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"contacts_list_title"],
+                             //: @"title" : [WatchLanguageManager getTextWithKey:@"contacts_list_title"],
                              [[CarbamideData sharedInstance] kKeyText] : [PaintedNaturalLanguageTo exhibit:[[CarbamideData sharedInstance] mMuscleAccentValue]],
                              //: @"image" : @"icon_contact_normal",
                              [[CarbamideData sharedInstance] showToStr] : [[CarbamideData sharedInstance] showRiotStr],
@@ -877,7 +877,7 @@ typedef NS_ENUM(NSInteger,NTESMainTabType) {
                      @(NTESMainTabTypeSetting) : @{
                              //: @"vc" : @"NTESMainCenterViewController",
                              @"vc" : @"SoapBubbleViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"main_tab_my"],
+                             //: @"title" : [WatchLanguageManager getTextWithKey:@"main_tab_my"],
                              [[CarbamideData sharedInstance] kKeyText] : [PaintedNaturalLanguageTo exhibit:[[CarbamideData sharedInstance] app_heavilyId]],
                              //: @"image" : @"icon_setting_normal",
                              [[CarbamideData sharedInstance] showToStr] : [[CarbamideData sharedInstance] k_accentName],

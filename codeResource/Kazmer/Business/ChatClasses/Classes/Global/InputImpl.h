@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDataProvider.h"
+//: #import "WatchKitDataProvider.h"
 #import "ToProvider.h"
 
-//: @interface FFFKitDataProviderImpl : NSObject<FFFKitDataProvider>
+//: @interface WatchKitDataProviderImpl : NSObject<WatchKitDataProvider>
 @interface InputImpl : NSObject<ToProvider>
 
 //: @end

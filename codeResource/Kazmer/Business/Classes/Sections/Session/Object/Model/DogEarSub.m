@@ -92,7 +92,7 @@
 #import "OptionContentSerialization.h"
 //: #import "NTESMessageModel.h"
 #import "TitleMessageModel.h"
-//: #import "FFFTimestampModel.h"
+//: #import "WatchTimestampModel.h"
 #import "EnableName.h"
 //: #import "NTESMultiRetweetAttachment.h"
 #import "ShowImageEvent.h"
@@ -267,9 +267,9 @@
     return model;
 }
 
-//: - (FFFTimestampModel *)setupTimeModel:(NSTimeInterval)timestamp {
+//: - (WatchTimestampModel *)setupTimeModel:(NSTimeInterval)timestamp {
 - (EnableName *)color:(NSTimeInterval)timestamp {
-    //: FFFTimestampModel *ret = [[FFFTimestampModel alloc] init];
+    //: WatchTimestampModel *ret = [[WatchTimestampModel alloc] init];
     EnableName *ret = [[EnableName alloc] init];
     //: ret.messageTime = timestamp;
     ret.messageTime = timestamp;
@@ -292,7 +292,7 @@
         if (idx == 0) { //插入时间
             //: weakSelf.currentDay = [weakSelf getDay:obj.timestamp];
             weakSelf.currentDay = [weakSelf white:obj.timestamp];
-            //: FFFTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
+            //: WatchTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
             EnableName *timeModel = [weakSelf color:obj.timestamp];
             //: [items addObject:timeModel];
             [items addObject:timeModel];
@@ -314,7 +314,7 @@
                 model.hiddenSeparatorLine = YES;
             }
 
-            //: FFFTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
+            //: WatchTimestampModel *timeModel = [weakSelf setupTimeModel:obj.timestamp];
             EnableName *timeModel = [weakSelf color:obj.timestamp];
             //: [items addObject:timeModel];
             [items addObject:timeModel];
@@ -381,9 +381,9 @@
             //: message = item;
             message = item;
         }
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[WatchMessageModel class]]) {
         if ([item isKindOfClass:[CentralProcessingUnitModel class]]) {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(WatchMessageModel *)item message];
             message = [(CentralProcessingUnitModel *)item message];
         }
         //: if (message && !message.isOutgoingMsg

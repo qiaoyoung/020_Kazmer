@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNotificationContentView.h"
+//: #import "WatchSessionNotificationContentView.h"
 #import "AssemblageControl.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFSessionNotificationContentView
+//: @implementation WatchSessionNotificationContentView
 @implementation AssemblageControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -41,14 +41,14 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model
+//: - (void)refresh:(WatchMessageModel *)model
 - (void)lengthAt:(CentralProcessingUnitModel *)model
 {
     //: [super refresh:model];
     [super lengthAt:model];
-    //: self.label.text = [FFFKitUtil messageTipContent:model.message];
+    //: self.label.text = [WatchKitUtil messageTipContent:model.message];
     self.label.text = [ObjectUtil complete:model.message];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
     SubObject *setting = [[ButtonKit sheerOption].config date:model.message];
 
     //: self.label.textColor = setting.textColor;

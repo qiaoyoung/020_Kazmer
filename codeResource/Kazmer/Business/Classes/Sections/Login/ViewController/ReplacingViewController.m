@@ -177,7 +177,7 @@ ViewStateData dreamUndergoSuggestMsg = (ViewStateData){110, (Byte []){13, 1, 10,
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"activity_safe_setting_modify"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:StringFromViewStateData(&k_styleShootUrl)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -205,7 +205,7 @@ ViewStateData dreamUndergoSuggestMsg = (ViewStateData){110, (Byte []){13, 1, 10,
     self.textfile_1.font = [UIFont systemFontOfSize:16];
     //: self.textfile_1.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_1.textColor = [UIColor min:StringFromViewStateData(&main_necessaryValue)];
-    //: self.textfile_1.placeholder = [FFFLanguageManager getTextWithKey:@"register_account_activity_account"];
+    //: self.textfile_1.placeholder = [WatchLanguageManager getTextWithKey:@"register_account_activity_account"];
     self.textfile_1.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromViewStateData(&user_speculationTitle)];
 //    self.textfile_1.delegate = self;
     //: [view1 addSubview:self.textfile_1];
@@ -234,7 +234,7 @@ ViewStateData dreamUndergoSuggestMsg = (ViewStateData){110, (Byte []){13, 1, 10,
     self.textfile_2.font = [UIFont systemFontOfSize:16];
     //: self.textfile_2.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_2.textColor = [UIColor min:StringFromViewStateData(&main_necessaryValue)];
-    //: self.textfile_2.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: self.textfile_2.placeholder = [WatchLanguageManager getTextWithKey:@"activity_modify_new"];
     self.textfile_2.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromViewStateData(&mainConventHateId)];
 //    self.textfile_2.delegate = self;
     //: self.textfile_2.secureTextEntry = YES;
@@ -279,7 +279,7 @@ ViewStateData dreamUndergoSuggestMsg = (ViewStateData){110, (Byte []){13, 1, 10,
     self.textfile_3.font = [UIFont systemFontOfSize:16];
     //: self.textfile_3.textColor = [UIColor colorWithHexString:@"#333333"];
     self.textfile_3.textColor = [UIColor min:StringFromViewStateData(&main_necessaryValue)];
-    //: self.textfile_3.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new_again"];
+    //: self.textfile_3.placeholder = [WatchLanguageManager getTextWithKey:@"activity_modify_new_again"];
     self.textfile_3.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromViewStateData(&m_numberPath)];
 //    self.textfile_3.delegate = self;
     //: self.textfile_3.secureTextEntry = YES;
@@ -309,7 +309,7 @@ ViewStateData dreamUndergoSuggestMsg = (ViewStateData){110, (Byte []){13, 1, 10,
     emptyButton.titleLabel.font = [UIFont systemFontOfSize:15];
     //: [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [emptyButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [emptyButton setTitle:[WatchLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [emptyButton setTitle:[PaintedNaturalLanguageTo exhibit:StringFromViewStateData(&mBarFormat)] forState:UIControlStateNormal];
     //: [emptyButton addTarget:self action:@selector(commitButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [emptyButton addTarget:self action:@selector(visualProperty) forControlEvents:UIControlEventTouchUpInside];
@@ -396,7 +396,7 @@ ViewStateData dreamUndergoSuggestMsg = (ViewStateData){110, (Byte []){13, 1, 10,
         style.imageSize = CGSizeMake(20, 20);
         //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
         style.messageColor = [UIColor min:StringFromViewStateData(&k_cowValue)];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"modify_activity_psw_no_same"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"modify_activity_psw_no_same"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromViewStateData(&appTubeValue)] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:StringFromViewStateData(&user_cabinMsg)] style:style completion:nil];
         //: return;
         return;
@@ -463,7 +463,7 @@ ViewStateData dreamUndergoSuggestMsg = (ViewStateData){110, (Byte []){13, 1, 10,
         style.imageSize = CGSizeMake(20, 20);
         //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
         style.messageColor = [UIColor min:StringFromViewStateData(&k_cowValue)];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromViewStateData(&dream_pointData)] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:StringFromViewStateData(&user_cabinMsg)] style:style completion:nil];
     //: }];
     }];

@@ -18,7 +18,7 @@
 #import "OldUtil.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 
 //: CGFloat SearchCellTitleFontSize = 13.f;
@@ -51,7 +51,7 @@ CGFloat app_halfUrl = 15.f; //cell的高度是由文本高度决定的。防止�
 //: @interface NTESSearchMessageContentCell()
 @interface SaloonViewCell()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) WatchAvatarImageView *avatar;
 @property (nonatomic,strong) RecordControl *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -78,7 +78,7 @@ CGFloat app_halfUrl = 15.f; //cell的高度是由文本高度决定的。防止�
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     //: if (self) {
     if (self) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        //: _avatar = [[WatchAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         _avatar = [[RecordControl alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -115,7 +115,7 @@ CGFloat app_halfUrl = 15.f; //cell的高度是由文本高度决定的。防止�
     self.object = object;
     //: NIMMessage *message = object.message;
     NIMMessage *message = object.message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:message.from skinColour_strong:nil];
     //: NSURL *avatarURL;
     NSURL *avatarURL;

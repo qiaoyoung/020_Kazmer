@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WatchTeamMemberListDataSource.h"
 #import "EventColor.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WatchTeamListDataManager.h"
 #import "MetadataManager.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFTeamMuteMemberListViewController : UIViewController
+//: @interface WatchTeamMuteMemberListViewController : UIViewController
 @interface PacketViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) WatchTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MetadataManager *teamListManager;
 
 //: @end

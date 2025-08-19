@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
@@ -20,13 +20,13 @@
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFSessionMessageContentView()
+//: @interface WatchSessionMessageContentView()
 @interface ThoughtImageControl()
 
 //: @end
 @end
 
-//: @implementation FFFSessionMessageContentView
+//: @implementation WatchSessionMessageContentView
 @implementation ThoughtImageControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -56,7 +56,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel*)data
+//: - (void)refresh:(WatchMessageModel*)data
 - (void)lengthAt:(CentralProcessingUnitModel*)data
 {
     //: _model = data;
@@ -107,7 +107,7 @@
 - (UIImage *)upPage:(UIControlState)state accountVisualisation:(BOOL)outgoing
 {
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
     SubObject *setting = [[ButtonKit sheerOption].config date:self.model.message];
     //: if (state == UIControlStateNormal)
     if (state == UIControlStateNormal)

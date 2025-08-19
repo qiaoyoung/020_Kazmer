@@ -115,7 +115,7 @@ Byte m_bookName[] = {14, 45, 96, 10, 89, 243, 2, 4, 214, 224, 213, 211, 197, 210
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"activity_set_bio_title"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:StringFromGuidanceData(k_countPatrolConventMessage)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -204,7 +204,7 @@ Byte m_bookName[] = {14, 45, 96, 10, 89, 243, 2, 4, 214, 224, 213, 211, 197, 210
             [nav popViewControllerAnimated:NO];
             //: UIViewController *vc = nav.topViewController;
             UIViewController *vc = nav.topViewController;
-            //: [vc.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [vc.view makeToast:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [vc.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromGuidanceData(showEraseFormat)]
                          //: duration:2
                          duration:2
@@ -212,7 +212,7 @@ Byte m_bookName[] = {14, 45, 96, 10, 89, 243, 2, 4, 214, 224, 213, 211, 197, 210
                          position:CSToastPositionCenter];
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromGuidanceData(m_bookName)]
                          //: duration:2
                          duration:2
@@ -259,7 +259,7 @@ Byte m_bookName[] = {14, 45, 96, 10, 89, 243, 2, 4, 214, 224, 213, 211, 197, 210
         _textView.font = [UIFont systemFontOfSize:16.0];
         //: _textView.textColor = [UIColor colorWithHexString:@"#333333"];
         _textView.textColor = [UIColor min:StringFromGuidanceData(m_toData)];
-        //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+        //: _textView.placeholder = [WatchLanguageManager getTextWithKey:@"activity_set_bio_title"];
         _textView.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromGuidanceData(k_countPatrolConventMessage)];
         //: _textView.delegate = self;
         _textView.delegate = self;

@@ -124,29 +124,29 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionListViewController.h"
+//: #import "WatchSessionListViewController.h"
 #import "WeltanschauungViewController.h"
-//: #import "FFFSessionViewController.h"
+//: #import "WatchSessionViewController.h"
 #import "CollectionViewController.h"
-//: #import "FFFSessionListCell.h"
+//: #import "WatchSessionListCell.h"
 #import "StudyViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
-//: #import "FFFMessageUtil.h"
+//: #import "WatchMessageUtil.h"
 #import "UtilPage.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import <YYText.h>
 #import <YYText.h>
-//: #import "FFFTextHighlight.h"
+//: #import "WatchTextHighlight.h"
 #import "EmptyColorTextHighlight.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "WatchInputEmoticonParser.h"
 #import "ImageShowParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
@@ -157,7 +157,7 @@ typedef struct {
 //: #import "LEEAlert.h"
 #import "SetupObject.h"
 
-//: @interface FFFSessionListViewController ()
+//: @interface WatchSessionListViewController ()
 @interface WeltanschauungViewController ()
 
 //@property (nonatomic,strong)  UIImageView *navBarHairlineImageView;
@@ -165,7 +165,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFSessionListViewController
+//: @implementation WatchSessionListViewController
 @implementation WeltanschauungViewController
 
 //: - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -297,7 +297,7 @@ typedef struct {
 - (void)pining:(id)sender {
     //: HMWebViewController *vc = [[HMWebViewController alloc] init];
     EndUserViewController *vc = [[EndUserViewController alloc] init];
-    //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: vc.webTitle = [WatchLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     vc.webTitle = [PaintedNaturalLanguageTo exhibit:[RegimeData user_cutPath]];
     //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
     vc.urlString = [OnName user].yshref;
@@ -315,7 +315,7 @@ typedef struct {
     [SetupObject range].config
         //: .LeeAddTitle(^(UILabel * _Nonnull label) {
         .LeeAddTitle(^(UILabel * _Nonnull label) {
-            //: label.text = [FFFLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"];
+            //: label.text = [WatchLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"];
             label.text = [PaintedNaturalLanguageTo exhibit:[RegimeData show_monthMsg]];
             //: label.font = [UIFont boldSystemFontOfSize:17];
             label.font = [UIFont boldSystemFontOfSize:17];
@@ -326,7 +326,7 @@ typedef struct {
     //: .LeeAddContent(^(UILabel *label) {
     .LeeAddContent(^(UILabel *label) {
 
-        //: NSString *markString = [FFFLanguageManager getTextWithKey:@"UserAgreementProtocol"];
+        //: NSString *markString = [WatchLanguageManager getTextWithKey:@"UserAgreementProtocol"];
         NSString *markString = [PaintedNaturalLanguageTo exhibit:[RegimeData main_skyAggressionStr]];
 
         //: NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
@@ -354,7 +354,7 @@ typedef struct {
             NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle),
             //: NSForegroundColorAttributeName: [UIColor colorWithRed:6/255.0f green:53/255.0f blue:253/255.0f alpha:1.0f],
             NSForegroundColorAttributeName: [UIColor colorWithRed:6/255.0f green:53/255.0f blue:253/255.0f alpha:1.0f],
-        //: } range:[attrsString.string rangeOfString:[FFFLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"]]];
+        //: } range:[attrsString.string rangeOfString:[WatchLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"]]];
         } range:[attrsString.string rangeOfString:[PaintedNaturalLanguageTo exhibit:[RegimeData show_monthMsg]]]];
 
         //: label.attributedText = attrsString;
@@ -374,7 +374,7 @@ typedef struct {
     //: .LeeAddAction(^(LEEAction *action) {
     .LeeAddAction(^(ModelButtonAction *action) {
 
-        //: action.title = [FFFLanguageManager getTextWithKey:@"reject"];
+        //: action.title = [WatchLanguageManager getTextWithKey:@"reject"];
         action.title = [PaintedNaturalLanguageTo exhibit:[RegimeData userComfortMethText]];
 
         //: action.titleColor = [UIColor darkGrayColor];
@@ -400,7 +400,7 @@ typedef struct {
         //: action.type = LEEActionTypeCancel;
         action.type = LEEActionTypeCancel;
 
-        //: action.title = [FFFLanguageManager getTextWithKey:@"agree"];
+        //: action.title = [WatchLanguageManager getTextWithKey:@"agree"];
         action.title = [PaintedNaturalLanguageTo exhibit:[RegimeData notiValueUrl]];
 
         //: action.titleColor = [UIColor whiteColor];
@@ -552,13 +552,13 @@ typedef struct {
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //: static NSString *cellId = @"cellId";
     static NSString *cellId = @"cellId";
-    //: FFFSessionListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    //: WatchSessionListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     StudyViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFSessionListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        //: cell = [[WatchSessionListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         cell = [[StudyViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         //: [cell.avatarImageView addTarget:self action:@selector(onTouchAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [cell.avatarImageView addTarget:self action:@selector(progressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -739,7 +739,7 @@ typedef struct {
 
 //: - (void)onSelectedRecent:(NIMRecentSession *)recentSession atIndexPath:(NSIndexPath *)indexPath{
 - (void)criticise:(NIMRecentSession *)recentSession visualisation:(NSIndexPath *)indexPath{
-    //: FFFSessionViewController *vc = [[FFFSessionViewController alloc] initWithSession:recentSession.session];
+    //: WatchSessionViewController *vc = [[WatchSessionViewController alloc] initWithSession:recentSession.session];
     CollectionViewController *vc = [[CollectionViewController alloc] initWithUnder:recentSession.session];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -751,7 +751,7 @@ typedef struct {
 - (NSString *)viewOf:(NIMRecentSession *)recent {
     //: if (recent.session.sessionType == NIMSessionTypeP2P) {
     if (recent.session.sessionType == NIMSessionTypeP2P) {
-        //: return [FFFKitUtil showNick:recent.session.sessionId inSession:recent.session];
+        //: return [WatchKitUtil showNick:recent.session.sessionId inSession:recent.session];
         return [ObjectUtil message:recent.session.sessionId sessionView:recent.session];
     //: } else if (recent.session.sessionType == NIMSessionTypeTeam) {
     } else if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -786,13 +786,13 @@ typedef struct {
 - (NSString *)infoFor:(NIMRecentSession *)recent{
     //: if (recent.lastMessage) {
     if (recent.lastMessage) {
-        //: return [FFFKitUtil showTime:recent.lastMessage.timestamp showDetail:NO];
+        //: return [WatchKitUtil showTime:recent.lastMessage.timestamp showDetail:NO];
         return [ObjectUtil pinTextDetail:recent.lastMessage.timestamp keyDoing:NO];
     }
     // 服务端时间戳以毫秒为单位,需要转化
     //: NSTimeInterval timeSecond = recent.updateTime / 1000.0;
     NSTimeInterval timeSecond = recent.updateTime / 1000.0;
-    //: return [FFFKitUtil showTime:timeSecond showDetail:NO];
+    //: return [WatchKitUtil showTime:timeSecond showDetail:NO];
     return [ObjectUtil pinTextDetail:timeSecond keyDoing:NO];
 }
 
@@ -880,7 +880,7 @@ typedef struct {
 #pragma mark - Private
 //: - (NSString *)messageContent:(NIMMessage*)lastMessage{
 - (NSString *)background:(NIMMessage*)lastMessage{
-    //: NSString *text = [FFFMessageUtil messageContent:lastMessage];
+    //: NSString *text = [WatchMessageUtil messageContent:lastMessage];
     NSString *text = [UtilPage text:lastMessage];
     //: if (lastMessage.session.sessionType == NIMSessionTypeP2P || lastMessage.messageType == NIMMessageTypeTip)
     if (lastMessage.session.sessionType == NIMSessionTypeP2P || lastMessage.messageType == NIMMessageTypeTip)
@@ -894,12 +894,12 @@ typedef struct {
 
         //: NIMMessage *msg = [self lastMessageWithNoNotificationMessage:lastMessage];
         NIMMessage *msg = [self completeMessage:lastMessage];
-        //: text = [FFFMessageUtil messageContent:msg];
+        //: text = [WatchMessageUtil messageContent:msg];
         text = [UtilPage text:msg];
 
         //: NSString *from = msg.from;
         NSString *from = msg.from;
-        //: NSString *nickName = [FFFKitUtil showNick:from inSession:msg.session];
+        //: NSString *nickName = [WatchKitUtil showNick:from inSession:msg.session];
         NSString *nickName = [ObjectUtil message:from sessionView:msg.session];
         //: return nickName.length ? [nickName stringByAppendingFormat:@" : %@",text] : @"";
         return nickName.length ? [nickName stringByAppendingFormat:@" : %@",text] : @"";

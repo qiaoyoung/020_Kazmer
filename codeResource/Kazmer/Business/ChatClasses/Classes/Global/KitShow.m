@@ -24,9 +24,9 @@ ExtraData showCabinKey = (ExtraData){88, (Byte []){54, 49, 53, 51, 49, 44, 118, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitUrlManager.h"
+//: #import "WatchKitUrlManager.h"
 #import "KitShow.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "WatchKitTimerHolder.h"
 #import "UserCell.h"
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
@@ -36,13 +36,13 @@ ExtraData showCabinKey = (ExtraData){88, (Byte []){54, 49, 53, 51, 49, 44, 118, 
 //: NSString *const kNIMKitUrlDataKey = @"kNIMKitUrlDataKey";
 NSString *const mainIndexMsg = @"kNIMKitUrlDataKey";
 
-//: @interface FFFKitUrlManager ()<FFFKitTimerHolderDelegate>
+//: @interface WatchKitUrlManager ()<WatchKitTimerHolderDelegate>
 @interface KitShow ()<AssemblageDelegate>
 
 //: @property (nonatomic, strong) NSMutableDictionary *dic;
 @property (nonatomic, strong) NSMutableDictionary *dic;
 
-//: @property (nonatomic, strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic, strong) WatchKitTimerHolder *timer;
 @property (nonatomic, strong) UserCell *timer;
 
 //: @property (nonatomic, assign) BOOL needSync;
@@ -51,7 +51,7 @@ NSString *const mainIndexMsg = @"kNIMKitUrlDataKey";
 //: @end
 @end
 
-//: @implementation FFFKitUrlManager
+//: @implementation WatchKitUrlManager
 @implementation KitShow
 
 //: + (instancetype)shareManager {
@@ -62,7 +62,7 @@ NSString *const mainIndexMsg = @"kNIMKitUrlDataKey";
     static id instance = nil;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitUrlManager alloc] init];
+        //: instance = [[WatchKitUrlManager alloc] init];
         instance = [[KitShow alloc] init];
     //: });
     });
@@ -81,7 +81,7 @@ NSString *const mainIndexMsg = @"kNIMKitUrlDataKey";
             //: _dic = [NSMutableDictionary dictionary];
             _dic = [NSMutableDictionary dictionary];
         }
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[WatchKitTimerHolder alloc] init];
         _timer = [[UserCell alloc] init];
         //: [_timer startTimer:5.0f delegate:self repeats:YES];
         [_timer countFor:5.0f greenish:self analogDigitalConverterRepeats:YES];
@@ -206,7 +206,7 @@ NSString *const mainIndexMsg = @"kNIMKitUrlDataKey";
     }
 }
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder {
+//: - (void)onNIMKitTimerFired:(WatchKitTimerHolder *)holder {
 - (void)alled:(UserCell *)holder {
     //: if (holder != _timer) {
     if (holder != _timer) {

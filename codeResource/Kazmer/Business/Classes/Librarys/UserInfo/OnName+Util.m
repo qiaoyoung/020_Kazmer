@@ -261,7 +261,7 @@
 
     //: userDefaults.language = lang;
     userDefaults.language = lang;
-    //: [[FFFLanguageManager shareInstance] setLanguagre:lang];
+    //: [[WatchLanguageManager shareInstance] setLanguagre:lang];
     [[PaintedNaturalLanguageTo marginSource] setOfImage:lang];
 
     //: [MyUserKit sharedKit].languageBundle = nil;

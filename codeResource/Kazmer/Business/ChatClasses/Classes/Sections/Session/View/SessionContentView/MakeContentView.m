@@ -9,28 +9,28 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionImageContentView.h"
+//: #import "WatchSessionImageContentView.h"
 #import "MakeContentView.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "WatchLoadProgressView.h"
 #import "MakeTingView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "UCZProgressView.h"
 #import "UCZProgressView.h"
 
-//: @interface FFFSessionImageContentView()
+//: @interface WatchSessionImageContentView()
 @interface MakeContentView()
 
 //: @property (nonatomic,strong,readwrite) YYAnimatedImageView * imageView;
 @property (nonatomic,strong,readwrite) YYAnimatedImageView * imageView;
 
-//: @property (nonatomic,strong) FFFLoadProgressView * progressView;
+//: @property (nonatomic,strong) WatchLoadProgressView * progressView;
 @property (nonatomic,strong) MakeTingView * progressView;
 
 //@property (nonatomic, strong) UCZProgressView *progressView;
@@ -38,7 +38,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionImageContentView
+//: @implementation WatchSessionImageContentView
 @implementation MakeContentView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -64,7 +64,7 @@
 ////        self.progressView.tintColor = [KEKESkinColorManager shareInstance].skinColor;
 //        [self addSubview:self.progressView];
 
-        //: _progressView = [[FFFLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        //: _progressView = [[WatchLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         _progressView = [[MakeTingView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         //: _progressView.maxProgress = 1.0f;
         _progressView.maxProgress = 1.0f;
@@ -75,7 +75,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WatchMessageModel *)data
 - (void)lengthAt:(CentralProcessingUnitModel *)data
 {
     //: [super refresh:data];
@@ -92,7 +92,7 @@
         //: [imageObject setUploadURL:url];
         [imageObject setUploadURL:url];
 
-        //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+        //: NSMutableDictionary *dic = [[WatchConfig sharedConfig] Gdic];
         NSMutableDictionary *dic = [[RecordInput file] Gdic];
         //: NSData *data = [dic objectForKey:self.model.message.messageId];
         NSData *data = [dic objectForKey:self.model.message.messageId];
@@ -195,9 +195,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)searched:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
     CoverShowEvent *event = [[CoverShowEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = WatchKitEventNameTapContent;
     event.eventName = appCommentStr;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

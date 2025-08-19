@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTimestampCell.h"
+//: #import "WatchSessionTimestampCell.h"
 #import "ObjectViewCell.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESTimestampCell : FFFSessionTimestampCell
+//: @interface NTESTimestampCell : WatchSessionTimestampCell
 @interface SessionCompartmentTimestampCell : ObjectViewCell
 
 //: @end

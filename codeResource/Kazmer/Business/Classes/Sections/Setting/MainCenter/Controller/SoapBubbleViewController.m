@@ -158,7 +158,7 @@ typedef struct {
 //: Việt nam
 @property (nonatomic, copy) NSString *userGenetPath;
 
-//: #ffffff
+//: #fffWatch
 @property (nonatomic, copy) NSString *mWeepFiftyStr;
 
 //: Ireland
@@ -819,7 +819,7 @@ typedef struct {
     return _noti_accentId;
 }
 
-//: #ffffff
+//: #fffWatch
 - (NSString *)mWeepFiftyStr {
     if (!_mWeepFiftyStr) {
         StructPorterData value = (StructPorterData){107, (Byte []){72, 13, 13, 13, 13, 13, 13, 149}, 7};
@@ -843,9 +843,9 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESMainCenterViewController.h"
 #import "SoapBubbleViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
+//: #import "WatchCommonTableDelegate.h"
 #import "BarPage.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -881,7 +881,7 @@ typedef struct {
 #import "UIView+Zone.h"
 //: #import "UIAlertView+NTESBlock.h"
 #import "UIAlertView+InputSub.h"
-//: #import "FFFUserInfoViewController.h"//个人资料
+//: #import "WatchUserInfoViewController.h"//个人资料
 #import "ImageSessionViewController.h"//个人资料
 //: #import "NTESUserQRCodeViewController.h" //我的二维码
 #import "SizeViewController.h" //我的二维码
@@ -985,7 +985,7 @@ typedef struct {
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:userID skinColour_strong:nil];
 
     //: self.titleLabel.text = me.userInfo.nickName;
@@ -1176,7 +1176,7 @@ typedef struct {
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:userID skinColour_strong:nil];
 
     //: _headerImage = [[UIImageView alloc] initWithFrame:CGRectMake(20,(44.0f + [UIDevice vg_statusBarHeight]), 64, 64)];
@@ -1226,7 +1226,7 @@ typedef struct {
     qrBtn.titleLabel.font = [UIFont systemFontOfSize:12];
     //: [qrBtn setTitleColor:[UIColor colorWithHexString:@"#4B43DE"] forState:UIControlStateNormal];
     [qrBtn setTitleColor:[UIColor min:[PorterData sharedInstance].mHoppingTitle] forState:UIControlStateNormal];
-    //: [qrBtn setTitle:[FFFLanguageManager getTextWithKey:@"qrcode_activity_title"] forState:UIControlStateNormal];
+    //: [qrBtn setTitle:[WatchLanguageManager getTextWithKey:@"qrcode_activity_title"] forState:UIControlStateNormal];
     [qrBtn setTitle:[PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].main_workplaceToKey] forState:UIControlStateNormal];
     //: [qrBtn layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleTop) imageTitleSpace:10];
     [qrBtn title:(MKButtonEdgeInsetsStyleTop) tillVideo:10];
@@ -1235,7 +1235,7 @@ typedef struct {
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight])+100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice vg_statusBarHeight])-(49.0f))];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice tingHeight])+100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice tingHeight])-(49.0f))];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
     contentView.backgroundColor = [UIColor min:[PorterData sharedInstance].mWeepFiftyStr];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -1272,7 +1272,7 @@ typedef struct {
     labedit.font = [UIFont systemFontOfSize:14];
     //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
     labedit.textColor = [UIColor min:[PorterData sharedInstance].app_quickData];
-    //: labedit.text = [FFFLanguageManager getTextWithKey:@"edit_profile"];
+    //: labedit.text = [WatchLanguageManager getTextWithKey:@"edit_profile"];
     labedit.text = [PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].kKeyValue];
     //: [editView addSubview:labedit];
     [editView addSubview:labedit];
@@ -1346,7 +1346,7 @@ typedef struct {
     label11.font = [UIFont systemFontOfSize:13.f];
     //: label11.textColor = [UIColor blackColor];
     label11.textColor = [UIColor blackColor];
-    //: label11.text = [FFFLanguageManager getTextWithKey:@"receiver_model"];
+    //: label11.text = [WatchLanguageManager getTextWithKey:@"receiver_model"];
     label11.text = [PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].main_heavilyStr];
     //: [box1 addSubview:label11];
     [box1 addSubview:label11];
@@ -1385,7 +1385,7 @@ typedef struct {
     labellog.font = [UIFont systemFontOfSize:13.f];
     //: labellog.textColor = [UIColor blackColor];
     labellog.textColor = [UIColor blackColor];
-    //: labellog.text = [FFFLanguageManager getTextWithKey:@"my_log"];
+    //: labellog.text = [WatchLanguageManager getTextWithKey:@"my_log"];
     labellog.text = [PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].show_addStr];
     //: [boxlog addSubview:labellog];
     [boxlog addSubview:labellog];
@@ -1421,7 +1421,7 @@ typedef struct {
     label23.font = [UIFont systemFontOfSize:13.f];
     //: label23.textColor = [UIColor blackColor];
     label23.textColor = [UIColor blackColor];
-    //: label23.text = [FFFLanguageManager getTextWithKey:@"safe_setting_activity_title"];
+    //: label23.text = [WatchLanguageManager getTextWithKey:@"safe_setting_activity_title"];
     label23.text = [PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].userHeavyId];
     //: [box6 addSubview:label23];
     [box6 addSubview:label23];
@@ -1471,7 +1471,7 @@ typedef struct {
     label14.font = [UIFont systemFontOfSize:13.f];
     //: label14.textColor = [UIColor blackColor];
     label14.textColor = [UIColor blackColor];
-    //: label14.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: label14.text = [WatchLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     label14.text = [PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].notiShouldIdent];//@"用户协议和隐私协议";
     //: [box3 addSubview:label14];
     [box3 addSubview:label14];
@@ -1513,7 +1513,7 @@ typedef struct {
     label22.font = [UIFont systemFontOfSize:13.f];
     //: label22.textColor = [UIColor blackColor];
     label22.textColor = [UIColor blackColor];
-    //: label22.text = [FFFLanguageManager getTextWithKey:@"feedback_activity_title"];
+    //: label22.text = [WatchLanguageManager getTextWithKey:@"feedback_activity_title"];
     label22.text = [PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].main_tableName];
     //: [box5 addSubview:label22];
     [box5 addSubview:label22];
@@ -1551,7 +1551,7 @@ typedef struct {
     label31.textColor = [UIColor blackColor];
     //: [box7 addSubview:label31];
     [box7 addSubview:label31];
-    //: NSString *fragment_my_version = [FFFLanguageManager getTextWithKey:@"fragment_my_version"];
+    //: NSString *fragment_my_version = [WatchLanguageManager getTextWithKey:@"fragment_my_version"];
     NSString *fragment_my_version = [PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].userHateNameData];
     //: NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
@@ -1568,7 +1568,7 @@ typedef struct {
     loginButton.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [loginButton setTitleColor:[UIColor colorWithHexString:@"5D5F66"] forState:UIControlStateNormal];
     [loginButton setTitleColor:[UIColor min:[PorterData sharedInstance].user_matteMessage] forState:UIControlStateNormal];
-    //: [loginButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_exit"] forState:UIControlStateNormal];
+    //: [loginButton setTitle:[WatchLanguageManager getTextWithKey:@"activity_comment_setting_exit"] forState:UIControlStateNormal];
     [loginButton setTitle:[PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].appSurgeryEquallyFormat] forState:UIControlStateNormal];
     //: [loginButton addTarget:self action:@selector(logoutCurrentAccount) forControlEvents:UIControlEventTouchUpInside];
     [loginButton addTarget:self action:@selector(logoutItemRecital) forControlEvents:UIControlEventTouchUpInside];
@@ -1590,7 +1590,7 @@ typedef struct {
 #pragma mark - NTESMainCenterDelegate
 //: -(void)userInfoCenter{
 -(void)commentM{
-    //: FFFUserInfoViewController *vc = [[FFFUserInfoViewController alloc] init];
+    //: WatchUserInfoViewController *vc = [[WatchUserInfoViewController alloc] init];
     ImageSessionViewController *vc = [[ImageSessionViewController alloc] init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -1718,18 +1718,18 @@ typedef struct {
 }
 //: -(void)exitApp{
 -(void)plant{
-    //: NSString *alertStr = [FFFLanguageManager getTextWithKey:@"system_change_language_title"];
+    //: NSString *alertStr = [WatchLanguageManager getTextWithKey:@"system_change_language_title"];
     NSString *alertStr = [PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].mainCountModerateTitle];
     //: UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:alertStr preferredStyle:UIAlertControllerStyleAlert];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:alertStr preferredStyle:UIAlertControllerStyleAlert];
-    //: [alert addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alert addAction:[UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alert addAction:[UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].userNameData] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: exit(0);
         exit(0);
     //: }]];
     }]];
 
-    //: [alert addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    //: [alert addAction:[UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
     [alert addAction:[UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].showImageMsg] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
 
     //: }]];
@@ -1747,7 +1747,7 @@ typedef struct {
 
     //: ZMONPolicyPrivacyViewController *vc = [[ZMONPolicyPrivacyViewController alloc] init];
     ButtonOldViewController *vc = [[ButtonOldViewController alloc] init];
-    //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: vc.webTitle = [WatchLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     vc.webTitle = [PaintedNaturalLanguageTo exhibit:[PorterData sharedInstance].notiShouldIdent];//@"隐私协议";
     //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
     vc.urlString = [OnName user].yshref;

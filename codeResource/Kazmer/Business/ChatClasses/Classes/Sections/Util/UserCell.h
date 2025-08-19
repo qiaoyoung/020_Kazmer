@@ -16,24 +16,24 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFKitTimerHolder;
+//: @class WatchKitTimerHolder;
 @class UserCell;
 
-//: @protocol FFFKitTimerHolderDelegate <NSObject>
+//: @protocol WatchKitTimerHolderDelegate <NSObject>
 @protocol AssemblageDelegate <NSObject>
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder;
+//: - (void)onNIMKitTimerFired:(WatchKitTimerHolder *)holder;
 - (void)alled:(UserCell *)holder;
 //: @end
 @end
 
-//: @interface FFFKitTimerHolder : NSObject
+//: @interface WatchKitTimerHolder : NSObject
 @interface UserCell : NSObject
-//: @property (nonatomic,weak) id<FFFKitTimerHolderDelegate> timerDelegate;
+//: @property (nonatomic,weak) id<WatchKitTimerHolderDelegate> timerDelegate;
 @property (nonatomic,weak) id<AssemblageDelegate> timerDelegate;
 
 //: - (void)startTimer:(NSTimeInterval)seconds
 - (void)countFor:(NSTimeInterval)seconds
-          //: delegate:(id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate:(id<WatchKitTimerHolderDelegate>)delegate
           greenish:(id<AssemblageDelegate>)delegate
            //: repeats:(BOOL)repeats;
            analogDigitalConverterRepeats:(BOOL)repeats;

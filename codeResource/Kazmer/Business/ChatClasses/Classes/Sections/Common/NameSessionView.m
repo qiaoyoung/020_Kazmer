@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBadgeView.h"
+//: #import "WatchBadgeView.h"
 #import "NameSessionView.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
 
-//: @interface FFFBadgeView ()
+//: @interface WatchBadgeView ()
 @interface NameSessionView ()
 
 //: @property (strong) UIColor *badgeBackgroundColor;
@@ -38,7 +38,7 @@
 //: @end
 @end
 
-//: @implementation FFFBadgeView
+//: @implementation WatchBadgeView
 @implementation NameSessionView
 
 //: + (instancetype)viewWithBadgeTip:(NSString *)badgeValue{
@@ -48,7 +48,7 @@
         //: badgeValue = @"";
         badgeValue = @"";
     }
-    //: FFFBadgeView *instance = [[FFFBadgeView alloc] init];
+    //: WatchBadgeView *instance = [[WatchBadgeView alloc] init];
     NameSessionView *instance = [[NameSessionView alloc] init];
     //: instance.frame = [instance frameWithStr:badgeValue];
     instance.frame = [instance visualCommunicationState:badgeValue];

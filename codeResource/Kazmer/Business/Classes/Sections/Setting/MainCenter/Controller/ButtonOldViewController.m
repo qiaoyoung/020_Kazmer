@@ -37,7 +37,7 @@ Byte user_removeHateMonthMsg[] = {92, 4, 11, 75, 32, 200, 23, 70, 87, 138, 119, 
 #import "ButtonOldViewController.h"
 //: #import <WebKit/WebKit.h>
 #import <WebKit/WebKit.h>
-//: #import "FFFRegisterViewController.h"
+//: #import "WatchRegisterViewController.h"
 #import "ShowBubbleViewController.h"
 //: #import "SSZipArchiveManager.h"
 #import "EmptyTing.h"
@@ -121,7 +121,7 @@ Byte user_removeHateMonthMsg[] = {92, 4, 11, 75, 32, 200, 23, 70, 87, 138, 119, 
 //: - (void)doAgree{
 - (void)showAgree{
 
-    //: FFFRegisterViewController *vc = [[FFFRegisterViewController alloc]init];
+    //: WatchRegisterViewController *vc = [[WatchRegisterViewController alloc]init];
     ShowBubbleViewController *vc = [[ShowBubbleViewController alloc]init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];

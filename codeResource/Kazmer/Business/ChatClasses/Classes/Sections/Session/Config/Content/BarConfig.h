@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WatchBaseSessionContentConfig.h"
+#import "WatchBaseSessionContentConfig.h"
 
-//: @interface FFFVideoContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface WatchVideoContentConfig : NSObject<CCCSessionContentConfig>
 @interface BarConfig : NSObject<TableAccumulationReplacement>
 
 //: @end

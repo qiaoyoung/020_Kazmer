@@ -13,20 +13,20 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WatchCardDataSourceProtocol.h"
+#import "WatchCardDataSourceProtocol.h"
 
-//: @class FFFAvatarImageView;
+//: @class WatchAvatarImageView;
 @class RecordControl;
-//: @protocol FFFCardHeaderCellDelegate;
+//: @protocol WatchCardHeaderCellDelegate;
 @protocol NumericalCountRed;
 
 
 
-//: @interface FFFCardHeaderCell : UICollectionViewCell
+//: @interface WatchCardHeaderCell : UICollectionViewCell
 @interface RecentFrameReusableView : UICollectionViewCell
 
-//: @property (nonatomic,strong) FFFAvatarImageView *imageView;
+//: @property (nonatomic,strong) WatchAvatarImageView *imageView;
 @property (nonatomic,strong) RecordControl *imageView;
 
 //: @property (nonatomic,strong) UIImageView *roleImageView;
@@ -38,29 +38,29 @@
 //: @property (nonatomic,strong) UIButton *removeBtn;
 @property (nonatomic,strong) UIButton *removeBtn;
 
-//: @property (nonatomic,weak) id<FFFCardHeaderCellDelegate>delegate;
+//: @property (nonatomic,weak) id<WatchCardHeaderCellDelegate>delegate;
 @property (nonatomic,weak) id<NumericalCountRed>delegate;
 
-//: @property (nonatomic,readonly) id<FFFKitCardHeaderData> data;
-@property (nonatomic,readonly) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,readonly) id<WatchKitCardHeaderData> data;
+@property (nonatomic,readonly) id<WatchKitCardHeaderData> data;
 
-//: - (void)refreshData:(id<FFFKitCardHeaderData>)data;
-- (void)accountingData:(id<FFFKitCardHeaderData>)data;
+//: - (void)refreshData:(id<WatchKitCardHeaderData>)data;
+- (void)accountingData:(id<WatchKitCardHeaderData>)data;
 
 //: @end
 @end
 
 
-//: @protocol FFFCardHeaderCellDelegate <NSObject>
+//: @protocol WatchCardHeaderCellDelegate <NSObject>
 @protocol NumericalCountRed <NSObject>
 
-//: - (void)cellDidSelected:(FFFCardHeaderCell*)cell;
+//: - (void)cellDidSelected:(WatchCardHeaderCell*)cell;
 - (void)timeTitle:(RecentFrameReusableView*)cell;
 
 
 //: @optional
 @optional
-//: - (void)cellShouldBeRemoved:(FFFCardHeaderCell*)cell;
+//: - (void)cellShouldBeRemoved:(WatchCardHeaderCell*)cell;
 - (void)willed:(RecentFrameReusableView*)cell;
 
 //: @end

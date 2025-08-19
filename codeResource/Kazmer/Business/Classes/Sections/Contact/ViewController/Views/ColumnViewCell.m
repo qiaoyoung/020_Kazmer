@@ -156,7 +156,7 @@ typedef struct {
     //: }];
     }];
 
-    //: NSString *my_account = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
+    //: NSString *my_account = [WatchLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
     NSString *my_account = [PaintedNaturalLanguageTo exhibit:[EndAddData sharedInstance].dream_timeTitle];
     //: NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[NIMUserDefaults standardUserDefaults].accountName];
     NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[OnName user].accountName];

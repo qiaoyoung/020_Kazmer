@@ -48,9 +48,9 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionLocationContentView.h"
+//: #import "WatchSessionLocationContentView.h"
 #import "MessageTextView.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -59,7 +59,7 @@ typedef struct {
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFSessionLocationContentView()
+//: @interface WatchSessionLocationContentView()
 @interface MessageTextView()
 
 //: @property (nonatomic,strong) UIImageView * imageView;
@@ -71,7 +71,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFSessionLocationContentView
+//: @implementation WatchSessionLocationContentView
 @implementation MessageTextView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -115,7 +115,7 @@ typedef struct {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WatchMessageModel *)data
 - (void)lengthAt:(CentralProcessingUnitModel *)data
 {
     //: [super refresh:data];
@@ -125,7 +125,7 @@ typedef struct {
     //: self.titleLabel.text = locationObject.title;
     self.titleLabel.text = locationObject.title;
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SubObject *setting = [[ButtonKit sheerOption].config date:data.message];
 
     //: self.titleLabel.textColor = setting.textColor;
@@ -137,9 +137,9 @@ typedef struct {
 //: - (void)onTouchUpInside:(id)sender
 - (void)searched:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
     CoverShowEvent *event = [[CoverShowEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = WatchKitEventNameTapContent;
     event.eventName = appCommentStr;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

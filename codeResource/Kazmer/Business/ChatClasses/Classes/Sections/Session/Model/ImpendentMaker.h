@@ -17,7 +17,7 @@
 //: @class MyUserKitLocationPoint;
 @class MyUserKitLocationPoint;
 
-//: @interface FFFMessageMaker : NSObject
+//: @interface WatchMessageMaker : NSObject
 @interface ImpendentMaker : NSObject
 
 //: + (NIMMessage*)msgWithText:(NSString *)text;

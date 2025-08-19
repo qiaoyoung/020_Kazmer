@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
 
-//: @interface FFFSessionNotificationContentView : FFFSessionMessageContentView
+//: @interface WatchSessionNotificationContentView : WatchSessionMessageContentView
 @interface AssemblageControl : ThoughtImageControl
 
 //: @property (strong, nonatomic) UILabel *label;

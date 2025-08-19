@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "WatchKitKeyboardInfo.h"
 #import "UserInfo.h"
 
 //: NSNotificationName const NIMKitKeyboardWillChangeFrameNotification = @"NIMKitKeyboardWillChangeFrameNotification";
@@ -17,7 +17,7 @@ NSNotificationName const app_controlData = @"NIMKitKeyboardWillChangeFrameNotifi
 //: NSNotificationName const NIMKitKeyboardWillHideNotification = @"NIMKitKeyboardWillHideNotification";
 NSNotificationName const app_contentData = @"NIMKitKeyboardWillHideNotification";
 
-//: @implementation FFFKitKeyboardInfo
+//: @implementation WatchKitKeyboardInfo
 @implementation UserInfo
 
 //: @synthesize keyboardHeight = _keyboardHeight;
@@ -26,13 +26,13 @@ NSNotificationName const app_contentData = @"NIMKitKeyboardWillHideNotification"
 //: + (instancetype)instance
 + (instancetype)label
 {
-    //: static FFFKitKeyboardInfo *instance;
+    //: static WatchKitKeyboardInfo *instance;
     static UserInfo *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitKeyboardInfo alloc] init];
+        //: instance = [[WatchKitKeyboardInfo alloc] init];
         instance = [[UserInfo alloc] init];
     //: });
     });

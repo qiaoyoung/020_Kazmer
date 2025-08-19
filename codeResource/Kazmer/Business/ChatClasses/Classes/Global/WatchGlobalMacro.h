@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFGlobalMacro.h
+//  WatchGlobalMacro.h
 // ButtonKit
 //
 //  Created by chris.

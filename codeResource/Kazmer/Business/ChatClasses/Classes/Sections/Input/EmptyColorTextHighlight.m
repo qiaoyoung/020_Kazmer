@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextHighlight.h"
+//: #import "WatchTextHighlight.h"
 #import "EmptyColorTextHighlight.h"
 
-//: @implementation FFFTextHighlight
+//: @implementation WatchTextHighlight
 @implementation EmptyColorTextHighlight
 
 //: @end

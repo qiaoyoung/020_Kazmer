@@ -39,20 +39,20 @@ Byte noti_medalIdent[] = {66, 3, 86, 14, 244, 132, 99, 130, 235, 181, 81, 1, 25,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaPickerController.h"
+//: #import "WatchKitMediaPickerController.h"
 #import "ModePickerController.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WatchKitProgressHUD.h"
 #import "AlongEffectView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
+//: #import "WatchKitFileLocationHelper.h"
 #import "ButtonHelper.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
-//: @interface FFFKitMediaPickerController ()<TZImagePickerControllerDelegate>
+//: @interface WatchKitMediaPickerController ()<TZImagePickerControllerDelegate>
 @interface ModePickerController ()<TZImagePickerControllerDelegate>
 
 //: @property (nonatomic, assign) UIStatusBarStyle myStatusBarStyle;
@@ -61,7 +61,7 @@ Byte noti_medalIdent[] = {66, 3, 86, 14, 244, 132, 99, 130, 235, 181, 81, 1, 25,
 //: @end
 @end
 
-//: @implementation FFFKitMediaPickerController
+//: @implementation WatchKitMediaPickerController
 @implementation ModePickerController
 
 //: - (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount {
@@ -185,11 +185,11 @@ Byte noti_medalIdent[] = {66, 3, 86, 14, 244, 132, 99, 130, 235, 181, 81, 1, 25,
 
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [WatchKitProgressHUD show];
     [AlongEffectView holder];
     //: [self requestAsset:assets.firstObject handler:^(NSString *path, PHAssetMediaType type) {
     [self max:assets.firstObject record:^(NSString *path, PHAssetMediaType type) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WatchKitProgressHUD dismiss];
         [AlongEffectView nimDismiss];
         //: if ([weakSelf.nim_delegate respondsToSelector:@selector(onPickerSelectedWithType:images:path:)]) {
         if ([weakSelf.nim_delegate respondsToSelector:@selector(should:view:bit:)]) {
@@ -240,9 +240,9 @@ Byte noti_medalIdent[] = {66, 3, 86, 14, 244, 132, 99, 130, 235, 181, 81, 1, 25,
                 } else {
                     //: AVURLAsset *URLAsset = (AVURLAsset *)assetR;
                     AVURLAsset *URLAsset = (AVURLAsset *)assetR;
-                    //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+                    //: NSString *outputFileName = [WatchKitFileLocationHelper genFilenameWithExt:@"mp4"];
                     NSString *outputFileName = [ButtonHelper withKey:StringFromImageVanishData(noti_medalIdent)];
-                    //: outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+                    //: outputPath = [WatchKitFileLocationHelper filepathForVideo:outputFileName];
                     outputPath = [ButtonHelper info:outputFileName];
                     //: BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];
                     BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];

@@ -89,13 +89,13 @@ typedef struct {
 
 //: - (NTESMergeMessageCell *)ntesCellInTable:(UITableView*)tableView
 - (MessageCell *)max:(UITableView*)tableView
-                         //: forMessageMode:(FFFMessageModel *)model {
+                         //: forMessageMode:(WatchMessageModel *)model {
                          with:(CentralProcessingUnitModel *)model {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
     //: NSString *identity = [[layoutConfig cellContent:model] stringByAppendingString:@"_ntes"];
     NSString *identity = [[layoutConfig availableName:model] stringByAppendingString:[ArcData sharedInstance].userNineMsg];
-    //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: WatchMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     ModelViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
@@ -112,7 +112,7 @@ typedef struct {
 
 //: - (NTESTimestampCell *)ntesCellInTable:(UITableView *)tableView
 - (SessionCompartmentTimestampCell *)compartment:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model {
+                            //: forTimeModel:(WatchTimestampModel *)model {
                             valueIn:(EnableName *)model {
     //: NSString *identity = @"time_ntes";
     NSString *identity = [ArcData sharedInstance].appBarTitle;

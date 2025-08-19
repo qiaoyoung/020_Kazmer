@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESMessageModel : FFFMessageModel
+//: @interface NTESMessageModel : WatchMessageModel
 @interface TitleMessageModel : CentralProcessingUnitModel
 
 //: @property (nonatomic, assign) BOOL hiddenSeparatorLine; 

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFInputProtocol.h
+//  WatchInputProtocol.h
 // ButtonKit
 //
 //  Created by chris.
@@ -14,7 +14,7 @@
 
 // __M_A_C_R_O__
 
-//: @class FFFMediaItem;
+//: @class WatchMediaItem;
 @class InfoMakeBar;
 
 
@@ -23,7 +23,7 @@
 
 //: @optional
 @optional
-//: - (BOOL)onTapMediaItem:(FFFMediaItem *)item;
+//: - (BOOL)onTapMediaItem:(WatchMediaItem *)item;
 - (BOOL)colorBlueItem:(InfoMakeBar *)item;
 
 //: - (void)onTextChanged:(id)sender;

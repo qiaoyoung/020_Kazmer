@@ -27,10 +27,10 @@ DeadlineData showConstitutionalStr = (DeadlineData){96, (Byte []){9, 3, 15, 14, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "WatchTeamCartSetTableViewCell.h"
 #import "ShirtButtonView.h"
 
-//: @implementation FFFTeamCartSetTableViewCell
+//: @implementation WatchTeamCartSetTableViewCell
 @implementation ShirtButtonView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -67,14 +67,14 @@ DeadlineData showConstitutionalStr = (DeadlineData){96, (Byte []){9, 3, 15, 14, 
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)find:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFTeamCartSetTableViewCell";
+    //: static NSString *identifier = @"WatchTeamCartSetTableViewCell";
     static NSString *identifier = @"ShirtButtonView";
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WatchTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     ShirtButtonView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WatchTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[ShirtButtonView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
 
     }

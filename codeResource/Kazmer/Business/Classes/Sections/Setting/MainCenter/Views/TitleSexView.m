@@ -35,7 +35,7 @@ AmendmentData userCountellectualData = (AmendmentData){210, (Byte []){241, 226, 
 //: friend_info_activity_nan
 AmendmentData user_producerIdent = (AmendmentData){61, (Byte []){91, 79, 84, 88, 83, 89, 98, 84, 83, 91, 82, 98, 92, 94, 73, 84, 75, 84, 73, 68, 98, 83, 92, 83, 132}, 24, 243, 53};
 
-//: #ffffff
+//: #fffWatch
 AmendmentData dreamSimplyMsg = (AmendmentData){143, (Byte []){172, 233, 233, 233, 233, 233, 233, 212}, 7, 246, 1};
 
 //: user_info_avtivity_keep
@@ -140,7 +140,7 @@ AmendmentData notiBarUrl = (AmendmentData){224, (Byte []){129, 131, 148, 137, 15
     CGFloat totalwidth = 295;
     //: _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
     _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
-    //: _box.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _box.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
     _box.backgroundColor = [UIColor min:StringFromAmendmentData(&dreamSimplyMsg)];
     //: _box.layer.cornerRadius = 20;
     _box.layer.cornerRadius = 20;
@@ -194,7 +194,7 @@ AmendmentData notiBarUrl = (AmendmentData){224, (Byte []){129, 131, 148, 137, 15
     _labUnknow.textColor = [UIColor min:StringFromAmendmentData(&kDeerUrl)];
     //: _labUnknow.textAlignment = NSTextAlignmentCenter;
     _labUnknow.textAlignment = NSTextAlignmentCenter;
-    //: _labUnknow.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+    //: _labUnknow.text = [WatchLanguageManager getTextWithKey:@"friend_info_activity_xu"];
     _labUnknow.text = [PaintedNaturalLanguageTo exhibit:StringFromAmendmentData(&user_titleId)];
     //: [view1 addSubview:_labUnknow];
     [view1 addSubview:_labUnknow];
@@ -240,7 +240,7 @@ AmendmentData notiBarUrl = (AmendmentData){224, (Byte []){129, 131, 148, 137, 15
     _labMan.textColor = [UIColor blackColor];
     //: _labMan.textAlignment = NSTextAlignmentCenter;
     _labMan.textAlignment = NSTextAlignmentCenter;
-    //: _labMan.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+    //: _labMan.text = [WatchLanguageManager getTextWithKey:@"friend_info_activity_nan"];
     _labMan.text = [PaintedNaturalLanguageTo exhibit:StringFromAmendmentData(&user_producerIdent)];
     //: [view2 addSubview:_labMan];
     [view2 addSubview:_labMan];
@@ -285,7 +285,7 @@ AmendmentData notiBarUrl = (AmendmentData){224, (Byte []){129, 131, 148, 137, 15
     _labWoman.textColor = [UIColor blackColor];
     //: _labWoman.textAlignment = NSTextAlignmentCenter;
     _labWoman.textAlignment = NSTextAlignmentCenter;
-    //: _labWoman.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+    //: _labWoman.text = [WatchLanguageManager getTextWithKey:@"friend_info_activity_nv"];
     _labWoman.text = [PaintedNaturalLanguageTo exhibit:StringFromAmendmentData(&m_repairEvolveId)];
     //: [view3 addSubview:_labWoman];
     [view3 addSubview:_labWoman];
@@ -423,7 +423,7 @@ AmendmentData notiBarUrl = (AmendmentData){224, (Byte []){129, 131, 148, 137, 15
         //: _titleLabel.textColor = [UIColor colorWithHexString:@"#000000"];
         _titleLabel.textColor = [UIColor min:StringFromAmendmentData(&userCountellectualData)];
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_friend_info_sex"];
+        //: _titleLabel.text = [WatchLanguageManager getTextWithKey:@"activity_friend_info_sex"];
         _titleLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromAmendmentData(&notiBarUrl)];
     }
     //: return _titleLabel;
@@ -443,9 +443,9 @@ AmendmentData notiBarUrl = (AmendmentData){224, (Byte []){129, 131, 148, 137, 15
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:StringFromAmendmentData(&app_amendmentMsg)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromAmendmentData(&kOnMsg)] forState:UIControlStateNormal];
-        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
         _closeBtn.backgroundColor = [UIColor min:StringFromAmendmentData(&dreamSimplyMsg)];
         //: _closeBtn.layer.cornerRadius = 22;
         _closeBtn.layer.cornerRadius = 22;
@@ -466,9 +466,9 @@ AmendmentData notiBarUrl = (AmendmentData){224, (Byte []){129, 131, 148, 137, 15
         [_sureBtn addTarget:self action:@selector(clickAcross) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffWatch"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor min:StringFromAmendmentData(&dreamSimplyMsg)] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromAmendmentData(&showMinBarreStr)] forState:UIControlStateNormal];
         //: CGFloat width = (295-60)/2;
         CGFloat width = (295-60)/2;

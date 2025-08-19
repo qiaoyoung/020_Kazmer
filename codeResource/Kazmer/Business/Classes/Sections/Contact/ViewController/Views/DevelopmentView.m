@@ -293,7 +293,7 @@
     if (!_tipsLab) {
         //: _tipsLab = [[UILabel alloc] init];
         _tipsLab = [[UILabel alloc] init];
-        //: _tipsLab.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+        //: _tipsLab.text = [WatchLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
         _tipsLab.text = [PaintedNaturalLanguageTo exhibit:[[InventoryItemData sharedInstance] noti_cropUrl]];
 //        _tipsLab.text = @"将二维码放入扫面框内";
         //: _tipsLab.textAlignment = NSTextAlignmentCenter;
@@ -330,7 +330,7 @@
     if (!_qrcodeLab) {
         //: _qrcodeLab = [[UILabel alloc] init];
         _qrcodeLab = [[UILabel alloc] init];
-        //: _qrcodeLab.text = [FFFLanguageManager getTextWithKey:@"qrcode_activity_title"];
+        //: _qrcodeLab.text = [WatchLanguageManager getTextWithKey:@"qrcode_activity_title"];
         _qrcodeLab.text = [PaintedNaturalLanguageTo exhibit:[[InventoryItemData sharedInstance] appContainerUrl]];
         //: _qrcodeLab.textAlignment = NSTextAlignmentCenter;
         _qrcodeLab.textAlignment = NSTextAlignmentCenter;
@@ -366,7 +366,7 @@
     if (!_albumLab) {
         //: _albumLab = [[UILabel alloc] init];
         _albumLab = [[UILabel alloc] init];
-        //: _albumLab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: _albumLab.text = [WatchLanguageManager getTextWithKey:@"message_send_album"];
         _albumLab.text = [PaintedNaturalLanguageTo exhibit:[[InventoryItemData sharedInstance] user_valueFormat]];
         //: _albumLab.textAlignment = NSTextAlignmentCenter;
         _albumLab.textAlignment = NSTextAlignmentCenter;

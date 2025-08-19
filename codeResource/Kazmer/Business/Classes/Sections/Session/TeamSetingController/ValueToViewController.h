@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardOperationViewController.h"
+//: #import "WatchTeamCardOperationViewController.h"
 #import "TradingCardViewController.h"
 
-//: @interface FFFAdvancedTeamCardViewController : FFFTeamCardOperationViewController
+//: @interface WatchAdvancedTeamCardViewController : WatchTeamCardOperationViewController
 @interface ValueToViewController : TradingCardViewController
 
 

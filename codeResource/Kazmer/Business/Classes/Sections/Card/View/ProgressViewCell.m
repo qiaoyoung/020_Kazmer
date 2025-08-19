@@ -153,10 +153,10 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESCardPortraitCell.h"
 #import "ProgressViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
 //: #import "NTESSessionUtil.h"
@@ -165,7 +165,7 @@ typedef struct {
 //: @interface NTESCardPortraitCell()
 @interface ProgressViewCell()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) WatchAvatarImageView *avatar;
 @property (nonatomic,strong) RecordControl *avatar;
 
 //: @property (nonatomic,strong) UILabel *nameLabel;
@@ -194,7 +194,7 @@ typedef struct {
     if (self) {
         //: CGFloat avatarWidth = 55.f;
         CGFloat avatarWidth = 55.f;
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
+        //: _avatar = [[WatchAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         _avatar = [[RecordControl alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -242,11 +242,11 @@ typedef struct {
     if ([uid isKindOfClass:[NSString class]]) {
         //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
         NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
+        //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
         TingMessage *info = [[ButtonKit sheerOption] past:uid skinColour_strong:nil];
         //: self.nameLabel.text = info.showName ;
         self.nameLabel.text = info.showName ;
-        //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+        //: NSString *register_avtivity_account = [WatchLanguageManager getTextWithKey:@"register_avtivity_account"];
         NSString *register_avtivity_account = [PaintedNaturalLanguageTo exhibit:[CabinCropData sharedInstance].dreamTotalUrl];
         //: self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];
         self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];
@@ -313,7 +313,7 @@ typedef struct {
             NSString *account = [data record:[CabinCropData sharedInstance].k_colorKey];
             //: self.accountLabel.hidden = NO;
             self.accountLabel.hidden = NO;
-            //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+            //: NSString *register_avtivity_account = [WatchLanguageManager getTextWithKey:@"register_avtivity_account"];
             NSString *register_avtivity_account = [PaintedNaturalLanguageTo exhibit:[CabinCropData sharedInstance].dreamTotalUrl];
 
             //: self.accountLabel.text = [NSString stringWithFormat:@"%@:%@",register_avtivity_account, account];

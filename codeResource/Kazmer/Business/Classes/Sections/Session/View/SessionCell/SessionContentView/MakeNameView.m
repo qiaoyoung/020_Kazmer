@@ -129,7 +129,7 @@ NSString *const mainMessageUrl = @"NIMDemoEventNameCloseSnapPicture";
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(WatchMessageModel *)model{
 - (void)lengthAt:(CentralProcessingUnitModel *)model{
     //: [super refresh:model];
     [super lengthAt:model];
@@ -144,7 +144,7 @@ NSString *const mainMessageUrl = @"NIMDemoEventNameCloseSnapPicture";
     //: self.longpressGesture.enabled = !attachment.isFired;
     self.longpressGesture.enabled = !attachment.isFired;
 
-    //禁用掉FFFMessageCell中的长按手势，防止手势冲突
+    //禁用掉WatchMessageCell中的长按手势，防止手势冲突
     //: [self disableMessageCellGesture:!attachment.isFired];
     [self date:!attachment.isFired];
 }
@@ -231,7 +231,7 @@ NSString *const mainMessageUrl = @"NIMDemoEventNameCloseSnapPicture";
 - (void)prise{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(modelled:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
         CoverShowEvent *event = [[CoverShowEvent alloc] init];
         //: event.eventName = NIMDemoEventNameOpenSnapPicture;
         event.eventName = mGestureStr;
@@ -248,7 +248,7 @@ NSString *const mainMessageUrl = @"NIMDemoEventNameCloseSnapPicture";
 - (void)redInput{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(modelled:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
         CoverShowEvent *event = [[CoverShowEvent alloc] init];
         //: event.eventName = NIMDemoEventNameCloseSnapPicture;
         event.eventName = mainMessageUrl;

@@ -41,7 +41,7 @@ typedef struct {
     return mAirTitle;
 }
 
-//: #ffffff
+//: #fffWatch
 + (NSString *)dreamTourShowTitle {
     /* static */ NSString *dreamTourShowTitle = nil;
     if (!dreamTourShowTitle) {
@@ -94,7 +94,7 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyContentView.h"
+//: #import "WatchReplyContentView.h"
 #import "AnswerView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -103,13 +103,13 @@ typedef struct {
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 
-//: @interface FFFReplyContentView ()
+//: @interface WatchReplyContentView ()
 @interface AnswerView ()
 
 //: @end
 @end
 
-//: @implementation FFFReplyContentView
+//: @implementation WatchReplyContentView
 @implementation AnswerView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -120,7 +120,7 @@ typedef struct {
     //: if (self)
     if (self)
     {
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
         self.backgroundColor = [UIColor min:[TubeData dreamTourShowTitle]];
 
         //: UIView *bg = [[UIView alloc]initWithFrame:CGRectMake(15, 2, [[UIScreen mainScreen] bounds].size.width-30, 48)];

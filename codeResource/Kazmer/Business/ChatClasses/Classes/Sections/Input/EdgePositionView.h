@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfig.h"
+//: #import "WatchSessionConfig.h"
 #import "MessagePinImage.h"
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "WatchInputProtocol.h"
+#import "WatchInputProtocol.h"
 //: #import "CustomAlbumPickerView.h"
 #import "FindEdgeView.h"
 
@@ -27,10 +27,10 @@
 //: @end
 @end
 
-//: @interface FFFInputMoreContainerView : UIView
+//: @interface WatchInputMoreContainerView : UIView
 @interface EdgePositionView : UIView
 
-//: @property (nonatomic,weak) id<FFFSessionConfig> config;
+//: @property (nonatomic,weak) id<WatchSessionConfig> config;
 @property (nonatomic,weak) id<MessagePinImage> config;
 //: @property (nonatomic,weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic,weak) id<ShowKeyBar> actionDelegate;

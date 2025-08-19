@@ -15,11 +15,11 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFLanguageManager : NSObject
+//: @interface WatchLanguageManager : NSObject
 @interface PaintedNaturalLanguageTo : NSObject
 //: @property (nonatomic,strong) NSMutableDictionary *langDict;
 @property (nonatomic,strong) NSMutableDictionary *langDict;
-//: + (FFFLanguageManager *)shareInstance;
+//: + (WatchLanguageManager *)shareInstance;
 + (PaintedNaturalLanguageTo *)marginSource;
 //: - (void)setLanguagre:(NSString *)langType;
 - (void)setOfImage:(NSString *)langType;

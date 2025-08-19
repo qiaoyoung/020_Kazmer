@@ -14,14 +14,14 @@
 
 //: @class NIMSession;
 @class NIMSession;
-//: @class FFFKitInfo;
+//: @class WatchKitInfo;
 @class TingMessage;
-//: @class FFFKitInfoFetchOption;
+//: @class WatchKitInfoFetchOption;
 @class CoverTingContent;
 //: @class NIMMessage;
 @class NIMMessage;
 
-//: @protocol FFFKitDataProvider <NSObject>
+//: @protocol WatchKitDataProvider <NSObject>
 @protocol ToProvider <NSObject>
 
 //: @optional
@@ -35,9 +35,9 @@
  *
  *  @return 用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (WatchKitInfo *)infoByUser:(NSString *)userId
 - (TingMessage *)past:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(WatchKitInfoFetchOption *)option;
                     skinColour_strong:(CoverTingContent *)option;
 
 
@@ -49,9 +49,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (WatchKitInfo *)infoByTeam:(NSString *)teamId
 - (TingMessage *)pressMedia:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(WatchKitInfoFetchOption *)option;
                     sizeOption:(CoverTingContent *)option;
 
 /**
@@ -62,9 +62,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (WatchKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (TingMessage *)tiddler:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(WatchKitInfoFetchOption *)option;
                          ting:(CoverTingContent *)option;
 
 /**

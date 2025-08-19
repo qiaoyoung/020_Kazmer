@@ -9,7 +9,7 @@
 //  群组操作
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardViewController.h"
+//: #import "WatchTeamCardViewController.h"
 #import "ChronicleViewController.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //: #pragma mark - 外部配置项
 #pragma mark - 外部配置项
-//: @interface FFFTeamCardViewControllerOption : NSObject
+//: @interface WatchTeamCardViewControllerOption : NSObject
 @interface NakedOptionRecent : NSObject
 
 //: @property (nonatomic, assign) BOOL isTop;
@@ -26,15 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface FFFTeamCardOperationViewController : FFFTeamCardViewController
+//: @interface WatchTeamCardOperationViewController : WatchTeamCardViewController
 @interface TradingCardViewController : ChronicleViewController
 
 //外部配置
-//: @property (nonatomic,strong) FFFTeamCardViewControllerOption *option;
+//: @property (nonatomic,strong) WatchTeamCardViewControllerOption *option;
 @property (nonatomic,strong) NakedOptionRecent *option;
 
 //群组管理
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) WatchTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MetadataManager *teamListManager;
 
 
@@ -43,10 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithGlitter:(NIMTeam *)team
                      //: session:(NIMSession *)session
                      withOption:(NIMSession *)session
-                      //: option:(FFFTeamCardViewControllerOption * _Nullable)option;
+                      //: option:(WatchTeamCardViewControllerOption * _Nullable)option;
                       tutorial_strong:(NakedOptionRecent * _Nullable)option;
 //查询全部群成员
-//: - (void)didFetchTeamMember:(nullable FFFMembersFetchOption *)option;
+//: - (void)didFetchTeamMember:(nullable WatchMembersFetchOption *)option;
 - (void)grayMember:(nullable ButtonOption *)option;
 
 //加人

@@ -15,7 +15,7 @@
 //: @class NIMCommonTableRow;
 @class CommonRow;
 
-//: @protocol FFFCommonTableViewCell <NSObject>
+//: @protocol WatchCommonTableViewCell <NSObject>
 @protocol OldInfo <NSObject>
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;

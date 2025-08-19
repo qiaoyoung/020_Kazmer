@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "WatchKitSetting.h"
 #import "SubObject.h"
 
-//: @class FFFKitSettings;
+//: @class WatchKitSettings;
 @class ZoneSettings;
 //: @class NIMMessage;
 @class NIMMessage;
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 //: };
 };
 
-//: @interface FFFKitConfig : NSObject
+//: @interface WatchKitConfig : NSObject
 @interface ShowConfig : NSObject
 
 
@@ -114,13 +114,13 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  左侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *leftBubbleSettings;
+//: @property (nonatomic, strong) WatchKitSettings *leftBubbleSettings;
 @property (nonatomic, strong) ZoneSettings *leftBubbleSettings;
 
 /**
  *  右侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *rightBubbleSettings;
+//: @property (nonatomic, strong) WatchKitSettings *rightBubbleSettings;
 @property (nonatomic, strong) ZoneSettings *rightBubbleSettings;
 
 
@@ -138,13 +138,13 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 
 /*根据消息取到配置*/
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message;
+//: - (WatchKitSetting *)setting:(NIMMessage *)message;
 - (SubObject *)date:(NIMMessage *)message;
 
 
 /*被回复消息取到配置*/
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message;
+//: - (WatchKitSetting *)repliedSetting:(NIMMessage *)message;
 - (SubObject *)empty:(NIMMessage *)message;
 
 //: @end
@@ -156,91 +156,91 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  组件 UI 设置
  */
-//: @interface FFFKitSettings : NSObject
+//: @interface WatchKitSettings : NSObject
 @interface ZoneSettings : NSObject
 
 /**
  *  文本类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *textSetting;
+//: @property (nonatomic, strong) WatchKitSetting *textSetting;
 @property (nonatomic, strong) SubObject *textSetting;
 
 /**
  *  音频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *audioSetting;
+//: @property (nonatomic, strong) WatchKitSetting *audioSetting;
 @property (nonatomic, strong) SubObject *audioSetting;
 
 /**
  *  视频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *videoSetting;
+//: @property (nonatomic, strong) WatchKitSetting *videoSetting;
 @property (nonatomic, strong) SubObject *videoSetting;
 
 /**
  *  文件类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *fileSetting;
+//: @property (nonatomic, strong) WatchKitSetting *fileSetting;
 @property (nonatomic, strong) SubObject *fileSetting;
 
 /**
  *  图片类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *imageSetting;
+//: @property (nonatomic, strong) WatchKitSetting *imageSetting;
 @property (nonatomic, strong) SubObject *imageSetting;
 
 /**
  *  地理位置类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *locationSetting;
+//: @property (nonatomic, strong) WatchKitSetting *locationSetting;
 @property (nonatomic, strong) SubObject *locationSetting;
 
 /**
  *  提示类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *tipSetting;
+//: @property (nonatomic, strong) WatchKitSetting *tipSetting;
 @property (nonatomic, strong) SubObject *tipSetting;
 
 /**
  *  Rtc话单类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *rtcCallRecordSetting;
+//: @property (nonatomic, strong) WatchKitSetting *rtcCallRecordSetting;
 @property (nonatomic, strong) SubObject *rtcCallRecordSetting;
 
 /**
  *  无法识别类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *unsupportSetting;
+//: @property (nonatomic, strong) WatchKitSetting *unsupportSetting;
 @property (nonatomic, strong) SubObject *unsupportSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *teamNotificationSetting;
+//: @property (nonatomic, strong) WatchKitSetting *teamNotificationSetting;
 @property (nonatomic, strong) SubObject *teamNotificationSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *superTeamNotificationSetting;
+//: @property (nonatomic, strong) WatchKitSetting *superTeamNotificationSetting;
 @property (nonatomic, strong) SubObject *superTeamNotificationSetting;
 
 /**
  *  聊天室类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *chatroomNotificationSetting;
+//: @property (nonatomic, strong) WatchKitSetting *chatroomNotificationSetting;
 @property (nonatomic, strong) SubObject *chatroomNotificationSetting;
 
 /**
  *  网络电话类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *netcallNotificationSetting;
+//: @property (nonatomic, strong) WatchKitSetting *netcallNotificationSetting;
 @property (nonatomic, strong) SubObject *netcallNotificationSetting;
 
 /**
  *  被回复消息的设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *repliedSetting;
+//: @property (nonatomic, strong) WatchKitSetting *repliedSetting;
 @property (nonatomic, strong) SubObject *repliedSetting;
 
 

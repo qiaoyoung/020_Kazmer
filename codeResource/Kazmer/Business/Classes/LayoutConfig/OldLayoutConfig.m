@@ -84,9 +84,9 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
     //: return self;
     return self;
 }
-//: #pragma mark - FFFCellLayoutConfig
+//: #pragma mark - WatchCellLayoutConfig
 #pragma mark - PinFrame
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)width{
+//: - (CGSize)contentSize:(WatchMessageModel *)model cellWidth:(CGFloat)width{
 - (CGSize)event:(CentralProcessingUnitModel *)model size:(CGFloat)width{
 
     //: NIMMessage *message = model.message;
@@ -115,7 +115,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
 
 }
 
-//: - (NSString *)cellContent:(FFFMessageModel *)model{
+//: - (NSString *)cellContent:(WatchMessageModel *)model{
 - (NSString *)availableName:(CentralProcessingUnitModel *)model{
 
     //: NIMMessage *message = model.message;
@@ -139,7 +139,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
     return [super availableName:model];
 }
 
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)contentViewInsets:(WatchMessageModel *)model
 - (UIEdgeInsets)media:(CentralProcessingUnitModel *)model
 {
     //: NIMMessage *message = model.message;
@@ -163,7 +163,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
     return [super media:model];
 }
 
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)cellInsets:(WatchMessageModel *)model
 - (UIEdgeInsets)month:(CentralProcessingUnitModel *)model
 {
     //: NIMMessage *message = model.message;
@@ -185,7 +185,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
 
 
 
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model
+//: - (BOOL)shouldShowAvatar:(WatchMessageModel *)model
 - (BOOL)presentActivity:(CentralProcessingUnitModel *)model
 {
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -207,7 +207,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
     return [super presentActivity:model];
 }
 
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowLeft:(WatchMessageModel *)model{
 - (BOOL)statusLeft:(CentralProcessingUnitModel *)model{
     //: if ([self isSupportedChatroomMessage:model.message]) {
     if ([self contentCount:model.message]) {
@@ -219,7 +219,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
 }
 
 
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowNickName:(WatchMessageModel *)model{
 - (BOOL)send:(CentralProcessingUnitModel *)model{
     //: if ([self isSupportedChatroomMessage:model.message]) {
     if ([self contentCount:model.message]) {
@@ -235,7 +235,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
     return [super send:model];
 }
 
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model{
+//: - (CGPoint)nickNameMargin:(WatchMessageModel *)model{
 - (CGPoint)showTotal:(CentralProcessingUnitModel *)model{
 
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -265,7 +265,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
     return [super showTotal:model];
 }
 
-//: - (NSArray *)customViews:(FFFMessageModel *)model
+//: - (NSArray *)customViews:(WatchMessageModel *)model
 - (NSArray *)cellViews:(CentralProcessingUnitModel *)model
 {
     //: if ([self isSupportedChatroomMessage:model.message]) {
@@ -325,7 +325,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
 }
 
 
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model
+//: - (BOOL)disableRetryButton:(WatchMessageModel *)model
 - (BOOL)emptyPower:(CentralProcessingUnitModel *)model
 {
     //: if ([model.message.localExt.allKeys containsObject:@"NTESMessageRefusedTag"])
@@ -406,7 +406,7 @@ Byte appDateKey[] = {58, 21, 5, 169, 157, 114, 101, 103, 97, 110, 97, 109, 95, 1
     return NO;
 }
 
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model
+//: - (BOOL)shouldDisplayBubbleBackground:(WatchMessageModel *)model
 - (BOOL)clickBackground:(CentralProcessingUnitModel *)model
 {
     //: NIMMessage *message = model.message;

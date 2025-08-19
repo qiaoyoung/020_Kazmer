@@ -27,21 +27,21 @@ Byte show_rationalData[] = {38, 10, 18, 4, 103, 103, 103, 103, 29, 59, 59, 29, 8
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardHeaderView.h"
+//: #import "WatchTeamCardHeaderView.h"
 #import "ModelBubbleView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 
-//: @interface FFFTeamCardHeaderView ()
+//: @interface WatchTeamCardHeaderView ()
 @interface ModelBubbleView ()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) WatchAvatarImageView *avatar;
 @property (nonatomic,strong) RecordControl *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -56,7 +56,7 @@ Byte show_rationalData[] = {38, 10, 18, 4, 103, 103, 103, 103, 29, 59, 59, 29, 8
 //: @end
 @end
 
-//: @implementation FFFTeamCardHeaderView
+//: @implementation WatchTeamCardHeaderView
 @implementation ModelBubbleView
 
 //: - (instancetype)initWithFrame:(CGRect)frame {
@@ -181,11 +181,11 @@ Byte show_rationalData[] = {38, 10, 18, 4, 103, 103, 103, 103, 29, 59, 59, 29, 8
 
 //: #pragma mark - Getter
 #pragma mark - Getter
-//: - (FFFAvatarImageView *)avatar {
+//: - (WatchAvatarImageView *)avatar {
 - (RecordControl *)avatar {
     //: if (!_avatar) {
     if (!_avatar) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _avatar = [[WatchAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _avatar = [[RecordControl alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [_avatar addTarget:self
         [_avatar addTarget:self

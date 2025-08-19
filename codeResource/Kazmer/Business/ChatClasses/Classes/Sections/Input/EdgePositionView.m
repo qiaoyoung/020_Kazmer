@@ -75,11 +75,11 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputMoreContainerView.h"
+//: #import "WatchInputMoreContainerView.h"
 #import "EdgePositionView.h"
-//: #import "FFFPageView.h"
+//: #import "WatchPageView.h"
 #import "EndUserView.h"
-//: #import "FFFMediaItem.h"
+//: #import "WatchMediaItem.h"
 #import "InfoMakeBar.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -102,7 +102,7 @@ NSInteger dream_handleTitle = 11;
 
 
 
-//: @interface FFFInputMoreContainerView() <FFFPageViewDataSource,FFFPageViewDelegate,CustomMediaPickerViewDelegate>
+//: @interface WatchInputMoreContainerView() <WatchPageViewDataSource,WatchPageViewDelegate,CustomMediaPickerViewDelegate>
 @interface EdgePositionView() <ObjectCell,MaxDelegate,NameCell>
 {
     //: NSArray *_mediaButtons;
@@ -112,13 +112,13 @@ NSInteger dream_handleTitle = 11;
 }
 
 
-//: @property (nonatomic, strong) FFFPageView *pageView;
+//: @property (nonatomic, strong) WatchPageView *pageView;
 @property (nonatomic, strong) EndUserView *pageView;
 
 //: @end
 @end
 
-//: @implementation FFFInputMoreContainerView
+//: @implementation WatchInputMoreContainerView
 @implementation EdgePositionView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -150,7 +150,7 @@ NSInteger dream_handleTitle = 11;
     return self;
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config
+//: - (void)setConfig:(id<WatchSessionConfig>)config
 - (void)setConfig:(id<MessagePinImage>)config
 {
     //: _config = config;
@@ -248,7 +248,7 @@ NSInteger dream_handleTitle = 11;
         //: items = [self.config mediaItems];
         items = [self.config compartmentState];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(WatchMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(InfoMakeBar *item, NSUInteger idx, BOOL *stop) {
         //: [mediaItems addObject:item];
         [mediaItems addObject:item];
@@ -332,7 +332,7 @@ NSInteger dream_handleTitle = 11;
 
 //: #pragma mark PageViewDataSource
 #pragma mark PageViewDataSource
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView
+//: - (NSInteger)numberOfPages: (WatchPageView *)pageView
 - (NSInteger)mImage: (EndUserView *)pageView
 {
     //: NSInteger count = [_mediaButtons count] / NIMMaxItemCountInPage;
@@ -343,7 +343,7 @@ NSInteger dream_handleTitle = 11;
     return ((count) > (1) ? (count) : (1));
 }
 
-//: - (UIView*)mediaPageView:(FFFPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
+//: - (UIView*)mediaPageView:(WatchPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
 - (UIView*)travelByDown:(EndUserView*)pageView input:(NSInteger)begin position:(NSInteger)end
 {
     //: UIView *subView = [[UIView alloc] init];
@@ -397,7 +397,7 @@ NSInteger dream_handleTitle = 11;
     return subView;
 }
 
-//: - (UIView*)oneLineMediaInPageView:(FFFPageView *)pageView
+//: - (UIView*)oneLineMediaInPageView:(WatchPageView *)pageView
 - (UIView*)comment:(EndUserView *)pageView
                        //: viewInPage: (NSInteger)index
                        touch: (NSInteger)index
@@ -427,7 +427,7 @@ NSInteger dream_handleTitle = 11;
     return subView;
 }
 
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index
+//: - (UIView *)pageView: (WatchPageView *)pageView viewInPage: (NSInteger)index
 - (UIView *)colorPage: (EndUserView *)pageView bubble: (NSInteger)index
 {
     //: if ([_mediaButtons count] == 2 || [_mediaButtons count] == 3) 
@@ -466,7 +466,7 @@ NSInteger dream_handleTitle = 11;
 {
     //: NSInteger index = [(UIButton *)sender tag];
     NSInteger index = [(UIButton *)sender tag];
-    //: FFFMediaItem *item = _mediaItems[index];
+    //: WatchMediaItem *item = _mediaItems[index];
     InfoMakeBar *item = _mediaItems[index];
     //: if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(onTapMediaItem:)]) {
     if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(colorBlueItem:)]) {

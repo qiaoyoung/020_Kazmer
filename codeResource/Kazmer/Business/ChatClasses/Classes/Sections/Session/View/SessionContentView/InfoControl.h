@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
 
 //: @class M80AttributedLabel;
 @class QuickNameView;
 
-//: @interface FFFSessionTextContentView : FFFSessionMessageContentView
+//: @interface WatchSessionTextContentView : WatchSessionMessageContentView
 @interface InfoControl : ThoughtImageControl
 
 //: @property (nonatomic, strong) M80AttributedLabel *textView;

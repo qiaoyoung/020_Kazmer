@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
 
-//: @interface FFFSessionNetChatNotifyContentView : FFFSessionMessageContentView
+//: @interface WatchSessionNetChatNotifyContentView : WatchSessionMessageContentView
 @interface RedControl : ThoughtImageControl
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;

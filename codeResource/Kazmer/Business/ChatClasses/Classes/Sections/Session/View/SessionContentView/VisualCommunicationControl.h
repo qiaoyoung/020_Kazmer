@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
 
-//: @interface FFFSessionVideoContentView : FFFSessionMessageContentView
+//: @interface WatchSessionVideoContentView : WatchSessionMessageContentView
 @interface VisualCommunicationControl : ThoughtImageControl
 
 //: @end

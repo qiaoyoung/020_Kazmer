@@ -11,17 +11,17 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "WatchSessionPrivateProtocol.h"
+#import "WatchSessionPrivateProtocol.h"
+//: #import "WatchSessionConfigurateProtocol.h"
+#import "WatchSessionConfigurateProtocol.h"
 
-//: @interface FFFSessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
+//: @interface WatchSessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
 @interface FindValueBackground : NSObject<StuffTotaleractor,SoapDelegate>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithBottom:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<WatchSessionConfig>)sessionConfig;
                          should:(id<MessagePinImage>)sessionConfig;
 
 //: @property(nonatomic,weak) id<NIMSessionInteractorDelegate> delegate;

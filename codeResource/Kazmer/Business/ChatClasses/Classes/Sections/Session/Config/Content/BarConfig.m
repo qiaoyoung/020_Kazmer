@@ -52,14 +52,14 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFVideoContentConfig.h"
+//: #import "WatchVideoContentConfig.h"
 #import "BarConfig.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFVideoContentConfig
+//: @implementation WatchVideoContentConfig
 @implementation BarConfig
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)year:(CGFloat)cellWidth table:(NIMMessage *)message
@@ -99,7 +99,7 @@ typedef struct {
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)textDistance:(NIMMessage *)message
 {
-    //: return @"FFFSessionVideoContentView";
+    //: return @"WatchSessionVideoContentView";
     return @"VisualCommunicationControl";
 }
 

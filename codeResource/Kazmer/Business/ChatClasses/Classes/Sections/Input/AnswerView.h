@@ -17,7 +17,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @protocol FFFReplyContentViewDelegate <NSObject>
+//: @protocol WatchReplyContentViewDelegate <NSObject>
 @protocol AlongDelegate <NSObject>
 
 //: @optional
@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface FFFReplyContentView : UIView
+//: @interface WatchReplyContentView : UIView
 @interface AnswerView : UIView
 
 //: @property (nonatomic,strong) UIButton *closeButton;
@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @property (nonatomic,strong) NIMMessage *replymessage;
 @property (nonatomic,strong) NIMMessage *replymessage;
 
-//: @property (nonatomic,weak) id<FFFReplyContentViewDelegate> delegate;
+//: @property (nonatomic,weak) id<WatchReplyContentViewDelegate> delegate;
 @property (nonatomic,weak) id<AlongDelegate> delegate;
 
 //: - (void)dismiss;

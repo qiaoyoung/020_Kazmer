@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "WatchKitIndependentModeExtraInfo.h"
 #import "CloseInfo.h"
 
-//: @implementation FFFKitIndependentModeExtraInfo
+//: @implementation WatchKitIndependentModeExtraInfo
 @implementation CloseInfo
 
 //: @end

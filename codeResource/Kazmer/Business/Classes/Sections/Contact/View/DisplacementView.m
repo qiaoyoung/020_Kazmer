@@ -74,7 +74,7 @@
     //: [self addSubview:_iconImageView];
     [self addSubview:_iconImageView];
 
-    //: _avatar = [[FFFAvatarImageView alloc] init];
+    //: _avatar = [[WatchAvatarImageView alloc] init];
     _avatar = [[RecordControl alloc] init];
     //: [self addSubview:_avatar];
     [self addSubview:_avatar];
@@ -121,7 +121,7 @@
 
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:user_id];
     NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:user_id];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user_id option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:user_id option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:user_id skinColour_strong:nil];
 
     //: [_avatar nim_setImageWithURL:[NSURL URLWithString:info.avatarUrlString] placeholderImage:info.avatarImage options:SDWebImageRetryFailed];

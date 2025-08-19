@@ -12,47 +12,47 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFLanguageManager.h"
+//: #import "WatchLanguageManager.h"
 #import "PaintedNaturalLanguageTo.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitInfo.h"
+//: #import "WatchKitInfo.h"
 #import "TingMessage.h"
-//: #import "FFFMediaItem.h"            //多媒体面板对象
+//: #import "WatchMediaItem.h"            //多媒体面板对象
 #import "InfoMakeBar.h"            //多媒体面板对象
-//: #import "FFFMessageModel.h"         //message Wrapper
+//: #import "WatchMessageModel.h"         //message Wrapper
 #import "CentralProcessingUnitModel.h"         //message Wrapper
-//: #import "FFFKitMessageProvider.h"
+//: #import "WatchKitMessageProvider.h"
 #import "ValueOld.h"
-//: #import "FFFCellConfig.h"           //message cell配置协议
-#import "FFFCellConfig.h"           //message cell配置协议
-//: #import "FFFInputProtocol.h"        //输入框回调
-#import "FFFInputProtocol.h"        //输入框回调
-//: #import "FFFKitDataProvider.h"      //APP内容提供器
+//: #import "WatchCellConfig.h"           //message cell配置协议
+#import "WatchCellConfig.h"           //message cell配置协议
+//: #import "WatchInputProtocol.h"        //输入框回调
+#import "WatchInputProtocol.h"        //输入框回调
+//: #import "WatchKitDataProvider.h"      //APP内容提供器
 #import "ToProvider.h"      //APP内容提供器
-//: #import "FFFMessageCellProtocol.h"  //message cell事件回调
-#import "FFFMessageCellProtocol.h"  //message cell事件回调
-//: #import "FFFSessionConfig.h"        //会话页面配置
+//: #import "WatchMessageCellProtocol.h"  //message cell事件回调
+#import "WatchMessageCellProtocol.h"  //message cell事件回调
+//: #import "WatchSessionConfig.h"        //会话页面配置
 #import "MessagePinImage.h"        //会话页面配置
-//: #import "FFFKitEvent.h"             //点击事件封装类
+//: #import "WatchKitEvent.h"             //点击事件封装类
 #import "CoverShowEvent.h"             //点击事件封装类
-//: #import "FFFCellLayoutConfig.h"
+//: #import "WatchCellLayoutConfig.h"
 #import "PinFrame.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
-//: #import "FFFKitConfig.h"
+//: #import "WatchKitConfig.h"
 #import "ShowConfig.h"
-//: #import "FFFSessionViewController.h"
+//: #import "WatchSessionViewController.h"
 #import "CollectionViewController.h"
-//: #import "FFFSessionListViewController.h"
+//: #import "WatchSessionListViewController.h"
 #import "WeltanschauungViewController.h"
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "WatchKitIndependentModeExtraInfo.h"
 #import "CloseInfo.h"
-//: #import "FFFChatUIManagerProtocol.h"
-#import "FFFChatUIManagerProtocol.h"
-//: #import "FFFCollectionViewLeftAlignedLayout.h"
+//: #import "WatchChatUIManagerProtocol.h"
+#import "WatchChatUIManagerProtocol.h"
+//: #import "WatchCollectionViewLeftAlignedLayout.h"
 #import "ButtonFlowLayout.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WatchKitQuickCommentUtil.h"
 #import "NameUtilPath.h"
 
 //: extern double NIMKitVersionNumber;
@@ -122,25 +122,25 @@ extern const unsigned char k_secondTitle[];
 /**
  *  注册自定义的排版配置，通过注册自定义排版配置来实现自定义消息的定制化排版
  */
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig;
+//: - (void)registerLayoutConfig:(WatchCellLayoutConfig *)layoutConfig;
 - (void)secretMargin:(PinFrame *)layoutConfig;
 
 /**
  *  返回当前的排版配置
  */
-//: - (id<FFFCellLayoutConfig>)layoutConfig;
+//: - (id<WatchCellLayoutConfig>)layoutConfig;
 - (id<PinFrame>)layoutConfig;
 
 /**
  *  UI 配置器
  */
-//: @property (nonatomic,strong) FFFKitConfig *config;
+//: @property (nonatomic,strong) WatchKitConfig *config;
 @property (nonatomic,strong) ShowConfig *config;
 
 /**
  *  内容提供者，由上层开发者注入。如果没有则使用默认 provider
  */
-//: @property (nonatomic,strong) id<FFFKitDataProvider> provider;
+//: @property (nonatomic,strong) id<WatchKitDataProvider> provider;
 @property (nonatomic,strong) id<ToProvider> provider;
 
 /**
@@ -148,13 +148,13 @@ extern const unsigned char k_secondTitle[];
  *
  *  此字段需要配合默认的 ToProvider ( InputImpl ) 使用，如果上层自己定义了 provider ， 则忽略此字段。
  */
-//: @property (nonatomic,strong) FFFKitIndependentModeExtraInfo *independentModeExtraInfo;
+//: @property (nonatomic,strong) WatchKitIndependentModeExtraInfo *independentModeExtraInfo;
 @property (nonatomic,strong) CloseInfo *independentModeExtraInfo;
 
 /**
  * 聊天模块常用UI方法
  */
-//: @property (nonatomic, readonly) id<FFFChatUIManager> chatUIManager;
+//: @property (nonatomic, readonly) id<WatchChatUIManager> chatUIManager;
 @property (nonatomic, readonly) id<ZoneUimanager> chatUIManager;
 
 /**
@@ -209,25 +209,25 @@ extern const unsigned char k_secondTitle[];
 /**
  *  返回用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (WatchKitInfo *)infoByUser:(NSString *)userId
 - (TingMessage *)past:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(WatchKitInfoFetchOption *)option;
                     skinColour_strong:(CoverTingContent *)option;
 
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (WatchKitInfo *)infoByTeam:(NSString *)teamId
 - (TingMessage *)pressMedia:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(WatchKitInfoFetchOption *)option;
                     sizeOption:(CoverTingContent *)option;
 
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (WatchKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (TingMessage *)tiddler:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(WatchKitInfoFetchOption *)option;
                          ting:(CoverTingContent *)option;
 
 /**

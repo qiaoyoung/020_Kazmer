@@ -143,7 +143,7 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
 //:  
  
@@ -249,26 +249,26 @@ typedef struct {
 //: @end
 @end
 
-//: @interface FFFInputEmoticonManager ()
+//: @interface WatchInputEmoticonManager ()
 @interface TitleToManager ()
 //: @property (nonatomic,strong) NSArray *catalogs;
 @property (nonatomic,strong) NSArray *catalogs;
 //: @end
 @end
 
-//: @implementation FFFInputEmoticonManager
+//: @implementation WatchInputEmoticonManager
 @implementation TitleToManager
 
 //: + (instancetype)sharedManager
 + (instancetype)draw
 {
-    //: static FFFInputEmoticonManager *instance = nil;
+    //: static WatchInputEmoticonManager *instance = nil;
     static TitleToManager *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFInputEmoticonManager alloc]init];
+        //: instance = [[WatchInputEmoticonManager alloc]init];
         instance = [[TitleToManager alloc]init];
     //: });
     });

@@ -329,9 +329,9 @@ typedef struct {
 #import "CheckRecentView.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 
 //: @interface NTESSystemNotificationCell ()
@@ -501,7 +501,7 @@ typedef struct {
         //: [_acceptButton addTarget:self action:@selector(onAcceptBtn) forControlEvents:(UIControlEventTouchUpInside)];
         [_acceptButton addTarget:self action:@selector(atNamePin) forControlEvents:(UIControlEventTouchUpInside)];
 //        [_acceptButton setTitleColor:[KEKESkinColorManager shareInstance].skinColor forState:(UIControlStateNormal)];
-//        [_acceptButton setBackgroundColor:RGB_COLOR_String(@"#ffffff")];
+//        [_acceptButton setBackgroundColor:RGB_COLOR_String(@"#fffWatch")];
         //: [_acceptButton setImage:[UIImage imageNamed:@"ic_btn_accept"] forState:UIControlStateNormal];
         [_acceptButton setImage:[UIImage imageNamed:[[CartData sharedInstance] kShirtMessage]] forState:UIControlStateNormal];
 //        _acceptButton.layer.cornerRadius = 16;
@@ -528,7 +528,7 @@ typedef struct {
         //: [_refuseButton addTarget:self action:@selector(onRefusebtn) forControlEvents:(UIControlEventTouchUpInside)];
         [_refuseButton addTarget:self action:@selector(messageMenu) forControlEvents:(UIControlEventTouchUpInside)];
 //        [_refuseButton setTitleColor:kTextColor_2c3042 forState:(UIControlStateNormal)];
-//        [_refuseButton setBackgroundColor:RGB_COLOR_String(@"#ffffff")];
+//        [_refuseButton setBackgroundColor:RGB_COLOR_String(@"#fffWatch")];
         //: [_refuseButton setImage:[UIImage imageNamed:@"ic_btn_disaccept"] forState:UIControlStateNormal];
         [_refuseButton setImage:[UIImage imageNamed:[[CartData sharedInstance] user_accentExtraStr]] forState:UIControlStateNormal];
 //        _refuseButton.layer.cornerRadius = 16;
@@ -564,25 +564,25 @@ typedef struct {
         switch (self.notification.handleStatus) {
             //: case NotificationHandleTypeOk:
             case NotificationHandleTypeOk:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_ok"];
+                //: self.handleInfoLabel.text = [WatchLanguageManager getTextWithKey:@"message_helper_already_ok"];
                 self.handleInfoLabel.text = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] m_manUrl]];//@"已同意".nim_localized;
                 //: break;
                 break;
             //: case NotificationHandleTypeNo:
             case NotificationHandleTypeNo:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_no"];
+                //: self.handleInfoLabel.text = [WatchLanguageManager getTextWithKey:@"message_helper_already_no"];
                 self.handleInfoLabel.text = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] main_pipeTitle]];//@"已拒绝".nim_localized;
                 //: break;
                 break;
             //: case NotificationHandleTypeOutOfDate:
             case NotificationHandleTypeOutOfDate:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_time"];
+                //: self.handleInfoLabel.text = [WatchLanguageManager getTextWithKey:@"message_helper_already_time"];
                 self.handleInfoLabel.text = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] appNowhereText]];//@"已过期".nim_localized;
                 //: break;
                 break;
             //: default:
             default:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"is_read"];
+                //: self.handleInfoLabel.text = [WatchLanguageManager getTextWithKey:@"is_read"];
                 self.handleInfoLabel.text = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] main_simplyImagePath]];
                 //: break;
                 break;
@@ -594,18 +594,18 @@ typedef struct {
     }
 
 
-    //: self.timeLabel.text = [FFFKitUtil showTime:self.notification.timestamp showDetail:YES];
+    //: self.timeLabel.text = [WatchKitUtil showTime:self.notification.timestamp showDetail:YES];
     self.timeLabel.text = [ObjectUtil pinTextDetail:self.notification.timestamp keyDoing:YES];
 
     //: NSString *sourceID = self.notification.sourceID;
     NSString *sourceID = self.notification.sourceID;
-    //: FFFKitInfo *sourceMember = [[MyUserKit sharedKit] infoByUser:sourceID option:nil];
+    //: WatchKitInfo *sourceMember = [[MyUserKit sharedKit] infoByUser:sourceID option:nil];
     TingMessage *sourceMember = [[ButtonKit sheerOption] past:sourceID skinColour_strong:nil];
     //: [self updateSourceMember:sourceMember];
     [self device:sourceMember];
 }
 
-//: - (void)updateSourceMember:(FFFKitInfo *)sourceMember{
+//: - (void)updateSourceMember:(WatchKitInfo *)sourceMember{
 - (void)device:(TingMessage *)sourceMember{
 
     //: NIMSystemNotificationType type = self.notification.type;
@@ -629,7 +629,7 @@ typedef struct {
         //: case NIMSystemNotificationTypeTeamApply:
         case NIMSystemNotificationTypeTeamApply:
         {
-            //: NSString *message_helper_apply_to_group = [FFFLanguageManager getTextWithKey:@"message_helper_apply_to_group"];
+            //: NSString *message_helper_apply_to_group = [WatchLanguageManager getTextWithKey:@"message_helper_apply_to_group"];
             NSString *message_helper_apply_to_group = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] main_riotPath]];//@"申请加入群".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -641,9 +641,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeTeamApplyReject:
         case NIMSystemNotificationTypeTeamApplyReject:
         {
-            //: NSString *contact_fragment_group = [FFFLanguageManager getTextWithKey:@"contact_fragment_group"];
+            //: NSString *contact_fragment_group = [WatchLanguageManager getTextWithKey:@"contact_fragment_group"];
             NSString *contact_fragment_group = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] main_scramIdent]];//@"群".nim_localized
-            //: NSString *message_helper_refuse_you = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_you"];
+            //: NSString *message_helper_refuse_you = [WatchLanguageManager getTextWithKey:@"message_helper_refuse_you"];
             NSString *message_helper_refuse_you = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] showTwistHoppingData]];//@"拒绝你加入".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -661,9 +661,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeTeamInvite:
         case NIMSystemNotificationTypeTeamInvite:
         {
-            //: NSString *contact_fragment_group = [FFFLanguageManager getTextWithKey:@"contact_fragment_group"];
+            //: NSString *contact_fragment_group = [WatchLanguageManager getTextWithKey:@"contact_fragment_group"];
             NSString *contact_fragment_group = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] main_scramIdent]];//@"群".nim_localized
-            //: NSString *invite_you_group = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: NSString *invite_you_group = [WatchLanguageManager getTextWithKey:@"invite_you_group"];
             NSString *invite_you_group = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] notiStatusTitle]];//@"邀请你加入".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -689,9 +689,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeTeamIviteReject:
         case NIMSystemNotificationTypeTeamIviteReject:
         {
-            //: NSString *message_helper_refuse_group = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_group"];
+            //: NSString *message_helper_refuse_group = [WatchLanguageManager getTextWithKey:@"message_helper_refuse_group"];
             NSString *message_helper_refuse_group = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] dreamAdmitStr]];
-            //: NSString *message_helper_invite = [FFFLanguageManager getTextWithKey:@"message_helper_invite"];
+            //: NSString *message_helper_invite = [WatchLanguageManager getTextWithKey:@"message_helper_invite"];
             NSString *message_helper_invite = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] showLoserData]];//@"邀请".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -709,7 +709,7 @@ typedef struct {
         //: case NIMSystemNotificationTypeSuperTeamApply:
         case NIMSystemNotificationTypeSuperTeamApply:
         {
-            //: NSString *apply_join_supergroup = [FFFLanguageManager getTextWithKey:@"apply_join_supergroup"];
+            //: NSString *apply_join_supergroup = [WatchLanguageManager getTextWithKey:@"apply_join_supergroup"];
             NSString *apply_join_supergroup = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] app_viewFiftyMessage]];//@"申请加入超大群 %@".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -721,9 +721,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeSuperTeamApplyReject:
         case NIMSystemNotificationTypeSuperTeamApplyReject:
         {
-            //: NSString *large_group = [FFFLanguageManager getTextWithKey:@"large_group"];
+            //: NSString *large_group = [WatchLanguageManager getTextWithKey:@"large_group"];
             NSString *large_group = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] userCartTitle]];//超大群
-            //: NSString *to_deny_entry = [FFFLanguageManager getTextWithKey:@"to_deny_entry"];
+            //: NSString *to_deny_entry = [WatchLanguageManager getTextWithKey:@"to_deny_entry"];
             NSString *to_deny_entry = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] dream_valueUrl]];//拒绝你加入
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -735,9 +735,9 @@ typedef struct {
         //: case NIMSystemNotificationTypeSuperTeamInvite:
         case NIMSystemNotificationTypeSuperTeamInvite:
         {
-            //: NSString *large_group = [FFFLanguageManager getTextWithKey:@"large_group"];
+            //: NSString *large_group = [WatchLanguageManager getTextWithKey:@"large_group"];
             NSString *large_group = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] userCartTitle]];//超大群
-            //: NSString *invite_you_join_us = [FFFLanguageManager getTextWithKey:@"invite_you_join_us"];
+            //: NSString *invite_you_join_us = [WatchLanguageManager getTextWithKey:@"invite_you_join_us"];
             NSString *invite_you_join_us = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] mNowhereItemId]];//邀请你加入
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -749,7 +749,7 @@ typedef struct {
         //: case NIMSystemNotificationTypeSuperTeamIviteReject:
         case NIMSystemNotificationTypeSuperTeamIviteReject:
         {
-            //: NSString *rejected_group_invitation = [FFFLanguageManager getTextWithKey:@"rejected_group_invitation"];
+            //: NSString *rejected_group_invitation = [WatchLanguageManager getTextWithKey:@"rejected_group_invitation"];
             NSString *rejected_group_invitation = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] dreamShirtNuclearMessage]];
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -776,25 +776,25 @@ typedef struct {
                 switch (operation) {
                     //: case NIMUserOperationAdd:
                     case NIMUserOperationAdd:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_already_add"];
+                        //: text = [WatchLanguageManager getTextWithKey:@"message_helper_already_add"];
                         text = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] appMedalIdent]];//@"已添加你为好友".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationRequest:
                     case NIMUserOperationRequest:
-                        //: text = [FFFLanguageManager getTextWithKey:@"request_add_you_as_a_friend"];
+                        //: text = [WatchLanguageManager getTextWithKey:@"request_add_you_as_a_friend"];
                         text = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] k_heavilyUrl]];//@"请求添加你为好友".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationVerify:
                     case NIMUserOperationVerify:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_allow_you_apply"];
+                        //: text = [WatchLanguageManager getTextWithKey:@"message_helper_allow_you_apply"];
                         text = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] m_threshKey]];//@"通过了你的好友请求".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationReject:
                     case NIMUserOperationReject:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_you_apply"];
+                        //: text = [WatchLanguageManager getTextWithKey:@"message_helper_refuse_you_apply"];
                         text = [PaintedNaturalLanguageTo exhibit:[[CartData sharedInstance] dreamIsolateFormat]];//@"拒绝了你的好友请求".nim_localized;
                         //: break;
                         break;

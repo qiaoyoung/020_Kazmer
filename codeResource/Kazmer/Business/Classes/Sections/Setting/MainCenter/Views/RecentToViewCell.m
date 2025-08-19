@@ -115,7 +115,7 @@ Byte k_evolveTitle[] = {44, 6, 32, 14, 145, 211, 14, 202, 153, 191, 10, 210, 251
     _textfile_1.font = [UIFont systemFontOfSize:16];
     //: _textfile_1.delegate = self;
     _textfile_1.delegate = self;
-    //: _textfile_1.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_old"];
+    //: _textfile_1.placeholder = [WatchLanguageManager getTextWithKey:@"activity_modify_old"];
     _textfile_1.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromImageControlData(notiDiskNameKey)];//@"请输入旧密码";
     //: [backGround addSubview:_textfile_1];
     [backGround addSubview:_textfile_1];
@@ -140,7 +140,7 @@ Byte k_evolveTitle[] = {44, 6, 32, 14, 145, 211, 14, 202, 153, 191, 10, 210, 251
     _textfile_2.font = [UIFont systemFontOfSize:16];
     //: _textfile_2.delegate = self;
     _textfile_2.delegate = self;
-    //: _textfile_2.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: _textfile_2.placeholder = [WatchLanguageManager getTextWithKey:@"activity_modify_new"];
     _textfile_2.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromImageControlData(m_cropValue)];//@"请输入新密码";
     //: [backGround addSubview:_textfile_2];
     [backGround addSubview:_textfile_2];
@@ -165,7 +165,7 @@ Byte k_evolveTitle[] = {44, 6, 32, 14, 145, 211, 14, 202, 153, 191, 10, 210, 251
     _textfile_3.font = [UIFont systemFontOfSize:16];
     //: _textfile_3.delegate = self;
     _textfile_3.delegate = self;
-    //: _textfile_3.placeholder = [FFFLanguageManager getTextWithKey:@"activity_modify_new"];
+    //: _textfile_3.placeholder = [WatchLanguageManager getTextWithKey:@"activity_modify_new"];
     _textfile_3.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromImageControlData(m_cropValue)];//@"请确认新密码";
     //: [backGround addSubview:_textfile_3];
     [backGround addSubview:_textfile_3];

@@ -240,7 +240,7 @@ typedef struct {
 //: - (void)reloadWithNickname:(NSString *)nickname
 - (void)sub:(NSString *)nickname
 {
-    //: self.titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+    //: self.titleLabel.text = [WatchLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
     self.titleLabel.text = [PaintedNaturalLanguageTo exhibit:[[OperationData sharedInstance] m_mindValue]];
     //: self.searchField.text = nickname;
     self.searchField.text = nickname;
@@ -256,7 +256,7 @@ typedef struct {
 //    self.box.frame = CGRectMake(0, SCREEN_HEIGHT-210, SCREEN_WIDTH, 210);
     //: if (!self.titleLabel.text.length) {
     if (!self.titleLabel.text.length) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"set_nick_activity_input"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[WatchLanguageManager getTextWithKey:@"set_nick_activity_input"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[PaintedNaturalLanguageTo exhibit:[[OperationData sharedInstance] dream_tubeStr]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -272,7 +272,7 @@ typedef struct {
         [SVProgressHUD dismiss];
         //: if (!error) {
         if (!error) {
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [wself makeToast:[PaintedNaturalLanguageTo exhibit:[[OperationData sharedInstance] mPressedId]]
                          //: duration:2
                          duration:2
@@ -284,7 +284,7 @@ typedef struct {
 
         //: }else{
         }else{
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself makeToast:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself makeToast:[PaintedNaturalLanguageTo exhibit:[[OperationData sharedInstance] mainValueFormat]]
                          //: duration:2
                          duration:2
@@ -399,7 +399,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:[[OperationData sharedInstance] main_combinationFormat]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[OperationData sharedInstance] k_attendanceValue]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -430,7 +430,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[OperationData sharedInstance] k_containerName]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor min:[[OperationData sharedInstance] dream_numberConductData]];
@@ -474,7 +474,7 @@ typedef struct {
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+        //: _searchField.placeholder = [WatchLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
         _searchField.placeholder = [PaintedNaturalLanguageTo exhibit:[[OperationData sharedInstance] m_mindValue]];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

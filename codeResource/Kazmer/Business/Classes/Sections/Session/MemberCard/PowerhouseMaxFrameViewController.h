@@ -13,9 +13,9 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WatchTeamMemberListDataSource.h"
 #import "EventColor.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WatchTeamListDataManager.h"
 #import "MetadataManager.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @interface TeamMemberNormalViewController : UIViewController
 @interface PowerhouseMaxFrameViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) WatchTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MetadataManager *teamListManager;
 
 //: @end

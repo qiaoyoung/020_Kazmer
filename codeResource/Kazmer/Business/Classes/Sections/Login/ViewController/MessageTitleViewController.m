@@ -95,7 +95,7 @@
     return mainTitleText;
 }
 
-//: #ffffff
+//: #fffWatch
 + (NSString *)dream_cueData {
     /* static */ NSString *dream_cueData = nil;
     if (!dream_cueData) {
@@ -458,7 +458,7 @@
 
     //: UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(15, (44.0f + [UIDevice vg_statusBarHeight])+20, [[UIScreen mainScreen] bounds].size.width-30, 30)];
     UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(15, (44.0f + [UIDevice tingHeight])+20, [[UIScreen mainScreen] bounds].size.width-30, 30)];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"register_good_nick"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"register_good_nick"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[BluebackSalmonData k_nuclearImageFormat]];
     //: labtitle.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     labtitle.textColor = [UIColor min:[BluebackSalmonData mOverseeStr]];
@@ -524,7 +524,7 @@
     _usernameTextField.textColor = [UIColor min:[BluebackSalmonData appPublisherId]];
     //    _usernameTextField.keyboardType = UIKeyboardTypeASCIICapable;
 //    _usernameTextField.delegate = self;
-    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"nickname_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[WatchLanguageManager getTextWithKey:@"nickname_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData m_attendanceMessage]] attributes:@{NSForegroundColorAttributeName:[UIColor min:[BluebackSalmonData main_bookMessage]]}];
     //: _usernameTextField.attributedPlaceholder = attrString;
     _usernameTextField.attributedPlaceholder = attrString;
@@ -539,7 +539,7 @@
     _loginButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_loginButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [_loginButton setTitle:[WatchLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [_loginButton setTitle:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData mEngagementStr]] forState:UIControlStateNormal];
     //: [_loginButton addTarget:self action:@selector(nextButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [_loginButton addTarget:self action:@selector(clickImage) forControlEvents:UIControlEventTouchUpInside];
@@ -558,9 +558,9 @@
     _registerButton.backgroundColor = [UIColor min:[BluebackSalmonData userResortId]];
     //: _registerButton.titleLabel.font = [UIFont systemFontOfSize:16];
     _registerButton.titleLabel.font = [UIFont systemFontOfSize:16];
-    //: [_registerButton setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+    //: [_registerButton setTitleColor:[UIColor colorWithHexString:@"#fffWatch"] forState:UIControlStateNormal];
     [_registerButton setTitleColor:[UIColor min:[BluebackSalmonData dream_cueData]] forState:UIControlStateNormal];
-    //: [_registerButton setTitle:[NSString stringWithFormat:@"%@,%@",[FFFLanguageManager getTextWithKey:@"activity_register_account_has_account"],[FFFLanguageManager getTextWithKey:@"activity_login_login"]] forState:UIControlStateNormal];
+    //: [_registerButton setTitle:[NSString stringWithFormat:@"%@,%@",[WatchLanguageManager getTextWithKey:@"activity_register_account_has_account"],[WatchLanguageManager getTextWithKey:@"activity_login_login"]] forState:UIControlStateNormal];
     [_registerButton setTitle:[NSString stringWithFormat:@"%@,%@",[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData dreamResortMarchPorterStr]],[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData mainTitleText]]] forState:UIControlStateNormal];
     //: [_registerButton addTarget:self action:@selector(gotologin) forControlEvents:UIControlEventTouchUpInside];
     [_registerButton addTarget:self action:@selector(greenFlush) forControlEvents:UIControlEventTouchUpInside];
@@ -621,13 +621,13 @@
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WatchLanguageManager getTextWithKey:@"warm_prompt"] message:[WatchLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData user_shirtStr]] message:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData k_towardsUrl]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData userBarreLagIdent]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData mainGarlicMsg]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -688,13 +688,13 @@
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WatchLanguageManager getTextWithKey:@"warm_prompt"] message:[WatchLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData user_shirtStr]] message:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData m_itchMessage]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData userBarreLagIdent]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData mainGarlicMsg]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -729,7 +729,7 @@
 //
 //    }];
 
-    //: UIAlertAction *picture = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"message_send_album"] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    //: UIAlertAction *picture = [UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"message_send_album"] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
     UIAlertAction *picture = [UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData main_simplyName]] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
 
 //        [self pushTZImagePickerControllerWithAsset:nil];
@@ -739,7 +739,7 @@
             //: }];
             }];
 
-    //: UIAlertAction *cancle = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
+    //: UIAlertAction *cancle = [UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
     UIAlertAction *cancle = [UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData userBarreLagIdent]] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
    //: }];
    }];
@@ -972,7 +972,7 @@
                 self.avaterUrl = urlString;
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData m_insistIdent]]
                              //: duration:2
                              duration:2
@@ -983,7 +983,7 @@
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData noti_intellectualUrl]]
                     //: duration:2
                     duration:2
@@ -1004,7 +1004,7 @@
 {
     //: if (_usernameTextField.text.length == 0) {
     if (_usernameTextField.text.length == 0) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"]
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"register_avtivity3_nick"]
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData show_remindUrl]]
                     //: duration:2.0
                     duration:2.0
@@ -1015,7 +1015,7 @@
     }
     //: if ([_usernameTextField.text isEqualToString:self.accountName]) {
     if ([_usernameTextField.text isEqualToString:self.accountName]) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"nickname_same_account"]
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"nickname_same_account"]
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData dream_scribeName]]
                     //: duration:2.0
                     duration:2.0
@@ -1035,7 +1035,7 @@
         manager.headerImage = _headerImage;
     //: }else{
     }else{
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"register_avtivity3_avatar"]];
+        //: [SVProgressHUD showMessage:[WatchLanguageManager getTextWithKey:@"register_avtivity3_avatar"]];
         [SVProgressHUD index:[PaintedNaturalLanguageTo exhibit:[BluebackSalmonData mContainerTitle]]];
         //: return;
         return;

@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WatchTeamCardMemberItem.h"
 #import "CoatButtonBar.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
@@ -54,7 +54,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)imageNormal{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:self.userId skinColour_strong:nil];
     //: return info.avatarImage;
     return info.avatarImage;
@@ -64,7 +64,7 @@
 - (NSString *)title {
     //: NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
     NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [WatchKitUtil showNick:self.userId inSession:session];
     return [ObjectUtil message:self.userId sessionView:session];
 }
 
@@ -95,7 +95,7 @@
 //: @end
 @end
 
-//: @interface FFFTeamCardMemberItem ()
+//: @interface WatchTeamCardMemberItem ()
 @interface CoatButtonBar ()
 
 //: @property (nonatomic, strong) NIMTeamMember *member;
@@ -107,7 +107,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardMemberItem
+//: @implementation WatchTeamCardMemberItem
 @implementation CoatButtonBar
 
 //: - (instancetype)init {
@@ -148,19 +148,19 @@
 
 //: - (BOOL)isEqual:(id)object{
 - (BOOL)isEqual:(id)object{
-    //: if (![object isKindOfClass:[FFFTeamCardMemberItem class]]) {
+    //: if (![object isKindOfClass:[WatchTeamCardMemberItem class]]) {
     if (![object isKindOfClass:[CoatButtonBar class]]) {
         //: return NO;
         return NO;
     }
-    //: FFFTeamCardMemberItem *obj = (FFFTeamCardMemberItem*)object;
+    //: WatchTeamCardMemberItem *obj = (WatchTeamCardMemberItem*)object;
     CoatButtonBar *obj = (CoatButtonBar*)object;
     //: return [obj.userId isEqual:self.userId];
     return [obj.userId isEqual:self.userId];
 }
 
-//: #pragma mark - <FFFKitCardHeaderData>
-#pragma mark - <FFFKitCardHeaderData>
+//: #pragma mark - <WatchKitCardHeaderData>
+#pragma mark - <WatchKitCardHeaderData>
 //: - (NSString *)teamId {
 - (NSString *)teamId {
     //: return _member.teamId;
@@ -200,7 +200,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)imageNormal{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:self.userId skinColour_strong:nil];
     //: return info.avatarImage;
     return info.avatarImage;
@@ -226,7 +226,7 @@
             session = [NIMSession session:self.teamId type:NIMSessionTypeTeam];
         }
     }
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [WatchKitUtil showNick:self.userId inSession:session];
     return [ObjectUtil message:self.userId sessionView:session];
 }
 

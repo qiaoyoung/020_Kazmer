@@ -14,7 +14,7 @@
 
 // __M_A_C_R_O__
 
-//: @class FFFMessageModel;
+//: @class WatchMessageModel;
 @class CentralProcessingUnitModel;
 
 /**
@@ -25,7 +25,7 @@
 //: typedef void (^NIMKitDataProvideHandler)(NSError *error, NSArray<NIMMessage *> *messages);
 typedef void (^NIMKitDataProvideHandler)(NSError *error, NSArray<NIMMessage *> *messages);
 
-//: @protocol FFFKitMessageProvider <NSObject>
+//: @protocol WatchKitMessageProvider <NSObject>
 @protocol ValueOld <NSObject>
 
 //: @optional

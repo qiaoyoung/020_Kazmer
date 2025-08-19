@@ -77,7 +77,7 @@
 #import "ShowImageEvent.h"
 //: #import "NTESSessionMsgConverter.h"
 #import "BackgroundCover.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 
 //: typedef void(^NTESMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnull error, NIMMessage * _Nonnull message);
@@ -247,11 +247,11 @@ typedef void(^NTESMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnul
                 //show name
                 //: NIMSession *fromSession = [weakSelf.messages firstObject].session;
                 NIMSession *fromSession = [weakSelf.messages firstObject].session;
-                //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+                //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
                 CoverTingContent *option = [[CoverTingContent alloc] init];
                 //: option.session = fromSession;
                 option.session = fromSession;
-                //: FFFKitInfo *info = nil;
+                //: WatchKitInfo *info = nil;
                 TingMessage *info = nil;
                 //: if (fromSession.sessionType == NIMSessionTypeP2P) {
                 if (fromSession.sessionType == NIMSessionTypeP2P) {

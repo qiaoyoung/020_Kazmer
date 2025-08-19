@@ -68,10 +68,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLoadProgressView.h"
+//: #import "WatchLoadProgressView.h"
 #import "MakeTingView.h"
 
-//: @implementation FFFLoadProgressView
+//: @implementation WatchLoadProgressView
 @implementation MakeTingView
 
 //: - (id)initWithFrame:(CGRect)frame {

@@ -9,23 +9,23 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurator.h"
+//: #import "WatchSessionConfigurator.h"
 #import "MaxConfigurator.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
+//: #import "WatchSessionPrivateProtocol.h"
+#import "WatchSessionPrivateProtocol.h"
 
-//: @interface FFFSessionLayoutImpl : NSObject<NIMSessionLayout>
+//: @interface WatchSessionLayoutImpl : NSObject<NIMSessionLayout>
 @interface NameImpl : NSObject<RepresentationEdge>
 
 //: @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UITableView *tableView;
 
-//: @property (nonatomic,strong) FFFInputView *inputView;
+//: @property (nonatomic,strong) WatchInputView *inputView;
 @property (nonatomic,strong) SignView *inputView;
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithChromatic:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<WatchSessionConfig>)sessionConfig;
                          config:(id<MessagePinImage>)sessionConfig;
 
 //: @end

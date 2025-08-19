@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "WatchReplyedTextContentConfig.h"
 #import "FoldoutConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFReplyedTextContentConfig ()
+//: @interface WatchReplyedTextContentConfig ()
 @interface FoldoutConfig ()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentConfig
+//: @implementation WatchReplyedTextContentConfig
 @implementation FoldoutConfig
 
 
@@ -79,7 +79,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)textDistance:(NIMMessage *)message
 {
-    //: return @"FFFReplyedTextContentView";
+    //: return @"WatchReplyedTextContentView";
     return @"FindControl";
 }
 

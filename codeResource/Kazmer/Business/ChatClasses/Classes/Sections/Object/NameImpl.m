@@ -9,24 +9,24 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "WatchSessionLayoutImpl.h"
 #import "NameImpl.h"
 //: #import "UITableView+NIMScrollToBottom.h"
 #import "UITableView+NIMScrollToBottom.h"
-//: #import "FFFMessageCell.h"
+//: #import "WatchMessageCell.h"
 #import "ModelViewCell.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
+//: #import "WatchSessionTableAdapter.h"
 #import "QuickHearingArrayAdapter.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "WatchKitKeyboardInfo.h"
 #import "UserInfo.h"
-//: #import "FFFReplyContentView.h"
+//: #import "WatchReplyContentView.h"
 #import "AnswerView.h"
 
-//: @interface FFFSessionLayoutImpl()
+//: @interface WatchSessionLayoutImpl()
 @interface NameImpl()
 {
     //: NSMutableArray *_inserts;
@@ -41,7 +41,7 @@
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) id<FFFSessionConfig>sessionConfig;
+//: @property (nonatomic,strong) id<WatchSessionConfig>sessionConfig;
 @property (nonatomic,strong) id<MessagePinImage>sessionConfig;
 
 //: @property (nonatomic,weak) id<NIMSessionLayoutDelegate> delegate;
@@ -50,12 +50,12 @@
 //: @end
 @end
 
-//: @implementation FFFSessionLayoutImpl
+//: @implementation WatchSessionLayoutImpl
 @implementation NameImpl
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithChromatic:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<WatchSessionConfig>)sessionConfig
                          config:(id<MessagePinImage>)sessionConfig
 {
     //: self = [super init];
@@ -235,7 +235,7 @@
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (void)calculateContent:(FFFMessageModel *)model{
+//: - (void)calculateContent:(WatchMessageModel *)model{
 - (void)collection:(CentralProcessingUnitModel *)model{
     //: if ([NSThread isMainThread]) {^{ [model contentSize:self.tableView.nim_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model contentSize:self.tableView.nim_width]; });};
     if ([NSThread isMainThread]) {^{ [model indicator:self.tableView.nim_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model indicator:self.tableView.nim_width]; });};
@@ -400,7 +400,7 @@
 //: - (void)update:(NSIndexPath *)indexPath
 - (void)row:(NSIndexPath *)indexPath
 {
-    //: FFFMessageCell *cell = (FFFMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    //: WatchMessageCell *cell = (WatchMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
     ModelViewCell *cell = (ModelViewCell *)[self.tableView cellForRowAtIndexPath:indexPath];
     //: if (cell) {
     if (cell) {

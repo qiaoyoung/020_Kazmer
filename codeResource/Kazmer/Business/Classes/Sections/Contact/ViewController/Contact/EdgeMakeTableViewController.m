@@ -56,7 +56,7 @@ Byte dreamValueFormatMsg[] = {26, 4, 4, 72, 108, 108, 101, 99, 240};
 #import "UIView+Toast.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "NTESSessionViewController.h"
 #import "BroadcastViewController.h"
@@ -415,7 +415,7 @@ Byte dreamValueFormatMsg[] = {26, 4, 4, 72, 108, 108, 101, 99, 240};
 
 //: - (NSMutableAttributedString *)showNameWithUser:(NIMUser *)user {
 - (NSMutableAttributedString *)cell:(NIMUser *)user {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:user.userId skinColour_strong:nil];
     //: NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];
     NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];

@@ -100,18 +100,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardSelectedViewController.h"
+//: #import "WatchTeamCardSelectedViewController.h"
 #import "ForefrontViewController.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
+//: #import "WatchTeamCartSetTableViewCell.h"
 #import "ShirtButtonView.h"
 
-//: @interface FFFTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
+//: @interface WatchTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
 @interface ForefrontViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-//: @property (nonatomic, strong) NSMutableArray <id <FFFKitSelectCardData>> *datas;
-@property (nonatomic, strong) NSMutableArray <id <FFFKitSelectCardData>> *datas;
+//: @property (nonatomic, strong) NSMutableArray <id <WatchKitSelectCardData>> *datas;
+@property (nonatomic, strong) NSMutableArray <id <WatchKitSelectCardData>> *datas;
 
 //: @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITableView *tableView;
@@ -128,16 +128,16 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardSelectedViewController
+//: @implementation WatchTeamCardSelectedViewController
 @implementation ForefrontViewController
 
 //: + (instancetype)instanceWithTitle:(NSString *)title
 + (instancetype)label:(NSString *)title
-                            //: items:(NSMutableArray <id <FFFKitSelectCardData>> *)items
-                            pieceKey:(NSMutableArray <id <FFFKitSelectCardData>> *)items
+                            //: items:(NSMutableArray <id <WatchKitSelectCardData>> *)items
+                            pieceKey:(NSMutableArray <id <WatchKitSelectCardData>> *)items
                            //: result:(NIMSelectedCompletion)result {
                            warpath:(NIMSelectedCompletion)result {
-    //: FFFTeamCardSelectedViewController *vc = [[FFFTeamCardSelectedViewController alloc] initWithItems:items];
+    //: WatchTeamCardSelectedViewController *vc = [[WatchTeamCardSelectedViewController alloc] initWithItems:items];
     ForefrontViewController *vc = [[ForefrontViewController alloc] initWithCan:items];
     //: vc.titleString = title ?: @"";
     vc.titleString = title ?: @"";
@@ -147,8 +147,8 @@
     return vc;
 }
 
-//: - (instancetype)initWithItems:(NSMutableArray <id <FFFKitSelectCardData>> *)items {
-- (instancetype)initWithCan:(NSMutableArray <id <FFFKitSelectCardData>> *)items {
+//: - (instancetype)initWithItems:(NSMutableArray <id <WatchKitSelectCardData>> *)items {
+- (instancetype)initWithCan:(NSMutableArray <id <WatchKitSelectCardData>> *)items {
     //: if (self = [super init]) {
     if (self = [super init]) {
         //: _datas = items;
@@ -157,8 +157,8 @@
         _selectedIndex = -1;
         //: __weak typeof(self) weakSelf = self;
         __weak typeof(self) weakSelf = self;
-        //: [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //: [items enumerateObjectsUsingBlock:^(id<WatchKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [items enumerateObjectsUsingBlock:^(id<WatchKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
             if (obj.selected) {
                 //: weakSelf.selectedIndex = idx;
@@ -254,8 +254,8 @@
 - (void)springForward{
     //: if (_oriSelectedIndex != _selectedIndex) {
     if (_oriSelectedIndex != _selectedIndex) {
-        //: id <FFFKitSelectCardData> bodyData = _datas[_selectedIndex];
-        id <FFFKitSelectCardData> bodyData = _datas[_selectedIndex];
+        //: id <WatchKitSelectCardData> bodyData = _datas[_selectedIndex];
+        id <WatchKitSelectCardData> bodyData = _datas[_selectedIndex];
         //: if (_resultHandle) {
         if (_resultHandle) {
             //: _resultHandle(bodyData);
@@ -395,18 +395,18 @@
 
 //: - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //: id <FFFKitSelectCardData> bodyData = _datas[indexPath.section];
-    id <FFFKitSelectCardData> bodyData = _datas[indexPath.section];
+    //: id <WatchKitSelectCardData> bodyData = _datas[indexPath.section];
+    id <WatchKitSelectCardData> bodyData = _datas[indexPath.section];
 
 //    ShirtButtonView *cell = [ShirtButtonView cellWithTableView:tableView];
     //: NSString *identifier = [NSString stringWithFormat:@"ZMONTeamCartSet%ld",(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[[PreparationData sharedInstance] main_collectorKey],(long)indexPath.row];
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: WatchTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     ShirtButtonView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[WatchTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[ShirtButtonView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
 
@@ -429,8 +429,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     //: _selectedIndex = indexPath.section;
     _selectedIndex = indexPath.section;
-    //: [_datas enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-    [_datas enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    //: [_datas enumerateObjectsUsingBlock:^(id<WatchKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_datas enumerateObjectsUsingBlock:^(id<WatchKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
         //: [obj setSelected:selected];
@@ -477,7 +477,7 @@
 //        btnClear.layer.cornerRadius = 24;
         //: btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
         btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
-        //: [btnClear setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+        //: [btnClear setTitle:[WatchLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
         [btnClear setTitle:[PaintedNaturalLanguageTo exhibit:[[PreparationData sharedInstance] noti_everythingValue]] forState:UIControlStateNormal];
         //: [btnClear addTarget:self action:@selector(onDone) forControlEvents:UIControlEventTouchUpInside];
         [btnClear addTarget:self action:@selector(springForward) forControlEvents:UIControlEventTouchUpInside];

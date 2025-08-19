@@ -40,30 +40,30 @@ DealData mLigationValue = (DealData){19, (Byte []){126, 99, 39, 110}, 3, 211, 96
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaFetcher.h"
+//: #import "WatchKitMediaFetcher.h"
 #import "VisualisationFetcher.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "WatchKitFileLocationHelper.h"
 #import "ButtonHelper.h"
-//: #import "FFFMessageMaker.h"
+//: #import "WatchMessageMaker.h"
 #import "ImpendentMaker.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
 //: #import "TZImageManager.h"
 #import "TZImageManager.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WatchKitProgressHUD.h"
 #import "AlongEffectView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFKitMediaPickerController.h"
+//: #import "WatchKitMediaPickerController.h"
 #import "ModePickerController.h"
 //: #import "AVAsset+MyUserKit.h"
 #import "AVAsset+ButtonKit.h"
 
-//: @interface FFFKitMediaFetcher()<FFFKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+//: @interface WatchKitMediaFetcher()<WatchKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface VisualisationFetcher()<ColorTitle,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 //: @property (nonatomic,copy) NIMKitLibraryFetchResult libraryResultHandler;
@@ -75,13 +75,13 @@ DealData mLigationValue = (DealData){19, (Byte []){126, 99, 39, 110}, 3, 211, 96
 //: @property (nonatomic,weak) UIImagePickerController *imagePicker;
 @property (nonatomic,weak) UIImagePickerController *imagePicker;
 
-//: @property (nonatomic,strong) FFFKitMediaPickerController *assetsPicker;
+//: @property (nonatomic,strong) WatchKitMediaPickerController *assetsPicker;
 @property (nonatomic,strong) ModePickerController *assetsPicker;
 
 //: @end
 @end
 
-//: @implementation FFFKitMediaFetcher
+//: @implementation WatchKitMediaFetcher
 @implementation VisualisationFetcher
 
 //: - (instancetype)init
@@ -201,7 +201,7 @@ DealData mLigationValue = (DealData){19, (Byte []){126, 99, 39, 110}, 3, 211, 96
 - (void)aggregation:(void(^)(UIViewController * _Nullable picker)) handler {
     //: UIViewController *pickerVC = nil;
     UIViewController *pickerVC = nil;
-    //: FFFKitMediaPickerController *vc = [[FFFKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
+    //: WatchKitMediaPickerController *vc = [[WatchKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
     ModePickerController *vc = [[ModePickerController alloc] initWithTing:self.limit];
     //: vc.nim_delegate = self;
     vc.nim_delegate = self;
@@ -274,15 +274,15 @@ DealData mLigationValue = (DealData){19, (Byte []){126, 99, 39, 110}, 3, 211, 96
             //: default:
             default:
             {
-                //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                //: [[[UIAlertView alloc] initWithTitle:[WatchLanguageManager getTextWithKey:@"warm_prompt"]
                 [[[UIAlertView alloc] initWithTitle:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&main_strengthenIdent)]
-                                            //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                            //: message:[WatchLanguageManager getTextWithKey:@"setting_privacy"]
                                             message:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&dreamCueMessage)]
                                            //: delegate:self
                                            delegate:self
-                                  //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                  //: cancelButtonTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                   cancelButtonTitle:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&kCommentUrl)]
-                                  //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                  //: otherButtonTitles:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                   otherButtonTitles:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&show_userKey)],nil] show];
 
 //                UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:LangKey(@"warm_prompt") message:LangKey(@"setting_privacy") preferredStyle:UIAlertControllerStyleAlert];
@@ -314,15 +314,15 @@ DealData mLigationValue = (DealData){19, (Byte []){126, 99, 39, 110}, 3, 211, 96
                 if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
 
 
-                    //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                    //: [[[UIAlertView alloc] initWithTitle:[WatchLanguageManager getTextWithKey:@"warm_prompt"]
                     [[[UIAlertView alloc] initWithTitle:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&main_strengthenIdent)]
-                                                //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                                //: message:[WatchLanguageManager getTextWithKey:@"setting_privacy"]
                                                 message:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&dreamCueMessage)]
                                                //: delegate:self
                                                delegate:self
-                                      //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                      //: cancelButtonTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                       cancelButtonTitle:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&kCommentUrl)]
-                                      //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                      //: otherButtonTitles:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                       otherButtonTitles:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&show_userKey)],nil] show];
 
                     //: if(handler) handler(nil);
@@ -371,9 +371,9 @@ DealData mLigationValue = (DealData){19, (Byte []){126, 99, 39, 110}, 3, 211, 96
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             //: NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
             NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
-            //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+            //: NSString *outputFileName = [WatchKitFileLocationHelper genFilenameWithExt:@"mp4"];
             NSString *outputFileName = [ButtonHelper withKey:StringFromDealData(&mLigationValue)];
-            //: NSString *outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+            //: NSString *outputPath = [WatchKitFileLocationHelper filepathForVideo:outputFileName];
             NSString *outputPath = [ButtonHelper info:outputFileName];
             //: AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
             AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
@@ -543,15 +543,15 @@ DealData mLigationValue = (DealData){19, (Byte []){126, 99, 39, 110}, 3, 211, 96
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[WatchLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&main_strengthenIdent)]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[WatchLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&user_builderIdent)]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&kCommentUrl)]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&show_userKey)],nil] show];
         //: return NO;
         return NO;
@@ -564,15 +564,15 @@ DealData mLigationValue = (DealData){19, (Byte []){126, 99, 39, 110}, 3, 211, 96
     if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[WatchLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&main_strengthenIdent)]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[WatchLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&user_builderIdent)]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&kCommentUrl)]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[PaintedNaturalLanguageTo exhibit:StringFromDealData(&show_userKey)],nil] show];
 
         //: return NO;

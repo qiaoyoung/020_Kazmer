@@ -97,7 +97,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(WatchMessageModel *)model{
 - (void)lengthAt:(CentralProcessingUnitModel *)model{
     //: [super refresh:model];
     [super lengthAt:model];

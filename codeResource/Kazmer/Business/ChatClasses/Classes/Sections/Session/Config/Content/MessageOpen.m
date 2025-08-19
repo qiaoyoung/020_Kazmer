@@ -61,14 +61,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFImageContentConfig.h"
+//: #import "WatchImageContentConfig.h"
 #import "MessageOpen.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFImageContentConfig
+//: @implementation WatchImageContentConfig
 @implementation MessageOpen
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)year:(CGFloat)cellWidth table:(NIMMessage *)message
@@ -121,7 +121,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)textDistance:(NIMMessage *)message
 {
-    //: return @"FFFSessionImageContentView";
+    //: return @"WatchSessionImageContentView";
     return @"MakeContentView";
 }
 

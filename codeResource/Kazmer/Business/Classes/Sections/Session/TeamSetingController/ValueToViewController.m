@@ -588,33 +588,33 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAdvancedTeamCardViewController.h"
+//: #import "WatchAdvancedTeamCardViewController.h"
 #import "ValueToViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WatchContactSelectViewController.h"
 #import "NominateViewController.h"
 //: #import "CCCTeamMemberListViewController.h"
 #import "ReplacementViewController.h"
-//: #import "FFFTeamMuteMemberListViewController.h"
+//: #import "WatchTeamMuteMemberListViewController.h"
 #import "PacketViewController.h"
-//: #import "FFFTeamAnnouncementListViewController.h"
+//: #import "WatchTeamAnnouncementListViewController.h"
 #import "ParvenuValueImageViewController.h"
-//: #import "FFFTeamCardRowItem.h"
+//: #import "WatchTeamCardRowItem.h"
 #import "ShowKey.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WatchTeamCardMemberItem.h"
 #import "CoatButtonBar.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
-//: #import "FFFTeamCardHeaderView.h"
+//: #import "WatchTeamCardHeaderView.h"
 #import "ModelBubbleView.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WatchTeamListDataManager.h"
 #import "MetadataManager.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
-//: #import "FFFTeamHelper.h"
+//: #import "WatchTeamHelper.h"
 #import "MakeBubble.h"
-//: #import "FFFTeamIntroduceViewController.h"
+//: #import "WatchTeamIntroduceViewController.h"
 #import "BubbleTableViewController.h"
 //: #import "ZMONSetGroupNameView.h"
 #import "NameInfoView.h"
@@ -622,7 +622,7 @@
 #import "ButtonNameView.h"
 //: #import "ZMONAlartView.h"
 #import "EdgeView.h"
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "WatchGroupAvatarViewController.h"
 #import "OptionViewController.h"
 //: #import "NTESUserQRCodeViewController.h"
 #import "SizeViewController.h"
@@ -637,7 +637,7 @@
 //: #import "NSSetAvater.h"
 #import "SetView.h"
 
-//: @interface FFFAdvancedTeamCardViewController ()<FFFTeamMemberListCellActionDelegate,
+//: @interface WatchAdvancedTeamCardViewController ()<WatchTeamMemberListCellActionDelegate,
 @interface ValueToViewController ()<OldQuery,
 //: NIMContactSelectDelegate,
 DelegateZone,
@@ -645,12 +645,12 @@ DelegateZone,
 FollowProtocol,
 //: NIMTeamManagerDelegate,
 NIMTeamManagerDelegate,
-//: FFFTeamCardHeaderViewDelegate,
+//: WatchTeamCardHeaderViewDelegate,
 ReplacementSub,
 //: NIMTeamAnnouncementListVCDelegate,NTESCustomUIAlertDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
-//: @property (nonatomic,strong) FFFTeamCardHeaderView *headerView;
+//: @property (nonatomic,strong) WatchTeamCardHeaderView *headerView;
 @property (nonatomic,strong) ModelBubbleView *headerView;
 
 //: @property (nonatomic, strong) UIView *userView;
@@ -681,7 +681,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 //: @end
 @end
 
-//: @implementation FFFAdvancedTeamCardViewController
+//: @implementation WatchAdvancedTeamCardViewController
 @implementation ValueToViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -712,29 +712,29 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     [super metadata];
 }
 
-//: - (void)didBuildTeamSwitchCell:(FFFTeamSwitchTableViewCell *)cell {
+//: - (void)didBuildTeamSwitchCell:(WatchTeamSwitchTableViewCell *)cell {
 - (void)format:(TableViewCell *)cell {
     //: cell.switchDelegate = self;
     cell.switchDelegate = self;
 }
 
-//: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell {
+//: - (void)didBuildTeamMemberCell:(WatchTeamMemberListCell *)cell {
 - (void)teamRed:(SizeViewCell *)cell {
     //: cell.delegate = self;
     cell.delegate = self;
-    //: cell.disableInvite = ![FFFKitUtil canInviteMemberToTeam:self.teamListManager.myTeamInfo];
+    //: cell.disableInvite = ![WatchKitUtil canInviteMemberToTeam:self.teamListManager.myTeamInfo];
     cell.disableInvite = ![ObjectUtil showShould:self.teamListManager.myTeamInfo];
     //: NSMutableArray <NSDictionary *>*memberInfos = [NSMutableArray array];
     NSMutableArray <NSDictionary *>*memberInfos = [NSMutableArray array];
     //: for (int i = 0; i < ((cell.maxShowMemberCount) < (self.teamListManager.members.count) ? (cell.maxShowMemberCount) : (self.teamListManager.members.count)); i++) {
     for (int i = 0; i < ((cell.maxShowMemberCount) < (self.teamListManager.doingArray.count) ? (cell.maxShowMemberCount) : (self.teamListManager.doingArray.count)); i++) {
-        //: FFFTeamCardMemberItem *obj = self.teamListManager.members[i];
+        //: WatchTeamCardMemberItem *obj = self.teamListManager.members[i];
         CoatButtonBar *obj = self.teamListManager.doingArray[i];
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
         CoverTingContent *option = [[CoverTingContent alloc] init];
         //: option.session = self.teamListManager.session;
         option.session = self.teamListManager.session;
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:obj.userId option:option];
+        //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:obj.userId option:option];
         TingMessage *info = [[ButtonKit sheerOption] past:obj.userId skinColour_strong:option];
 
         //: NSMutableDictionary *dic = [NSMutableDictionary dictionary];
@@ -753,22 +753,22 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 
 //: #pragma mark - Data
 #pragma mark - Data
-//: - (NSArray<NSArray<FFFTeamCardRowItem *> *> *)buildBodyData{
+//: - (NSArray<NSArray<WatchTeamCardRowItem *> *> *)buildBodyData{
 - (NSArray<NSArray<ShowKey *> *> *)nearLock{
     //: NSArray *ret = nil;
     NSArray *ret = nil;
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: BOOL canEdit = [FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
+    //: BOOL canEdit = [WatchKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
     BOOL canEdit = [ObjectUtil window:self.teamListManager.myTeamInfo];
     //: BOOL isOwner = self.teamListManager.myTeamInfo.type == NIMTeamMemberTypeOwner;
     BOOL isOwner = self.teamListManager.myTeamInfo.type == NIMTeamMemberTypeOwner;
     //: BOOL isManager = self.teamListManager.myTeamInfo.type == NIMTeamMemberTypeManager;
     BOOL isManager = self.teamListManager.myTeamInfo.type == NIMTeamMemberTypeManager;
 
-    //: FFFTeamCardRowItem *teamShareCart = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamShareCart = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamShareCart = [[ShowKey alloc] init];
-    //: teamShareCart.title = [FFFLanguageManager getTextWithKey:@"send_group_card"];
+    //: teamShareCart.title = [WatchLanguageManager getTextWithKey:@"send_group_card"];
     teamShareCart.title = [PaintedNaturalLanguageTo exhibit:[FrameData k_barId]];
     //: teamShareCart.subTitle = self.teamListManager.team.teamName;
     teamShareCart.subTitle = self.teamListManager.team.teamName;
@@ -782,9 +782,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: teamShareCart.img = [UIImage imageNamed:@"ic_card_share"];
     teamShareCart.img = [UIImage imageNamed:[FrameData app_representativeValue]];
 
-    //: FFFTeamCardRowItem *teamMembers = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamMembers = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamMembers = [[ShowKey alloc] init];
-    //: teamMembers.title = [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
+    //: teamMembers.title = [WatchLanguageManager getTextWithKey:@"group_info_activity_team_member"];
     teamMembers.title = [PaintedNaturalLanguageTo exhibit:[FrameData k_originIdent]];
     //: teamMembers.subTitle = self.teamListManager.team.teamName;
     teamMembers.subTitle = self.teamListManager.team.teamName;
@@ -799,9 +799,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: teamMembers.img = [UIImage imageNamed:@"ic_group_members"];
     teamMembers.img = [UIImage imageNamed:[FrameData dreamCloudMatteIdent]];
 
-    //: FFFTeamCardRowItem *teamAnnoucement = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamAnnoucement = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamAnnoucement = [[ShowKey alloc] init];
-    //: teamAnnoucement.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_group_toast"];
+    //: teamAnnoucement.title = [WatchLanguageManager getTextWithKey:@"activity_group_info_group_toast"];
     teamAnnoucement.title = [PaintedNaturalLanguageTo exhibit:[FrameData noti_valueUrl]];
     //: teamAnnoucement.subTitle = self.teamListManager.team.teamName;
     teamAnnoucement.subTitle = self.teamListManager.team.teamName;
@@ -815,9 +815,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: teamAnnoucement.img = [UIImage imageNamed:@"ic_announcement"];
     teamAnnoucement.img = [UIImage imageNamed:[FrameData dreamElsewhereFormat]];
 
-    //: FFFTeamCardRowItem *teamName = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamName = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamName = [[ShowKey alloc] init];
-    //: teamName.title = [FFFLanguageManager getTextWithKey:@"Group_name"];
+    //: teamName.title = [WatchLanguageManager getTextWithKey:@"Group_name"];
     teamName.title = [PaintedNaturalLanguageTo exhibit:[FrameData userMonthFormat]];
     //: teamName.subTitle = self.teamListManager.team.teamName;
     teamName.subTitle = self.teamListManager.team.teamName;
@@ -833,9 +833,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     teamName.img = [UIImage imageNamed:[FrameData userMinName]];
 
 
-    //: FFFTeamCardRowItem *teamNick = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamNick = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamNick = [[ShowKey alloc] init];
-    //: teamNick.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_group_nick"];
+    //: teamNick.title = [WatchLanguageManager getTextWithKey:@"activity_group_info_group_nick"];
     teamNick.title = [PaintedNaturalLanguageTo exhibit:[FrameData k_clusterStr]];
     //: teamNick.subTitle = self.teamListManager.myTeamInfo.nickname;
     teamNick.subTitle = self.teamListManager.myTeamInfo.nickname;
@@ -848,11 +848,11 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: teamNick.img = [UIImage imageNamed:@"ic_group_nick"];
     teamNick.img = [UIImage imageNamed:[FrameData mainValueUrl]];
 
-    //: FFFTeamCardRowItem *teamIntro = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamIntro = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamIntro = [[ShowKey alloc] init];
-    //: teamIntro.title = [FFFLanguageManager getTextWithKey:@"team_info_set_activity_group_tip"];
+    //: teamIntro.title = [WatchLanguageManager getTextWithKey:@"team_info_set_activity_group_tip"];
     teamIntro.title = [PaintedNaturalLanguageTo exhibit:[FrameData show_patrolPath]];
-    //: teamIntro.subTitle = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [FFFLanguageManager getTextWithKey:@"team_info_set_activity_default_group_tip"] : @"");
+    //: teamIntro.subTitle = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [WatchLanguageManager getTextWithKey:@"team_info_set_activity_default_group_tip"] : @"");
     teamIntro.subTitle = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : (canEdit ? [PaintedNaturalLanguageTo exhibit:[FrameData app_arrestImageMessage]] : @"");
     //: teamIntro.action = @selector(updateTeamIntro);
     teamIntro.action = @selector(teamCover);
@@ -875,9 +875,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 
     //: BOOL inAllMuteMode = self.teamListManager.team.inAllMuteMode;
     BOOL inAllMuteMode = self.teamListManager.team.inAllMuteMode;
-    //: FFFTeamCardRowItem *teamMute = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamMute = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamMute = [[ShowKey alloc] init];
-    //: teamMute.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_group_mute"];
+    //: teamMute.title = [WatchLanguageManager getTextWithKey:@"activity_group_info_group_mute"];
     teamMute.title = [PaintedNaturalLanguageTo exhibit:[FrameData notiItchName]];
     //: teamMute.switchOn = inAllMuteMode;
     teamMute.switchOn = inAllMuteMode;
@@ -886,12 +886,12 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     teamMute.rowHeight = 50.f;
     //: teamMute.type = TeamCardRowItemTypeSwitch;
     teamMute.type = TeamCardRowItemTypeSwitch;
-    //: teamMute.optionItems = [FFFTeamHelper teamMuteItemsWithSeleced:inAllMuteMode];
+    //: teamMute.optionItems = [WatchTeamHelper teamMuteItemsWithSeleced:inAllMuteMode];
     teamMute.optionItems = [MakeBubble max:inAllMuteMode];
     //: teamMute.actionDisabled = !canEdit;
     teamMute.actionDisabled = !canEdit;
-    //: teamMute.selectedBlock = ^(id<FFFKitSelectCardData> item) {
-    teamMute.selectedBlock = ^(id<FFFKitSelectCardData> item) {
+    //: teamMute.selectedBlock = ^(id<WatchKitSelectCardData> item) {
+    teamMute.selectedBlock = ^(id<WatchKitSelectCardData> item) {
         //: [weakSelf didUpdateTeamMute:[item.value integerValue]];
         [weakSelf bottom:[item.value integerValue]];
     //: };
@@ -901,9 +901,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: teamMute.img = [UIImage imageNamed:@"ic_group_all"];
     teamMute.img = [UIImage imageNamed:[FrameData dreamEnvelopeMessage]];
 
-    //: FFFTeamCardRowItem *teamMuteList = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamMuteList = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamMuteList = [[ShowKey alloc] init];
-    //: teamMuteList.title = [FFFLanguageManager getTextWithKey:@"group_mute_member_list_activity_title"];
+    //: teamMuteList.title = [WatchLanguageManager getTextWithKey:@"group_mute_member_list_activity_title"];
     teamMuteList.title = [PaintedNaturalLanguageTo exhibit:[FrameData mainPorterStr]];
     //: teamMuteList.rowHeight = 50.f;
     teamMuteList.rowHeight = 50.f;
@@ -914,20 +914,20 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: teamMuteList.img = [UIImage imageNamed:@"ic_card_black"];
     teamMuteList.img = [UIImage imageNamed:[FrameData app_towardsData]];
 
-    //: FFFTeamCardRowItem *teamNotify = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamNotify = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamNotify = [[ShowKey alloc] init];
-    //: teamNotify.title = [FFFLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
+    //: teamNotify.title = [WatchLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
     teamNotify.title = [PaintedNaturalLanguageTo exhibit:[FrameData noti_distinctiveName]];//@"消息提醒".nim_localized;
-    //: teamNotify.subTitle = [FFFTeamHelper notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
+    //: teamNotify.subTitle = [WatchTeamHelper notifyStateText:self.teamListManager.team.notifyStateForNewMsg];
     teamNotify.subTitle = [MakeBubble findFrame:self.teamListManager.team.notifyStateForNewMsg];
     //: teamNotify.rowHeight = 50.f;
     teamNotify.rowHeight = 50.f;
     //: teamNotify.type = TeamCardRowItemTypeSelected;
     teamNotify.type = TeamCardRowItemTypeSelected;
-    //: teamNotify.optionItems = [FFFTeamHelper notifyStateItemsWithSeleced:self.teamListManager.team.notifyStateForNewMsg];
+    //: teamNotify.optionItems = [WatchTeamHelper notifyStateItemsWithSeleced:self.teamListManager.team.notifyStateForNewMsg];
     teamNotify.optionItems = [MakeBubble tingViewSeleced:self.teamListManager.team.notifyStateForNewMsg];
-    //: teamNotify.selectedBlock = ^(id<FFFKitSelectCardData> item) {
-    teamNotify.selectedBlock = ^(id<FFFKitSelectCardData> item) {
+    //: teamNotify.selectedBlock = ^(id<WatchKitSelectCardData> item) {
+    teamNotify.selectedBlock = ^(id<WatchKitSelectCardData> item) {
         //: [weakSelf didUpdateNotifiyState:[item.value integerValue]];
         [weakSelf can:[item.value integerValue]];
     //: };
@@ -936,11 +936,11 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     teamNotify.img = [UIImage imageNamed:[FrameData user_shouldViewKey]];
 
 
-    //: FFFTeamCardRowItem *itemAuth = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *itemAuth = [[WatchTeamCardRowItem alloc] init];
     ShowKey *itemAuth = [[ShowKey alloc] init];
-    //: itemAuth.title = [FFFLanguageManager getTextWithKey:@"authentication"];
+    //: itemAuth.title = [WatchLanguageManager getTextWithKey:@"authentication"];
     itemAuth.title = [PaintedNaturalLanguageTo exhibit:[FrameData mainSeizeLanceText]];
-    //: itemAuth.subTitle = [FFFTeamHelper jonModeText:self.teamListManager.team.joinMode];
+    //: itemAuth.subTitle = [WatchTeamHelper jonModeText:self.teamListManager.team.joinMode];
     itemAuth.subTitle = [MakeBubble title:self.teamListManager.team.joinMode];
     //: itemAuth.actionDisabled = !canEdit;
     itemAuth.actionDisabled = !canEdit;
@@ -948,10 +948,10 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     itemAuth.rowHeight = 50.f;
     //: itemAuth.type = TeamCardRowItemTypeSelected;
     itemAuth.type = TeamCardRowItemTypeSelected;
-    //: itemAuth.optionItems = [FFFTeamHelper joinModeItemsWithSeleced:self.teamListManager.team.joinMode];
+    //: itemAuth.optionItems = [WatchTeamHelper joinModeItemsWithSeleced:self.teamListManager.team.joinMode];
     itemAuth.optionItems = [MakeBubble bottom:self.teamListManager.team.joinMode];
-    //: itemAuth.selectedBlock = ^(id<FFFKitSelectCardData> item) {
-    itemAuth.selectedBlock = ^(id<FFFKitSelectCardData> item) {
+    //: itemAuth.selectedBlock = ^(id<WatchKitSelectCardData> item) {
+    itemAuth.selectedBlock = ^(id<WatchKitSelectCardData> item) {
         //: [weakSelf didupdateTeamJoinMode:[item.value integerValue]];
         [weakSelf uniteSend:[item.value integerValue]];
     //: };
@@ -959,11 +959,11 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: itemAuth.img = [UIImage imageNamed:@"ic_identity_authentication"];
     itemAuth.img = [UIImage imageNamed:[FrameData main_economistStr]];
 
-    //: FFFTeamCardRowItem *itemInvite = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *itemInvite = [[WatchTeamCardRowItem alloc] init];
     ShowKey *itemInvite = [[ShowKey alloc] init];
-    //: itemInvite.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_invite_permission"];
+    //: itemInvite.title = [WatchLanguageManager getTextWithKey:@"activity_group_info_invite_permission"];
     itemInvite.title = [PaintedNaturalLanguageTo exhibit:[FrameData user_sexyUrl]];
-    //: itemInvite.subTitle = [FFFTeamHelper InviteModeText:self.teamListManager.team.inviteMode];
+    //: itemInvite.subTitle = [WatchTeamHelper InviteModeText:self.teamListManager.team.inviteMode];
     itemInvite.subTitle = [MakeBubble with:self.teamListManager.team.inviteMode];
     //: itemInvite.actionDisabled = !canEdit;
     itemInvite.actionDisabled = !canEdit;
@@ -971,10 +971,10 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     itemInvite.rowHeight = 50.f;
     //: itemInvite.type = TeamCardRowItemTypeSelected;
     itemInvite.type = TeamCardRowItemTypeSelected;
-    //: itemInvite.optionItems = [FFFTeamHelper InviteModeItemsWithSeleced:self.teamListManager.team.inviteMode];
+    //: itemInvite.optionItems = [WatchTeamHelper InviteModeItemsWithSeleced:self.teamListManager.team.inviteMode];
     itemInvite.optionItems = [MakeBubble pastSeleced:self.teamListManager.team.inviteMode];
-    //: itemInvite.selectedBlock = ^(id<FFFKitSelectCardData> item) {
-    itemInvite.selectedBlock = ^(id<FFFKitSelectCardData> item) {
+    //: itemInvite.selectedBlock = ^(id<WatchKitSelectCardData> item) {
+    itemInvite.selectedBlock = ^(id<WatchKitSelectCardData> item) {
         //: [weakSelf didUpdateTeamInviteMode:[item.value integerValue]];
         [weakSelf paletteMode:[item.value integerValue]];
     //: };
@@ -982,11 +982,11 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: itemInvite.img = [UIImage imageNamed:@"ic_invite"];
     itemInvite.img = [UIImage imageNamed:[FrameData app_onMessage]];
 
-    //: FFFTeamCardRowItem *itemUpdateInfo = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *itemUpdateInfo = [[WatchTeamCardRowItem alloc] init];
     ShowKey *itemUpdateInfo = [[ShowKey alloc] init];
-    //: itemUpdateInfo.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_group_modify_permission"];
+    //: itemUpdateInfo.title = [WatchLanguageManager getTextWithKey:@"activity_group_info_group_modify_permission"];
     itemUpdateInfo.title = [PaintedNaturalLanguageTo exhibit:[FrameData dreamPorterValue]];
-    //: itemUpdateInfo.subTitle = [FFFTeamHelper updateInfoModeText:self.teamListManager.team.updateInfoMode];
+    //: itemUpdateInfo.subTitle = [WatchTeamHelper updateInfoModeText:self.teamListManager.team.updateInfoMode];
     itemUpdateInfo.subTitle = [MakeBubble message:self.teamListManager.team.updateInfoMode];
     //: itemUpdateInfo.actionDisabled = !canEdit;
     itemUpdateInfo.actionDisabled = !canEdit;
@@ -994,10 +994,10 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     itemUpdateInfo.rowHeight = 50.f;
     //: itemUpdateInfo.type = TeamCardRowItemTypeSelected;
     itemUpdateInfo.type = TeamCardRowItemTypeSelected;
-    //: itemUpdateInfo.optionItems = [FFFTeamHelper updateInfoModeItemsWithSeleced:self.teamListManager.team.updateInfoMode];
+    //: itemUpdateInfo.optionItems = [WatchTeamHelper updateInfoModeItemsWithSeleced:self.teamListManager.team.updateInfoMode];
     itemUpdateInfo.optionItems = [MakeBubble signalSeleced:self.teamListManager.team.updateInfoMode];
-    //: itemUpdateInfo.selectedBlock = ^(id<FFFKitSelectCardData> item) {
-    itemUpdateInfo.selectedBlock = ^(id<FFFKitSelectCardData> item) {
+    //: itemUpdateInfo.selectedBlock = ^(id<WatchKitSelectCardData> item) {
+    itemUpdateInfo.selectedBlock = ^(id<WatchKitSelectCardData> item) {
         //: [weakSelf didUpdateTeamInfoMode:[item.value integerValue]];
         [weakSelf cell:[item.value integerValue]];
     //: };
@@ -1005,11 +1005,11 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: itemUpdateInfo.img = [UIImage imageNamed:@"ic_modify"];
     itemUpdateInfo.img = [UIImage imageNamed:[FrameData notiDoingStr]];
 
-    //: FFFTeamCardRowItem *itemBeInvite = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *itemBeInvite = [[WatchTeamCardRowItem alloc] init];
     ShowKey *itemBeInvite = [[ShowKey alloc] init];
-    //: itemBeInvite.title = [FFFLanguageManager getTextWithKey:@"activity_group_info_invite_verify"];
+    //: itemBeInvite.title = [WatchLanguageManager getTextWithKey:@"activity_group_info_invite_verify"];
     itemBeInvite.title = [PaintedNaturalLanguageTo exhibit:[FrameData main_scaleStr]];
-    //: itemBeInvite.subTitle = [FFFTeamHelper beInviteModeText:self.teamListManager.team.beInviteMode];
+    //: itemBeInvite.subTitle = [WatchTeamHelper beInviteModeText:self.teamListManager.team.beInviteMode];
     itemBeInvite.subTitle = [MakeBubble property:self.teamListManager.team.beInviteMode];
     //: itemBeInvite.actionDisabled = !canEdit;
     itemBeInvite.actionDisabled = !canEdit;
@@ -1017,10 +1017,10 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     itemBeInvite.rowHeight = 50.f;
     //: itemBeInvite.type = TeamCardRowItemTypeSelected;
     itemBeInvite.type = TeamCardRowItemTypeSelected;
-    //: itemBeInvite.optionItems = [FFFTeamHelper beInviteModeItemsWithSeleced:self.teamListManager.team.beInviteMode];
+    //: itemBeInvite.optionItems = [WatchTeamHelper beInviteModeItemsWithSeleced:self.teamListManager.team.beInviteMode];
     itemBeInvite.optionItems = [MakeBubble name:self.teamListManager.team.beInviteMode];
-    //: itemBeInvite.selectedBlock = ^(id<FFFKitSelectCardData> item) {
-    itemBeInvite.selectedBlock = ^(id<FFFKitSelectCardData> item) {
+    //: itemBeInvite.selectedBlock = ^(id<WatchKitSelectCardData> item) {
+    itemBeInvite.selectedBlock = ^(id<WatchKitSelectCardData> item) {
         //: [weakSelf didUpdateTeamBeInviteMode:[item.value integerValue]];
         [weakSelf modifyWithoutMode:[item.value integerValue]];
     //: };
@@ -1028,9 +1028,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: itemBeInvite.img = [UIImage imageNamed:@"ic_invitee_verification"];
     itemBeInvite.img = [UIImage imageNamed:[FrameData dream_towardsMsg]];
 
-    //: FFFTeamCardRowItem *itemTop = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *itemTop = [[WatchTeamCardRowItem alloc] init];
     ShowKey *itemTop = [[ShowKey alloc] init];
-    //: itemTop.title = [FFFLanguageManager getTextWithKey:@"Chat_settop"];
+    //: itemTop.title = [WatchLanguageManager getTextWithKey:@"Chat_settop"];
     itemTop.title = [PaintedNaturalLanguageTo exhibit:[FrameData app_lanceUrl]];
     //: itemTop.switchOn = self.option.isTop;
     itemTop.switchOn = self.option.isTop;
@@ -1050,9 +1050,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 //        itemQuit.type   = TeamCardRowItemTypeRedButton;
 //    itemQuit.img = [UIImage imageNamed:@"ic_announcement"];
 
-        //: FFFTeamCardRowItem *itemDismiss = [[FFFTeamCardRowItem alloc] init];
+        //: WatchTeamCardRowItem *itemDismiss = [[WatchTeamCardRowItem alloc] init];
         ShowKey *itemDismiss = [[ShowKey alloc] init];
-        //: itemDismiss.title = [FFFLanguageManager getTextWithKey:@"group_info_activity_jiesan"];
+        //: itemDismiss.title = [WatchLanguageManager getTextWithKey:@"group_info_activity_jiesan"];
         itemDismiss.title = [PaintedNaturalLanguageTo exhibit:[FrameData showLagMsg]];
         //: itemDismiss.action = @selector(dismissTeam);
         itemDismiss.action = @selector(pastTitle);
@@ -1063,9 +1063,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: itemDismiss.img = [UIImage imageNamed:@"ic_announcement"];
     itemDismiss.img = [UIImage imageNamed:[FrameData dreamElsewhereFormat]];
 
-    //: FFFTeamCardRowItem *teamChange = [[FFFTeamCardRowItem alloc] init];
+    //: WatchTeamCardRowItem *teamChange = [[WatchTeamCardRowItem alloc] init];
     ShowKey *teamChange = [[ShowKey alloc] init];
-    //: teamChange.title = [FFFLanguageManager getTextWithKey:@"Transfer_group_ownership"];
+    //: teamChange.title = [WatchLanguageManager getTextWithKey:@"Transfer_group_ownership"];
     teamChange.title = [PaintedNaturalLanguageTo exhibit:[FrameData show_quietMsg]];
     //: teamChange.rowHeight = 50.f;
     teamChange.rowHeight = 50.f;
@@ -1162,7 +1162,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 - (void)pastApp{
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: UIAlertAction *action0 = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"group_info_activity_give_group"]//@"转让群".nim_localized
+    //: UIAlertAction *action0 = [UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"group_info_activity_give_group"]//@"转让群".nim_localized
     UIAlertAction *action0 = [UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[FrameData mTextValue]]//@"转让群".nim_localized
                                                       //: style:UIAlertActionStyleDefault
                                                       style:UIAlertActionStyleDefault
@@ -1173,7 +1173,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: }];
     }];
 
-    //: UIAlertAction *action1 = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"Transfer_group_exit"] //@"转让群并退出".nim_localized
+    //: UIAlertAction *action1 = [UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"Transfer_group_exit"] //@"转让群并退出".nim_localized
     UIAlertAction *action1 = [UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[FrameData kOriginPictureTextKey]] //@"转让群并退出".nim_localized
                                                       //: style:UIAlertActionStyleDefault
                                                       style:UIAlertActionStyleDefault
@@ -1184,7 +1184,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: }];
     }];
 
-    //: UIAlertController *alert = [self makeAlertSheetWithTitle:[FFFLanguageManager getTextWithKey:@"please_choose"]//@"请操作".nim_localized
+    //: UIAlertController *alert = [self makeAlertSheetWithTitle:[WatchLanguageManager getTextWithKey:@"please_choose"]//@"请操作".nim_localized
     UIAlertController *alert = [self headerDoSheetAlertStreetwisePath:[PaintedNaturalLanguageTo exhibit:[FrameData mainImageMsg]]//@"请操作".nim_localized
                                                      //: actions:@[action0, action1]];
                                                      systemComplete:@[action0, action1]];
@@ -1280,11 +1280,11 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 //: - (void)updateTeamIntro
 - (void)teamCover
 {
-    //: FFFTeamIntroduceViewController *vc = [[FFFTeamIntroduceViewController alloc] init];
+    //: WatchTeamIntroduceViewController *vc = [[WatchTeamIntroduceViewController alloc] init];
     BubbleTableViewController *vc = [[BubbleTableViewController alloc] init];
     //: vc.defaultContent = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : @"";
     vc.defaultContent = self.teamListManager.team.intro.length ? self.teamListManager.team.intro : @"";
-    //: vc.canEdit = [FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
+    //: vc.canEdit = [WatchKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
     vc.canEdit = [ObjectUtil window:self.teamListManager.myTeamInfo];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -1309,7 +1309,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 - (void)notAnnouncement{
     //: NIMTeamAnnouncementListOption *option = [[NIMTeamAnnouncementListOption alloc] init];
     TitleOption *option = [[TitleOption alloc] init];
-    //: option.canCreateAnnouncement = [FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
+    //: option.canCreateAnnouncement = [WatchKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
     option.canCreateAnnouncement = [ObjectUtil window:self.teamListManager.myTeamInfo];
     //: option.announcement = self.teamListManager.team.announcement;
     option.announcement = self.teamListManager.team.announcement;
@@ -1318,7 +1318,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: option.team = self.teamListManager.team;
     option.team = self.teamListManager.team;
 
-    //: FFFTeamAnnouncementListViewController *vc = [[FFFTeamAnnouncementListViewController alloc] initWithOption:option];
+    //: WatchTeamAnnouncementListViewController *vc = [[WatchTeamAnnouncementListViewController alloc] initWithOption:option];
     ParvenuValueImageViewController *vc = [[ParvenuValueImageViewController alloc] initWith:option];
     //: vc.delegate = self;
     vc.delegate = self;
@@ -1330,9 +1330,9 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 - (void)textTeam {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:[FFFLanguageManager getTextWithKey:@"queren_quit_group"] preferredStyle:UIAlertControllerStyleAlert];
+    //: UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:[WatchLanguageManager getTextWithKey:@"queren_quit_group"] preferredStyle:UIAlertControllerStyleAlert];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:[PaintedNaturalLanguageTo exhibit:[FrameData main_pipePath]] preferredStyle:UIAlertControllerStyleAlert];
-    //: UIAlertAction *sure = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"queren"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: UIAlertAction *sure = [UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"queren"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     UIAlertAction *sure = [UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[FrameData noti_minGrandpaIdent]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: [weakSelf didQuitTeam];
         [weakSelf cellCover];
@@ -1351,7 +1351,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 
     //: [self.view addSubview:self.groupAlartView];
     [self.view addSubview:self.groupAlartView];
-    //: [self.groupAlartView reloadWithTitlename:[FFFLanguageManager getTextWithKey:@"Confirm_dismiss_group_chat"]];
+    //: [self.groupAlartView reloadWithTitlename:[WatchLanguageManager getTextWithKey:@"Confirm_dismiss_group_chat"]];
     [self.groupAlartView daySize:[PaintedNaturalLanguageTo exhibit:[FrameData appCrushPath]]];
     //: [self.groupAlartView animationShow];
     [self.groupAlartView reply];
@@ -1403,7 +1403,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 //: - (void)enterMuteList
 - (void)userEdge
 {
-    //: FFFTeamMuteMemberListViewController *vc = [[FFFTeamMuteMemberListViewController alloc] init];
+    //: WatchTeamMuteMemberListViewController *vc = [[WatchTeamMuteMemberListViewController alloc] init];
     PacketViewController *vc = [[PacketViewController alloc] init];
     //: vc.teamListManager = self.teamListManager;
     vc.teamListManager = self.teamListManager;
@@ -1413,7 +1413,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 
 //: #pragma mark - NIMTeamSwitchProtocol
 #pragma mark - FollowProtocol
-//: - (void)cell:(FFFTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on{
+//: - (void)cell:(WatchTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on{
 - (void)find:(TableViewCell *)cell colorWhen:(BOOL)on{
     //: if (cell.identify == NIMTeamCardSwithCellTypeTop) {
     if (cell.identify == NIMTeamCardSwithCellTypeTop) {
@@ -1439,11 +1439,11 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
             NSString *msg = nil;
             //: if (!error) {
             if (!error) {
-                //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+                //: msg = [WatchLanguageManager getTextWithKey:@"modify_activity_modify_success"];
                 msg = [PaintedNaturalLanguageTo exhibit:[FrameData noti_cornerHeavilyMsg]];
             //: }else{
             }else{
-                //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+                //: msg = [WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
                 msg = [PaintedNaturalLanguageTo exhibit:[FrameData kClubMsg]];
             }
             //: [self showToastMsg:msg];
@@ -1472,7 +1472,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     }];
 }
 
-//: #pragma mark - FFFTeamMemberListCellActionDelegate
+//: #pragma mark - WatchTeamMemberListCellActionDelegate
 #pragma mark - OldQuery
 //: - (void)didSelectAddOpeartor{
 - (void)successStop{
@@ -1489,7 +1489,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     config.filterIds = users;
     //: config.needMutiSelected = YES;
     config.needMutiSelected = YES;
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
     NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
     //: vc.delegate = self;
     vc.delegate = self;
@@ -1546,7 +1546,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     config.teamId = self.teamListManager.team.teamId;
     //: config.filterIds = @[currentUserID];
     config.filterIds = @[currentUserID];
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
     NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
     //: vc.finshBlock = finishBlock;
     vc.finshBlock = finishBlock;
@@ -1559,7 +1559,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
 {
     //: [self.view addSubview:self.groupAlartView];
     [self.view addSubview:self.groupAlartView];
-    //: [self.groupAlartView reloadWithTitlename:[FFFLanguageManager getTextWithKey:@"clear_history"]];
+    //: [self.groupAlartView reloadWithTitlename:[WatchLanguageManager getTextWithKey:@"clear_history"]];
     [self.groupAlartView daySize:[PaintedNaturalLanguageTo exhibit:[FrameData dreamValueMessage]]];
     //: [self.groupAlartView animationShow];
     [self.groupAlartView reply];
@@ -1776,7 +1776,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
         cameraicon.hidden = YES;
         //: [cameraicon addTarget:self action:@selector(onTouchAvatar) forControlEvents:(UIControlEventTouchUpInside)];
         [cameraicon addTarget:self action:@selector(handleColorEmpty) forControlEvents:(UIControlEventTouchUpInside)];
-        //: if([FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo]){
+        //: if([WatchKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo]){
         if([ObjectUtil window:self.teamListManager.myTeamInfo]){
             //: cameraicon.hidden = NO;
             cameraicon.hidden = NO;
@@ -1792,7 +1792,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
         [infoView addSubview:editBtn];
         //: editBtn.hidden = YES;
         editBtn.hidden = YES;
-        //: if([FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo]){
+        //: if([WatchKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo]){
         if([ObjectUtil window:self.teamListManager.myTeamInfo]){
             //: editBtn.hidden = NO;
             editBtn.hidden = NO;
@@ -1827,7 +1827,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
         _introduce.textColor = [UIColor min:[FrameData dream_onAddPath]];
         //: _introduce.textAlignment = NSTextAlignmentCenter;
         _introduce.textAlignment = NSTextAlignmentCenter;
-        //: _introduce.text = self.teamListManager.team.intro?:[FFFLanguageManager getTextWithKey:@"team_info_set_activity_group_tip"];
+        //: _introduce.text = self.teamListManager.team.intro?:[WatchLanguageManager getTextWithKey:@"team_info_set_activity_group_tip"];
         _introduce.text = self.teamListManager.team.intro?:[PaintedNaturalLanguageTo exhibit:[FrameData show_patrolPath]];
         //: _introduce.numberOfLines = 0;
         _introduce.numberOfLines = 0;
@@ -1864,7 +1864,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
         btnClear.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [btnClear setTitleColor:[UIColor colorWithHexString:@"FF483D"] forState:UIControlStateNormal];
         [btnClear setTitleColor:[UIColor min:[FrameData noti_accentValue]] forState:UIControlStateNormal];
-        //: [btnClear setTitle:[FFFLanguageManager getTextWithKey:@"activity_user_profile_clear_chat"] forState:UIControlStateNormal];
+        //: [btnClear setTitle:[WatchLanguageManager getTextWithKey:@"activity_user_profile_clear_chat"] forState:UIControlStateNormal];
         [btnClear setTitle:[PaintedNaturalLanguageTo exhibit:[FrameData mainNameFormat]] forState:UIControlStateNormal];
 //        [btnClear setImage:[UIImage imageNamed:@"ic_clear"] forState:UIControlStateNormal];
         //: [btnClear addTarget:self action:@selector(handlerClear) forControlEvents:UIControlEventTouchUpInside];
@@ -1897,14 +1897,14 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
         //: if(isOwner){
         if(isOwner){
 //            [btnDet setImage:[UIImage imageNamed:@"ic_release"] forState:UIControlStateNormal];
-            //: [btnDet setTitle:[FFFLanguageManager getTextWithKey:@"group_info_activity_jiesan"] forState:UIControlStateNormal];
+            //: [btnDet setTitle:[WatchLanguageManager getTextWithKey:@"group_info_activity_jiesan"] forState:UIControlStateNormal];
             [btnDet setTitle:[PaintedNaturalLanguageTo exhibit:[FrameData showLagMsg]] forState:UIControlStateNormal];
             //: [btnDet addTarget:self action:@selector(dismissTeam) forControlEvents:UIControlEventTouchUpInside];
             [btnDet addTarget:self action:@selector(pastTitle) forControlEvents:UIControlEventTouchUpInside];
         //: }else{
         }else{
 //            [btnDet setImage:[UIImage imageNamed:@"ic_exit"] forState:UIControlStateNormal];
-            //: [btnDet setTitle:[FFFLanguageManager getTextWithKey:@"group_info_activity_exit"] forState:UIControlStateNormal];
+            //: [btnDet setTitle:[WatchLanguageManager getTextWithKey:@"group_info_activity_exit"] forState:UIControlStateNormal];
             [btnDet setTitle:[PaintedNaturalLanguageTo exhibit:[FrameData kShowPactMessage]] forState:UIControlStateNormal];
             //: [btnDet addTarget:self action:@selector(quitTeam) forControlEvents:UIControlEventTouchUpInside];
             [btnDet addTarget:self action:@selector(textTeam) forControlEvents:UIControlEventTouchUpInside];

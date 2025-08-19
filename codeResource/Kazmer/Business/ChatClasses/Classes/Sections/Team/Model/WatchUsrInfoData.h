@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFUsrInfoData.h
+//  WatchUsrInfoData.h
 //  NIM
 //
 //  Created by Xuhui on 15/3/19.
@@ -9,16 +9,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "WatchContactDefines.h"
+#import "WatchContactDefines.h"
 
-//: @class FFFKitInfo;
+//: @class WatchKitInfo;
 @class TingMessage;
 
 //: @interface RiverlaUsrInfo : NSObject <NIMGroupMemberProtocol>
 @interface FrameOld : NSObject <VarnaSessionProtocolUser>
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) WatchKitInfo *info;
 @property (nonatomic,strong) TingMessage *info;
 
 //: - (BOOL)isFriend;

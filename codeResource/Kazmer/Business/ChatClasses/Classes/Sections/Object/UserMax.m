@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitAudioCenter.h"
+//: #import "WatchKitAudioCenter.h"
 #import "UserMax.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
-//: @interface FFFKitAudioCenter()<NIMMediaManagerDelegate>
+//: @interface WatchKitAudioCenter()<NIMMediaManagerDelegate>
 @interface UserMax()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,assign) NSInteger retryCount;
@@ -23,19 +23,19 @@
 //: @end
 @end
 
-//: @implementation FFFKitAudioCenter
+//: @implementation WatchKitAudioCenter
 @implementation UserMax
 
 //: + (instancetype)instance
 + (instancetype)messageEmpty
 {
-    //: static FFFKitAudioCenter *instance;
+    //: static WatchKitAudioCenter *instance;
     static UserMax *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitAudioCenter alloc] init];
+        //: instance = [[WatchKitAudioCenter alloc] init];
         instance = [[UserMax alloc] init];
     //: });
     });

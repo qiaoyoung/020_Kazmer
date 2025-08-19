@@ -36,7 +36,7 @@
     return [NSString stringWithUTF8String:(char *)[self SimplyDataToCache:data]];
 }  
 
-//: #ffffff
+//: #fffWatch
 - (NSString *)m_pointName {
     /* static */ NSString *m_pointName = nil;
     if (!m_pointName) {
@@ -199,7 +199,7 @@
 
     //: _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
     _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
-    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
     _viewBg.backgroundColor = [UIColor min:[[SimplyData sharedInstance] m_pointName]];
     //: _viewBg.layer.masksToBounds = YES;
     _viewBg.layer.masksToBounds = YES;
@@ -299,7 +299,7 @@
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor min:[[SimplyData sharedInstance] dreamMeatFormat]];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_camera"];
+        //: lab.text = [WatchLanguageManager getTextWithKey:@"message_send_camera"];
         lab.text = [PaintedNaturalLanguageTo exhibit:[[SimplyData sharedInstance] dreamRiotFormat]];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -347,7 +347,7 @@
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor min:[[SimplyData sharedInstance] dreamMeatFormat]];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: lab.text = [WatchLanguageManager getTextWithKey:@"message_send_album"];
         lab.text = [PaintedNaturalLanguageTo exhibit:[[SimplyData sharedInstance] appCenterMayIdent]];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -380,9 +380,9 @@
         _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_cancelBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_cancelBtn setTitleColor:[UIColor min:[[SimplyData sharedInstance] app_attendanceName]] forState:UIControlStateNormal];
-        //: [_cancelBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_cancelBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_cancelBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[SimplyData sharedInstance] noti_infoStr]] forState:UIControlStateNormal];
-        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
         _cancelBtn.backgroundColor = [UIColor min:[[SimplyData sharedInstance] m_pointName]];
         //: _cancelBtn.layer.cornerRadius = 22;
         _cancelBtn.layer.cornerRadius = 22;

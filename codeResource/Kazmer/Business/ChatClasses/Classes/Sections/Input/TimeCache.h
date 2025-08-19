@@ -27,7 +27,7 @@
 //: @end
 @end
 
-//: @interface FFFInputAtCache : NSObject
+//: @interface WatchInputAtCache : NSObject
 @interface TimeCache : NSObject
 
 //: - (NSArray *)allAtUid:(NSString *)sendText;

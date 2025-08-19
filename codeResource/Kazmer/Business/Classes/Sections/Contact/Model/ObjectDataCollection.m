@@ -65,7 +65,7 @@
     NSMutableArray *contacts = [NSMutableArray array];
     //: for (NIMUser *user in [NIMSDK sharedSDK].userManager.myFriends) {
     for (NIMUser *user in [NIMSDK sharedSDK].userManager.myFriends) {
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+        //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
         TingMessage *info = [[ButtonKit sheerOption] past:user.userId skinColour_strong:nil];
         //: NTESContactDataMember *contact = [[NTESContactDataMember alloc] init];
         TimeMember *contact = [[TimeMember alloc] init];

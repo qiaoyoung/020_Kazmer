@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WatchBaseSessionContentConfig.h"
+#import "WatchBaseSessionContentConfig.h"
 
 //: @interface NTESChatroomTextContentConfig : NSObject<CCCSessionContentConfig>
 @interface NoticeBarCover : NSObject<TableAccumulationReplacement>

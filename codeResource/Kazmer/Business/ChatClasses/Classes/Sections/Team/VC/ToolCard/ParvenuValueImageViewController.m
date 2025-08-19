@@ -314,20 +314,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamAnnouncementListViewController.h"
+//: #import "WatchTeamAnnouncementListViewController.h"
 #import "ParvenuValueImageViewController.h"
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFCreateTeamAnnouncement.h"
+//: #import "WatchUsrInfoData.h"
+#import "WatchUsrInfoData.h"
+//: #import "WatchCreateTeamAnnouncement.h"
 #import "ImmobiliseViewController.h"
-//: #import "FFFTeamAnnouncementListCell.h"
+//: #import "WatchTeamAnnouncementListCell.h"
 #import "ToShortListView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
+//: #import "WatchKitProgressHUD.h"
 #import "AlongEffectView.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 //: #import "LEEAlert.h"
 #import "SetupObject.h"
 //: #import "LEEAlertHelper.h"
@@ -335,7 +335,7 @@
 //: #import "ZMONAlartView.h"
 #import "EdgeView.h"
 
-//: @interface FFFTeamAnnouncementListViewController () <UITableViewDelegate,
+//: @interface WatchTeamAnnouncementListViewController () <UITableViewDelegate,
 @interface ParvenuValueImageViewController () <UITableViewDelegate,
                                                      //: UITableViewDataSource,
                                                      UITableViewDataSource,
@@ -360,7 +360,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamAnnouncementListViewController
+//: @implementation WatchTeamAnnouncementListViewController
 @implementation ParvenuValueImageViewController
 
 //: - (instancetype)initWithOption:(NIMTeamAnnouncementListOption *)option {
@@ -427,7 +427,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_group_info_group_toast"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"activity_group_info_group_toast"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[TransformationData sharedInstance].dreamTransportIdent];//群公告
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -491,7 +491,7 @@
 
 //: - (void)onCreateAnnouncement:(id)sender {
 - (void)mottles:(id)sender {
-    //: FFFCreateTeamAnnouncement *vc = [[FFFCreateTeamAnnouncement alloc] initWithNibName:nil bundle:nil];
+    //: WatchCreateTeamAnnouncement *vc = [[WatchCreateTeamAnnouncement alloc] initWithNibName:nil bundle:nil];
     ImmobiliseViewController *vc = [[ImmobiliseViewController alloc] initWithNibName:nil bundle:nil];
     //: vc.delegate = self;
     vc.delegate = self;
@@ -505,7 +505,7 @@
     //: NSDictionary *announcement = _announcements.lastObject;
     NSDictionary *announcement = _announcements.lastObject;
 
-    //: FFFCreateTeamAnnouncement *vc = [[FFFCreateTeamAnnouncement alloc] initWithNibName:nil bundle:nil];
+    //: WatchCreateTeamAnnouncement *vc = [[WatchCreateTeamAnnouncement alloc] initWithNibName:nil bundle:nil];
     ImmobiliseViewController *vc = [[ImmobiliseViewController alloc] initWithNibName:nil bundle:nil];
     //: vc.delegate = self;
     vc.delegate = self;
@@ -522,7 +522,7 @@
 
     //: [self.view addSubview:self.groupAlartView];
     [self.view addSubview:self.groupAlartView];
-    //: [self.groupAlartView reloadWithTitlename:[FFFLanguageManager getTextWithKey:@"sure_to_clear"]];
+    //: [self.groupAlartView reloadWithTitlename:[WatchLanguageManager getTextWithKey:@"sure_to_clear"]];
     [self.groupAlartView daySize:[PaintedNaturalLanguageTo exhibit:[TransformationData sharedInstance].k_containerSultanScramName]];
     //: [self.groupAlartView animationShow];
     [self.groupAlartView reply];
@@ -586,7 +586,7 @@
 {
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [WatchKitProgressHUD show];
     [AlongEffectView holder];
 //    NSDictionary *announcement = @{@"title": @"",
 //                                   @"content": @"",
@@ -597,11 +597,11 @@
 
     //: [[NIMSDK sharedSDK].teamManager updateTeamAnnouncement:@"" teamId:wself.option.team.teamId completion:^(NSError *error) {
     [[NIMSDK sharedSDK].teamManager updateTeamAnnouncement:@"" teamId:wself.option.team.teamId completion:^(NSError *error) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WatchKitProgressHUD dismiss];
         [AlongEffectView nimDismiss];
         //: if(!error && wself) {
         if(!error && wself) {
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"Clean_success"]];
+            //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"Clean_success"]];
             [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[TransformationData sharedInstance].appSalmonScaleValue]];// @"清理成功"
             //: wself.announcements = nil;
             wself.announcements = nil;
@@ -635,7 +635,7 @@
     //: NSString *content = [announcement objectForKey:@"content"];
     NSString *content = [announcement objectForKey:[TransformationData sharedInstance].dreamImageUntilContent];
 
-    //: return [FFFTeamAnnouncementListCell cellHeight:content];
+    //: return [WatchTeamAnnouncementListCell cellHeight:content];
     return [ToShortListView faculty:content];
 }
 
@@ -643,11 +643,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //: NSDictionary *announcement = _announcements.lastObject;
     NSDictionary *announcement = _announcements.lastObject;
-    //: FFFTeamAnnouncementListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FFFTeamAnnouncementListCell"];
+    //: WatchTeamAnnouncementListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WatchTeamAnnouncementListCell"];
     ToShortListView *cell = [tableView dequeueReusableCellWithIdentifier:@"ToShortListView"];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFTeamAnnouncementListCell alloc] initWithStyle:(UITableViewCellStyleValue1) reuseIdentifier:@"FFFTeamAnnouncementListCell"];
+        //: cell = [[WatchTeamAnnouncementListCell alloc] initWithStyle:(UITableViewCellStyleValue1) reuseIdentifier:@"WatchTeamAnnouncementListCell"];
         cell = [[ToShortListView alloc] initWithStyle:(UITableViewCellStyleValue1) reuseIdentifier:@"ToShortListView"];
     }
     //: [cell refreshData:announcement nick:_option.nick];
@@ -679,7 +679,7 @@
     //: ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     ret = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 
-    //: [FFFKitProgressHUD show];
+    //: [WatchKitProgressHUD show];
     [AlongEffectView holder];
     //: if ([_delegate respondsToSelector:@selector(didUpdateAnnouncement:completion:)]) {
     if ([_delegate respondsToSelector:@selector(session:topVoice:)]) {
@@ -687,11 +687,11 @@
         __weak typeof(self) wself = self;
         //: [_delegate didUpdateAnnouncement:ret completion:^(NSError *error) {
         [_delegate session:ret topVoice:^(NSError *error) {
-            //: [FFFKitProgressHUD dismiss];
+            //: [WatchKitProgressHUD dismiss];
             [AlongEffectView nimDismiss];
             //: if(!error) {
             if(!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_success"]];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"team_create_helper_create_success"]];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[TransformationData sharedInstance].m_overseeCapitalText]];
                 //: [wself updateAnnouncementsWithContent:ret];
                 [wself menu:ret];
@@ -699,7 +699,7 @@
                 [wself.tableView reloadData];
             //: } else {
             } else {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"]];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"team_create_helper_create_failed"]];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[TransformationData sharedInstance].m_youTitle]];
             }
         //: }];
@@ -757,7 +757,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"No_group_announcement"];
+        //: emptyTipLabel.text = [WatchLanguageManager getTextWithKey:@"No_group_announcement"];
         emptyTipLabel.text = [PaintedNaturalLanguageTo exhibit:[TransformationData sharedInstance].dreamAllKey];
 
         //: if(_option.canCreateAnnouncement) {
@@ -770,7 +770,7 @@
             emptyButton.titleLabel.font = [UIFont systemFontOfSize:15];
             //: [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             [emptyButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            //: [emptyButton setTitle:[FFFLanguageManager getTextWithKey:@"Create_group_announcement"] forState:UIControlStateNormal];
+            //: [emptyButton setTitle:[WatchLanguageManager getTextWithKey:@"Create_group_announcement"] forState:UIControlStateNormal];
             [emptyButton setTitle:[PaintedNaturalLanguageTo exhibit:[TransformationData sharedInstance].k_showUrl] forState:UIControlStateNormal];
             //: [emptyButton setImage:[UIImage imageNamed:@"icon_add_w"] forState:UIControlStateNormal];
             [emptyButton setImage:[UIImage imageNamed:[TransformationData sharedInstance].m_extraId] forState:UIControlStateNormal];
@@ -825,7 +825,7 @@
         closeBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         //: [closeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [closeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_edit"] forState:UIControlStateNormal];
+        //: [closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_edit"] forState:UIControlStateNormal];
         [closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:[TransformationData sharedInstance].showEstablishmentText] forState:UIControlStateNormal];
         //: [closeBtn layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleLeft) imageTitleSpace:10];
         [closeBtn title:(MKButtonEdgeInsetsStyleLeft) tillVideo:10];
@@ -849,7 +849,7 @@
         sureBtn.titleLabel.font = [UIFont systemFontOfSize:15];
         //: [sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
+        //: [sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
         [sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:[TransformationData sharedInstance].user_comfortStr] forState:UIControlStateNormal];
         //: [sureBtn layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleLeft) imageTitleSpace:10];
         [sureBtn title:(MKButtonEdgeInsetsStyleLeft) tillVideo:10];

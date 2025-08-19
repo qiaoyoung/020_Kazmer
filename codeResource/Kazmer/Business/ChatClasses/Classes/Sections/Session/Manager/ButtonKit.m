@@ -66,21 +66,21 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "WatchKitTimerHolder.h"
 #import "UserCell.h"
-//: #import "FFFKitNotificationFirer.h"
+//: #import "WatchKitNotificationFirer.h"
 #import "MessageObject.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "WatchKitDataProviderImpl.h"
 #import "InputImpl.h"
-//: #import "FFFCellLayoutConfig.h"
+//: #import "WatchCellLayoutConfig.h"
 #import "PinFrame.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+ButtonKit.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
-//: #import "FFFChatUIManager.h"
+//: #import "WatchChatUIManager.h"
 #import "ZoneUimanager.h"
 
 //: extern NSString *const  showSubmitId;
@@ -94,9 +94,9 @@ extern NSString *const appHostTitle;
     //: NSRegularExpression *_urlRegex;
     NSRegularExpression *_urlRegex;
 }
-//: @property (nonatomic,strong) FFFKitNotificationFirer *firer;
+//: @property (nonatomic,strong) WatchKitNotificationFirer *firer;
 @property (nonatomic,strong) MessageObject *firer;
-//: @property (nonatomic,strong) id<FFFCellLayoutConfig> layoutConfig;
+//: @property (nonatomic,strong) id<WatchCellLayoutConfig> layoutConfig;
 @property (nonatomic,strong) id<PinFrame> layoutConfig;
 //: @end
 @end
@@ -109,11 +109,11 @@ extern NSString *const appHostTitle;
 {
     //: if (self = [super init]) {
     if (self = [super init]) {
-        //: _firer = [[FFFKitNotificationFirer alloc] init];
+        //: _firer = [[WatchKitNotificationFirer alloc] init];
         _firer = [[MessageObject alloc] init];
-        //: _provider = [[FFFKitDataProviderImpl alloc] init]; 
+        //: _provider = [[WatchKitDataProviderImpl alloc] init]; 
         _provider = [[InputImpl alloc] init]; //默认使用 ButtonKit 的实现
-        //: _layoutConfig = [[FFFCellLayoutConfig alloc] init];
+        //: _layoutConfig = [[WatchCellLayoutConfig alloc] init];
         _layoutConfig = [[PinFrame alloc] init];
         //: [self preloadNIMKitBundleResource];
         [self count];
@@ -139,10 +139,10 @@ extern NSString *const appHostTitle;
     return instance;
 }
 
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig
+//: - (void)registerLayoutConfig:(WatchCellLayoutConfig *)layoutConfig
 - (void)secretMargin:(PinFrame *)layoutConfig
 {
-    //: if ([layoutConfig isKindOfClass:[FFFCellLayoutConfig class]])
+    //: if ([layoutConfig isKindOfClass:[WatchCellLayoutConfig class]])
     if ([layoutConfig isKindOfClass:[PinFrame class]])
     {
         //: self.layoutConfig = layoutConfig;
@@ -178,28 +178,28 @@ extern NSString *const appHostTitle;
     return _languageBundle;
 }
 
-//: - (id<FFFChatUIManager>)chatUIManager
+//: - (id<WatchChatUIManager>)chatUIManager
 - (id<ZoneUimanager>)chatUIManager
 {
-    //: return FFFChatUIManager.sharedManager;
+    //: return WatchChatUIManager.sharedManager;
     return ZoneUimanager.abstract;
 }
 
-//: - (id<FFFCellLayoutConfig>)layoutConfig
+//: - (id<WatchCellLayoutConfig>)layoutConfig
 - (id<PinFrame>)layoutConfig
 {
     //: return _layoutConfig;
     return _layoutConfig;
 }
 
-//: - (FFFKitConfig *)config
+//: - (WatchKitConfig *)config
 - (ShowConfig *)config
 {
     //不要放在 ButtonKit 初始化里面，因为 UIConfig 初始化会使用 NIMKit, 防止死循环
     //: if (!_config)
     if (!_config)
     {
-        //: _config = [[FFFKitConfig alloc] init];
+        //: _config = [[WatchKitConfig alloc] init];
         _config = [[ShowConfig alloc] init];
     }
     //: return _config;
@@ -284,10 +284,10 @@ extern NSString *const appHostTitle;
     [self.firer gildTheLily:info];
 }
 
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId option:(FFFKitInfoFetchOption *)option
+//: - (WatchKitInfo *)infoByUser:(NSString *)userId option:(WatchKitInfoFetchOption *)option
 - (TingMessage *)past:(NSString *)userId skinColour_strong:(CoverTingContent *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: WatchKitInfo *info = nil;
     TingMessage *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByUser:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(past:skinColour_strong:)]) {
@@ -298,10 +298,10 @@ extern NSString *const appHostTitle;
     return info;
 }
 
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (WatchKitInfo *)infoByTeam:(NSString *)teamId option:(WatchKitInfoFetchOption *)option
 - (TingMessage *)pressMedia:(NSString *)teamId sizeOption:(CoverTingContent *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: WatchKitInfo *info = nil;
     TingMessage *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(pressMedia:sizeOption:)]) {
@@ -313,10 +313,10 @@ extern NSString *const appHostTitle;
 
 }
 
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (WatchKitInfo *)infoBySuperTeam:(NSString *)teamId option:(WatchKitInfoFetchOption *)option
 - (TingMessage *)tiddler:(NSString *)teamId ting:(CoverTingContent *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: WatchKitInfo *info = nil;
     TingMessage *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoBySuperTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(tiddler:ting:)]) {
@@ -332,7 +332,7 @@ extern NSString *const appHostTitle;
 - (void)count {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        //: [[FFFInputEmoticonManager sharedManager] start];
+        //: [[WatchInputEmoticonManager sharedManager] start];
         [[TitleToManager draw] messageStart];
     //: });
     });

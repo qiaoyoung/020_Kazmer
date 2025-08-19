@@ -279,7 +279,7 @@ NSString *const user_maxMessage = @"NIMDemoEventNameOpenRedPacket";
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(modelled:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
         CoverShowEvent *event = [[CoverShowEvent alloc] init];
         //: event.eventName = NIMDemoEventNameOpenRedPacket;
         event.eventName = user_maxMessage;
@@ -294,7 +294,7 @@ NSString *const user_maxMessage = @"NIMDemoEventNameOpenRedPacket";
 
 //: #pragma mark - 系统父类方法
 #pragma mark - 系统父类方法
-//: - (void)refresh:(FFFMessageModel*)data{
+//: - (void)refresh:(WatchMessageModel*)data{
 - (void)lengthAt:(CentralProcessingUnitModel*)data{
     //: [super refresh:data];
     [super lengthAt:data];

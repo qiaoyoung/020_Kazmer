@@ -49,19 +49,19 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WatchKitQuickCommentUtil.h"
 #import "NameUtilPath.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 
 //: static const CGFloat kHeightPerRow = 25.0;
@@ -76,7 +76,7 @@ const CGFloat k_makeSourceFlagMessage = 5.f;
 NSString * const userValueKey = @"emoticon_emoji_%02ld";
 
 
-//: @implementation FFFKitQuickCommentUtil
+//: @implementation WatchKitQuickCommentUtil
 @implementation NameUtilPath
 
 //: + (void)initialize
@@ -127,7 +127,7 @@ NSString * const userValueKey = @"emoticon_emoji_%02ld";
 {
     //: NSString *ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, (long)comment.replyType];
     NSString *ID = [NSString stringWithFormat:userValueKey, (long)comment.replyType];
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+    //: NIMInputEmoticon *emoticon = [[WatchInputEmoticonManager sharedManager] emoticonByID:ID];
     ButtonTableEmoticon *emoticon = [[TitleToManager draw] limit:ID];
     //: NSString *content = nil;
     NSString *content = nil;
@@ -327,13 +327,13 @@ NSString * const userValueKey = @"emoticon_emoji_%02ld";
 //: + (NSString *)showNameWithCommentFrom:(NIMQuickComment *)comment
 + (NSString *)item:(NIMQuickComment *)comment
 {
-    //: FFFKitInfo *info = nil;
+    //: WatchKitInfo *info = nil;
     TingMessage *info = nil;
     //: NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     //: NIMSession *session = basicInfo.session;
     NIMSession *session = basicInfo.session;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
     CoverTingContent *option = [[CoverTingContent alloc] init];
     //: option.session = session;
     option.session = session;

@@ -104,7 +104,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
         //: [self initUI];
         [self initSoap];
 
-        //: self.selectButtons = @[[FFFLanguageManager getTextWithKey:@"report_reasons1"],[FFFLanguageManager getTextWithKey:@"report_reasons2"],[FFFLanguageManager getTextWithKey:@"report_reasons3"],[FFFLanguageManager getTextWithKey:@"report_reasons4"],[FFFLanguageManager getTextWithKey:@"report_reasons5"],[FFFLanguageManager getTextWithKey:@"report_reasons6"]];
+        //: self.selectButtons = @[[WatchLanguageManager getTextWithKey:@"report_reasons1"],[WatchLanguageManager getTextWithKey:@"report_reasons2"],[WatchLanguageManager getTextWithKey:@"report_reasons3"],[WatchLanguageManager getTextWithKey:@"report_reasons4"],[WatchLanguageManager getTextWithKey:@"report_reasons5"],[WatchLanguageManager getTextWithKey:@"report_reasons6"]];
         self.selectButtons = @[[PaintedNaturalLanguageTo exhibit:StringFromMonthData(app_pressedFormat)],[PaintedNaturalLanguageTo exhibit:StringFromMonthData(kUserId)],[PaintedNaturalLanguageTo exhibit:StringFromMonthData(user_circleStr)],[PaintedNaturalLanguageTo exhibit:StringFromMonthData(app_itemTitle)],[PaintedNaturalLanguageTo exhibit:StringFromMonthData(k_myIdent)],[PaintedNaturalLanguageTo exhibit:StringFromMonthData(showCurPath)]];
         //: self.index = 0;
         self.index = 0;
@@ -139,7 +139,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
     labsub.textColor = [UIColor min:StringFromMonthData(kPointPath)];
     //: labsub.numberOfLines = 0;
     labsub.numberOfLines = 0;
-    //: labsub.text = [FFFLanguageManager getTextWithKey:@"report_Tip"];
+    //: labsub.text = [WatchLanguageManager getTextWithKey:@"report_Tip"];
     labsub.text = [PaintedNaturalLanguageTo exhibit:StringFromMonthData(notiToTitle)];
     //: [_box addSubview:labsub];
     [_box addSubview:labsub];
@@ -185,7 +185,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_User"];
+        //: _titleLabel.text = [WatchLanguageManager getTextWithKey:@"report_User"];
         _titleLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromMonthData(mainExtraKeyTitle)];
     }
     //: return _titleLabel;
@@ -222,7 +222,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
         [Btn1 setImage:[UIImage imageNamed:StringFromMonthData(k_timeFormatUrl)] forState:UIControlStateNormal];
         //: [Btn1 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn1 setImage:[UIImage imageNamed:StringFromMonthData(appManCenterFormat)] forState:UIControlStateSelected];
-        //: [Btn1 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
+        //: [Btn1 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
         [Btn1 setTitle:[PaintedNaturalLanguageTo exhibit:StringFromMonthData(app_pressedFormat)] forState:UIControlStateNormal];
         //: Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -249,7 +249,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
         [Btn2 setImage:[UIImage imageNamed:StringFromMonthData(k_timeFormatUrl)] forState:UIControlStateNormal];
         //: [Btn2 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn2 setImage:[UIImage imageNamed:StringFromMonthData(appManCenterFormat)] forState:UIControlStateSelected];
-        //: [Btn2 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
+        //: [Btn2 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
         [Btn2 setTitle:[PaintedNaturalLanguageTo exhibit:StringFromMonthData(kUserId)] forState:UIControlStateNormal];
         //: Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -277,7 +277,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
         [Btn3 setImage:[UIImage imageNamed:StringFromMonthData(appManCenterFormat)] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn3];
         [_buttonBox addSubview:Btn3];
-        //: [Btn3 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
+        //: [Btn3 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
         [Btn3 setTitle:[PaintedNaturalLanguageTo exhibit:StringFromMonthData(user_circleStr)] forState:UIControlStateNormal];
         //: Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -303,7 +303,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
         [Btn4 setImage:[UIImage imageNamed:StringFromMonthData(appManCenterFormat)] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn4];
         [_buttonBox addSubview:Btn4];
-        //: [Btn4 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
+        //: [Btn4 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
         [Btn4 setTitle:[PaintedNaturalLanguageTo exhibit:StringFromMonthData(app_itemTitle)] forState:UIControlStateNormal];
         //: Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -329,7 +329,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
         [Btn5 setImage:[UIImage imageNamed:StringFromMonthData(appManCenterFormat)] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn5];
         [_buttonBox addSubview:Btn5];
-        //: [Btn5 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
+        //: [Btn5 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
         [Btn5 setTitle:[PaintedNaturalLanguageTo exhibit:StringFromMonthData(k_myIdent)] forState:UIControlStateNormal];
         //: Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -355,7 +355,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
         [Btn6 setImage:[UIImage imageNamed:StringFromMonthData(appManCenterFormat)] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn6];
         [_buttonBox addSubview:Btn6];
-        //: [Btn6 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
+        //: [Btn6 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
         [Btn6 setTitle:[PaintedNaturalLanguageTo exhibit:StringFromMonthData(showCurPath)] forState:UIControlStateNormal];
         //: Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -386,7 +386,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:StringFromMonthData(m_statusName)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromMonthData(notiBarSuccessShowId)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -413,7 +413,7 @@ Byte k_myIdent[] = {65, 15, 64, 6, 192, 222, 50, 37, 48, 47, 50, 52, 31, 50, 37,
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromMonthData(userChangeRefreshMessageName)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor min:StringFromMonthData(noti_textTitle)];

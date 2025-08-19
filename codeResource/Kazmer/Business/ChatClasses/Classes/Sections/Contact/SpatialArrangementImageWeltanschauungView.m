@@ -5,7 +5,7 @@
 
 + (instancetype)sharedInstance;
 
-//: #ffffff
+//: #fffWatch
 @property (nonatomic, copy) NSString *app_mayPath;
 
 //: #EEEEEE
@@ -88,7 +88,7 @@
     return _mMemoryJournalismName;
 }
 
-//: #ffffff
+//: #fffWatch
 - (NSString *)app_mayPath {
     if (!_app_mayPath) {
         Byte value[] = {7, 9, 6, 160, 244, 180, 26, 93, 93, 93, 93, 93, 93, 100};
@@ -110,20 +110,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectTabView.h"
+//: #import "WatchContactSelectTabView.h"
 #import "SpatialArrangementImageWeltanschauungView.h"
-//: #import "FFFContactPickedView.h"
+//: #import "WatchContactPickedView.h"
 #import "ColorPositionView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFContactSelectTabView
+//: @implementation WatchContactSelectTabView
 @implementation SpatialArrangementImageWeltanschauungView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -132,7 +132,7 @@
     self = [super initWithFrame:frame];
     //: if (self) {
     if (self) {
-        //: _pickedView = [[FFFContactPickedView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _pickedView = [[WatchContactPickedView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _pickedView = [[ColorPositionView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [self addSubview:_pickedView];
         [self addSubview:_pickedView];
@@ -147,7 +147,7 @@
         [_doneButton setBackgroundImage:doneButtonNormal forState:UIControlStateNormal];
         //: [_doneButton setBackgroundImage:doneButtonHighlighted forState:UIControlStateHighlighted];
         [_doneButton setBackgroundImage:doneButtonHighlighted forState:UIControlStateHighlighted];
-        //: [_doneButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_doneButton setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_doneButton setTitle:[PaintedNaturalLanguageTo exhibit:[ReducePowerData sharedInstance].showScholarshipEndIdent] forState:UIControlStateNormal];
         //: [_doneButton sizeToFit];
         [_doneButton sizeToFit];
@@ -158,7 +158,7 @@
         //: [self addSubview:_doneButton];
         [self addSubview:_doneButton];
 //        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"contact_bg"]];
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
         self.backgroundColor = [UIColor min:[ReducePowerData sharedInstance].app_mayPath];
 
         //: UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, self.nim_height-1, self.nim_width, 1)];

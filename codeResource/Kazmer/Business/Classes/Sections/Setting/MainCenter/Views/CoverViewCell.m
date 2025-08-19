@@ -5,7 +5,7 @@
 
 + (instancetype)sharedInstance;
 
-//: #ffffff
+//: #fffWatch
 @property (nonatomic, copy) NSString *k_weepMsg;
 
 //: lang
@@ -58,7 +58,7 @@
     return _dream_goryName;
 }
 
-//: #ffffff
+//: #fffWatch
 - (NSString *)k_weepMsg {
     if (!_k_weepMsg) {
         Byte value[] = {7, 41, 9, 188, 250, 233, 55, 245, 78, 76, 143, 143, 143, 143, 143, 143, 47};
@@ -122,7 +122,7 @@
         //: self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
         self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
 
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
         self.backgroundColor = [UIColor min:[ShowerData sharedInstance].k_weepMsg];
         //: self.layer.cornerRadius = 12;
         self.layer.cornerRadius = 12;

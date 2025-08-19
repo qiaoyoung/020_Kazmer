@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNetChatNotifyContentView.h"
+//: #import "WatchSessionNetChatNotifyContentView.h"
 #import "RedControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFSessionNetChatNotifyContentView
+//: @implementation WatchSessionNetChatNotifyContentView
 @implementation RedControl
 
 //: -(instancetype)initSessionMessageContentView
@@ -47,15 +47,15 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WatchMessageModel *)data
 - (void)lengthAt:(CentralProcessingUnitModel *)data
 {
     //: [super refresh:data];
     [super lengthAt:data];
-    //: NSString *text = [FFFKitUtil messageTipContent:data.message];
+    //: NSString *text = [WatchKitUtil messageTipContent:data.message];
     NSString *text = [ObjectUtil complete:data.message];
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SubObject *setting = [[ButtonKit sheerOption].config date:data.message];
     //: self.textLabel.textColor = setting.textColor;;
     self.textLabel.textColor = setting.textColor;;

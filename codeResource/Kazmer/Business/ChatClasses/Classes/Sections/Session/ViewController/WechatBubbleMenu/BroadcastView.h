@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFBubbleMenuView : UIView
+//: @interface WatchBubbleMenuView : UIView
 @interface BroadcastView : UIView
 
 //: + (instancetype)shareMenuView;
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 //block是选择功能按钮的title
 //: - (void)showViewWithButtonModels:(NSArray *)array
 - (void)accountIn:(NSArray *)array
-                 //: cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(FFFMediaItem *item))block
+                 //: cursorStartRect:(CGRect)cursorStartRect selectionTextRectInWindow:(CGRect)rect selectBlock:(void(^)(WatchMediaItem *item))block
                  openBlock:(CGRect)cursorStartRect queryion:(CGRect)rect bubble:(void(^)(InfoMakeBar *item))block
                      //: praiseBlock:(void(^)(NSInteger tag))praiseblock;
                      show:(void(^)(NSInteger tag))praiseblock;

@@ -28,22 +28,22 @@ ImmediateData kCottaId = (ImmediateData){28, (Byte []){91, 110, 115, 105, 108, 6
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberListCell.h"
+//: #import "WatchTeamMemberListCell.h"
 #import "SizeViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFTeamHelper.h"
+//: #import "WatchTeamHelper.h"
 #import "MakeBubble.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WatchCardDataSourceProtocol.h"
+#import "WatchCardDataSourceProtocol.h"
 
 //: NSString *const kTeamMember = @"kTeamMember";
 NSString *const show_messageIdent = @"kTeamMember";
@@ -55,7 +55,7 @@ NSString *const noti_collectionId = @"kTeamMemberInfo";
 
 }
 
-//: @property(nonatomic,strong) FFFAvatarImageView *imageView;
+//: @property(nonatomic,strong) WatchAvatarImageView *imageView;
 @property(nonatomic,strong) RecordControl *imageView;
 
 //: @property (nonatomic,strong) UIImageView *roleImageView;
@@ -88,7 +88,7 @@ NSString *const noti_collectionId = @"kTeamMemberInfo";
         _titleLabel.font = [UIFont systemFontOfSize:12.f];
         //: [self addSubview:_titleLabel];
         [self addSubview:_titleLabel];
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
+        //: _imageView = [[WatchAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         _imageView = [[RecordControl alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];
@@ -105,10 +105,10 @@ NSString *const noti_collectionId = @"kTeamMemberInfo";
 - (void)setMember:(NSDictionary *)member{
     //: _member = member;
     _member = member;
-    //: FFFKitInfo *info = member[kTeamMemberInfo];
+    //: WatchKitInfo *info = member[kTeamMemberInfo];
     TingMessage *info = member[noti_collectionId];
-    //: id<FFFKitCardHeaderData>user = member[kTeamMember];
-    id<FFFKitCardHeaderData>user = member[show_messageIdent];
+    //: id<WatchKitCardHeaderData>user = member[kTeamMember];
+    id<WatchKitCardHeaderData>user = member[show_messageIdent];
     //: NSURL *avatarURL;
     NSURL *avatarURL;
     //: if (info.avatarUrlString.length) {
@@ -123,12 +123,12 @@ NSString *const noti_collectionId = @"kTeamMemberInfo";
     NSString *showName = (info.showName ?: @"");
     //: if ([user isMyUserId]) {
     if ([user isMyUserId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [WatchLanguageManager getTextWithKey:@"Group_Me"];
         showName = [PaintedNaturalLanguageTo exhibit:StringFromImmediateData(&kCottaId)];//@"我".;
     }
     //: _titleLabel.text = showName;
     _titleLabel.text = showName;
-    //: _roleImageView.image = [FFFTeamHelper imageWithMemberType:user.userType];
+    //: _roleImageView.image = [WatchTeamHelper imageWithMemberType:user.userType];
     _roleImageView.image = [MakeBubble streetwiseType:user.userType];
 }
 
@@ -165,12 +165,12 @@ NSString *const noti_collectionId = @"kTeamMemberInfo";
 //: @end
 @end
 
-//: const CGFloat kFFFTeamMemberListCellItemWidth = 49.f;
+//: const CGFloat kWatchTeamMemberListCellItemWidth = 49.f;
 const CGFloat dream_controlId = 49.f;
-//: const CGFloat kFFFTeamMemberListCellItemPadding = 44.f;
+//: const CGFloat kWatchTeamMemberListCellItemPadding = 44.f;
 const CGFloat kLocalBlackText = 44.f;
 
-//: @interface FFFTeamMemberListCell()
+//: @interface WatchTeamMemberListCell()
 @interface SizeViewCell()
 
 //: @property(nonatomic,strong) NSMutableArray *icons;
@@ -182,7 +182,7 @@ const CGFloat kLocalBlackText = 44.f;
 //: @end
 @end
 
-//: @implementation FFFTeamMemberListCell
+//: @implementation WatchTeamMemberListCell
 @implementation SizeViewCell
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -209,7 +209,7 @@ const CGFloat kLocalBlackText = 44.f;
 - (NSInteger)maxShowMemberCount {
     //: CGFloat width = (self.nim_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.nim_width;
     CGFloat width = (self.nim_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.nim_width;
-    //: NSInteger maxShowCount = (width - kFFFTeamMemberListCellItemPadding) / kFFFTeamMemberListCellItemWidth;
+    //: NSInteger maxShowCount = (width - kWatchTeamMemberListCellItemPadding) / kWatchTeamMemberListCellItemWidth;
     NSInteger maxShowCount = (width - kLocalBlackText) / dream_controlId;
     //: return maxShowCount;
     return maxShowCount;

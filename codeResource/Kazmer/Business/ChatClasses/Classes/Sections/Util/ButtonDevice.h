@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFKitDevice : NSObject
+//: @interface WatchKitDevice : NSObject
 @interface ButtonDevice : NSObject
 
-//: + (FFFKitDevice *)currentDevice;
+//: + (WatchKitDevice *)currentDevice;
 + (ButtonDevice *)magnitudeBy;
 
 /// 语言

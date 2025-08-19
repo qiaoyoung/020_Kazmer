@@ -85,17 +85,17 @@
         case NIMLoginClientTypeiOS:
         //: case NIMLoginClientTypeWP:
         case NIMLoginClientTypeWP:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_phone"];
+            //: return [WatchLanguageManager getTextWithKey:@"home_fragment_phone"];
             return [PaintedNaturalLanguageTo exhibit:[SandwichData user_closeEquallyPath]];
         //: case NIMLoginClientTypePC:
         case NIMLoginClientTypePC:
         //: case NIMLoginClientTypemacOS:
         case NIMLoginClientTypemacOS:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_pc"];
+            //: return [WatchLanguageManager getTextWithKey:@"home_fragment_pc"];
             return [PaintedNaturalLanguageTo exhibit:[SandwichData kValueStreakKey]];
         //: case NIMLoginClientTypeWeb:
         case NIMLoginClientTypeWeb:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_web"];
+            //: return [WatchLanguageManager getTextWithKey:@"home_fragment_web"];
             return [PaintedNaturalLanguageTo exhibit:[SandwichData dream_flowIdent]];
         //: default:
         default:

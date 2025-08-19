@@ -85,24 +85,24 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextView.h"
+//: #import "WatchTextView.h"
 #import "ReplacementNameView.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "WatchBubbleMenuView.h"
 #import "BroadcastView.h"
-//: #import "FFFBubbleButtonModel.h"
+//: #import "WatchBubbleButtonModel.h"
 #import "PageCountImage.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
-//: #import "FFFMediaItem.h"
+//: #import "WatchMediaItem.h"
 #import "InfoMakeBar.h"
 
-//: @interface FFFTextView()<UITextViewDelegate, UITextInputDelegate>
+//: @interface WatchTextView()<UITextViewDelegate, UITextInputDelegate>
 @interface ReplacementNameView()<UITextViewDelegate, UITextInputDelegate>
 
 //: @end
 @end
 
-//: @implementation FFFTextView
+//: @implementation WatchTextView
 @implementation ReplacementNameView
 
 //: - (id)initWithFrame:(CGRect)frame {
@@ -183,7 +183,7 @@ typedef struct {
     //: CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
     CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
 
-    //: [[FFFBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(FFFMediaItem *item) {
+    //: [[WatchBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(WatchMediaItem *item) {
     [[BroadcastView dismissDisappear] accountIn:self.selectedAllRangeButtons openBlock:cursorStartRectToWindow queryion:tempRect bubble:^(InfoMakeBar *item) {
 
         //: !_selectBlock ? : _selectBlock(item);
@@ -191,7 +191,7 @@ typedef struct {
 
         //: [self hideTextSelection];
         [self overUser];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [WatchBubbleMenuView.shareMenuView removeFromSuperview];
         [BroadcastView.dismissDisappear removeFromSuperview];
 
     //: } praiseBlock:^(NSInteger tag) {
@@ -201,7 +201,7 @@ typedef struct {
 
         //: [self hideTextSelection];
         [self overUser];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [WatchBubbleMenuView.shareMenuView removeFromSuperview];
         [BroadcastView.dismissDisappear removeFromSuperview];
     //: }];
     }];
@@ -218,7 +218,7 @@ typedef struct {
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     //: [self hideTextSelection];
     [self overUser];
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [WatchBubbleMenuView.shareMenuView removeFromSuperview];
     [BroadcastView.dismissDisappear removeFromSuperview];
     //: [super touchesEnded:touches withEvent:event];
     [super touchesEnded:touches withEvent:event];
@@ -365,10 +365,10 @@ typedef struct {
         //: items = [self.config menuItemsWithMessage:message];
         items = [self.config tableOfTextsToInscription:message];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(WatchMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(InfoMakeBar *item, NSUInteger idx, BOOL *stop) {
 
-        //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+        //: WatchBubbleButtonModel *model = [[WatchBubbleButtonModel alloc] init];
         PageCountImage *model = [[PageCountImage alloc] init];
         //: model.normalImage = item.normalImage;
         model.normalImage = item.normalImage;
@@ -405,17 +405,17 @@ typedef struct {
     NSMutableArray *selectedPartRangeButtons = [NSMutableArray array];
 
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: WatchMediaItem *copy = [WatchMediaItem item:@"onTapMenuItemCopy:"
     InfoMakeBar *copy = [InfoMakeBar icon:[LivelyData sharedInstance].appCrowdedMsg
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 message:[UIImage imageNamed:[LivelyData sharedInstance].dream_tunnelTitle]
                               //: selectedImage:nil
                               name:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[WatchLanguageManager getTextWithKey:@"复制"]];
                                       sub:[PaintedNaturalLanguageTo exhibit:@"复制"]];
 
 
-    //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+    //: WatchBubbleButtonModel *model = [[WatchBubbleButtonModel alloc] init];
     PageCountImage *model = [[PageCountImage alloc] init];
     //: model.normalImage = copy.normalImage;
     model.normalImage = copy.normalImage;

@@ -37,7 +37,7 @@
     return [NSString stringWithUTF8String:(char *)[self AddConductDataToCache:data]];
 }
 
-//: #ffffff
+//: #fffWatch
 - (NSString *)user_killerMsg {
     /* static */ NSString *user_killerMsg = nil;
     if (!user_killerMsg) {
@@ -313,7 +313,7 @@
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [WatchLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [PaintedNaturalLanguageTo exhibit:[[AddConductData sharedInstance] noti_pictureValue]];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -338,7 +338,7 @@
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor blackColor];
         labtitle2.textColor = [UIColor blackColor];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [WatchLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [PaintedNaturalLanguageTo exhibit:[[AddConductData sharedInstance] notiPotMsg]];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -363,7 +363,7 @@
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor blackColor];
         labtitle3.textColor = [UIColor blackColor];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [WatchLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [PaintedNaturalLanguageTo exhibit:[[AddConductData sharedInstance] mainGenetFormat]];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -420,7 +420,7 @@
         [_sureBtn addTarget:self action:@selector(inputSignal) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffWatch"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor min:[[AddConductData sharedInstance] user_killerMsg]] forState:UIControlStateNormal];
         //: [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];
         [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];

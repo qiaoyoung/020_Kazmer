@@ -115,23 +115,23 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionShareCardContentView.h"
+//: #import "WatchSessionShareCardContentView.h"
 #import "AccountControl.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "WatchLoadProgressView.h"
 #import "MakeTingView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "WatchKitDataProviderImpl.h"
 #import "InputImpl.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
@@ -144,7 +144,7 @@ typedef struct {
 //: #import <objc/message.h>
 #import <objc/message.h>
 
-//: @interface FFFSessionShareCardContentView()
+//: @interface WatchSessionShareCardContentView()
 @interface AccountControl()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -157,7 +157,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFSessionShareCardContentView
+//: @implementation WatchSessionShareCardContentView
 @implementation AccountControl
 
 //: - (instancetype)initSessionMessageContentView{
@@ -192,7 +192,7 @@ typedef struct {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WatchMessageModel *)data
 - (void)lengthAt:(CentralProcessingUnitModel *)data
 {
     //: [super refresh:data];
@@ -310,9 +310,9 @@ typedef struct {
 //: - (void)onTouchUpInside:(id)sender
 - (void)searched:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
     CoverShowEvent *event = [[CoverShowEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = WatchKitEventNameTapContent;
     event.eventName = appCommentStr;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

@@ -566,7 +566,7 @@
     AFHTTPSessionManager *manager = [CoverPageMode app].manager;
 
     //添加请求头
-    //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+    //: NSString *appKey = [[WatchConfig sharedConfig] appKey];
     NSString *appKey = [[RecordInput file] appKey];
     //: [manager.requestSerializer setValue:appKey forHTTPHeaderField:@"AppKey"];
     [manager.requestSerializer setValue:appKey forHTTPHeaderField:[[QualifyData sharedInstance] mainExcessId]];

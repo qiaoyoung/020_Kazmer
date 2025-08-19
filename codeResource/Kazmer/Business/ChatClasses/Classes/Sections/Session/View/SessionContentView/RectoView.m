@@ -49,18 +49,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionFileTransContentView.h"
+//: #import "WatchSessionFileTransContentView.h"
 #import "RectoView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFSessionFileTransContentView()
+//: @interface WatchSessionFileTransContentView()
 @interface RectoView()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -81,7 +81,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionFileTransContentView
+//: @implementation WatchSessionFileTransContentView
 @implementation RectoView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -137,7 +137,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(WatchMessageModel *)data{
 - (void)lengthAt:(CentralProcessingUnitModel *)data{
     //: [super refresh:data];
     [super lengthAt:data];
@@ -250,9 +250,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)searched:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
     CoverShowEvent *event = [[CoverShowEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = WatchKitEventNameTapContent;
     event.eventName = appCommentStr;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

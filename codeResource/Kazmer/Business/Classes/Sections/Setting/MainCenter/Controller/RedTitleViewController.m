@@ -933,7 +933,7 @@
     labtitle.textColor = [UIColor min:[[CurData sharedInstance] user_conventFormat]];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"system_change_language"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"system_change_language"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[[CurData sharedInstance] showRemoveAdmitIdent]];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];

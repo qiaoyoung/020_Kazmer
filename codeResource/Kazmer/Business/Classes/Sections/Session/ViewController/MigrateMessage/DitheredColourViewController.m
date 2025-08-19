@@ -191,9 +191,9 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESMigrateMessageViewController.h"
 #import "DitheredColourViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
+//: #import "WatchCommonTableDelegate.h"
 #import "BarPage.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -209,7 +209,7 @@ typedef struct {
 
 //: @property (nonatomic,copy) NSArray *data;
 @property (nonatomic,copy) NSArray *data;
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) WatchCommonTableDelegate *delegator;
 @property (nonatomic,strong) BarPage *delegator;
 
 //: @end
@@ -232,7 +232,7 @@ typedef struct {
     [self next];
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: self.delegator = [[FFFCommonTableDelegate alloc] initWithTableData:^NSArray *{
+    //: self.delegator = [[WatchCommonTableDelegate alloc] initWithTableData:^NSArray *{
     self.delegator = [[BarPage alloc] initWithTable:^NSArray *{
         //: return wself.data;
         return wself.data;

@@ -38,7 +38,7 @@ Byte app_capitalUrl[] = {20, 18, 77, 14, 3, 179, 48, 170, 12, 118, 49, 102, 198,
 // __M_A_C_R_O__
 //: #import "NTESMessageUtil.h"
 #import "NonsolidColorView.h"
-//: #import "FFFMessageUtil.h"
+//: #import "WatchMessageUtil.h"
 #import "UtilPage.h"
 //: #import "NTESShareCardAttachment.h"
 #import "KeyAttachment.h"
@@ -56,7 +56,7 @@ Byte app_capitalUrl[] = {20, 18, 77, 14, 3, 179, 48, 170, 12, 118, 49, 102, 198,
         text = [self send:message];
     //: } else {
     } else {
-        //: text = [FFFMessageUtil messageContent:message];
+        //: text = [WatchMessageUtil messageContent:message];
         text = [UtilPage text:message];
     }
     //: return text;
@@ -72,25 +72,25 @@ Byte app_capitalUrl[] = {20, 18, 77, 14, 3, 179, 48, 170, 12, 118, 49, 102, 198,
     //: if ([object.attachment isKindOfClass:[NTESSnapchatAttachment class]])
     if ([object.attachment isKindOfClass:[WeltanschauungAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_yue"];
+        //: text = [WatchLanguageManager getTextWithKey:@"home_fragment_yue"];
         text = [PaintedNaturalLanguageTo exhibit:StringFromSilverData(dream_towardsMessageValue)];//@"[阅后即焚]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESJanKenPonAttachment class]])
     else if ([object.attachment isKindOfClass:[ObjectAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"message_guess"];
+        //: text = [WatchLanguageManager getTextWithKey:@"message_guess"];
         text = [PaintedNaturalLanguageTo exhibit:StringFromSilverData(kCompanyUrl)];//@"[猜拳]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESWhiteboardAttachment class]])
     else if ([object.attachment isKindOfClass:[InfoAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_bai"];
+        //: text = [WatchLanguageManager getTextWithKey:@"home_fragment_bai"];
         text = [PaintedNaturalLanguageTo exhibit:StringFromSilverData(noti_cedeData)];//@"[白板]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESRedPacketAttachment class]])
     else if ([object.attachment isKindOfClass:[InfoMessageBackground class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"message_red_packet"];
+        //: text = [WatchLanguageManager getTextWithKey:@"message_red_packet"];
         text = [PaintedNaturalLanguageTo exhibit:StringFromSilverData(showColorMessage)];//@"[红包消息]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESRedPacketTipAttachment class]])
@@ -104,7 +104,7 @@ Byte app_capitalUrl[] = {20, 18, 77, 14, 3, 179, 48, 170, 12, 118, 49, 102, 198,
     //: else if ([object.attachment isKindOfClass:[NTESMultiRetweetAttachment class]])
     else if ([object.attachment isKindOfClass:[ShowImageEvent class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_liao"];
+        //: text = [WatchLanguageManager getTextWithKey:@"home_fragment_liao"];
         text = [PaintedNaturalLanguageTo exhibit:StringFromSilverData(app_capitalUrl)];//@"[聊天记录]";
     }
     //: else if ([object.attachment isKindOfClass:[NTESShareCardAttachment class]])
@@ -114,11 +114,11 @@ Byte app_capitalUrl[] = {20, 18, 77, 14, 3, 179, 48, 170, 12, 118, 49, 102, 198,
         KeyAttachment *cardAtt = (KeyAttachment *)object.attachment;
         //: if ([cardAtt.type boolValue]) {
         if ([cardAtt.type boolValue]) {
-            //: text = [FFFLanguageManager getTextWithKey:@"group_card"];
+            //: text = [WatchLanguageManager getTextWithKey:@"group_card"];
             text = [PaintedNaturalLanguageTo exhibit:StringFromSilverData(m_hunterCenterData)];
         //: } else {
         } else {
-            //: text = [FFFLanguageManager getTextWithKey:@"person_card"];
+            //: text = [WatchLanguageManager getTextWithKey:@"person_card"];
             text = [PaintedNaturalLanguageTo exhibit:StringFromSilverData(user_bookTitle)];
         }
     }

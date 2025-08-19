@@ -179,7 +179,7 @@ Byte mainFishingCombinationKey[] = {24, 23, 9, 245, 202, 57, 232, 76, 119, 108, 
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"safe_setting_activity_title"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"safe_setting_activity_title"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:StringFromPatrolData(showMeatMessage)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -277,7 +277,7 @@ Byte mainFishingCombinationKey[] = {24, 23, 9, 245, 202, 57, 232, 76, 119, 108, 
     if(indexPath.section == 0){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_blacklist"];
         cell.iconImageView.image = [UIImage imageNamed:StringFromPatrolData(dream_atPath)];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+        //: cell.titleLabel.text = [WatchLanguageManager getTextWithKey:@"black_list_activity_black"];
         cell.titleLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromPatrolData(m_viaValue)];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -286,7 +286,7 @@ Byte mainFishingCombinationKey[] = {24, 23, 9, 245, 202, 57, 232, 76, 119, 108, 
     else if (indexPath.section == 1){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_changepsd"];
         cell.iconImageView.image = [UIImage imageNamed:StringFromPatrolData(kStatusName)];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"modify_activity_title"];
+        //: cell.titleLabel.text = [WatchLanguageManager getTextWithKey:@"modify_activity_title"];
         cell.titleLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromPatrolData(showViewMessage)];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -300,7 +300,7 @@ Byte mainFishingCombinationKey[] = {24, 23, 9, 245, 202, 57, 232, 76, 119, 108, 
     else if (indexPath.section == 2){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_accountdelete"];
         cell.iconImageView.image = [UIImage imageNamed:StringFromPatrolData(app_manPath)];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: cell.titleLabel.text = [WatchLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         cell.titleLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromPatrolData(mDeerName)];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -352,7 +352,7 @@ Byte mainFishingCombinationKey[] = {24, 23, 9, 245, 202, 57, 232, 76, 119, 108, 
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"deactivate_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[WatchLanguageManager getTextWithKey:@"deactivate_account"]];
     [self.deactivateNextView margin:[PaintedNaturalLanguageTo exhibit:StringFromPatrolData(userFishingPath)]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView tipTo];
@@ -378,7 +378,7 @@ Byte mainFishingCombinationKey[] = {24, 23, 9, 245, 202, 57, 232, 76, 119, 108, 
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[WatchLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
     [self.deactivateNextView margin:[PaintedNaturalLanguageTo exhibit:StringFromPatrolData(mDeerName)]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView tipTo];

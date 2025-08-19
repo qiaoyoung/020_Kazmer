@@ -49,12 +49,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "WatchUnsupportContentConfig.h"
 #import "OldConfig.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFUnsupportContentConfig ()
+//: @interface WatchUnsupportContentConfig ()
 @interface OldConfig ()
 
 //: @property (nonatomic,strong) UILabel *label;
@@ -63,7 +63,7 @@
 //: @end
 @end
 
-//: @implementation FFFUnsupportContentConfig
+//: @implementation WatchUnsupportContentConfig
 @implementation OldConfig
 
 //: - (instancetype)init
@@ -95,21 +95,21 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)textDistance:(NIMMessage *)message
 {
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
     SubObject *setting = [[ButtonKit sheerOption].config date:message];
     //: self.label.textColor = setting.textColor;
     self.label.textColor = setting.textColor;
     //: self.label.font = setting.font;
     self.label.font = setting.font;
 
-    //: return @"FFFSessionUnknowContentView";
+    //: return @"WatchSessionUnknowContentView";
     return @"MasterControl";
 }
 
 //: - (UIEdgeInsets)contentViewInsets:(NIMMessage *)message
 - (UIEdgeInsets)contentInsets:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
+    //: WatchKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
     ZoneSettings *settings = message.isOutgoingMsg? [ButtonKit sheerOption].config.rightBubbleSettings : [ButtonKit sheerOption].config.leftBubbleSettings;
     //: return settings.unsupportSetting.contentInsets;
     return settings.unsupportSetting.contentInsets;

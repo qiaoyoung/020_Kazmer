@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPinyinConverter.h"
+//: #import "WatchPinyinConverter.h"
 #import "FastEmpty.h"
 
-//: @interface FFFPinyinConverter ()
+//: @interface WatchPinyinConverter ()
 @interface FastEmpty ()
 {
     //: int *_codeIndex;
@@ -25,18 +25,18 @@
 //: @end
 @end
 
-//: @implementation FFFPinyinConverter
+//: @implementation WatchPinyinConverter
 @implementation FastEmpty
-//: + (FFFPinyinConverter *)sharedInstance
+//: + (WatchPinyinConverter *)sharedInstance
 + (FastEmpty *)shared
 {
-    //: static FFFPinyinConverter *instance = nil;
+    //: static WatchPinyinConverter *instance = nil;
     static FastEmpty *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFPinyinConverter alloc] init];
+        //: instance = [[WatchPinyinConverter alloc] init];
         instance = [[FastEmpty alloc] init];
     //: });
     });

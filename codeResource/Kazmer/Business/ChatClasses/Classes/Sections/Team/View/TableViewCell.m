@@ -48,12 +48,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamSwitchTableViewCell.h"
+//: #import "WatchTeamSwitchTableViewCell.h"
 #import "TableViewCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @implementation FFFTeamSwitchTableViewCell
+//: @implementation WatchTeamSwitchTableViewCell
 @implementation TableViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger,NIMEmoticonType) {
 //: @end
 @end
 
-//: @interface FFFInputEmoticonManager : NSObject
+//: @interface WatchInputEmoticonManager : NSObject
 @interface TitleToManager : NSObject
 
 //: + (instancetype)sharedManager;

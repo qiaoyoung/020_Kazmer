@@ -13,10 +13,10 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "WatchCardDataSourceProtocol.h"
+#import "WatchCardDataSourceProtocol.h"
 
-//: @class FFFAvatarImageView;
+//: @class WatchAvatarImageView;
 @class RecordControl;
 
 
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-//: @interface FFFGroupMemberTableViewCell : UITableViewCell
+//: @interface WatchGroupMemberTableViewCell : UITableViewCell
 @interface TextEnableViewCell : UITableViewCell
 
 

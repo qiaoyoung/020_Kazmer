@@ -31,7 +31,7 @@
 
 
 
-//: @interface FFFCollectionViewLeftAlignedLayout : UICollectionViewFlowLayout
+//: @interface WatchCollectionViewLeftAlignedLayout : UICollectionViewFlowLayout
 @interface ButtonFlowLayout : UICollectionViewFlowLayout
 
 //: @end

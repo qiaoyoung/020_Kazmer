@@ -89,9 +89,9 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDataCell.h"
+//: #import "WatchContactDataCell.h"
 #import "ContactViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -100,13 +100,13 @@ typedef struct {
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 
-//: @interface FFFContactDataCell()
+//: @interface WatchContactDataCell()
 @interface ContactViewCell()
 
 //: @end
 @end
 
-//: @implementation FFFContactDataCell
+//: @implementation WatchContactDataCell
 @implementation ContactViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -126,7 +126,7 @@ typedef struct {
         [self.contentView addSubview:bgView];
 
 
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
+        //: _avatarImageView = [[WatchAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         _avatarImageView = [[RecordControl alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         //: [_avatarImageView addTarget:self action:@selector(onPressAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [_avatarImageView addTarget:self action:@selector(optionLoad:) forControlEvents:UIControlEventTouchUpInside];
@@ -186,7 +186,7 @@ typedef struct {
     [self max:member.representation];
     //: self.memberId = [member memberId];
     self.memberId = [member show];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:self.memberId skinColour_strong:nil];
     //: [self refreshAvatar:info];
     [self refresh:info];
@@ -198,7 +198,7 @@ typedef struct {
     [self max:team.teamName];
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] pressMedia:self.memberId sizeOption:nil];
     //: [self refreshAvatar:info];
     [self refresh:info];
@@ -210,7 +210,7 @@ typedef struct {
     self.labName.text = title;
 }
 
-//: - (void)refreshAvatar:(FFFKitInfo *)info{
+//: - (void)refreshAvatar:(WatchKitInfo *)info{
 - (void)refresh:(TingMessage *)info{
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

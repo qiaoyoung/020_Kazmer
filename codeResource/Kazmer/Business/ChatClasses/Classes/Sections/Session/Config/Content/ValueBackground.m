@@ -21,18 +21,18 @@ Byte showFatigueName[] = {84, 30, 63, 8, 252, 138, 103, 34, 172, 164, 178, 178, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFNotificationContentConfig.h"
+//: #import "WatchNotificationContentConfig.h"
 #import "ValueBackground.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "WatchUnsupportContentConfig.h"
 #import "OldConfig.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFNotificationContentConfig
+//: @implementation WatchNotificationContentConfig
 @implementation ValueBackground
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)year:(CGFloat)cellWidth table:(NIMMessage *)message
@@ -58,7 +58,7 @@ Byte showFatigueName[] = {84, 30, 63, 8, 252, 138, 103, 34, 172, 164, 178, 178, 
             CGFloat TeamNotificationMessageWidth = cellWidth;
             //: UILabel *label = [[UILabel alloc] init];
             UILabel *label = [[UILabel alloc] init];
-            //: label.text = [FFFKitUtil messageTipContent:message];
+            //: label.text = [WatchKitUtil messageTipContent:message];
             label.text = [ObjectUtil complete:message];
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[ButtonKit sheerOption].config date:message].font;
@@ -83,7 +83,7 @@ Byte showFatigueName[] = {84, 30, 63, 8, 252, 138, 103, 34, 172, 164, 178, 178, 
             label.autoDetectLinks = NO;
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[ButtonKit sheerOption].config date:message].font;
-            //: NSString *text = [FFFKitUtil messageTipContent:message];
+            //: NSString *text = [WatchKitUtil messageTipContent:message];
             NSString *text = [ObjectUtil complete:message];
             //: [label nim_setText:text];
             [label stay:text];
@@ -104,7 +104,7 @@ Byte showFatigueName[] = {84, 30, 63, 8, 252, 138, 103, 34, 172, 164, 178, 178, 
         //: default:
         default:
         {
-            //: FFFUnsupportContentConfig *config = [[FFFUnsupportContentConfig alloc] init];
+            //: WatchUnsupportContentConfig *config = [[WatchUnsupportContentConfig alloc] init];
             OldConfig *config = [[OldConfig alloc] init];
             //: contentSize = [config contentSize:cellWidth message:message];
             contentSize = [config year:cellWidth table:message];
@@ -134,15 +134,15 @@ Byte showFatigueName[] = {84, 30, 63, 8, 252, 138, 103, 34, 172, 164, 178, 178, 
         case NIMNotificationTypeSuperTeam:
         //: case NIMNotificationTypeChatroom:
         case NIMNotificationTypeChatroom:
-            //: return @"FFFSessionNotificationContentView";
+            //: return @"WatchSessionNotificationContentView";
             return @"AssemblageControl";
         //: case NIMNotificationTypeNetCall:
         case NIMNotificationTypeNetCall:
-            //: return @"FFFSessionNetChatNotifyContentView";
+            //: return @"WatchSessionNetChatNotifyContentView";
             return @"RedControl";
         //: case NIMNotificationTypeUnsupport:
         case NIMNotificationTypeUnsupport:
-            //: return @"FFFSessionUnknowContentView";
+            //: return @"WatchSessionUnknowContentView";
             return @"MasterControl";
         //: default:
         default:

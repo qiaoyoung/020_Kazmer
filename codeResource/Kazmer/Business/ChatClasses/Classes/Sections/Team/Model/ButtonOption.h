@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFMembersFetchOption : NSObject
+//: @interface WatchMembersFetchOption : NSObject
 @interface ButtonOption : NSObject
 
 //: @property (nonatomic, assign) NSInteger offset;

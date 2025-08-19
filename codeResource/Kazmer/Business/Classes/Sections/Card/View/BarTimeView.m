@@ -211,7 +211,7 @@
     labsubLabel.textColor = [UIColor min:[RehabData sharedInstance].kSuccessPropertyData];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select_delete"];
+    //: labsubLabel.text = [WatchLanguageManager getTextWithKey:@"report_next_select_delete"];
     labsubLabel.text = [PaintedNaturalLanguageTo exhibit:[RehabData sharedInstance].dream_commentMediaShowStr];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -258,7 +258,7 @@
         _titleLabel.textColor = [UIColor blackColor];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
+        //: _titleLabel.text = [WatchLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
         _titleLabel.text = [PaintedNaturalLanguageTo exhibit:[RehabData sharedInstance].m_producerFormat];
     }
     //: return _titleLabel;
@@ -277,7 +277,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:[RehabData sharedInstance].k_porterUrl] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:[RehabData sharedInstance].dream_speculationValue] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -304,7 +304,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:[RehabData sharedInstance].k_evaluateId] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor min:[RehabData sharedInstance].k_changeMarkName];

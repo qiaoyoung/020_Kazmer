@@ -30,24 +30,24 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputToolBar.h"
+//: #import "WatchInputToolBar.h"
 #import "OldFrameView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFInputBarItemType.h"
-#import "FFFInputBarItemType.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputBarItemType.h"
+#import "WatchInputBarItemType.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
 //: #import "YYText.h"
 #import "YYText.h"
-//: #import "FFFTextHighlight.h"
+//: #import "WatchTextHighlight.h"
 #import "EmptyColorTextHighlight.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "WatchKitKeyboardInfo.h"
 #import "UserInfo.h"
 
-//: @interface FFFInputToolBar()<FFFGrowingTextViewDelegate>
+//: @interface WatchInputToolBar()<WatchGrowingTextViewDelegate>
 @interface OldFrameView()<EmptyMode>
 
 //: @property (nonatomic,copy) NSArray<NSNumber *> *types;
@@ -62,7 +62,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 //: @end
 @end
 
-//: @implementation FFFInputToolBar
+//: @implementation WatchInputToolBar
 @implementation OldFrameView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -133,7 +133,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 //        _inputTextBkgImage = [[UIImageView alloc] initWithFrame:CGRectZero];
 //        [_inputTextBkgImage setImage:[[UIImage imageNamed:@"icon_input_text_bg_"] resizableImageWithCapInsets:UIEdgeInsetsMake(15,80,15,80) resizingMode:UIImageResizingModeStretch]];
 
-        //: _inputTextView = [[FFFGrowingTextView alloc] initWithFrame:CGRectZero];
+        //: _inputTextView = [[WatchGrowingTextView alloc] initWithFrame:CGRectZero];
         _inputTextView = [[TitleImageScrollView alloc] initWithFrame:CGRectZero];
         //: _inputTextView.font = [UIFont systemFontOfSize:14.0f];
         _inputTextView.font = [UIFont systemFontOfSize:14.0f];
@@ -172,13 +172,13 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 
         //: self.types = @[
         self.types = @[
-//            @(FFFInputBarItemTypeMore),
-//            @(FFFInputBarItemTypeEmoticon),
-//                         @(FFFInputBarItemTypeVoice),
-                         //: @(FFFInputBarItemTypeTextAndRecord),
-                         @(FFFInputBarItemTypeTextAndRecord),
-                         //: @(FFFInputBarItemTypeSend),
-                         @(FFFInputBarItemTypeSend),
+//            @(WatchInputBarItemTypeMore),
+//            @(WatchInputBarItemTypeEmoticon),
+//                         @(WatchInputBarItemTypeVoice),
+                         //: @(WatchInputBarItemTypeTextAndRecord),
+                         @(WatchInputBarItemTypeTextAndRecord),
+                         //: @(WatchInputBarItemTypeSend),
+                         @(WatchInputBarItemTypeSend),
 
                        //: ];
                        ];
@@ -257,7 +257,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 {
 //    CGFloat textViewWidth = 0;
 //    for (NSNumber *type in self.types) {
-//        if (type.integerValue == FFFInputBarItemTypeTextAndRecord) {
+//        if (type.integerValue == WatchInputBarItemTypeTextAndRecord) {
 //            continue;
 //        }
 //        UIView *view = [self subViewForType:type.integerValue];
@@ -334,8 +334,8 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 //: - (void)adjustTextAndRecordView
 - (void)recordTo
 {
-    //: if ([self.types containsObject:@(FFFInputBarItemTypeTextAndRecord)])
-    if ([self.types containsObject:@(FFFInputBarItemTypeTextAndRecord)])
+    //: if ([self.types containsObject:@(WatchInputBarItemTypeTextAndRecord)])
+    if ([self.types containsObject:@(WatchInputBarItemTypeTextAndRecord)])
     {
 //        self.inputTextView.center  = self.inputTextBkgImage.center;
 
@@ -426,7 +426,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 }
 
 
-//: #pragma mark - FFFGrowingTextViewDelegate
+//: #pragma mark - WatchGrowingTextViewDelegate
 #pragma mark - EmptyMode
 //: - (BOOL)shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)replacementText
 - (BOOL)ting:(NSRange)range down:(NSString *)replacementText
@@ -443,7 +443,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 }
 
 
-//: - (BOOL)textViewShouldBeginEditing:(FFFGrowingTextView *)growingTextView
+//: - (BOOL)textViewShouldBeginEditing:(WatchGrowingTextView *)growingTextView
 - (BOOL)sizing:(TitleImageScrollView *)growingTextView
 {
     //: BOOL should = YES;
@@ -457,7 +457,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
     return should;
 }
 
-//: - (void)textViewDidEndEditing:(FFFGrowingTextView *)growingTextView
+//: - (void)textViewDidEndEditing:(WatchGrowingTextView *)growingTextView
 - (void)cleanBe:(TitleImageScrollView *)growingTextView
 {
     //: if ([self.delegate respondsToSelector:@selector(textViewDidEndEditing)]) {
@@ -468,7 +468,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 }
 
 
-//: - (void)textViewDidChange:(FFFGrowingTextView *)growingTextView
+//: - (void)textViewDidChange:(WatchGrowingTextView *)growingTextView
 - (void)cameraColor:(TitleImageScrollView *)growingTextView
 {
     //: if ([self.delegate respondsToSelector:@selector(textViewDidChange)]) {
@@ -534,19 +534,19 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 
 //: #pragma mark - Get
 #pragma mark - Get
-//: - (UIView *)subViewForType:(FFFInputBarItemType)type{
-- (UIView *)background:(FFFInputBarItemType)type{
+//: - (UIView *)subViewForType:(WatchInputBarItemType)type{
+- (UIView *)background:(WatchInputBarItemType)type{
     //: if (!_dict) {
     if (!_dict) {
         //: _dict = @{
         _dict = @{
-//                  @(FFFInputBarItemTypeVoice) : self.voiceButton,
-//                  @(FFFInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
-                  //: @(FFFInputBarItemTypeEmoticon) : self.emoticonBtn,
-                  @(FFFInputBarItemTypeEmoticon) : self.emoticonBtn,
-//                  @(FFFInputBarItemTypeMore)     : self.moreMediaBtn,
-                  //: @(FFFInputBarItemTypeSend) : self.sendButton,
-                  @(FFFInputBarItemTypeSend) : self.sendButton,
+//                  @(WatchInputBarItemTypeVoice) : self.voiceButton,
+//                  @(WatchInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
+                  //: @(WatchInputBarItemTypeEmoticon) : self.emoticonBtn,
+                  @(WatchInputBarItemTypeEmoticon) : self.emoticonBtn,
+//                  @(WatchInputBarItemTypeMore)     : self.moreMediaBtn,
+                  //: @(WatchInputBarItemTypeSend) : self.sendButton,
+                  @(WatchInputBarItemTypeSend) : self.sendButton,
                 //: };
                 };
     }
@@ -572,7 +572,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 @end
 
 
-//: @implementation FFFInputToolBar(InputText)
+//: @implementation WatchInputToolBar(InputText)
 @implementation OldFrameView(InputText)
 
 //: - (NSRange)selectedRange
@@ -710,7 +710,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
     //: NSMutableAttributedString *attributedStringM = [[NSMutableAttributedString alloc] initWithAttributedString:self.inputTextView.attributedText];
     NSMutableAttributedString *attributedStringM = [[NSMutableAttributedString alloc] initWithAttributedString:self.inputTextView.attributedText];
 
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:text];
+    //: NIMInputEmoticon *emoticon = [[WatchInputEmoticonManager sharedManager] emoticonByTag:text];
     ButtonTableEmoticon *emoticon = [[TitleToManager draw] data:text];
     //: UIImage *image = nil;
     UIImage *image = nil;
@@ -743,10 +743,10 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
         //: [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
         [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
 
-        //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+        //: WatchTextHighlight *highlight = [[WatchTextHighlight alloc] init];
         EmptyColorTextHighlight *highlight = [[EmptyColorTextHighlight alloc] init];
-        //: highlight.type = FFFTextHighlightTypeEmoji;
-        highlight.type = FFFTextHighlightTypeEmoji;
+        //: highlight.type = WatchTextHighlightTypeEmoji;
+        highlight.type = WatchTextHighlightTypeEmoji;
         //: highlight.text = emoticon.tag;
         highlight.text = emoticon.tag;
 
@@ -768,10 +768,10 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
         //: [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
         [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
 
-        //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+        //: WatchTextHighlight *highlight = [[WatchTextHighlight alloc] init];
         EmptyColorTextHighlight *highlight = [[EmptyColorTextHighlight alloc] init];
-        //: highlight.type = FFFTextHighlightTypeEmoji;
-        highlight.type = FFFTextHighlightTypeEmoji;
+        //: highlight.type = WatchTextHighlightTypeEmoji;
+        highlight.type = WatchTextHighlightTypeEmoji;
         //: highlight.text = emoticon.tag;
         highlight.text = emoticon.tag;
 

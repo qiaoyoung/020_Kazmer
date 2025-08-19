@@ -30,23 +30,23 @@ Byte main_capitalMessage[] = {79, 7, 12, 210, 25, 36, 163, 92, 145, 221, 44, 137
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonContainerView.h"
+//: #import "WatchInputEmoticonContainerView.h"
 #import "SpecsView.h"
-//: #import "FFFPageView.h"
+//: #import "WatchPageView.h"
 #import "EndUserView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonButton.h"
+//: #import "WatchInputEmoticonButton.h"
 #import "OldButton.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
-//: #import "FFFInputEmoticonTabView.h"
+//: #import "WatchInputEmoticonTabView.h"
 #import "SleepingTabletControl.h"
 //:  
  
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFMessageMaker.h"
+//: #import "WatchMessageMaker.h"
 #import "ImpendentMaker.h"
 
 //: NSInteger NIMCustomPageControlHeight = 36;
@@ -54,20 +54,20 @@ NSInteger show_outputSessionMsg = 36;
 //: NSInteger NIMCustomPageViewHeight = 159;
 NSInteger k_quickMessage = 159;
 
-//: @interface FFFInputEmoticonContainerView()<NIMEmoticonButtonTouchDelegate,NIMInputEmoticonTabDelegate>
+//: @interface WatchInputEmoticonContainerView()<NIMEmoticonButtonTouchDelegate,NIMInputEmoticonTabDelegate>
 @interface SpecsView()<OnDelegate,BackgroundButtonDelegate>
 
 //: @property (nonatomic,strong) NSMutableArray *pageData;
 @property (nonatomic,strong) NSMutableArray *pageData;
 
-//: @property (nonatomic,strong) FFFInputEmoticonButton* deleteIcon;
+//: @property (nonatomic,strong) WatchInputEmoticonButton* deleteIcon;
 @property (nonatomic,strong) OldButton* deleteIcon;
 
 //: @end
 @end
 
 
-//: @implementation FFFInputEmoticonContainerView
+//: @implementation WatchInputEmoticonContainerView
 @implementation SpecsView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -89,7 +89,7 @@ NSInteger k_quickMessage = 159;
     self.backgroundColor = [UIColor min:StringFromUrnData(main_capitalMessage)];
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config{
+//: - (void)setConfig:(id<WatchSessionConfig>)config{
 - (void)setConfig:(id<MessagePinImage>)config{
     //: _config = config;
     _config = config;
@@ -241,7 +241,7 @@ NSInteger k_quickMessage = 159;
             //: NIMInputEmoticon *data = [self.currentCatalogData.emoticons objectAtIndex:index];
             ButtonTableEmoticon *data = [self.currentCatalogData.emoticons objectAtIndex:index];
 
-            //: FFFInputEmoticonButton *button = [FFFInputEmoticonButton iconButtonWithData:data catalogID:self.currentCatalogData.catalogID delegate:self];
+            //: WatchInputEmoticonButton *button = [WatchInputEmoticonButton iconButtonWithData:data catalogID:self.currentCatalogData.catalogID delegate:self];
             OldButton *button = [OldButton conference:data delegateBe:self.currentCatalogData.catalogID glitter:self];
             //计算表情位置
             //: rowIndex = indexInPage / self.currentCatalogData.layout.columes;
@@ -284,7 +284,7 @@ NSInteger k_quickMessage = 159;
 }
 
 
-//: - (UIView*)emojPageView:(FFFPageView*)pageView inEmoticonCatalog:(NIMInputEmoticonCatalog *)emoticon page:(NSInteger)page
+//: - (UIView*)emojPageView:(WatchPageView*)pageView inEmoticonCatalog:(NIMInputEmoticonCatalog *)emoticon page:(NSInteger)page
 - (UIView*)inward:(EndUserView*)pageView inside:(BottomCatalog *)emoticon textPage:(NSInteger)page
 {
     //: UIView *subView = [[UIView alloc] init];
@@ -315,7 +315,7 @@ NSInteger k_quickMessage = 159;
         //: NIMInputEmoticon *data = [emoticon.emoticons objectAtIndex:index];
         ButtonTableEmoticon *data = [emoticon.emoticons objectAtIndex:index];
 
-        //: FFFInputEmoticonButton *button = [FFFInputEmoticonButton iconButtonWithData:data catalogID:emoticon.catalogID delegate:self];
+        //: WatchInputEmoticonButton *button = [WatchInputEmoticonButton iconButtonWithData:data catalogID:emoticon.catalogID delegate:self];
         OldButton *button = [OldButton conference:data delegateBe:emoticon.catalogID glitter:self];
         //计算表情位置
         //: rowIndex = indexInPage / emoticon.layout.columes;
@@ -367,7 +367,7 @@ NSInteger k_quickMessage = 159;
                 //: inEmoticonCatalog:(NIMInputEmoticonCatalog *)emoticon
                 be:(BottomCatalog *)emoticon
 {
-    //: FFFInputEmoticonButton* deleteIcon = [[FFFInputEmoticonButton alloc] init];
+    //: WatchInputEmoticonButton* deleteIcon = [[WatchInputEmoticonButton alloc] init];
     OldButton* deleteIcon = [[OldButton alloc] init];
     //: deleteIcon.delegate = self;
     deleteIcon.delegate = self;
@@ -405,14 +405,14 @@ NSInteger k_quickMessage = 159;
 
 //: #pragma mark - pageviewDelegate
 #pragma mark - pageviewDelegate
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView
+//: - (NSInteger)numberOfPages: (WatchPageView *)pageView
 - (NSInteger)mImage: (EndUserView *)pageView
 {
     //: return [self sumPages];
     return [self ting];
 }
 
-//: - (UIView *)pageView:(FFFPageView *)pageView viewInPage:(NSInteger)index
+//: - (UIView *)pageView:(WatchPageView *)pageView viewInPage:(NSInteger)index
 - (UIView *)colorPage:(EndUserView *)pageView bubble:(NSInteger)index
 {
     //: NSInteger page = 0;
@@ -439,7 +439,7 @@ NSInteger k_quickMessage = 159;
 //: - (NIMInputEmoticonCatalog*)loadDefaultCatalog
 - (BottomCatalog*)line
 {
-    //: NIMInputEmoticonCatalog *emoticonCatalog = [[FFFInputEmoticonManager sharedManager] emoticonCatalog:@"default"];
+    //: NIMInputEmoticonCatalog *emoticonCatalog = [[WatchInputEmoticonManager sharedManager] emoticonCatalog:@"default"];
     BottomCatalog *emoticonCatalog = [[TitleToManager draw] assemble:StringFromUrnData(user_upName)];
     //: if (emoticonCatalog) {
     if (emoticonCatalog) {
@@ -457,7 +457,7 @@ NSInteger k_quickMessage = 159;
 //: - (NIMInputEmoticonCatalog*)loadGifCatalog
 - (BottomCatalog*)packSharedProspectus
 {
-    //: NIMInputEmoticonCatalog *emoticonCatalog = [[FFFInputEmoticonManager sharedManager] emoticonCatalog:@"gif"];
+    //: NIMInputEmoticonCatalog *emoticonCatalog = [[WatchInputEmoticonManager sharedManager] emoticonCatalog:@"gif"];
     BottomCatalog *emoticonCatalog = [[TitleToManager draw] assemble:StringFromUrnData(main_titleKey)];
     //: if (emoticonCatalog) {
     if (emoticonCatalog) {
@@ -564,7 +564,7 @@ NSInteger k_quickMessage = 159;
     }
 }
 
-//: - (void)pageViewScrollEnd: (FFFPageView *)pageView
+//: - (void)pageViewScrollEnd: (WatchPageView *)pageView
 - (void)clean: (EndUserView *)pageView
              //: currentIndex: (NSInteger)index
              endWith: (NSInteger)index
@@ -636,7 +636,7 @@ NSInteger k_quickMessage = 159;
 
 //: #pragma mark - InputEmoticonTabDelegate
 #pragma mark - InputEmoticonTabDelegate
-//: - (void)tabView:(FFFInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index{
+//: - (void)tabView:(WatchInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index{
 - (void)bolusWithColumnIndex:(SleepingTabletControl *)tabView buttonFollow:(NSInteger) index{
     //: self.currentCatalogData = self.totalCatalogData[index];
     self.currentCatalogData = self.totalCatalogData[index];
@@ -679,12 +679,12 @@ NSInteger k_quickMessage = 159;
 
 //: #pragma mark - Get
 #pragma mark - Get
-//: - (FFFInputEmoticonTabView *)tabView
+//: - (WatchInputEmoticonTabView *)tabView
 - (SleepingTabletControl *)tabView
 {
     //: if (!_tabView) {
     if (!_tabView) {
-        //: _tabView = [[FFFInputEmoticonTabView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
+        //: _tabView = [[WatchInputEmoticonTabView alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
         _tabView = [[SleepingTabletControl alloc] initWithFrame:CGRectMake(0, 0, self.nim_width, 0)];
         //: _tabView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         _tabView.autoresizingMask = UIViewAutoresizingFlexibleWidth;

@@ -61,8 +61,8 @@
 // __M_A_C_R_O__
 //: #import "NTESCardVerificationCell.h"
 #import "CompartmentMessageView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
 
 //: @interface NTESCardVerificationCell ()<UITextViewDelegate>
 @interface CompartmentMessageView ()<UITextViewDelegate>
@@ -108,9 +108,9 @@
 //        }];
 //
 
-        //: NSString *activity_add_friend_my_is = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
+        //: NSString *activity_add_friend_my_is = [WatchLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
         NSString *activity_add_friend_my_is = [PaintedNaturalLanguageTo exhibit:[SkyManData app_guidancePath]];
-        //: NSString *activity_add_friend_my_request = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
+        //: NSString *activity_add_friend_my_request = [WatchLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
         NSString *activity_add_friend_my_request = [PaintedNaturalLanguageTo exhibit:[SkyManData app_endText]];
 
         //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:[[NIMSDK sharedSDK].loginManager currentAccount]];

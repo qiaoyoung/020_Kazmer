@@ -13,10 +13,10 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
+//: #import "WatchUsrInfoData.h"
+#import "WatchUsrInfoData.h"
 
-//: @interface FFFTeamInfoData : NSObject<NIMGroupMemberProtocol>
+//: @interface WatchTeamInfoData : NSObject<NIMGroupMemberProtocol>
 @interface FormattingBubble : NSObject<VarnaSessionProtocolUser>
 
 //: @property (nonatomic, copy) NSString *teamId;

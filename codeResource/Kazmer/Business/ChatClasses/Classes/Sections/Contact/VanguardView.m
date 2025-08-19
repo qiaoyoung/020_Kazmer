@@ -153,10 +153,10 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSetGroupNameView.h"
+//: #import "WatchSetGroupNameView.h"
 #import "VanguardView.h"
 
-//: @interface FFFSetGroupNameView ()<UITextFieldDelegate>
+//: @interface WatchSetGroupNameView ()<UITextFieldDelegate>
 @interface VanguardView ()<UITextFieldDelegate>
 
 //: @property (nonatomic,assign) NSInteger inputLimit;
@@ -183,7 +183,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFSetGroupNameView
+//: @implementation WatchSetGroupNameView
 @implementation VanguardView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -330,7 +330,7 @@ typedef struct {
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 1;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_group_nickname_title"];
+        //: _titleLabel.text = [WatchLanguageManager getTextWithKey:@"activity_group_nickname_title"];
         _titleLabel.text = [PaintedNaturalLanguageTo exhibit:[RetailerData sharedInstance].app_itchTrainFormat];
     }
     //: return _titleLabel;
@@ -348,7 +348,7 @@ typedef struct {
         _subtitleLabel.textAlignment = NSTextAlignmentCenter;
         //: _subtitleLabel.textColor = [UIColor colorWithHexString:@"#4B43DE"];
         _subtitleLabel.textColor = [UIColor min:[RetailerData sharedInstance].dream_producerTitle];
-        //: _subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"Required"];
+        //: _subtitleLabel.text = [WatchLanguageManager getTextWithKey:@"Required"];
         _subtitleLabel.text = [PaintedNaturalLanguageTo exhibit:[RetailerData sharedInstance].k_specializeFormat];
     }
     //: return _subtitleLabel;
@@ -385,7 +385,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:[RetailerData sharedInstance].user_lotsStr] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:[RetailerData sharedInstance].userWholeIdent] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -412,7 +412,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:[RetailerData sharedInstance].noti_gloryValue] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor min:[RetailerData sharedInstance].dream_producerTitle];
@@ -451,7 +451,7 @@ typedef struct {
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
+        //: _searchField.placeholder = [WatchLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
         _searchField.placeholder = [PaintedNaturalLanguageTo exhibit:[RetailerData sharedInstance].appTapMessage];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

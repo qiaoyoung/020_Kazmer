@@ -195,13 +195,13 @@
         case NIMLoginStepLinkFailed:
         //: case NIMLoginStepLoseConnection:
         case NIMLoginStepLoseConnection:
-            //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+            //: text = [WatchLanguageManager getTextWithKey:@"home_fragment_net_error"];
             text = [PaintedNaturalLanguageTo exhibit:[[ScienceLabData sharedInstance] k_porterStr]];
             //: break;
             break;
         //: case NIMLoginStepLoginFailed:
         case NIMLoginStepLoginFailed:
-            //: text = [FFFLanguageManager getTextWithKey:@"login_activity_login_failed"];
+            //: text = [WatchLanguageManager getTextWithKey:@"login_activity_login_failed"];
             text = [PaintedNaturalLanguageTo exhibit:[[ScienceLabData sharedInstance] appCombinationText]];
             //: break;
             break;
@@ -216,7 +216,7 @@
             //: else
             else
             {
-                //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+                //: text = [WatchLanguageManager getTextWithKey:@"home_fragment_net_error"];
                 text = [PaintedNaturalLanguageTo exhibit:[[ScienceLabData sharedInstance] k_porterStr]];
             }
         }

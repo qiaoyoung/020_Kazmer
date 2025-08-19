@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFRegisterAvatarViewController : UIViewController
+//: @interface WatchRegisterAvatarViewController : UIViewController
 @interface AvatarViewController : UIViewController
 
 //: @property (nonatomic,strong) NSString *nickName;

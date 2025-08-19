@@ -14,15 +14,15 @@
 
 //: @class NIMQuickComment;
 @class NIMQuickComment;
-//: @class FFFMessageModel;
+//: @class WatchMessageModel;
 @class CentralProcessingUnitModel;
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFQuickCommentCell : UICollectionViewCell
+//: @interface WatchQuickCommentCell : UICollectionViewCell
 @interface BarButtonView : UICollectionViewCell
 
-//: - (void)refreshWithData:(NSArray *)comment model:(FFFMessageModel *)data;
+//: - (void)refreshWithData:(NSArray *)comment model:(WatchMessageModel *)data;
 - (void)beyondQuantity:(NSArray *)comment image:(CentralProcessingUnitModel *)data;
 
 //: @end

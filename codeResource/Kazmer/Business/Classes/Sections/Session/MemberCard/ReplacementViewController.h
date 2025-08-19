@@ -13,18 +13,18 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WatchTeamMemberListDataSource.h"
 #import "EventColor.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WatchTeamListDataManager.h"
 #import "MetadataManager.h"
 
 //: @interface CCCTeamMemberListViewController : UIViewController
 @interface ReplacementViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) WatchTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MetadataManager *teamListManager;
 
-//: - (instancetype)initWithDataSource:(FFFTeamListDataManager *)dataSource;
+//: - (instancetype)initWithDataSource:(WatchTeamListDataManager *)dataSource;
 - (instancetype)initWithRecord:(MetadataManager *)dataSource;
 
 //: @end

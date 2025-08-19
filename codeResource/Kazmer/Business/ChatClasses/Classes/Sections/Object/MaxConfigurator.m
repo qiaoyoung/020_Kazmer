@@ -9,25 +9,25 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurator.h"
+//: #import "WatchSessionConfigurator.h"
 #import "MaxConfigurator.h"
-//: #import "FFFSessionMsgDatasource.h"
+//: #import "WatchSessionMsgDatasource.h"
 #import "InfoDatasource.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "WatchSessionInteractorImpl.h"
 #import "FindValueBackground.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
+//: #import "WatchSessionInteractorImpl.h"
 #import "FindValueBackground.h"
-//: #import "FFFSessionDataSourceImpl.h"
+//: #import "WatchSessionDataSourceImpl.h"
 #import "ViewImpl.h"
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "WatchSessionLayoutImpl.h"
 #import "NameImpl.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "WatchSessionTableAdapter.h"
 #import "QuickHearingArrayAdapter.h"
 
 /*
@@ -57,36 +57,36 @@
             .......................................................................
  */
 
-//: @interface FFFSessionConfigurator()
+//: @interface WatchSessionConfigurator()
 @interface MaxConfigurator()
 
-//: @property (nonatomic,strong) FFFSessionInteractorImpl *interactor;
+//: @property (nonatomic,strong) WatchSessionInteractorImpl *interactor;
 @property (nonatomic,strong) FindValueBackground *interactor;
 
-//: @property (nonatomic,strong) FFFSessionTableAdapter *tableAdapter;
+//: @property (nonatomic,strong) WatchSessionTableAdapter *tableAdapter;
 @property (nonatomic,strong) QuickHearingArrayAdapter *tableAdapter;
 
 //: @end
 @end
 
-//: @implementation FFFSessionConfigurator
+//: @implementation WatchSessionConfigurator
 @implementation MaxConfigurator
 
-//: - (void)setup:(FFFSessionViewController *)vc
+//: - (void)setup:(WatchSessionViewController *)vc
 - (void)messageAt:(CollectionViewController *)vc
 {
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.session;
-    //: id<FFFSessionConfig>sessionConfig = vc.sessionConfig;
+    //: id<WatchSessionConfig>sessionConfig = vc.sessionConfig;
     id<MessagePinImage>sessionConfig = vc.sessionConfig;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.tableView;
-    //: FFFInputView *inputView = vc.sessionInputView;
+    //: WatchInputView *inputView = vc.sessionInputView;
     SignView *inputView = vc.sessionInputView;
 
-    //: FFFSessionDataSourceImpl *datasource = [[FFFSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
+    //: WatchSessionDataSourceImpl *datasource = [[WatchSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
     ViewImpl *datasource = [[ViewImpl alloc] initWithValue:session pastSearched:sessionConfig];
-    //: FFFSessionLayoutImpl *layout = [[FFFSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
+    //: WatchSessionLayoutImpl *layout = [[WatchSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
     NameImpl *layout = [[NameImpl alloc] initWithChromatic:session config:sessionConfig];
     //: layout.tableView = tableView;
     layout.tableView = tableView;
@@ -94,7 +94,7 @@
     layout.inputView = inputView;
 
 
-    //: _interactor = [[FFFSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
+    //: _interactor = [[WatchSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
     _interactor = [[FindValueBackground alloc] initWithBottom:session should:sessionConfig];
     //: _interactor.delegate = vc;
     _interactor.delegate = vc;
@@ -106,7 +106,7 @@
     //: [layout setDelegate:_interactor];
     [layout setDelegate:_interactor];
 
-    //: _tableAdapter = [[FFFSessionTableAdapter alloc] init];
+    //: _tableAdapter = [[WatchSessionTableAdapter alloc] init];
     _tableAdapter = [[QuickHearingArrayAdapter alloc] init];
     //: _tableAdapter.interactor = _interactor;
     _tableAdapter.interactor = _interactor;

@@ -18,23 +18,23 @@ Byte m_uglyName[] = {80, 4, 12, 121, 114, 58, 253, 41, 211, 232, 90, 173, 67, 73
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "WatchSessionInteractorImpl.h"
 #import "FindValueBackground.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "WatchSessionTableAdapter.h"
 #import "QuickHearingArrayAdapter.h"
-//: #import "FFFKitMediaFetcher.h"
+//: #import "WatchKitMediaFetcher.h"
 #import "VisualisationFetcher.h"
-//: #import "FFFMessageMaker.h"
+//: #import "WatchMessageMaker.h"
 #import "ImpendentMaker.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "WatchKitAudioCenter.h"
 #import "UserMax.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WatchKitQuickCommentUtil.h"
 #import "NameUtilPath.h"
 //: #import "UIImage+SNCompress.h"
 #import "UIImage+MakeCompress.h"
@@ -65,16 +65,16 @@ dispatch_queue_t teamShould()
 }
 
 
-//: @interface FFFSessionInteractorImpl()<NIMMediaManagerDelegate>
+//: @interface WatchSessionInteractorImpl()<NIMMediaManagerDelegate>
 @interface FindValueBackground()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) id<FFFSessionConfig>sessionConfig;
+//: @property (nonatomic,strong) id<WatchSessionConfig>sessionConfig;
 @property (nonatomic,strong) id<MessagePinImage>sessionConfig;
 
-//: @property (nonatomic,strong) FFFKitMediaFetcher *mediaFetcher;
+//: @property (nonatomic,strong) WatchKitMediaFetcher *mediaFetcher;
 @property (nonatomic,strong) VisualisationFetcher *mediaFetcher;
 
 //: @property (nonatomic,strong) NSMutableArray *pendingChatroomModels;
@@ -92,12 +92,12 @@ dispatch_queue_t teamShould()
 //: @end
 @end
 
-//: @implementation FFFSessionInteractorImpl
+//: @implementation WatchSessionInteractorImpl
 @implementation FindValueBackground
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithBottom:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<WatchSessionConfig>)sessionConfig
                          should:(id<MessagePinImage>)sessionConfig
 {
     //: self = [super init];
@@ -161,9 +161,9 @@ dispatch_queue_t teamShould()
 - (void)quantityeractDoing {
     //: for (id model in [self items]) {
     for (id model in [self provider]) {
-        //: if ([model isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([model isKindOfClass:[WatchMessageModel class]]) {
         if ([model isKindOfClass:[CentralProcessingUnitModel class]]) {
-            //: FFFMessageModel *messageModel = (FFFMessageModel *)model;
+            //: WatchMessageModel *messageModel = (WatchMessageModel *)model;
             CentralProcessingUnitModel *messageModel = (CentralProcessingUnitModel *)model;
             //: if (messageModel.message.status == NIMMessageStatusNone) {
             if (messageModel.message.status == NIMMessageStatusNone) {
@@ -198,7 +198,7 @@ dispatch_queue_t teamShould()
     NSMutableArray *models = [[NSMutableArray alloc] init];
     //: for (NIMMessage *message in messages) {
     for (NIMMessage *message in messages) {
-        //: FFFMessageModel *model = [[FFFMessageModel alloc] initWithMessage:message];
+        //: WatchMessageModel *model = [[WatchMessageModel alloc] initWithMessage:message];
         CentralProcessingUnitModel *model = [[CentralProcessingUnitModel alloc] initWithTextDisplay:message];
         //: model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
         model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
@@ -251,7 +251,7 @@ dispatch_queue_t teamShould()
             //: continue;
             continue;
         }
-        //: FFFMessageModel *model = [[FFFMessageModel alloc] initWithMessage:message];
+        //: WatchMessageModel *model = [[WatchMessageModel alloc] initWithMessage:message];
         CentralProcessingUnitModel *model = [[CentralProcessingUnitModel alloc] initWithTextDisplay:message];
         //: model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
         model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
@@ -312,7 +312,7 @@ dispatch_queue_t teamShould()
                 //: continue;
                 continue;
             }
-            //: FFFMessageModel *model = [[FFFMessageModel alloc] initWithMessage:message];
+            //: WatchMessageModel *model = [[WatchMessageModel alloc] initWithMessage:message];
             CentralProcessingUnitModel *model = [[CentralProcessingUnitModel alloc] initWithTextDisplay:message];
             //: model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
             model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
@@ -350,10 +350,10 @@ dispatch_queue_t teamShould()
     });
 }
 
-//: - (FFFMessageModel *)deleteMessage:(NIMMessage *)message
+//: - (WatchMessageModel *)deleteMessage:(NIMMessage *)message
 - (CentralProcessingUnitModel *)full:(NIMMessage *)message
 {
-    //: FFFMessageModel *model = [self findMessageModel:message];
+    //: WatchMessageModel *model = [self findMessageModel:message];
     CentralProcessingUnitModel *model = [self towardMessage:message];
     //: if (model) {
     if (model) {
@@ -370,7 +370,7 @@ dispatch_queue_t teamShould()
     return model;
 }
 
-//: - (FFFMessageModel *)updateMessage:(NIMMessage *)message
+//: - (WatchMessageModel *)updateMessage:(NIMMessage *)message
 - (CentralProcessingUnitModel *)mortalLink:(NIMMessage *)message
 {
     //: if (!message)
@@ -380,7 +380,7 @@ dispatch_queue_t teamShould()
         return nil;
     }
 
-    //: FFFMessageModel *model = [self findMessageModel:message];
+    //: WatchMessageModel *model = [self findMessageModel:message];
     CentralProcessingUnitModel *model = [self towardMessage:message];
     //: if (model)
     if (model)
@@ -444,7 +444,7 @@ dispatch_queue_t teamShould()
     }
 }
 
-//: - (FFFMessageModel *)findMessageModel:(NIMMessage *)message
+//: - (WatchMessageModel *)findMessageModel:(NIMMessage *)message
 - (CentralProcessingUnitModel *)towardMessage:(NIMMessage *)message
 {
     //: if ([message isKindOfClass:[NIMMessage class]]) {
@@ -460,7 +460,7 @@ dispatch_queue_t teamShould()
 - (NSInteger)text:(NIMMessage *)message {
     //: if ([message isKindOfClass:[NIMMessage class]]) {
     if ([message isKindOfClass:[NIMMessage class]]) {
-        //: FFFMessageModel *model = [[FFFMessageModel alloc] initWithMessage:message];
+        //: WatchMessageModel *model = [[WatchMessageModel alloc] initWithMessage:message];
         CentralProcessingUnitModel *model = [[CentralProcessingUnitModel alloc] initWithTextDisplay:message];
         //: model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
         model.shouldShowSelect = (_sessionState == NIMKitSessionStateSelect);
@@ -1050,7 +1050,7 @@ dispatch_queue_t teamShould()
 
 //: #pragma mark - NIMMeidaButton
 #pragma mark - NIMMeidaButton
-//: - (void)mediaAudioPressed:(FFFMessageModel *)messageModel
+//: - (void)mediaAudioPressed:(WatchMessageModel *)messageModel
 - (void)mentalRepresentation:(CentralProcessingUnitModel *)messageModel
 {
     //: if (![[NIMSDK sharedSDK].mediaManager isPlaying]) {
@@ -1059,7 +1059,7 @@ dispatch_queue_t teamShould()
         [[NIMSDK sharedSDK].mediaManager switchAudioOutputDevice:NIMAudioOutputDeviceSpeaker];
         //: self.pendingAudioMessages = [self findRemainAudioMessages:messageModel.message];
         self.pendingAudioMessages = [self confirmation:messageModel.message];
-        //: [[FFFKitAudioCenter instance] play:messageModel.message];
+        //: [[WatchKitAudioCenter instance] play:messageModel.message];
         [[UserMax messageEmpty] index:messageModel.message];
 
     //: } else {
@@ -1088,10 +1088,10 @@ dispatch_queue_t teamShould()
 
 
 
-                    //: NIMMessage *message = [FFFMessageMaker msgWithImage:image];
+                    //: NIMMessage *message = [WatchMessageMaker msgWithImage:image];
                     NIMMessage *message = [ImpendentMaker source:image];
 
-                    //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+                    //: NSMutableDictionary *dic = [[WatchConfig sharedConfig] Gdic];
                     NSMutableDictionary *dic = [[RecordInput file] Gdic];
                     //: NSData *imageData = UIImagePNGRepresentation(image);
                     NSData *imageData = UIImagePNGRepresentation(image);
@@ -1111,7 +1111,7 @@ dispatch_queue_t teamShould()
                         //iOS 11 苹果采用了新的图片格式 HEIC ，如果采用原图会导致其他设备的兼容问题，在上层做好格式的兼容转换,压成 jpeg
                         //: UIImage *image = [UIImage imageWithContentsOfFile:path];
                         UIImage *image = [UIImage imageWithContentsOfFile:path];
-                        //: message = [FFFMessageMaker msgWithImage:image];
+                        //: message = [WatchMessageMaker msgWithImage:image];
                         message = [ImpendentMaker source:image];
                     }
                     //: else
@@ -1119,7 +1119,7 @@ dispatch_queue_t teamShould()
                     {
                         //: UIImage *image = [UIImage imageWithContentsOfFile:path];
                         UIImage *image = [UIImage imageWithContentsOfFile:path];
-                        //: message = [FFFMessageMaker msgWithImage:image];
+                        //: message = [WatchMessageMaker msgWithImage:image];
                         message = [ImpendentMaker source:image];
                     }
 
@@ -1133,7 +1133,7 @@ dispatch_queue_t teamShould()
             //: case PHAssetMediaTypeVideo:
             case PHAssetMediaTypeVideo:
             {
-                //: NIMMessage *message = [FFFMessageMaker msgWithVideo:path];
+                //: NIMMessage *message = [WatchMessageMaker msgWithVideo:path];
                 NIMMessage *message = [ImpendentMaker video:path];
                 //: [weakSelf sendMessage:message toMessage:nil];
                 [weakSelf immobilise:message send:nil];
@@ -1177,11 +1177,11 @@ dispatch_queue_t teamShould()
         NIMMessage *message;
         //: if (image) {
         if (image) {
-            //: message = [FFFMessageMaker msgWithImage:image];
+            //: message = [WatchMessageMaker msgWithImage:image];
             message = [ImpendentMaker source:image];
         //: }else{
         }else{
-            //: message = [FFFMessageMaker msgWithVideo:path];
+            //: message = [WatchMessageMaker msgWithVideo:path];
             message = [ImpendentMaker video:path];
         }
         //: [weakSelf sendMessage:message toMessage:nil];
@@ -1236,7 +1236,7 @@ dispatch_queue_t teamShould()
     [self.dataSource occurrent:handler];
 }
 
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model
+//: - (void)willDisplayMessageModel:(WatchMessageModel *)model
 - (void)everyLast:(CentralProcessingUnitModel *)model
 {
     //: [self.dataSource willDisplayMessageModel:model];
@@ -1322,7 +1322,7 @@ dispatch_queue_t teamShould()
         [self.pendingAudioMessages removeLastObject];
         //: dispatch_async(dispatch_get_main_queue(), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            //: [[FFFKitAudioCenter instance] play:message];
+            //: [[WatchKitAudioCenter instance] play:message];
             [[UserMax messageEmpty] index:message];
         //: });
         });
@@ -1348,12 +1348,12 @@ dispatch_queue_t teamShould()
     return should;
 }
 
-//: - (FFFKitMediaFetcher *)mediaFetcher
+//: - (WatchKitMediaFetcher *)mediaFetcher
 - (VisualisationFetcher *)mediaFetcher
 {
     //: if (!_mediaFetcher) {
     if (!_mediaFetcher) {
-        //: _mediaFetcher = [[FFFKitMediaFetcher alloc] init];
+        //: _mediaFetcher = [[WatchKitMediaFetcher alloc] init];
         _mediaFetcher = [[VisualisationFetcher alloc] init];
     }
     //: return _mediaFetcher;
@@ -1406,9 +1406,9 @@ dispatch_queue_t teamShould()
     NSMutableArray *messages = [[NSMutableArray alloc] init];
     //: [self.dataSource.items enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     [self.dataSource.addHidden enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        //: if ([obj isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([obj isKindOfClass:[WatchMessageModel class]]) {
         if ([obj isKindOfClass:[CentralProcessingUnitModel class]]) {
-            //: FFFMessageModel *model = (FFFMessageModel *)obj;
+            //: WatchMessageModel *model = (WatchMessageModel *)obj;
             CentralProcessingUnitModel *model = (CentralProcessingUnitModel *)obj;
             //: BOOL isFromMe = [model.message.from isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]];
             BOOL isFromMe = [model.message.from isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]];
@@ -1517,7 +1517,7 @@ dispatch_queue_t teamShould()
 //: - (void)refreshAllChatExtendDatasByMessage:(NIMMessage *)message
 - (void)sharedMessage:(NIMMessage *)message
 {
-    //: FFFMessageModel *model = [self findMessageModel:message];
+    //: WatchMessageModel *model = [self findMessageModel:message];
     CentralProcessingUnitModel *model = [self towardMessage:message];
     //: if (model)
     if (model)
@@ -1554,12 +1554,12 @@ dispatch_queue_t teamShould()
     }];
 }
 
-//: - (void)refreshAllAfterFetchCommentsByModels:(NSArray<FFFMessageModel *> *)models
+//: - (void)refreshAllAfterFetchCommentsByModels:(NSArray<WatchMessageModel *> *)models
 - (void)withModels:(NSArray<CentralProcessingUnitModel *> *)models
 {
     //: NSMutableArray *messages = [NSMutableArray array];
     NSMutableArray *messages = [NSMutableArray array];
-    //: for(FFFMessageModel *model in models)
+    //: for(WatchMessageModel *model in models)
     for(CentralProcessingUnitModel *model in models)
     {
         //: [messages addObject:model.message];
@@ -1570,7 +1570,7 @@ dispatch_queue_t teamShould()
     [self after:messages];
 }
 
-//: - (void)refreshAllChatExtendDatasBySubModel:(FFFMessageModel *)model
+//: - (void)refreshAllChatExtendDatasBySubModel:(WatchMessageModel *)model
 - (void)sub:(CentralProcessingUnitModel *)model
                                  //: completion:(NIMSessionInteractorHandler)completion
                                  assemblage:(NIMSessionInteractorHandler)completion
@@ -1579,7 +1579,7 @@ dispatch_queue_t teamShould()
     NIMMessage *message = model.message;
     //: NIMMessage *threadMessage = [self threadMessageOfMessage:message];
     NIMMessage *threadMessage = [self year:message];
-    //: FFFMessageModel *threadMessageModel = [self findMessageModel:threadMessage];
+    //: WatchMessageModel *threadMessageModel = [self findMessageModel:threadMessage];
     CentralProcessingUnitModel *threadMessageModel = [self towardMessage:threadMessage];
     //: if (threadMessage)
     if (threadMessage)
@@ -1599,7 +1599,7 @@ dispatch_queue_t teamShould()
     }
 }
 
-//: - (void)refreshAllChatExtendDatasByModel:(FFFMessageModel *)model
+//: - (void)refreshAllChatExtendDatasByModel:(WatchMessageModel *)model
 - (void)master:(CentralProcessingUnitModel *)model
                               //: completion:(NIMSessionInteractorHandler)completion
                               with:(NIMSessionInteractorHandler)completion
@@ -1670,12 +1670,12 @@ dispatch_queue_t teamShould()
 }
 
 
-//: - (void)refreshAllChatExtendDatasByModels:(NSArray<FFFMessageModel *> *)models
+//: - (void)refreshAllChatExtendDatasByModels:(NSArray<WatchMessageModel *> *)models
 - (void)frame:(NSArray<CentralProcessingUnitModel *> *)models
                                //: completion:(NIMSessionInteractorHandler)completion
                                tingShow:(NIMSessionInteractorHandler)completion
 {
-    //: for (FFFMessageModel *model in models)
+    //: for (WatchMessageModel *model in models)
     for (CentralProcessingUnitModel *model in models)
     {
         //: [self refreshAllChatExtendDatasByModel:model completion:nil];
@@ -1688,7 +1688,7 @@ dispatch_queue_t teamShould()
                   //: completion:(NIMSessionInteractorHandler)completion
                   borderPath:(NIMSessionInteractorHandler)completion
 {
-   //: FFFMessageModel *model = [self findMessageModel:message];
+   //: WatchMessageModel *model = [self findMessageModel:message];
    CentralProcessingUnitModel *model = [self towardMessage:message];
     //: if (model)
     if (model)
@@ -1720,7 +1720,7 @@ dispatch_queue_t teamShould()
     }
 }
 
-//: - (void)loadThreadAndRepliedMessages:(FFFMessageModel *)model
+//: - (void)loadThreadAndRepliedMessages:(WatchMessageModel *)model
 - (void)custom:(CentralProcessingUnitModel *)model
                           //: completion:(NIMSessionInteractorHandler)completion
                           user:(NIMSessionInteractorHandler)completion
@@ -1921,7 +1921,7 @@ dispatch_queue_t teamShould()
     }];
 }
 
-//: - (void)loadChildMessages:(FFFMessageModel *)model
+//: - (void)loadChildMessages:(WatchMessageModel *)model
 - (void)clean:(CentralProcessingUnitModel *)model
                //: completion:(NIMSessionInteractorHandler)completion
                bubble:(NIMSessionInteractorHandler)completion
@@ -1964,7 +1964,7 @@ dispatch_queue_t teamShould()
     });
 }
 
-//: - (void)loadQuickComments:(FFFMessageModel *)model
+//: - (void)loadQuickComments:(WatchMessageModel *)model
 - (void)digitiser:(CentralProcessingUnitModel *)model
                //: completion:(NIMSessionInteractorHandler)completion
                with:(NIMSessionInteractorHandler)completion
@@ -1997,7 +1997,7 @@ dispatch_queue_t teamShould()
             //: if (result.count > 0)
             if (result.count > 0)
             {
-                //: model.emoticonsContainerSize = [FFFKitQuickCommentUtil containerSizeWithComments:result];
+                //: model.emoticonsContainerSize = [WatchKitQuickCommentUtil containerSizeWithComments:result];
                 model.emoticonsContainerSize = [NameUtilPath power:result];
             }
             //: else
@@ -2027,7 +2027,7 @@ dispatch_queue_t teamShould()
     }];
 }
 
-//: - (void)uiReloadThreadMessageBySubMessage:(FFFMessageModel *)model
+//: - (void)uiReloadThreadMessageBySubMessage:(WatchMessageModel *)model
 - (void)sizeScaleColor:(CentralProcessingUnitModel *)model
 {
     //: NIMMessage *message = model.message;
@@ -2051,7 +2051,7 @@ dispatch_queue_t teamShould()
         //: return;
         return;
     }
-    //: FFFMessageModel *model = [self findMessageModel:message];
+    //: WatchMessageModel *model = [self findMessageModel:message];
     CentralProcessingUnitModel *model = [self towardMessage:message];
     //: if (model)
     if (model)

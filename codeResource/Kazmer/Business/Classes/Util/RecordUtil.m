@@ -26,7 +26,7 @@ Byte showShirtIdent[] = {95, 24, 8, 4, 94, 106, 97, 93, 102, 92, 87, 97, 102, 94
 // __M_A_C_R_O__
 //: #import "NTESUserUtil.h"
 #import "RecordUtil.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 
 //: @implementation NTESUserUtil
@@ -40,19 +40,19 @@ Byte showShirtIdent[] = {95, 24, 8, 4, 94, 106, 97, 93, 102, 92, 87, 97, 102, 94
     switch (gender) {
         //: case NIMUserGenderMale:
         case NIMUserGenderMale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+            //: genderStr = [WatchLanguageManager getTextWithKey:@"friend_info_activity_nan"];
             genderStr = [PaintedNaturalLanguageTo exhibit:StringFromClothData(showShirtIdent)];
             //: break;
             break;
         //: case NIMUserGenderFemale:
         case NIMUserGenderFemale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+            //: genderStr = [WatchLanguageManager getTextWithKey:@"friend_info_activity_nv"];
             genderStr = [PaintedNaturalLanguageTo exhibit:StringFromClothData(mPetitionText)];
             //: break;
             break;
         //: case NIMUserGenderUnknown:
         case NIMUserGenderUnknown:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+            //: genderStr = [WatchLanguageManager getTextWithKey:@"friend_info_activity_xu"];
             genderStr = [PaintedNaturalLanguageTo exhibit:StringFromClothData(app_untilStr)];
         //: default:
         default:

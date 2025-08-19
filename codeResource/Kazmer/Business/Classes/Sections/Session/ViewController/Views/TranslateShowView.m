@@ -233,7 +233,7 @@ typedef struct {
         //: [self initUI];
         [self initSound];
 
-        //: self.selectButtons = @[[FFFLanguageManager getTextWithKey:@"report_reasons7"],[FFFLanguageManager getTextWithKey:@"report_reasons8"],[FFFLanguageManager getTextWithKey:@"report_reasons9"],[FFFLanguageManager getTextWithKey:@"report_reasons10"],[FFFLanguageManager getTextWithKey:@"report_reasons6"]];
+        //: self.selectButtons = @[[WatchLanguageManager getTextWithKey:@"report_reasons7"],[WatchLanguageManager getTextWithKey:@"report_reasons8"],[WatchLanguageManager getTextWithKey:@"report_reasons9"],[WatchLanguageManager getTextWithKey:@"report_reasons10"],[WatchLanguageManager getTextWithKey:@"report_reasons6"]];
         self.selectButtons = @[[PaintedNaturalLanguageTo exhibit:[AfterwardData mainFormatMsg]],[PaintedNaturalLanguageTo exhibit:[AfterwardData m_scramId]],[PaintedNaturalLanguageTo exhibit:[AfterwardData kCharterKey]],[PaintedNaturalLanguageTo exhibit:[AfterwardData app_shouldPath]],[PaintedNaturalLanguageTo exhibit:[AfterwardData main_closeMedalId]]];
         //: self.index = 0;
         self.index = 0;
@@ -268,7 +268,7 @@ typedef struct {
     labsub.textColor = [UIColor min:[AfterwardData dreamEaterShowId]];
     //: labsub.numberOfLines = 0;
     labsub.numberOfLines = 0;
-    //: labsub.text = [FFFLanguageManager getTextWithKey:@"report_Tip"];
+    //: labsub.text = [WatchLanguageManager getTextWithKey:@"report_Tip"];
     labsub.text = [PaintedNaturalLanguageTo exhibit:[AfterwardData app_imageId]];
     //: [_box addSubview:labsub];
     [_box addSubview:labsub];
@@ -314,7 +314,7 @@ typedef struct {
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_Content"];
+        //: _titleLabel.text = [WatchLanguageManager getTextWithKey:@"report_Content"];
         _titleLabel.text = [PaintedNaturalLanguageTo exhibit:[AfterwardData mainUreaFlowFormat]];
     }
     //: return _titleLabel;
@@ -353,7 +353,7 @@ typedef struct {
         [Btn1 setImage:[UIImage imageNamed:[AfterwardData dream_showId]] forState:UIControlStateNormal];
         //: [Btn1 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn1 setImage:[UIImage imageNamed:[AfterwardData k_curIdent]] forState:UIControlStateSelected];
-        //: [Btn1 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons7"] forState:UIControlStateNormal];
+        //: [Btn1 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons7"] forState:UIControlStateNormal];
         [Btn1 setTitle:[PaintedNaturalLanguageTo exhibit:[AfterwardData mainFormatMsg]] forState:UIControlStateNormal];
         //: Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -381,7 +381,7 @@ typedef struct {
         [Btn2 setImage:[UIImage imageNamed:[AfterwardData dream_showId]] forState:UIControlStateNormal];
         //: [Btn2 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn2 setImage:[UIImage imageNamed:[AfterwardData k_curIdent]] forState:UIControlStateSelected];
-        //: [Btn2 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons8"] forState:UIControlStateNormal];
+        //: [Btn2 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons8"] forState:UIControlStateNormal];
         [Btn2 setTitle:[PaintedNaturalLanguageTo exhibit:[AfterwardData m_scramId]] forState:UIControlStateNormal];
         //: Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -410,7 +410,7 @@ typedef struct {
         [Btn3 setImage:[UIImage imageNamed:[AfterwardData k_curIdent]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn3];
         [_buttonBox addSubview:Btn3];
-        //: [Btn3 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons9"] forState:UIControlStateNormal];
+        //: [Btn3 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons9"] forState:UIControlStateNormal];
         [Btn3 setTitle:[PaintedNaturalLanguageTo exhibit:[AfterwardData kCharterKey]] forState:UIControlStateNormal];
         //: Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -437,7 +437,7 @@ typedef struct {
         [Btn4 setImage:[UIImage imageNamed:[AfterwardData k_curIdent]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn4];
         [_buttonBox addSubview:Btn4];
-        //: [Btn4 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons10"] forState:UIControlStateNormal];
+        //: [Btn4 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons10"] forState:UIControlStateNormal];
         [Btn4 setTitle:[PaintedNaturalLanguageTo exhibit:[AfterwardData app_shouldPath]] forState:UIControlStateNormal];
         //: Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -464,7 +464,7 @@ typedef struct {
         [Btn5 setImage:[UIImage imageNamed:[AfterwardData k_curIdent]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn5];
         [_buttonBox addSubview:Btn5];
-        //: [Btn5 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
+        //: [Btn5 setTitle:[WatchLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
         [Btn5 setTitle:[PaintedNaturalLanguageTo exhibit:[AfterwardData main_closeMedalId]] forState:UIControlStateNormal];
         //: Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -494,7 +494,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:[AfterwardData dreamCloudUrl]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:[AfterwardData dreamScramFormat]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -521,7 +521,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:[AfterwardData k_primaryText]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor min:[AfterwardData app_successName]];

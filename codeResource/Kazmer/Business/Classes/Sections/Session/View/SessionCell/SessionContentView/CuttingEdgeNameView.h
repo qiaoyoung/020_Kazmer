@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNotificationContentView.h"
+//: #import "WatchSessionNotificationContentView.h"
 #import "AssemblageControl.h"
 
-//: @interface NTESSessionTipContentView : FFFSessionMessageContentView
+//: @interface NTESSessionTipContentView : WatchSessionMessageContentView
 @interface CuttingEdgeNameView : ThoughtImageControl
 
 //: @property (nonatomic,strong) UILabel *label;

@@ -25,7 +25,7 @@ Byte k_keyPath[] = {86, 8, 15, 6, 103, 79, 120, 114, 110, 131, 120, 127, 110, 12
 //: ic_none_blockList
 Byte showOfMessage[] = {96, 17, 22, 7, 146, 226, 32, 127, 121, 117, 132, 133, 132, 123, 117, 120, 130, 133, 121, 129, 98, 127, 137, 138, 17};
 
-//: #FFF6CF
+//: #Watch6CF
 Byte app_fiftyKey[] = {1, 7, 86, 5, 192, 121, 156, 156, 156, 140, 153, 156, 47};
 
 //: #F6F7FA
@@ -48,17 +48,17 @@ Byte dreamShowEconomicallyMsg[] = {4, 7, 27, 13, 40, 104, 69, 19, 160, 2, 222, 8
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMuteMemberListViewController.h"
+//: #import "WatchTeamMuteMemberListViewController.h"
 #import "PacketViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "WatchTeamMemberCardViewController.h"
 #import "MajorLeagueTeamSubMemberPositionCardViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "WatchCardHeaderCell.h"
 #import "RecentFrameReusableView.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WatchTeamCardMemberItem.h"
 #import "CoatButtonBar.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
+//: #import "WatchKitProgressHUD.h"
 #import "AlongEffectView.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
@@ -69,7 +69,7 @@ Byte dreamShowEconomicallyMsg[] = {4, 7, 27, 13, 40, 104, 69, 19, 160, 2, 222, 8
 //: #import "NTESBlackListTableViewCell.h"
 #import "CorrelationTableButtonViewCell.h"
 
-//: @interface FFFTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,NTESUserListCellDelegate>
+//: @interface WatchTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,NTESUserListCellDelegate>
 @interface PacketViewController ()<UITableViewDataSource,UITableViewDelegate,MakeTime>
 
 //: @property (nonatomic,strong) UITableView *tableView;
@@ -85,7 +85,7 @@ Byte dreamShowEconomicallyMsg[] = {4, 7, 27, 13, 40, 104, 69, 19, 160, 2, 222, 8
 //: @end
 @end
 
-//: @implementation FFFTeamMuteMemberListViewController
+//: @implementation WatchTeamMuteMemberListViewController
 @implementation PacketViewController
 
 
@@ -150,7 +150,7 @@ Byte dreamShowEconomicallyMsg[] = {4, 7, 27, 13, 40, 104, 69, 19, 160, 2, 222, 8
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"black_list_activity_black"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:StringFromUglyRiotData(show_shipIdent)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -297,7 +297,7 @@ Byte dreamShowEconomicallyMsg[] = {4, 7, 27, 13, 40, 104, 69, 19, 160, 2, 222, 8
     //: NIMTeamMember *member = self.memberList[indexPath.section];
     NIMTeamMember *member = self.memberList[indexPath.section];
 
-    //: FFFTeamMemberCardViewController *vc = [[FFFTeamMemberCardViewController alloc] init];
+    //: WatchTeamMemberCardViewController *vc = [[WatchTeamMemberCardViewController alloc] init];
     MajorLeagueTeamSubMemberPositionCardViewController *vc = [[MajorLeagueTeamSubMemberPositionCardViewController alloc] init];
     //: vc.teamListManager = self.teamListManager;
     vc.teamListManager = self.teamListManager;
@@ -325,7 +325,7 @@ Byte dreamShowEconomicallyMsg[] = {4, 7, 27, 13, 40, 104, 69, 19, 160, 2, 222, 8
 
         //: if(!error) {
         if(!error) {
-            //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
+            //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
             [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromUglyRiotData(mainCommentIdent)]
                          //: duration:2
                          duration:2
@@ -372,7 +372,7 @@ Byte dreamShowEconomicallyMsg[] = {4, 7, 27, 13, 40, 104, 69, 19, 160, 2, 222, 8
     if(!_box){
         //: _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
         _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice tingHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
-        //: _box.backgroundColor = [UIColor colorWithHexString:@"#FFF6CF"];
+        //: _box.backgroundColor = [UIColor colorWithHexString:@"#Watch6CF"];
         _box.backgroundColor = [UIColor min:StringFromUglyRiotData(app_fiftyKey)];
 
         //: UIImageView *defImg = [[UIImageView alloc]initWithFrame:CGRectMake(15, 6, 14, 14)];
@@ -389,7 +389,7 @@ Byte dreamShowEconomicallyMsg[] = {4, 7, 27, 13, 40, 104, 69, 19, 160, 2, 222, 8
         //: subtitleLabel.textColor = [UIColor colorWithHexString:@"#FF483D"];
         subtitleLabel.textColor = [UIColor min:StringFromUglyRiotData(dreamShowEconomicallyMsg)];
 //        subtitleLabel.textAlignment = NSTextAlignmentLeft;
-        //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
+        //: subtitleLabel.text = [WatchLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
         subtitleLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromUglyRiotData(show_imageRehabIdent)];
         //: [_box addSubview:subtitleLabel];
         [_box addSubview:subtitleLabel];
@@ -424,7 +424,7 @@ Byte dreamShowEconomicallyMsg[] = {4, 7, 27, 13, 40, 104, 69, 19, 160, 2, 222, 8
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [WatchLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromUglyRiotData(user_bubbleData)];
 
 

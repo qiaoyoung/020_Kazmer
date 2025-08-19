@@ -272,7 +272,7 @@
     labsubLabel.textColor = [UIColor min:[[ResortData sharedInstance] user_deerData]];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select"];
+    //: labsubLabel.text = [WatchLanguageManager getTextWithKey:@"report_next_select"];
     labsubLabel.text = [PaintedNaturalLanguageTo exhibit:[[ResortData sharedInstance] showValueFormat]];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -324,7 +324,7 @@
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
 //        _titleLabel.text = LangKey(@"report_User");
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_Content"];
+        //: _titleLabel.text = [WatchLanguageManager getTextWithKey:@"report_Content"];
         _titleLabel.text = [PaintedNaturalLanguageTo exhibit:[[ResortData sharedInstance] userShowIdent]];
 
     }
@@ -356,7 +356,7 @@
         lab.textColor = [UIColor min:[[ResortData sharedInstance] user_deerData]];
         //: lab.font = [UIFont systemFontOfSize:14];
         lab.font = [UIFont systemFontOfSize:14];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
+        //: lab.text = [WatchLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
         lab.text = [PaintedNaturalLanguageTo exhibit:[[ResortData sharedInstance] app_sendKey]];
         //: [_blockView addSubview:lab];
         [_blockView addSubview:lab];
@@ -405,7 +405,7 @@
         lab.textColor = [UIColor min:[[ResortData sharedInstance] user_deerData]];
         //: lab.font = [UIFont systemFontOfSize:14];
         lab.font = [UIFont systemFontOfSize:14];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
+        //: lab.text = [WatchLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
         lab.text = [PaintedNaturalLanguageTo exhibit:[[ResortData sharedInstance] k_shouldMsg]];
         //: [_deleteView addSubview:lab];
         [_deleteView addSubview:lab];
@@ -459,7 +459,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:[[ResortData sharedInstance] user_deerData]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[ResortData sharedInstance] dreamFreedPath]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -490,7 +490,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[ResortData sharedInstance] main_shipStr]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor min:[[ResortData sharedInstance] k_onMsg]];

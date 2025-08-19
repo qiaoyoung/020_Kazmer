@@ -13,10 +13,10 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
 
-//: @interface FFFAvatarImageView : UIControl
+//: @interface WatchAvatarImageView : UIControl
 @interface RecordControl : UIControl
 //: @property (nonatomic,strong) UIImage *image;
 @property (nonatomic,strong) UIImage *image;

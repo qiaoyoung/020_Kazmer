@@ -120,12 +120,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamIntroduceViewController.h"
+//: #import "WatchTeamIntroduceViewController.h"
 #import "BubbleTableViewController.h"
 //: #import "UITextView+Util.h"
 #import "UITextView+Util.h"
 
-//: @interface FFFTeamIntroduceViewController ()<UITextFieldDelegate, UITextViewDelegate>
+//: @interface WatchTeamIntroduceViewController ()<UITextFieldDelegate, UITextViewDelegate>
 @interface BubbleTableViewController ()<UITextFieldDelegate, UITextViewDelegate>
 
 
@@ -143,7 +143,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamIntroduceViewController
+//: @implementation WatchTeamIntroduceViewController
 @implementation BubbleTableViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -200,7 +200,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Group_description"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"Group_description"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[[CirclePareData sharedInstance] userCircleText]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -228,7 +228,7 @@
     self.contentTextView.font = [UIFont systemFontOfSize:16.f];
     //: self.contentTextView.delegate = self;
     self.contentTextView.delegate = self;
-    //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
+    //: self.contentTextView.placeholder = [WatchLanguageManager getTextWithKey:@"Please_enter_content"];
     self.contentTextView.placeholder = [PaintedNaturalLanguageTo exhibit:[[CirclePareData sharedInstance] m_skyIdent]];
     //: self.contentTextView.text = self.defaultContent;
     self.contentTextView.text = self.defaultContent;
@@ -252,7 +252,7 @@
         submitButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
         //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+        //: [submitButton setTitle:[WatchLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
         [submitButton setTitle:[PaintedNaturalLanguageTo exhibit:[[CirclePareData sharedInstance] app_tailedMsg]] forState:UIControlStateNormal];
         //: [submitButton addTarget:self action:@selector(onSave:) forControlEvents:UIControlEventTouchUpInside];
         [submitButton addTarget:self action:@selector(shouldsed:) forControlEvents:UIControlEventTouchUpInside];

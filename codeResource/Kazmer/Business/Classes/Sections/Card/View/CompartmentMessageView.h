@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "WatchCommonTableViewCell.h"
 #import "OldInfo.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface NTESCardVerificationCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface NTESCardVerificationCell : UITableViewCell<WatchCommonTableViewCell>
 @interface CompartmentMessageView : UITableViewCell<OldInfo>
 //: @property (nonatomic ,strong) UILabel *titleLabel;
 @property (nonatomic ,strong) UILabel *titleLabel;

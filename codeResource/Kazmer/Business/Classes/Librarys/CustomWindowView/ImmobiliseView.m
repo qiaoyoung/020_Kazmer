@@ -114,7 +114,7 @@ Byte showUpName[] = {62, 22, 87, 7, 107, 26, 120, 10, 12, 29, 18, 31, 18, 29, 34
 
         //: _textField = [[UITextField alloc] init];
         _textField = [[UITextField alloc] init];
-        //: _textField.placeholder = [FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"];
+        //: _textField.placeholder = [WatchLanguageManager getTextWithKey:@"register_avtivity3_nick"];
         _textField.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromAmpleData(dreamDateText)];
         //: [backGroundView addSubview:_textField];
         [backGroundView addSubview:_textField];
@@ -155,7 +155,7 @@ Byte showUpName[] = {62, 22, 87, 7, 107, 26, 120, 10, 12, 29, 18, 31, 18, 29, 34
         UIButton *knowButton = [UIButton buttonWithType:UIButtonTypeCustom];
         //: knowButton.titleLabel.font = [UIFont systemFontOfSize:16];
         knowButton.titleLabel.font = [UIFont systemFontOfSize:16];
-        //: [knowButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+        //: [knowButton setTitle:[WatchLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
         [knowButton setTitle:[PaintedNaturalLanguageTo exhibit:StringFromAmpleData(showUpName)] forState:UIControlStateNormal];
         //: [knowButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [knowButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

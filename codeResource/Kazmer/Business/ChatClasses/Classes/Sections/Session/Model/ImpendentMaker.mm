@@ -118,7 +118,7 @@ typedef struct {
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageMaker.m
+//  WatchMessageMaker.m
 // ButtonKit
 //
 //  Created by chris.
@@ -126,13 +126,13 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageMaker.h"
+//: #import "WatchMessageMaker.h"
 #import "ImpendentMaker.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFInputAtCache.h"
+//: #import "WatchInputAtCache.h"
 #import "TimeCache.h"
 
 //: NSString * generateUUID(void) {
@@ -150,7 +150,7 @@ NSString * videoName(void) {
     return uuidString;
 }
 
-//: @implementation FFFMessageMaker
+//: @implementation WatchMessageMaker
 @implementation ImpendentMaker
 
 //: + (NIMMessage*)msgWithText:(NSString*)text
@@ -216,7 +216,7 @@ NSString * videoName(void) {
     option.compressQuality = 0.7;
     //: imageObject.option = option;
     imageObject.option = option;
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [WatchMessageMaker generateImageMessage:imageObject];
     return [ImpendentMaker broilParent:imageObject];
 }
 
@@ -225,7 +225,7 @@ NSString * videoName(void) {
 {
     //: NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
     NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [WatchMessageMaker generateImageMessage:imageObject];
     return [ImpendentMaker broilParent:imageObject];
 }
 
@@ -234,7 +234,7 @@ NSString * videoName(void) {
 {
     //: NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
     NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [WatchMessageMaker generateImageMessage:imageObject];
     return [ImpendentMaker broilParent:imageObject];
 }
 
@@ -250,7 +250,7 @@ NSString * videoName(void) {
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = imageObject;
     message.messageObject = imageObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
+    //: message.apnsContent = [WatchLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
     message.apnsContent = [PaintedNaturalLanguageTo exhibit:[SubstanceData dreamPreparationMessage]];
     //: [self setupMessage:message];
     [self constituentFilter:message];

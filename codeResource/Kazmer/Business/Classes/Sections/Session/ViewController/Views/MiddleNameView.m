@@ -47,7 +47,7 @@ Byte main_barMsg[] = {8, 6, 19, 7, 83, 51, 125, 116, 128, 130, 136, 129, 135, 19
 // __M_A_C_R_O__
 //: #import "NTESRedPackagePaySheet.h"
 #import "MiddleNameView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "TPPasswordTextView.h"
 #import "SoleView.h"
@@ -138,7 +138,7 @@ Byte main_barMsg[] = {8, 6, 19, 7, 83, 51, 125, 116, 128, 130, 136, 129, 135, 19
         titleLabel_1.textColor = [UIColor min:StringFromFinePremiseData(appEvolveValue)];
         //: titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
         titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
-        //: titleLabel_1.text = [FFFLanguageManager getTextWithKey:@"activity_pay_psw_input"];
+        //: titleLabel_1.text = [WatchLanguageManager getTextWithKey:@"activity_pay_psw_input"];
         titleLabel_1.text = [PaintedNaturalLanguageTo exhibit:StringFromFinePremiseData(noti_trainingKey)];
         //: titleLabel_1.textAlignment = NSTextAlignmentLeft;
         titleLabel_1.textAlignment = NSTextAlignmentLeft;
@@ -184,7 +184,7 @@ Byte main_barMsg[] = {8, 6, 19, 7, 83, 51, 125, 116, 128, 130, 136, 129, 135, 19
         title.textColor = [UIColor blackColor];
         //: title.font = [UIFont systemFontOfSize:15];
         title.font = [UIFont systemFontOfSize:15];
-        //: title.text = [FFFLanguageManager getTextWithKey:@"red_packet"];
+        //: title.text = [WatchLanguageManager getTextWithKey:@"red_packet"];
         title.text = [PaintedNaturalLanguageTo exhibit:StringFromFinePremiseData(dreamUntilUrl)];
         //: [_backView addSubview:title];
         [_backView addSubview:title];
@@ -321,7 +321,7 @@ Byte main_barMsg[] = {8, 6, 19, 7, 83, 51, 125, 116, 128, 130, 136, 129, 135, 19
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:userID skinColour_strong:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

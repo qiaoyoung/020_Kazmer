@@ -11,17 +11,17 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFKitEvent.h"
+//: #import "WatchKitEvent.h"
 #import "CoverShowEvent.h"
 
-//: typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
-typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
-    //: FFFSessionMessageContentViewLayoutAuto = 0, 
-    FFFSessionMessageContentViewLayoutAuto = 0, //根据消息自动布局
-    //: FFFSessionMessageContentViewLayoutLeft, 
-    FFFSessionMessageContentViewLayoutLeft, //左边布局
-    //: FFFSessionMessageContentViewLayoutRight, 
-    FFFSessionMessageContentViewLayoutRight, //右边布局
+//: typedef NS_ENUM (NSInteger, WatchSessionMessageContentViewLayout){
+typedef NS_ENUM (NSInteger, WatchSessionMessageContentViewLayout){
+    //: WatchSessionMessageContentViewLayoutAuto = 0, 
+    WatchSessionMessageContentViewLayoutAuto = 0, //根据消息自动布局
+    //: WatchSessionMessageContentViewLayoutLeft, 
+    WatchSessionMessageContentViewLayoutLeft, //左边布局
+    //: WatchSessionMessageContentViewLayoutRight, 
+    WatchSessionMessageContentViewLayoutRight, //右边布局
 //: };
 };
 
@@ -31,7 +31,7 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
 //: @protocol NIMMessageContentViewDelegate <NSObject>
 @protocol CypherOption <NSObject>
 
-//: - (void)onCatchEvent:(FFFKitEvent *)event;
+//: - (void)onCatchEvent:(WatchKitEvent *)event;
 - (void)modelled:(CoverShowEvent *)event;
 
 //: - (void)disableLongPress:(BOOL)disable;
@@ -49,20 +49,20 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
 //: @end
 @end
 
-//: @class FFFMessageModel;
+//: @class WatchMessageModel;
 @class CentralProcessingUnitModel;
 
-//: @interface FFFSessionMessageContentView : UIControl
+//: @interface WatchSessionMessageContentView : UIControl
 @interface ThoughtImageControl : UIControl
 
-//: @property (nonatomic,strong,readonly) FFFMessageModel *model;
+//: @property (nonatomic,strong,readonly) WatchMessageModel *model;
 @property (nonatomic,strong,readonly) CentralProcessingUnitModel *model;
 
 //: @property (nonatomic,strong) UIImageView * bubbleImageView;
 @property (nonatomic,strong) UIImageView * bubbleImageView;
 
-//: @property (nonatomic,assign) FFFSessionMessageContentViewLayout layoutStyle;
-@property (nonatomic,assign) FFFSessionMessageContentViewLayout layoutStyle;
+//: @property (nonatomic,assign) WatchSessionMessageContentViewLayout layoutStyle;
+@property (nonatomic,assign) WatchSessionMessageContentViewLayout layoutStyle;
 
 //: @property (nonatomic,weak) id<NIMMessageContentViewDelegate> delegate;
 @property (nonatomic,weak) id<CypherOption> delegate;
@@ -81,7 +81,7 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
  *  @param data 刷新数据
  *
  */
-//: - (void)refresh:(FFFMessageModel*)data;
+//: - (void)refresh:(WatchMessageModel*)data;
 - (void)lengthAt:(CentralProcessingUnitModel*)data;
 
 

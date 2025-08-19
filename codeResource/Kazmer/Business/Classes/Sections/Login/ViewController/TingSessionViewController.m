@@ -246,7 +246,7 @@ typedef struct {
     return main_teamMessage;
 }
 
-//: #ffffff
+//: #fffWatch
 - (NSString *)userBoomData {
     /* static */ NSString *userBoomData = nil;
     if (!userBoomData) {
@@ -609,7 +609,7 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLoginViewController.h"
+//: #import "WatchLoginViewController.h"
 #import "TingSessionViewController.h"
 //: #import "NTESMainTabController.h"
 #import "UserBarController.h"
@@ -627,14 +627,14 @@ typedef struct {
 #import "MidstreamZoneCenter.h"
 //: #import "UIActionSheet+NTESBlock.h"
 #import "UIActionSheet+InputSub.h"
-//: #import "FFFRegisterViewController.h"
+//: #import "WatchRegisterViewController.h"
 #import "ShowBubbleViewController.h"
 //: #import "NTESRegistConfigManager.h"
 #import "BarTo.h"
 //: #import <CoreTelephony/CTCellularData.h>
 #import <CoreTelephony/CTCellularData.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
 //: #import "CCCAutoLoginManager.h"
@@ -646,7 +646,7 @@ typedef struct {
 //: #import "GetBackPasswordViewController.h"
 #import "ReplacingViewController.h"
 
-//: @interface FFFLoginViewController ()<UITextFieldDelegate> {
+//: @interface WatchLoginViewController ()<UITextFieldDelegate> {
 @interface TingSessionViewController ()<UITextFieldDelegate> {
     //: UIActivityIndicatorView *_ActivityIndicator;
     UIActivityIndicatorView *_ActivityIndicator;
@@ -687,7 +687,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFLoginViewController
+//: @implementation WatchLoginViewController
 @implementation TingSessionViewController
 
 //: - (void)viewDidLoad {
@@ -789,7 +789,7 @@ typedef struct {
                 }
                 //: userDefaults.language = lang;
                 userDefaults.language = lang;
-                //: [[FFFLanguageManager shareInstance] setLanguagre:lang];
+                //: [[WatchLanguageManager shareInstance] setLanguagre:lang];
                 [[PaintedNaturalLanguageTo marginSource] setOfImage:lang];
                 //: [[NSNotificationCenter defaultCenter] postNotificationName:@"NotificationLogout" object:nil];
                 [[NSNotificationCenter defaultCenter] postNotificationName:[[AwfullyData sharedInstance] showMediaName] object:nil];
@@ -1128,7 +1128,7 @@ typedef struct {
 
     //: UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
     UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_login_welcome"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"activity_login_welcome"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] notiRugValue]];
     //: labtitle.textColor = [UIColor blackColor];
     labtitle.textColor = [UIColor blackColor];
@@ -1141,7 +1141,7 @@ typedef struct {
 
     //: UIView *usernameView = [[UIView alloc]initWithFrame:CGRectMake(20, labtitle.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
     UIView *usernameView = [[UIView alloc]initWithFrame:CGRectMake(20, labtitle.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
-    //: usernameView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: usernameView.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
     usernameView.backgroundColor = [UIColor min:[[AwfullyData sharedInstance] userBoomData]];
     //: usernameView.layer.cornerRadius = 24;
     usernameView.layer.cornerRadius = 24;
@@ -1163,7 +1163,7 @@ typedef struct {
     _usernameTextField.font = [UIFont systemFontOfSize:16];
     //: _usernameTextField.textColor = [UIColor colorWithHexString:@"#333333"];
     _usernameTextField.textColor = [UIColor min:[[AwfullyData sharedInstance] notiPublisherValue]];
-    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[WatchLanguageManager getTextWithKey:@"register_account_activity_account"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] showColorIdent]] attributes:@{NSForegroundColorAttributeName:[UIColor min:[[AwfullyData sharedInstance] user_isolationName]]}];
     //: _usernameTextField.attributedPlaceholder = attrString;
     _usernameTextField.attributedPlaceholder = attrString;
@@ -1177,7 +1177,7 @@ typedef struct {
 
     //: UIView *psdView = [[UIView alloc]initWithFrame:CGRectMake(20, usernameView.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
     UIView *psdView = [[UIView alloc]initWithFrame:CGRectMake(20, usernameView.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
-    //: psdView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: psdView.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
     psdView.backgroundColor = [UIColor min:[[AwfullyData sharedInstance] userBoomData]];
     //: psdView.layer.masksToBounds = YES;
     psdView.layer.masksToBounds = YES;
@@ -1202,7 +1202,7 @@ typedef struct {
     //: _passwordTextField.secureTextEntry = YES;
     _passwordTextField.secureTextEntry = YES;
 //    self.passwordTextField.delegate = self;
-    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[WatchLanguageManager getTextWithKey:@"register_account_activity_psw"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] dreamPropertyMessage]] attributes:@{NSForegroundColorAttributeName:[UIColor min:[[AwfullyData sharedInstance] user_isolationName]]}];
     //: _passwordTextField.attributedPlaceholder = attrString1;
     _passwordTextField.attributedPlaceholder = attrString1;
@@ -1231,7 +1231,7 @@ typedef struct {
     _loginButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_loginButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_login_login"] forState:UIControlStateNormal];
+    //: [_loginButton setTitle:[WatchLanguageManager getTextWithKey:@"activity_login_login"] forState:UIControlStateNormal];
     [_loginButton setTitle:[PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] noti_parishPath]] forState:UIControlStateNormal];
     //: [_loginButton addTarget:self action:@selector(doLogin) forControlEvents:UIControlEventTouchUpInside];
     [_loginButton addTarget:self action:@selector(shadowRow) forControlEvents:UIControlEventTouchUpInside];
@@ -1256,7 +1256,7 @@ typedef struct {
     [_registerButton addTarget:self action:@selector(linkProvider) forControlEvents:UIControlEventTouchUpInside];
     //: NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"activity_register_title"] attributes:attributes];
+    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[WatchLanguageManager getTextWithKey:@"activity_register_title"] attributes:attributes];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] mainFatigueIdent]] attributes:attributes];
     //: [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
     [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
@@ -1316,7 +1316,7 @@ typedef struct {
 //: - (void)doRegister
 - (void)linkProvider
 {
-    //: FFFRegisterViewController *vc = [[FFFRegisterViewController alloc]init];
+    //: WatchRegisterViewController *vc = [[WatchRegisterViewController alloc]init];
     ShowBubbleViewController *vc = [[ShowBubbleViewController alloc]init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -1361,7 +1361,7 @@ typedef struct {
 -(YYLabel *)protocolLabel{
     //: if (!_protocolLabel) {
     if (!_protocolLabel) {
-        //: NSString *originText = [FFFLanguageManager getTextWithKey:@"activity_register_agree"];
+        //: NSString *originText = [WatchLanguageManager getTextWithKey:@"activity_register_agree"];
         NSString *originText = [PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] appSimplyName]];
         //: NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
         NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
@@ -1384,7 +1384,7 @@ typedef struct {
 
             //: ZMONPolicyPrivacyViewController *vc = [[ZMONPolicyPrivacyViewController alloc] init];
             ButtonOldViewController *vc = [[ButtonOldViewController alloc] init];
-            //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+            //: vc.webTitle = [WatchLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
             vc.webTitle = [PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] app_stoneTitle]];
             //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
             vc.urlString = [OnName user].yshref;
@@ -1425,7 +1425,7 @@ typedef struct {
 -(YYLabel *)registLabel{
     //: if (!_registLabel) {
     if (!_registLabel) {
-        //: NSString *noCount = [FFFLanguageManager getTextWithKey:@"activity_login_has_no_account"];
+        //: NSString *noCount = [WatchLanguageManager getTextWithKey:@"activity_login_has_no_account"];
         NSString *noCount = [PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] app_propertyEmployStr]];
         //: NSString *originText = [NSString stringWithFormat:@"%@",noCount];
         NSString *originText = [NSString stringWithFormat:@"%@",noCount];
@@ -1534,7 +1534,7 @@ typedef struct {
 
     //: if (_usernameTextField.text && _usernameTextField.text.length <= 0){
     if (_usernameTextField.text && _usernameTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] showColorIdent]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -1542,7 +1542,7 @@ typedef struct {
 
     //: if (_passwordTextField.text && _passwordTextField.text.length <= 0){
     if (_passwordTextField.text && _passwordTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] dreamPropertyMessage]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -1638,7 +1638,7 @@ typedef struct {
                     //: if (error != nil) {
                     if (error != nil) {
 
-                        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"login_activity_login_failed"] duration:2.0 position:CSToastPositionCenter];
+                        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"login_activity_login_failed"] duration:2.0 position:CSToastPositionCenter];
                         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] show_arrestUrl]] duration:2.0 position:CSToastPositionCenter];
 
                         //: return;
@@ -1654,7 +1654,7 @@ typedef struct {
                   style.imageSize = CGSizeMake(20, 20);
                 //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
                 style.messageColor = [UIColor min:[[AwfullyData sharedInstance] notiValueIdent]];
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"login_activity_login_success"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_success"] style:style completion:nil];
+                //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"login_activity_login_success"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_success"] style:style completion:nil];
                 [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] appPatienceName]] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:[[AwfullyData sharedInstance] main_barreValue]] style:style completion:nil];
 
                     //: NTESLoginData *sdkData = [[NTESLoginData alloc] init];
@@ -1716,7 +1716,7 @@ typedef struct {
         style.messageColor = [UIColor min:[[AwfullyData sharedInstance] notiValueIdent]];
         //: style.imageSize = CGSizeMake(20, 20);
         style.imageSize = CGSizeMake(20, 20);
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] show_messagePath]] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:[[AwfullyData sharedInstance] dream_strangeData]] style:style completion:nil];
 
     //: }];

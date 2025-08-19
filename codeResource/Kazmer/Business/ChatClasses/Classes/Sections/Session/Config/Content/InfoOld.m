@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextContentConfig.h"
+//: #import "WatchTextContentConfig.h"
 #import "InfoOld.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFTextContentConfig()
+//: @interface WatchTextContentConfig()
 @interface InfoOld()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -26,7 +26,7 @@
 @end
 
 
-//: @implementation FFFTextContentConfig
+//: @implementation WatchTextContentConfig
 @implementation InfoOld
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -61,7 +61,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)textDistance:(NIMMessage *)message
 {
-    //: return @"FFFSessionTextContentView";
+    //: return @"WatchSessionTextContentView";
     return @"InfoControl";
 }
 

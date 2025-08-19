@@ -18,7 +18,7 @@ Byte kCommentDeerStr[] = {70, 33, 5, 193, 165, 100, 97, 101, 114, 104, 116, 32, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitNotificationFirer.h"
+//: #import "WatchKitNotificationFirer.h"
 #import "MessageObject.h"
 
 //: NSString *const  showSubmitId = @" showSubmitId";
@@ -37,7 +37,7 @@ NSString *const kTextData = @" kTextData";
 //: NSString *const  notiOnceValue = @"InfoId";
 NSString *const notiOnceValue = @"InfoId";
 
-//: @implementation FFFKitNotificationFirer
+//: @implementation WatchKitNotificationFirer
 @implementation MessageObject
 
 //: - (instancetype)init{
@@ -46,7 +46,7 @@ NSString *const notiOnceValue = @"InfoId";
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[WatchKitTimerHolder alloc] init];
         _timer = [[UserCell alloc] init];
         //: _timeInterval = 1.0f;
         _timeInterval = 1.0f;
@@ -70,10 +70,10 @@ NSString *const notiOnceValue = @"InfoId";
     [self.cachedInfo setObject:info forKey:info.lastIn];
 }
 
-//: #pragma mark - FFFKitTimerHolderDelegate
+//: #pragma mark - WatchKitTimerHolderDelegate
 #pragma mark - AssemblageDelegate
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder{
+//: - (void)onNIMKitTimerFired:(WatchKitTimerHolder *)holder{
 - (void)alled:(UserCell *)holder{
     //: NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];

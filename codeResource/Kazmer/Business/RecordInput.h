@@ -16,7 +16,7 @@
 //: @class NTESRedPacketConfig;
 @class NTESRedPacketConfig;
 
-//: @interface FFFConfig : NSObject
+//: @interface WatchConfig : NSObject
 @interface RecordInput : NSObject
 
 //: + (instancetype)sharedConfig;

@@ -110,12 +110,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "WatchKitSetting.h"
 #import "SubObject.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 
-//: @implementation FFFKitSetting
+//: @implementation WatchKitSetting
 @implementation SubObject
 
 //: - (instancetype)init:(BOOL)isRight

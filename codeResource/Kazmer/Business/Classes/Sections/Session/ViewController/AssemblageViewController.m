@@ -217,7 +217,7 @@ typedef struct {
     return should;
 }
 
-//: - (id<FFFSessionConfig>)sessionConfig
+//: - (id<WatchSessionConfig>)sessionConfig
 - (id<MessagePinImage>)sessionConfig
 {
     //: if (_sessionConfig == nil) {

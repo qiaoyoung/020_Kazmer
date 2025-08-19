@@ -59,21 +59,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTextContentView.h"
+//: #import "WatchSessionTextContentView.h"
 #import "InfoControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFTextView.h"
+//: #import "WatchTextView.h"
 #import "ReplacementNameView.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WatchSessionConfig.h"
 #import "MessagePinImage.h"
 //: #import "NTESSessionViewController.h"
 #import "BroadcastViewController.h"
@@ -83,7 +83,7 @@
 //: NSString *const NIMTextMessageLabelLinkData = @"NIMTextMessageLabelLinkData";
 NSString *const showButtonName = @"NIMTextMessageLabelLinkData";
 
-//: @interface FFFSessionTextContentView()<M80AttributedLabelDelegate>
+//: @interface WatchSessionTextContentView()<M80AttributedLabelDelegate>
 @interface InfoControl()<PlaceMax>
 
 //: @property (nonatomic, strong) NSString *urlStr;
@@ -94,7 +94,7 @@ NSString *const showButtonName = @"NIMTextMessageLabelLinkData";
 //: @end
 @end
 
-//: @implementation FFFSessionTextContentView
+//: @implementation WatchSessionTextContentView
 @implementation InfoControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -125,7 +125,7 @@ NSString *const showButtonName = @"NIMTextMessageLabelLinkData";
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: _textView.selectBlock = ^(FFFMediaItem *item) {
+        //: _textView.selectBlock = ^(WatchMediaItem *item) {
         _textView.selectBlock = ^(InfoMakeBar *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -222,7 +222,7 @@ NSString *const showButtonName = @"NIMTextMessageLabelLinkData";
     return isUrl;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(WatchMessageModel *)data
 - (void)lengthAt:(CentralProcessingUnitModel *)data
 {
     //: if (self.model == data) {
@@ -236,7 +236,7 @@ NSString *const showButtonName = @"NIMTextMessageLabelLinkData";
 
     //: NSString *text = self.model.message.text;
     NSString *text = self.model.message.text;
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SubObject *setting = [[ButtonKit sheerOption].config date:data.message];
     //: self.textView.textColor = setting.textColor;
     self.textView.textColor = setting.textColor;
@@ -345,9 +345,9 @@ NSString *const showButtonName = @"NIMTextMessageLabelLinkData";
 - (void)image:(QuickNameView *)label
              //: clickedOnLink:(id)linkData{
              center:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
     CoverShowEvent *event = [[CoverShowEvent alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = WatchKitEventNameTapLabelLink;
     event.eventName = dream_topMessage;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

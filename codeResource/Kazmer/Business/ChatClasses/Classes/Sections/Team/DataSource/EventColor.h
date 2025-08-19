@@ -9,22 +9,22 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WatchTeamCardMemberItem.h"
 #import "CoatButtonBar.h"
-//: #import "FFFMembersFetchOption.h"
+//: #import "WatchMembersFetchOption.h"
 #import "ButtonOption.h"
 
 // __M_A_C_R_O__
 
 //: typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
 typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
-//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<FFFTeamCardMemberItem *> * _Nullable members);
+//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<WatchTeamCardMemberItem *> * _Nullable members);
 typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<CoatButtonBar *> * _Nullable members);
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 
-//: @protocol FFFTeamOperation <NSObject>
+//: @protocol WatchTeamOperation <NSObject>
 @protocol RecordOperation <NSObject>
 
 //加人
@@ -144,7 +144,7 @@ NS_ASSUME_NONNULL_BEGIN
                  mute:(NIMTeamListDataBlock)completion;
 
 //查询群成员
-//: - (void)fetchTeamMembersWithOption:(FFFMembersFetchOption * _Nullable )option
+//: - (void)fetchTeamMembersWithOption:(WatchMembersFetchOption * _Nullable )option
 - (void)frameCompletion:(ButtonOption * _Nullable )option
                         //: completion:(NIMTeamListDataBlock)completion;
                         event:(NIMTeamListDataBlock)completion;
@@ -166,7 +166,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-//: @protocol FFFTeamMemberListDataSource <FFFTeamOperation>
+//: @protocol WatchTeamMemberListDataSource <WatchTeamOperation>
 @protocol EventColor <RecordOperation>
 
 //: - (NIMTeam *)team;
@@ -178,13 +178,13 @@ NS_ASSUME_NONNULL_BEGIN
 //: - (NSInteger)memberNumber;
 - (NSInteger)table;
 
-//: - (NSMutableArray <FFFTeamCardMemberItem *> *)members;
+//: - (NSMutableArray <WatchTeamCardMemberItem *> *)members;
 - (NSMutableArray <CoatButtonBar *> *)doingArray;
 
-//: - (FFFTeamCardMemberItem *)myCard;
+//: - (WatchTeamCardMemberItem *)myCard;
 - (CoatButtonBar *)thinkOf;
 
-//: - (FFFTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
+//: - (WatchTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
 - (CoatButtonBar *)max:(NSString *)userId;
 
 //: @end

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBubbleButtonModel.h"
+//: #import "WatchBubbleButtonModel.h"
 #import "PageCountImage.h"
 
-//: @implementation FFFBubbleButtonModel
+//: @implementation WatchBubbleButtonModel
 @implementation PageCountImage
 
 //: @end

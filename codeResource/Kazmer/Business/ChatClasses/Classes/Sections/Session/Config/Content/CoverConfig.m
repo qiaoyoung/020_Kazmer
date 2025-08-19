@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTipContentConfig.h"
+//: #import "WatchTipContentConfig.h"
 #import "CoverConfig.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFTipContentConfig
+//: @implementation WatchTipContentConfig
 @implementation CoverConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -26,7 +26,7 @@
     CGFloat messageWidth = cellWidth;
     //: UILabel *label = [[UILabel alloc] init];
     UILabel *label = [[UILabel alloc] init];
-    //: label.text = [FFFKitUtil messageTipContent:message];
+    //: label.text = [WatchKitUtil messageTipContent:message];
     label.text = [ObjectUtil complete:message];
     //: label.font = [[MyUserKit sharedKit].config setting:message].font;
     label.font = [[ButtonKit sheerOption].config date:message].font;
@@ -47,7 +47,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)textDistance:(NIMMessage *)message
 {
-    //: return @"FFFSessionNotificationContentView";
+    //: return @"WatchSessionNotificationContentView";
     return @"AssemblageControl";
 }
 

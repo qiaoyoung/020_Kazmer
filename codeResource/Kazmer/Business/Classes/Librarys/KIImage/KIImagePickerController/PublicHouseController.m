@@ -73,7 +73,7 @@ Byte user_titleStr[] = {30, 33, 22, 5, 129, 80, 92, 83, 79, 88, 78, 73, 77, 83, 
         self.delegate = delegate;
         //: self.viewController = viewController;
         self.viewController = viewController;
-        //: self.title = [FFFLanguageManager getTextWithKey:@"please_choose"];
+        //: self.title = [WatchLanguageManager getTextWithKey:@"please_choose"];
         self.title = [PaintedNaturalLanguageTo exhibit:StringFromSineData(userImageVidStr)];//@"请选择";
     }
     //: return self;
@@ -132,9 +132,9 @@ Byte user_titleStr[] = {30, 33, 22, 5, 129, 80, 92, 83, 79, 88, 78, 73, 77, 83, 
     //: if (_actionSheet == nil) {
     if (_actionSheet == nil) {
 
-        //: NSString *from_phone = [FFFLanguageManager getTextWithKey:@"friend_circle_activity_from_phone"];
+        //: NSString *from_phone = [WatchLanguageManager getTextWithKey:@"friend_circle_activity_from_phone"];
         NSString *from_phone = [PaintedNaturalLanguageTo exhibit:StringFromSineData(user_titleStr)];
-        //: NSString *activity_camera = [FFFLanguageManager getTextWithKey:@"friend_circle_activity_camera"];
+        //: NSString *activity_camera = [WatchLanguageManager getTextWithKey:@"friend_circle_activity_camera"];
         NSString *activity_camera = [PaintedNaturalLanguageTo exhibit:StringFromSineData(notiUserNuclearCoveText)];
 
         //: _actionSheet = [[UIActionSheet alloc] initWithTitle:self.title
@@ -166,7 +166,7 @@ Byte user_titleStr[] = {30, 33, 22, 5, 129, 80, 92, 83, 79, 88, 78, 73, 77, 83, 
             cancelIndex++;
         }
 
-        //: [_actionSheet addButtonWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]];
+        //: [_actionSheet addButtonWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]];
         [_actionSheet addButtonWithTitle:[PaintedNaturalLanguageTo exhibit:StringFromSineData(main_ureaAcidMsg)]];
         //: cancelIndex++;
         cancelIndex++;

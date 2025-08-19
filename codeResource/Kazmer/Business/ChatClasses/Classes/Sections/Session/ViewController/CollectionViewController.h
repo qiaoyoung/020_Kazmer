@@ -13,22 +13,22 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFSessionConfig.h"
+//: #import "WatchSessionConfig.h"
 #import "MessagePinImage.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFInputView.h"
+//: #import "WatchMessageCellProtocol.h"
+#import "WatchMessageCellProtocol.h"
+//: #import "WatchSessionConfigurateProtocol.h"
+#import "WatchSessionConfigurateProtocol.h"
+//: #import "WatchInputView.h"
 #import "SignView.h"
 
-//: @interface FFFSessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,FFFMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
+//: @interface WatchSessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,WatchMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 @interface CollectionViewController : UIViewController<CounteractorName,ShowKeyBar,ModeQueryTime,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 
 //: @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITableView *tableView;
 
-//: @property (nonatomic, strong) FFFInputView *sessionInputView;
+//: @property (nonatomic, strong) WatchInputView *sessionInputView;
 @property (nonatomic, strong) SignView *sessionInputView;
 //: @property (nonatomic, assign) BOOL canTapVoiceBtn; 
 @property (nonatomic, assign) BOOL canTapVoiceBtn; // 能够点击语音按钮
@@ -144,7 +144,7 @@
 /**
  *  会话页详细配置
  */
-//: - (id<FFFSessionConfig>)sessionConfig;
+//: - (id<WatchSessionConfig>)sessionConfig;
 - (id<MessagePinImage>)sessionConfig;
 
 
@@ -234,7 +234,7 @@
  *
  *  @discussion 不会触发 DB 操作，请手动调用 SDK 里 deleteMessage: 接口
  */
-//: - (FFFMessageModel *)uiDeleteMessage:(NIMMessage *)message;
+//: - (WatchMessageModel *)uiDeleteMessage:(NIMMessage *)message;
 - (CentralProcessingUnitModel *)color:(NIMMessage *)message;
 
 /**

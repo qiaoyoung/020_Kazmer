@@ -15,7 +15,7 @@
 /**
  *  气泡设置
  */
-//: @interface FFFKitSetting : NSObject
+//: @interface WatchKitSetting : NSObject
 @interface SubObject : NSObject
 
 /**

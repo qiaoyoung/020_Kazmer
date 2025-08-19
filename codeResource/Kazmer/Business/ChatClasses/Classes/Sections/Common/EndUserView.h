@@ -12,30 +12,30 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFPageView;
+//: @class WatchPageView;
 @class EndUserView;
 
-//: @protocol FFFPageViewDataSource <NSObject>
+//: @protocol WatchPageViewDataSource <NSObject>
 @protocol ObjectCell <NSObject>
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView;
+//: - (NSInteger)numberOfPages: (WatchPageView *)pageView;
 - (NSInteger)mImage: (EndUserView *)pageView;
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index;
+//: - (UIView *)pageView: (WatchPageView *)pageView viewInPage: (NSInteger)index;
 - (UIView *)colorPage: (EndUserView *)pageView bubble: (NSInteger)index;
 //: @end
 @end
 
-//: @protocol FFFPageViewDelegate <NSObject>
+//: @protocol WatchPageViewDelegate <NSObject>
 @protocol MaxDelegate <NSObject>
 //: @optional
 @optional
-//: - (void)pageViewScrollEnd: (FFFPageView *)pageView
+//: - (void)pageViewScrollEnd: (WatchPageView *)pageView
 - (void)clean: (EndUserView *)pageView
              //: currentIndex: (NSInteger)index
              endWith: (NSInteger)index
                //: totolPages: (NSInteger)pages;
                end: (NSInteger)pages;
 
-//: - (void)pageViewDidScroll: (FFFPageView *)pageView;
+//: - (void)pageViewDidScroll: (WatchPageView *)pageView;
 - (void)valueView: (EndUserView *)pageView;
 //: - (BOOL)needScrollAnimation;
 - (BOOL)videoTime;
@@ -43,13 +43,13 @@
 @end
 
 
-//: @interface FFFPageView : UIView<UIScrollViewDelegate>
+//: @interface WatchPageView : UIView<UIScrollViewDelegate>
 @interface EndUserView : UIView<UIScrollViewDelegate>
 //: @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) UIScrollView *scrollView;
-//: @property (nonatomic,weak) id<FFFPageViewDataSource> dataSource;
+//: @property (nonatomic,weak) id<WatchPageViewDataSource> dataSource;
 @property (nonatomic,weak) id<ObjectCell> dataSource;
-//: @property (nonatomic,weak) id<FFFPageViewDelegate> pageViewDelegate;
+//: @property (nonatomic,weak) id<WatchPageViewDelegate> pageViewDelegate;
 @property (nonatomic,weak) id<MaxDelegate> pageViewDelegate;
 //: - (void)scrollToPage: (NSInteger)pages;
 - (void)user: (NSInteger)pages;

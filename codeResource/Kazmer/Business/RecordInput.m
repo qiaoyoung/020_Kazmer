@@ -39,7 +39,7 @@ Byte userOverKey[] = {26, 55, 90, 8, 253, 2, 84, 153, 14, 26, 26, 22, 25, 224, 2
 //
 
 // __M_A_C_R_O__
-//: #import "FFFConfig.h"
+//: #import "WatchConfig.h"
 #import "RecordInput.h"
 //: #import "RestUtil.h"
 #import "PointUtil.h"
@@ -49,7 +49,7 @@ static NSString *const main_rowId = @"https://apple.akunjapan0206chat.com";
 //: static NSString *const kSavedDomainKey = @"SavedDomainKey";
 static NSString *const user_dataUrl = @"SavedDomainKey";
 
-//: @interface FFFConfig ()
+//: @interface WatchConfig ()
 @interface RecordInput ()
 
 //: @property (nonatomic,copy) NSString *hostFrom;
@@ -60,19 +60,19 @@ static NSString *const user_dataUrl = @"SavedDomainKey";
 //: @end
 @end
 
-//: @implementation FFFConfig
+//: @implementation WatchConfig
 @implementation RecordInput
 
 //: + (instancetype)sharedConfig
 + (instancetype)file
 {
-    //: static FFFConfig *instance = nil;
+    //: static WatchConfig *instance = nil;
     static RecordInput *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFConfig alloc] init];
+        //: instance = [[WatchConfig alloc] init];
         instance = [[RecordInput alloc] init];
     //: });
     });

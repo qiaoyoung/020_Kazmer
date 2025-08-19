@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "WatchCommonTableViewCell.h"
 #import "OldInfo.h"
 
-//: @interface NTESCardPortraitCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface NTESCardPortraitCell : UITableViewCell<WatchCommonTableViewCell>
 @interface ProgressViewCell : UITableViewCell<OldInfo>
 
 //: @end

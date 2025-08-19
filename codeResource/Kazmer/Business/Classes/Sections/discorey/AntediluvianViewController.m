@@ -65,7 +65,7 @@
     return dream_bubbleMsg;
 }
 
-//: #ffffff
+//: #fffWatch
 + (NSString *)showKillerData {
     /* static */ NSString *showKillerData = nil;
     if (!showKillerData) {
@@ -153,14 +153,14 @@
     labtitle.textColor = [UIColor whiteColor];
     //: labtitle.font = [UIFont boldSystemFontOfSize:18];
     labtitle.font = [UIFont boldSystemFontOfSize:18];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"discovery"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"discovery"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[DuringRegulationData main_necessaryData]];
     //: [topview addSubview:labtitle];
     [topview addSubview:labtitle];
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight])+10, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice vg_statusBarHeight]))];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice tingHeight])+10, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice tingHeight]))];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
     contentView.backgroundColor = [UIColor min:[DuringRegulationData showKillerData]];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -197,7 +197,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [WatchLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [PaintedNaturalLanguageTo exhibit:[DuringRegulationData dream_bubbleMsg]];
 
 

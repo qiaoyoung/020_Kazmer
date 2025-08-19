@@ -209,20 +209,20 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageUtil.h"
+//: #import "WatchMessageUtil.h"
 #import "UtilPage.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "NSDictionary+MyUserKit.h"
 #import "NSDictionary+ButtonKit.h"
 
-//: @implementation FFFMessageUtil
+//: @implementation WatchMessageUtil
 @implementation UtilPage
 
 //: + (NSString *)messageContent:(NIMMessage*)message {
@@ -239,25 +239,25 @@ typedef struct {
             break;
         //: case NIMMessageTypeAudio:
         case NIMMessageTypeAudio:
-            //: text = [FFFLanguageManager getTextWithKey:@"Audio"]; 
+            //: text = [WatchLanguageManager getTextWithKey:@"Audio"]; 
             text = [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] kValidityAirFormat]]; //@"[语音]".;
             //: break;
             break;
         //: case NIMMessageTypeImage:
         case NIMMessageTypeImage:
-            //: text = [FFFLanguageManager getTextWithKey:@"Image"];
+            //: text = [WatchLanguageManager getTextWithKey:@"Image"];
             text = [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] k_fearData]];//@"[图片]".;
             //: break;
             break;
         //: case NIMMessageTypeVideo:
         case NIMMessageTypeVideo:
-            //: text = [FFFLanguageManager getTextWithKey:@"Video"];
+            //: text = [WatchLanguageManager getTextWithKey:@"Video"];
             text = [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] mainConventTitle]];//@"[视频]".;
             //: break;
             break;
         //: case NIMMessageTypeLocation:
         case NIMMessageTypeLocation:
-            //: text = [FFFLanguageManager getTextWithKey:@"Location"];
+            //: text = [WatchLanguageManager getTextWithKey:@"Location"];
             text = [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] showUglyName]];//@"[位置]".;
             //: break;
             break;
@@ -268,7 +268,7 @@ typedef struct {
         }
         //: case NIMMessageTypeFile:
         case NIMMessageTypeFile:
-            //: text = [FFFLanguageManager getTextWithKey:@"File"];
+            //: text = [WatchLanguageManager getTextWithKey:@"File"];
             text = [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] kInstructionalIdent]];//@"[文件]".;
             //: break;
             break;
@@ -282,7 +282,7 @@ typedef struct {
         case NIMMessageTypeRtcCallRecord: {
             //: NIMRtcCallRecordObject *record = message.messageObject;
             NIMRtcCallRecordObject *record = message.messageObject;
-            //: return (record.callType == NIMRtcCallTypeAudio ? [FFFLanguageManager getTextWithKey:@"Internet_call"] : [FFFLanguageManager getTextWithKey:@"Video_chat"]);
+            //: return (record.callType == NIMRtcCallTypeAudio ? [WatchLanguageManager getTextWithKey:@"Internet_call"] : [WatchLanguageManager getTextWithKey:@"Video_chat"]);
             return (record.callType == NIMRtcCallTypeAudio ? [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] user_isolateMessage]] : [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] kParishUrl]]);
         }
         //: default:
@@ -304,10 +304,10 @@ typedef struct {
         NIMNetCallNotificationContent *content = (NIMNetCallNotificationContent *)object.content;
         //: if (content.callType == NIMNetCallTypeAudio) {
         if (content.callType == NIMNetCallTypeAudio) {
-            //: return [FFFLanguageManager getTextWithKey:@"Internet_call"];
+            //: return [WatchLanguageManager getTextWithKey:@"Internet_call"];
             return [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] user_isolateMessage]];//@"[网络通话]".;
         }
-        //: return [FFFLanguageManager getTextWithKey:@"Video_chat"];
+        //: return [WatchLanguageManager getTextWithKey:@"Video_chat"];
         return [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] kParishUrl]];//@"[视频聊天]".;
     }
     //: if (object.notificationType == NIMNotificationTypeTeam) {
@@ -316,7 +316,7 @@ typedef struct {
         NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:message.session.sessionId];
         //: if (team.type == NIMTeamTypeNormal) {
         if (team.type == NIMTeamTypeNormal) {
-            //: return [FFFLanguageManager getTextWithKey:@"Group_chat_information_update"];
+            //: return [WatchLanguageManager getTextWithKey:@"Group_chat_information_update"];
             return [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] mainDeliverUrl]];//@"[讨论组信息更新]".;
         //: }else{
         }else{
@@ -398,14 +398,14 @@ typedef struct {
                         break;
             }
 
-            //: return [FFFLanguageManager getTextWithKey:@"Group_information_update"];
+            //: return [WatchLanguageManager getTextWithKey:@"Group_information_update"];
             return [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] showBoostId]];//@"[群信息更新]".;
         }
     }
 
     //: if (object.notificationType == NIMNotificationTypeSuperTeam) {
     if (object.notificationType == NIMNotificationTypeSuperTeam) {
-        //: return [FFFLanguageManager getTextWithKey:@"Super_Group_Information_Update"];
+        //: return [WatchLanguageManager getTextWithKey:@"Super_Group_Information_Update"];
         return [PaintedNaturalLanguageTo exhibit:[[VictimData sharedInstance] k_duringKey]];//@"[超大群信息更新]".;
     }
     //: return @"";

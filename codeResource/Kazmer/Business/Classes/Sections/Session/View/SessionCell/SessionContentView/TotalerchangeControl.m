@@ -162,7 +162,7 @@ NSString *const showCenterId = @"NIMDemoEventNameOpenMergeMessage";
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(WatchMessageModel *)data{
 - (void)lengthAt:(CentralProcessingUnitModel *)data{
     //: [super refresh:data];
     [super lengthAt:data];
@@ -248,7 +248,7 @@ NSString *const showCenterId = @"NIMDemoEventNameOpenMergeMessage";
 - (void)drafted:(UIButton *)sender {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(modelled:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
         CoverShowEvent *event = [[CoverShowEvent alloc] init];
         //: event.eventName = NIMDemoEventNameOpenMergeMessage;
         event.eventName = showCenterId;

@@ -71,29 +71,29 @@ Byte kCrushNetworkData[] = {41, 18, 12, 134, 232, 95, 77, 191, 39, 98, 202, 55, 
 // __M_A_C_R_O__
 //: #import "CCCTeamMemberListViewController.h"
 #import "ReplacementViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "WatchCardHeaderCell.h"
 #import "RecentFrameReusableView.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WatchTeamCardMemberItem.h"
 #import "CoatButtonBar.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "WatchTeamMemberCardViewController.h"
 #import "MajorLeagueTeamSubMemberPositionCardViewController.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
+//: #import "WatchKitProgressHUD.h"
 #import "AlongEffectView.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WatchTeamListDataManager.h"
 #import "MetadataManager.h"
 //: #import "NTESPersonalCardViewController.h"
 #import "ApproximateViewController.h"
 //: #import "NTESContactDataCell.h"
 #import "PlacementToCompartmentView.h"
-//: #import "FFFGroupMemberTableViewCell.h"
+//: #import "WatchGroupMemberTableViewCell.h"
 #import "TextEnableViewCell.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WatchContactSelectViewController.h"
 #import "NominateViewController.h"
 
 //: typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
@@ -132,7 +132,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
     //: [[NSNotificationCenter defaultCenter] removeObserver:self];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
-//: - (instancetype)initWithDataSource:(FFFTeamListDataManager *)dataSource {
+//: - (instancetype)initWithDataSource:(WatchTeamListDataManager *)dataSource {
 - (instancetype)initWithRecord:(MetadataManager *)dataSource {
     //: self = [super initWithNibName:nil bundle:nil];
     self = [super initWithNibName:nil bundle:nil];
@@ -183,7 +183,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
         config.filterIds = users;
         //: config.needMutiSelected = YES;
         config.needMutiSelected = YES;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
         NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
         //: vc.delegate = self;
         vc.delegate = self;
@@ -270,7 +270,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"group_info_activity_team_member"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:StringFromEstablishmentData(dream_yaUrl)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -402,11 +402,11 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
             NSString *msg = nil;
             //: if (!error) {
             if (!error) {
-                //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+                //: msg = [WatchLanguageManager getTextWithKey:@"modify_activity_modify_success"];
                 msg = [PaintedNaturalLanguageTo exhibit:StringFromEstablishmentData(dreamLibMessage)];
             //: }else{
             }else{
-                //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+                //: msg = [WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
                 msg = [PaintedNaturalLanguageTo exhibit:StringFromEstablishmentData(dreamKeyText)];
             }
             //: [self.view makeToast:msg duration:2.0 position:CSToastPositionCenter];
@@ -422,11 +422,11 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
 //: - (void)cellShouldBeRemoved:(NSString *)uid
 - (void)willed:(NSString *)uid
 {
-    //: [FFFKitProgressHUD show];
+    //: [WatchKitProgressHUD show];
     [AlongEffectView holder];
     //: [self.teamListManager kickUsers:@[uid] completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager magnitudeerval:@[uid] completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [WatchKitProgressHUD dismiss];
         [AlongEffectView nimDismiss];
         //: [self.view makeToast:msg duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:msg duration:2.0 position:CSToastPositionCenter];
@@ -485,14 +485,14 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
 //: - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    //: FFFGroupMemberTableViewCell *cell = [FFFGroupMemberTableViewCell cellWithTableView:tableView];
+    //: WatchGroupMemberTableViewCell *cell = [WatchGroupMemberTableViewCell cellWithTableView:tableView];
     TextEnableViewCell *cell = [TextEnableViewCell read:tableView];
     //: cell.delegate = self;
     cell.delegate = self;
 
     //: NSString *uId = _teamListManager.memberIds[indexPath.section];
     NSString *uId = _teamListManager.memberIds[indexPath.section];
-    //: FFFKitInfo *usrInfo = [[MyUserKit sharedKit] infoByUser:uId option:nil];
+    //: WatchKitInfo *usrInfo = [[MyUserKit sharedKit] infoByUser:uId option:nil];
     TingMessage *usrInfo = [[ButtonKit sheerOption] past:uId skinColour_strong:nil];
 
     //: [cell reloadWithUserId:uId];
@@ -501,7 +501,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
     [cell.roleImageView sd_setImageWithURL:[NSURL URLWithString:usrInfo.avatarUrlString] placeholderImage:usrInfo.avatarImage];
     //: cell.titleLabel.text = usrInfo.showName;
     cell.titleLabel.text = usrInfo.showName;
-    //: cell.subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
+    //: cell.subtitleLabel.text = [WatchLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
     cell.subtitleLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromEstablishmentData(app_twistShowValueMsg)];
 
     //: BOOL isown = [uId isEqualToString:_teamListManager.team.owner];

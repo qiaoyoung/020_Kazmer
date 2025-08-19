@@ -515,11 +515,11 @@ Byte noti_inflationUrl[] = {9, 17, 57, 7, 159, 91, 127, 94, 157, 30, 193, 191, 3
         return [NSDate on:self tableOfContents:StringFromThreshData(app_originPath)];
     //: } else if ([components day] >= 2) {
     } else if ([components day] >= 2) {
-        //: return [FFFLanguageManager getTextWithKey:@"before_yesterday"];
+        //: return [WatchLanguageManager getTextWithKey:@"before_yesterday"];
         return [PaintedNaturalLanguageTo exhibit:StringFromThreshData(mainSkyId)];
     //: } else if ([components day] >= 1) {
     } else if ([components day] >= 1) {
-        //: return [FFFLanguageManager getTextWithKey:@"yesterday"];
+        //: return [WatchLanguageManager getTextWithKey:@"yesterday"];
         return [PaintedNaturalLanguageTo exhibit:StringFromThreshData(userNetworkPath)];
     //: } else if ([components hour] > 0) {
     } else if ([components hour] > 0) {

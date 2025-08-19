@@ -174,7 +174,7 @@ typedef struct {
     tip.textColor = [UIColor blackColor];
     //: tip.textAlignment = NSTextAlignmentCenter;
     tip.textAlignment = NSTextAlignmentCenter;
-    //: tip.text = [FFFLanguageManager getTextWithKey:@"warm_prompt"];
+    //: tip.text = [WatchLanguageManager getTextWithKey:@"warm_prompt"];
     tip.text = [PaintedNaturalLanguageTo exhibit:[[WindowEnvelopeData sharedInstance] mKeyTitle]];
     //: [_box addSubview:tip];
     [_box addSubview:tip];
@@ -250,7 +250,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:[[WindowEnvelopeData sharedInstance] userCommentClubValueFormat]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[WindowEnvelopeData sharedInstance] dreamStrengthenId]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -277,7 +277,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[WindowEnvelopeData sharedInstance] noti_scaleData]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor min:[[WindowEnvelopeData sharedInstance] app_garlicText]];

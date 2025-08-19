@@ -62,12 +62,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAudioContentConfig.h"
+//: #import "WatchAudioContentConfig.h"
 #import "ResponseRed.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFAudioContentConfig
+//: @implementation WatchAudioContentConfig
 @implementation ResponseRed
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -96,7 +96,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)textDistance:(NIMMessage *)message
 {
-    //: return @"FFFSessionAudioContentView";
+    //: return @"WatchSessionAudioContentView";
     return @"ColorControl";
 }
 

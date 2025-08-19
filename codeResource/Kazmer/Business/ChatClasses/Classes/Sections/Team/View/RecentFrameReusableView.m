@@ -74,29 +74,29 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardHeaderCell.h"
+//: #import "WatchCardHeaderCell.h"
 #import "RecentFrameReusableView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFTeamHelper.h"
+//: #import "WatchTeamHelper.h"
 #import "MakeBubble.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
 
-//: @interface FFFCardHeaderCell()
+//: @interface WatchCardHeaderCell()
 @interface RecentFrameReusableView()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
-@property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<WatchKitCardHeaderData> data;
+@property (nonatomic,strong) id<WatchKitCardHeaderData> data;
 
 //: @end
 @end
 
-//: @implementation FFFCardHeaderCell
+//: @implementation WatchCardHeaderCell
 @implementation RecentFrameReusableView
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
@@ -105,7 +105,7 @@
     self = [super initWithFrame:frame];
     //: if (self) {
     if (self) {
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
+        //: _imageView = [[WatchAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         _imageView = [[RecordControl alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];
@@ -140,8 +140,8 @@
     return self;
 }
 
-//: - (void)refreshData:(id<FFFKitCardHeaderData>)data{
-- (void)accountingData:(id<FFFKitCardHeaderData>)data{
+//: - (void)refreshData:(id<WatchKitCardHeaderData>)data{
+- (void)accountingData:(id<WatchKitCardHeaderData>)data{
     //: self.data = data;
     self.data = data;
     //: NSURL *url = [NSURL URLWithString:data.imageUrl];
@@ -155,12 +155,12 @@
     NSString *showName = data.title;
     //: if ([data isMyUserId]) {
     if ([data isMyUserId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [WatchLanguageManager getTextWithKey:@"Group_Me"];
         showName = [PaintedNaturalLanguageTo exhibit:[ResponseData sharedInstance].app_bronzeData];//@"我".nim_localized;
     }
     //: self.titleLabel.text = showName;
     self.titleLabel.text = showName;
-    //: self.roleImageView.image = [FFFTeamHelper imageWithMemberType:data.userType];
+    //: self.roleImageView.image = [WatchTeamHelper imageWithMemberType:data.userType];
     self.roleImageView.image = [MakeBubble streetwiseType:data.userType];
     //: [self.titleLabel sizeToFit];
     [self.titleLabel sizeToFit];

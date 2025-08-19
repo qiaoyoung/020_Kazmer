@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGrowingInternalTextView.h"
+//: #import "WatchGrowingInternalTextView.h"
 #import "EdgeNameView.h"
 
-//: @interface FFFGrowingInternalTextView()
+//: @interface WatchGrowingInternalTextView()
 @interface EdgeNameView()
 
 //: @property (nonatomic,assign) BOOL displayPlaceholder;
@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @implementation FFFGrowingInternalTextView
+//: @implementation WatchGrowingInternalTextView
 @implementation EdgeNameView
 
 //: - (instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer *)textContainer

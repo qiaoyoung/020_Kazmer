@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFFileContentConfig.h"
+//: #import "WatchFileContentConfig.h"
 #import "ObjectConfig.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFFileContentConfig
+//: @implementation WatchFileContentConfig
 @implementation ObjectConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)textDistance:(NIMMessage *)message
 {
-    //: return @"FFFSessionFileTransContentView";
+    //: return @"WatchSessionFileTransContentView";
     return @"RectoView";
 }
 

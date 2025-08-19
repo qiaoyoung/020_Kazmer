@@ -201,7 +201,7 @@
 // __M_A_C_R_O__
 //: #import "NTESSessionConfig.h"
 #import "ProgressNotice.h"
-//: #import "FFFMediaItem.h"
+//: #import "WatchMediaItem.h"
 #import "InfoMakeBar.h"
 //: #import "NTESBundleSetting.h"
 #import "NameTing.h"
@@ -213,13 +213,13 @@
 #import "NameTing.h"
 //: #import "NSString+NTES.h"
 #import "NSString+Zone.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WatchSessionConfig.h"
 #import "MessagePinImage.h"
 //: #import "NTESSessionUtil.h"
 #import "OldUtil.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 
 //: @interface NTESSessionConfig()
@@ -315,18 +315,18 @@
 }
 
 
-//: - (NSArray<FFFMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
+//: - (NSArray<WatchMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
 - (NSArray<InfoMakeBar *> *)tableOfTextsToInscription:(NIMMessage *)message {
     //: NSMutableArray *items = [NSMutableArray array];
     NSMutableArray *items = [NSMutableArray array];
 
-    //: FFFMediaItem *Praise = [FFFMediaItem item:@"onTapMenuItemPraise:"
+    //: WatchMediaItem *Praise = [WatchMediaItem item:@"onTapMenuItemPraise:"
     InfoMakeBar *Praise = [InfoMakeBar icon:[HostaDropData dreamResortUrl]
                                  //: normalImage:[UIImage imageNamed:@"menu_praise"]
                                  message:[UIImage imageNamed:[HostaDropData app_minStr]]
                                //: selectedImage:nil
                                name:nil
-                                       //: title:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
+                                       //: title:[WatchLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
                                        sub:[PaintedNaturalLanguageTo exhibit:[HostaDropData user_showBorrowKey]]];
 
 //    InfoMakeBar *reply = [InfoMakeBar item:@"onTapMenuItemReply:"
@@ -334,22 +334,22 @@
 //                               selectedImage:nil
 //                                       title:LangKey(@"回复")];
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: WatchMediaItem *copy = [WatchMediaItem item:@"onTapMenuItemCopy:"
     InfoMakeBar *copy = [InfoMakeBar icon:[HostaDropData mainExtraMessage]
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 message:[UIImage imageNamed:[HostaDropData dreamCurValue]]
                               //: selectedImage:nil
                               name:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[WatchLanguageManager getTextWithKey:@"复制"]];
                                       sub:[PaintedNaturalLanguageTo exhibit:@"复制"]];
 
-    //: FFFMediaItem *forword = [FFFMediaItem item:@"onTapMenuItemForword:"
+    //: WatchMediaItem *forword = [WatchMediaItem item:@"onTapMenuItemForword:"
     InfoMakeBar *forword = [InfoMakeBar icon:[HostaDropData mScramRegulationTitle]
                                    //: normalImage:[UIImage imageNamed:@"menu_forword"]
                                    message:[UIImage imageNamed:[HostaDropData app_fineKey]]
                                  //: selectedImage:nil
                                  name:nil
-                                         //: title:[FFFLanguageManager getTextWithKey:@"转发"]];
+                                         //: title:[WatchLanguageManager getTextWithKey:@"转发"]];
                                          sub:[PaintedNaturalLanguageTo exhibit:@"转发"]];
 
 //    InfoMakeBar *mark = [InfoMakeBar item:@"onTapMenuItemMark:"
@@ -365,40 +365,40 @@
 //                             selectedImage:nil
 //                                     title:pinTitle];
 
-    //: FFFMediaItem *report = [FFFMediaItem item:@"onTapMenuItemReport:"
+    //: WatchMediaItem *report = [WatchMediaItem item:@"onTapMenuItemReport:"
     InfoMakeBar *report = [InfoMakeBar icon:[HostaDropData notiUpValue]
                                   //: normalImage:[UIImage imageNamed:@"menu_report"]
                                   message:[UIImage imageNamed:[HostaDropData appEngagementTextFormat]]
                                 //: selectedImage:nil
                                 name:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"report_Content"]];
+                                        //: title:[WatchLanguageManager getTextWithKey:@"report_Content"]];
                                         sub:[PaintedNaturalLanguageTo exhibit:[HostaDropData kEverythingToStr]]];
 
-    //: FFFMediaItem *translation = [FFFMediaItem item:@"onTapMenuItemTranslation:"
+    //: WatchMediaItem *translation = [WatchMediaItem item:@"onTapMenuItemTranslation:"
     InfoMakeBar *translation = [InfoMakeBar icon:[HostaDropData user_bidNumberValue]
                                   //: normalImage:[UIImage imageNamed:@"menu_translation"]
                                   message:[UIImage imageNamed:[HostaDropData user_viewShootValue]]
                                 //: selectedImage:nil
                                 name:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"翻译"]];
+                                        //: title:[WatchLanguageManager getTextWithKey:@"翻译"]];
                                         sub:[PaintedNaturalLanguageTo exhibit:@"翻译"]];
 
-    //: FFFMediaItem *revoke = [FFFMediaItem item:@"onTapMenuItemRevoke:"
+    //: WatchMediaItem *revoke = [WatchMediaItem item:@"onTapMenuItemRevoke:"
     InfoMakeBar *revoke = [InfoMakeBar icon:[HostaDropData userBubbleKey]
                                   //: normalImage:[UIImage imageNamed:@"menu_revoke"]
                                   message:[UIImage imageNamed:[HostaDropData userResortThanksId]]
                                 //: selectedImage:nil
                                 name:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"撤回"]];
+                                        //: title:[WatchLanguageManager getTextWithKey:@"撤回"]];
                                         sub:[PaintedNaturalLanguageTo exhibit:@"撤回"]];
 
-    //: FFFMediaItem *delete = [FFFMediaItem item:@"onTapMenuItemDelete:"
+    //: WatchMediaItem *delete = [WatchMediaItem item:@"onTapMenuItemDelete:"
     InfoMakeBar *delete = [InfoMakeBar icon:[HostaDropData app_insistFormat]
                                   //: normalImage:[UIImage imageNamed:@"menu_del"]
                                   message:[UIImage imageNamed:[HostaDropData showEconomistValue]]
                                 //: selectedImage:nil
                                 name:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"删除"]];
+                                        //: title:[WatchLanguageManager getTextWithKey:@"删除"]];
                                         sub:[PaintedNaturalLanguageTo exhibit:@"删除"]];
 
 //    InfoMakeBar *mutiSelect = [InfoMakeBar item:@"onTapMenuItemMutiSelect:"
@@ -485,7 +485,7 @@
     {
         //: NSString * ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, [index integerValue]];
         NSString * ID = [NSString stringWithFormat:userValueKey, [index integerValue]];
-        //: NIMInputEmoticon *item = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+        //: NIMInputEmoticon *item = [[WatchInputEmoticonManager sharedManager] emoticonByID:ID];
         ButtonTableEmoticon *item = [[TitleToManager draw] limit:ID];
         //: if (item)
         if (item)
@@ -509,13 +509,13 @@
 - (NSArray<NSNumber *> *)typesAppear{
     //: return @[
     return @[
-//        @(FFFInputBarItemTypeMore),
-//        @(FFFInputBarItemTypeEmoticon),
-//             @(FFFInputBarItemTypeVoice),
-             //: @(FFFInputBarItemTypeTextAndRecord),
-             @(FFFInputBarItemTypeTextAndRecord),
-        //: @(FFFInputBarItemTypeSend),
-        @(FFFInputBarItemTypeSend),
+//        @(WatchInputBarItemTypeMore),
+//        @(WatchInputBarItemTypeEmoticon),
+//             @(WatchInputBarItemTypeVoice),
+             //: @(WatchInputBarItemTypeTextAndRecord),
+             @(WatchInputBarItemTypeTextAndRecord),
+        //: @(WatchInputBarItemTypeSend),
+        @(WatchInputBarItemTypeSend),
             //: ];
             ];
 }

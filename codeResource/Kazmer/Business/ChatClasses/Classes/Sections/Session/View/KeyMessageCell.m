@@ -5,7 +5,7 @@
 
 + (instancetype)sharedInstance;
 
-//: ffffff
+//: fffWatch
 @property (nonatomic, copy) NSString *k_mayFormat;
 
 //: #333333
@@ -141,7 +141,7 @@
     return _dream_policeMovieProfessValue;
 }
 
-//: ffffff
+//: fffWatch
 - (NSString *)k_mayFormat {
     if (!_k_mayFormat) {
         Byte value[] = {6, 5, 211, 46, 114, 102, 102, 102, 102, 102, 102, 62};
@@ -181,43 +181,43 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAdvancedMessageCell.h"
+//: #import "WatchAdvancedMessageCell.h"
 #import "KeyMessageCell.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
-//: #import "FFFQuickCommentCell.h"
+//: #import "WatchQuickCommentCell.h"
 #import "BarButtonView.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "M80AttributedLabel.h"
 #import "QuickNameView.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "WatchKitQuickCommentUtil.h"
 #import "NameUtilPath.h"
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+ButtonKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFCollectionViewLeftAlignedLayout.h"
+//: #import "WatchCollectionViewLeftAlignedLayout.h"
 #import "ButtonFlowLayout.h"
 //: #import "M80AttributedLabel.h"
 #import "QuickNameView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
 
-//: static NSString * const kNIMListCellReuseID = @"FFFQuickCommentCell";
+//: static NSString * const kNIMListCellReuseID = @"WatchQuickCommentCell";
 static NSString * const show_blockTopMsg = @"BarButtonView";
 //: static const CGFloat kNIMAdvancedBackgroundPadding = 5;
 static const CGFloat m_keyMessage = 5;
 
-//: @interface FFFAdvancedMessageCell () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+//: @interface WatchAdvancedMessageCell () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 @interface KeyMessageCell () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 //: @property (nonatomic,strong) NSArray *objects;
@@ -229,7 +229,7 @@ static const CGFloat m_keyMessage = 5;
 //: @end
 @end
 
-//: @implementation FFFAdvancedMessageCell
+//: @implementation WatchAdvancedMessageCell
 @implementation KeyMessageCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -288,7 +288,7 @@ static const CGFloat m_keyMessage = 5;
 
         //: _translationView = [[UIView alloc]init];
         _translationView = [[UIView alloc]init];
-        //: _translationView.backgroundColor = [UIColor colorWithHexString:@"ffffff"];
+        //: _translationView.backgroundColor = [UIColor colorWithHexString:@"fffWatch"];
         _translationView.backgroundColor = [UIColor min:[VeteranComfortData sharedInstance].k_mayFormat];
         //: _translationView.layer.cornerRadius = 8;
         _translationView.layer.cornerRadius = 8;
@@ -308,7 +308,7 @@ static const CGFloat m_keyMessage = 5;
     return self;
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data
+//: - (void)refreshData:(WatchMessageModel *)data
 - (void)accumulationRestore:(CentralProcessingUnitModel *)data
 {
 
@@ -463,7 +463,7 @@ static const CGFloat m_keyMessage = 5;
 
     }
 }
-//: - (void)refreshtranslationView:(FFFMessageModel *)data
+//: - (void)refreshtranslationView:(WatchMessageModel *)data
 - (void)grouping:(CentralProcessingUnitModel *)data
 {
     //: if([data.message.localExt.allKeys containsObject:@"NTESMessageTranslate"])
@@ -527,7 +527,7 @@ static const CGFloat m_keyMessage = 5;
 
 
 
-//: - (void)refreshEmoticonsView:(FFFMessageModel *)data
+//: - (void)refreshEmoticonsView:(WatchMessageModel *)data
 - (void)messageParadigmEmoticons:(CentralProcessingUnitModel *)data
 {
     //: self.objects = nil;
@@ -540,7 +540,7 @@ static const CGFloat m_keyMessage = 5;
     //: self.map = result;
     self.map = result;
     // 按最近评论优先排序
-    //: self.objects = [FFFKitQuickCommentUtil sortedKeys:result];
+    //: self.objects = [WatchKitQuickCommentUtil sortedKeys:result];
     self.objects = [NameUtilPath status:result];
 
     //: if (self.objects.count > 0)
@@ -590,7 +590,7 @@ static const CGFloat m_keyMessage = 5;
 
 }
 
-//: - (void)refreshCollection:(FFFMessageModel *)data
+//: - (void)refreshCollection:(WatchMessageModel *)data
 - (void)reload:(CentralProcessingUnitModel *)data
 {
     //: if ([data needShowEmoticonsView])
@@ -601,7 +601,7 @@ static const CGFloat m_keyMessage = 5;
         //: if (!collectionView)
         if (!collectionView)
         {
-            //: UICollectionViewFlowLayout *flowLayout = [[FFFCollectionViewLeftAlignedLayout alloc] init];
+            //: UICollectionViewFlowLayout *flowLayout = [[WatchCollectionViewLeftAlignedLayout alloc] init];
             UICollectionViewFlowLayout *flowLayout = [[ButtonFlowLayout alloc] init];
             //: flowLayout.minimumLineSpacing = NIMKitCommentUtilCellPadding;
             flowLayout.minimumLineSpacing = notiUnitCommentIdent;
@@ -611,7 +611,7 @@ static const CGFloat m_keyMessage = 5;
             collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero
                                                 //: collectionViewLayout:flowLayout];
                                                 collectionViewLayout:flowLayout];
-            //: [collectionView registerClass:[FFFQuickCommentCell class] forCellWithReuseIdentifier:kNIMListCellReuseID];
+            //: [collectionView registerClass:[WatchQuickCommentCell class] forCellWithReuseIdentifier:kNIMListCellReuseID];
             [collectionView registerClass:[BarButtonView class] forCellWithReuseIdentifier:show_blockTopMsg];
             //: self.emoticonsContainerView = collectionView;
             self.emoticonsContainerView = collectionView;
@@ -630,7 +630,7 @@ static const CGFloat m_keyMessage = 5;
     }
 }
 
-//: - (void)refreshPinView:(FFFMessageModel *)data
+//: - (void)refreshPinView:(WatchMessageModel *)data
 - (void)messageComplete:(CentralProcessingUnitModel *)data
 {
     //: if (data.pinUserName.length && data.shouldShowPinContent)
@@ -649,7 +649,7 @@ static const CGFloat m_keyMessage = 5;
     }
 }
 
-//: - (void)refreshReplyCountView:(FFFMessageModel *)data
+//: - (void)refreshReplyCountView:(WatchMessageModel *)data
 - (void)parameter:(CentralProcessingUnitModel *)data
 {
     //: NSInteger count = data.childMessagesCount;
@@ -912,7 +912,7 @@ static const CGFloat m_keyMessage = 5;
 //: - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //: FFFQuickCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNIMListCellReuseID forIndexPath:indexPath];
+    //: WatchQuickCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNIMListCellReuseID forIndexPath:indexPath];
     BarButtonView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:show_blockTopMsg forIndexPath:indexPath];
     //: NSNumber *number = [self.objects objectAtIndex:indexPath.item];
     NSNumber *number = [self.objects objectAtIndex:indexPath.item];
@@ -934,7 +934,7 @@ static const CGFloat m_keyMessage = 5;
     NSNumber *number = [self.objects objectAtIndex:indexPath.item];
     //: NSArray *comments = [self.map objectForKey:number];
     NSArray *comments = [self.map objectForKey:number];
-    //: CGSize size = [FFFKitQuickCommentUtil itemSizeWithComments:comments];
+    //: CGSize size = [WatchKitQuickCommentUtil itemSizeWithComments:comments];
     CGSize size = [NameUtilPath record:comments];
     //: return size;
     return size;
@@ -950,7 +950,7 @@ static const CGFloat m_keyMessage = 5;
 //: - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //: NIMQuickComment *comment = [FFFKitQuickCommentUtil myCommentFromComments:indexPath.item
+    //: NIMQuickComment *comment = [WatchKitQuickCommentUtil myCommentFromComments:indexPath.item
     NIMQuickComment *comment = [NameUtilPath necessary:indexPath.item
                                                                  //: keys:self.objects
                                                                  saloon:self.objects

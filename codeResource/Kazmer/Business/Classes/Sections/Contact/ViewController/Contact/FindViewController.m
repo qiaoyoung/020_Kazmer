@@ -17,7 +17,7 @@
 //: group_info_activity_op_failed
 @property (nonatomic, copy) NSString *mEnableId;
 
-//: #FFF6CF
+//: #Watch6CF
 @property (nonatomic, copy) NSString *noti_viewUrl;
 
 //: back_arrow_bl
@@ -94,7 +94,7 @@
     return _userCenterKey;
 }
 
-//: #FFF6CF
+//: #Watch6CF
 - (NSString *)noti_viewUrl {
     if (!_noti_viewUrl) {
         Byte value[] = {7, 53, 7, 152, 97, 236, 250, 88, 123, 123, 123, 107, 120, 123, 175};
@@ -212,7 +212,7 @@
 #import "FindViewController.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WatchContactSelectViewController.h"
 #import "NominateViewController.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
@@ -300,7 +300,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"black_list_activity_black"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[PurseData sharedInstance].show_tableIdent];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -482,7 +482,7 @@
             }
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+            //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
             [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[PurseData sharedInstance].dreamMyName] duration:2.0f position:CSToastPositionCenter];
         }
     //: }];
@@ -504,7 +504,7 @@
     config.filterIds = users;
     //: config.showSelectHeaderview = NO;
     config.showSelectHeaderview = NO;
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
     NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
     //: vc.delegate = self;
     vc.delegate = self;
@@ -525,7 +525,7 @@
         [[NIMSDK sharedSDK].userManager addToBlackList:selectedContacts.firstObject completion:^(NSError *error) {
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[PurseData sharedInstance].main_quickValue] duration:2.0 position:CSToastPositionCenter];
                 //: wself.data = wself.myBlackListUser;
                 wself.data = wself.catalogItem;
@@ -533,7 +533,7 @@
                 [wself.tableView reloadData];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[PurseData sharedInstance].mEnableId] duration:2.0 position:CSToastPositionCenter];
             }
         //: }];
@@ -557,7 +557,7 @@
     for (NIMUser *user in [NIMSDK sharedSDK].userManager.myBlackList) {
         //: NTESContactDataMember *member = [[NTESContactDataMember alloc] init];
         TimeMember *member = [[TimeMember alloc] init];
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+        //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
         TingMessage *info = [[ButtonKit sheerOption] past:user.userId skinColour_strong:nil];
         //: member.info = info;
         member.info = info;
@@ -576,7 +576,7 @@
     if(!_box){
         //: _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
         _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice tingHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
-        //: _box.backgroundColor = [UIColor colorWithHexString:@"#FFF6CF"];
+        //: _box.backgroundColor = [UIColor colorWithHexString:@"#Watch6CF"];
         _box.backgroundColor = [UIColor min:[PurseData sharedInstance].noti_viewUrl];
 
         //: UIImageView *defImg = [[UIImageView alloc]initWithFrame:CGRectMake(15, 6, 14, 14)];
@@ -593,7 +593,7 @@
         //: subtitleLabel.textColor = [UIColor colorWithHexString:@"#FF483D"];
         subtitleLabel.textColor = [UIColor min:[PurseData sharedInstance].main_myKeyText];
 //        subtitleLabel.textAlignment = NSTextAlignmentLeft;
-        //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
+        //: subtitleLabel.text = [WatchLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
         subtitleLabel.text = [PaintedNaturalLanguageTo exhibit:[PurseData sharedInstance].dreamFormatOnUrl];
         //: [_box addSubview:subtitleLabel];
         [_box addSubview:subtitleLabel];
@@ -628,7 +628,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [WatchLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [PaintedNaturalLanguageTo exhibit:[PurseData sharedInstance].m_commentPath];
 
 

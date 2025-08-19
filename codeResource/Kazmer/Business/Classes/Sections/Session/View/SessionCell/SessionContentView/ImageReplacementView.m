@@ -26,7 +26,7 @@ Byte showDeadlineIdent[] = {64, 27, 15, 11, 135, 125, 83, 140, 145, 129, 83, 90,
 #import "UIView+Zone.h"
 //: #import "M80AttributedLabel.h"
 #import "QuickNameView.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "NTESWhiteboardAttachment.h"
 #import "InfoAttachment.h"
@@ -72,7 +72,7 @@ Byte showDeadlineIdent[] = {64, 27, 15, 11, 135, 125, 83, 140, 145, 129, 83, 90,
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(WatchMessageModel *)data{
 - (void)lengthAt:(CentralProcessingUnitModel *)data{
     //: [super refresh:data];
     [super lengthAt:data];

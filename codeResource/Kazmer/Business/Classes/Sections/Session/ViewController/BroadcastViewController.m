@@ -341,7 +341,7 @@ DominateUntilData kScribePath = (DominateUntilData){75, (Byte []){173, 217, 239,
 #import "BarEmptyView.h"
 //: #import "NTESSessionConfig.h"
 #import "ProgressNotice.h"
-//: #import "FFFMediaItem.h"
+//: #import "WatchMediaItem.h"
 #import "InfoMakeBar.h"
 //: #import "NTESSessionMsgConverter.h"
 #import "BackgroundCover.h"
@@ -355,7 +355,7 @@ DominateUntilData kScribePath = (DominateUntilData){75, (Byte []){173, 217, 239,
 #import "VisualCommunicationImageTutorialViewController.h"
 //: #import "NSDictionary+NTESJson.h"
 #import "NSDictionary+ValueJson.h"
-//: #import "FFFAdvancedTeamCardViewController.h"
+//: #import "WatchAdvancedTeamCardViewController.h"
 #import "ValueToViewController.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
@@ -363,7 +363,7 @@ DominateUntilData kScribePath = (DominateUntilData){75, (Byte []){173, 217, 239,
 #import "NameTing.h"
 //: #import "NTESPersonalCardViewController.h"
 #import "ApproximateViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WatchContactSelectViewController.h"
 #import "NominateViewController.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -373,13 +373,13 @@ DominateUntilData kScribePath = (DominateUntilData){75, (Byte []){173, 217, 239,
 #import "UIAlertView+InputSub.h"
 //: #import "NTESSessionUtil.h"
 #import "OldUtil.h"
-//: #import "FFFKitMediaFetcher.h"
+//: #import "WatchKitMediaFetcher.h"
 #import "VisualisationFetcher.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
 //: #import "NTESSubscribeManager.h"
 #import "RedCover.h"
-//: #import "FFFInputAtCache.h"
+//: #import "WatchInputAtCache.h"
 #import "TimeCache.h"
 //: #import "NTESRedPacketAttachment.h"
 #import "InfoMessageBackground.h"
@@ -393,13 +393,13 @@ DominateUntilData kScribePath = (DominateUntilData){75, (Byte []){173, 217, 239,
 #import "EventImage.h"
 //: #import "NTESSessionMultiRetweetContentView.h"
 #import "TotalerchangeControl.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFReplyContentView.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
+//: #import "WatchReplyContentView.h"
 #import "AnswerView.h"
 //: #import "NTESThreadTalkSessionViewController.h"
 #import "AssemblageViewController.h"
-//: #import "UIView+FFFToast.h"
+//: #import "UIView+WatchToast.h"
 #import "UIView+FrameKey.h"
 //: #import "NTESWhiteboardAttachment.h"
 #import "InfoAttachment.h"
@@ -411,11 +411,11 @@ DominateUntilData kScribePath = (DominateUntilData){75, (Byte []){173, 217, 239,
 #import "TableWorldViewController.h"
 //: #import "SNLeadCompleteManager.h"
 #import "ViewTing.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
-//: #import "FFFTeamAnnouncementListViewController.h"
+//: #import "WatchTeamAnnouncementListViewController.h"
 #import "ParvenuValueImageViewController.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WatchTeamListDataManager.h"
 #import "MetadataManager.h"
 //: #import "LEEAlert.h"
 #import "SetupObject.h"
@@ -458,7 +458,7 @@ NIMSystemNotificationManagerDelegate,
 NIMMediaManagerDelegate,
 //: NIMEventSubscribeManagerDelegate,
 NIMEventSubscribeManagerDelegate,
-//: FFFTeamCardViewControllerDelegate,
+//: WatchTeamCardViewControllerDelegate,
 ModePath,
 //: NIMChatExtendManagerDelegate,
 NIMChatExtendManagerDelegate,
@@ -492,7 +492,7 @@ PothouseQuick>
 //: @property (nonatomic,strong) UIView *currentSingleSnapView;
 @property (nonatomic,strong) UIView *currentSingleSnapView;
 //@property (nonatomic,strong)    ToLabel *fpsLabel;
-//: @property (nonatomic,strong) FFFKitMediaFetcher *mediaFetcher;
+//: @property (nonatomic,strong) WatchKitMediaFetcher *mediaFetcher;
 @property (nonatomic,strong) VisualisationFetcher *mediaFetcher;
 //: @property (nonatomic,strong) NSMutableArray *selectedMessages;
 @property (nonatomic,strong) NSMutableArray *selectedMessages;
@@ -666,7 +666,7 @@ PothouseQuick>
                     option.nick = team.teamName;
                     //: option.team = team;
                     option.team = team;
-                    //: FFFTeamAnnouncementListViewController *vc = [[FFFTeamAnnouncementListViewController alloc] initWithOption:option];
+                    //: WatchTeamAnnouncementListViewController *vc = [[WatchTeamAnnouncementListViewController alloc] initWithOption:option];
                     ParvenuValueImageViewController *vc = [[ParvenuValueImageViewController alloc] initWith:option];
                     //: [self.navigationController pushViewController:vc animated:YES];
                     [self.navigationController pushViewController:vc animated:YES];
@@ -950,7 +950,7 @@ PothouseQuick>
 
                     //: action.type = LEEActionTypeCancel;
                     action.type = LEEActionTypeCancel;
-                    //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
+                    //: action.title = [WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
                     action.title = [PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&showTableFormat)];
                     //: action.titleColor = [UIColor colorWithHexString:@"01B0FD"];
                     action.titleColor = [UIColor min:StringFromDominateUntilData(&showIsolateUrl)];
@@ -1114,7 +1114,7 @@ PothouseQuick>
     //    [self.navigationController.navigationBar setHidden:NO];
 }
 
-//: - (id<FFFSessionConfig>)sessionConfig
+//: - (id<WatchSessionConfig>)sessionConfig
 - (id<MessagePinImage>)sessionConfig
 {
     //: if (_sessionConfig == nil) {
@@ -1128,7 +1128,7 @@ PothouseQuick>
     return _sessionConfig;
 }
 
-//: #pragma mark - FFFTeamCardViewControllerDelegate
+//: #pragma mark - WatchTeamCardViewControllerDelegate
 #pragma mark - ModePath
 
 //: - (void)NIMTeamCardVCDidSetTop:(BOOL)isTop {
@@ -1221,7 +1221,7 @@ PothouseQuick>
 {
     //: if ([self.session.sessionId isEqualToString:[NIMSDK sharedSDK].loginManager.currentAccount]) {
     if ([self.session.sessionId isEqualToString:[NIMSDK sharedSDK].loginManager.currentAccount]) {
-        //: return [FFFLanguageManager getTextWithKey:@"my_computer"];
+        //: return [WatchLanguageManager getTextWithKey:@"my_computer"];
         return [PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&mMediaValue)];
     }
     //: return [super sessionTitle];
@@ -1343,7 +1343,7 @@ PothouseQuick>
     if (_intervalTime > 0 && _isSend == NO) {
         //: [self hitClientAntispamWithMessage:message type:@"发言频次"];
         [self nett:message red_strong:StringFromDominateUntilData(&m_admitImageRiotName)];
-        //: NSString *title = [NSString stringWithFormat:[FFFLanguageManager getTextWithKey:@"发言频次过快，请%ld秒后重试"],(long)_intervalTime];
+        //: NSString *title = [NSString stringWithFormat:[WatchLanguageManager getTextWithKey:@"发言频次过快，请%ld秒后重试"],(long)_intervalTime];
         NSString *title = [NSString stringWithFormat:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&main_deliverName)],(long)_intervalTime];
         //: [SVProgressHUD showMessage:title];
         [SVProgressHUD index:title];
@@ -1436,7 +1436,7 @@ PothouseQuick>
 
 //: #pragma mark - 菜单
 #pragma mark - 菜单
-//: - (void)onTapMenuItemReply:(FFFMediaItem *)item
+//: - (void)onTapMenuItemReply:(WatchMediaItem *)item
 - (void)onTapMenuItemReply:(InfoMakeBar *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
@@ -1466,7 +1466,7 @@ PothouseQuick>
     }
 }
 
-//: - (void)onTapMenuItemForword:(FFFMediaItem *)item
+//: - (void)onTapMenuItemForword:(WatchMediaItem *)item
 - (void)onTapMenuItemForword:(InfoMakeBar *)item
 {
     //: ZOMNForwardViewController *vc = [[ZOMNForwardViewController alloc]init];
@@ -1477,7 +1477,7 @@ PothouseQuick>
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-//: - (void)onTapMenuItemMark:(FFFMediaItem *)item
+//: - (void)onTapMenuItemMark:(WatchMediaItem *)item
 - (void)onTapMenuItemMark:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -1496,18 +1496,18 @@ PothouseQuick>
     [[NIMSDK sharedSDK].chatExtendManager addCollect:params completion:^(NSError * _Nullable error, NIMCollectInfo * _Nullable collectInfo) {
         //: if (error) {
         if (error) {
-            //: [SVProgressHUD showErrorWithStatus:[FFFLanguageManager getTextWithKey:@"收藏失败"]];
+            //: [SVProgressHUD showErrorWithStatus:[WatchLanguageManager getTextWithKey:@"收藏失败"]];
             [SVProgressHUD showErrorWithStatus:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&mainRegnantKey)]];
             //: return;
             return;
         }
-        //: [SVProgressHUD showSuccessWithStatus:[FFFLanguageManager getTextWithKey:@"收藏成功"]];
+        //: [SVProgressHUD showSuccessWithStatus:[WatchLanguageManager getTextWithKey:@"收藏成功"]];
         [SVProgressHUD showSuccessWithStatus:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&userFreedContent)]];
     //: }];
     }];
 }
 
-//: - (void)onTapMenuItemPin:(FFFMediaItem *)item
+//: - (void)onTapMenuItemPin:(WatchMediaItem *)item
 - (void)onTapMenuItemPin:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -1539,7 +1539,7 @@ PothouseQuick>
     }];
 }
 
-//: - (void)onTapMenuItemUnpin:(FFFMediaItem *)item
+//: - (void)onTapMenuItemUnpin:(WatchMediaItem *)item
 - (void)onTapMenuItemUnpin:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -1572,7 +1572,7 @@ PothouseQuick>
 
 }
 
-//: - (void)onTapMenuItemRevoke:(FFFMediaItem *)item
+//: - (void)onTapMenuItemRevoke:(WatchMediaItem *)item
 - (void)onTapMenuItemRevoke:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -1622,7 +1622,7 @@ PothouseQuick>
 }
 
 
-//: - (void)onTapMenuItemReport:(FFFMediaItem *)item
+//: - (void)onTapMenuItemReport:(WatchMediaItem *)item
 - (void)onTapMenuItemReport:(InfoMakeBar *)item
 {
     //: [self.view addSubview:self.translateView];
@@ -1631,7 +1631,7 @@ PothouseQuick>
     [self.translateView press];
 }
 
-//: - (void)onTapMenuItemTranslation:(FFFMediaItem *)item
+//: - (void)onTapMenuItemTranslation:(WatchMediaItem *)item
 - (void)onTapMenuItemTranslation:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -1779,7 +1779,7 @@ PothouseQuick>
     }];
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: UIAlertAction *sure = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: UIAlertAction *sure = [UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     UIAlertAction *sure = [UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&showTableFormat)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: UITextField *input = alertVC.textFields.firstObject;
         UITextField *input = alertVC.textFields.firstObject;
@@ -1807,7 +1807,7 @@ PothouseQuick>
     };
     //: NIMRevokeMessageOption *option = [[NIMRevokeMessageOption alloc] init];
     NIMRevokeMessageOption *option = [[NIMRevokeMessageOption alloc] init];
-    //: option.apnsContent = [FFFLanguageManager getTextWithKey:@"撤回一条消息"];
+    //: option.apnsContent = [WatchLanguageManager getTextWithKey:@"撤回一条消息"];
     option.apnsContent = [PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&kScribePath)];
     //: option.apnsPayload = payload;
     option.apnsPayload = payload;
@@ -1823,13 +1823,13 @@ PothouseQuick>
         if (error) {
             //: if (error.code == NIMRemoteErrorCodeDomainExpireOld) {
             if (error.code == NIMRemoteErrorCodeDomainExpireOld) {
-                //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[FFFLanguageManager getTextWithKey:@"发送时间超过2分钟的消息不能被撤回"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] otherButtonTitles:nil, nil];
+                //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[WatchLanguageManager getTextWithKey:@"发送时间超过2分钟的消息不能被撤回"] delegate:nil cancelButtonTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] otherButtonTitles:nil, nil];
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&dream_bowContentValue)] delegate:nil cancelButtonTitle:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&showTableFormat)] otherButtonTitles:nil, nil];
                 //: [alert show];
                 [alert show];
             //: } else {
             } else {
-                //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [weakSelf.view makeToast:[WatchLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"] duration:2.0 position:CSToastPositionCenter];
                 [weakSelf.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&main_scribeValue)] duration:2.0 position:CSToastPositionCenter];
             }
         //: } else {
@@ -1865,7 +1865,7 @@ PothouseQuick>
     NSString *postscript = note.userInfo[StringFromDominateUntilData(&showThoroughlyData)];
     //: if (message) {
     if (message) {
-        //: FFFMessageModel *model = [self uiDeleteMessage:message];
+        //: WatchMessageModel *model = [self uiDeleteMessage:message];
         CentralProcessingUnitModel *model = [self color:message];
         //主动撤回场景下，将之前填充的attach内容再次填充保存
         //: NIMMessage *tip = [NTESSessionMsgConverter msgWithTip:[NTESSessionUtil tipOnMessageRevokedLocal:postscript]
@@ -1886,7 +1886,7 @@ PothouseQuick>
     }
 }
 
-//: - (void)onTapMenuItemDelete:(FFFMediaItem *)item
+//: - (void)onTapMenuItemDelete:(WatchMediaItem *)item
 - (void)onTapMenuItemDelete:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -1933,14 +1933,14 @@ PothouseQuick>
     }
 }
 
-//: - (void)onTapMenuItemMutiSelect:(FFFMediaItem *)item
+//: - (void)onTapMenuItemMutiSelect:(WatchMediaItem *)item
 - (void)onTapMenuItemMutiSelect:(InfoMakeBar *)item
 {
     //: [self switchUIWithSessionState:NIMKitSessionStateSelect];
     [self borderBy:NIMKitSessionStateSelect];
 }
 
-//: - (void)onTapMenuItemAudio2Text:(FFFMediaItem *)item
+//: - (void)onTapMenuItemAudio2Text:(WatchMediaItem *)item
 - (void)onTapMenuItemAudio2Text:(InfoMakeBar *)item
 {
 
@@ -2019,7 +2019,7 @@ PothouseQuick>
 //: - (void)onRecordFailed:(NSError *)error
 - (void)halogen:(NSError *)error
 {
-    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"luyinshibai"] duration:2 position:CSToastPositionCenter];
+    //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"luyinshibai"] duration:2 position:CSToastPositionCenter];
     [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&user_imageIdent)] duration:2 position:CSToastPositionCenter];
 }
 
@@ -2041,13 +2041,13 @@ PothouseQuick>
 //: - (void)showRecordFileNotSendReason
 - (void)total
 {
-    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"luyintaiduan"] duration:0.2f position:CSToastPositionCenter];
+    //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"luyintaiduan"] duration:0.2f position:CSToastPositionCenter];
     [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&show_textUrl)] duration:0.2f position:CSToastPositionCenter];
 }
 
 //: #pragma mark - Cell事件
 #pragma mark - Cell事件
-//: - (BOOL)onTapCell:(FFFKitEvent *)event
+//: - (BOOL)onTapCell:(WatchKitEvent *)event
 - (BOOL)hides:(CoverShowEvent *)event
 {
     //: BOOL handled = [super onTapCell:event];
@@ -2055,7 +2055,7 @@ PothouseQuick>
     //: NSString *eventName = event.eventName;
     NSString *eventName = event.eventName;
 
-    //: if ([eventName isEqualToString:FFFKitEventNameTapContent])
+    //: if ([eventName isEqualToString:WatchKitEventNameTapContent])
     if ([eventName isEqualToString:appCommentStr])
     {
         //: NIMMessage *message = event.messageModel.message;
@@ -2077,7 +2077,7 @@ PothouseQuick>
             }
         }
     }
-    //: else if ([eventName isEqualToString:FFFKitEventNameTapRepliedContent])
+    //: else if ([eventName isEqualToString:WatchKitEventNameTapRepliedContent])
     else if ([eventName isEqualToString:kKitValue])
     {
 //        handled = YES;
@@ -2091,7 +2091,7 @@ PothouseQuick>
 //        AssemblageViewController *vc = [[AssemblageViewController alloc] initWithThreadMessage:message];
 //        [self.navigationController pushViewController:vc animated:YES];
     }
-    //: else if([eventName isEqualToString:FFFKitEventNameTapLabelLink])
+    //: else if([eventName isEqualToString:WatchKitEventNameTapLabelLink])
     else if([eventName isEqualToString:dream_topMessage])
     {
         //: NSString *link = event.data;
@@ -2143,7 +2143,7 @@ PothouseQuick>
         //: && ![userId isEqualToString:[NIMSDK sharedSDK].loginManager.currentAccount])
         && ![userId isEqualToString:[NIMSDK sharedSDK].loginManager.currentAccount])
     {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
         CoverTingContent *option = [[CoverTingContent alloc] init];
         //: option.session = self.session;
         option.session = self.session;
@@ -2397,7 +2397,7 @@ PothouseQuick>
         [self label:@"" request:team];
     //: } else {
     } else {
-        //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[FFFLanguageManager getTextWithKey:@"activity_friend_verify_info"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] otherButtonTitles:nil, nil];
+        //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[WatchLanguageManager getTextWithKey:@"activity_friend_verify_info"] delegate:nil cancelButtonTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] otherButtonTitles:nil, nil];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&k_salmonPath)] delegate:nil cancelButtonTitle:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&showTableFormat)] otherButtonTitles:nil, nil];
         //: alert.alertViewStyle = UIAlertViewStylePlainTextInput;
         alert.alertViewStyle = UIAlertViewStylePlainTextInput;
@@ -2476,7 +2476,7 @@ PothouseQuick>
     [SetupObject range].config
         //: .LeeAddTitle(^(UILabel *label) {
         .LeeAddTitle(^(UILabel *label) {
-            //: NSString *msg = [NSString stringWithFormat:@"%@: %@",[FFFLanguageManager getTextWithKey:@"message_helper_apply_to_group"],team.teamName];
+            //: NSString *msg = [NSString stringWithFormat:@"%@: %@",[WatchLanguageManager getTextWithKey:@"message_helper_apply_to_group"],team.teamName];
             NSString *msg = [NSString stringWithFormat:@"%@: %@",[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&dream_collectorData)],team.teamName];
             //: label.text = msg;
             label.text = msg;
@@ -2489,7 +2489,7 @@ PothouseQuick>
 
             //: action.type = LEEActionTypeCancel;
             action.type = LEEActionTypeCancel;
-            //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"];
+            //: action.title = [WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"];
             action.title = [PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&dreamMeatMessage)];//@"取消"
             //: action.titleColor = [UIColor grayColor];
             action.titleColor = [UIColor grayColor];
@@ -2513,7 +2513,7 @@ PothouseQuick>
 
             //: action.type = LEEActionTypeDefault;
             action.type = LEEActionTypeDefault;
-            //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"]; 
+            //: action.title = [WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"]; 
             action.title = [PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&showTableFormat)]; //@"确定";
             //: action.titleColor = [UIColor redColor];
             action.titleColor = [UIColor redColor];
@@ -2656,7 +2656,7 @@ PothouseQuick>
 
     //: if ([NTESSessionUtil canMessageBeForwarded:message]) {
     if ([OldUtil nameTempState:message]) {
-        //: [items addObject:[[UIMenuItem alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"转发"] action:@selector(forwardMessage:)]];
+        //: [items addObject:[[UIMenuItem alloc] initWithTitle:[WatchLanguageManager getTextWithKey:@"转发"] action:@selector(forwardMessage:)]];
         [items addObject:[[UIMenuItem alloc] initWithTitle:[PaintedNaturalLanguageTo exhibit:@"转发"] action:@selector(pastCount:)]];
         //: [items addObject:[[UIMenuItem alloc] initWithTitle:@"多选".ntes_localized action:@selector(multiSelect:)]];
         [items addObject:[[UIMenuItem alloc] initWithTitle:@"多选".textIndex action:@selector(unseeables:)]];
@@ -2664,7 +2664,7 @@ PothouseQuick>
 
     //: if ([NTESSessionUtil canMessageBeRevoked:message]) {
     if ([OldUtil shadeRevoked:message]) {
-        //: [items addObject:[[UIMenuItem alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"撤回"] action:@selector(revokeMessage:)]];
+        //: [items addObject:[[UIMenuItem alloc] initWithTitle:[WatchLanguageManager getTextWithKey:@"撤回"] action:@selector(revokeMessage:)]];
         [items addObject:[[UIMenuItem alloc] initWithTitle:[PaintedNaturalLanguageTo exhibit:@"撤回"] action:@selector(analogDigitalConverterMessage:)]];
     }
 
@@ -2871,7 +2871,7 @@ PothouseQuick>
     OldPin *config = [[OldPin alloc] init];
     //: config.needMutiSelected = NO;
     config.needMutiSelected = NO;
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
     NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
     //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
     vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -2889,7 +2889,7 @@ PothouseQuick>
 
 //: - (void)selectForwardSessionCompletion:(void (^)(NIMSession *targetSession))completion {
 - (void)notBackground:(void (^)(NIMSession *targetSession))completion {
-    //: UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"选择会话类型"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] destructiveButtonTitle:nil otherButtonTitles:[FFFLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"], [FFFLanguageManager getTextWithKey:@"contact_fragment_group"], [FFFLanguageManager getTextWithKey:@"message_super_team"], nil];
+    //: UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:[WatchLanguageManager getTextWithKey:@"选择会话类型"] delegate:nil cancelButtonTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] destructiveButtonTitle:nil otherButtonTitles:[WatchLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"], [WatchLanguageManager getTextWithKey:@"contact_fragment_group"], [WatchLanguageManager getTextWithKey:@"message_super_team"], nil];
     UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&mainSurvivalValue)] delegate:nil cancelButtonTitle:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&dreamMeatMessage)] destructiveButtonTitle:nil otherButtonTitles:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&k_upMessage)], [PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&noti_everythingViaCenterUrl)], [PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&user_rumenPatrolMessage)], nil];
     //: [sheet showInView:self.view completionHandler:^(NSInteger index) {
     [sheet needGenerate:self.view popShould:^(NSInteger index) {
@@ -2901,7 +2901,7 @@ PothouseQuick>
                 OldPin *config = [[OldPin alloc] init];
                 //: config.needMutiSelected = NO;
                 config.needMutiSelected = NO;
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
                 NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
                 //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
                 vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -2927,7 +2927,7 @@ PothouseQuick>
                 OptionSession *config = [[OptionSession alloc] init];
                 //: config.teamType = NIMKitTeamTypeNomal;
                 config.teamType = NIMKitTeamTypeNomal;
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
                 NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
                 //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
                 vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -2953,7 +2953,7 @@ PothouseQuick>
                 OptionSession *config = [[OptionSession alloc] init];
                 //: config.teamType = NIMKitTeamTypeSuper;
                 config.teamType = NIMKitTeamTypeSuper;
-                //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+                //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
                 NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
                 //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
                 vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -3026,7 +3026,7 @@ PothouseQuick>
             }
         //: } else {
         } else {
-            //: FFFMessageModel *model = [weakSelf uiDeleteMessage:message];
+            //: WatchMessageModel *model = [weakSelf uiDeleteMessage:message];
             CentralProcessingUnitModel *model = [weakSelf color:message];
             //: NIMMessage *tip = [NTESSessionMsgConverter msgWithTip:[NTESSessionUtil tipOnMessageRevoked:nil]];
             NIMMessage *tip = [BackgroundCover color:[OldUtil signText:nil]];
@@ -3051,7 +3051,7 @@ PothouseQuick>
     NSString *name;
     //: if (session.sessionType == NIMSessionTypeP2P) {
     if (session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: WatchKitInfoFetchOption *option = [[WatchKitInfoFetchOption alloc] init];
         CoverTingContent *option = [[CoverTingContent alloc] init];
         //: option.session = session;
         option.session = session;
@@ -3071,7 +3071,7 @@ PothouseQuick>
     //: else {
     else {
     }
-    //: NSString *tip = [NSString stringWithFormat:@"%@ %@ ?", [FFFLanguageManager getTextWithKey:@"watch_multiretweet_activity_confirm_forwarded_to"], name];
+    //: NSString *tip = [NSString stringWithFormat:@"%@ %@ ?", [WatchLanguageManager getTextWithKey:@"watch_multiretweet_activity_confirm_forwarded_to"], name];
     NSString *tip = [NSString stringWithFormat:@"%@ %@ ?", [PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&mTrainMessage)], name];
     //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"确认转发".ntes_localized message:tip delegate:nil cancelButtonTitle:@"取消".ntes_localized otherButtonTitles:@"确认".ntes_localized, nil];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:StringFromDominateUntilData(&mTwistUrl).textIndex message:tip delegate:nil cancelButtonTitle:@"取消".textIndex otherButtonTitles:@"确认".textIndex, nil];
@@ -3121,7 +3121,7 @@ PothouseQuick>
     //: if (![[Reachability reachabilityForInternetConnection] isReachable])
     if (![[Reachability reachabilityForInternetConnection] isReachable])
     {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&showNecessaryValue)] duration:2.0 position:CSToastPositionCenter];
         //: result = NO;
         result = NO;
@@ -3146,7 +3146,7 @@ PothouseQuick>
         //: if (memberNumber < 2)
         if (memberNumber < 2)
         {
-            //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"app_avchat_not_start_with_less_member"] duration:2.0 position:CSToastPositionCenter];
+            //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"app_avchat_not_start_with_less_member"] duration:2.0 position:CSToastPositionCenter];
             [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&user_operationFormat)] duration:2.0 position:CSToastPositionCenter];
             //: result = NO;
             result = NO;
@@ -3162,7 +3162,7 @@ PothouseQuick>
         //: if (memberNumber < 2)
         if (memberNumber < 2)
         {
-            //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"app_avchat_not_start_with_less_member"] duration:2.0 position:CSToastPositionCenter];
+            //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"app_avchat_not_start_with_less_member"] duration:2.0 position:CSToastPositionCenter];
             [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&user_operationFormat)] duration:2.0 position:CSToastPositionCenter];
             //: result = NO;
             result = NO;
@@ -3197,12 +3197,12 @@ PothouseQuick>
     return actions;
 }
 
-//: - (FFFKitMediaFetcher *)mediaFetcher
+//: - (WatchKitMediaFetcher *)mediaFetcher
 - (VisualisationFetcher *)mediaFetcher
 {
     //: if (!_mediaFetcher) {
     if (!_mediaFetcher) {
-        //: _mediaFetcher = [[FFFKitMediaFetcher alloc] init];
+        //: _mediaFetcher = [[WatchKitMediaFetcher alloc] init];
         _mediaFetcher = [[VisualisationFetcher alloc] init];
         //: _mediaFetcher.limit = 1;
         _mediaFetcher.limit = 1;
@@ -3393,7 +3393,7 @@ PothouseQuick>
         _invalid_tip.backgroundColor = [UIColor min:StringFromDominateUntilData(&m_textMessage)];
         //: _invalid_tip.textColor = [UIColor colorWithHexString:@"#F6B53E"];
         _invalid_tip.textColor = [UIColor min:StringFromDominateUntilData(&dream_viewRemindMessage)];
-        //: _invalid_tip.text = [FFFLanguageManager getTextWithKey:@"app_team_invalid_tip"]; 
+        //: _invalid_tip.text = [WatchLanguageManager getTextWithKey:@"app_team_invalid_tip"]; 
         _invalid_tip.text = [PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&dreamConvinceUntilMsg)]; //
         //: _invalid_tip.textAlignment = NSTextAlignmentCenter;
         _invalid_tip.textAlignment = NSTextAlignmentCenter;
@@ -3494,11 +3494,11 @@ PothouseQuick>
 
                    //: if (!error) {
                    if (!error) {
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&dreamTableName)] duration:2.0f position:CSToastPositionCenter];
                    //: }else{
                    }else{
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&mGarlicName)] duration:2.0f position:CSToastPositionCenter];
 
                    }
@@ -3553,11 +3553,11 @@ PothouseQuick>
 
             //: if (!error) {
             if (!error) {
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&noti_remindName)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromDominateUntilData(&mainFlowName)] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];

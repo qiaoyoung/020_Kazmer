@@ -92,7 +92,7 @@
  
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitDevice.h"
+//: #import "WatchKitDevice.h"
 #import "ButtonDevice.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+ButtonKit.h"
@@ -239,7 +239,7 @@
 //: - (UIImage *)nim_imageForAvatarUpload
 - (UIImage *)random
 {
-    //: CGFloat pixels = [[FFFKitDevice currentDevice] suggestImagePixels];
+    //: CGFloat pixels = [[WatchKitDevice currentDevice] suggestImagePixels];
     CGFloat pixels = [[ButtonDevice magnitudeBy] pin];
     //: UIImage * image = [self nim_imageForUpload:pixels];
     UIImage * image = [self range:pixels];

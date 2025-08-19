@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPageView.h"
+//: #import "WatchPageView.h"
 #import "EndUserView.h"
 
-//: @interface FFFPageView ()
+//: @interface WatchPageView ()
 @interface EndUserView ()
 {
     //: NSInteger _currentPage;
@@ -37,7 +37,7 @@
 //: @end
 @end
 
-//: @implementation FFFPageView
+//: @implementation WatchPageView
 @implementation EndUserView
 
 //: - (id)initWithFrame:(CGRect)frame

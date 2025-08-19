@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "WatchUsrInfoData.h"
+#import "WatchUsrInfoData.h"
+//: #import "WatchSpellingCenter.h"
 #import "ViewSize.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
@@ -37,7 +37,7 @@
 
 //: - (NSString *)groupTitle {
 - (NSString *)need {
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    //: NSString *title = [[WatchSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[ViewSize stormCenter] atLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -78,7 +78,7 @@
 
 //: - (id)sortKey {
 - (id)off {
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    //: return [[WatchSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[ViewSize stormCenter] format:self.info.showName].shortSpelling;
 }
 

@@ -74,16 +74,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionRtcCallRecordContentView.h"
+//: #import "WatchSessionRtcCallRecordContentView.h"
 #import "FindValueControl.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+ButtonKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 
-//: @implementation FFFSessionRtcCallRecordContentView
+//: @implementation WatchSessionRtcCallRecordContentView
 @implementation FindValueControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -110,17 +110,17 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(WatchMessageModel *)data {
 - (void)lengthAt:(CentralProcessingUnitModel *)data {
     //: [super refresh:data];
     [super lengthAt:data];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SubObject *setting = [[ButtonKit sheerOption].config date:data.message];
     //: self.textLabel.textColor = setting.textColor;
     self.textLabel.textColor = setting.textColor;
     //: self.textLabel.font = setting.font;
     self.textLabel.font = setting.font;
-    //: self.textLabel.text = [FFFKitUtil messageTipContent:data.message];
+    //: self.textLabel.text = [WatchKitUtil messageTipContent:data.message];
     self.textLabel.text = [ObjectUtil complete:data.message];
 
     //: NIMRtcCallRecordObject *record = data.message.messageObject;

@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPageView.h"
+//: #import "WatchPageView.h"
 #import "EndUserView.h"
-//: #import "FFFSessionConfig.h"
+//: #import "WatchSessionConfig.h"
 #import "MessagePinImage.h"
 
 //: @class NIMInputEmoticonCatalog;
 @class BottomCatalog;
-//: @class FFFInputEmoticonTabView;
+//: @class WatchInputEmoticonTabView;
 @class SleepingTabletControl;
 
 //: @protocol NIMInputEmoticonProtocol <NSObject>
@@ -38,10 +38,10 @@
 @end
 
 
-//: @interface FFFInputEmoticonContainerView : UIView<FFFPageViewDataSource,FFFPageViewDelegate>
+//: @interface WatchInputEmoticonContainerView : UIView<WatchPageViewDataSource,WatchPageViewDelegate>
 @interface SpecsView : UIView<ObjectCell,MaxDelegate>
 
-//: @property (nonatomic, strong) FFFPageView *emoticonPageView;
+//: @property (nonatomic, strong) WatchPageView *emoticonPageView;
 @property (nonatomic, strong) EndUserView *emoticonPageView;
 //: @property (nonatomic, strong) UIPageControl *emotPageController;
 @property (nonatomic, strong) UIPageControl *emotPageController;
@@ -51,11 +51,11 @@
 @property (nonatomic, strong) BottomCatalog *currentCatalogData;
 //: @property (nonatomic, readonly)NSArray *allEmoticons;
 @property (nonatomic, readonly)NSArray *allEmoticons;
-//: @property (nonatomic, strong) FFFInputEmoticonTabView *tabView;
+//: @property (nonatomic, strong) WatchInputEmoticonTabView *tabView;
 @property (nonatomic, strong) SleepingTabletControl *tabView;
 //: @property (nonatomic, weak) id<NIMInputEmoticonProtocol> delegate;
 @property (nonatomic, weak) id<TitleBubbleShow> delegate;
-//: @property (nonatomic, weak) id<FFFSessionConfig> config;
+//: @property (nonatomic, weak) id<WatchSessionConfig> config;
 @property (nonatomic, weak) id<MessagePinImage> config;
 
 //: @property (nonatomic,strong) UIScrollView *scrollView;

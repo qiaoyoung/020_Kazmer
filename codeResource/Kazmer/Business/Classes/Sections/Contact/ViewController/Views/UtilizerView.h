@@ -11,9 +11,9 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
-//: #import "FFFKitInfo.h"
+//: #import "WatchContactDefines.h"
+#import "WatchContactDefines.h"
+//: #import "WatchKitInfo.h"
 #import "TingMessage.h"
 //: #import "NTESContactDataMember.h"
 #import "TimeMember.h"

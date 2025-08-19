@@ -111,7 +111,7 @@
 // __M_A_C_R_O__
 //: #import "NTESBlackListTableViewCell.h"
 #import "CorrelationTableButtonViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
@@ -199,7 +199,7 @@
 //         _cancleBtn.titleLabel.textAlignment = NSTextAlignmentRight;
     //: _cancleBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     _cancleBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    //: [_cancleBtn setTitle:[FFFLanguageManager getTextWithKey:@"black_list_item_remove"] forState:(UIControlStateNormal)];
+    //: [_cancleBtn setTitle:[WatchLanguageManager getTextWithKey:@"black_list_item_remove"] forState:(UIControlStateNormal)];
     [_cancleBtn setTitle:[PaintedNaturalLanguageTo exhibit:[SupernumeraryData mainStreakRegnantKey]] forState:(UIControlStateNormal)];//移除
     //: [_cancleBtn addTarget:self action:@selector(onTouchButton) forControlEvents:(UIControlEventTouchUpInside)];
     [_cancleBtn addTarget:self action:@selector(namePop) forControlEvents:(UIControlEventTouchUpInside)];
@@ -252,7 +252,7 @@
 //    [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:data.imageUrl] placeholderImage:nil];
 //    self.labName.text = data.nickname;
 
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:data.userId option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:data.userId option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:data.userId skinColour_strong:nil];
     //: self.labName.text = info.showName;
     self.labName.text = info.showName;

@@ -89,8 +89,8 @@
 #import "CompartmentHoldfastColorViewCell.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
 
 //: @interface NTESColorButtonCell()
 @interface CompartmentHoldfastColorViewCell()

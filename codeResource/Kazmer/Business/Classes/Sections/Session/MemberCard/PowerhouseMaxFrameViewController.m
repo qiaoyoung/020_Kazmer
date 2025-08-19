@@ -248,15 +248,15 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "TeamMemberNormalViewController.h"
 #import "PowerhouseMaxFrameViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "WatchContactSelectViewController.h"
 #import "NominateViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "WatchCardHeaderCell.h"
 #import "RecentFrameReusableView.h"
 //: #import "TeamMemberNormalCollectionViewCell.h"
 #import "ProgressReusableView.h"
 //: #import "NTESPersonalCardViewController.h"
 #import "ApproximateViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "WatchTeamMemberCardViewController.h"
 #import "MajorLeagueTeamSubMemberPositionCardViewController.h"
 
 //: @interface TeamMemberNormalViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,NIMContactSelectDelegate>
@@ -374,7 +374,7 @@ typedef struct {
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"group_info_activity_team_member"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[BodyData dream_addTubeData]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -430,7 +430,7 @@ typedef struct {
     subtitleLabel.textColor = [UIColor min:[BodyData mDeveloperTitle]];
     //: subtitleLabel.textAlignment = NSTextAlignmentRight;
     subtitleLabel.textAlignment = NSTextAlignmentRight;
-    //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
+    //: subtitleLabel.text = [WatchLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
     subtitleLabel.text = [PaintedNaturalLanguageTo exhibit:[BodyData show_garlicText]];
     //: [owerView addSubview:subtitleLabel];
     [owerView addSubview:subtitleLabel];
@@ -488,7 +488,7 @@ typedef struct {
         config.filterIds = users;
         //: config.needMutiSelected = YES;
         config.needMutiSelected = YES;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: WatchContactSelectViewController *vc = [[WatchContactSelectViewController alloc] initWithConfig:config];
         NominateViewController *vc = [[NominateViewController alloc] initWithColorPlace:config];
         //: vc.delegate = self;
         vc.delegate = self;
@@ -597,7 +597,7 @@ typedef struct {
                     //: self.owerInfo = member;
                     self.owerInfo = member;
 
-                    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+                    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
                     TingMessage *info = [[ButtonKit sheerOption] past:member.userId skinColour_strong:nil];
                     //: self.titleLabel.text = info.showName;
                     self.titleLabel.text = info.showName;
@@ -636,7 +636,7 @@ typedef struct {
     //: TeamMemberNormalCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TeamMemberNormalCollectionViewCell" forIndexPath:indexPath];
     ProgressReusableView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ProgressReusableView" forIndexPath:indexPath];
     //    cell.delegate = self;
-//    cell.backgroundColor  = RGB_COLOR_String(@"#ffffff");
+//    cell.backgroundColor  = RGB_COLOR_String(@"#fffWatch");
 
     //: NIMTeamMember *member = self.memberList[indexPath.row];
     NIMTeamMember *member = self.memberList[indexPath.row];

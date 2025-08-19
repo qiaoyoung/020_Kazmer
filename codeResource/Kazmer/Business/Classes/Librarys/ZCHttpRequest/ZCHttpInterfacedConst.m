@@ -17,7 +17,7 @@ NSString * policyMain(NSString *api) {
     //: NSString* resultApi;
     NSString* resultApi;
 //    resultApi = [[RecordInput sharedConfig].domainURL stringByAppendingString:api];
-    //: resultApi = [[[FFFConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
+    //: resultApi = [[[WatchConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
     resultApi = [[[RecordInput file] screen] stringByAppendingString:api];
     //: return resultApi;
     return resultApi;

@@ -9,26 +9,26 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFMediaItem.h"
+//: #import "WatchMediaItem.h"
 #import "InfoMakeBar.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
-//: #import "FFFKitMessageProvider.h"
+//: #import "WatchCellConfig.h"
+#import "WatchCellConfig.h"
+//: #import "WatchKitMessageProvider.h"
 #import "ValueOld.h"
-//: #import "FFFInputBarItemType.h"
-#import "FFFInputBarItemType.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputBarItemType.h"
+#import "WatchInputBarItemType.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
 
 // __M_A_C_R_O__
 
-//: @protocol FFFSessionConfig <NSObject>
+//: @protocol WatchSessionConfig <NSObject>
 @protocol MessagePinImage <NSObject>
 //: @optional
 @optional
 
 /**
- *  输入按钮类型，请填入 FFFInputBarItemType 枚举，按顺序排列。不实现则按默认排列。
+ *  输入按钮类型，请填入 WatchInputBarItemType 枚举，按顺序排列。不实现则按默认排列。
  */
 //: - (NSArray<NSNumber *> *)inputBarItemTypes;
 - (NSArray<NSNumber *> *)typesAppear;
@@ -37,13 +37,13 @@
 /**
  *  可以显示在点击输入框“+”按钮之后的多媒体按钮
  */
-//: - (NSArray<FFFMediaItem *> *)mediaItems;
+//: - (NSArray<WatchMediaItem *> *)mediaItems;
 - (NSArray<InfoMakeBar *> *)compartmentState;
 
 /**
  *  菜单选项
  */
-//: - (NSArray<FFFMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message;
+//: - (NSArray<WatchMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message;
 - (NSArray<InfoMakeBar *> *)tableOfTextsToInscription:(NIMMessage *)message;
 
 /**
@@ -159,7 +159,7 @@
  *
  *  @return 消息数据提供者，如果不实现则读取本地聊天记录
  */
-//: - (id<FFFKitMessageProvider>)messageDataProvider;
+//: - (id<WatchKitMessageProvider>)messageDataProvider;
 - (id<ValueOld>)bubbleBy;
 
 /**

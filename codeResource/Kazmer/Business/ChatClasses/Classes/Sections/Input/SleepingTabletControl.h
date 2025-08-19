@@ -12,19 +12,19 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFInputEmoticonTabView;
+//: @class WatchInputEmoticonTabView;
 @class SleepingTabletControl;
 
 //: @protocol NIMInputEmoticonTabDelegate <NSObject>
 @protocol BackgroundButtonDelegate <NSObject>
 
-//: - (void)tabView:(FFFInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index;
+//: - (void)tabView:(WatchInputEmoticonTabView *)tabView didSelectTabIndex:(NSInteger) index;
 - (void)bolusWithColumnIndex:(SleepingTabletControl *)tabView buttonFollow:(NSInteger) index;
 
 //: @end
 @end
 
-//: @interface FFFInputEmoticonTabView : UIControl
+//: @interface WatchInputEmoticonTabView : UIControl
 @interface SleepingTabletControl : UIControl
 
 //: @property (nonatomic,strong) UIButton * sendButton;

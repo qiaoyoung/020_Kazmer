@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMembersFetchOption.h"
+//: #import "WatchMembersFetchOption.h"
 #import "ButtonOption.h"
 
-//: @implementation FFFMembersFetchOption
+//: @implementation WatchMembersFetchOption
 @implementation ButtonOption
 
 //: - (instancetype)init {

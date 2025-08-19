@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WatchTeamCardMemberItem.h"
 #import "CoatButtonBar.h"
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "WatchTeamMemberListDataSource.h"
 #import "EventColor.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "WatchTeamListDataManager.h"
 #import "MetadataManager.h"
 
 //: @protocol NIMTeamMemberCardActionDelegate <NSObject>
@@ -23,21 +23,21 @@
 //: @optional
 @optional
 
-//: - (void)onTeamMemberMuted:(FFFTeamCardMemberItem *)member mute:(BOOL)mute;
+//: - (void)onTeamMemberMuted:(WatchTeamCardMemberItem *)member mute:(BOOL)mute;
 - (void)mute:(CoatButtonBar *)member be:(BOOL)mute;
-//: - (void)onTeamMemberKicked:(FFFTeamCardMemberItem *)member;
+//: - (void)onTeamMemberKicked:(WatchTeamCardMemberItem *)member;
 - (void)onRandomLiquidEcstasy:(CoatButtonBar *)member;
 
 //: @end
 @end
 
-//: @interface FFFTeamMemberCardViewController : UIViewController
+//: @interface WatchTeamMemberCardViewController : UIViewController
 @interface MajorLeagueTeamSubMemberPositionCardViewController : UIViewController
 
 //: @property (nonatomic, strong) id<NIMTeamMemberCardActionDelegate> delegate;
 @property (nonatomic, strong) id<ToDelegate> delegate;
 
-//: @property (nonatomic, strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic, strong) WatchTeamListDataManager *teamListManager;
 @property (nonatomic, strong) MetadataManager *teamListManager;
 //: @property (nonatomic, strong) NSString *memberId;
 @property (nonatomic, strong) NSString *memberId;

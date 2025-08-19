@@ -419,7 +419,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUserInfoViewController.h"
+//: #import "WatchUserInfoViewController.h"
 #import "ImageSessionViewController.h"
 //: #import "NTESSignSettingViewController.h"
 #import "TimeViewController.h"
@@ -434,7 +434,7 @@
 //: #import "NSSetAvater.h"
 #import "SetView.h"
 
-//: @interface FFFUserInfoViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,NTESCustomUIAlertDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+//: @interface WatchUserInfoViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,NTESCustomUIAlertDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface ImageSessionViewController ()<NIMUserManagerDelegate,TZImagePickerControllerDelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 //: @property (strong, nonatomic) UIImageView *imgHeader;
@@ -483,7 +483,7 @@
 //: @end
 @end
 
-//: @implementation FFFUserInfoViewController
+//: @implementation WatchUserInfoViewController
 @implementation ImageSessionViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -541,7 +541,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"my_user_info_activity_title"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"my_user_info_activity_title"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[BarreFreedData k_quickBarTitle]];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];
@@ -607,7 +607,7 @@
     self.labAccount.font = [UIFont systemFontOfSize:16.f];
     //: self.labAccount.textColor = [UIColor blackColor];
     self.labAccount.textColor = [UIColor blackColor];
-    //: self.labAccount.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_account"];
+    //: self.labAccount.text = [WatchLanguageManager getTextWithKey:@"user_profile_avtivity_account"];
     self.labAccount.text = [PaintedNaturalLanguageTo exhibit:[BarreFreedData kTableFreedValue]];
     //: [accountView addSubview:self.labAccount];
     [accountView addSubview:self.labAccount];
@@ -657,7 +657,7 @@
     //: self.labNickname.textColor = [UIColor blackColor];
     self.labNickname.textColor = [UIColor blackColor];
 //    labtitle.textAlignment = NSTextAlignmentCenter;
-    //: self.labNickname.text = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+    //: self.labNickname.text = [WatchLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
     self.labNickname.text = [PaintedNaturalLanguageTo exhibit:[BarreFreedData noti_crushId]];
     //: [nameView addSubview:self.labNickname];
     [nameView addSubview:self.labNickname];
@@ -703,7 +703,7 @@
     //: self.labSex.textColor = [UIColor blackColor];
     self.labSex.textColor = [UIColor blackColor];
 //    labtitle.textAlignment = NSTextAlignmentCenter;
-    //: self.labSex.text = [FFFLanguageManager getTextWithKey:@"activity_friend_info_sex"];
+    //: self.labSex.text = [WatchLanguageManager getTextWithKey:@"activity_friend_info_sex"];
     self.labSex.text = [PaintedNaturalLanguageTo exhibit:[BarreFreedData mainNumberValue]];
     //: [sexView addSubview:self.labSex];
     [sexView addSubview:self.labSex];
@@ -860,19 +860,19 @@
     switch (gender) {
         //: case 1:
         case 1:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+            //: genderStr = [WatchLanguageManager getTextWithKey:@"friend_info_activity_nan"];
             genderStr = [PaintedNaturalLanguageTo exhibit:[BarreFreedData dream_resortBubblePath]];
             //: break;
             break;
         //: case 2:
         case 2:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+            //: genderStr = [WatchLanguageManager getTextWithKey:@"friend_info_activity_nv"];
             genderStr = [PaintedNaturalLanguageTo exhibit:[BarreFreedData showWeepNameMessage]];
             //: break;
             break;
         //: case 0:
         case 0:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+            //: genderStr = [WatchLanguageManager getTextWithKey:@"friend_info_activity_xu"];
             genderStr = [PaintedNaturalLanguageTo exhibit:[BarreFreedData mGenetPath]];
         //: default:
         default:
@@ -890,7 +890,7 @@
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     //: pasteboard.string = self.account.text;
     pasteboard.string = self.account.text;
-    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"复制"]
+    //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"复制"]
     [self.view makeToast:[PaintedNaturalLanguageTo exhibit:@"复制"]
                      //: duration:2
                      duration:2
@@ -950,13 +950,13 @@
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WatchLanguageManager getTextWithKey:@"warm_prompt"] message:[WatchLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[PaintedNaturalLanguageTo exhibit:[BarreFreedData dream_timeIdent]] message:[PaintedNaturalLanguageTo exhibit:[BarreFreedData user_hoppingName]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BarreFreedData user_titleManMsg]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BarreFreedData mDuringTitle]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1017,13 +1017,13 @@
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[WatchLanguageManager getTextWithKey:@"warm_prompt"] message:[WatchLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[PaintedNaturalLanguageTo exhibit:[BarreFreedData dream_timeIdent]] message:[PaintedNaturalLanguageTo exhibit:[BarreFreedData m_skyPath]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BarreFreedData user_titleManMsg]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[WatchLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[PaintedNaturalLanguageTo exhibit:[BarreFreedData mDuringTitle]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1366,7 +1366,7 @@
                         [wself withShoot];
                     //: }else{
                     }else{
-                        //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                        //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                         [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[BarreFreedData user_hormoneIdent]]
                                      //: duration:2
                                      duration:2
@@ -1377,7 +1377,7 @@
                 }];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[WatchLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[PaintedNaturalLanguageTo exhibit:[BarreFreedData user_hormoneIdent]]
                              //: duration:2
                              duration:2
@@ -1388,7 +1388,7 @@
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:[BarreFreedData appShowMonthStr]]
                     //: duration:2
                     duration:2

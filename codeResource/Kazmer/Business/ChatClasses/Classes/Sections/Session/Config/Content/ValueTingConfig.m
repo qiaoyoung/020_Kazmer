@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLocationContentConfig.h"
+//: #import "WatchLocationContentConfig.h"
 #import "ValueTingConfig.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @implementation FFFLocationContentConfig
+//: @implementation WatchLocationContentConfig
 @implementation ValueTingConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)textDistance:(NIMMessage *)message
 {
-    //: return @"FFFSessionLocationContentView";
+    //: return @"WatchSessionLocationContentView";
     return @"MessageTextView";
 }
 

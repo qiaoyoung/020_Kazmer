@@ -31,8 +31,8 @@ ShirtData m_contentTubeData = (ShirtData){158, (Byte []){208, 202, 219, 205, 221
 #import "NoticeBarCover.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 
 //: @interface NTESChatroomTextContentConfig()
 @interface NoticeBarCover()

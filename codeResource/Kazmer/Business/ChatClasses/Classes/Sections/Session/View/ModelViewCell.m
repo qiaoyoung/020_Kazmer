@@ -33,7 +33,7 @@ ColorTallyData mainMaxBarIdent = (ColorTallyData){5, (Byte []){38, 67, 67, 61, 7
 //: %zd人未读
 ColorTallyData userJarStr = (ColorTallyData){235, (Byte []){206, 145, 143, 15, 81, 81, 13, 119, 65, 3, 68, 80, 241}, 12, 167, 144, 134};
 
-//: ffffff
+//: fffWatch
 ColorTallyData mainNameHoppingData = (ColorTallyData){139, (Byte []){237, 237, 237, 237, 237, 237, 253}, 6, 255, 231, 41};
 
 //: icon_accessory_normal
@@ -68,38 +68,38 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCell.h"
+//: #import "WatchMessageCell.h"
 #import "ModelViewCell.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
-//: #import "FFFBadgeView.h"
+//: #import "WatchBadgeView.h"
 #import "NameSessionView.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "WatchSessionMessageContentView.h"
 #import "ThoughtImageControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
-//: #import "FFFSessionAudioContentView.h"
+//: #import "WatchSessionAudioContentView.h"
 #import "ColorControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
 //: #import "M80AttributedLabel.h"
 #import "QuickNameView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "WatchSessionUnknowContentView.h"
 #import "MasterControl.h"
-//: #import "FFFKitConfig.h"
+//: #import "WatchKitConfig.h"
 #import "ShowConfig.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFSessionTextContentView.h"
+//: #import "WatchSessionTextContentView.h"
 #import "InfoControl.h"
 
-//: @interface FFFMessageCell()<NIMPlayAudioUIDelegate,NIMMessageContentViewDelegate>
+//: @interface WatchMessageCell()<NIMPlayAudioUIDelegate,NIMMessageContentViewDelegate>
 @interface ModelViewCell()<PlayUidelegate,CypherOption>
 {
     //: UILongPressGestureRecognizer *_longPressGesture;
@@ -108,7 +108,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
     UIMenuController *_menuController;
 }
 
-//: @property (nonatomic,strong) FFFMessageModel *model;
+//: @property (nonatomic,strong) WatchMessageModel *model;
 @property (nonatomic,strong) CentralProcessingUnitModel *model;
 
 //: @property (nonatomic,copy) NSArray *customViews;
@@ -119,7 +119,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
 
 
 
-//: @implementation FFFMessageCell
+//: @implementation WatchMessageCell
 @implementation ModelViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -182,7 +182,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
     [self.contentView addSubview:_retryButton];
 
     //audioPlayedIcon
-    //: _audioPlayedIcon = [FFFBadgeView viewWithBadgeTip:@""];
+    //: _audioPlayedIcon = [WatchBadgeView viewWithBadgeTip:@""];
     _audioPlayedIcon = [NameSessionView title:@""];
 //    _audioPlayedIcon.badgeBackgroundColor = RGB_COLOR_String(@"#612CF9");
 //    [self.contentView addSubview:_audioPlayedIcon];
@@ -194,7 +194,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
     [self.contentView addSubview:_traningActivityIndicator];
 
     //headerView
-    //: _headImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
+    //: _headImageView = [[WatchAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
     _headImageView = [[RecordControl alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
     //: [_headImageView addTarget:self action:@selector(onTapAvatar:) forControlEvents:UIControlEventTouchUpInside];
     [_headImageView addTarget:self action:@selector(centersed:) forControlEvents:UIControlEventTouchUpInside];
@@ -286,7 +286,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
     [self addGestureRecognizer:_longPressGesture];
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data
+//: - (void)refreshData:(WatchMessageModel *)data
 - (void)accumulationRestore:(CentralProcessingUnitModel *)data
 {
     //: self.model = data;
@@ -303,7 +303,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
 
 //: - (BOOL)checkData{
 - (BOOL)goOver{
-    //: return [self.model isKindOfClass:[FFFMessageModel class]];
+    //: return [self.model isKindOfClass:[WatchMessageModel class]];
     return [self.model isKindOfClass:[CentralProcessingUnitModel class]];
 }
 
@@ -370,7 +370,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
     //: if([self needShowNickName])
     if([self exist])
     {
-        //: NSString *nick = [FFFKitUtil showNick:self.model.message.from inMessage:self.model.message];
+        //: NSString *nick = [WatchKitUtil showNick:self.model.message.from inMessage:self.model.message];
         NSString *nick = [ObjectUtil withTitle:self.model.message.from session:self.model.message];
         //: [self.nameLabel setText:nick];
         [self.nameLabel setText:nick];
@@ -410,7 +410,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
     //: [self refreshReadButton];
     [self iconRecordShow];
 
-    //: if ([_bubbleView isKindOfClass:[FFFSessionTextContentView class]]) {
+    //: if ([_bubbleView isKindOfClass:[WatchSessionTextContentView class]]) {
     if ([_bubbleView isKindOfClass:[InfoControl class]]) {
         //: [self disableLongPress:YES];
         [self contenting:YES];
@@ -437,7 +437,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
         _bubblesBackgroundView.hidden = ![[ButtonKit sheerOption].layoutConfig clickBackground:self.model];
         //: if (self.model.shouldShowLeft){
         if (self.model.shouldShowLeft){
-            //: _bubblesBackgroundView.backgroundColor = [UIColor colorWithHexString:@"ffffff"];
+            //: _bubblesBackgroundView.backgroundColor = [UIColor colorWithHexString:@"fffWatch"];
             _bubblesBackgroundView.backgroundColor = [UIColor min:StringFromColorTallyData(&mainNameHoppingData)];
         //: }else{
         }else{
@@ -478,7 +478,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
         //: else if(self.model.message.session.sessionType == NIMSessionTypeTeam)
         else if(self.model.message.session.sessionType == NIMSessionTypeTeam)
         {
-            //: [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[FFFLanguageManager getTextWithKey:@"msg_view_4"]] forState:UIControlStateNormal];
+            //: [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[WatchLanguageManager getTextWithKey:@"msg_view_4"]] forState:UIControlStateNormal];
             [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[PaintedNaturalLanguageTo exhibit:StringFromColorTallyData(&appHormoneHockYaTitle)]] forState:UIControlStateNormal];//人未读".nim_localized
             //: [_readButton sizeToFit];
             [_readButton sizeToFit];
@@ -555,7 +555,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
         //: if (!_replyedBubbleView)
         if (!_replyedBubbleView)
         {
-            //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+            //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
             id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
             //: NSString *contentStr = [layoutConfig replyContent:self.model];
             NSString *contentStr = [layoutConfig with:self.model];
@@ -563,7 +563,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
             NSAssert([contentStr length] > 0, StringFromColorTallyData(&mExpressionUrl));
             //: Class clazz = NSClassFromString(contentStr);
             Class clazz = NSClassFromString(contentStr);
-            //: FFFSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
+            //: WatchSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
             ThoughtImageControl *contentView = [[clazz alloc] initSumView];
             //: NSAssert(contentView, @"can not init content view");
             NSAssert(contentView, StringFromColorTallyData(&dreamSeizeText));
@@ -596,7 +596,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
     //: if (_bubbleView == nil)
     if (_bubbleView == nil)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
         //: NSString *contentStr = [layoutConfig cellContent:self.model];
         NSString *contentStr = [layoutConfig availableName:self.model];
@@ -604,7 +604,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
         NSAssert([contentStr length] > 0, StringFromColorTallyData(&mExpressionUrl));
         //: Class clazz = NSClassFromString(contentStr);
         Class clazz = NSClassFromString(contentStr);
-        //: FFFSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
+        //: WatchSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
         ThoughtImageControl *contentView = [[clazz alloc] initSumView];
         //: NSAssert(contentView, @"can not init content view");
         NSAssert(contentView, StringFromColorTallyData(&dreamSeizeText));
@@ -616,7 +616,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
         NIMMessageType messageType = self.model.message.messageType;
         //: if (messageType == NIMMessageTypeAudio) {
         if (messageType == NIMMessageTypeAudio) {
-            //: ((FFFSessionAudioContentView *)_bubbleView).audioUIDelegate = self;
+            //: ((WatchSessionAudioContentView *)_bubbleView).audioUIDelegate = self;
             ((ColorControl *)_bubbleView).audioUIDelegate = self;
         }
         //: [self.contentView insertSubview:_bubbleView belowSubview:_selectButtonMask];
@@ -637,7 +637,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
         //: [view removeFromSuperview];
         [view removeFromSuperview];
     }
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
     //: self.customViews = [layoutConfig customViews:self.model];
     self.customViews = [layoutConfig cellViews:self.model];
@@ -1010,7 +1010,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
 
 //: #pragma mark - NIMMessageContentViewDelegate
 #pragma mark - CypherOption
-//: - (void)onCatchEvent:(FFFKitEvent *)event{
+//: - (void)onCatchEvent:(WatchKitEvent *)event{
 - (void)modelled:(CoverShowEvent *)event{
     //: if ([self.delegate respondsToSelector:@selector(onTapCell:)]) {
     if ([self.delegate respondsToSelector:@selector(hides:)]) {
@@ -1101,7 +1101,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
 - (UIImage *)rangeFor:(UIControlState)state
 {
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
     SubObject *setting = [[ButtonKit sheerOption].config date:self.model.message];
     //: if (state == UIControlStateNormal)
     if (state == UIControlStateNormal)
@@ -1187,7 +1187,7 @@ ColorTallyData dreamRacyTitle = (ColorTallyData){236, (Byte []){133, 143, 131, 1
 //: - (BOOL)retryButtonHidden
 - (BOOL)fastener
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
     //: BOOL disable = NO;
     BOOL disable = NO;

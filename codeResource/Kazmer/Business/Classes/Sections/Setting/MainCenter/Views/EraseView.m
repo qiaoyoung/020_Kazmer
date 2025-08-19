@@ -152,7 +152,7 @@ Byte kCrushFormat[] = {59, 7, 77, 14, 251, 117, 104, 187, 108, 128, 75, 42, 25, 
         _titleLabel.textColor = [UIColor min:StringFromAmendmentFishingData(kCrushFormat)];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: _titleLabel.text = [WatchLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         _titleLabel.text = [PaintedNaturalLanguageTo exhibit:StringFromAmendmentFishingData(user_destinationMsg)];
     }
     //: return _titleLabel;
@@ -176,7 +176,7 @@ Byte kCrushFormat[] = {59, 7, 77, 14, 251, 117, 104, 187, 108, 128, 75, 42, 25, 
         labtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle1.textColor = [UIColor min:StringFromAmendmentFishingData(mStateMessage)];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip1"];
+        //: labtitle1.text = [WatchLanguageManager getTextWithKey:@"account_delete_tip1"];
         labtitle1.text = [PaintedNaturalLanguageTo exhibit:StringFromAmendmentFishingData(notiCharterName)];
         //: labtitle1.numberOfLines = 0;
         labtitle1.numberOfLines = 0;
@@ -191,7 +191,7 @@ Byte kCrushFormat[] = {59, 7, 77, 14, 251, 117, 104, 187, 108, 128, 75, 42, 25, 
         labsubtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labsubtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle1.textColor = [UIColor min:StringFromAmendmentFishingData(mStateMessage)];
-        //: labsubtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip2"];
+        //: labsubtitle1.text = [WatchLanguageManager getTextWithKey:@"account_delete_tip2"];
         labsubtitle1.text = [PaintedNaturalLanguageTo exhibit:StringFromAmendmentFishingData(show_pointValue)];
         //: labsubtitle1.numberOfLines = 0;
         labsubtitle1.numberOfLines = 0;
@@ -217,7 +217,7 @@ Byte kCrushFormat[] = {59, 7, 77, 14, 251, 117, 104, 187, 108, 128, 75, 42, 25, 
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:StringFromAmendmentFishingData(noti_atName)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromAmendmentFishingData(k_charterMsg)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -244,7 +244,7 @@ Byte kCrushFormat[] = {59, 7, 77, 14, 251, 117, 104, 187, 108, 128, 75, 42, 25, 
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromAmendmentFishingData(app_heavilyCreaterStr)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor min:StringFromAmendmentFishingData(m_tablePowerPath)];

@@ -98,7 +98,7 @@
 //: group_info_activity_op_failed
 @property (nonatomic, copy) NSString *show_undergoData;
 
-//: #ffffff
+//: #fffWatch
 @property (nonatomic, copy) NSString *dream_primaryPath;
 
 @end
@@ -141,7 +141,7 @@
     return _main_scribePointMyTitle;
 }
 
-//: #ffffff
+//: #fffWatch
 - (NSString *)dream_primaryPath {
     if (!_dream_primaryPath) {
         Byte value[] = {7, 3, 208, 102, 102, 102, 102, 102, 102, 35, 244};
@@ -433,34 +433,34 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "WatchTeamMemberCardViewController.h"
 #import "MajorLeagueTeamSubMemberPositionCardViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
+//: #import "WatchCommonTableDelegate.h"
 #import "BarPage.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "WatchTeamCardMemberItem.h"
 #import "CoatButtonBar.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "WatchKitDependency.h"
+#import "WatchKitDependency.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "ZMONSetGroupNickNameView.h"
 #import "ButtonNameView.h"
-//: #import "FFFKitColorButtonCell.h"
+//: #import "WatchKitColorButtonCell.h"
 #import "MakeModeView.h"
-//: #import "FFFKitSwitcherCell.h"
+//: #import "WatchKitSwitcherCell.h"
 #import "SightView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "WatchKitInfoFetchOption.h"
 #import "CoverTingContent.h"
-//: #import "FFFTeamHelper.h"
+//: #import "WatchTeamHelper.h"
 #import "MakeBubble.h"
 
-//: @interface FFFTeamMemberCardViewController ()<NIMUserManagerDelegate>
+//: @interface WatchTeamMemberCardViewController ()<NIMUserManagerDelegate>
 @interface MajorLeagueTeamSubMemberPositionCardViewController ()<NIMUserManagerDelegate>
 
 //: @property (nonatomic, strong) ZMONSetGroupNickNameView *groupNickNameView;
@@ -469,10 +469,10 @@
 //: @property (nonatomic,strong) NIMUser *user;
 @property (nonatomic,strong) NIMUser *user;
 
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) WatchCommonTableDelegate *delegator;
 @property (nonatomic,strong) BarPage *delegator;
 
-//: @property (nonatomic,weak) id <FFFTeamMemberListDataSource> dataSource;
+//: @property (nonatomic,weak) id <WatchTeamMemberListDataSource> dataSource;
 @property (nonatomic,weak) id <EventColor> dataSource;
 
 //: @property (nonatomic,strong) NSArray *data;
@@ -527,7 +527,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamMemberCardViewController
+//: @implementation WatchTeamMemberCardViewController
 @implementation MajorLeagueTeamSubMemberPositionCardViewController
 
 //: - (void)dealloc {
@@ -675,11 +675,11 @@
         NSString *msg = nil;
         //: if (!error) {
         if (!error) {
-            //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+            //: msg = [WatchLanguageManager getTextWithKey:@"modify_activity_modify_success"];
             msg = [PaintedNaturalLanguageTo exhibit:[VanishData sharedInstance].noti_allMsg];
         //: }else{
         }else{
-            //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+            //: msg = [WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
             msg = [PaintedNaturalLanguageTo exhibit:[VanishData sharedInstance].show_undergoData];
             //: switcher.on = !mute;
             switcher.on = !mute;
@@ -872,7 +872,7 @@
         self.labTitleRemark.font = [UIFont systemFontOfSize:14.f];
         //: self.labTitleRemark.textColor = [UIColor colorWithHexString:@"#2C3042"];
         self.labTitleRemark.textColor = [UIColor min:[VanishData sharedInstance].appFiftyScaleValue];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [WatchLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [PaintedNaturalLanguageTo exhibit:[VanishData sharedInstance].k_representativeFormat];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -915,7 +915,7 @@
         lab2.font = [UIFont systemFontOfSize:14];
         //: lab2.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab2.textColor = [UIColor min:[VanishData sharedInstance].appFiftyScaleValue];
-        //: lab2.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
+        //: lab2.text = [WatchLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
         lab2.text = [PaintedNaturalLanguageTo exhibit:[VanishData sharedInstance].showStylePath];
         //: [box2 addSubview:lab2];
         [box2 addSubview:lab2];
@@ -925,7 +925,7 @@
         sublab2.font = [UIFont systemFontOfSize:12];
         //: sublab2.textColor = [UIColor colorWithHexString:@"#4B43DE"];
         sublab2.textColor = [UIColor min:[VanishData sharedInstance].main_scribePointMyTitle];
-        //: sublab2.text = [FFFTeamHelper memberTypeText:self.member.type];
+        //: sublab2.text = [WatchTeamHelper memberTypeText:self.member.type];
         sublab2.text = [MakeBubble kind:self.member.type];
         //: [box2 addSubview:sublab2];
         [box2 addSubview:sublab2];
@@ -958,7 +958,7 @@
         lab3.font = [UIFont systemFontOfSize:14];
         //: lab3.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab3.textColor = [UIColor min:[VanishData sharedInstance].appFiftyScaleValue];
-        //: lab3.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
+        //: lab3.text = [WatchLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
         lab3.text = [PaintedNaturalLanguageTo exhibit:[VanishData sharedInstance].userRestoreOptMessage];
         //: [box3 addSubview:lab3];
         [box3 addSubview:lab3];
@@ -1001,7 +1001,7 @@
         lab4.font = [UIFont systemFontOfSize:14];
         //: lab4.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab4.textColor = [UIColor min:[VanishData sharedInstance].appFiftyScaleValue];
-        //: lab4.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
+        //: lab4.text = [WatchLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
         lab4.text = [PaintedNaturalLanguageTo exhibit:[VanishData sharedInstance].dreamSuggestFatigueId];
         //: [box4 addSubview:lab4];
         [box4 addSubview:lab4];
@@ -1017,7 +1017,7 @@
         [box4 addSubview:pushSwitch];
 
 
-        //: BOOL canEdit = [FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
+        //: BOOL canEdit = [WatchKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
         BOOL canEdit = [ObjectUtil window:self.teamListManager.myTeamInfo];
         //: if(canEdit){
         if(canEdit){
@@ -1033,7 +1033,7 @@
             [self.btnDelete setTitle:[VanishData sharedInstance].user_controlNameId.messageWith forState:UIControlStateNormal];
             //: [self.btnDelete addTarget:self action:@selector(removeMember) forControlEvents:UIControlEventTouchUpInside];
             [self.btnDelete addTarget:self action:@selector(handleClanMember) forControlEvents:UIControlEventTouchUpInside];
-            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffWatch"];
             self.btnDelete.backgroundColor = [UIColor min:[VanishData sharedInstance].dream_primaryPath];
             //: self.btnDelete.layer.borderWidth = 1;
             self.btnDelete.layer.borderWidth = 1;

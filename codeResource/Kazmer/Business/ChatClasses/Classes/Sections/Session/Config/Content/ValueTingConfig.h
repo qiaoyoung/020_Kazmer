@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WatchBaseSessionContentConfig.h"
+#import "WatchBaseSessionContentConfig.h"
 
-//: @interface FFFLocationContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface WatchLocationContentConfig : NSObject<CCCSessionContentConfig>
 @interface ValueTingConfig : NSObject<TableAccumulationReplacement>
 
 //: @end

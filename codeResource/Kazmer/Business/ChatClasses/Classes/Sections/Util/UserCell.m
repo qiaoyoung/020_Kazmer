@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTimerHolder.h"
+//: #import "WatchKitTimerHolder.h"
 #import "UserCell.h"
 
-//: @interface FFFKitTimerHolder ()
+//: @interface WatchKitTimerHolder ()
 @interface UserCell ()
 {
     //: NSTimer *_timer;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFKitTimerHolder
+//: @implementation WatchKitTimerHolder
 @implementation UserCell
 
 //: - (void)dealloc
@@ -37,7 +37,7 @@
 
 //: - (void)startTimer: (NSTimeInterval)seconds
 - (void)countFor: (NSTimeInterval)seconds
-          //: delegate: (id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate: (id<WatchKitTimerHolderDelegate>)delegate
           greenish: (id<AssemblageDelegate>)delegate
            //: repeats: (BOOL)repeats
            analogDigitalConverterRepeats: (BOOL)repeats

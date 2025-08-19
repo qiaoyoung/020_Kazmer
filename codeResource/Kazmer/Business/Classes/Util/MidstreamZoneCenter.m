@@ -194,7 +194,7 @@ NSString *user_minIdent = @" user_minIdent";
     BOOL needPlay = YES;
     //: for (UIViewController *vc in nav.viewControllers) {
     for (UIViewController *vc in nav.viewControllers) {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[WatchSessionViewController class]])
         if ([vc isKindOfClass:[CollectionViewController class]])
         {
             //: needPlay = NO;
@@ -331,7 +331,7 @@ NSString *user_minIdent = @" user_minIdent";
         if ([vc isKindOfClass:[BroadcastViewController class]]
             //: && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
             && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
-            //: FFFMessageModel *model = [vc uiDeleteMessage:notification.message];
+            //: WatchMessageModel *model = [vc uiDeleteMessage:notification.message];
             CentralProcessingUnitModel *model = [vc color:notification.message];
             //: if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||
             if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||
@@ -530,7 +530,7 @@ NSString *user_minIdent = @" user_minIdent";
 {
     //: NSString *text = @"你收到了一个白板请求".ntes_localized;
     NSString *text = StringFromLoserViewData(app_suggestKey).textIndex;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
+    //: WatchKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
     TingMessage *info = [[ButtonKit sheerOption] past:caller skinColour_strong:nil];
     //: if ([info.showName length])
     if ([info.showName length])
@@ -604,7 +604,7 @@ NSString *user_minIdent = @" user_minIdent";
     return should;
 }
 
-//: - (FFFSessionViewController *)currentSessionViewController
+//: - (WatchSessionViewController *)currentSessionViewController
 - (CollectionViewController *)alongReadName
 {
     //: UINavigationController *nav = [NTESMainTabController instance].selectedViewController;
@@ -612,10 +612,10 @@ NSString *user_minIdent = @" user_minIdent";
     //: for (UIViewController *vc in nav.viewControllers)
     for (UIViewController *vc in nav.viewControllers)
     {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[WatchSessionViewController class]])
         if ([vc isKindOfClass:[CollectionViewController class]])
         {
-            //: return (FFFSessionViewController *)vc;
+            //: return (WatchSessionViewController *)vc;
             return (CollectionViewController *)vc;
         }
     }

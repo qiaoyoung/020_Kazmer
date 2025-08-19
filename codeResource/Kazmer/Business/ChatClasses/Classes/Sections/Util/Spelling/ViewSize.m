@@ -62,9 +62,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSpellingCenter.h"
+//: #import "WatchSpellingCenter.h"
 #import "ViewSize.h"
-//: #import "FFFPinyinConverter.h"
+//: #import "WatchPinyinConverter.h"
 #import "FastEmpty.h"
 //: #import "YYModel/YYModel.h"
 #import "YYModel/YYModel.h"
@@ -77,7 +77,7 @@
 //: @end
 @end
 
-//: @interface FFFSpellingCenter ()
+//: @interface WatchSpellingCenter ()
 @interface ViewSize ()
 //: - (NIMSpellingUnit *)calcSpellingOfString: (NSString *)source;
 - (AccountUnit *)manager: (NSString *)source;
@@ -85,18 +85,18 @@
 @end
 
 
-//: @implementation FFFSpellingCenter
+//: @implementation WatchSpellingCenter
 @implementation ViewSize
-//: + (FFFSpellingCenter *)sharedCenter
+//: + (WatchSpellingCenter *)sharedCenter
 + (ViewSize *)stormCenter
 {
-    //: static FFFSpellingCenter *instance = nil;
+    //: static WatchSpellingCenter *instance = nil;
     static ViewSize *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSpellingCenter alloc]init];
+        //: instance = [[WatchSpellingCenter alloc]init];
         instance = [[ViewSize alloc]init];
     //: });
     });
@@ -217,7 +217,7 @@
     {
         //: NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
         NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
-        //: NSString *pinyin = [[FFFPinyinConverter sharedInstance] toPinyin:word];
+        //: NSString *pinyin = [[WatchPinyinConverter sharedInstance] toPinyin:word];
         NSString *pinyin = [[FastEmpty shared] should:word];
 
         //: if ([pinyin length])

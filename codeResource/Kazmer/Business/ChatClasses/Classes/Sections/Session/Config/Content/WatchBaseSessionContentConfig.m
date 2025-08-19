@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.m
+//  WatchBaseSessionContentConfig.m
 // ButtonKit
 //
 //  Created by amao on 9/15/15.
@@ -9,55 +9,55 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
-//: #import "FFFTextContentConfig.h"
+//: #import "WatchBaseSessionContentConfig.h"
+#import "WatchBaseSessionContentConfig.h"
+//: #import "WatchTextContentConfig.h"
 #import "InfoOld.h"
-//: #import "FFFImageContentConfig.h"
+//: #import "WatchImageContentConfig.h"
 #import "MessageOpen.h"
-//: #import "FFFAudioContentConfig.h"
+//: #import "WatchAudioContentConfig.h"
 #import "ResponseRed.h"
-//: #import "FFFVideoContentConfig.h"
+//: #import "WatchVideoContentConfig.h"
 #import "BarConfig.h"
-//: #import "FFFFileContentConfig.h"
+//: #import "WatchFileContentConfig.h"
 #import "ObjectConfig.h"
-//: #import "FFFNotificationContentConfig.h"
+//: #import "WatchNotificationContentConfig.h"
 #import "ValueBackground.h"
-//: #import "FFFLocationContentConfig.h"
+//: #import "WatchLocationContentConfig.h"
 #import "ValueTingConfig.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "WatchUnsupportContentConfig.h"
 #import "OldConfig.h"
-//: #import "FFFTipContentConfig.h"
+//: #import "WatchTipContentConfig.h"
 #import "CoverConfig.h"
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "WatchReplyedTextContentConfig.h"
 #import "FoldoutConfig.h"
-//: #import "FFFRtcCallRecordContentConfig.h"
+//: #import "WatchRtcCallRecordContentConfig.h"
 #import "DraftName.h"
 
-//: @interface FFFSessionContentConfigFactory ()
+//: @interface WatchSessionContentConfigFactory ()
 @interface AccumulationFactory ()
 //: @property (nonatomic,strong) NSDictionary *dict;
 @property (nonatomic,strong) NSDictionary *dict;
 //: @property (nonatomic,strong) NSDictionary *replyDict;
 @property (nonatomic,strong) NSDictionary *replyDict;
-//: @property (nonatomic,strong) FFFUnsupportContentConfig *unsupportConfig;
+//: @property (nonatomic,strong) WatchUnsupportContentConfig *unsupportConfig;
 @property (nonatomic,strong) OldConfig *unsupportConfig;
 //: @end
 @end
 
-//: @implementation FFFSessionContentConfigFactory
+//: @implementation WatchSessionContentConfigFactory
 @implementation AccumulationFactory
 
 //: + (instancetype)sharedFacotry
 + (instancetype)commonValue
 {
-    //: static FFFSessionContentConfigFactory *instance = nil;
+    //: static WatchSessionContentConfigFactory *instance = nil;
     static AccumulationFactory *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSessionContentConfigFactory alloc] init];
+        //: instance = [[WatchSessionContentConfigFactory alloc] init];
         instance = [[AccumulationFactory alloc] init];
     //: });
     });
@@ -71,28 +71,28 @@
     //: if (self = [super init])
     if (self = [super init])
     {
-        //: _dict = @{@(NIMMessageTypeText) : [FFFTextContentConfig new],
+        //: _dict = @{@(NIMMessageTypeText) : [WatchTextContentConfig new],
         _dict = @{@(NIMMessageTypeText) : [InfoOld new],
-                  //: @(NIMMessageTypeImage) : [FFFImageContentConfig new],
+                  //: @(NIMMessageTypeImage) : [WatchImageContentConfig new],
                   @(NIMMessageTypeImage) : [MessageOpen new],
-                  //: @(NIMMessageTypeAudio) : [FFFAudioContentConfig new],
+                  //: @(NIMMessageTypeAudio) : [WatchAudioContentConfig new],
                   @(NIMMessageTypeAudio) : [ResponseRed new],
-                  //: @(NIMMessageTypeVideo) : [FFFVideoContentConfig new],
+                  //: @(NIMMessageTypeVideo) : [WatchVideoContentConfig new],
                   @(NIMMessageTypeVideo) : [BarConfig new],
-                  //: @(NIMMessageTypeFile) : [FFFFileContentConfig new],
+                  //: @(NIMMessageTypeFile) : [WatchFileContentConfig new],
                   @(NIMMessageTypeFile) : [ObjectConfig new],
-                  //: @(NIMMessageTypeLocation) : [FFFLocationContentConfig new],
+                  //: @(NIMMessageTypeLocation) : [WatchLocationContentConfig new],
                   @(NIMMessageTypeLocation) : [ValueTingConfig new],
-                  //: @(NIMMessageTypeNotification) : [FFFNotificationContentConfig new],
+                  //: @(NIMMessageTypeNotification) : [WatchNotificationContentConfig new],
                   @(NIMMessageTypeNotification) : [ValueBackground new],
-                  //: @(NIMMessageTypeTip) : [FFFTipContentConfig new],
+                  //: @(NIMMessageTypeTip) : [WatchTipContentConfig new],
                   @(NIMMessageTypeTip) : [CoverConfig new],
-                  //: @(NIMMessageTypeRtcCallRecord): [FFFRtcCallRecordContentConfig new],
+                  //: @(NIMMessageTypeRtcCallRecord): [WatchRtcCallRecordContentConfig new],
                   @(NIMMessageTypeRtcCallRecord): [DraftName new],
         //: };
         };
 
-        //: FFFReplyedTextContentConfig *replyedTextConfig = [FFFReplyedTextContentConfig new];
+        //: WatchReplyedTextContentConfig *replyedTextConfig = [WatchReplyedTextContentConfig new];
         FoldoutConfig *replyedTextConfig = [FoldoutConfig new];
         //: _replyDict = @{
         _replyDict = @{
@@ -120,7 +120,7 @@
             @(NIMMessageTypeRtcCallRecord) : replyedTextConfig,
         //: };
         };
-        //: _unsupportConfig = [[FFFUnsupportContentConfig alloc] init];
+        //: _unsupportConfig = [[WatchUnsupportContentConfig alloc] init];
         _unsupportConfig = [[OldConfig alloc] init];
     }
     //: return self;

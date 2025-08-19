@@ -146,7 +146,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)select:(NIMMessage *)message
 {
-    //: return @"FFFSessionShareCardContentView";
+    //: return @"WatchSessionShareCardContentView";
     return @"AccountControl";
 }
 

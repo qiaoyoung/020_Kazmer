@@ -29,7 +29,7 @@ extern const CGFloat k_makeSourceFlagMessage;
 extern NSString * const userValueKey;
 
 
-//: @interface FFFKitQuickCommentUtil : NSObject
+//: @interface WatchKitQuickCommentUtil : NSObject
 @interface NameUtilPath : NSObject
 
 //: + (UIFont *)commentFont;

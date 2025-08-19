@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "WatchBaseSessionContentConfig.h"
+#import "WatchBaseSessionContentConfig.h"
 
-//: @interface FFFUnsupportContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface WatchUnsupportContentConfig : NSObject<CCCSessionContentConfig>
 @interface OldConfig : NSObject<TableAccumulationReplacement>
 //: @end
 @end

@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFMediaItem : NSObject
+//: @interface WatchMediaItem : NSObject
 @interface InfoMakeBar : NSObject
 
 //: @property (nonatomic,assign) SEL selctor;
@@ -27,7 +27,7 @@
 //: @property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) NSString *title;
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (WatchMediaItem *)item:(NSString *)selector
 + (InfoMakeBar *)icon:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            message:(UIImage *)normalImage

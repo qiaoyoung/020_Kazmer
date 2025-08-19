@@ -69,17 +69,17 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESKeyWordMessageCell.h"
 #import "KeyObjectViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "WatchAvatarImageView.h"
 #import "RecordControl.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
 
 //: @interface NTESKeyWordMessageCell ()
 @interface KeyObjectViewCell ()
 
-//: @property (nonatomic,strong) FFFAvatarImageView * avatar;
+//: @property (nonatomic,strong) WatchAvatarImageView * avatar;
 @property (nonatomic,strong) RecordControl * avatar;
 
 //: @property (nonatomic,strong) UILabel * nickL;
@@ -162,7 +162,7 @@ typedef struct {
     //: if ([message isKindOfClass:[NIMMessage class]])
     if ([message isKindOfClass:[NIMMessage class]])
     {
-        //: FFFKitInfo * info = nil;
+        //: WatchKitInfo * info = nil;
         TingMessage * info = nil;
         //: NIMSession * session = message.session;
         NIMSession * session = message.session;
@@ -252,13 +252,13 @@ typedef struct {
 
 
 
-//: - (FFFAvatarImageView *)avatar
+//: - (WatchAvatarImageView *)avatar
 - (RecordControl *)avatar
 {
     //: if (!_avatar)
     if (!_avatar)
     {
-        //: _avatar = [[FFFAvatarImageView alloc] init];
+        //: _avatar = [[WatchAvatarImageView alloc] init];
         _avatar = [[RecordControl alloc] init];
     }
     //: return _avatar;

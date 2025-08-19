@@ -189,22 +189,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionAudioContentView.h"
+//: #import "WatchSessionAudioContentView.h"
 #import "ColorControl.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "WatchKitAudioCenter.h"
 #import "UserMax.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+ButtonKit.h"
 
-//: @interface FFFSessionAudioContentView()<NIMMediaManagerDelegate>
+//: @interface WatchSessionAudioContentView()<NIMMediaManagerDelegate>
 @interface ColorControl()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,strong) UIImageView *voiceImageView;
@@ -223,7 +223,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionAudioContentView
+//: @implementation WatchSessionAudioContentView
 @implementation ColorControl
 
 //: -(instancetype)initSessionMessageContentView{
@@ -358,7 +358,7 @@
 
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(WatchMessageModel *)data {
 - (void)lengthAt:(CentralProcessingUnitModel *)data {
     //: [super refresh:data];
     [super lengthAt:data];
@@ -367,7 +367,7 @@
     //: self.durationLabel.text = [NSString stringWithFormat:@"%zd\"",(NSInteger)((object.duration+500)/1000)];
     self.durationLabel.text = [NSString stringWithFormat:@"%zd\"",(NSInteger)((object.duration+500)/1000)];//四舍五入
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: WatchKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     SubObject *setting = [[ButtonKit sheerOption].config date:data.message];
 
     //: self.durationLabel.font = setting.font;
@@ -383,7 +383,7 @@
     [self disable:data];
 }
 
-//: - (void)refreshBackground:(FFFMessageModel *)data
+//: - (void)refreshBackground:(WatchMessageModel *)data
 - (void)disable:(CentralProcessingUnitModel *)data
 {
     //: if (data.shouldShowLeft)
@@ -421,8 +421,8 @@
     UIEdgeInsets contentInsets = self.model.contentViewInsets;
     //: switch (self.layoutStyle) {
     switch (self.layoutStyle) {
-        //: case FFFSessionMessageContentViewLayoutLeft: {
-        case FFFSessionMessageContentViewLayoutLeft: {
+        //: case WatchSessionMessageContentViewLayoutLeft: {
+        case WatchSessionMessageContentViewLayoutLeft: {
 //            _voiceImageView.transform = CGAffineTransformIdentity;
 //            self.voiceImageView.left = contentInsets.left * 2;
             //: self.voiceImageViewleft.left = contentInsets.left * 2;
@@ -432,8 +432,8 @@
             //: break;
             break;
         }
-        //: case FFFSessionMessageContentViewLayoutRight: {
-        case FFFSessionMessageContentViewLayoutRight: {
+        //: case WatchSessionMessageContentViewLayoutRight: {
+        case WatchSessionMessageContentViewLayoutRight: {
 //            _voiceImageView.transform = CGAffineTransformMakeRotation(M_PI);
             //: self.voiceImageView.right = self.width - contentInsets.right * 2;
             self.voiceImageView.right = self.width - contentInsets.right * 2;
@@ -442,8 +442,8 @@
             //: break;
             break;
         }
-        //: case FFFSessionMessageContentViewLayoutAuto:
-        case FFFSessionMessageContentViewLayoutAuto:
+        //: case WatchSessionMessageContentViewLayoutAuto:
+        case WatchSessionMessageContentViewLayoutAuto:
         //: default:
         default:
         {
@@ -512,8 +512,8 @@
     CGFloat backgroundLeft = 0;
     //: switch (self.layoutStyle) {
     switch (self.layoutStyle) {
-        //: case FFFSessionMessageContentViewLayoutLeft:
-        case FFFSessionMessageContentViewLayoutLeft:
+        //: case WatchSessionMessageContentViewLayoutLeft:
+        case WatchSessionMessageContentViewLayoutLeft:
             {
                 //: backgroundWidth = self.width - contentInsets.left * .5f - 2;
                 backgroundWidth = self.width - contentInsets.left * .5f - 2;
@@ -522,8 +522,8 @@
             }
             //: break;
             break;
-        //: case FFFSessionMessageContentViewLayoutRight:
-        case FFFSessionMessageContentViewLayoutRight:
+        //: case WatchSessionMessageContentViewLayoutRight:
+        case WatchSessionMessageContentViewLayoutRight:
             {
                 //: backgroundWidth = self.width - 2 - contentInsets.right * .5f;
                 backgroundWidth = self.width - 2 - contentInsets.right * .5f;
@@ -585,9 +585,9 @@
             [self option];
         }
 
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: WatchKitEvent *event = [[WatchKitEvent alloc] init];
         CoverShowEvent *event = [[CoverShowEvent alloc] init];
-        //: event.eventName = FFFKitEventNameTapAudio;
+        //: event.eventName = WatchKitEventNameTapAudio;
         event.eventName = m_originalMsg;
         //: event.messageModel = self.model;
         event.messageModel = self.model;
@@ -638,7 +638,7 @@
 //: - (BOOL)isPlaying
 - (BOOL)backgroundPlaying
 {
-    //: BOOL play = [FFFKitAudioCenter instance].currentPlayingMessage == self.model.message; 
+    //: BOOL play = [WatchKitAudioCenter instance].currentPlayingMessage == self.model.message; 
     BOOL play = [UserMax messageEmpty].currentPlayingMessage == self.model.message; //对比是否是同一条消息，严格同一条，不能是相同ID，防止进了会话又进云端消息界面，导致同一个ID的云消息也在动画
     //: return play;
     return play;

@@ -192,7 +192,7 @@ Byte dreamStreakMessage[] = {40, 7, 29, 11, 194, 204, 184, 180, 209, 166, 53, 64
     //: }else{
     }else{
 
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"wrong_password"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[WatchLanguageManager getTextWithKey:@"wrong_password"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[PaintedNaturalLanguageTo exhibit:StringFromStandardiseData(mainPowerNameStr)] duration:2.0 position:CSToastPositionCenter];
     }
 
@@ -302,7 +302,7 @@ Byte dreamStreakMessage[] = {40, 7, 29, 11, 194, 204, 184, 180, 209, 166, 53, 64
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [WatchLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [PaintedNaturalLanguageTo exhibit:StringFromStandardiseData(k_freedKey)];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -343,7 +343,7 @@ Byte dreamStreakMessage[] = {40, 7, 29, 11, 194, 204, 184, 180, 209, 166, 53, 64
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor blackColor];
         labtitle2.textColor = [UIColor blackColor];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [WatchLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [PaintedNaturalLanguageTo exhibit:StringFromStandardiseData(appTimeMessage)];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -384,7 +384,7 @@ Byte dreamStreakMessage[] = {40, 7, 29, 11, 194, 204, 184, 180, 209, 166, 53, 64
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor colorWithHexString:@"#5D5F66"];
         labtitle3.textColor = [UIColor min:StringFromStandardiseData(show_genetPath)];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [WatchLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [PaintedNaturalLanguageTo exhibit:StringFromStandardiseData(dream_sendFormat)];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -436,7 +436,7 @@ Byte dreamStreakMessage[] = {40, 7, 29, 11, 194, 204, 184, 180, 209, 166, 53, 64
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(50, 2, [[UIScreen mainScreen] bounds].size.width-80-50, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(50, 2, [[UIScreen mainScreen] bounds].size.width-80-50, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"get_pay_psw_activity_input_psw"];
+        //: _searchField.placeholder = [WatchLanguageManager getTextWithKey:@"get_pay_psw_activity_input_psw"];
         _searchField.placeholder = [PaintedNaturalLanguageTo exhibit:StringFromStandardiseData(user_hoppingFormat)];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
@@ -464,7 +464,7 @@ Byte dreamStreakMessage[] = {40, 7, 29, 11, 194, 204, 184, 180, 209, 166, 53, 64
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor min:StringFromStandardiseData(show_genetPath)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromStandardiseData(m_rehabIdent)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -491,7 +491,7 @@ Byte dreamStreakMessage[] = {40, 7, 29, 11, 194, 204, 184, 180, 209, 166, 53, 64
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[WatchLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[PaintedNaturalLanguageTo exhibit:StringFromStandardiseData(dreamDateKey)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor min:StringFromStandardiseData(appHormoneMsg)];

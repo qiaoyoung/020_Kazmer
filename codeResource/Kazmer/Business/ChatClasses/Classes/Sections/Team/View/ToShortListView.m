@@ -133,18 +133,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamAnnouncementListCell.h"
+//: #import "WatchTeamAnnouncementListCell.h"
 #import "ToShortListView.h"
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchUsrInfoData.h"
+#import "WatchUsrInfoData.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 //: #import "M80AttributedLabel.h"
 #import "QuickNameView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
 
-//: @interface FFFTeamAnnouncementListCell ()
+//: @interface WatchTeamAnnouncementListCell ()
 @interface ToShortListView ()
 //: @property (strong, nonatomic) UILabel *titleLabel;
 @property (strong, nonatomic) UILabel *titleLabel;
@@ -158,7 +158,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamAnnouncementListCell
+//: @implementation WatchTeamAnnouncementListCell
 @implementation ToShortListView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -228,7 +228,7 @@
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: _contentLabel.selectBlock = ^(FFFMediaItem *item) {
+        //: _contentLabel.selectBlock = ^(WatchMediaItem *item) {
         _contentLabel.selectBlock = ^(InfoMakeBar *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;

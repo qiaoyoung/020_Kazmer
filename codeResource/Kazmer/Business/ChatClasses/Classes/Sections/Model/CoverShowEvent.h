@@ -13,16 +13,16 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
 
-//: @interface FFFKitEvent : NSObject
+//: @interface WatchKitEvent : NSObject
 @interface CoverShowEvent : NSObject
 
 //: @property (nonatomic,copy) NSString *eventName;
 @property (nonatomic,copy) NSString *eventName;
 
-//: @property (nonatomic,strong) FFFMessageModel *messageModel;
+//: @property (nonatomic,strong) WatchMessageModel *messageModel;
 @property (nonatomic,strong) CentralProcessingUnitModel *messageModel;
 
 //: @property (nonatomic,strong) id data;
@@ -34,12 +34,12 @@
 
 
 
-//: extern NSString *const FFFKitEventNameTapContent;
+//: extern NSString *const WatchKitEventNameTapContent;
 extern NSString *const appCommentStr;
-//: extern NSString *const FFFKitEventNameTapLabelLink;
+//: extern NSString *const WatchKitEventNameTapLabelLink;
 extern NSString *const dream_topMessage;
-//: extern NSString *const FFFKitEventNameTapAudio;
+//: extern NSString *const WatchKitEventNameTapAudio;
 extern NSString *const m_originalMsg;
 
-//: extern NSString *const FFFKitEventNameTapRepliedContent;
+//: extern NSString *const WatchKitEventNameTapRepliedContent;
 extern NSString *const kKitValue;

@@ -48,7 +48,7 @@
     return self;
 }
 
-//: - (id<FFFKitMessageProvider>)messageDataProvider
+//: - (id<WatchKitMessageProvider>)messageDataProvider
 - (id<ValueOld>)bubbleBy
 {
     //: return self.provider;

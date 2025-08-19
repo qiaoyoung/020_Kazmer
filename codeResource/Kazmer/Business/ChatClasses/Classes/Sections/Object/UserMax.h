@@ -15,7 +15,7 @@
 //: @class NIMMessage;
 @class NIMMessage;
 
-//: @interface FFFKitAudioCenter : NSObject
+//: @interface WatchKitAudioCenter : NSObject
 @interface UserMax : NSObject
 
 //: @property (nonatomic,strong) NIMMessage *currentPlayingMessage;

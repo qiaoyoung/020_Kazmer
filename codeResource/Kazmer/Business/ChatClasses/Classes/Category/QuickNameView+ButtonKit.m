@@ -11,9 +11,9 @@
 // __M_A_C_R_O__
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "WatchInputEmoticonParser.h"
 #import "ImageShowParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"

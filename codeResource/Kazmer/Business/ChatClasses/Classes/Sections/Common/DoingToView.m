@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTitleView.h"
+//: #import "WatchKitTitleView.h"
 #import "DoingToView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @implementation FFFKitTitleView
+//: @implementation WatchKitTitleView
 @implementation DoingToView
 
 //: - (instancetype)initWithFrame:(CGRect)frame

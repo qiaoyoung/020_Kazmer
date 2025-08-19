@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "WatchCommonTableViewCell.h"
 #import "OldInfo.h"
 
-//: @interface FFFKitSwitcherCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface WatchKitSwitcherCell : UITableViewCell<WatchCommonTableViewCell>
 @interface SightView : UITableViewCell<OldInfo>
 
 //: @property(nonatomic,strong,readonly) UISwitch *switcher;

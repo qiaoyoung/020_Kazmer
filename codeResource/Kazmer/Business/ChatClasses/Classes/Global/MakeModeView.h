@@ -12,19 +12,19 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: typedef NS_ENUM(NSInteger, FFFKitColorButtonCellStyle){
-typedef NS_ENUM(NSInteger, FFFKitColorButtonCellStyle){
-    //: FFFKitColorButtonCellStyleRed,
-    FFFKitColorButtonCellStyleRed,
-    //: FFFKitColorButtonCellStyleBlue,
-    FFFKitColorButtonCellStyleBlue,
+//: typedef NS_ENUM(NSInteger, WatchKitColorButtonCellStyle){
+typedef NS_ENUM(NSInteger, WatchKitColorButtonCellStyle){
+    //: WatchKitColorButtonCellStyleRed,
+    WatchKitColorButtonCellStyleRed,
+    //: WatchKitColorButtonCellStyleBlue,
+    WatchKitColorButtonCellStyleBlue,
 //: };
 };
 
 //: @class NIMKitColorButton;
 @class FixingButton;
 
-//: @interface FFFKitColorButtonCell : UITableViewCell
+//: @interface WatchKitColorButtonCell : UITableViewCell
 @interface MakeModeView : UITableViewCell
 
 //: @property (nonatomic,strong) NIMKitColorButton *button;
@@ -38,8 +38,8 @@ typedef NS_ENUM(NSInteger, FFFKitColorButtonCellStyle){
 //: @interface NIMKitColorButton : UIButton
 @interface FixingButton : UIButton
 
-//: @property (nonatomic,assign) FFFKitColorButtonCellStyle style;
-@property (nonatomic,assign) FFFKitColorButtonCellStyle style;
+//: @property (nonatomic,assign) WatchKitColorButtonCellStyle style;
+@property (nonatomic,assign) WatchKitColorButtonCellStyle style;
 
 //: @end
 @end

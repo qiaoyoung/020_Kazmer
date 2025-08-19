@@ -280,7 +280,7 @@ typedef struct {
 //        _labGoout.textColor = [UIColor redColor];
         //: _labGoout.textAlignment = NSTextAlignmentCenter;
         _labGoout.textAlignment = NSTextAlignmentCenter;
-        //: _labGoout.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_exit"];
+        //: _labGoout.text = [WatchLanguageManager getTextWithKey:@"activity_comment_setting_exit"];
         _labGoout.text = [PaintedNaturalLanguageTo exhibit:[CedeData sharedInstance].show_eaterId];
         //: _labGoout.hidden = YES;
         _labGoout.hidden = YES;

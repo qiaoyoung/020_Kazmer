@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDevice.h"
+//: #import "WatchKitDevice.h"
 #import "ButtonDevice.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 
-//: @interface FFFKitDevice ()
+//: @interface WatchKitDevice ()
 @interface ButtonDevice ()
 
 //: @end
 @end
 
-//: @implementation FFFKitDevice
+//: @implementation WatchKitDevice
 @implementation ButtonDevice
 
 //: - (instancetype)init
@@ -36,15 +36,15 @@
 }
 
 
-//: + (FFFKitDevice *)currentDevice{
+//: + (WatchKitDevice *)currentDevice{
 + (ButtonDevice *)magnitudeBy{
-    //: static FFFKitDevice *instance = nil;
+    //: static WatchKitDevice *instance = nil;
     static ButtonDevice *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitDevice alloc] init];
+        //: instance = [[WatchKitDevice alloc] init];
         instance = [[ButtonDevice alloc] init];
     //: });
     });

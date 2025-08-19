@@ -65,7 +65,7 @@
 #import "SessionCompartmentTimestampCell.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
-//: #import "FFFTimestampModel.h"
+//: #import "WatchTimestampModel.h"
 #import "EnableName.h"
 
 //: @interface NTESTimestampCell ()
@@ -119,9 +119,9 @@
     _lineRight.centerY = self.timeLabel.centerY;
 }
 
-//: - (void)refreshData:(FFFTimestampModel *)data {
+//: - (void)refreshData:(WatchTimestampModel *)data {
 - (void)contextData:(EnableName *)data {
-    //: if ([data isKindOfClass:[FFFTimestampModel class]]) {
+    //: if ([data isKindOfClass:[WatchTimestampModel class]]) {
     if ([data isKindOfClass:[EnableName class]]) {
         //: self.timeLabel.text = [self timeFormatString:data.messageTime];
         self.timeLabel.text = [self totalRelation:data.messageTime];

@@ -12,30 +12,30 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: typedef NS_ENUM(NSUInteger, FFFKitAuthorizationStatus) {
-typedef NS_ENUM(NSUInteger, FFFKitAuthorizationStatus) {
-    //: FFFKitAuthorizationStatusAuthorized, 
-    FFFKitAuthorizationStatusAuthorized, // 已授权
-    //: FFFKitAuthorizationStatusDenied, 
-    FFFKitAuthorizationStatusDenied, // 拒绝
-    //: FFFKitAuthorizationStatusRestricted, 
-    FFFKitAuthorizationStatusRestricted, // 应用没有相关权限，且当前用户无法改变这个权限，比如:家长控制
-    //: FFFKitAuthorizationStatusNotSupport 
-    FFFKitAuthorizationStatusNotSupport // 硬件等不支持
+//: typedef NS_ENUM(NSUInteger, WatchKitAuthorizationStatus) {
+typedef NS_ENUM(NSUInteger, WatchKitAuthorizationStatus) {
+    //: WatchKitAuthorizationStatusAuthorized, 
+    WatchKitAuthorizationStatusAuthorized, // 已授权
+    //: WatchKitAuthorizationStatusDenied, 
+    WatchKitAuthorizationStatusDenied, // 拒绝
+    //: WatchKitAuthorizationStatusRestricted, 
+    WatchKitAuthorizationStatusRestricted, // 应用没有相关权限，且当前用户无法改变这个权限，比如:家长控制
+    //: WatchKitAuthorizationStatusNotSupport 
+    WatchKitAuthorizationStatusNotSupport // 硬件等不支持
 //: };
 };
 
-//: @interface FFFKitAuthorizationTool : NSObject
+//: @interface WatchKitAuthorizationTool : NSObject
 @interface ButtonTool : NSObject
 
-//: + (void)requestPhotoLibraryAuthorization:(void(^)(FFFKitAuthorizationStatus status))callback;
-+ (void)closeColor:(void(^)(FFFKitAuthorizationStatus status))callback;
+//: + (void)requestPhotoLibraryAuthorization:(void(^)(WatchKitAuthorizationStatus status))callback;
++ (void)closeColor:(void(^)(WatchKitAuthorizationStatus status))callback;
 
-//: + (void)requestCameraAuthorization:(void(^)(FFFKitAuthorizationStatus status))callback;
-+ (void)extraFile:(void(^)(FFFKitAuthorizationStatus status))callback;
+//: + (void)requestCameraAuthorization:(void(^)(WatchKitAuthorizationStatus status))callback;
++ (void)extraFile:(void(^)(WatchKitAuthorizationStatus status))callback;
 
-//: + (void)requestAddressBookAuthorization:(void (^)(FFFKitAuthorizationStatus))callback;
-+ (void)requestPathUpwardly:(void (^)(FFFKitAuthorizationStatus))callback;
+//: + (void)requestAddressBookAuthorization:(void (^)(WatchKitAuthorizationStatus))callback;
++ (void)requestPathUpwardly:(void (^)(WatchKitAuthorizationStatus))callback;
 
 //: @end
 @end

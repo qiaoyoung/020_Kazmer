@@ -108,14 +108,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputAudioView.h"
+//: #import "WatchInputAudioView.h"
 #import "InputMessageView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIView+NTES.h"
 #import "UIView+Zone.h"
 
-//: @interface FFFInputAudioView()
+//: @interface WatchInputAudioView()
 @interface InputMessageView()
 
 //: @property (nonatomic,strong) UIView *audioBgview;
@@ -138,7 +138,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputAudioView
+//: @implementation WatchInputAudioView
 @implementation InputMessageView
 
 
@@ -187,7 +187,7 @@
         _delLabel.textAlignment = NSTextAlignmentCenter;
         //: _delLabel.hidden = YES;
         _delLabel.hidden = YES;
-        //: _delLabel.text = [FFFLanguageManager getTextWithKey:@"Releasetocancel"];
+        //: _delLabel.text = [WatchLanguageManager getTextWithKey:@"Releasetocancel"];
         _delLabel.text = [PaintedNaturalLanguageTo exhibit:[InserterData noti_showViaContinuousStr]];
         //: [_audioBgview addSubview:_delLabel];
         [_audioBgview addSubview:_delLabel];
@@ -206,7 +206,7 @@
         //: _tipLabel.textAlignment = NSTextAlignmentCenter;
         _tipLabel.textAlignment = NSTextAlignmentCenter;
 //        _tipLabel.text = @"手指上滑，取消发送".nim_localized;
-        //: _tipLabel.text = [FFFLanguageManager getTextWithKey:@"Releasetosend_swipeuptocancel"];
+        //: _tipLabel.text = [WatchLanguageManager getTextWithKey:@"Releasetosend_swipeuptocancel"];
         _tipLabel.text = [PaintedNaturalLanguageTo exhibit:[InserterData appContributionId]];
         //: [_audioBgview addSubview:_tipLabel];
         [_audioBgview addSubview:_tipLabel];
@@ -421,7 +421,7 @@
     }
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config
+//: - (void)setConfig:(id<WatchSessionConfig>)config
 - (void)setConfig:(id<MessagePinImage>)config
 {
     //: _config = config;

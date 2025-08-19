@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFCellConfig.h
+//  WatchCellConfig.h
 // ButtonKit
 //
 //  Created by chris.
@@ -12,12 +12,12 @@
 
 // __M_A_C_R_O__
 
-//: @class FFFSessionMessageContentView;
+//: @class WatchSessionMessageContentView;
 @class ThoughtImageControl;
-//: @class FFFMessageModel;
+//: @class WatchMessageModel;
 @class CentralProcessingUnitModel;
 
-//: @protocol FFFCellLayoutConfig <NSObject>
+//: @protocol WatchCellLayoutConfig <NSObject>
 @protocol PinFrame <NSObject>
 
 //: @optional
@@ -26,107 +26,107 @@
 /**
  * @return 返回message的内容大小
  */
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)width;
+//: - (CGSize)contentSize:(WatchMessageModel *)model cellWidth:(CGFloat)width;
 - (CGSize)event:(CentralProcessingUnitModel *)model size:(CGFloat)width;
 
 /**
  *  需要构造的cellContent类名
  */
-//: - (NSString *)cellContent:(FFFMessageModel *)model;
+//: - (NSString *)cellContent:(WatchMessageModel *)model;
 - (NSString *)availableName:(CentralProcessingUnitModel *)model;
 
 /**
  *  左对齐的气泡，cell气泡距离整个cell的内间距
  */
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model;
+//: - (UIEdgeInsets)cellInsets:(WatchMessageModel *)model;
 - (UIEdgeInsets)month:(CentralProcessingUnitModel *)model;
 
 /**
  *  左对齐的气泡，cell内容距离气泡的内间距，
  */
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model;
+//: - (UIEdgeInsets)contentViewInsets:(WatchMessageModel *)model;
 - (UIEdgeInsets)media:(CentralProcessingUnitModel *)model;
 
 /**
  * @return 返回message的所回复消息内容大小
  */
-//: - (CGSize)replyContentSize:(FFFMessageModel *)model cellWidth:(CGFloat)width;
+//: - (CGSize)replyContentSize:(WatchMessageModel *)model cellWidth:(CGFloat)width;
 - (CGSize)closeWidth:(CentralProcessingUnitModel *)model userManager:(CGFloat)width;
 
 /**
  *  需要构造的ReplyContent类名
  */
-//: - (NSString *)replyContent:(FFFMessageModel *)model;
+//: - (NSString *)replyContent:(WatchMessageModel *)model;
 - (NSString *)with:(CentralProcessingUnitModel *)model;
 
 /**
  *  左对齐的气泡，cell reply气泡距离整个cell的内间距
  */
-//: - (UIEdgeInsets)replyCellInsets:(FFFMessageModel *)model;
+//: - (UIEdgeInsets)replyCellInsets:(WatchMessageModel *)model;
 - (UIEdgeInsets)icon:(CentralProcessingUnitModel *)model;
 
 /**
  *  左对齐的气泡，cell reply内容距离气泡的内间距，
  */
-//: - (UIEdgeInsets)replyContentViewInsets:(FFFMessageModel *)model;
+//: - (UIEdgeInsets)replyContentViewInsets:(WatchMessageModel *)model;
 - (UIEdgeInsets)viewInsets:(CentralProcessingUnitModel *)model;
 
 /**
  *  是否显示头像
  */
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model;
+//: - (BOOL)shouldShowAvatar:(WatchMessageModel *)model;
 - (BOOL)presentActivity:(CentralProcessingUnitModel *)model;
 
 
 /**
  *  左对齐的气泡，头像控件的 origin 点
  */
-//: - (CGPoint)avatarMargin:(FFFMessageModel *)model;
+//: - (CGPoint)avatarMargin:(WatchMessageModel *)model;
 - (CGPoint)line:(CentralProcessingUnitModel *)model;
 
 /**
  *  左对齐的气泡，头像控件的 size
  */
-//: - (CGSize)avatarSize:(FFFMessageModel *)model;
+//: - (CGSize)avatarSize:(WatchMessageModel *)model;
 - (CGSize)magnitudeernalRepresentation:(CentralProcessingUnitModel *)model;
 
 /**
  *  是否显示姓名
  */
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model;
+//: - (BOOL)shouldShowNickName:(WatchMessageModel *)model;
 - (BOOL)send:(CentralProcessingUnitModel *)model;
 
 /**
  *  左对齐的气泡，昵称控件的 origin 点
  */
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model;
+//: - (CGPoint)nickNameMargin:(WatchMessageModel *)model;
 - (CGPoint)showTotal:(CentralProcessingUnitModel *)model;
 
 
 /**
  *  消息显示在左边
  */
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model;
+//: - (BOOL)shouldShowLeft:(WatchMessageModel *)model;
 - (BOOL)statusLeft:(CentralProcessingUnitModel *)model;
 
 
 /**
  *  需要添加到Cell上的自定义视图
  */
-//: - (NSArray *)customViews:(FFFMessageModel *)model;
+//: - (NSArray *)customViews:(WatchMessageModel *)model;
 - (NSArray *)cellViews:(CentralProcessingUnitModel *)model;
 
 
 /**
  *  是否开启重试叹号开关
  */
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model;
+//: - (BOOL)disableRetryButton:(WatchMessageModel *)model;
 - (BOOL)emptyPower:(CentralProcessingUnitModel *)model;
 
 /**
  * 是否显示气泡背景图
  */
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model;
+//: - (BOOL)shouldDisplayBubbleBackground:(WatchMessageModel *)model;
 - (BOOL)clickBackground:(CentralProcessingUnitModel *)model;
 
 

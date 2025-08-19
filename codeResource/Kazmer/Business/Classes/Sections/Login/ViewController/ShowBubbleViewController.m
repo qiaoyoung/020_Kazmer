@@ -129,7 +129,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRegisterViewController.h"
+//: #import "WatchRegisterViewController.h"
 #import "ShowBubbleViewController.h"
 //: #import "NTESMainTabController.h"
 #import "UserBarController.h"
@@ -147,12 +147,12 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 #import "MidstreamZoneCenter.h"
 //: #import "UIActionSheet+NTESBlock.h"
 #import "UIActionSheet+InputSub.h"
-//: #import "FFFRegisterViewController.h"
+//: #import "WatchRegisterViewController.h"
 #import "ShowBubbleViewController.h"
 //: #import "NTESRegistConfigManager.h"
 #import "BarTo.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
 //: #import "CCCAutoLoginManager.h"
@@ -164,7 +164,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 //: #import "ZMONPolicyPrivacyViewController.h"
 #import "ButtonOldViewController.h"
 
-//: @interface FFFRegisterViewController () <UITextFieldDelegate>
+//: @interface WatchRegisterViewController () <UITextFieldDelegate>
 @interface ShowBubbleViewController () <UITextFieldDelegate>
 
 //: @property (strong, nonatomic) UIImageView *logoImageView;
@@ -193,7 +193,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 //: @end
 @end
 
-//: @implementation FFFRegisterViewController
+//: @implementation WatchRegisterViewController
 @implementation ShowBubbleViewController
 
 //: - (void)viewDidLoad {
@@ -246,7 +246,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 
     //: UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
     UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"register_account"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"register_account"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:StringFromBorrowData(dreamDestinationName)];
     //: labtitle.textColor = [UIColor blackColor];
     labtitle.textColor = [UIColor blackColor];
@@ -283,7 +283,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
     _usernameTextField.textColor = [UIColor min:StringFromBorrowData(mRepresentativeTitle)];
     //    _usernameTextField.keyboardType = UIKeyboardTypeASCIICapable;
 //    _usernameTextField.delegate = self;
-    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"user_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[WatchLanguageManager getTextWithKey:@"user_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[PaintedNaturalLanguageTo exhibit:StringFromBorrowData(show_addMessage)] attributes:@{NSForegroundColorAttributeName:[UIColor min:StringFromBorrowData(k_showNameStreakMessage)]}];
     //: _usernameTextField.attributedPlaceholder = attrString;
     _usernameTextField.attributedPlaceholder = attrString;
@@ -316,7 +316,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
     _passwordTextField.textColor = [UIColor min:StringFromBorrowData(mRepresentativeTitle)];
 //    _passwordTextField.secureTextEntry = YES;
 //    self.passwordTextField.delegate = self;
-    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"pass_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[WatchLanguageManager getTextWithKey:@"pass_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[PaintedNaturalLanguageTo exhibit:StringFromBorrowData(main_contributionValue)] attributes:@{NSForegroundColorAttributeName:[UIColor min:StringFromBorrowData(k_showNameStreakMessage)]}];
     //: _passwordTextField.attributedPlaceholder = attrString1;
     _passwordTextField.attributedPlaceholder = attrString1;
@@ -345,7 +345,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
     _loginButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_loginButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+    //: [_loginButton setTitle:[WatchLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
     [_loginButton setTitle:[PaintedNaturalLanguageTo exhibit:StringFromBorrowData(user_hormoneName)] forState:UIControlStateNormal];
     //: [_loginButton addTarget:self action:@selector(doLogin) forControlEvents:UIControlEventTouchUpInside];
     [_loginButton addTarget:self action:@selector(shadowRow) forControlEvents:UIControlEventTouchUpInside];
@@ -372,7 +372,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
     [_registerButton addTarget:self action:@selector(mutualCrop) forControlEvents:UIControlEventTouchUpInside];
     //: NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"activity_login_login"] attributes:attributes];
+    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[WatchLanguageManager getTextWithKey:@"activity_login_login"] attributes:attributes];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[PaintedNaturalLanguageTo exhibit:StringFromBorrowData(dream_egretId)] attributes:attributes];
     //: [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
     [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
@@ -411,7 +411,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 //    _registerButton.frame = CGRectMake(SCREEN_WIDTH-136, SCREEN_STATUS_HEIGHT+20, 146, 32);
 //    _registerButton.backgroundColor = ThemeColor;
 //    _registerButton.titleLabel.font = [UIFont systemFontOfSize:16];
-//    [_registerButton setTitleColor:RGB_COLOR_String(@"#ffffff") forState:UIControlStateNormal];
+//    [_registerButton setTitleColor:RGB_COLOR_String(@"#fffWatch") forState:UIControlStateNormal];
 //    [_registerButton setTitle:[NSString stringWithFormat:@"%@,%@",LangKey(@"activity_register_account_has_account"),LangKey(@"activity_login_login")] forState:UIControlStateNormal];
 //    [_registerButton addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
 //    [self.view addSubview:_registerButton];
@@ -463,7 +463,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 - (YYLabel *)protocolLabel {
     //: if (!_protocolLabel) {
     if (!_protocolLabel) {
-        //: NSString *originText = [FFFLanguageManager getTextWithKey:@"activity_register_agree"];
+        //: NSString *originText = [WatchLanguageManager getTextWithKey:@"activity_register_agree"];
         NSString *originText = [PaintedNaturalLanguageTo exhibit:StringFromBorrowData(appEconomistPath)];
         //: NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
         NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
@@ -484,7 +484,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
          {
             //: ZMONPolicyPrivacyViewController *vc = [[ZMONPolicyPrivacyViewController alloc] init];
             ButtonOldViewController *vc = [[ButtonOldViewController alloc] init];
-            //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+            //: vc.webTitle = [WatchLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
             vc.webTitle = [PaintedNaturalLanguageTo exhibit:StringFromBorrowData(k_deerText)];
             //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
             vc.urlString = [OnName user].yshref;
@@ -602,7 +602,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 
     //: if (self.agreementButton.selected == NO) {
     if (self.agreementButton.selected == NO) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"Read_agree_agreement"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromBorrowData(app_trainingFormat)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -615,7 +615,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 
     //: if (_usernameTextField.text && _usernameTextField.text.length <= 0){
     if (_usernameTextField.text && _usernameTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromBorrowData(noti_manCircleUrl)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -623,7 +623,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 
     //: if (_passwordTextField.text && _passwordTextField.text.length <= 0){
     if (_passwordTextField.text && _passwordTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromBorrowData(kMessageMsg)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -641,7 +641,7 @@ Byte dream_egretId[] = {23, 20, 52, 13, 128, 68, 191, 8, 185, 118, 199, 227, 129
 
     //: if ([_usernameTextField.text isEqualToString:_passwordTextField.text]){
     if ([_usernameTextField.text isEqualToString:_passwordTextField.text]){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"pass_user"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[WatchLanguageManager getTextWithKey:@"pass_user"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[PaintedNaturalLanguageTo exhibit:StringFromBorrowData(app_grandpaData)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;

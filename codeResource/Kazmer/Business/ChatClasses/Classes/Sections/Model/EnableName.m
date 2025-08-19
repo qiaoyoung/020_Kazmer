@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTimestampModel.h"
+//: #import "WatchTimestampModel.h"
 #import "EnableName.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "QuickNameView+ButtonKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "WatchKitUtil.h"
 #import "ObjectUtil.h"
 
-//: @implementation FFFTimestampModel
+//: @implementation WatchTimestampModel
 @implementation EnableName
 
 //: - (instancetype)init{

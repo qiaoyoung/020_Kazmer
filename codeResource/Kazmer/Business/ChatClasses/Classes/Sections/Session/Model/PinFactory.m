@@ -10,7 +10,7 @@ Byte app_myCooperateFormat[] = {46, 4, 55, 4, 61, 50, 54, 46, 78};
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellMaker.m
+//  WatchMessageCellMaker.m
 // ButtonKit
 //
 //  Created by chris.
@@ -18,28 +18,28 @@ Byte app_myCooperateFormat[] = {46, 4, 55, 4, 61, 50, 54, 46, 78};
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCellFactory.h"
+//: #import "WatchMessageCellFactory.h"
 #import "PinFactory.h"
-//: #import "FFFMessageModel.h"
+//: #import "WatchMessageModel.h"
 #import "CentralProcessingUnitModel.h"
-//: #import "FFFTimestampModel.h"
+//: #import "WatchTimestampModel.h"
 #import "EnableName.h"
-//: #import "FFFSessionAudioContentView.h"
+//: #import "WatchSessionAudioContentView.h"
 #import "ColorControl.h"
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "WatchKitAudioCenter.h"
 #import "UserMax.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 
-//: @interface FFFMessageCellFactory()
+//: @interface WatchMessageCellFactory()
 @interface PinFactory()
 
 //: @end
 @end
 
-//: @implementation FFFMessageCellFactory
+//: @implementation WatchMessageCellFactory
 @implementation PinFactory
 
 //: - (instancetype)init
@@ -60,42 +60,42 @@ Byte app_myCooperateFormat[] = {46, 4, 55, 4, 61, 50, 54, 46, 78};
 
 }
 
-//: - (FFFMessageCell *)cellInTable:(UITableView*)tableView
+//: - (WatchMessageCell *)cellInTable:(UITableView*)tableView
 - (ModelViewCell *)restoreMode:(UITableView*)tableView
-                 //: forMessageMode:(FFFMessageModel *)model
+                 //: forMessageMode:(WatchMessageModel *)model
                  table:(CentralProcessingUnitModel *)model
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<WatchCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<PinFrame> layoutConfig = [[ButtonKit sheerOption] layoutConfig];
     //: NSString *identity = [layoutConfig cellContent:model];
     NSString *identity = [layoutConfig availableName:model];
-    //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: WatchMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     ModelViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFAdvancedMessageCell";
+        //: NSString *clz = @"WatchAdvancedMessageCell";
         NSString *clz = @"KeyMessageCell";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         //: cell = [tableView dequeueReusableCellWithIdentifier:identity];
         cell = [tableView dequeueReusableCellWithIdentifier:identity];
     }
-    //: return (FFFMessageCell *)cell;
+    //: return (WatchMessageCell *)cell;
     return (ModelViewCell *)cell;
 }
 
-//: - (FFFSessionTimestampCell *)cellInTable:(UITableView *)tableView
+//: - (WatchSessionTimestampCell *)cellInTable:(UITableView *)tableView
 - (ObjectViewCell *)error:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model
+                            //: forTimeModel:(WatchTimestampModel *)model
                             search:(EnableName *)model
 {
     //: NSString *identity = @"time";
     NSString *identity = StringFromCloudData(app_myCooperateFormat);
-    //: FFFSessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: WatchSessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     ObjectViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFSessionTimestampCell";
+        //: NSString *clz = @"WatchSessionTimestampCell";
         NSString *clz = @"ObjectViewCell";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
@@ -104,7 +104,7 @@ Byte app_myCooperateFormat[] = {46, 4, 55, 4, 61, 50, 54, 46, 78};
     }
     //: [cell refreshData:model];
     [cell contextData:model];
-    //: return (FFFSessionTimestampCell *)cell;
+    //: return (WatchSessionTimestampCell *)cell;
     return (ObjectViewCell *)cell;
 }
 

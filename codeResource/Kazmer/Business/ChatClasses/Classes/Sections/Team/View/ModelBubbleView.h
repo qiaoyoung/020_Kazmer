@@ -17,7 +17,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @protocol FFFTeamCardHeaderViewDelegate <NSObject>
+//: @protocol WatchTeamCardHeaderViewDelegate <NSObject>
 @protocol ReplacementSub <NSObject>
 
 //: - (void)onTouchAvatar:(id)sender;
@@ -26,10 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface FFFTeamCardHeaderView : UIView
+//: @interface WatchTeamCardHeaderView : UIView
 @interface ModelBubbleView : UIView
 
-//: @property (nonatomic, weak) id<FFFTeamCardHeaderViewDelegate> delegate;
+//: @property (nonatomic, weak) id<WatchTeamCardHeaderViewDelegate> delegate;
 @property (nonatomic, weak) id<ReplacementSub> delegate;
 
 //: @property (nonatomic, strong) NIMTeam *team;

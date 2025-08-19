@@ -379,7 +379,7 @@ typedef struct {
     addBtn.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [addBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [addBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [addBtn setTitle:[FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
+    //: [addBtn setTitle:[WatchLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
     [addBtn setTitle:[PaintedNaturalLanguageTo exhibit:[[WorkplaceData sharedInstance] m_hostaKey]] forState:UIControlStateNormal];
     //: addBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
     addBtn.backgroundColor = [UIColor min:[[WorkplaceData sharedInstance] appStoneData]];
@@ -428,7 +428,7 @@ typedef struct {
             NSDictionary *data = [resultDict successAdd:[[WorkplaceData sharedInstance] show_givingStr]];
             //: NSString *account = [data newStringValueForKey:@"account"];
             NSString *account = [data record:[[WorkplaceData sharedInstance] dream_rumenThreshMsg]];
-            //: self.account.text = [NSString stringWithFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"friend_info_activity_account"], account];
+            //: self.account.text = [NSString stringWithFormat:@"%@%@",[WatchLanguageManager getTextWithKey:@"friend_info_activity_account"], account];
             self.account.text = [NSString stringWithFormat:@"%@%@",[PaintedNaturalLanguageTo exhibit:[[WorkplaceData sharedInstance] mMatteData]], account];
         }
 
@@ -457,13 +457,13 @@ typedef struct {
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [WatchLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [PaintedNaturalLanguageTo exhibit:[[WorkplaceData sharedInstance] noti_showHoppingMessage]];//@"添加成功".ntes_localized
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [WatchLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [PaintedNaturalLanguageTo exhibit:[[WorkplaceData sharedInstance] kEvaluateData]];//@"请求成功".ntes_localized
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [WatchLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [PaintedNaturalLanguageTo exhibit:[[WorkplaceData sharedInstance] app_atStr]];//@"添加失败".ntes_localized
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [WatchLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [PaintedNaturalLanguageTo exhibit:[[WorkplaceData sharedInstance] noti_sendKey]];//@"请求失败".ntes_localized
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;

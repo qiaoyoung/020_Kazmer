@@ -121,7 +121,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitProgressHUD.h"
+//: #import "WatchKitProgressHUD.h"
 #import "AlongEffectView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
@@ -130,7 +130,7 @@
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 
-//: @interface FFFKitProgressHUD()
+//: @interface WatchKitProgressHUD()
 @interface AlongEffectView()
 
 //: @property (nonatomic, strong) CAShapeLayer *indefiniteAnimatedLayer;
@@ -139,19 +139,19 @@
 //: @end
 @end
 
-//: @implementation FFFKitProgressHUD
+//: @implementation WatchKitProgressHUD
 @implementation AlongEffectView
 
 //: + (instancetype)sharedView
 + (instancetype)saloonFrame
 {
-    //: static FFFKitProgressHUD *instance = nil;
+    //: static WatchKitProgressHUD *instance = nil;
     static AlongEffectView *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
+        //: instance = [[WatchKitProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
         instance = [[AlongEffectView alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
     //: });
     });
@@ -194,7 +194,7 @@
 //: + (void)show
 + (void)holder
 {
-    //: [[FFFKitProgressHUD sharedView] showInView:[UIApplication sharedApplication].windows.firstObject];
+    //: [[WatchKitProgressHUD sharedView] showInView:[UIApplication sharedApplication].windows.firstObject];
     [[AlongEffectView saloonFrame] bied:[UIApplication sharedApplication].windows.firstObject];
 }
 
@@ -203,9 +203,9 @@
 {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        //: [[FFFKitProgressHUD sharedView] removeFromSuperview];
+        //: [[WatchKitProgressHUD sharedView] removeFromSuperview];
         [[AlongEffectView saloonFrame] removeFromSuperview];
-        //: [[FFFKitProgressHUD sharedView].indefiniteAnimatedLayer removeFromSuperlayer];
+        //: [[WatchKitProgressHUD sharedView].indefiniteAnimatedLayer removeFromSuperlayer];
         [[AlongEffectView saloonFrame].indefiniteAnimatedLayer removeFromSuperlayer];
     //: });
     });

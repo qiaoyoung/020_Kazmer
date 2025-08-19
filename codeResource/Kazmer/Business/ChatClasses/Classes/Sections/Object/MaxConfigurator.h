@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "WatchSessionViewController.h"
 #import "CollectionViewController.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "WatchSessionConfigurateProtocol.h"
+#import "WatchSessionConfigurateProtocol.h"
 
-//: @class FFFSessionViewController;
+//: @class WatchSessionViewController;
 @class CollectionViewController;
 
-//: @interface FFFSessionConfigurator : NSObject
+//: @interface WatchSessionConfigurator : NSObject
 @interface MaxConfigurator : NSObject
 
-//: - (void)setup:(FFFSessionViewController *)vc;
+//: - (void)setup:(WatchSessionViewController *)vc;
 - (void)messageAt:(CollectionViewController *)vc;
 
 //: @end

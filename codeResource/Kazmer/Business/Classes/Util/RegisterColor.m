@@ -89,7 +89,7 @@ typedef struct {
 #import "RegisterColor.h"
 //: #import <sys/stat.h>
 #import <sys/stat.h>
-//: #import "FFFConfig.h"
+//: #import "WatchConfig.h"
 #import "RecordInput.h"
 
 //: @interface NTESFileLocationHelper ()
@@ -134,7 +134,7 @@ typedef struct {
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+        //: NSString *appKey = [[WatchConfig sharedConfig] appKey];
         NSString *appKey = [[RecordInput file] appKey];
         //: NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

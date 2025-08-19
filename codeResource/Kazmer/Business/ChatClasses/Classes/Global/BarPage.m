@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCommonTableDelegate.h"
+//: #import "WatchCommonTableDelegate.h"
 #import "BarPage.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableViewCell.h"
+//: #import "WatchCommonTableData.h"
+#import "WatchCommonTableData.h"
+//: #import "WatchCommonTableViewCell.h"
 #import "OldInfo.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 
 //: static NSString *DefaultTableCell = @"UITableViewCell";
 static NSString *noti_touchPath = @"UITableViewCell";
 
-//: @interface FFFCommonTableDelegate()
+//: @interface WatchCommonTableDelegate()
 @interface BarPage()
 
 //: @property (nonatomic,copy) NSArray *(^NTESDataReceiver)(void);
@@ -32,7 +32,7 @@ static NSString *noti_touchPath = @"UITableViewCell";
 //: @end
 @end
 
-//: @implementation FFFCommonTableDelegate
+//: @implementation WatchCommonTableDelegate
 @implementation BarPage
 
 //: - (instancetype) initWithTableData:(NSArray *(^)(void))data{
@@ -107,7 +107,7 @@ static NSString *noti_touchPath = @"UITableViewCell";
         [self language:tableRow straddle:defaultCell];
     //: }else{
     }else{
-        //: [(id<FFFCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
+        //: [(id<WatchCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
         [(id<OldInfo>)cell light:tableRow manager:tableView];
     }
     //: cell.accessoryType = tableRow.showAccessory ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;

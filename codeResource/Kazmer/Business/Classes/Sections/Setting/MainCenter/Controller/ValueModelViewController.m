@@ -413,7 +413,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"feedback_activity_title"];
+    //: labtitle.text = [WatchLanguageManager getTextWithKey:@"feedback_activity_title"];
     labtitle.text = [PaintedNaturalLanguageTo exhibit:[TableQuickData sharedInstance].app_premiseSumimateUrl];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -433,7 +433,7 @@
 
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
-    //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"report_info"];
+    //: _textView.placeholder = [WatchLanguageManager getTextWithKey:@"report_info"];
     _textView.placeholder = [PaintedNaturalLanguageTo exhibit:[TableQuickData sharedInstance].mKeyStr];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor whiteColor];
@@ -456,7 +456,7 @@
     lab.font = [UIFont systemFontOfSize:16.f];
     //: lab.textColor = [UIColor colorWithHexString:@"#2C3042"];
     lab.textColor = [UIColor min:[TableQuickData sharedInstance].kSalmonName];
-    //: lab.text = [FFFLanguageManager getTextWithKey:@"upload_picture"];
+    //: lab.text = [WatchLanguageManager getTextWithKey:@"upload_picture"];
     lab.text = [PaintedNaturalLanguageTo exhibit:[TableQuickData sharedInstance].m_addName];
     //: [self.view addSubview:lab];
     [self.view addSubview:lab];
@@ -486,7 +486,7 @@
     submitButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+    //: [submitButton setTitle:[WatchLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
     [submitButton setTitle:[PaintedNaturalLanguageTo exhibit:[TableQuickData sharedInstance].noti_developerName] forState:UIControlStateNormal];
     //: submitButton.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
     submitButton.backgroundColor = [UIColor min:[TableQuickData sharedInstance].appModerateName];
@@ -571,7 +571,7 @@
 //        [SVProgressHUD dismiss];
         //: [self.loadingView animationClose];
         [self.loadingView impendentImage];
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
+        //: [SVProgressHUD showMessage:[WatchLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
         [SVProgressHUD index:[PaintedNaturalLanguageTo exhibit:[TableQuickData sharedInstance].dreamGivingPath]];
     //: }];
     }];

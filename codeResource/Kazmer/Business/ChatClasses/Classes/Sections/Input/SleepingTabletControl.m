@@ -69,18 +69,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonTabView.h"
+//: #import "WatchInputEmoticonTabView.h"
 #import "SleepingTabletControl.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "WatchInputEmoticonManager.h"
 #import "TitleToManager.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "WatchGlobalMacro.h"
+#import "WatchGlobalMacro.h"
 
-//: const NSInteger FFFInputEmoticonTabViewHeight = 44;
+//: const NSInteger WatchInputEmoticonTabViewHeight = 44;
 const NSInteger m_rowStr = 44;
 //: const NSInteger NIMInputEmoticonSendButtonWidth = 56;
 const NSInteger app_indexColorMessage = 56;
@@ -88,7 +88,7 @@ const NSInteger app_indexColorMessage = 56;
 //: const CGFloat NIMInputLineBoarder = .5f;
 const CGFloat kCropFormat = .5f;
 
-//: @interface FFFInputEmoticonTabView()
+//: @interface WatchInputEmoticonTabView()
 @interface SleepingTabletControl()
 
 //: @property (nonatomic,strong) NSMutableArray * tabs;
@@ -102,12 +102,12 @@ const CGFloat kCropFormat = .5f;
 
 
 
-//: @implementation FFFInputEmoticonTabView
+//: @implementation WatchInputEmoticonTabView
 @implementation SleepingTabletControl
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
 - (instancetype)initWithFrame:(CGRect)frame{
-    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, FFFInputEmoticonTabViewHeight)];
+    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, WatchInputEmoticonTabViewHeight)];
     self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, m_rowStr)];
     //: if (self) {
     if (self) {
@@ -143,7 +143,7 @@ const CGFloat kCropFormat = .5f;
 //        _sendButton.layer.shadowOpacity = 1;
 //        _sendButton.layer.shadowRadius = 8;
 //        
-        //: _sendButton.nim_height = FFFInputEmoticonTabViewHeight;
+        //: _sendButton.nim_height = WatchInputEmoticonTabViewHeight;
         _sendButton.nim_height = m_rowStr;
         //: _sendButton.nim_width = NIMInputEmoticonSendButtonWidth;
         _sendButton.nim_width = app_indexColorMessage;
@@ -206,7 +206,7 @@ const CGFloat kCropFormat = .5f;
         //: [_tabs addObject:button];
         [_tabs addObject:button];
 
-//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, FFFInputEmoticonTabViewHeight)];
+//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, WatchInputEmoticonTabViewHeight)];
 ////        sep.backgroundColor = sepColor;
 //        sep.backgroundColor = [UIColor whiteColor];
 //        [_seps addObject:sep];
@@ -264,7 +264,7 @@ const CGFloat kCropFormat = .5f;
         UIButton *button = self.tabs[index];
         //: button.nim_width = NIMInputEmoticonSendButtonWidth;
         button.nim_width = app_indexColorMessage;
-        //: button.nim_height = FFFInputEmoticonTabViewHeight;
+        //: button.nim_height = WatchInputEmoticonTabViewHeight;
         button.nim_height = m_rowStr;
         //: button.nim_left = left;
         button.nim_left = left;
