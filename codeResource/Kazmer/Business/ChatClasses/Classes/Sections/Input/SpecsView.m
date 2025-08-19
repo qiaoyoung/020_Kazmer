@@ -42,8 +42,8 @@ Byte main_capitalMessage[] = {79, 7, 12, 210, 25, 36, 163, 92, 145, 221, 44, 137
 #import "TitleToManager.h"
 //: #import "FFFInputEmoticonTabView.h"
 #import "SleepingTabletControl.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
 //: #import "FFFMessageMaker.h"

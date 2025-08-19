@@ -88,8 +88,8 @@
 // __M_A_C_R_O__
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+ButtonKit.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "FFFKitDevice.h"

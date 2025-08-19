@@ -71,8 +71,8 @@ dispatch_queue_t teamShould()
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
-@property (nonatomic,strong) id<MessagePinImage> sessionConfig;
+//: @property (nonatomic,strong) id<FFFSessionConfig>sessionConfig;
+@property (nonatomic,strong) id<MessagePinImage>sessionConfig;
 
 //: @property (nonatomic,strong) FFFKitMediaFetcher *mediaFetcher;
 @property (nonatomic,strong) VisualisationFetcher *mediaFetcher;
@@ -106,8 +106,8 @@ dispatch_queue_t teamShould()
     if (self) {
         //: _session = session;
         _session = session;
-        //: _sessionConfig = sessionConfig;
-        _sessionConfig = sessionConfig;
+        //: _sessionConfig =sessionConfig;
+        _sessionConfig =sessionConfig;
         //: [self addListener];
         [self recentText];
     }
@@ -1003,10 +1003,10 @@ dispatch_queue_t teamShould()
 - (void)colorNotification:(NSNotification *)notification {
     //: NSDictionary *userInfo = notification.userInfo;
     NSDictionary *userInfo = notification.userInfo;
-    //: extern NSString *FFFKitInfoKey;
-    extern NSString *FFFKitInfoKey;
-    //: NSArray *teamIds = userInfo[FFFKitInfoKey];
-    NSArray *teamIds = userInfo[FFFKitInfoKey];
+    //: extern NSString * notiOnceValue;
+    extern NSString * notiOnceValue;
+    //: NSArray *teamIds = userInfo[ notiOnceValue];
+    NSArray *teamIds = userInfo[ notiOnceValue];
     //: if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
     if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
         //: && ([teamIds containsObject:self.session.sessionId] || [teamIds containsObject:[NSNull null]])) {
@@ -1020,10 +1020,10 @@ dispatch_queue_t teamShould()
 - (void)decreased:(NSNotification *)notification {
     //: NSDictionary *userInfo = notification.userInfo;
     NSDictionary *userInfo = notification.userInfo;
-    //: extern NSString *FFFKitInfoKey;
-    extern NSString *FFFKitInfoKey;
-    //: NSArray *teamIds = userInfo[FFFKitInfoKey];
-    NSArray *teamIds = userInfo[FFFKitInfoKey];
+    //: extern NSString * notiOnceValue;
+    extern NSString * notiOnceValue;
+    //: NSArray *teamIds = userInfo[ notiOnceValue];
+    NSArray *teamIds = userInfo[ notiOnceValue];
 
     //: if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
     if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
@@ -1368,21 +1368,21 @@ dispatch_queue_t teamShould()
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(chemicalAgentTo:) name:UIApplicationDidBecomeActiveNotification object:nil];
     //: if (self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam) {
     if (self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam) {
-        //: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-        extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-        //: extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-        extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
+        //: extern NSString *const  appHostTitle;
+        extern NSString *const  appHostTitle;
+        //: extern NSString *const  kTextData;
+        extern NSString *const  kTextData;
 
-        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(decreased:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
+        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name: appHostTitle object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(decreased:) name: appHostTitle object:nil];
+        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name: kTextData object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorNotification:) name: kTextData object:nil];
     }
 
-    //: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(caned:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const  showSubmitId;
+    extern NSString *const  showSubmitId;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name: showSubmitId object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(caned:) name: showSubmitId object:nil];
 }
 
 //: - (void)removeListenner

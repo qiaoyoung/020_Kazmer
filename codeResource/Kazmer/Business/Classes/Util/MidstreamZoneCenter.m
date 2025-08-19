@@ -43,8 +43,6 @@ Byte show_mediaId[] = {28, 11, 77, 9, 138, 56, 133, 51, 130, 186, 178, 192, 192,
 #import "UIView+Toast.h"
 //: #import "NTESCustomSysNotificationSender.h"
 #import "BarEmptyView.h"
-//: #import "NTESGlobalMacro.h"
-#import "NTESGlobalMacro.h"
 //: #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVFoundation.h>
 //: #import "NTESSessionMsgConverter.h"
@@ -58,8 +56,8 @@ Byte show_mediaId[] = {28, 11, 77, 9, 138, 56, 133, 51, 130, 186, 178, 192, 192,
 //: #import "SSZipArchiveManager.h"
 #import "EmptyTing.h"
 
-//: NSString *NTESCustomNotificationCountChanged = @"NTESCustomNotificationCountChanged";
-NSString *user_minIdent = @"NTESCustomNotificationCountChanged";
+//: NSString * user_minIdent = @" user_minIdent";
+NSString *user_minIdent = @" user_minIdent";
 
 //: @interface NTESNotificationCenter () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
 @interface MidstreamZoneCenter () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
@@ -429,7 +427,7 @@ NSString *user_minIdent = @"NTESCustomNotificationCountChanged";
                     }
                     //: if (notification.setting.shouldBeCounted) {
                     if (notification.setting.shouldBeCounted) {
-                        //: [[NSNotificationCenter defaultCenter] postNotificationName:NTESCustomNotificationCountChanged object:nil];
+                        //: [[NSNotificationCenter defaultCenter] postNotificationName: user_minIdent object:nil];
                         [[NSNotificationCenter defaultCenter] postNotificationName:user_minIdent object:nil];
                     }
                     //: NSString *content = [dict jsonString:@"content"];

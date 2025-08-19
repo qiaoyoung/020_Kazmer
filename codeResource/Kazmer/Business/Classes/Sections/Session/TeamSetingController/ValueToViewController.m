@@ -733,7 +733,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
         //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
         CoverTingContent *option = [[CoverTingContent alloc] init];
         //: option.session = self.teamListManager.session;
-        option.session = self.teamListManager.at;
+        option.session = self.teamListManager.session;
         //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:obj.userId option:option];
         TingMessage *info = [[ButtonKit sheerOption] past:obj.userId skinColour_strong:option];
 
@@ -1539,7 +1539,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
     //: NIMContactTeamMemberSelectConfig *config = [[NIMContactTeamMemberSelectConfig alloc] init];
     ProgressConfig *config = [[ProgressConfig alloc] init];
     //: config.session = self.teamListManager.session;
-    config.session = self.teamListManager.at;
+    config.session = self.teamListManager.session;
     //: config.teamType = NIMKitTeamTypeNomal;
     config.teamType = NIMKitTeamTypeNomal;
     //: config.teamId = self.teamListManager.team.teamId;
@@ -1576,7 +1576,7 @@ TextVcdelegate,ModeDelegate,UINavigationControllerDelegate,UIImagePickerControll
             //: options.removeOtherClients = YES;
             options.removeOtherClients = YES;
             //: [NIMSDK.sharedSDK.conversationManager deleteAllRemoteMessagesInSession:self.teamListManager.session options:options completion:^(NSError * _Nullable error) {
-            [NIMSDK.sharedSDK.conversationManager deleteAllRemoteMessagesInSession:self.teamListManager.at options:options completion:^(NSError * _Nullable error) {
+            [NIMSDK.sharedSDK.conversationManager deleteAllRemoteMessagesInSession:self.teamListManager.session options:options completion:^(NSError * _Nullable error) {
                 //: if (error) {
                 if (error) {
                     //: return;

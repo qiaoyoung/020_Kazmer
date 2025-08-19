@@ -119,8 +119,8 @@
 #import "SpecsView.h"
 //: #import "UIViewNimKit.h"
 #import "UIViewNimKit.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "FFFInputEmoticonManager.h"
 #import "TitleToManager.h"
 //: #import "FFFInputToolBar.h"
@@ -1438,7 +1438,7 @@
     //: NSString *text = self.toolBar.contentText;
     NSString *text = self.toolBar.contentText;
     //: NSRange selectedRange = [self.toolBar selectedRange];
-    NSRange selectedRange = [self.toolBar info];
+    NSRange selectedRange = [self.toolBar selectedRange];
     //: BOOL isEmoji = NO;
     BOOL isEmoji = NO;
     //: if (selectedRange.location >= 2) {
@@ -1481,7 +1481,7 @@
     //: NSString *text = self.toolBar.contentText;
     NSString *text = self.toolBar.contentText;
     //: NSRange selectedRange = [self.toolBar selectedRange];
-    NSRange selectedRange = [self.toolBar info];
+    NSRange selectedRange = [self.toolBar selectedRange];
     //: if (selectedRange.location == 0)
     if (selectedRange.location == 0)
     {
@@ -1528,7 +1528,7 @@
     //: NSRange range = [self rangeForPrefix:@"@" suffix:@"\u2004"];
     NSRange range = [self comment:@"@" session:@"\u2004"];
     //: NSRange selectedRange = [self.toolBar selectedRange];
-    NSRange selectedRange = [self.toolBar info];
+    NSRange selectedRange = [self.toolBar selectedRange];
     //: NIMInputAtItem *item = nil;
     StaleItem *item = nil;
     //: if (range.length > 1)
@@ -1558,7 +1558,7 @@
     //: NSString *text = self.toolBar.contentText;
     NSString *text = self.toolBar.contentText;
     //: NSRange range = [self.toolBar selectedRange];
-    NSRange range = [self.toolBar info];
+    NSRange range = [self.toolBar selectedRange];
     //: NSString *selectedText = range.length ? [text substringWithRange:range] : text;
     NSString *selectedText = range.length ? [text substringWithRange:range] : text;
     //: NSInteger endLocation = range.location;

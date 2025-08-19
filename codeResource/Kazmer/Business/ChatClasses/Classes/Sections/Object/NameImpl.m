@@ -41,8 +41,8 @@
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
-@property (nonatomic,strong) id<MessagePinImage> sessionConfig;
+//: @property (nonatomic,strong) id<FFFSessionConfig>sessionConfig;
+@property (nonatomic,strong) id<MessagePinImage>sessionConfig;
 
 //: @property (nonatomic,weak) id<NIMSessionLayoutDelegate> delegate;
 @property (nonatomic,weak) id<SoapDelegate> delegate;
@@ -62,8 +62,8 @@
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _sessionConfig = sessionConfig;
-        _sessionConfig = sessionConfig;
+        //: _sessionConfig =sessionConfig;
+        _sessionConfig =sessionConfig;
         //: _session = session;
         _session = session;
         //: _inserts = [[NSMutableArray alloc] init];

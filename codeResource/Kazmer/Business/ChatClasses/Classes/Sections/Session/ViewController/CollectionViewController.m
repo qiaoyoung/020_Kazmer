@@ -407,8 +407,8 @@ typedef struct {
 #import "BroadcastView.h"
 //: #import "FFFBubbleButtonModel.h"
 #import "PageCountImage.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "FFFInputAudioView.h"
 #import "InputMessageView.h"
 //: #import "UIView+NTES.h"
@@ -968,7 +968,7 @@ typedef struct {
     if ([self phase])
     {
         //: self.sessionInputView = [[FFFInputView alloc] initWithFrame:CGRectMake(0, 0, self.view.nim_width,0) config:self.sessionConfig];
-        self.sessionInputView = [[SignView alloc] initWithLabelConfig:CGRectMake(0, 0, self.view.nim_width,0) tool:self.produceConfig];
+        self.sessionInputView = [[SignView alloc] initWithLabelConfig:CGRectMake(0, 0, self.view.nim_width,0) tool:self.sessionConfig];
         //: self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         //: [self.sessionInputView setSession:self.session];
@@ -1947,16 +1947,16 @@ typedef struct {
     //: self.messageForMenu = nil;
     self.messageForMenu = nil;
     //: [self.interactor setReferenceMessage:nil];
-    [self.interactor setTitleForMessage:nil];
+    [self.interactor setReferenceMessage:nil];
 
     //: if ([self.sessionConfig respondsToSelector:@selector(clearThreadMessageAfterSent)])
-    if ([self.produceConfig respondsToSelector:@selector(mySent)])
+    if ([self.sessionConfig respondsToSelector:@selector(mySent)])
     {
         //: if ([self.sessionConfig clearThreadMessageAfterSent])
-        if ([self.produceConfig mySent])
+        if ([self.sessionConfig mySent])
         {
             //: [self.sessionConfig cleanThreadMessage];
-            [self.produceConfig messageCell];
+            [self.sessionConfig messageCell];
         }
     }
 }
@@ -2120,7 +2120,7 @@ typedef struct {
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setTitleForMessage:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -2149,7 +2149,7 @@ typedef struct {
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setTitleForMessage:message];
+    [self.interactor setReferenceMessage:message];
 
     //: handle = [self shouldShowMenuByMessage:message];
     handle = [self exhibit:message];
@@ -2170,7 +2170,7 @@ typedef struct {
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setTitleForMessage:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -2191,10 +2191,10 @@ typedef struct {
     //: BOOL disable = NO;
     BOOL disable = NO;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableAudioPlayedStatusIcon)])
-    if ([self.produceConfig respondsToSelector:@selector(colorTitle)])
+    if ([self.sessionConfig respondsToSelector:@selector(colorTitle)])
     {
         //: disable = [self.sessionConfig disableAudioPlayedStatusIcon];
-        disable = [self.produceConfig colorTitle];
+        disable = [self.sessionConfig colorTitle];
     }
     //: return disable;
     return disable;
@@ -2261,7 +2261,7 @@ typedef struct {
 //: #pragma mark - 配置项
 #pragma mark - 配置项
 //: - (id<FFFSessionConfig>)sessionConfig
-- (id<MessagePinImage>)produceConfig
+- (id<MessagePinImage>)sessionConfig
 {
     //: return nil; 
     return nil; //使用默认配置
@@ -2276,9 +2276,9 @@ typedef struct {
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableReceiveNewMessages)]) {
-    if ([self.produceConfig respondsToSelector:@selector(ofSelected)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(ofSelected)]) {
         //: should = ![self.sessionConfig disableReceiveNewMessages];
-        should = ![self.produceConfig ofSelected];
+        should = ![self.sessionConfig ofSelected];
     }
     //: return should;
     return should;
@@ -2293,9 +2293,9 @@ typedef struct {
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableInputView)]) {
-    if ([self.produceConfig respondsToSelector:@selector(enableText)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(enableText)]) {
         //: should = ![self.sessionConfig disableInputView];
-        should = ![self.produceConfig enableText];
+        should = ![self.sessionConfig enableText];
     }
     //: return should;
     return should;
@@ -2309,9 +2309,9 @@ typedef struct {
     //: NIMAudioType type = NIMAudioTypeAAC;
     NIMAudioType type = NIMAudioTypeAAC;
     //: if ([self.sessionConfig respondsToSelector:@selector(recordType)]) {
-    if ([self.produceConfig respondsToSelector:@selector(tableFrom)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(tableFrom)]) {
         //: type = [self.sessionConfig recordType];
-        type = [self.produceConfig tableFrom];
+        type = [self.sessionConfig tableFrom];
     }
     //: return type;
     return type;
@@ -2324,9 +2324,9 @@ typedef struct {
     //: BOOL needProximityMonitor = YES;
     BOOL needProximityMonitor = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableProximityMonitor)]) {
-    if ([self.produceConfig respondsToSelector:@selector(atShow)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(atShow)]) {
         //: needProximityMonitor = !self.sessionConfig.disableProximityMonitor;
-        needProximityMonitor = !self.produceConfig.atShow;
+        needProximityMonitor = !self.sessionConfig.atShow;
     }
     //: return needProximityMonitor;
     return needProximityMonitor;
@@ -2409,7 +2409,7 @@ typedef struct {
 }
 
 //: - (void)onTapMenuItemCopy:(FFFMediaItem *)item
-- (void)substancing:(InfoMakeBar *)item
+- (void)onTapMenuItemCopy:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -3153,16 +3153,16 @@ typedef struct {
     //: NSArray *items;
     NSArray *items;
     //: if (!self.sessionConfig)
-    if (!self.produceConfig)
+    if (!self.sessionConfig)
     {
         //: items = [[MyUserKit sharedKit].config defaultMenuItemsWithMessage:message];
         items = [[ButtonKit sheerOption].config name:message];
     }
     //: else if([self.sessionConfig respondsToSelector:@selector(menuItemsWithMessage:)])
-    else if([self.produceConfig respondsToSelector:@selector(tableOfTextsToInscription:)])
+    else if([self.sessionConfig respondsToSelector:@selector(tableOfTextsToInscription:)])
     {
         //: items = [self.sessionConfig menuItemsWithMessage:message];
-        items = [self.produceConfig tableOfTextsToInscription:message];
+        items = [self.sessionConfig tableOfTextsToInscription:message];
     }
 
     //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {

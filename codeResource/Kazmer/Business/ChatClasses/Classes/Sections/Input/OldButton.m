@@ -15,8 +15,8 @@
 #import "UIImage+ButtonKit.h"
 //: #import "FFFInputEmoticonManager.h"
 #import "TitleToManager.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//:  
+ 
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
 //: #import "FFFKitDevice.h"

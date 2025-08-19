@@ -330,7 +330,7 @@
     //: self.delegate = delegate;
     self.delegate = delegate;
     //: delegateClass = object_getClass(delegate);
-    delegateClass = assertFlush(delegate);
+    delegateClass = object_getClass(delegate);
 }
 
 //: - (void)datePickerValueChanged{
@@ -476,7 +476,7 @@
 //: - (void)leftButtonClicked:(id)sender{
 - (void)caned:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = assertFlush(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(stanzaRead)]) {
         //: [self.delegate dismissDataPickerView];
@@ -500,7 +500,7 @@
 //: - (void)rightButtonClicked:(id)sender{
 - (void)languaging:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = assertFlush(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(stanzaRead)]) {
         //: [self.delegate dismissDataPickerView];

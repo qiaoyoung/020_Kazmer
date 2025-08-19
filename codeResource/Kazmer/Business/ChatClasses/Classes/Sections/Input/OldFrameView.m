@@ -576,7 +576,7 @@ Byte dream_barMsg[] = {63, 26, 7, 4, 112, 106, 118, 117, 102, 123, 118, 118, 115
 @implementation OldFrameView(InputText)
 
 //: - (NSRange)selectedRange
-- (NSRange)info
+- (NSRange)selectedRange
 {
     //: return self.inputTextView.selectedRange;
     return self.inputTextView.selectedRange;

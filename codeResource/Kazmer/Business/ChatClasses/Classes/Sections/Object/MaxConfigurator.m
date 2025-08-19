@@ -77,8 +77,8 @@
 {
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.session;
-    //: id<FFFSessionConfig> sessionConfig = vc.sessionConfig;
-    id<MessagePinImage> sessionConfig = vc.produceConfig;
+    //: id<FFFSessionConfig>sessionConfig = vc.sessionConfig;
+    id<MessagePinImage>sessionConfig = vc.sessionConfig;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.tableView;
     //: FFFInputView *inputView = vc.sessionInputView;
@@ -104,7 +104,7 @@
     _interactor.layout = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setParadigmDelegate:_interactor];
+    [layout setDelegate:_interactor];
 
     //: _tableAdapter = [[FFFSessionTableAdapter alloc] init];
     _tableAdapter = [[QuickHearingArrayAdapter alloc] init];

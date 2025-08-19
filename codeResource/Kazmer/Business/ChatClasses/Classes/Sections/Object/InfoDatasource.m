@@ -57,8 +57,8 @@
     if (self = [self init]) {
         //: _currentSession = session;
         _currentSession = session;
-        //: _sessionConfig = sessionConfig;
-        _sessionConfig = sessionConfig;
+        //: _sessionConfig =sessionConfig;
+        _sessionConfig =sessionConfig;
         //: id<FFFKitMessageProvider> dataProvider = [_sessionConfig respondsToSelector:@selector(messageDataProvider)] ? [_sessionConfig messageDataProvider] : nil;
         id<ValueOld> dataProvider = [_sessionConfig respondsToSelector:@selector(bubbleBy)] ? [_sessionConfig bubbleBy] : nil;
 

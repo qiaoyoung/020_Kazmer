@@ -83,9 +83,9 @@ typedef struct {
 //: #import "FFFChatUIManager.h"
 #import "ZoneUimanager.h"
 
-//: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
+//: extern NSString *const  showSubmitId;
 extern NSString *const showSubmitId;
-//: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
+//: extern NSString *const  appHostTitle;
 extern NSString *const appHostTitle;
 
 
@@ -221,7 +221,7 @@ extern NSString *const appHostTitle;
         TimeInfo *info = [[TimeInfo alloc] init];
         //: info.session = session;
         info.session = session;
-        //: info.notificationName = NIMKitUserInfoHasUpdatedNotification;
+        //: info.notificationName =  showSubmitId;
         info.notificationName = showSubmitId;
         //: [self.firer addFireInfo:info];
         [self.firer gildTheLily:info];
@@ -249,7 +249,7 @@ extern NSString *const appHostTitle;
         //: info.session = session;
         info.session = session;
     }
-    //: info.notificationName = NIMKitTeamInfoHasUpdatedNotification;
+    //: info.notificationName =  appHostTitle;
     info.notificationName = appHostTitle;
     //: [self.firer addFireInfo:info];
     [self.firer gildTheLily:info];
@@ -276,10 +276,10 @@ extern NSString *const appHostTitle;
         //: info.session = session;
         info.session = session;
     }
-    //: extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    //: info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
-    info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
+    //: extern NSString * kTextData;
+    extern NSString * kTextData;
+    //: info.notificationName =  kTextData;
+    info.notificationName =  kTextData;
     //: [self.firer addFireInfo:info];
     [self.firer gildTheLily:info];
 }

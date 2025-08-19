@@ -13,7 +13,7 @@
 //: @class NTESCustomNotificationDB;
 @class ChanceImage;
 
-//: extern NSString *NTESCustomNotificationCountChanged;
+//: extern NSString * user_minIdent;
 extern NSString *user_minIdent;
 
 //: @interface NTESNotificationCenter : NSObject

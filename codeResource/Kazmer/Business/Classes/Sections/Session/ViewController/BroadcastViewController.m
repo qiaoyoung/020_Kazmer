@@ -1437,7 +1437,7 @@ PothouseQuick>
 //: #pragma mark - 菜单
 #pragma mark - 菜单
 //: - (void)onTapMenuItemReply:(FFFMediaItem *)item
-- (void)alongRead:(InfoMakeBar *)item
+- (void)onTapMenuItemReply:(InfoMakeBar *)item
 {
     //: NIMMessage *menuMessage = [self messageForMenu];
     NIMMessage *menuMessage = [self messageForMenu];
@@ -1467,7 +1467,7 @@ PothouseQuick>
 }
 
 //: - (void)onTapMenuItemForword:(FFFMediaItem *)item
-- (void)somebodyAt:(InfoMakeBar *)item
+- (void)onTapMenuItemForword:(InfoMakeBar *)item
 {
     //: ZOMNForwardViewController *vc = [[ZOMNForwardViewController alloc]init];
     EmptyViewController *vc = [[EmptyViewController alloc]init];
@@ -1478,7 +1478,7 @@ PothouseQuick>
 }
 
 //: - (void)onTapMenuItemMark:(FFFMediaItem *)item
-- (void)alongAndMark:(InfoMakeBar *)item
+- (void)onTapMenuItemMark:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -1508,7 +1508,7 @@ PothouseQuick>
 }
 
 //: - (void)onTapMenuItemPin:(FFFMediaItem *)item
-- (void)to:(InfoMakeBar *)item
+- (void)onTapMenuItemPin:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -1540,7 +1540,7 @@ PothouseQuick>
 }
 
 //: - (void)onTapMenuItemUnpin:(FFFMediaItem *)item
-- (void)originSum:(InfoMakeBar *)item
+- (void)onTapMenuItemUnpin:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -1573,7 +1573,7 @@ PothouseQuick>
 }
 
 //: - (void)onTapMenuItemRevoke:(FFFMediaItem *)item
-- (void)mediaShow:(InfoMakeBar *)item
+- (void)onTapMenuItemRevoke:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -1623,7 +1623,7 @@ PothouseQuick>
 
 
 //: - (void)onTapMenuItemReport:(FFFMediaItem *)item
-- (void)recording:(InfoMakeBar *)item
+- (void)onTapMenuItemReport:(InfoMakeBar *)item
 {
     //: [self.view addSubview:self.translateView];
     [self.view addSubview:self.translateView];
@@ -1632,7 +1632,7 @@ PothouseQuick>
 }
 
 //: - (void)onTapMenuItemTranslation:(FFFMediaItem *)item
-- (void)device:(InfoMakeBar *)item
+- (void)onTapMenuItemTranslation:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -1887,7 +1887,7 @@ PothouseQuick>
 }
 
 //: - (void)onTapMenuItemDelete:(FFFMediaItem *)item
-- (void)roundCut:(InfoMakeBar *)item
+- (void)onTapMenuItemDelete:(InfoMakeBar *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -1934,14 +1934,14 @@ PothouseQuick>
 }
 
 //: - (void)onTapMenuItemMutiSelect:(FFFMediaItem *)item
-- (void)tag:(InfoMakeBar *)item
+- (void)onTapMenuItemMutiSelect:(InfoMakeBar *)item
 {
     //: [self switchUIWithSessionState:NIMKitSessionStateSelect];
     [self borderBy:NIMKitSessionStateSelect];
 }
 
 //: - (void)onTapMenuItemAudio2Text:(FFFMediaItem *)item
-- (void)audio:(InfoMakeBar *)item
+- (void)onTapMenuItemAudio2Text:(InfoMakeBar *)item
 {
 
 }
@@ -2215,7 +2215,7 @@ PothouseQuick>
 //: #pragma mark - Cell Actions
 #pragma mark - Cell Actions
 //: - (void)showImage:(NIMMessage *)message
-- (void)imageShow:(NIMMessage *)message
+- (void)showImage:(NIMMessage *)message
 {
     //: NIMImageObject *object = message.messageObject;
     NIMImageObject *object = message.messageObject;
@@ -2263,7 +2263,7 @@ PothouseQuick>
 }
 
 //: - (void)showVideo:(NIMMessage *)message
-- (void)title:(NIMMessage *)message
+- (void)showVideo:(NIMMessage *)message
 {
     //: NIMVideoObject *object = message.messageObject;
     NIMVideoObject *object = message.messageObject;
@@ -2305,7 +2305,7 @@ PothouseQuick>
 }
 
 //: - (void)showCustom:(NIMMessage *)message
-- (void)midstream:(NIMMessage *)message
+- (void)showCustom:(NIMMessage *)message
 {
    //普通的自定义消息点击事件可以在这里做哦~
 

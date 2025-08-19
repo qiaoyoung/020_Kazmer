@@ -36,8 +36,8 @@
 @property (nonatomic, readonly) NSInteger messageLimit; //每页消息显示条数
 //: @property (nonatomic, readonly) NSInteger showTimeInterval; 
 @property (nonatomic, readonly) NSInteger showTimeInterval; //两条消息相隔多久显示一条时间戳
-//: @property (nonatomic, weak) id<FFFSessionConfig> sessionConfig;
-@property (nonatomic, weak) id<MessagePinImage> sessionConfig;
+//: @property (nonatomic, weak) id<FFFSessionConfig>sessionConfig;
+@property (nonatomic, weak) id<MessagePinImage>sessionConfig;
 
 //: - (NSInteger)indexAtModelArray:(FFFMessageModel*)model;
 - (NSInteger)title:(CentralProcessingUnitModel*)model;

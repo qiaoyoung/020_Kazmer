@@ -137,7 +137,7 @@
 - (void)nameLayout:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<NIMSessionLayoutDelegate>)delegate;
-- (void)setParadigmDelegate:(id<SoapDelegate>)delegate;
+- (void)setDelegate:(id<SoapDelegate>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)reload;

@@ -192,7 +192,6 @@ Byte user_titleStr[] = {30, 33, 22, 5, 129, 80, 92, 83, 79, 88, 78, 73, 77, 83, 
     return _imagePickerController;
 }
 
-//: - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
     //: if (buttonIndex == 0) {
     if (buttonIndex == 0) {

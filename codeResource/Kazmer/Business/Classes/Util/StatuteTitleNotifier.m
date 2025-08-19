@@ -68,8 +68,6 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "NTESAVNotifier.h"
 #import "StatuteTitleNotifier.h"
-//: #import "NTESGlobalMacro.h"
-#import "NTESGlobalMacro.h"
 
 //: @import AudioToolbox;
 @import AudioToolbox;

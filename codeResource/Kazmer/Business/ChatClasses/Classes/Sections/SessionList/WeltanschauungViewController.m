@@ -266,20 +266,20 @@ typedef struct {
     //: [[NIMSDK sharedSDK].loginManager addDelegate:self];
     [[NIMSDK sharedSDK].loginManager addDelegate:self];
 
-    //: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-    extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(decreased:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const  appHostTitle;
+    extern NSString *const  appHostTitle;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name: appHostTitle object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(decreased:) name: appHostTitle object:nil];
 
-    //: extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-    extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
+    //: extern NSString *const  kTextData;
+    extern NSString *const  kTextData;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name: kTextData object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(colorNotification:) name: kTextData object:nil];
 
-    //: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(caned:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const  showSubmitId;
+    extern NSString *const  showSubmitId;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name: showSubmitId object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(caned:) name: showSubmitId object:nil];
 
     //: [self setupSessions];
     [self imageSessions];

@@ -657,7 +657,6 @@
 		429D4053299A79F400354206 /* OldFrameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldFrameView.m; sourceTree = "<group>"; };
 		429D4054299A79F400354206 /* EdgePositionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgePositionView.h; sourceTree = "<group>"; };
 		429D4055299A79F400354206 /* SignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignView.h; sourceTree = "<group>"; };
-		429D4056299A79F400354206 /* FFFInputEmoticonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFFInputEmoticonDefine.h; sourceTree = "<group>"; };
 		429D4057299A79F400354206 /* AnswerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerView.h; sourceTree = "<group>"; };
 		429D4058299A79F400354206 /* SpecsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecsView.m; sourceTree = "<group>"; };
 		429D4059299A79F400354206 /* OldButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldButton.m; sourceTree = "<group>"; };
@@ -960,7 +959,6 @@
 		61839A9A1BF9B60400702DF0 /* ToLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToLabel.m; sourceTree = "<group>"; };
 		619087071BABE5D400F3A0C7 /* ValueTimeHeightDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueTimeHeightDevice.h; sourceTree = "<group>"; };
 		619087081BABE5D400F3A0C7 /* ValueTimeHeightDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueTimeHeightDevice.m; sourceTree = "<group>"; };
-		6195CD3E1A8C74DB00F3E239 /* NTESGlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTESGlobalMacro.h; sourceTree = "<group>"; };
 		61A1422D1AD7B02E00DCAD88 /* NSDictionary+ValueJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ValueJson.h"; sourceTree = "<group>"; };
 		61A1422E1AD7B02E00DCAD88 /* NSDictionary+ValueJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ValueJson.m"; sourceTree = "<group>"; };
 		61A8EF321BB67F0900033FB8 /* UIResponder+NameAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+NameAccount.h"; sourceTree = "<group>"; };
@@ -1684,7 +1682,6 @@
 				429D4059299A79F400354206 /* OldButton.m */,
 				429D404B299A79F400354206 /* SpecsView.h */,
 				429D4058299A79F400354206 /* SpecsView.m */,
-				429D4056299A79F400354206 /* FFFInputEmoticonDefine.h */,
 				429D4044299A79F400354206 /* TitleToManager.h */,
 				429D404E299A79F400354206 /* TitleToManager.m */,
 				429D4051299A79F400354206 /* ImageShowParser.h */,
@@ -2207,10 +2204,6 @@
 		42AC19F82A63ADC400BA1584 /* COKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				04126DE72DCC5B6A000E1081 /* NSArray+Safe.h */,
-				04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */,
-				04126DE92DCC5B6A000E1081 /* NSMutableDictionary+Safe.h */,
-				04126DEA2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m */,
 				42AC19FA2A63ADC400BA1584 /* SAMKeychain.h */,
 				42AC19FC2A63ADC400BA1584 /* SAMKeychain.m */,
 				42AC19FB2A63ADC400BA1584 /* SAMKeychainQuery.h */,
@@ -2247,7 +2240,6 @@
 				AE5882F51A6F47E10070536A /* Images.xcassets */,
 				B1F1896F2E011C1100E24425 /* DrawSortAdapter.bundle */,
 				AEB8367F1A772C2F00E7493E /* Runner-Prefix.pch */,
-				6195CD3E1A8C74DB00F3E239 /* NTESGlobalMacro.h */,
 				4278082C2C12BA7C00C18684 /* NoticeHelper.h */,
 				4278082D2C12BA7C00C18684 /* NoticeHelper.m */,
 				420C806F2C056F9D0007C618 /* EdgeRequest.h */,
@@ -2856,6 +2848,10 @@
 				61A8EF331BB67F0900033FB8 /* UIResponder+NameAccount.m */,
 				839E2BCD2060F45C00EB1AA7 /* UITextView+Zone.h */,
 				839E2BCE2060F45C00EB1AA7 /* UITextView+Zone.m */,
+				04126DE72DCC5B6A000E1081 /* NSArray+Safe.h */,
+				04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */,
+				04126DE92DCC5B6A000E1081 /* NSMutableDictionary+Safe.h */,
+				04126DEA2DCC5B6A000E1081 /* NSMutableDictionary+Safe.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";

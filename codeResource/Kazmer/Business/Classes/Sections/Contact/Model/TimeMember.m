@@ -76,7 +76,7 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)atRecording{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }
@@ -117,7 +117,7 @@
 }
 
 //: - (NSString *)userId{
-- (NSString *)distanceRandom{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.info.infoId;
 }

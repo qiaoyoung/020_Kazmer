@@ -111,7 +111,7 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 @interface OldFrameView(InputText)
 
 //: - (NSRange)selectedRange;
-- (NSRange)info;
+- (NSRange)selectedRange;
 
 //: - (void)setPlaceHolder:(NSString *)placeHolder;
 - (void)setUtiliser:(NSString *)placeHolder;

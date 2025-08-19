@@ -256,7 +256,7 @@ NSString *const showButtonName = @"NIMTextMessageLabelLinkData";
                 //: self.textView.actionDelegate = vc;
                 self.textView.actionDelegate = vc;
                 //: self.textView.config = vc.sessionConfig;
-                self.textView.config = vc.produceConfig;
+                self.textView.config = vc.sessionConfig;
             }
         //: }];
         }];

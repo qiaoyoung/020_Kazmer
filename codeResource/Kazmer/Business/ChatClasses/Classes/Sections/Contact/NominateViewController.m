@@ -518,7 +518,7 @@
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.config.ignitionKey) {
+    if (self.config.showSelectHeaderview) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.setGroupnameView];

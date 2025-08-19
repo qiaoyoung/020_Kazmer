@@ -26,8 +26,8 @@
 //: @property (nonatomic,strong) NSMutableArray *pendingMessages; 
 @property (nonatomic,strong) NSMutableArray *pendingMessages; //缓存的插入消息,聊天室需要在另外个线程计算高度,减少UI刷新
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
-@property (nonatomic,strong) id<MessagePinImage> sessionConfig;
+//: @property (nonatomic,strong) id<FFFSessionConfig>sessionConfig;
+@property (nonatomic,strong) id<MessagePinImage>sessionConfig;
 
 //: @end
 @end
@@ -46,8 +46,8 @@
     if (self) {
         //: _session = session;
         _session = session;
-        //: _sessionConfig = sessionConfig;
-        _sessionConfig = sessionConfig;
+        //: _sessionConfig =sessionConfig;
+        _sessionConfig =sessionConfig;
         //: _pendingMessages = [[NSMutableArray alloc] init];
         _pendingMessages = [[NSMutableArray alloc] init];
         //: _dataSource = [[FFFSessionMsgDatasource alloc] initWithSession:_session config:_sessionConfig];
