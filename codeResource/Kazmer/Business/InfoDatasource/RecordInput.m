@@ -92,7 +92,7 @@ static NSString *const user_dataUrl = @"SavedDomainKey";
 
         //        _apnsCername = @"DEVELOPER";
         //: _apnsCername = @"pushDev";
-        _apnsCername = StringFromPhraseData(notiPurePeaceIdent);
+        _apnsCername = @"push_Kazmer_release";
         //: _pkCername = @"pushkit_voice_test";
         _pkCername = StringFromPhraseData(app_formeTitle);
         //: _allowAutoLogin = YES; 
