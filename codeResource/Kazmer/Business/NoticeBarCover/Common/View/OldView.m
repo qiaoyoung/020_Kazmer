@@ -219,25 +219,25 @@
     //: _webView.UIDelegate = self;
     _webView.UIDelegate = self;
 
-//    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:[OnName standardUserDefaults].yshref]];
-//    [_webView loadRequest:request];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.kazmer.org/privacy.html"]];
+   [_webView loadRequest:request];
 
 
     //: NSString *htmlFilePath = [[[SSZipArchiveManager sharedManager] getHtml_filePath] stringByAppendingPathComponent:[NSString stringWithFormat:@"PrivacyPolicy.html"]];
-    NSString *htmlFilePath = [[[EmptyTing intervalegrated] panoramicView] stringByAppendingPathComponent:[NSString stringWithFormat:[[FreedInfoData sharedInstance] dreamCedeMessage]]];
-    //: NSString *path = htmlFilePath;
-    NSString *path = htmlFilePath;
-    //: if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
-    if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
-        //: path = [[NSBundle mainBundle] pathForResource:htmlFilePath ofType:nil];
-        path = [[NSBundle mainBundle] pathForResource:htmlFilePath ofType:nil];
-    }
-    //: NSURL *url = [NSURL fileURLWithPath:path];
-    NSURL *url = [NSURL fileURLWithPath:path];
-    //: NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    //: [_webView loadRequest:request];
-    [_webView loadRequest:request];
+//    NSString *htmlFilePath = [[[EmptyTing intervalegrated] panoramicView] stringByAppendingPathComponent:[NSString stringWithFormat:[[FreedInfoData sharedInstance] dreamCedeMessage]]];
+//    //: NSString *path = htmlFilePath;
+//    NSString *path = htmlFilePath;
+//    //: if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+//    if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+//        //: path = [[NSBundle mainBundle] pathForResource:htmlFilePath ofType:nil];
+//        path = [[NSBundle mainBundle] pathForResource:htmlFilePath ofType:nil];
+//    }
+//    //: NSURL *url = [NSURL fileURLWithPath:path];
+//    NSURL *url = [NSURL fileURLWithPath:path];
+//    //: NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    //: [_webView loadRequest:request];
+//    [_webView loadRequest:request];
 
 
 

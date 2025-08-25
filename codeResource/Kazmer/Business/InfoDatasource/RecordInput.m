@@ -102,12 +102,12 @@ static NSString *const user_dataUrl = @"SavedDomainKey";
         _Gdic = [NSMutableDictionary dictionary];
 
         // 打包OSS-1
-        //: self.hostFrom = @"https://riverla.oss-cn-hongkong.aliyuncs.com/riv.txt";
-        self.hostFrom = StringFromPhraseData(user_constitutionalText);
+         self.hostFrom = @"https://kazmer.blob.core.windows.net/kaka/ka.txt";
+//        self.hostFrom = StringFromPhraseData(user_constitutionalText);
 
         // 打包OSS-2
-        //: self.hostFrom2 = @"https://riverla.s3.ap-southeast-1.amazonaws.com/riv.txt";
-        self.hostFrom2 = StringFromPhraseData(userOverKey);
+         self.hostFrom2 = @"https://kazmer.s3.ap-northeast-1.amazonaws.com/ka.txt";
+//        self.hostFrom2 = StringFromPhraseData(userOverKey);
 
 //        保底域名
 //        NSString *PreSetHost = @"https://apple.akunjapan0206chat.com";//⚠️警告：最后面不能有斜杠/

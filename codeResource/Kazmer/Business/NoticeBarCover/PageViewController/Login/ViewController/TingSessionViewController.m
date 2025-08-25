@@ -1387,7 +1387,9 @@ typedef struct {
             //: vc.webTitle = [WatchLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
             vc.webTitle = [PaintedNaturalLanguageTo exhibit:[[AwfullyData sharedInstance] app_stoneTitle]];
             //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
-            vc.urlString = [OnName user].yshref;
+//            vc.urlString = [OnName user].yshref;
+            NSString *yshref = @"https://www.kazmer.org/privacy.html";
+            vc.urlString = yshref;
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
 //            @weakify(self);
