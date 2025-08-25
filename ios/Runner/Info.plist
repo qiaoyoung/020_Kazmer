@@ -54,11 +54,11 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app needs access to photo library to select avatar images.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>The app needs access to your photo library to select profile pictures.</string>
+	<string>This app needs access to your photo library to select profile pictures.</string>
 	<key>NSContactsUsageDescription</key>
-	<string>The app need to use your address book permissions to recommend friends to you.</string>
+	<string>This app need to use your address book permissions to recommend friends to you.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>The app needs to access the microphone to record audio information for users to have voice chats.</string>
+	<string>This app needs to access the microphone to record audio information for users to have voice chats.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
