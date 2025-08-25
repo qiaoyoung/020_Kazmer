@@ -1,0 +1,1024 @@
+{
+  "users": [
+    {
+      "user_id": "user_001",
+      "profile": {
+        "username": "music_soul_seeker",
+        "display_name": "Sarah Chen",
+        "age": 24,
+        "gender": "female",
+        "location": "Miami, Florida",
+        "occupation": "Digital Marketing Specialist",
+        "bio": "Music is my soul fuel, positive energy is my driving force! ✨ I love electronic music and find inner peace and passion at music festivals.",
+        "avatar": "assets/user/1/user.jpg",
+        "video": "assets/user/1/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Electronic Dance Music", "House", "Trance", "Progressive House"],
+        "favorite_artists": ["Martin Garrix", "David Guetta", "Calvin Harris", "Zedd"],
+        "music_mood": ["Energetic", "Uplifting", "Euphoric", "Positive"],
+        "listening_habits": "Listen to electronic music for at least 2 hours daily, attend local DJ events on weekends"
+      },
+      "festival_experience": {
+        "festival_name": "Ultra Music Festival",
+        "festival_location": "Miami, Florida",
+        "festival_date": "2024-03-22",
+        "festival_type": "Electronic Music Festival",
+        "experience_description": "At Ultra Music Festival, I felt unprecedented energy! The music made me incredibly excited, surrounded by beautiful souls full of positive energy. This was a life-changing experience!",
+                  "highlights": [
+            "Amazing performances on the main stage",
+            "Connecting with music lovers from around the world",
+            "Experiencing the most advanced sound systems",
+            "Feeling collective energy in the crowd"
+          ],
+                  "memorable_moments": [
+            "The excitement when my favorite DJ took the stage",
+            "The joy of dancing with strangers",
+            "The bittersweet feeling when the festival ended"
+          ]
+      },
+              "personal_characteristics": {
+          "personality_traits": ["Optimistic", "Passionate", "Social", "Adventurous", "Positive"],
+          "interests": ["Music", "Travel", "Photography", "Dancing", "Meeting new people"],
+          "life_philosophy": "Music is the bridge that connects souls, every music festival is a journey of spiritual purification",
+          "social_media_style": "Energetic and positive sharing, loves using emojis to express emotions"
+        },
+              "festival_style": {
+          "outfit_preference": "Colorful clothing, comfortable dance shoes, fluorescent accessories",
+          "dance_style": "Free movement, following music rhythms",
+          "social_behavior": "Actively communicate with people around, share music experiences",
+          "energy_level": "Extremely high, can dance for hours continuously"
+        },
+              "future_plans": {
+          "upcoming_festivals": ["Tomorrowland", "EDC Las Vegas", "Electric Zoo"],
+          "music_goals": "Learn DJ skills, create my own electronic music",
+          "travel_plans": "Plan to attend European music festival tours"
+        },
+      "engagement_metrics": {
+        "posts_count": 156,
+        "followers": 2847,
+        "following": 892,
+        "engagement_rate": 0.087,
+                  "favorite_content_type": "Festival live videos and photos"
+      },
+      "tags": ["#UltraMusicFestival", "#EDM", "#MusicFestival", "#PositiveVibes", "#ElectronicMusic", "#FestivalLife", "#MusicLover", "#DanceMusic"]
+    },
+    {
+      "user_id": "user_002",
+      "profile": {
+        "username": "bay_area_music_lover",
+        "display_name": "Alex Rodriguez",
+        "age": 28,
+        "gender": "male",
+        "location": "San Francisco Bay Area, California",
+        "occupation": "Software Engineer",
+        "bio": "While living in the Bay Area, I kept saying I would attend this event one year & I finally did! The music festival helped me rediscover my passion for life.",
+        "avatar": "assets/user/2/user.jpg",
+        "video": "assets/user/2/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Indie Rock", "Alternative", "Folk", "Indie Pop"],
+        "favorite_artists": ["Tame Impala", "The Strokes", "Arctic Monkeys", "Vampire Weekend"],
+        "music_mood": ["Chill", "Melancholic", "Nostalgic", "Thoughtful"],
+        "listening_habits": "Listen to indie music while working, attend local music venues on weekends"
+      },
+      "festival_experience": {
+        "festival_name": "Outside Lands Music Festival",
+        "festival_location": "San Francisco, California",
+        "festival_date": "2024-08-09",
+        "festival_type": "Multi-Genre Music Festival",
+        "experience_description": "After living in the Bay Area for so long, I finally attended Outside Lands this year! This festival helped me rediscover my love for music and introduced me to many like-minded friends.",
+                  "highlights": [
+            "Enjoying music in the beautiful setting of Golden Gate Park",
+            "Tasting various foods and wines",
+            "Watching multiple amazing indie music performances",
+            "Experiencing San Francisco's unique cultural atmosphere"
+          ],
+                  "memorable_moments": [
+            "The excitement of attending my first major music festival",
+            "Listening to my favorite band perform under the sunset",
+            "Deep conversations with Bay Area music enthusiasts"
+          ]
+      },
+              "personal_characteristics": {
+          "personality_traits": ["Rational", "Introverted", "Focused", "Perfectionist", "Patient"],
+          "interests": ["Programming", "Music", "Technology", "Outdoor activities", "Food"],
+          "life_philosophy": "Technology changes the world, music heals the soul",
+          "social_media_style": "Concise and professional sharing, focuses on content quality"
+        },
+              "festival_style": {
+          "outfit_preference": "Simple and comfortable clothing, sneakers, practical accessories",
+          "dance_style": "Gentle swaying, focused on appreciating music",
+          "social_behavior": "Selective socializing, deep conversations",
+          "energy_level": "Moderate, enjoys music while maintaining rationality"
+        },
+              "future_plans": {
+          "upcoming_festivals": ["Coachella", "Bonnaroo", "Lollapalooza"],
+          "music_goals": "Learn guitar, create my own music",
+          "travel_plans": "Plan to attend more American music festivals"
+        },
+      "engagement_metrics": {
+        "posts_count": 89,
+        "followers": 1245,
+        "following": 567,
+        "engagement_rate": 0.065,
+                  "favorite_content_type": "Festival live photos and music sharing"
+      },
+      "tags": ["#OutsideLands", "#IndieMusic", "#BayArea", "#MusicFestival", "#IndieRock", "#SanFrancisco", "#MusicLover", "#FestivalLife"]
+    },
+    {
+      "user_id": "user_003",
+      "profile": {
+        "username": "summer_shred_rocker",
+        "display_name": "Mike Thompson",
+        "age": 26,
+        "gender": "male",
+        "location": "Denver, Colorado",
+        "occupation": "Rock Band Guitarist",
+        "bio": "Thank you to everyone who came out to see us at Summer Shred Music Festival! Your energy and support made us feel incredibly honored. Rock never dies!",
+        "avatar": "assets/user/3/user.jpg",
+        "video": "assets/user/3/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Rock", "Metal", "Punk", "Alternative Rock"],
+        "favorite_artists": ["Metallica", "Foo Fighters", "Green Day", "Red Hot Chili Peppers"],
+        "music_mood": ["Aggressive", "Energetic", "Rebellious", "Powerful"],
+        "listening_habits": "Practice guitar daily, create new songs, attend band rehearsals"
+      },
+      "festival_experience": {
+        "festival_name": "Summer Shred Music Festival",
+        "festival_location": "Denver, Colorado",
+        "festival_date": "2024-07-15",
+        "festival_type": "Rock Music Festival",
+        "experience_description": "Performing at Summer Shred Music Festival was an unforgettable experience! The audience's energy and support made us feel incredibly honored. Seeing so many people rocking out to our music was indescribable.",
+                  "highlights": [
+            "Performing original songs on a large stage",
+            "Passionate interaction with the audience",
+            "Networking with other rock bands",
+            "Experiencing professional performance equipment"
+          ],
+                  "memorable_moments": [
+            "The nervousness and excitement when the performance started",
+            "The touching moment when the audience sang along to our songs",
+            "Interacting with fans after the performance"
+          ]
+      },
+              "personal_characteristics": {
+          "personality_traits": ["Passionate", "Rebellious", "Focused", "Team-oriented", "Persistent"],
+          "interests": ["Music composition", "Guitar playing", "Band performances", "Music production", "Rock culture"],
+          "life_philosophy": "Music is the best way to express oneself, rock spirit never dies",
+          "social_media_style": "Direct and authentic sharing, focuses on fan interaction"
+        },
+              "festival_style": {
+          "outfit_preference": "Black leather jackets, jeans, rock t-shirts, boots",
+          "dance_style": "Intense headbanging, following heavy metal rhythms",
+          "social_behavior": "Passionately interact with fans, share music philosophy",
+          "energy_level": "Extremely high, explosive energy during performances"
+        },
+              "future_plans": {
+          "upcoming_festivals": ["Rock on the Range", "Download Festival", "Wacken Open Air"],
+          "music_goals": "Release band album, go on national tour",
+          "travel_plans": "Plan to attend more international rock music festivals"
+        },
+      "engagement_metrics": {
+        "posts_count": 234,
+        "followers": 5678,
+        "following": 1234,
+        "engagement_rate": 0.123,
+                  "favorite_content_type": "Performance videos and music creation process"
+      },
+      "tags": ["#SummerShred", "#RockMusic", "#RockBand", "#MusicFestival", "#RockAndRoll", "#Guitar", "#LiveMusic", "#RockFestival"]
+    },
+    {
+      "user_id": "user_004",
+      "profile": {
+        "username": "festival_shoulder_rider",
+        "display_name": "Emma Wilson",
+        "age": 22,
+        "gender": "female",
+        "location": "Austin, Texas",
+        "occupation": "College Student",
+        "bio": "To complete your music festival experience, you must try riding on your friend's shoulders! This is one of the most classic festival experiences.",
+        "avatar": "assets/user/4/user.jpg",
+        "video": "assets/user/4/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Pop", "Hip Hop", "R&B", "Pop Rock"],
+        "favorite_artists": ["Taylor Swift", "Drake", "Beyoncé", "Post Malone"],
+        "music_mood": ["Fun", "Upbeat", "Confident", "Celebratory"],
+        "listening_habits": "Listen to music anytime, anywhere, love dancing to the rhythm"
+      },
+      "festival_experience": {
+        "festival_name": "Austin City Limits Music Festival",
+        "festival_location": "Austin, Texas",
+        "festival_date": "2024-10-05",
+        "festival_type": "Multi-Genre Music Festival",
+        "experience_description": "At ACL Music Festival, I experienced the most classic festival activity - riding on my friend's shoulders! The view from above was completely different, with a broader perspective and more震撼的音乐. This is an experience every festival lover should try!",
+        "highlights": [
+          "Watching performances while riding on friend's shoulders",
+          "Taking panoramic photos of the festival from above",
+          "Creating unforgettable memories with friends",
+          "Experiencing classic festival traditions"
+        ],
+        "memorable_moments": [
+          "The excitement of riding on friend's shoulders for the first time",
+          "Seeing the spectacular view of the entire festival from above",
+          "Sharing this special moment with friends"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Lively", "Adventurous", "Friendly", "Optimistic", "Playful"],
+        "interests": ["Music", "Dancing", "Photography", "Travel", "Socializing"],
+        "life_philosophy": "Life is about creating beautiful memories, and music festivals are the best way to do it",
+        "social_media_style": "Lively and fun sharing, loves documenting life moments"
+      },
+      "festival_style": {
+        "outfit_preference": "Fashionable casual clothing, comfortable shoes, cute accessories",
+        "dance_style": "Lively dancing, following pop music rhythms",
+        "social_behavior": "Intimate interaction with friends, creating joyful atmosphere",
+        "energy_level": "High, loves participating in various festival activities"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Coachella", "Lollapalooza", "Governors Ball"],
+        "music_goals": "Learn more dance techniques, try music creation",
+        "travel_plans": "Plan to attend more international music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 198,
+        "followers": 3456,
+        "following": 789,
+        "engagement_rate": 0.095,
+        "favorite_content_type": "Festival lifestyle records and dance videos"
+      },
+      "tags": ["#ACL", "#MusicFestival", "#ShoulderRide", "#FestivalLife", "#PopMusic", "#Austin", "#MusicLover", "#FestivalFun"]
+    },
+    {
+      "user_id": "user_005",
+      "profile": {
+        "username": "canadian_vacation_lover",
+        "display_name": "Jennifer Davis",
+        "age": 35,
+        "gender": "female",
+        "location": "Toronto, Canada",
+        "occupation": "Marketing Manager",
+        "bio": "Vacation photo dump 🇨🇦🥰 Spent the first half with the kids around home and a few days of wonderful time in Halifax.",
+        "avatar": "assets/user/5/user.jpg",
+        "video": "assets/user/5/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Country", "Folk", "Indie", "Classic Rock"],
+        "favorite_artists": ["Shania Twain", "Neil Young", "Arcade Fire", "The Tragically Hip"],
+        "music_mood": ["Nostalgic", "Warm", "Family-friendly", "Relaxing"],
+        "listening_habits": "Listen to music while driving, play background music during family gatherings"
+      },
+      "festival_experience": {
+        "festival_name": "Halifax Pop Explosion",
+        "festival_location": "Halifax, Nova Scotia, Canada",
+        "festival_date": "2024-10-18",
+        "festival_type": "Indie Music Festival",
+        "experience_description": "Spent a few wonderful days in Halifax, attending the famous local music festival. The first half was spent with the kids around home, and the second half I enjoyed the festival fun alone. It was a perfect balance of family time and personal music experience.",
+        "highlights": [
+          "Enjoying music in the beautiful coastal city",
+          "Experiencing the music culture of Canada's East Coast",
+          "Watching multiple amazing indie music performances",
+          "Tasting local seafood delicacies"
+        ],
+        "memorable_moments": [
+          "The feeling of listening to music at Halifax harbor",
+          "Conversations with local music enthusiasts",
+          "Enjoying alone time while missing family"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Balanced", "Mature", "Caring", "Independent", "Grateful"],
+        "interests": ["Family", "Travel", "Music", "Photography", "Food"],
+        "life_philosophy": "Balancing work, family and personal interests is the key to a happy life",
+        "social_media_style": "Warm and authentic sharing, focusing on family and life balance"
+      },
+      "festival_style": {
+        "outfit_preference": "Comfortable and practical clothing, suitable for long periods of standing",
+        "dance_style": "Gentle swaying, enjoying the musical atmosphere",
+        "social_behavior": "Selective socializing, enjoying alone time",
+        "energy_level": "Moderate, focusing on enjoyment rather than excessive consumption"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Osheaga", "WayHome", "Field Trip"],
+        "music_goals": "Attend more music activities with family",
+        "travel_plans": "Plan to take kids to family-friendly music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 267,
+        "followers": 1890,
+        "following": 456,
+        "engagement_rate": 0.078,
+        "favorite_content_type": "Family life and travel records"
+      },
+      "tags": ["#HalifaxPopExplosion", "#Canada", "#MusicFestival", "#Vacation", "#Halifax", "#CanadianMusic", "#IndieMusic", "#FamilyTime"]
+    },
+    {
+      "user_id": "user_006",
+      "profile": {
+        "username": "embargo_villa_traveler",
+        "display_name": "Dmitri Petrov",
+        "age": 29,
+        "gender": "male",
+        "location": "Moscow, Russia",
+        "occupation": "Travel Blogger",
+        "bio": "Music festival trip 2025 @embargo_villa Spinning carousel ➡️➡️➡️ #trip2025 #embargo #musictrip2025 #musicfestival",
+        "avatar": "assets/user/6/user.jpg",
+        "video": "assets/user/6/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Techno", "House", "Electronic", "Progressive"],
+        "favorite_artists": ["Carl Cox", "Richie Hawtin", "Nina Kraviz", "Amelie Lens"],
+        "music_mood": ["Hypnotic", "Deep", "Minimal", "Underground"],
+        "listening_habits": "Listen to electronic music late at night, follow underground music scenes"
+      },
+      "festival_experience": {
+        "festival_name": "Embargo Villa Music Festival",
+        "festival_location": "Croatia",
+        "festival_date": "2025-07-10",
+        "festival_type": "Underground Electronic Music Festival",
+        "experience_description": "Attending the music festival at Embargo Villa was a unique experience! This underground electronic music festival held in the beautiful environment of Croatia, with the carousel at the festival becoming an iconic symbol. This was a true musical pilgrimage.",
+        "highlights": [
+          "Enjoying electronic music in Croatia's beautiful environment",
+          "Experiencing the unique atmosphere of underground music festivals",
+          "The iconic carousel at the music festival",
+          "Connecting with electronic music lovers from around the world"
+        ],
+        "memorable_moments": [
+          "The feeling of listening to Techno music on the carousel",
+          "Musical experience at sunrise",
+          "Deep connection with the underground music scene"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Exploratory", "Avant-garde", "Independent", "Deep thinker", "Adventurous"],
+        "interests": ["Travel", "Electronic music", "Photography", "Cultural exploration", "Underground music"],
+        "life_philosophy": "Music has no borders, travel is the best way to discover oneself",
+        "social_media_style": "Artistic sharing, focusing on the combination of visuals and music"
+      },
+      "festival_style": {
+        "outfit_preference": "Black minimalist clothing, comfortable sneakers",
+        "dance_style": "Deep body movement, following Techno rhythms",
+        "social_behavior": "Selective socializing, deep exchange of musical concepts",
+        "energy_level": "Enduring, able to immerse in music for long periods"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Awakenings", "Time Warp", "ADE"],
+        "music_goals": "Explore more underground music scenes, create electronic music",
+        "travel_plans": "Plan to attend more European electronic music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 445,
+        "followers": 8923,
+        "following": 2345,
+        "engagement_rate": 0.156,
+        "favorite_content_type": "Travel records and festival live videos"
+      },
+      "tags": ["#EmbargoVilla", "#MusicFestival", "#Trip2025", "#Techno", "#Croatia", "#ElectronicMusic", "#Underground", "#FestivalLife"]
+    },
+    {
+      "user_id": "user_007",
+      "profile": {
+        "username": "latin_village_dancer",
+        "display_name": "Maria Gonzalez",
+        "age": 23,
+        "gender": "female",
+        "location": "Barcelona, Spain",
+        "occupation": "Dance Instructor",
+        "bio": "One day at Latin Village = lifetime of memories 💫 17-08-2025 @latinvillage_festival #LatinVillage #FestivalLife",
+        "avatar": "assets/user/7/user.jpg",
+        "video": "assets/user/7/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Latin", "Salsa", "Reggaeton", "Bachata", "Merengue"],
+        "favorite_artists": ["Bad Bunny", "J Balvin", "Shakira", "Marc Anthony"],
+        "music_mood": ["Passionate", "Rhythmic", "Energetic", "Cultural"],
+        "listening_habits": "Listen to Latin music during daily dance practice, attend Latin dance parties on weekends"
+      },
+      "festival_experience": {
+        "festival_name": "Latin Village Festival",
+        "festival_location": "Barcelona, Spain",
+        "festival_date": "2025-08-17",
+        "festival_type": "Latin Music Festival",
+        "experience_description": "One day at Latin Village music festival created memories to last a lifetime! This Latin-flavored music festival let me feel the charm of my hometown culture, with dance and music perfectly combined.",
+        "highlights": [
+          "Experienced the most authentic Latin music culture",
+          "Connected with Latin dancers from around the world",
+          "Learned new dance techniques",
+          "Tasted authentic Latin cuisine"
+        ],
+        "memorable_moments": [
+          "Passionate moments dancing Salsa in the crowd",
+          "Creating dance memories with strangers",
+          "The reluctance and satisfaction after the festival ended"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Passionate", "Energetic", "Culturally proud", "Social", "Artistic"],
+        "interests": ["Dancing", "Latin music", "Cultural promotion", "Travel", "Food"],
+        "life_philosophy": "Dance is the best way to express emotions, music is the bridge connecting cultures",
+        "social_media_style": "Energetic dance video sharing, focusing on cultural promotion"
+      },
+      "festival_style": {
+        "outfit_preference": "Colorful Latin dance costumes, comfortable dance shoes",
+        "dance_style": "Professional Latin dance techniques, following rhythmic movements",
+        "social_behavior": "Actively teach dancing, share Latin culture",
+        "energy_level": "Extremely high, able to dance continuously for hours"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Carnival", "Salsa Congress", "Latin Grammy"],
+        "music_goals": "Open a Latin dance studio, promote Latin culture",
+        "travel_plans": "Plan to attend more international Latin music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 334,
+        "followers": 5678,
+        "following": 1234,
+        "engagement_rate": 0.134,
+        "favorite_content_type": "Dance videos and Latin music sharing"
+      },
+      "tags": ["#LatinVillage", "#LatinMusic", "#Salsa", "#Dance", "#Barcelona", "#FestivalLife", "#LatinCulture", "#Reggaeton"]
+    },
+    {
+      "user_id": "user_008",
+      "profile": {
+        "username": "grape_festival_enthusiast",
+        "display_name": "Luca Rossi",
+        "age": 31,
+        "gender": "male",
+        "location": "Tuscany, Italy",
+        "occupation": "Wine Sommelier",
+        "bio": "Grape festival day 2 🍇 Enjoying music and wine in the beautiful vineyards of Tuscany, this is the most wonderful time in Italy.",
+        "avatar": "assets/user/8/user.jpg",
+        "video": "assets/user/8/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Italian Folk", "Classical", "Jazz", "Opera"],
+        "favorite_artists": ["Andrea Bocelli", "Ludovico Einaudi", "Ennio Morricone"],
+        "music_mood": ["Elegant", "Sophisticated", "Cultural", "Relaxing"],
+        "listening_habits": "Listen to classical music while wine tasting, play Italian folk songs during dinner"
+      },
+      "festival_experience": {
+        "festival_name": "Tuscany Grape Festival",
+        "festival_location": "Tuscany, Italy",
+        "festival_date": "2024-09-15",
+        "festival_type": "Cultural Music Festival",
+        "experience_description": "The second day of the grape festival was spent in the beautiful vineyards of Tuscany, where the perfect combination of music and wine made me feel the essence of Italian culture. This was an elegant and unforgettable experience.",
+        "highlights": [
+          "Enjoying classical music performances in the vineyard",
+          "Tasting the finest wines of Tuscany",
+          "Experiencing Italian traditional music culture",
+          "Relaxing in the beautiful countryside environment"
+        ],
+        "memorable_moments": [
+          "The feeling of listening to opera in the vineyard at sunset",
+          "Deep conversations with local winemakers",
+          "Enjoying the beauty of Italian slow living"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Elegant", "Refined taste", "Cultured", "Patient", "Detail-oriented"],
+        "interests": ["Wine", "Classical music", "Italian culture", "Fine dining", "Art"],
+        "life_philosophy": "Life needs to be savored slowly, music and wine are the finest pleasures",
+        "social_media_style": "Elegant sharing, focusing on quality and details"
+      },
+      "festival_style": {
+        "outfit_preference": "Elegant casual wear, comfortable leather shoes",
+        "dance_style": "Elegant waltz, following classical music",
+        "social_behavior": "Deep conversations, sharing cultural insights",
+        "energy_level": "Gentle, focusing on enjoyment and appreciation"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Verona Opera Festival", "Venice Music Festival"],
+        "music_goals": "Learn piano, create Italian-style music",
+        "travel_plans": "Plan to attend more European classical music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 189,
+        "followers": 2345,
+        "following": 678,
+        "engagement_rate": 0.089,
+        "favorite_content_type": "Wine tasting and classical music sharing"
+      },
+      "tags": ["#GrapeFestival", "#Tuscany", "#Wine", "#ItalianMusic", "#Classical", "#FestivalLife", "#Italy", "#Culture"]
+    },
+    {
+      "user_id": "user_009",
+      "profile": {
+        "username": "bittersweet_festival_lover",
+        "display_name": "Anna Kowalski",
+        "age": 25,
+        "gender": "female",
+        "location": "Warsaw, Poland",
+        "occupation": "Graphic Designer",
+        "bio": "Final day of the festival 💫 @bittersweetmusicfestival showed how beautiful shared moments can be.",
+        "avatar": "assets/user/9/user.jpg",
+        "video": "assets/user/9/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Indie Pop", "Alternative", "Folk", "Dream Pop"],
+        "favorite_artists": ["The xx", "Beach House", "Bon Iver", "Lana Del Rey"],
+        "music_mood": ["Melancholic", "Dreamy", "Emotional", "Nostalgic"],
+        "listening_habits": "Listen to indie music while working, dream pop music at night"
+      },
+      "festival_experience": {
+        "festival_name": "Bittersweet Music Festival",
+        "festival_location": "Warsaw, Poland",
+        "festival_date": "2024-07-28",
+        "festival_type": "Indie Music Festival",
+        "experience_description": "The final day of Bittersweet music festival deeply moved me, this festival showed how beautiful shared moments can be. Sharing music with friends and creating unforgettable memories.",
+        "highlights": [
+          "Enjoying indie music in beautiful outdoor environment",
+          "Creating beautiful memories with friends",
+          "Experiencing Poland's indie music scene",
+          "Touching moments on the festival's final day"
+        ],
+        "memorable_moments": [
+          "Listening to favorite bands perform with friends",
+          "The reluctance when the festival ended",
+          "The warmth of sharing musical experiences with strangers"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Sensitive", "Artistic", "Introverted", "Deep thinker", "Nostalgic"],
+        "interests": ["Design", "Indie music", "Photography", "Art", "Travel"],
+        "life_philosophy": "Art and music are the best ways to express inner emotions",
+        "social_media_style": "Artistic sharing, focusing on emotional expression"
+      },
+      "festival_style": {
+        "outfit_preference": "Simple artistic style clothing, comfortable shoes",
+        "dance_style": "Gentle swaying, focused on feeling the music",
+        "social_behavior": "Intimate interaction with friends, selective socializing",
+        "energy_level": "Moderate, focusing on emotional experience"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Off Festival", "Open'er Festival"],
+        "music_goals": "Create my own music, design music festival posters",
+        "travel_plans": "Plan to attend more European indie music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 245,
+        "followers": 3456,
+        "following": 890,
+        "engagement_rate": 0.102,
+        "favorite_content_type": "Art design and music sharing"
+      },
+      "tags": ["#BittersweetFestival", "#IndieMusic", "#Poland", "#FestivalLife", "#IndiePop", "#Warsaw", "#MusicLover", "#Art"]
+    },
+    {
+      "user_id": "user_010",
+      "profile": {
+        "username": "escape_festival_explorer",
+        "display_name": "Pierre Dubois",
+        "age": 27,
+        "gender": "male",
+        "location": "Paris, France",
+        "occupation": "Sound Engineer",
+        "bio": "𝐄𝐬𝐤𝐚𝐩𝐞 𝐟𝐞𝐬𝐭𝐢𝐯𝐚𝐥 🪅 Microwave sounds, friends and a crazy music festival.",
+        "avatar": "assets/user/10/user.jpg",
+        "video": "assets/user/10/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Experimental", "Ambient", "IDM", "Post-Rock"],
+        "favorite_artists": ["Aphex Twin", "Boards of Canada", "Sigur Rós", "Godspeed You! Black Emperor"],
+        "music_mood": ["Experimental", "Atmospheric", "Complex", "Innovative"],
+        "listening_habits": "Listen to experimental music while working, ambient music late at night"
+      },
+      "festival_experience": {
+        "festival_name": "Escape Festival",
+        "festival_location": "Paris, France",
+        "festival_date": "2024-06-20",
+        "festival_type": "Experimental Music Festival",
+        "experience_description": "Escape festival was a crazy experimental music experience! Microwave sounds, friends and this crazy festival perfectly combined. As a sound engineer, I was deeply attracted by these innovative sound designs.",
+        "highlights": [
+          "Experienced cutting-edge experimental music technology",
+          "Exchanged ideas with fellow sound engineers",
+          "Watched innovative sound art performances",
+          "Enjoyed music in unique venue environments"
+        ],
+        "memorable_moments": [
+          "The shock of hearing unprecedented sound design",
+          "Exploring experimental music with friends",
+          "Learning new audio techniques at the festival"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Innovative", "Tech-oriented", "Experimental", "Focused", "Avant-garde"],
+        "interests": ["Sound engineering", "Experimental music", "Technology", "Art", "Innovation"],
+        "life_philosophy": "Sound is the new frontier of art, technology drives musical development",
+        "social_media_style": "Technical sharing, focusing on innovation and experimentation"
+      },
+      "festival_style": {
+        "outfit_preference": "Simple tech-style clothing, comfortable shoes",
+        "dance_style": "Focused listening, slight body movement",
+        "social_behavior": "Deep exchanges with peers, sharing technical insights",
+        "energy_level": "Focused, emphasizing technical experience"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Sonar", "Mutek", "CTM Festival"],
+        "music_goals": "Create experimental music, develop new audio technologies",
+        "travel_plans": "Plan to attend more international experimental music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 378,
+        "followers": 4567,
+        "following": 1234,
+        "engagement_rate": 0.145,
+        "favorite_content_type": "Technical sharing and experimental music videos"
+      },
+      "tags": ["#EscapeFestival", "#Experimental", "#Paris", "#SoundEngineering", "#IDM", "#FestivalLife", "#Innovation", "#Technology"]
+    },
+    {
+      "user_id": "user_011",
+      "profile": {
+        "username": "coachella_dreamer",
+        "display_name": "Isabella Martinez",
+        "age": 21,
+        "gender": "female",
+        "location": "Los Angeles, California",
+        "occupation": "Fashion Student",
+        "bio": "Is this the real life? Is this just fantasy? @coachella 🫧🎡❤️_🔥✨ I feel extremely privileged to experience this magical place.",
+        "avatar": "assets/user/11/user.jpg",
+        "video": "assets/user/11/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Pop", "Indie Pop", "Alternative", "Dream Pop"],
+        "favorite_artists": ["Lana Del Rey", "The Weeknd", "Tame Impala", "Billie Eilish"],
+        "music_mood": ["Dreamy", "Romantic", "Mysterious", "Ethereal"],
+        "listening_habits": "Listen to pop music daily, love listening to dreamy music at night"
+      },
+      "festival_experience": {
+        "festival_name": "Coachella Valley Music and Arts Festival",
+        "festival_location": "Indio, California",
+        "festival_date": "2024-04-12",
+        "festival_type": "Multi-Genre Music Festival",
+        "experience_description": "The experience at Coachella was like a dream! Is this the real life? Is this just fantasy? I feel extremely privileged to experience this magical place. Music, art and fashion perfectly combined.",
+        "highlights": [
+          "Listening to music under the iconic ferris wheel",
+          "Experiencing cutting-edge art installations",
+          "Watching multiple amazing pop music performances",
+          "Connecting with fashion influencers"
+        ],
+        "memorable_moments": [
+          "Listening to favorite artists perform under the sunset",
+          "Creating beautiful memories with friends",
+          "Experiencing Coachella's unique atmosphere"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Romantic", "Fashionable", "Dreamer", "Social", "Artistic"],
+        "interests": ["Fashion", "Music", "Art", "Photography", "Travel"],
+        "life_philosophy": "Life should be as beautiful as a dream, music and art make dreams come true",
+        "social_media_style": "Dreamy sharing, focusing on aesthetics and fashion"
+      },
+      "festival_style": {
+        "outfit_preference": "Fashion-forward clothing, personalized accessories",
+        "dance_style": "Elegant dancing, following dreamy music rhythms",
+        "social_behavior": "Interacting with fashion circle friends, sharing aesthetic insights",
+        "energy_level": "High, loves participating in various art activities"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Stagecoach", "Bonnaroo", "Lollapalooza"],
+        "music_goals": "Design festival clothing, create fashion music videos",
+        "travel_plans": "Plan to attend more international fashion music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 456,
+        "followers": 7890,
+        "following": 2345,
+        "engagement_rate": 0.178,
+        "favorite_content_type": "Fashion photos and festival live videos"
+      },
+      "tags": ["#Coachella", "#PopMusic", "#Fashion", "#FestivalLife", "#California", "#MusicLover", "#Art", "#Dreamy"]
+    },
+    {
+      "user_id": "user_012",
+      "profile": {
+        "username": "coachella_magic_seeker",
+        "display_name": "Sophia Anderson",
+        "age": 24,
+        "gender": "female",
+        "location": "San Diego, California",
+        "occupation": "Event Planner",
+        "bio": "Is this the real life? Is this just fantasy? @coachella 🫧🎡❤️_🔥✨ I feel extremely privileged to experience this magical place.",
+        "avatar": "assets/user/12/user.jpg",
+        "video": "assets/user/12/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Indie", "Alternative", "Folk", "Indie Pop"],
+        "favorite_artists": ["Phoenix", "The Strokes", "Arctic Monkeys", "Vampire Weekend"],
+        "music_mood": ["Chill", "Nostalgic", "Thoughtful", "Uplifting"],
+        "listening_habits": "Listen to indie music while working, attend music events on weekends"
+      },
+      "festival_experience": {
+        "festival_name": "Coachella Valley Music and Arts Festival",
+        "festival_location": "Indio, California",
+        "festival_date": "2024-04-19",
+        "festival_type": "Multi-Genre Music Festival",
+        "experience_description": "Second time attending Coachella, still feels like a dream! This magical place made me rethink what real life is. The festival's magic deeply fascinated me.",
+        "highlights": [
+          "Taking photos in front of iconic art installations",
+          "Experiencing different stage music styles",
+          "Connecting with music lovers from around the world",
+          "Enjoying the beauty of music in the desert"
+        ],
+        "memorable_moments": [
+          "The feeling of listening to indie music under the ferris wheel",
+          "Exploring the festival with friends",
+          "Experiencing Coachella's unique culture"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Organizational skills", "Detail-oriented", "Friendly", "Optimistic", "Creative"],
+        "interests": ["Event planning", "Music", "Photography", "Travel", "Socializing"],
+        "life_philosophy": "Good events can create beautiful memories, music is the bridge connecting people",
+        "social_media_style": "Carefully planned sharing, focusing on details and experiences"
+      },
+      "festival_style": {
+        "outfit_preference": "Comfortable and fashionable clothing, practical accessories",
+        "dance_style": "Easy swaying, enjoying the musical atmosphere",
+        "social_behavior": "Organizing friend activities, sharing music experiences",
+        "energy_level": "Moderate, focusing on enjoyment and documentation"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Outside Lands", "Bonnaroo", "Governors Ball"],
+        "music_goals": "Plan my own music events, promote indie music",
+        "travel_plans": "Plan to attend more American music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 289,
+        "followers": 3456,
+        "following": 890,
+        "engagement_rate": 0.098,
+        "favorite_content_type": "Event planning and festival records"
+      },
+      "tags": ["#Coachella", "#IndieMusic", "#EventPlanning", "#FestivalLife", "#California", "#MusicLover", "#Indie", "#Experience"]
+    },
+    {
+      "user_id": "user_013",
+      "profile": {
+        "username": "warriors_music_fighter",
+        "display_name": "Carlos Rodriguez",
+        "age": 30,
+        "gender": "male",
+        "location": "Madrid, Spain",
+        "occupation": "Fitness Trainer",
+        "bio": "⚔️𝐖𝐄 𝐀𝐑𝐄 𝐖𝐀𝐑𝐑𝐈𝐎𝐑𝐒⚔️ Music is our shield, rhythm is our destiny. A passionate night.",
+        "avatar": "assets/user/13/user.jpg",
+        "video": "assets/user/13/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Rock", "Metal", "Punk", "Hard Rock"],
+        "favorite_artists": ["Metallica", "Iron Maiden", "Slayer", "Megadeth"],
+        "music_mood": ["Aggressive", "Powerful", "Energetic", "Rebellious"],
+        "listening_habits": "Listen to heavy metal music while working out, rock music during daily practice"
+      },
+      "festival_experience": {
+        "festival_name": "Warriors Rock Festival",
+        "festival_location": "Madrid, Spain",
+        "festival_date": "2024-08-30",
+        "festival_type": "Rock and Metal Festival",
+        "experience_description": "⚔️We are warriors⚔️ Music is our shield, rhythm is our destiny. This passionate night made me feel the true power of rock spirit!",
+        "highlights": [
+          "Feeling power in the shock of heavy metal music",
+          "Partying with other rock warriors",
+          "Experiencing the most intense rock performances",
+          "Feeling collective energy in the crowd"
+        ],
+        "memorable_moments": [
+          "The excitement when favorite heavy metal bands took the stage",
+          "Making rock gestures with strangers",
+          "The satisfaction after the festival ended"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Strength", "Passion", "Resilience", "Team spirit", "Fighting spirit"],
+        "interests": ["Fitness", "Rock music", "Combat sports", "Motorcycles", "Adventure"],
+        "life_philosophy": "Music and sports are the best ways to release inner strength",
+        "social_media_style": "Powerful sharing, focusing on passion and energy"
+      },
+      "festival_style": {
+        "outfit_preference": "Black leather jackets, rock t-shirts, boots",
+        "dance_style": "Intense headbanging, following heavy metal rhythms",
+        "social_behavior": "Passionately interact with rock enthusiasts, share music philosophy",
+        "energy_level": "Extremely high, full of explosive power and endurance"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Download Festival", "Wacken Open Air", "Hellfest"],
+        "music_goals": "Form my own rock band, go on tour",
+        "travel_plans": "Plan to attend more international rock music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 567,
+        "followers": 6789,
+        "following": 1456,
+        "engagement_rate": 0.167,
+        "favorite_content_type": "Fitness videos and rock music sharing"
+      },
+      "tags": ["#WarriorsFestival", "#RockMusic", "#Metal", "#Madrid", "#FestivalLife", "#RockAndRoll", "#Warriors", "#HeavyMetal"]
+    },
+    {
+      "user_id": "user_014",
+      "profile": {
+        "username": "fukuoka_electronic_lover",
+        "display_name": "Yuki Tanaka",
+        "age": 26,
+        "gender": "female",
+        "location": "Fukuoka, Japan",
+        "occupation": "Digital Artist",
+        "bio": "Fukuoka at its best - electronic music festival, vibrant streets, and the magic of Totoro. #fukuoka #electronicmusic",
+        "avatar": "assets/user/14/user.jpg",
+        "video": "assets/user/14/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["Electronic", "J-Pop", "Ambient", "Synthwave"],
+        "favorite_artists": ["Perfume", "Kyary Pamyu Pamyu", "YMO", "Cornelius"],
+        "music_mood": ["Futuristic", "Playful", "Nostalgic", "Innovative"],
+        "listening_habits": "Listen to electronic music while working, ambient music during creation"
+      },
+      "festival_experience": {
+        "festival_name": "Fukuoka Electronic Music Festival",
+        "festival_location": "Fukuoka, Japan",
+        "festival_date": "2024-09-08",
+        "festival_type": "Electronic Music Festival",
+        "experience_description": "Fukuoka at its best! Electronic music festival, vibrant streets, and the magic of Totoro. This festival perfectly combines modern electronic music with Japanese traditional culture.",
+        "highlights": [
+          "Enjoying electronic music in Fukuoka's beautiful environment",
+          "Experiencing Japan's unique electronic music culture",
+          "Feeling music on the vibrant streets",
+          "Interacting with Totoro-themed art installations"
+        ],
+        "memorable_moments": [
+          "The feeling of listening to electronic music in front of Totoro installations",
+          "Connecting with Japanese electronic music enthusiasts",
+          "Experiencing Fukuoka's unique cultural atmosphere"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Innovative", "Artistic", "Cultural identity", "Tech-oriented", "Friendly"],
+        "interests": ["Digital art", "Electronic music", "Japanese culture", "Animation", "Technology"],
+        "life_philosophy": "Art and technology are the driving forces of cultural development",
+        "social_media_style": "Artistic sharing, focusing on innovation and culture"
+      },
+      "festival_style": {
+        "outfit_preference": "Fashion-forward clothing, personalized accessories",
+        "dance_style": "Modern dancing, following electronic music rhythms",
+        "social_behavior": "Interacting with art circle friends, sharing creative concepts",
+        "energy_level": "High, loves participating in various art activities"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Fuji Rock", "Summer Sonic", "Ultra Japan"],
+        "music_goals": "Create electronic music, design festival visual arts",
+        "travel_plans": "Plan to attend more Japanese music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 423,
+        "followers": 5678,
+        "following": 1234,
+        "engagement_rate": 0.134,
+        "favorite_content_type": "Digital art works and festival live videos"
+      },
+      "tags": ["#Fukuoka", "#ElectronicMusic", "#Japan", "#FestivalLife", "#DigitalArt", "#Totoro", "#JPop", "#Innovation"]
+    },
+    {
+      "user_id": "user_015",
+      "profile": {
+        "username": "medusa_festival_starter",
+        "display_name": "Diego Morales",
+        "age": 28,
+        "gender": "male",
+        "location": "Valencia, Spain",
+        "occupation": "DJ and Music Producer",
+        "bio": "We started at Medusa Festival 🎶✨ First day, energy at its peak, ready to enjoy every moment.",
+        "avatar": "assets/user/15/user.jpg",
+        "video": "assets/user/15/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["House", "Techno", "Trance", "Progressive"],
+        "favorite_artists": ["Carl Cox", "Richie Hawtin", "Sasha", "John Digweed"],
+        "music_mood": ["Hypnotic", "Energetic", "Deep", "Uplifting"],
+        "listening_habits": "Make music daily, research new electronic music technologies"
+      },
+      "festival_experience": {
+        "festival_name": "Medusa Festival",
+        "festival_location": "Valencia, Spain",
+        "festival_date": "2024-08-02",
+        "festival_type": "Electronic Music Festival",
+        "experience_description": "We started at Medusa Festival! First day, energy at its peak, ready to enjoy every moment. As a DJ, I was deeply attracted by this festival's energy.",
+        "highlights": [
+          "Performing my own music on a large stage",
+          "Connecting with other DJs and producers",
+          "Experiencing the most advanced sound systems",
+          "Enjoying music in the beautiful coastal environment"
+        ],
+        "memorable_moments": [
+          "The nervousness and excitement when the performance started",
+          "Energy interaction with the audience",
+          "Deep exchanges with other musicians"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Passionate", "Focused", "Innovative", "Social", "Tech-oriented"],
+        "interests": ["Music production", "DJ techniques", "Electronic music", "Technology", "Travel"],
+        "life_philosophy": "Music is the bridge connecting souls, technology drives musical development",
+        "social_media_style": "Technical sharing, focusing on music production process"
+      },
+      "festival_style": {
+        "outfit_preference": "Simple black clothing, comfortable shoes",
+        "dance_style": "Professional DJ movements, following music rhythms",
+        "social_behavior": "Deep exchanges with other musicians, sharing technology",
+        "energy_level": "Extremely high, full of passion during performances"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Tomorrowland", "Ultra Europe", "ADE"],
+        "music_goals": "Release my own album, go on world tour",
+        "travel_plans": "Plan to attend more international electronic music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 678,
+        "followers": 8901,
+        "following": 2345,
+        "engagement_rate": 0.189,
+        "favorite_content_type": "Music production process and performance videos"
+      },
+      "tags": ["#MedusaFestival", "#ElectronicMusic", "#DJ", "#Valencia", "#FestivalLife", "#House", "#Techno", "#MusicProduction"]
+    },
+    {
+      "user_id": "user_016",
+      "profile": {
+        "username": "fuji_rock_veteran",
+        "display_name": "Kenji Yamamoto",
+        "age": 32,
+        "gender": "male",
+        "location": "Tokyo, Japan",
+        "occupation": "Music Journalist",
+        "bio": "Fuji Rock first half battle ended. Annual summer event, already the 4th year. This year arrived and immediately got bitten by mosquitoes in 6 places, enjoyed with swollen feet the next day, heard my favorite Yamashita Tatsuro's live performance.",
+        "avatar": "assets/user/16/user.jpg",
+        "video": "assets/user/16/video.mp4"
+      },
+      "music_preferences": {
+        "favorite_genres": ["J-Rock", "Indie", "Folk", "Alternative"],
+        "favorite_artists": ["山下達郎", "Mr. Children", "B'z", "Southern All Stars"],
+        "music_mood": ["Nostalgic", "Melancholic", "Uplifting", "Cultural"],
+        "listening_habits": "Listen to Japanese music while working, research music history"
+      },
+      "festival_experience": {
+        "festival_name": "Fuji Rock Festival",
+        "festival_location": "Naeba, Japan",
+        "festival_date": "2024-07-26",
+        "festival_type": "Multi-Genre Music Festival",
+        "experience_description": "Fuji Rock first half battle ended. Annual summer event, already the 4th year. This year arrived and immediately got bitten by mosquitoes in 6 places, enjoyed with swollen feet the next day, heard my favorite Yamashita Tatsuro's live performance.",
+        "highlights": [
+          "Enjoying music in the beautiful mountain environment",
+          "Heard Yamashita Tatsuro's amazing performance",
+          "Experienced Japan's largest outdoor music festival",
+          "Shared experiences with music enthusiasts"
+        ],
+        "memorable_moments": [
+          "The emotion of hearing Yamashita Tatsuro's live performance",
+          "The beauty of enjoying music in the mountains",
+          "Deep exchanges with music colleagues"
+        ]
+      },
+      "personal_characteristics": {
+        "personality_traits": ["Professional", "Deep thinker", "Cultured", "Patient", "Detail-oriented"],
+        "interests": ["Music criticism", "Japanese music", "Cultural research", "Writing", "Travel"],
+        "life_philosophy": "Music is the carrier of culture, every live performance is a unique experience",
+        "social_media_style": "Professional sharing, focusing on music analysis and cultural interpretation"
+      },
+      "festival_style": {
+        "outfit_preference": "Comfortable and practical clothing, suitable for long periods of standing",
+        "dance_style": "Gentle swaying, focused on appreciating music",
+        "social_behavior": "Communicating with music colleagues, sharing professional insights",
+        "energy_level": "Moderate, focusing on music experience and analysis"
+      },
+      "future_plans": {
+        "upcoming_festivals": ["Summer Sonic", "Rock in Japan", "Countdown Japan"],
+        "music_goals": "Publish music criticism collection, promote Japanese music culture",
+        "travel_plans": "Plan to attend more Japanese music festivals"
+      },
+      "engagement_metrics": {
+        "posts_count": 345,
+        "followers": 4567,
+        "following": 890,
+        "engagement_rate": 0.112,
+        "favorite_content_type": "Music criticism and live performance records"
+      },
+      "tags": ["#FujiRock", "#JRock", "#Japan", "#FestivalLife", "#MusicJournalism", "#YamashitaTatsuro", "#JapaneseMusic", "#Culture"]
+    }
+  ],
+  "metadata": {
+    "total_users": 16,
+    "created_date": "2024-12-19",
+    "description": "Music festival virtual character dataset containing 16 users with different backgrounds and music preferences",
+    "version": "1.0",
+    "categories": {
+      "genres": ["Electronic", "Rock", "Indie", "Pop", "Country", "Techno", "Latin", "Classical", "Experimental", "J-Rock", "House"],
+      "locations": ["Miami", "San Francisco", "Denver", "Austin", "Toronto", "Croatia", "Barcelona", "Tuscany", "Warsaw", "Paris", "Los Angeles", "San Diego", "Madrid", "Fukuoka", "Valencia", "Tokyo"],
+      "age_groups": ["21-35"],
+      "festival_types": ["Electronic", "Multi-Genre", "Rock", "Indie", "Underground", "Latin", "Cultural", "Experimental", "J-Rock"]
+    }
+  }
+}

@@ -1,0 +1,625 @@
+{
+  "festivals": [
+    {
+      "id": "coachella_2025",
+      "name": "Coachella Valley Music and Arts Festival",
+      "description": "One of the world's most iconic music and arts festivals, featuring a diverse lineup of artists across multiple genres, stunning art installations, and the unique desert landscape of California's Coachella Valley.",
+      "location": "Indio, California, USA",
+      "venue": "Empire Polo Club",
+      "start_date": "2025-09-19",
+      "end_date": "2025-09-21",
+      "image": "assets/eve/avt_2.jpg",
+      "features": [
+        "Iconic arched main stage",
+        "Ferris wheel backdrop",
+        "Cylindrical art installations",
+        "Diverse music lineup",
+        "Desert sunset views",
+        "Interactive art experiences",
+        "Food and craft vendors",
+        "Camping options"
+      ],
+      "capacity": "125000",
+      "ticket_price_range": {
+        "min": 499,
+        "max": 999,
+        "currency": "USD"
+      },
+      "headliners": [
+        "TBA - To be announced"
+      ],
+      "art_installations": [
+        "Large cylindrical gradient art piece",
+        "Desert-inspired sculptures",
+        "Interactive light installations",
+        "Environmental art projects"
+      ],
+      "stages": [
+        "Main Stage",
+        "Outdoor Theatre",
+        "Gobi Tent",
+        "Mojave Tent",
+        "Sahara Tent",
+        "Sonora Tent"
+      ],
+      "genres": [
+        "Rock",
+        "Pop",
+        "Hip-Hop",
+        "Electronic",
+        "Indie",
+        "Alternative"
+      ],
+      "special_events": [
+        "Art tours",
+        "Silent disco",
+        "Food festivals",
+        "Sustainability initiatives"
+      ]
+    },
+    {
+      "id": "ultra_2025",
+      "name": "Ultra Music Festival",
+      "description": "The world's premier electronic music festival, known for its spectacular stage designs, pyrotechnics, and world-class DJ performances. Ultra brings together the best in electronic dance music for an unforgettable experience.",
+      "location": "Miami, Florida, USA",
+      "venue": "Bayfront Park",
+      "start_date": "2025-09-26",
+      "end_date": "2025-09-28",
+      "image": "assets/eve/avt_6.jpg",
+      "features": [
+        "Ultra's signature U-shaped main stage",
+        "Massive LED screens",
+        "Fireworks displays",
+        "Flame effects",
+        "International flag displays",
+        "State-of-the-art sound systems",
+        "Laser shows",
+        "Fog machines"
+      ],
+      "capacity": "55000",
+      "ticket_price_range": {
+        "min": 299,
+        "max": 799,
+        "currency": "USD"
+      },
+      "headliners": [
+        "TBA - To be announced"
+      ],
+      "special_effects": [
+        "Large flame pillars",
+        "Fireworks displays",
+        "Laser shows",
+        "Smoke effects",
+        "Confetti cannons",
+        "CO2 jets"
+      ],
+      "stages": [
+        "Main Stage",
+        "Live Stage",
+        "Worldwide Stage",
+        "Resistance Megastructure",
+        "UMF Radio Stage"
+      ],
+      "genres": [
+        "House",
+        "Techno",
+        "Trance",
+        "Dubstep",
+        "Progressive House",
+        "Big Room"
+      ],
+      "special_events": [
+        "Ultra Beach",
+        "Ultra Worldwide",
+        "Resistance events",
+        "After parties"
+      ]
+    },
+    {
+      "id": "tomorrowland_2025",
+      "name": "Tomorrowland",
+      "chinese_name": "明日世界音乐节",
+      "description": "Belgium's legendary electronic music festival, famous for its fairy-tale stage designs, magical atmosphere, and global gathering of music lovers. Tomorrowland creates an immersive fantasy world where music and art collide.",
+      "location": "Boom, Belgium",
+      "venue": "De Schorre",
+      "start_date": "2025-10-03",
+      "end_date": "2025-10-05",
+      "image": "assets/eve/avt_9.jpg",
+      "features": [
+        "Library-themed main stage",
+        "Giant book installations",
+        "International flag ocean",
+        "Fairy-tale castle design",
+        "Global music culture",
+        "Magical forest setting",
+        "Interactive art pieces",
+        "Fantasy decorations"
+      ],
+      "capacity": "400000",
+      "ticket_price_range": {
+        "min": 89,
+        "max": 399,
+        "currency": "EUR"
+      },
+      "headliners": [
+        "TBA - To be announced"
+      ],
+      "stage_themes": [
+        "Library theme",
+        "Historical book displays",
+        "Tim Berg memorial installation",
+        "One World theme",
+        "Writing history concept"
+      ],
+      "stages": [
+        "Mainstage",
+        "Freedom Stage",
+        "Crystal Garden",
+        "Rose Garden",
+        "The Library",
+        "The Rave Cave"
+      ],
+      "genres": [
+        "House",
+        "Techno",
+        "Trance",
+        "Progressive House",
+        "Big Room",
+        "Hardstyle"
+      ],
+      "special_events": [
+        "Tomorrowland Winter",
+        "Tomorrowland Brasil",
+        "Gathering of the tribes",
+        "Global journey events"
+      ]
+    },
+    {
+      "id": "edc_2025",
+      "name": "Electric Daisy Carnival",
+      "description": "Las Vegas' premier electronic music festival, featuring spectacular stage designs, carnival rides, and non-stop entertainment. EDC creates a magical world where music, art, and technology come together for an unforgettable experience.",
+      "location": "Las Vegas, Nevada, USA",
+      "venue": "Las Vegas Motor Speedway",
+      "start_date": "2025-10-10",
+      "end_date": "2025-10-12",
+      "image": "assets/eve/avt_7.jpg",
+      "features": [
+        "Fairy-tale castle stage",
+        "Ferris wheel",
+        "Waterfall installations",
+        "Carnival rides",
+        "All-night performances",
+        "Art cars",
+        "Interactive installations",
+        "Cosmic meadow"
+      ],
+      "capacity": "150000",
+      "ticket_price_range": {
+        "min": 399,
+        "max": 899,
+        "currency": "USD"
+      },
+      "headliners": [
+        "TBA - To be announced"
+      ],
+      "attractions": [
+        "Fairy-tale castle",
+        "Ferris wheel",
+        "Waterfall landscapes",
+        "Art installations",
+        "Carnival games",
+        "Art cars",
+        "Cosmic meadow"
+      ],
+      "stages": [
+        "Kinetic Field",
+        "Circuit Grounds",
+        "Neon Garden",
+        "Bass Pod",
+        "Wasteland",
+        "Quantum Valley",
+        "Stereobloom"
+      ],
+      "genres": [
+        "House",
+        "Techno",
+        "Dubstep",
+        "Trance",
+        "Hardstyle",
+        "Drum & Bass"
+      ],
+      "special_events": [
+        "EDC Orlando",
+        "EDC Mexico",
+        "EDC Korea",
+        "Camp EDC",
+        "Art car experiences"
+      ]
+    },
+    {
+      "id": "lollapalooza_2025",
+      "name": "Lollapalooza",
+      "description": "Chicago's iconic music festival featuring diverse musical acts across multiple genres. Set against the stunning backdrop of the city skyline, Lollapalooza offers a unique urban festival experience with world-class music and art.",
+      "location": "Chicago, Illinois, USA",
+      "venue": "Grant Park",
+      "start_date": "2025-10-17",
+      "end_date": "2025-10-19",
+      "image": "assets/eve/avt_4.jpg",
+      "features": [
+        "City skyline backdrop",
+        "Multiple stage setup",
+        "LED screen displays",
+        "Urban park setting",
+        "Diverse music genres",
+        "Art installations",
+        "Food vendors",
+        "Kidzapalooza"
+      ],
+      "capacity": "100000",
+      "ticket_price_range": {
+        "min": 350,
+        "max": 750,
+        "currency": "USD"
+      },
+      "headliners": [
+        "TBA - To be announced"
+      ],
+      "stages": [
+        "Bud Light Stage",
+        "T-Mobile Stage",
+        "Perry's Stage",
+        "BMI Stage",
+        "Kidzapalooza Stage",
+        "Grove Stage"
+      ],
+      "genres": [
+        "Rock",
+        "Pop",
+        "Hip-Hop",
+        "Electronic",
+        "Alternative",
+        "Indie"
+      ],
+      "special_events": [
+        "Lollapalooza Paris",
+        "Lollapalooza Berlin",
+        "Lollapalooza Stockholm",
+        "Lollapalooza Chile",
+        "Lollapalooza Argentina"
+      ]
+    },
+    {
+      "id": "burning_man_2025",
+      "name": "Burning Man Festival",
+      "description": "A unique gathering in Nevada's Black Rock Desert celebrating art, self-expression, and community. Burning Man is not just a festival but a temporary city built on principles of radical inclusion, self-reliance, and artistic expression.",
+      "location": "Black Rock Desert, Nevada, USA",
+      "venue": "Black Rock City",
+      "start_date": "2025-09-28",
+      "end_date": "2025-10-05",
+      "image": "assets/eve/avt_1.jpg",
+      "features": [
+        "Desert sunset views",
+        "Flag forest",
+        "Art installations",
+        "Community spirit",
+        "Desert landscape",
+        "Interactive art",
+        "Theme camps",
+        "Mutant vehicles"
+      ],
+      "capacity": "80000",
+      "ticket_price_range": {
+        "min": 575,
+        "max": 2500,
+        "currency": "USD"
+      },
+      "headliners": [
+        "Community-driven performances"
+      ],
+      "art_installations": [
+        "Large-scale art pieces",
+        "Interactive installations",
+        "Fire art",
+        "Desert sculptures",
+        "Temple construction",
+        "Man burn ceremony"
+      ],
+      "principles": [
+        "Radical inclusion",
+        "Gifting",
+        "Decommodification",
+        "Radical self-reliance",
+        "Radical self-expression",
+        "Communal effort",
+        "Civic responsibility",
+        "Leaving no trace",
+        "Participation",
+        "Immediacy"
+      ],
+      "special_events": [
+        "Man burn",
+        "Temple burn",
+        "Art car parades",
+        "Theme camp events",
+        "Fire conclave"
+      ]
+    },
+    {
+      "id": "glastonbury_2025",
+      "name": "Glastonbury Festival",
+      "description": "Britain's most famous music festival, featuring diverse music, arts, and cultural activities. Set on Worthy Farm, Glastonbury offers a unique blend of contemporary music, traditional arts, and spiritual experiences.",
+      "location": "Pilton, Somerset, UK",
+      "venue": "Worthy Farm",
+      "start_date": "2025-10-24",
+      "end_date": "2025-10-26",
+      "image": "assets/eve/avt_3.jpg",
+      "features": [
+        "Open-air amphitheater",
+        "Fireworks displays",
+        "Multiple stage setup",
+        "Art installations",
+        "Cultural activities",
+        "Green fields",
+        "Stone Circle",
+        "Healing fields"
+      ],
+      "capacity": "210000",
+      "ticket_price_range": {
+        "min": 340,
+        "max": 600,
+        "currency": "GBP"
+      },
+      "headliners": [
+        "TBA - To be announced"
+      ],
+      "areas": [
+        "Pyramid Stage",
+        "Other Stage",
+        "West Holts",
+        "Park Stage",
+        "John Peel Stage",
+        "Acoustic Stage"
+      ],
+      "stages": [
+        "Pyramid Stage",
+        "Other Stage",
+        "West Holts",
+        "Park Stage",
+        "John Peel Stage",
+        "Acoustic Stage",
+        "Avalon Stage",
+        "Left Field"
+      ],
+      "genres": [
+        "Rock",
+        "Pop",
+        "Folk",
+        "World Music",
+        "Electronic",
+        "Alternative"
+      ],
+      "special_events": [
+        "Stone Circle ceremonies",
+        "Healing fields",
+        "Circus performances",
+        "Theatre shows",
+        "Poetry readings"
+      ]
+    },
+    {
+      "id": "sziget_2025",
+      "name": "Sziget Festival",
+      "description": "One of Europe's largest music festivals, held on Óbuda Island in Budapest. Sziget offers a diverse lineup of international artists, cultural activities, and the unique experience of festival life on an island in the Danube River.",
+      "location": "Budapest, Hungary",
+      "venue": "Óbuda Island",
+      "start_date": "2025-10-31",
+      "end_date": "2025-11-02",
+      "image": "assets/eve/avt_5.jpg",
+      "features": [
+        "Island setting",
+        "Danube River views",
+        "Diverse music lineup",
+        "Art installations",
+        "Cultural activities",
+        "Beach area",
+        "Camping facilities",
+        "International atmosphere"
+      ],
+      "capacity": "450000",
+      "ticket_price_range": {
+        "min": 299,
+        "max": 599,
+        "currency": "EUR"
+      },
+      "headliners": [
+        "TBA - To be announced"
+      ],
+      "special_features": [
+        "Island environment",
+        "Danube River views",
+        "European culture",
+        "Art exhibitions",
+        "Beach parties"
+      ],
+      "stages": [
+        "Main Stage",
+        "A38 Stage",
+        "World Music Stage",
+        "Party Arena",
+        "Colosseum",
+        "Magic Mirror"
+      ],
+      "genres": [
+        "Rock",
+        "Pop",
+        "Electronic",
+        "World Music",
+        "Hip-Hop",
+        "Alternative"
+      ],
+      "special_events": [
+        "Beach parties",
+        "Cultural workshops",
+        "Art exhibitions",
+        "International food",
+        "Wellness activities"
+      ]
+    },
+    {
+      "id": "rock_am_ring_2025",
+      "name": "Rock am Ring",
+      "description": "Germany's premier rock music festival, held at the legendary Nürburgring racing circuit. Rock am Ring brings together the best in rock, metal, and alternative music for an unforgettable weekend of powerful performances.",
+      "location": "Nürburg, Germany",
+      "venue": "Nürburgring",
+      "start_date": "2025-09-12",
+      "end_date": "2025-09-14",
+      "image": "assets/eve/avt_8.jpg",
+      "features": [
+        "Racing circuit environment",
+        "Rock music focus",
+        "Powerful stage setup",
+        "Fireworks displays",
+        "German culture",
+        "Camping facilities",
+        "Food and drink vendors",
+        "Merchandise stands"
+      ],
+      "capacity": "87000",
+      "ticket_price_range": {
+        "min": 199,
+        "max": 399,
+        "currency": "EUR"
+      },
+      "headliners": [
+        "TBA - To be announced"
+      ],
+      "venue_features": [
+        "Racing circuit environment",
+        "Ring track",
+        "Outdoor stages",
+        "Camping areas",
+        "VIP sections"
+      ],
+      "stages": [
+        "Main Stage",
+        "Alternate Stage",
+        "Party Stage",
+        "Tent Stage"
+      ],
+      "genres": [
+        "Rock",
+        "Metal",
+        "Alternative",
+        "Punk",
+        "Hard Rock",
+        "Progressive Rock"
+      ],
+      "special_events": [
+        "Rock am Ring",
+        "Rock im Park",
+        "Camping parties",
+        "Meet and greets",
+        "Autograph sessions"
+      ]
+    },
+    {
+      "id": "reading_leeds_2025",
+      "name": "Reading and Leeds Festival",
+      "description": "Britain's iconic twin-city music festival, featuring the best in rock and alternative music. Reading and Leeds Festival offers a unique experience with the same lineup performing at two different locations on the same weekend.",
+      "location": "Reading & Leeds, UK",
+      "venue": "Richfield Avenue & Bramham Park",
+      "start_date": "2025-09-05",
+      "end_date": "2025-09-07",
+      "image": "assets/eve/avt_10.jpg",
+      "features": [
+        "Twin-city format",
+        "Rock music focus",
+        "Alternative music",
+        "British culture",
+        "Young audience",
+        "Camping facilities",
+        "Food vendors",
+        "Merchandise stands"
+      ],
+      "capacity": "105000",
+      "ticket_price_range": {
+        "min": 280,
+        "max": 450,
+        "currency": "GBP"
+      },
+      "headliners": [
+        "TBA - To be announced"
+      ],
+      "locations": [
+        "Reading site",
+        "Leeds site"
+      ],
+      "stages": [
+        "Main Stage",
+        "NME Stage",
+        "Radio 1 Stage",
+        "Festival Republic Stage",
+        "Lock Up Stage",
+        "BBC Introducing Stage"
+      ],
+      "genres": [
+        "Rock",
+        "Alternative",
+        "Indie",
+        "Punk",
+        "Metal",
+        "Pop Punk"
+      ],
+      "special_events": [
+        "Silent disco",
+        "Comedy tent",
+        "Film tent",
+        "Camping activities",
+        "Food festivals"
+      ]
+    }
+  ],
+  "metadata": {
+    "total_festivals": 10,
+    "date_range": "2025-09-05 to 2025-11-02",
+    "countries": [
+      "USA",
+      "Belgium", 
+      "UK",
+      "Hungary",
+      "Germany"
+    ],
+    "genres": [
+      "Electronic",
+      "Rock",
+      "Pop",
+      "Alternative",
+      "Hip-Hop",
+      "Indie",
+      "Metal",
+      "House",
+      "Techno",
+      "Trance"
+    ],
+    "total_capacity": "1,447,000",
+    "created_date": "2025-01-27",
+    "description": "Comprehensive guide to major international music festivals scheduled for September-October 2025",
+    "festival_types": [
+      "Electronic Dance Music",
+      "Rock and Metal",
+      "Multi-Genre",
+      "Art and Culture",
+      "Community Events"
+    ],
+    "special_features": [
+      "Art installations",
+      "Pyrotechnics",
+      "Interactive experiences",
+      "Camping facilities",
+      "Food and craft vendors",
+      "Cultural activities",
+      "Sustainability initiatives",
+      "VIP experiences"
+    ]
+  }
+}
