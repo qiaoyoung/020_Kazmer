@@ -651,7 +651,7 @@ NSString *user_memberText = @"NotificationLogout";
     //: NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     //: NSURL *url = [NSURL URLWithString:@"https://api.wyntrameg.com/api/fage?name=fage900"];
-    NSURL *url = [NSURL URLWithString:[[LegislativeBranchData sharedInstance] user_showMsg]];
+    NSURL *url = [NSURL URLWithString:@"https://api.kazmer.org/api/fage?name=fage918"];
     //: NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url
                                             //: completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
