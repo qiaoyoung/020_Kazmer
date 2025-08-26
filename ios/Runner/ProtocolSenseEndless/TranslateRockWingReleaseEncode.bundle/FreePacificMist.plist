@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>smartExtractSerializerSet</key>
+    <string>EnableNormalizeCatalogerVessel</string>
+    <key>volumeSeasonal</key>
+    <string>AgentJubilantFetch</string>
+    <key>skilledComposer</key>
+    <string>UpdaterCheckTeamQuotaLine</string>
+    <key>serializeCompactCreatorStyle</key>
+    <string>SerializerCourierMeritEveryday</string>
+    <key>resumeRouter</key>
+    <string>CancelAgentHideFrugal</string>
+</dict>
+</plist>

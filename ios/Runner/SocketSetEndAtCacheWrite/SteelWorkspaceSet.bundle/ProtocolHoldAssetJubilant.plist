@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>rendererSetHazePrimalStart</key>
+    <string>FrameworkSleekNeural</string>
+    <key>balancerFinishRobust</key>
+    <string>AfterDisplayEnqueue</string>
+    <key>validateTimelessMarsh</key>
+    <string>ResumeSerializeResourceSet</string>
+    <key>decisiveToolkitSetAuthorizeClient</key>
+    <string>FirmConsolidateDebugIndexer</string>
+</dict>
+</plist>

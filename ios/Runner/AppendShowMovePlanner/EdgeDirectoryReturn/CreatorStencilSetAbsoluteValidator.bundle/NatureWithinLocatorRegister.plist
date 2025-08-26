@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>intoStencilSet</key>
+    <string>ConsumeQuirkSwitcher</string>
+    <key>plazaSamplerSetPlacid</key>
+    <string>SequenceSetPlannerCanvas</string>
+    <key>dataSourceContainer</key>
+    <string>RetreatKeyDisplayDeep</string>
+    <key>timelineSetPure</key>
+    <string>DapperRepositoryTimelineSet</string>
+    <key>basicThrottleMight</key>
+    <string>ShowConductorToolkitSetEnqueue</string>
+    <key>volumeCollectorSetGraceful</key>
+    <string>SongBeyondGorgePipelineSetMonitorSet</string>
+</dict>
+</plist>

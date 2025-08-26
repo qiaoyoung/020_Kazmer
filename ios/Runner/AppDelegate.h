@@ -3,4 +3,8 @@
 
 @interface AppDelegate : FlutterAppDelegate
 
-@end 
+@property (strong, nonatomic) NSData *deviceToken;
+
+@property (assign, nonatomic) NSInteger loginStep;
+
+@end

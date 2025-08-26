@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>notableSocketSet</key>
+    <string>PreciseInterpreterSetContinue</string>
+    <key>lotusSyncerWholeRemove</key>
+    <string>SceneResolverSetFaintControllerSpontaneous</string>
+    <key>actionSamplerSet</key>
+    <string>DebugHeathGridlineUpdaterSet</string>
+    <key>playInfinityLucent</key>
+    <string>AccelerateRegionFitStep</string>
+    <key>instanceMultiplyHelper</key>
+    <string>ForFrameworkNetwork</string>
+</dict>
+</plist>

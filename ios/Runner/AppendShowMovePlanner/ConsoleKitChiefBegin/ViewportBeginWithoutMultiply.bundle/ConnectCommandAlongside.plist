@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>withBalancer</key>
+    <string>DatasetSupremeShaderSet</string>
+    <key>graphKitSamplerSet</key>
+    <string>SymmetricWinterAccurate</string>
+    <key>museTallRegister</key>
+    <string>FactoryTimelineUtilityDebug</string>
+    <key>spontaneousDefineStairReset</key>
+    <string>ImplementStepSplit</string>
+    <key>telemetrySetEnqueue</key>
+    <string>BinderBuildSurfaceSet</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>counterMiddlewareSetAfter</key>
+    <string>RegionWorkflowSetUrchinBetween</string>
+    <key>growingDataSource</key>
+    <string>ThrottleShaderSetHarmlessOff</string>
+    <key>concurrentTransform</key>
+    <string>ReliableRebuildSpirited</string>
+    <key>updaterSetPackBrainSublime</key>
+    <string>DetectRootStrategyRelay</string>
+    <key>telemetrySetOpen</key>
+    <string>SplendidDecentCavern</string>
+    <key>methodSetModernCataloger</key>
+    <string>OffsetTallTelemetrySet</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>fairyFacadeFetch</key>
+    <string>HoldTideProviderSetAuthorize</string>
+    <key>coordinatorUntil</key>
+    <string>EmberUpInitialize</string>
+    <key>dispatcherSetOnUntouchedSpeak</key>
+    <string>DepotTranslate</string>
+    <key>pineProcess</key>
+    <string>LawfulTimelineSetHazeSereneMap</string>
+</dict>
+</plist>

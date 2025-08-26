@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>panelFineDispatcherSet</key>
+    <string>SimpleLandscapeMergeStretch</string>
+    <key>delegateUniversalAuthenticate</key>
+    <string>SnapshotterSpeakBare</string>
+    <key>handleConnector</key>
+    <string>RemoteFetchReflectGroup</string>
+    <key>dialogOrchestrator</key>
+    <string>StopStoreUnitSaver</string>
+    <key>classUpFocal</key>
+    <string>BinderClassActionMighty</string>
+</dict>
+</plist>

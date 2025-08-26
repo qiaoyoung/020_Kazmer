@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>importJustValidatorSet</key>
+    <string>PleasantThreatSelectorSet</string>
+    <key>throttleResolverSet</key>
+    <string>DatabaseParameterReservoir</string>
+    <key>migrateJubilantExact</key>
+    <string>ParsePayloadSuite</string>
+    <key>infinitySuperFixSessionKit</key>
+    <string>TranquilSignalInterpreterSet</string>
+    <key>throughSourceTelemetrySet</key>
+    <string>SpriteAuthorizeChasmNascent</string>
+    <key>topmostTelemetrySet</key>
+    <string>TribeHandlerHighlight</string>
+    <key>intuitiveStageOnSnapshotter</key>
+    <string>IdleDecoderSkilledSpriteSync</string>
+</dict>
+</plist>

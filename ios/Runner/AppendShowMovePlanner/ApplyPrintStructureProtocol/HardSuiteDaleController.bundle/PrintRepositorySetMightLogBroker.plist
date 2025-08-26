@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>matchTemplateSetPolicy</key>
+    <string>VoiceLanePeak</string>
+    <key>cacheLineExpandRendererSet</key>
+    <string>HoldExecuteAlong</string>
+    <key>duringCarefreeSprite</key>
+    <string>ArrayCommand</string>
+    <key>volumeLively</key>
+    <string>OptionFastWisdomJoyful</string>
+    <key>toolkitImmense</key>
+    <string>BreakEpisodeAbove</string>
+    <key>driverVitalThen</key>
+    <string>HubsetPreciousLucidWinter</string>
+</dict>
+</plist>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>switcherDocument</key>
+    <string>VolumePrismBufferTrain</string>
+    <key>renderCoordinator</key>
+    <string>CreatePanelBuild</string>
+</dict>
+</plist>

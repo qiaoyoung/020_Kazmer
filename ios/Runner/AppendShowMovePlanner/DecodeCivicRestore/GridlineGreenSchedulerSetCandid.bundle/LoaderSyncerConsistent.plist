@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>dualConnect</key>
+    <string>CheckProviderKitReceive</string>
+    <key>accessHelperVia</key>
+    <string>PassiveBesideSageCloud</string>
+    <key>edgeFactoryWarm</key>
+    <string>DocumentFactorySerializerHelper</string>
+    <key>thoroughCycle</key>
+    <string>CairnGatewaySetWarehouseSetStem</string>
+    <key>localizeFirm</key>
+    <string>AdapterSetEndSliceSurfaceSet</string>
+    <key>aroundLocatorDataSource</key>
+    <string>IndexSetCalculateAppend</string>
+    <key>terminalDebugTranquilTelemetrySet</key>
+    <string>FacadeAroundApply</string>
+    <key>middlewareSetUpbeat</key>
+    <string>OpalRenderWorkSpeak</string>
+    <key>prismCreator</key>
+    <string>ReleaseByGatewaySet</string>
+    <key>endFactoryField</key>
+    <string>StripeMagicThroughDataSource</string>
+</dict>
+</plist>
