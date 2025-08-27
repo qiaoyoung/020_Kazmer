@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>binderPrimal</key>
+    <string>MonitorSetUntilBeyond</string>
+    <key>delegateDeriveInspectorFeasible</key>
+    <string>LockArchiveUponAssemble</string>
+    <key>projectorSetMinimal</key>
+    <string>CalibrateFaithfulHarmless</string>
+    <key>composerOptimize</key>
+    <string>TupleSetMapOnto</string>
+</dict>
+</plist>

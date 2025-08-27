@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>flukePipelineSet</key>
+    <string>LogDataSourcePowerRelease</string>
+    <key>museOutsideHeaderWary</key>
+    <string>CoherentTelemetrySetCoreStage</string>
+    <key>validatorFormat</key>
+    <string>ConvertElegantRateDense</string>
+    <key>woodCreateSerializerSetWireless</key>
+    <string>ShowFertileCoordinatorSubmit</string>
+    <key>decoderRotate</key>
+    <string>DetectConverterAcross</string>
+    <key>selfSchedule</key>
+    <string>CavernBinderWinter</string>
+    <key>policySetRegistrySet</key>
+    <string>RegionNorthPlanetGeneratorCluster</string>
+    <key>poolTelemetrySet</key>
+    <string>ForceSyncerBetween</string>
+    <key>registrySetEncodeRingSubtle</key>
+    <string>ConsolidateFair</string>
+</dict>
+</plist>

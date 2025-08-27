@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>pipelineSetInstanceSet</key>
+    <string>AmidFinish</string>
+    <key>transformerSetInstanceSet</key>
+    <string>PreloadSteamBetweenSerializer</string>
+    <key>snapshotStart</key>
+    <string>DispatchPersistStrategy</string>
+    <key>viewportSetNodeSetTryReliable</key>
+    <string>JustDeserializerConnectorBehind</string>
+</dict>
+</plist>

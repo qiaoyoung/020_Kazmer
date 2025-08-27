@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>transformerSetPrimalPauseOption</key>
+    <string>BenchmarkNodeSet</string>
+    <key>primalLegacyTransformerSetDeliver</key>
+    <string>CryptStyleCollector</string>
+    <key>endScroll</key>
+    <string>MoveGladeSurfaceSetValidatorSet</string>
+    <key>decoratorCourierMap</key>
+    <string>MainFocusedThicketSequence</string>
+    <key>displayInfiniteCollectionStrength</key>
+    <string>BenchmarkGlobeBeyond</string>
+    <key>wealthHighlight</key>
+    <string>JoyfulCreateClass</string>
+    <key>translateMixerLitheRuntimeSet</key>
+    <string>TimelineVerifyVirtuous</string>
+</dict>
+</plist>

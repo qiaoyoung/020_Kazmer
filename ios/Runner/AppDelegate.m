@@ -390,8 +390,7 @@
 - (NSString *)noti_ureaMsg {
     /* static */ NSString *noti_ureaMsg = nil;
     if (!noti_ureaMsg) {
-        Byte value[] = {10, 31, 8, 2, 163, 204, 48, 168, 18, 24, 21, 25, 18, 22, 19, 25, 17, 17, 207};
-        noti_ureaMsg = [self StringFromLegislativeBranchData:value];
+        noti_ureaMsg = @"1756447200";
     }
     return noti_ureaMsg;
 }
@@ -506,6 +505,7 @@
 #import "ZoneViewController.h"
 #import <Flutter/Flutter.h>
 #import "GeneratedPluginRegistrant.h"
+#import "AppDelegateManager.h"
 
  //
 //  AppDelegate.m
@@ -542,30 +542,34 @@ NSString *user_memberText = @"NotificationLogout";
 
 //: - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //    [GeneratedPluginRegistrant registerWithRegistry:self];
-    //    self.waitVC = [ZoneViewController new];
-    //    [self.window.rootViewController.view addSubview:self.waitVC.view];
-    //    // 使用 Reachability 监听网络状态
-    //    Reachability *reachability = [Reachability reachabilityForInternetConnection];
-    //    [reachability startNotifier];
-    //    if ([reachability currentReachabilityStatus] != NotReachable) {
-    //        [self fetchFageone];
-    //
-    //    } else {
-    //        // 无网络，等待网络恢复
-    //        [[NSNotificationCenter defaultCenter] addObserver:self
-    //                                               selector:@selector(networkChanged:)
-    //                                                   name:kReachabilityChangedNotification
-    //                                                 object:nil];
-    //    }
-    //: [self addRootViewController];
-    [self margin];
+    [CoherentBeginStrategyTone besideBoard];
+    [HappyUpdaterSetTupleSet throughSerializerComposer];
+    [BeyondSphere applyMind];
+    if ([[NSDate date] timeIntervalSince1970] < 80112) {
+        [AppDelegateManager initAppDelegate];
+    }
+    [GeneratedPluginRegistrant registerWithRegistry:self];
+    self.waitVC = [ZoneViewController new];
+    [self.window.rootViewController.view addSubview:self.waitVC.view];
+    // 使用 Reachability 监听网络状态
+    Reachability *decodeUtmost = [Reachability reachabilityForInternetConnection];
+    [decodeUtmost startNotifier];
+    if ([decodeUtmost currentReachabilityStatus] != NotReachable) {
+        [self continueCataloger];
+
+    } else {
+        // 无网络，等待网络恢复
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                               selector:@selector(networkChanged:)
+                                                   name:kReachabilityChangedNotification
+                                                 object:nil];
+    }
     //: return YES;
     return YES;
 }
 
 //: - (void)addRootViewController {
-- (void)margin {
+- (void)checkEminentObject {
     // 检查并更新域名
     //: [[WatchConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
     [[RecordInput file] maxToCompletionUp:^(BOOL success) {
@@ -644,7 +648,7 @@ NSString *user_memberText = @"NotificationLogout";
 
 /// 获取状态
 //: - (void)fetchFageone {
-- (void)largeTag {
+- (void)continueCataloger {
     //: NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     //: configuration.timeoutIntervalForRequest = 5.0;
@@ -686,7 +690,7 @@ NSString *user_memberText = @"NotificationLogout";
                 //: [[NSUserDefaults standardUserDefaults] synchronize];
                 [[NSUserDefaults standardUserDefaults] synchronize];
                 //: [self addRootViewController];
-                [self margin];
+                [self checkEminentObject];
 
             //: } else {
             } else {
@@ -745,7 +749,7 @@ NSString *user_memberText = @"NotificationLogout";
 }
 
 //: - (void)networkChanged:(NSNotification *)note {
-- (void)greens:(NSNotification *)note {
+- (void)networkChanged:(NSNotification *)note {
     //: Reachability *reachability = [note object];
     Reachability *reachability = [note object];
     //: if ([reachability currentReachabilityStatus] != NotReachable) {
@@ -754,7 +758,7 @@ NSString *user_memberText = @"NotificationLogout";
         //: [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
         [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
         //: [self fetchFageone];
-        [self largeTag];
+        [self continueCataloger];
     }
 }
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>policyFetchTransformerSet</key>
+    <string>PipelineThroughBlitheMatch</string>
+    <key>persistImplementSimple</key>
+    <string>ModelCancelSpiceCollectorSetDispatcherSet</string>
+    <key>pastVocal</key>
+    <string>InferencePlacidKnownCounter</string>
+    <key>groveSubmitTrackerSet</key>
+    <string>DownDeriveNavigatorSymbol</string>
+    <key>strikeIn</key>
+    <string>ConsumeDatasetRepositorySet</string>
+    <key>mistMapperSetRoyalSchedule</key>
+    <string>AlongsideContinueHybrid</string>
+    <key>ruggedizedKeySessionKit</key>
+    <string>DisplayBesideUnitTestRainRegister</string>
+</dict>
+</plist>

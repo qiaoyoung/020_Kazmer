@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>runtimeSetZonalConsumeFallback</key>
+    <string>UpdaterSetDefineOffMatch</string>
+    <key>updaterSetDecisive</key>
+    <string>DelegateSyncerAboveState</string>
+    <key>validatorKitWithSphereFeatherlight</key>
+    <string>CatalogerVerifySpeakFor</string>
+    <key>atlasVictoriousFromComposer</key>
+    <string>EnergeticInitialize</string>
+    <key>transformerSetCozyTranslate</key>
+    <string>PixelBalancerSystemVerse</string>
+    <key>rangeConcurrent</key>
+    <string>NaturalClassicStateRun</string>
+    <key>ornateBeneathBrain</key>
+    <string>SolidPipelineSetGuidebookDispatch</string>
+    <key>modularMiddleware</key>
+    <string>ExpandBridgeTall</string>
+</dict>
+</plist>

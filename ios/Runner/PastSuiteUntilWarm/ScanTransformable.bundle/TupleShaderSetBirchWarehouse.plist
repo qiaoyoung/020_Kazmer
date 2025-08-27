@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>counterpartProcessorClear</key>
+    <string>ResumeSegmentIvory</string>
+    <key>hybridServiceKit</key>
+    <string>SlateArrayFormat</string>
+    <key>payloadLiberalNormalize</key>
+    <string>SplitSincereRoundPast</string>
+</dict>
+</plist>

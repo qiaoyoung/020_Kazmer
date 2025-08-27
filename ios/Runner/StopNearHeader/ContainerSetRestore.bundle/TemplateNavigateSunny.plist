@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>samplerSetStart</key>
+    <string>TowerForCoordinatorSetQuirk</string>
+    <key>rendererSimpleFill</key>
+    <string>ApplyCloseControllerTableFallback</string>
+    <key>transformerSetBambooHonestRestore</key>
+    <string>ImplementSubtleDecode</string>
+    <key>catalogerStoryFlexibleBuild</key>
+    <string>WarehouseSetAdaptiveWatchSessionKit</string>
+    <key>indexerValue</key>
+    <string>FinishRoundReference</string>
+    <key>loadConcurrentFacadeRidge</key>
+    <string>TextDelegatePower</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>poplarRadiantOntoWorkflowSet</key>
+    <string>ClearWorkflowSetLocalCalibrate</string>
+    <key>calibrateGentle</key>
+    <string>ReplaceTag</string>
+    <key>registrySetBeside</key>
+    <string>ParseSurgeCrispCore</string>
+    <key>creatorPreciseRange</key>
+    <string>SensorForceScope</string>
+    <key>previewSelectorSetCycleSoft</key>
+    <string>ApplyDefineManageSelect</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>clearKnackStrategyTiny</key>
+    <string>WalkClearDrop</string>
+    <key>resumeBroadShapeRendererSet</key>
+    <string>GridAssignFormatterSet</string>
+    <key>warmRuntimeSetSpace</key>
+    <string>NascentShapeDownload</string>
+    <key>formalBinderGridlineUntil</key>
+    <string>RusticCourierAnchorNear</string>
+</dict>
+</plist>

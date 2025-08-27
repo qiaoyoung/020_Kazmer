@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>returnHandler</key>
+    <string>MediaReset</string>
+    <key>fixWarehouseSet</key>
+    <string>ScriptUntilEnqueueBonnySharp</string>
+    <key>belowReference</key>
+    <string>AcceptViewportSetBadge</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>desertHighlightPrimal</key>
+    <string>LifecycleModeService</string>
+    <key>spectrumInRendererSetZenith</key>
+    <string>TelemetrySetTranslateDrive</string>
+    <key>breezySchedule</key>
+    <string>MixerPassiveAcross</string>
+    <key>catalogerLucidInferenceCheck</key>
+    <string>PlannerSymmetricSerializeModify</string>
+    <key>topologySetShowDainty</key>
+    <string>DelegateBuilderToHide</string>
+    <key>formatterSetGrandForward</key>
+    <string>UpDaleRoundThrottle</string>
+</dict>
+</plist>

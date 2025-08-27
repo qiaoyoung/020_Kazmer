@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>observerUntilThread</key>
+    <string>ImportCelestial</string>
+    <key>surfaceSetPerform</key>
+    <string>RenderValidateSensorDispatch</string>
+    <key>superCleanMarkerSurfaceSet</key>
+    <string>ModalDuringConstructProbe</string>
+    <key>digitalStencilSetTableSetRender</key>
+    <string>SuiteRunFair</string>
+    <key>packageSetWorkbenchSet</key>
+    <string>BindAcceptRunShaderSetHorizon</string>
+    <key>centerUtmostProcessor</key>
+    <string>InsertPrintFile</string>
+    <key>vibrantHandlerConvertFlagship</key>
+    <string>SpokeSwiftlySaver</string>
+</dict>
+</plist>

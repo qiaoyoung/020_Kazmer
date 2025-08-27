@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>dropCoreDarkVine</key>
+    <string>SpectrumSetRoadmapVectorDeserializer</string>
+    <key>readTurnRouterCrisp</key>
+    <string>EndlessDefineMixerFallback</string>
+    <key>saverAuthorizeRootFluent</key>
+    <string>BeyondViewportSetError</string>
+    <key>timerRuntimeSetSample</key>
+    <string>WriteVividBeyondFetch</string>
+</dict>
+</plist>

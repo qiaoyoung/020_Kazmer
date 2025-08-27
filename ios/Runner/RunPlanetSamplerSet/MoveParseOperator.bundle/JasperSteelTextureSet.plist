@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>ivoryComputeUtility</key>
+    <string>InitialPackTransformerSet</string>
+    <key>contextHubHandler</key>
+    <string>SynchronizerPaintWindow</string>
+    <key>idleStrategy</key>
+    <string>HarmonicBeyondSpeckled</string>
+    <key>shuffleRockSleek</key>
+    <string>SwitcherRestore</string>
+    <key>plannerHarnessKindred</key>
+    <string>InferenceDelegateTransformerSetRaven</string>
+</dict>
+</plist>
