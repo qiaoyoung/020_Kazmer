@@ -13,8 +13,6 @@
 #import "ViewTing.h"
 //: #import "SNLeadCompleteInfo.h"
 #import "ColumnView.h"
-//: #import "SNWeakStrongMacro.h"
-#import "SNWeakStrongMacro.h"
 
 //: @interface SNLeadCompleteManager ()
 @interface ViewTing ()

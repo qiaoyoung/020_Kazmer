@@ -42,8 +42,8 @@ ImmediateData kCottaId = (ImmediateData){28, (Byte []){91, 110, 115, 105, 108, 6
 #import "UIImage+ButtonKit.h"
 //: #import "WatchTeamHelper.h"
 #import "MakeBubble.h"
-//: #import "WatchCardDataSourceProtocol.h"
-#import "WatchCardDataSourceProtocol.h"
+//: #import "NameLoginOptionProtocol.h"
+#import "NameLoginOptionProtocol.h"
 
 //: NSString *const kTeamMember = @"kTeamMember";
 NSString *const show_messageIdent = @"kTeamMember";

@@ -833,9 +833,7 @@
 		429D4132299A79F500354206 /* ColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnView.m; sourceTree = "<group>"; };
 		429D4133299A79F500354206 /* ViewTing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTing.m; sourceTree = "<group>"; };
 		429D4134299A79F500354206 /* BubbleEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleEmptyView.m; sourceTree = "<group>"; };
-		429D4135299A79F500354206 /* SNWeakStrongMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNWeakStrongMacro.h; sourceTree = "<group>"; };
 		429D4136299A79F500354206 /* ColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnView.h; sourceTree = "<group>"; };
-		429D4137299A79F500354206 /* SNSingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSingletonMacro.h; sourceTree = "<group>"; };
 		429D4138299A79F500354206 /* ViewTing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTing.h; sourceTree = "<group>"; };
 		429D4139299A79F500354206 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		429D413C299A79F500354206 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
@@ -919,7 +917,6 @@
 		42BD84E22B1DD340003559E5 /* NSMutableAttributedString+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+M80.h"; sourceTree = "<group>"; };
 		42BD84E32B1DD340003559E5 /* QuickNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickNameView.m; sourceTree = "<group>"; };
 		42BD84E72B1DD340003559E5 /* NSMutableAttributedString+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+M80.m"; sourceTree = "<group>"; };
-		42C80B7428DF3E0A00736D83 /* SNWeakStrongMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNWeakStrongMacro.h; sourceTree = "<group>"; };
 		42CF9E8429CC6CA90037B562 /* UIImage+MakeCompress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MakeCompress.m"; sourceTree = "<group>"; };
 		42CF9E8529CC6CA90037B562 /* UIImage+MakeCompress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MakeCompress.h"; sourceTree = "<group>"; };
 		42DBFFCC2AF0ADBB001B5B97 /* NameShowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameShowModel.m; sourceTree = "<group>"; };
@@ -1126,7 +1123,7 @@
 		B1F189722E011C6E00E24425 /* EmptyTing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmptyTing.m; sourceTree = "<group>"; };
 		B1F189732E011C6E00E24425 /* UIImage+NameMaxUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+NameMaxUser.h"; sourceTree = "<group>"; };
 		B1F189742E011C6E00E24425 /* UIImage+NameMaxUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+NameMaxUser.m"; sourceTree = "<group>"; };
-		B1F189772E01214F00E24425 /* WatchCardDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchCardDataSourceProtocol.h; sourceTree = "<group>"; };
+		B1F189772E01214F00E24425 /* NameLoginOptionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameLoginOptionProtocol.h; sourceTree = "<group>"; };
 		B808E73C26F23E3D00E302F6 /* SizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeViewController.h; sourceTree = "<group>"; };
 		B808E73D26F23E3D00E302F6 /* SizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeViewController.m; sourceTree = "<group>"; };
 		B808E74D26F48B1000E302F6 /* UserTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTo.h; sourceTree = "<group>"; };
@@ -2077,9 +2074,7 @@
 				429D4132299A79F500354206 /* ColumnView.m */,
 				429D4133299A79F500354206 /* ViewTing.m */,
 				429D4134299A79F500354206 /* BubbleEmptyView.m */,
-				429D4135299A79F500354206 /* SNWeakStrongMacro.h */,
 				429D4136299A79F500354206 /* ColumnView.h */,
-				429D4137299A79F500354206 /* SNSingletonMacro.h */,
 				429D4138299A79F500354206 /* ViewTing.h */,
 			);
 			path = LeadCompleteInfo;
@@ -2200,16 +2195,16 @@
 			path = WechatBubbleMenu;
 			sourceTree = "<group>";
 		};
-		42AC19F82A63ADC400BA1584 /* COKeychain */ = {
+		42AC19F82A63ADC400BA1584 /* ReplacingView */ = {
 			isa = PBXGroup;
 			children = (
 				42AC19FA2A63ADC400BA1584 /* SAMKeychain.h */,
 				42AC19FC2A63ADC400BA1584 /* SAMKeychain.m */,
 				42AC19FB2A63ADC400BA1584 /* SAMKeychainQuery.h */,
 				42AC19F92A63ADC400BA1584 /* SAMKeychainQuery.m */,
-				B1F189772E01214F00E24425 /* WatchCardDataSourceProtocol.h */,
+				B1F189772E01214F00E24425 /* NameLoginOptionProtocol.h */,
 			);
-			path = COKeychain;
+			path = ReplacingView;
 			sourceTree = "<group>";
 		};
 		42BD84DC2B1DD340003559E5 /* M80AttributedLabel */ = {
@@ -2517,7 +2512,7 @@
 		61E4705C1B7D963E00F4A1BF /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				42AC19F82A63ADC400BA1584 /* COKeychain */,
+				42AC19F82A63ADC400BA1584 /* ReplacingView */,
 				42AC19F62A63ADC400BA1584 /* BackgroundMakeDevice.h */,
 				42AC19F72A63ADC400BA1584 /* BackgroundMakeDevice.m */,
 				61E4705F1B7D963E00F4A1BF /* InfoUser.h */,
@@ -3318,7 +3313,6 @@
 		B8C319642722AE55001BDBF5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				42C80B7428DF3E0A00736D83 /* SNWeakStrongMacro.h */,
 				BC99AF902C57737A00D66AC8 /* TextEnableViewCell.h */,
 				BC99AF912C57737A00D66AC8 /* TextEnableViewCell.m */,
 				BC99AF932C57993900D66AC8 /* NameInfoView.h */,

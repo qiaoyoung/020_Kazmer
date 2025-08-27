@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "WatchCardDataSourceProtocol.h"
-#import "WatchCardDataSourceProtocol.h"
+//: #import "NameLoginOptionProtocol.h"
+#import "NameLoginOptionProtocol.h"
 
 //: @protocol WatchMemberGroupViewDelegate <NSObject>
 @protocol PinDelegate <NSObject>

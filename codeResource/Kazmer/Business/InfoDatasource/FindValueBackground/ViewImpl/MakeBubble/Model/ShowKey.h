@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "WatchCardDataSourceProtocol.h"
-#import "WatchCardDataSourceProtocol.h"
+//: #import "NameLoginOptionProtocol.h"
+#import "NameLoginOptionProtocol.h"
 
 //: typedef void(^NIMTeamCardRowSelectedBlock)(id <WatchKitSelectCardData> item);
 typedef void(^NIMTeamCardRowSelectedBlock)(id <WatchKitSelectCardData> item);

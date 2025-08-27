@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "ButtonKit.h"
-//: #import "WatchCardDataSourceProtocol.h"
-#import "WatchCardDataSourceProtocol.h"
+//: #import "NameLoginOptionProtocol.h"
+#import "NameLoginOptionProtocol.h"
 
 //: @class WatchAvatarImageView;
 @class RecordControl;

@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "WatchCardDataSourceProtocol.h"
-#import "WatchCardDataSourceProtocol.h"
+//: #import "NameLoginOptionProtocol.h"
+#import "NameLoginOptionProtocol.h"
 
 //: @interface NIMCardMemberItem : NSObject<WatchKitCardHeaderData>
 @interface TitleTimeMessage : NSObject<WatchKitCardHeaderData>
