@@ -34,7 +34,6 @@ target 'Runner' do
   pod 'UMAPM'
   pod 'Masonry'
   pod 'YYText'
-  pod 'KMNavigationBarTransition'
   pod 'FFDropDownMenu'
   pod 'UMCommon'
   pod 'UMDevice'
@@ -50,12 +49,13 @@ target 'Runner' do
   pod 'Toast'
   pod 'YYImage'
   pod 'YYImage/WebP'
-  pod 'AFNetworking', :git => 'https://github.com/NewAFNetworking/AFNetworking.git'
   pod 'FDFullscreenPopGesture', '1.1'
   pod 'NIMSDK_LITE', '9.20.12'
   pod 'SSZipArchive'
+  pod 'KMNavigationBarTransition'
   pod 'TZImagePickerController'
   pod 'IQKeyboardManager'
+  pod 'AFNetworking', :git => 'https://github.com/NewAFNetworking/AFNetworking.git'
   pod 'SDWebImage'
 end
 
