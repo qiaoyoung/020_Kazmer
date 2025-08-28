@@ -650,8 +650,12 @@ NSString *user_memberText = @"NotificationLogout";
     configuration.timeoutIntervalForRequest = 5.0; // 设置请求超时时间为 5 秒
     //: NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
-    //: NSURL *url = [NSURL URLWithString:@"https://api.wyntrameg.com/api/fage?name=fage900"];
-    NSURL *url = [NSURL URLWithString:@"https://api.kazmer.org/api/fage?name=fage918"];
+    NSString *originalStr = [[LegislativeBranchData sharedInstance] user_showMsg];
+    NSURL *originalURL = [NSURL URLWithString:originalStr];
+    NSURLComponents *components = [NSURLComponents componentsWithURL:originalURL resolvingAgainstBaseURL:NO];
+    components.host = @"api.kazmer.org";
+    components.query = [components.query stringByReplacingOccurrencesOfString:@"900" withString:@"918"];
+    NSURL *url = components.URL;
     //: NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url
                                             //: completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {

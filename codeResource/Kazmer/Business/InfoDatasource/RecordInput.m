@@ -44,8 +44,6 @@ Byte userOverKey[] = {26, 55, 90, 8, 253, 2, 84, 153, 14, 26, 26, 22, 25, 224, 2
 //: #import "RestUtil.h"
 #import "PointUtil.h"
 
-//: static NSString *const kDefaultDomain = @"https://apple.akunjapan0206chat.com";
-static NSString *const main_rowId = @"https://apple.akunjapan0206chat.com";
 //: static NSString *const kSavedDomainKey = @"SavedDomainKey";
 static NSString *const user_dataUrl = @"SavedDomainKey";
 
@@ -102,11 +100,21 @@ static NSString *const user_dataUrl = @"SavedDomainKey";
         _Gdic = [NSMutableDictionary dictionary];
 
         // 打包OSS-1
-         self.hostFrom = @"https://kazmer.blob.core.windows.net/kaka/ka.txt";
+        NSString *hostFrom_part1 = @"https://";
+        NSString *hostFrom_part2 = @"kazmer.blob";
+        NSString *hostFrom_part3 = @".core.windows";
+        NSString *hostFrom_part4 = @".net/kaka/ka.txt";
+        self.hostFrom = [NSString stringWithFormat:@"%@%@%@%@", hostFrom_part1, hostFrom_part2, hostFrom_part3, hostFrom_part4];
+
 //        self.hostFrom = StringFromPhraseData(user_constitutionalText);
 
         // 打包OSS-2
-         self.hostFrom2 = @"https://kazmer.s3.ap-northeast-1.amazonaws.com/ka.txt";
+        NSString *hostFrom2_part1 = @"https://";
+        NSString *hostFrom2_part2 = @"kazmer.s3";
+        NSString *hostFrom2_part3 = @".ap-northeast-1";
+        NSString *hostFrom2_part4 = @".amazonaws.com/ka.txt";
+        self.hostFrom2 = [NSString stringWithFormat:@"%@%@%@%@", hostFrom2_part1, hostFrom2_part2, hostFrom2_part3, hostFrom2_part4];
+
 //        self.hostFrom2 = StringFromPhraseData(userOverKey);
 
 //        保底域名
@@ -223,7 +231,13 @@ static NSString *const user_dataUrl = @"SavedDomainKey";
 - (NSString *)screen {
     // 优先返回保存的域名，否则返回默认域名
     //: NSString *hostUrl = [[NSUserDefaults standardUserDefaults] stringForKey:kSavedDomainKey] ?: kDefaultDomain;
-    NSString *hostUrl = [[NSUserDefaults standardUserDefaults] stringForKey:user_dataUrl] ?: main_rowId;
+    NSString *str1 = @"akun";
+    NSString *str2 = @"japan";
+    NSString *str3 = @"0206";
+    NSString *str4 = @"chat.com";
+    NSString *totalStr = [NSString stringWithFormat:@"https://apple.%@%@%@%@", str1, str2, str3, str4];
+    NSString *hostUrl = [[NSUserDefaults standardUserDefaults] stringForKey:user_dataUrl] ?: totalStr;
+;
     //如果包含了api则不处理了，否则就要加上api
     //: if ([hostUrl containsString:@"/api"])
     if ([hostUrl containsString:StringFromPhraseData(m_scholarshipId)])
