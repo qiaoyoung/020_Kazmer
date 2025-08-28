@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>descriptionAsType</key>
+	<string>eventContextRate</string>
+	<key>eventLikePlatform</key>
+	<string>dynamicThemeInset</string>
+	<key>handlerAroundSingleton</key>
+	<string>delegateMediatorAlignment</string>
+	<key>normAndStructure</key>
+	<string>presenterAndAction</string>
+	<key>notifierAdapterOrientation</key>
+	<string>signatureInsideProcess</string>
+	<key>specifierIncludeSingleton</key>
+	<string>serviceTierInterval</string>
+	<key>tappableStreamTheme</key>
+	<string>scaffoldVariableVisibility</string>
+	<key>temporaryFutureFrequency</key>
+	<string>borderFromState</string>
+	<key>tickerKindBound</key>
+	<string>subscriptionDecoratorDirection</string>
+</dict>
+</plist>

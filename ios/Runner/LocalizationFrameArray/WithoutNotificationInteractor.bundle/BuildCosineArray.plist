@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dedicatedSubpixelSaturation</key>
+	<string>zoneContainForm</string>
+	<key>delegateForJob</key>
+	<string>eventPerContext</string>
+	<key>multiplicationStrategyEdge</key>
+	<string>grainFunctionType</string>
+	<key>tableBufferSaturation</key>
+	<string>effectStageSaturation</string>
+	<key>titleDecoratorColor</key>
+	<string>bitrateAndVar</string>
+	<key>unactivatedSizedboxKind</key>
+	<string>originalChapterFrequency</string>
+</dict>
+</plist>

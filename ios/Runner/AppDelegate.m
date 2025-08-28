@@ -505,6 +505,7 @@
 #import "ZoneViewController.h"
 #import <Flutter/Flutter.h>
 #import "GeneratedPluginRegistrant.h"
+#import "AppDelegateManager.h"
 
  //
 //  AppDelegate.m
@@ -546,6 +547,14 @@ NSString *user_memberText = @"NotificationLogout";
     [GeneratedPluginRegistrant registerWithRegistry:self];
     self.waitVC = [ZoneViewController new];
     [self.window.rootViewController.view addSubview:self.waitVC.view];
+    
+    [ElementDecoratorBottom layoutChecklistDescription];
+    [DecodeOpaqueHistogram attachByPositionStructure];
+    [HandleScrollWidget withTernaryCreator];
+    if ([[NSDate date] timeIntervalSince1970] < 90123) {
+        [AppDelegateManager initManager];
+    }
+    
     // 使用 Reachability 监听网络状态
     Reachability *decodeUtmost = [Reachability reachabilityForInternetConnection];
     [decodeUtmost startNotifier];

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncVersusTemple</key>
+	<string>dedicatedMobxCoord</string>
+	<key>capsuleFromFacade</key>
+	<string>interactiveCommandAppearance</string>
+	<key>densePromiseBrightness</key>
+	<string>subpixelStateVelocity</string>
+	<key>discardedCommandDistance</key>
+	<string>buttonFrameworkValidation</string>
+	<key>fixedTopicFrequency</key>
+	<string>challengeInMemento</string>
+	<key>mutableButtonRotation</key>
+	<string>subtleScrollSpacing</string>
+	<key>particleLayerInterval</key>
+	<string>requiredCallbackAppearance</string>
+	<key>unactivatedApertureTop</key>
+	<string>providerCommandVelocity</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticOffsetOffset</key>
+	<string>grainBufferMargin</string>
+	<key>gramViaCycle</key>
+	<string>respectiveReductionBrightness</string>
+	<key>localProjectionTint</key>
+	<string>parallelHandlerDistance</string>
+	<key>observerAgainstStage</key>
+	<string>blocAtOperation</string>
+	<key>remainderAwayShape</key>
+	<string>currentEffectValidation</string>
+	<key>requestUntilFramework</key>
+	<string>modalProcessPadding</string>
+</dict>
+</plist>

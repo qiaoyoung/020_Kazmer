@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticWithVisitor</key>
+	<string>hyperbolicSingletonAcceleration</string>
+	<key>immutableInjectionRate</key>
+	<string>listenerDuringTask</string>
+	<key>routeLayerPosition</key>
+	<string>mobxPatternBorder</string>
+</dict>
+</plist>

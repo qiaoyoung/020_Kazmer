@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoStateType</key>
+	<string>storageAlongType</string>
+	<key>captionStrategyDirection</key>
+	<string>autoApertureSpeed</string>
+	<key>cellFromScope</key>
+	<string>secondMenuDepth</string>
+	<key>dynamicTaskCoord</key>
+	<string>semanticsViaVisitor</string>
+	<key>histogramPerBridge</key>
+	<string>inkwellTypeAlignment</string>
+	<key>precisionWithProxy</key>
+	<string>buttonStateShape</string>
+	<key>respectiveContainerBorder</key>
+	<string>draggableDelegateOpacity</string>
+	<key>responsiveListenerMode</key>
+	<string>permanentViewName</string>
+	<key>scaleAwaySystem</key>
+	<string>hierarchicalEffectStyle</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>concurrentThemeFlags</key>
+	<string>topicAtParam</string>
+	<key>directQueryResponse</key>
+	<string>allocatorOutsideAction</string>
+	<key>displayableMultiplicationState</key>
+	<string>layerLevelEdge</string>
+	<key>firstMemberSize</key>
+	<string>composableLayerAcceleration</string>
+	<key>popupForProxy</key>
+	<string>tickerWithoutKind</string>
+	<key>semanticCursorFeedback</key>
+	<string>effectAroundParam</string>
+	<key>transitionStyleAlignment</key>
+	<string>inactiveMetadataSpeed</string>
+	<key>vectorPatternStatus</key>
+	<string>retainedExtensionTransparency</string>
+	<key>zoneForVar</key>
+	<string>durationMementoLeft</string>
+</dict>
+</plist>

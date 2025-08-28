@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentIncludeDecorator</key>
+	<string>assetAgainstFramework</string>
+	<key>buttonWithoutVisitor</key>
+	<string>crudeMovementDistance</string>
+	<key>exceptionStyleFrequency</key>
+	<string>advancedBuilderDuration</string>
+	<key>frameWorkTail</key>
+	<string>stateStructureStatus</string>
+	<key>menuTierStyle</key>
+	<string>inactiveObserverVelocity</string>
+	<key>permanentSampleInterval</key>
+	<string>layerBySystem</string>
+	<key>statefulMobxInteraction</key>
+	<string>scaffoldVariableBehavior</string>
+</dict>
+</plist>

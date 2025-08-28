@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncWorkState</key>
+	<string>grainJobFeedback</string>
+	<key>curvePerPattern</key>
+	<string>presenterWithBuffer</string>
+	<key>providerUntilStrategy</key>
+	<string>mediocreUtilSkewy</string>
+	<key>reducerStyleMode</key>
+	<string>responseAlongEnvironment</string>
+	<key>topicMediatorFeedback</key>
+	<string>grayscaleWithoutCycle</string>
+</dict>
+</plist>

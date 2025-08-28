@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticSinkRotation</key>
+	<string>descriptorExceptParam</string>
+	<key>dropdownbuttonExceptStructure</key>
+	<string>pinchableChecklistSpeed</string>
+	<key>handlerVariableCenter</key>
+	<string>segueInterpreterAlignment</string>
+	<key>logarithmAtPhase</key>
+	<string>presenterDecoratorState</string>
+	<key>logarithmFlyweightTag</key>
+	<string>blocParamIndex</string>
+	<key>normActionStyle</key>
+	<string>durationAtJob</string>
+	<key>observerDecoratorInteraction</key>
+	<string>musicBeyondVar</string>
+	<key>statefulSizeAcceleration</key>
+	<string>dependencyAsState</string>
+	<key>techniqueThanStrategy</key>
+	<string>transformerAdapterFlags</string>
+</dict>
+</plist>

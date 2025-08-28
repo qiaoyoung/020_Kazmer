@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>apertureObserverSpacing</key>
+	<string>observerAgainstObserver</string>
+	<key>optimizerBeyondAction</key>
+	<string>viewByScope</string>
+	<key>singletonAboutSystem</key>
+	<string>allocatorContainStyle</string>
+	<key>sizeStateTop</key>
+	<string>retainedMusicSpeed</string>
+	<key>subtleChartContrast</key>
+	<string>progressbarAndActivity</string>
+	<key>viewActionPressure</key>
+	<string>difficultErrorOrigin</string>
+</dict>
+</plist>

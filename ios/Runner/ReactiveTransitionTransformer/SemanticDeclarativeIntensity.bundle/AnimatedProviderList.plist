@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alphaContainProcess</key>
+	<string>skinPerOperation</string>
+	<key>serviceParameterBehavior</key>
+	<string>masterIncludeSystem</string>
+	<key>synchronousPainterStyle</key>
+	<string>frameAsMediator</string>
+	<key>tappableStackInteraction</key>
+	<string>comprehensiveChannelCenter</string>
+	<key>zoneAroundWork</key>
+	<string>layoutThanFacade</string>
+</dict>
+</plist>

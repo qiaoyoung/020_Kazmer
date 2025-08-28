@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iterativeAllocatorValidation</key>
+	<string>comprehensiveObserverScale</string>
+	<key>nodeBridgeDelay</key>
+	<string>hardGraphicAcceleration</string>
+	<key>routeJobVelocity</key>
+	<string>cardFlyweightSpacing</string>
+	<key>sizePrototypeDensity</key>
+	<string>denseRequestInteraction</string>
+	<key>textfieldScopeCoord</key>
+	<string>sequentialConvolutionInset</string>
+	<key>tickerInProxy</key>
+	<string>taskAwayVisitor</string>
+</dict>
+</plist>

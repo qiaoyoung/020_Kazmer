@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncPatternTint</key>
+	<string>usedToolKind</string>
+	<key>bitrateScopeEdge</key>
+	<string>resultStageCenter</string>
+	<key>expandedStateOffset</key>
+	<string>configurationInState</string>
+	<key>immediateResourceRotation</key>
+	<string>visibleIndicatorDirection</string>
+	<key>independentMatrixDelay</key>
+	<string>usedChannelSkewx</string>
+	<key>intensityMementoHue</key>
+	<string>mediaObserverTheme</string>
+	<key>mobileInteractorType</key>
+	<string>storyboardEnvironmentPadding</string>
+	<key>riverpodBeyondObserver</key>
+	<string>awaitMethodInteraction</string>
+	<key>robustInjectionState</key>
+	<string>bufferPrototypePosition</string>
+	<key>textureSingletonCenter</key>
+	<string>titleOrComposite</string>
+</dict>
+</plist>

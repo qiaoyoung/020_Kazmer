@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dialogsStyleVisible</key>
+	<string>lostSubpixelStatus</string>
+	<key>grayscaleSingletonHue</key>
+	<string>modulusUntilLayer</string>
+	<key>precisionVersusInterpreter</key>
+	<string>kernelBufferDelay</string>
+	<key>scrollableSpotState</key>
+	<string>tickerStructureFlags</string>
+	<key>smallCurveType</key>
+	<string>accessibleSkirtStatus</string>
+</dict>
+</plist>

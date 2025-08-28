@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>delegateStyleTag</key>
+	<string>compositionProxyPressure</string>
+	<key>dialogsInsideVariable</key>
+	<string>flexThanCommand</string>
+	<key>enabledResultFlags</key>
+	<string>bulletBufferOrientation</string>
+	<key>ephemeralLayerOffset</key>
+	<string>lastOffsetFrequency</string>
+	<key>inheritedDependencyShape</key>
+	<string>consumerBesideBuffer</string>
+	<key>interpolationDecoratorVelocity</key>
+	<string>modelFunctionState</string>
+	<key>labelFlyweightMargin</key>
+	<string>hierarchicalRoleFrequency</string>
+	<key>tableScopeDensity</key>
+	<string>unaryWithJob</string>
+</dict>
+</plist>

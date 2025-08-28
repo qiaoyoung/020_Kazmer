@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>delicatePaddingStyle</key>
+	<string>symmetricTaskVisibility</string>
+	<key>hierarchicalPrecisionFrequency</key>
+	<string>adaptiveRoutePadding</string>
+	<key>immediateModalPosition</key>
+	<string>seamlessResourceSaturation</string>
+	<key>mediaAgainstMediator</key>
+	<string>extensionOperationSpeed</string>
+	<key>navigationBufferState</key>
+	<string>activatedGrainName</string>
+	<key>providerAdapterBottom</key>
+	<string>groupNumberInset</string>
+	<key>sinkExceptComposite</key>
+	<string>asyncBesideParameter</string>
+	<key>specifyActionInteraction</key>
+	<string>unsortedQuerySkewx</string>
+	<key>statelessResourceInset</key>
+	<string>paddingInsideStage</string>
+</dict>
+</plist>

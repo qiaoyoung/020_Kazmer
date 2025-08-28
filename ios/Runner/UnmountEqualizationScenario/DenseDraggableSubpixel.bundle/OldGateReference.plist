@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>configurationScopeShade</key>
+	<string>rectAsScope</string>
+	<key>heroDecoratorAcceleration</key>
+	<string>signAgainstStrategy</string>
+	<key>materialTaskOffset</key>
+	<string>curveOperationShade</string>
+	<key>mutableProviderTheme</key>
+	<string>transitionAdapterInterval</string>
+	<key>sampleAwayVisitor</key>
+	<string>mobileUtilVisible</string>
+</dict>
+</plist>

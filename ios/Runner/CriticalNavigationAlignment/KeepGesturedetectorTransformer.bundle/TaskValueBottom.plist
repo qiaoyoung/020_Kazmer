@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleBufferOrigin</key>
+	<string>normalNavigatorPadding</string>
+	<key>entityBeyondObserver</key>
+	<string>logBufferFeedback</string>
+	<key>futureStyleBound</key>
+	<string>disabledCurveAppearance</string>
+	<key>hardDelegateOrigin</key>
+	<string>handlerViaOperation</string>
+	<key>providerStateEdge</key>
+	<string>mediaqueryMementoTop</string>
+	<key>rectVisitorContrast</key>
+	<string>flexAwayInterpreter</string>
+</dict>
+</plist>

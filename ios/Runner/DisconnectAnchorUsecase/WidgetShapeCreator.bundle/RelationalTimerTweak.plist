@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoPrecisionPosition</key>
+	<string>streamActionVisible</string>
+	<key>captionAwayMemento</key>
+	<string>ignoredEffectTransparency</string>
+	<key>immutableWidgetDirection</key>
+	<string>storeFromValue</string>
+	<key>missionActivityCoord</key>
+	<string>navigatorAmongFacade</string>
+	<key>operationOutsideStructure</key>
+	<string>segueStrategyFrequency</string>
+	<key>repositoryThroughMediator</key>
+	<string>singletonTierRight</string>
+	<key>textAdapterVisible</key>
+	<string>graphicShapePosition</string>
+	<key>vectorAsVisitor</key>
+	<string>nativeRoleContrast</string>
+</dict>
+</plist>

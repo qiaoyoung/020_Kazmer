@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>backwardConfigurationOffset</key>
+	<string>alertPerProcess</string>
+	<key>histogramByBuffer</key>
+	<string>stackVersusStrategy</string>
+	<key>roleStructureBehavior</key>
+	<string>grainAmongComposite</string>
+	<key>spineDecoratorState</key>
+	<string>exceptionObserverDuration</string>
+</dict>
+</plist>

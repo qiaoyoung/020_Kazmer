@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessoryDuringFacade</key>
+	<string>resourceForFunction</string>
+	<key>gestureLikeOperation</key>
+	<string>callbackAgainstContext</string>
+	<key>graphViaProxy</key>
+	<string>resourceParamSaturation</string>
+	<key>observerModeFormat</key>
+	<string>unactivatedDescriptorLeft</string>
+	<key>sizedboxVersusStrategy</key>
+	<string>animationBesideLayer</string>
+	<key>topicOfParameter</key>
+	<string>temporaryIsolateOrientation</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticFlyweightBehavior</key>
+	<string>integerDespiteCommand</string>
+	<key>autoDescriptorTransparency</key>
+	<string>singletonBufferSize</string>
+	<key>containerFacadePressure</key>
+	<string>smartPopupHue</string>
+	<key>layerViaPrototype</key>
+	<string>flexFlyweightSkewx</string>
+	<key>nibSingletonFeedback</key>
+	<string>positionAroundFramework</string>
+	<key>repositoryTypeStyle</key>
+	<string>canvasAgainstActivity</string>
+	<key>scrollAwayType</key>
+	<string>localizationSingletonDistance</string>
+	<key>tangentContainParam</key>
+	<string>secondNavigatorSkewy</string>
+</dict>
+</plist>

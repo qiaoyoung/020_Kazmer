@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commandWithInterpreter</key>
+	<string>buttonMethodStyle</string>
+	<key>currentCharacterPosition</key>
+	<string>dimensionAtPattern</string>
+	<key>firstScreenInteraction</key>
+	<string>particleAdapterSkewy</string>
+	<key>frameJobDelay</key>
+	<string>modelJobSpeed</string>
+	<key>masterLikeProxy</key>
+	<string>plateStateSkewx</string>
+	<key>reactiveScrollInset</key>
+	<string>intuitiveNotificationRate</string>
+</dict>
+</plist>

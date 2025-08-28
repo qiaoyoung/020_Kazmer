@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>difficultDropdownbuttonDensity</key>
+	<string>independentNotifierSpacing</string>
+	<key>disabledTaskTag</key>
+	<string>routeTempleBehavior</string>
+	<key>gradientAsNumber</key>
+	<string>interactorCompositeShade</string>
+	<key>publicDelegateBound</key>
+	<string>pinchableObserverTail</string>
+	<key>storyboardObserverBorder</key>
+	<string>modelInEnvironment</string>
+	<key>taskStyleVelocity</key>
+	<string>tensorImageDistance</string>
+	<key>touchFacadeCenter</key>
+	<string>exponentMediatorOrientation</string>
+</dict>
+</plist>

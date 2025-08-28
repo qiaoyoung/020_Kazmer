@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appbarDuringNumber</key>
+	<string>globalNodeKind</string>
+	<key>entityProcessDepth</key>
+	<string>reusableFactoryState</string>
+	<key>mainRequestKind</key>
+	<string>sampleAndAction</string>
+	<key>mobxSinceContext</key>
+	<string>grainAdapterTheme</string>
+	<key>textLevelTint</key>
+	<string>mutableEventFeedback</string>
+	<key>unaryBufferMomentum</key>
+	<string>immediateTouchKind</string>
+</dict>
+</plist>

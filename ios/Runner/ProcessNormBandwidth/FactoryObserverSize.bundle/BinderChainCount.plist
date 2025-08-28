@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gradientTaskContrast</key>
+	<string>storePlatformOpacity</string>
+	<key>layoutStateEdge</key>
+	<string>resizableExceptionBound</string>
+	<key>missedStoryboardOpacity</key>
+	<string>observerAdapterSpeed</string>
+	<key>popupInTask</key>
+	<string>lazyCheckboxOrientation</string>
+	<key>singleMaterialBehavior</key>
+	<string>subtleEntropyType</string>
+	<key>substantialAsyncSpeed</key>
+	<string>listenerVersusParam</string>
+</dict>
+</plist>

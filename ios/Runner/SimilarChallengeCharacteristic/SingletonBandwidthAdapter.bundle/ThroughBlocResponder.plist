@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticStageScale</key>
+	<string>cupertinoHandlerKind</string>
+	<key>effectPrototypeKind</key>
+	<string>eagerFactoryRotation</string>
+	<key>factoryStageFormat</key>
+	<string>signatureInsideStrategy</string>
+	<key>listenerPerPrototype</key>
+	<string>denseNodeShape</string>
+	<key>multiMaterialDirection</key>
+	<string>anchorScopeShape</string>
+</dict>
+</plist>

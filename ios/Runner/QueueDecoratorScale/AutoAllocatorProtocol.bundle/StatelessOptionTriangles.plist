@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>curveLevelSpacing</key>
+	<string>transitionOutsideWork</string>
+	<key>delegateAgainstCommand</key>
+	<string>concurrentAspectBehavior</string>
+	<key>gridviewBufferShape</key>
+	<string>widgetInWork</string>
+	<key>interactiveTextfieldSaturation</key>
+	<string>skirtChainFormat</string>
+	<key>nodeWithValue</key>
+	<string>mainZoneDuration</string>
+	<key>pinchableNavigationVelocity</key>
+	<string>navigationUntilPhase</string>
+	<key>tangentSingletonRight</key>
+	<string>interactiveRowDirection</string>
+</dict>
+</plist>

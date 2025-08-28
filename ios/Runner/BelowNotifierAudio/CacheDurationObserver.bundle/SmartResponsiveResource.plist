@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncAndFramework</key>
+	<string>grayscaleAgainstChain</string>
+	<key>concreteSlashVisible</key>
+	<string>bulletInterpreterShade</string>
+	<key>easyIsolateTheme</key>
+	<string>pivotalAlignmentShade</string>
+	<key>entropyPlatformEdge</key>
+	<string>curveInsideComposite</string>
+	<key>integerSinceProxy</key>
+	<string>groupBufferAcceleration</string>
+	<key>localAlignmentStyle</key>
+	<string>cupertinoThanType</string>
+</dict>
+</plist>

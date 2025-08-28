@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>columnAroundState</key>
+	<string>indicatorStyleFlags</string>
+	<key>interactorVersusSingleton</key>
+	<string>transformerActionRate</string>
+	<key>keyHandlerMode</key>
+	<string>observerAroundDecorator</string>
+	<key>movementPlatformState</key>
+	<string>delegateWorkCoord</string>
+	<key>observerAmongAction</key>
+	<string>ignoredEntityDepth</string>
+	<key>streamTaskCoord</key>
+	<string>rowVariableCenter</string>
+	<key>temporaryDecorationIndex</key>
+	<string>sceneDuringParam</string>
+</dict>
+</plist>

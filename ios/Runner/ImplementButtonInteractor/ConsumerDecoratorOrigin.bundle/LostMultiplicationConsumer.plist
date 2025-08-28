@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>allocatorThanKind</key>
+	<string>constraintDespiteLevel</string>
+	<key>chartChainBrightness</key>
+	<string>responsiveResponseAlignment</string>
+	<key>descriptionBufferTop</key>
+	<string>progressbarProcessVisibility</string>
+	<key>intermediateScaleTop</key>
+	<string>delegateTaskScale</string>
+	<key>materialPositionPadding</key>
+	<string>keyEventSpacing</string>
+	<key>mediaViaBuffer</key>
+	<string>publicOffsetCenter</string>
+	<key>multiplicationPhaseOrigin</key>
+	<string>staticMapOffset</string>
+	<key>nextTimerEdge</key>
+	<string>staticTopicDirection</string>
+	<key>tableOrProxy</key>
+	<string>presenterParamSize</string>
+</dict>
+</plist>

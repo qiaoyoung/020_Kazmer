@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contractionPhaseDepth</key>
+	<string>globalManagerValidation</string>
+	<key>deferredConstraintDepth</key>
+	<string>rowLevelRate</string>
+	<key>mediumListenerDepth</key>
+	<string>listenerContainContext</string>
+	<key>semanticSkinVelocity</key>
+	<string>indicatorStrategyCoord</string>
+	<key>subpixelInProxy</key>
+	<string>statefulAnimationStatus</string>
+</dict>
+</plist>

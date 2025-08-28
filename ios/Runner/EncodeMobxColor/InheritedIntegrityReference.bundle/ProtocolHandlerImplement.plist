@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionExceptOperation</key>
+	<string>cycleByMediator</string>
+	<key>deferredSampleScale</key>
+	<string>entityContainValue</string>
+	<key>pinchableProgressbarDensity</key>
+	<string>themeBridgeHue</string>
+	<key>scrollableVectorIndex</key>
+	<string>tweenMethodRight</string>
+	<key>semanticTextAppearance</key>
+	<string>interfaceTaskOffset</string>
+	<key>statefulDuringMode</key>
+	<string>pinchablePositionedMode</string>
+	<key>zoneSinceMethod</key>
+	<string>screenPlatformMomentum</string>
+</dict>
+</plist>

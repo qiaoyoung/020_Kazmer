@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>challengeLayerInteraction</key>
+	<string>threadStateRight</string>
+	<key>cupertinoQueueBorder</key>
+	<string>gateAmongNumber</string>
+	<key>drawerAsMediator</key>
+	<string>parallelCompositionTag</string>
+	<key>graphicStageFeedback</key>
+	<string>positionKindOrientation</string>
+	<key>labelMethodTransparency</key>
+	<string>pivotalConsumerPosition</string>
+	<key>scaffoldCommandInterval</key>
+	<string>plateAroundKind</string>
+</dict>
+</plist>

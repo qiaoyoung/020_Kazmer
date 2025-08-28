@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asynchronousResourceOrigin</key>
+	<string>draggableTextOrientation</string>
+	<key>builderSinceCycle</key>
+	<string>responseStyleSpeed</string>
+	<key>columnFormPosition</key>
+	<string>observerPlatformOrientation</string>
+	<key>durationScopeCount</key>
+	<string>dependencyUntilFunction</string>
+	<key>easyProfileFlags</key>
+	<string>uniqueLabelPressure</string>
+	<key>firstInstructionVelocity</key>
+	<string>inactivePopupVisibility</string>
+	<key>scrollableMediaContrast</key>
+	<string>activatedTitleInset</string>
+	<key>subscriptionEnvironmentBound</key>
+	<string>sharedTransitionRotation</string>
+	<key>temporarySingletonTail</key>
+	<string>asyncUsecaseIndex</string>
+</dict>
+</plist>

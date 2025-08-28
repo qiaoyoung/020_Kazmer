@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>configurationAboutLevel</key>
+	<string>prevContainerAppearance</string>
+	<key>descriptorForProcess</key>
+	<string>topicFormStyle</string>
+	<key>directMarginColor</key>
+	<string>firstInterfaceAlignment</string>
+	<key>menuIncludeStyle</key>
+	<string>tappableMemberFlags</string>
+	<key>sharedDropdownbuttonTop</key>
+	<string>actionEnvironmentValidation</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>axisDuringStyle</key>
+	<string>curveInParameter</string>
+	<key>popupAdapterName</key>
+	<string>adaptiveResponseContrast</string>
+	<key>tensorReductionTop</key>
+	<string>sampleMementoPadding</string>
+	<key>unaryTempleBound</key>
+	<string>heroStateAcceleration</string>
+</dict>
+</plist>

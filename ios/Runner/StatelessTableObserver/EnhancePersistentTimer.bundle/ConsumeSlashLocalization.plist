@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asynchronousInjectionBorder</key>
+	<string>accessibleStoreTint</string>
+	<key>cachePhaseVelocity</key>
+	<string>asyncUtilTag</string>
+	<key>cursorWorkTag</key>
+	<string>parallelCurveLocation</string>
+	<key>discardedFutureDepth</key>
+	<string>appbarForMethod</string>
+	<key>errorDuringSingleton</key>
+	<string>blocBeyondState</string>
+	<key>layoutBridgeType</key>
+	<string>subscriptionNearAction</string>
+	<key>resizableCurveAppearance</key>
+	<string>concurrentRemainderOffset</string>
+	<key>routerFromParameter</key>
+	<string>spriteSinceDecorator</string>
+</dict>
+</plist>

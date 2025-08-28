@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>popupDespiteProxy</key>
+	<string>buttonAboutAction</string>
+	<key>secondGraphicTheme</key>
+	<string>tickerOutsideFacade</string>
+	<key>sliderInterpreterOrigin</key>
+	<string>offsetVersusChain</string>
+	<key>spriteProxyDensity</key>
+	<string>associatedQuerySpeed</string>
+	<key>streamAdapterTail</key>
+	<string>disabledStoragePressure</string>
+	<key>swiftOrCycle</key>
+	<string>columnForAdapter</string>
+</dict>
+</plist>

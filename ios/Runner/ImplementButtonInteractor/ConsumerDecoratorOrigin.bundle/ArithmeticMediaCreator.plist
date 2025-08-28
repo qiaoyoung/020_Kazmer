@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>batchBesidePlatform</key>
+	<string>featureAdapterFrequency</string>
+	<key>errorForTier</key>
+	<string>graphicValueValidation</string>
+	<key>exponentExceptMemento</key>
+	<string>observerForProcess</string>
+	<key>navigatorLikeObserver</key>
+	<string>presenterInsidePattern</string>
+	<key>optionAwayComposite</key>
+	<string>notificationStructureTint</string>
+	<key>queryStateOrigin</key>
+	<string>gesturedetectorAndTask</string>
+	<key>resultInLayer</key>
+	<string>desktopStateAcceleration</string>
+	<key>sinkVarAppearance</key>
+	<string>heapLevelFlags</string>
+</dict>
+</plist>

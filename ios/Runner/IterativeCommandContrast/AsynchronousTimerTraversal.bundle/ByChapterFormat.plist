@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>containerActivitySize</key>
+	<string>backwardGrainScale</string>
+	<key>cycleLevelVisible</key>
+	<string>textTypeVisible</string>
+	<key>graphicSystemColor</key>
+	<string>remainderActionIndex</string>
+	<key>instructionNearParam</key>
+	<string>localizationWithoutJob</string>
+	<key>materialParticleStyle</key>
+	<string>mobileStageFormat</string>
+	<key>scaffoldStateTag</key>
+	<string>firstGraphicVisibility</string>
+	<key>subsequentGrainTag</key>
+	<string>immutableConstraintVisible</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>captionChainBehavior</key>
+	<string>sequentialResourceInteraction</string>
+	<key>collectionSingletonState</key>
+	<string>aspectratioStateFormat</string>
+	<key>configurationProcessVelocity</key>
+	<string>statelessFrameCenter</string>
+	<key>optimizerCompositeBrightness</key>
+	<string>mobileRouteRotation</string>
+	<key>previewAdapterTop</key>
+	<string>euclideanSegmentPosition</string>
+	<key>skirtKindOrigin</key>
+	<string>timerForContext</string>
+	<key>stackPerVisitor</key>
+	<string>menuCycleContrast</string>
+</dict>
+</plist>

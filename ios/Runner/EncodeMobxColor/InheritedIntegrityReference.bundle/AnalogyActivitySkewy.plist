@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>nibAsBridge</key>
+	<string>activityModeTheme</string>
+	<key>offsetAndFramework</key>
+	<string>opaqueTimerScale</string>
+	<key>pageviewFrameworkDepth</key>
+	<string>completerBeyondCycle</string>
+	<key>sizeCompositeBound</key>
+	<string>convolutionOperationTension</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>axisDuringStyle</key>
+	<string>allocatorProxyTop</string>
+	<key>decorationFrameworkShade</key>
+	<string>builderBeyondPhase</string>
+	<key>labelIncludeNumber</key>
+	<string>cellStageTail</string>
+	<key>listenerSingletonMode</key>
+	<string>repositoryVisitorDensity</string>
+	<key>missionContainType</key>
+	<string>resolverBySingleton</string>
+	<key>offsetFormTheme</key>
+	<string>callbackAwayMode</string>
+	<key>optionPlatformBottom</key>
+	<string>positionedDecoratorPressure</string>
+</dict>
+</plist>

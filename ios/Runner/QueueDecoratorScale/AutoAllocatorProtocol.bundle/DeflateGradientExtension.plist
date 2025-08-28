@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cupertinoOptionOrientation</key>
+	<string>statefulPaddingRate</string>
+	<key>explicitCallbackBehavior</key>
+	<string>globalPresenterInterval</string>
+	<key>serviceBufferHead</key>
+	<string>streamFormOrientation</string>
+	<key>subtleTernaryVelocity</key>
+	<string>ephemeralNotifierTag</string>
+</dict>
+</plist>

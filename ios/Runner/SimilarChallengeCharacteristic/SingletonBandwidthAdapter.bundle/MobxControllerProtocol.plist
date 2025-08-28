@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blocPlatformDirection</key>
+	<string>dedicatedReducerType</string>
+	<key>composableReducerValidation</key>
+	<string>queueExceptSingleton</string>
+	<key>constraintStyleContrast</key>
+	<string>lossScopeAlignment</string>
+	<key>cubeIncludeFacade</key>
+	<string>beginnerChannelMargin</string>
+	<key>dimensionWithoutProcess</key>
+	<string>dependencyOrMediator</string>
+	<key>isolateTypeMomentum</key>
+	<string>previewDuringParam</string>
+	<key>mobxCycleKind</key>
+	<string>transitionDuringStyle</string>
+	<key>routeOutsideFacade</key>
+	<string>opaqueImageInset</string>
+</dict>
+</plist>

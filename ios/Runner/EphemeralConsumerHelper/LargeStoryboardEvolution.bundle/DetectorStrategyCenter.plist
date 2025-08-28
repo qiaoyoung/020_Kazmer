@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedcontainerDespitePattern</key>
+	<string>controllerOutsideActivity</string>
+	<key>cubitParameterFrequency</key>
+	<string>topicPatternVisibility</string>
+	<key>cursorPerAction</key>
+	<string>stepProcessFeedback</string>
+	<key>nodeDuringActivity</key>
+	<string>specifierThanAdapter</string>
+	<key>remainderOutsideFramework</key>
+	<string>eventPlatformFrequency</string>
+	<key>usedLoopIndex</key>
+	<string>repositoryWithComposite</string>
+</dict>
+</plist>

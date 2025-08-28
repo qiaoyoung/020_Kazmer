@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dependencyOperationDuration</key>
+	<string>frameAsMode</string>
+	<key>interactiveListviewInteraction</key>
+	<string>materialSingletonFormat</string>
+	<key>mediaAgainstVisitor</key>
+	<string>tappableAssetAppearance</string>
+	<key>semanticsStructureStyle</key>
+	<string>playbackStrategyAlignment</string>
+	<key>sortedProjectionSkewx</key>
+	<string>activityFunctionTension</string>
+	<key>typicalClipperAcceleration</key>
+	<string>cellMementoDensity</string>
+	<key>widgetMediatorAcceleration</key>
+	<string>oldCatalystAppearance</string>
+</dict>
+</plist>

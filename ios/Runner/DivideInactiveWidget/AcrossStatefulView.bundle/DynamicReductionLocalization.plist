@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoSamplePressure</key>
+	<string>smallLayoutDelay</string>
+	<key>durationParameterState</key>
+	<string>localErrorFormat</string>
+	<key>immediateAnimationAlignment</key>
+	<string>descriptionDespiteLayer</string>
+	<key>positionScopeTransparency</key>
+	<string>batchStyleCount</string>
+	<key>specifyConstraintCoord</key>
+	<string>exceptionMethodForce</string>
+	<key>textAsChain</key>
+	<string>animatedMetadataName</string>
+</dict>
+</plist>

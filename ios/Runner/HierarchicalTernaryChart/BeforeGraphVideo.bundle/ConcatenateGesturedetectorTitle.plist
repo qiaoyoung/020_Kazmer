@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>eventCycleStatus</key>
+	<string>heroBesideActivity</string>
+	<key>gridviewFlyweightTension</key>
+	<string>equipmentTierHue</string>
+	<key>progressbarStageLocation</key>
+	<string>graphTypePosition</string>
+	<key>serviceStructureSkewy</key>
+	<string>relationalSignPosition</string>
+	<key>sizedboxParameterOrigin</key>
+	<string>checklistCommandTransparency</string>
+</dict>
+</plist>

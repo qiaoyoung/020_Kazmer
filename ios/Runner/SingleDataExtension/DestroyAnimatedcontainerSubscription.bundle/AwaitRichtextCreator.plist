@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>captionAroundEnvironment</key>
+	<string>immediatePresenterLocation</string>
+	<key>containerMediatorValidation</key>
+	<string>elasticChartOpacity</string>
+	<key>errorProcessMode</key>
+	<string>normalRouteStatus</string>
+	<key>featureLevelAlignment</key>
+	<string>permissiveBehaviorTheme</string>
+	<key>gateCompositeTheme</key>
+	<string>interactiveInterfaceOrientation</string>
+	<key>largeDependencyTail</key>
+	<string>positionedMethodLeft</string>
+	<key>layoutPatternLeft</key>
+	<string>responseIncludeActivity</string>
+	<key>sustainableCoordinatorRotation</key>
+	<string>queryByParam</string>
+	<key>viewOperationName</key>
+	<string>inheritedConsumerVisible</string>
+	<key>visibleProtocolFlags</key>
+	<string>customizedBinaryFlags</string>
+</dict>
+</plist>

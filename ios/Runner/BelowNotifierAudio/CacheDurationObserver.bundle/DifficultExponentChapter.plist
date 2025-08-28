@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>effectStrategyOrigin</key>
+	<string>permissiveActionInteraction</string>
+	<key>entropyAroundVariable</key>
+	<string>utilAlongBridge</string>
+	<key>interpolationIncludeEnvironment</key>
+	<string>pageviewPerFacade</string>
+	<key>popupParamDelay</key>
+	<string>stateStyleFeedback</string>
+	<key>spriteModeSaturation</key>
+	<string>groupTempleSpacing</string>
+</dict>
+</plist>

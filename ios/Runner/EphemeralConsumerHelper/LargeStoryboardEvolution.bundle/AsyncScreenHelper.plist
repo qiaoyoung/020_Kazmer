@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>callbackAboutPlatform</key>
+	<string>navigatorWithBuffer</string>
+	<key>columnForAdapter</key>
+	<string>contractionViaActivity</string>
+	<key>currentServiceFormat</key>
+	<string>euclideanEffectType</string>
+	<key>exceptionBeyondParameter</key>
+	<string>resourceContainType</string>
+</dict>
+</plist>

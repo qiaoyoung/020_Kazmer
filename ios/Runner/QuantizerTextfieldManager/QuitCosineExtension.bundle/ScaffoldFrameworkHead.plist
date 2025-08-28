@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gateInsideStyle</key>
+	<string>sensorDespiteState</string>
+	<key>modelBridgePosition</key>
+	<string>responseExceptEnvironment</string>
+	<key>riverpodKindPadding</key>
+	<string>timerAmongMediator</string>
+	<key>sliderFromKind</key>
+	<string>secondCallbackDuration</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appbarLikeCommand</key>
+	<string>zoneLayerBehavior</string>
+	<key>chartSinceContext</key>
+	<string>timerViaOperation</string>
+	<key>grainAgainstContext</key>
+	<string>sessionVersusState</string>
+	<key>pivotalCapsuleVisible</key>
+	<string>inactiveCharacterColor</string>
+	<key>smartMovementCenter</key>
+	<string>symbolOutsideParam</string>
+</dict>
+</plist>

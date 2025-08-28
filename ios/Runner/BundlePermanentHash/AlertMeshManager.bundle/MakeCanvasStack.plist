@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bufferStateOrientation</key>
+	<string>normalRouteRight</string>
+	<key>clipperJobOffset</key>
+	<string>fusedDimensionDelay</string>
+	<key>cursorBeyondShape</key>
+	<string>adaptiveStorageCoord</string>
+	<key>factoryFlyweightHead</key>
+	<string>assetCompositeDistance</string>
+	<key>gridFacadeSize</key>
+	<string>cycleCompositeDirection</string>
+	<key>newestAssetFlags</key>
+	<string>tweenCommandFormat</string>
+	<key>scrollEnvironmentStyle</key>
+	<string>widgetParamAlignment</string>
+</dict>
+</plist>

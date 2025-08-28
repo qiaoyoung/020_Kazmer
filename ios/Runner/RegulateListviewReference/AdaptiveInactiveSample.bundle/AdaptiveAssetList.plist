@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aspectCycleColor</key>
+	<string>singleTextureInterval</string>
+	<key>callbackFromComposite</key>
+	<string>requiredUtilScale</string>
+	<key>cardAlongLevel</key>
+	<string>positionedFormOrientation</string>
+	<key>enabledGrainValidation</key>
+	<string>resolverCompositeSkewx</string>
+	<key>remainderChainForce</key>
+	<string>sliderTypeDepth</string>
+	<key>repositoryAmongStrategy</key>
+	<string>operationCompositeValidation</string>
+	<key>signatureFormVisible</key>
+	<string>interactiveChartVisible</string>
+	<key>timerOrCommand</key>
+	<string>containerEnvironmentFrequency</string>
+	<key>typicalLoopMomentum</key>
+	<string>requestAboutState</string>
+</dict>
+</plist>

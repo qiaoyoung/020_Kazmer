@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blocFromVariable</key>
+	<string>scrollExceptCycle</string>
+	<key>equipmentScopeTag</key>
+	<string>interactivePresenterTransparency</string>
+	<key>isolateAmongState</key>
+	<string>widgetBeyondForm</string>
+	<key>localGroupPadding</key>
+	<string>chapterBesideObserver</string>
+	<key>observerBridgeFlags</key>
+	<string>factoryCompositeOrigin</string>
+	<key>offsetDecoratorSpacing</key>
+	<string>loopOrProcess</string>
+	<key>positionIncludeChain</key>
+	<string>cubitSingletonPressure</string>
+	<key>richtextInsideForm</key>
+	<string>usecaseStateIndex</string>
+</dict>
+</plist>

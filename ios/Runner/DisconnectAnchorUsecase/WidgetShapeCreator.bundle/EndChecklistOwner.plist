@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>constraintAboutFacade</key>
+	<string>finalProjectionScale</string>
+	<key>dynamicEqualizationEdge</key>
+	<string>intuitiveCubitSkewy</string>
+	<key>intermediateStoreDistance</key>
+	<string>widgetStateBottom</string>
+	<key>movementAgainstBuffer</key>
+	<string>animationStageAcceleration</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationSystemMode</key>
+	<string>webScaffoldSaturation</string>
+	<key>asynchronousRequestRight</key>
+	<string>iconAwayAdapter</string>
+	<key>bufferPatternLeft</key>
+	<string>dedicatedIsolateDirection</string>
+	<key>instructionContextBrightness</key>
+	<string>storyboardSinceMode</string>
+	<key>statefulListviewEdge</key>
+	<string>euclideanContractionAppearance</string>
+</dict>
+</plist>

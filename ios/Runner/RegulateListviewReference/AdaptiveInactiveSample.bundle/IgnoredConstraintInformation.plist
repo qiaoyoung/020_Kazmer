@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accordionProviderAcceleration</key>
+	<string>streamTaskDensity</string>
+	<key>bufferAwayBuffer</key>
+	<string>stateContextBrightness</string>
+	<key>completionOfBuffer</key>
+	<string>easyInterfaceInteraction</string>
+	<key>interpolationTaskSaturation</key>
+	<string>comprehensiveAlignmentDistance</string>
+	<key>listviewUntilStructure</key>
+	<string>switchBeyondTask</string>
+	<key>rectLevelBrightness</key>
+	<string>alphaPrototypePadding</string>
+	<key>serviceNumberDelay</key>
+	<string>hyperbolicSpecifierSkewx</string>
+	<key>sortedFutureType</key>
+	<string>sharedButtonContrast</string>
+	<key>sustainableRowInteraction</key>
+	<string>visibleInstructionSaturation</string>
+</dict>
+</plist>

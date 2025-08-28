@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>coordinatorAwayStyle</key>
+	<string>materialGemBrightness</string>
+	<key>descriptionNearBuffer</key>
+	<string>sizeFormMode</string>
+	<key>painterFlyweightDistance</key>
+	<string>progressbarCompositeLeft</string>
+	<key>significantLabelResponse</key>
+	<string>previewTempleHue</string>
+	<key>tickerParamBrightness</key>
+	<string>significantViewOrientation</string>
+	<key>unsortedGridInterval</key>
+	<string>layoutChainDirection</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedcontainerDuringActivity</key>
+	<string>storageStrategyRotation</string>
+	<key>curveOutsideState</key>
+	<string>sineAdapterRate</string>
+	<key>interfaceOutsideVariable</key>
+	<string>semanticsVersusWork</string>
+	<key>interpolationViaType</key>
+	<string>fragmentMethodLeft</string>
+	<key>managerAsTask</key>
+	<string>displayableScaleCoord</string>
+	<key>musicLikeCommand</key>
+	<string>statelessReducerOffset</string>
+	<key>navigatorIncludeWork</key>
+	<string>actionThroughComposite</string>
+	<key>otherFeatureTransparency</key>
+	<string>popupJobCenter</string>
+	<key>richtextOutsideLevel</key>
+	<string>sophisticatedUsecaseCenter</string>
+</dict>
+</plist>

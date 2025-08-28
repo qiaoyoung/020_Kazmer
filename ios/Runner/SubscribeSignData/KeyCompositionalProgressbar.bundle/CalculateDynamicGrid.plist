@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>effectSingletonFlags</key>
+	<string>statelessExceptForm</string>
+	<key>functionalToolDirection</key>
+	<string>labelBesideSingleton</string>
+	<key>mutableProviderTheme</key>
+	<string>globalTangentDistance</string>
+	<key>popupAsBuffer</key>
+	<string>queryPhaseInset</string>
+	<key>zoneWithVar</key>
+	<string>constraintParameterVisibility</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionCommandBehavior</key>
+	<string>sineMediatorFormat</string>
+	<key>concreteMediaCenter</key>
+	<string>resolverAlongDecorator</string>
+	<key>imageStagePosition</key>
+	<string>draggableSpotDuration</string>
+	<key>iterativeConstraintFormat</key>
+	<string>appbarOutsideFramework</string>
+	<key>sharedWidgetFrequency</key>
+	<string>giftAroundType</string>
+	<key>stateWithBridge</key>
+	<string>opaquePresenterRate</string>
+</dict>
+</plist>

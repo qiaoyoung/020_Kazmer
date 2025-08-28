@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chartCycleTheme</key>
+	<string>borderFromComposite</string>
+	<key>checkboxProxyAlignment</key>
+	<string>timerSincePattern</string>
+	<key>displayableBulletAlignment</key>
+	<string>aperturePerShape</string>
+	<key>movementTaskInset</key>
+	<string>sizePerStyle</string>
+	<key>secondFrameTransparency</key>
+	<string>reusableStateBehavior</string>
+	<key>similarListenerTag</key>
+	<string>stackBufferRate</string>
+	<key>synchronousGramFlags</key>
+	<string>permissiveTimerDistance</string>
+	<key>titleVersusVar</key>
+	<string>publicProjectResponse</string>
+	<key>widgetWithoutJob</key>
+	<string>commonObserverTag</string>
+</dict>
+</plist>

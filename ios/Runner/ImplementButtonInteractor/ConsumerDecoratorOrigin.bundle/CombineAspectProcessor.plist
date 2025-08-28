@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>behaviorUntilSystem</key>
+	<string>progressbarThroughContext</string>
+	<key>containerOrEnvironment</key>
+	<string>particleProcessDelay</string>
+	<key>equipmentStageFormat</key>
+	<string>groupUntilActivity</string>
+	<key>extensionBesideAction</key>
+	<string>rowScopeColor</string>
+	<key>lostCompleterState</key>
+	<string>resourceAgainstVisitor</string>
+	<key>repositoryPhaseVisibility</key>
+	<string>dynamicCheckboxOpacity</string>
+	<key>subscriptionKindInterval</key>
+	<string>arithmeticStructureTop</string>
+</dict>
+</plist>

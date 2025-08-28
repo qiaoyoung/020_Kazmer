@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blocUntilPattern</key>
+	<string>curveProxySpeed</string>
+	<key>certificateOfFramework</key>
+	<string>newestCoordinatorAppearance</string>
+	<key>challengeUntilJob</key>
+	<string>popupWithAdapter</string>
+	<key>coordinatorStyleValidation</key>
+	<string>actionWithState</string>
+	<key>draggableAnimationIndex</key>
+	<string>groupFacadeAppearance</string>
+	<key>errorActionSaturation</key>
+	<string>bufferContainCommand</string>
+	<key>functionalNormSkewy</key>
+	<string>controllerInsideBuffer</string>
+	<key>lazyScaleLeft</key>
+	<string>lazySymbolTension</string>
+</dict>
+</plist>

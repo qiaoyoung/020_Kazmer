@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>advancedHeroOpacity</key>
+	<string>checkboxFacadeVisible</string>
+	<key>basicContainerVisible</key>
+	<string>functionalCardForce</string>
+	<key>buttonOutsidePrototype</key>
+	<string>beginnerCoordinatorRate</string>
+	<key>curveLikePattern</key>
+	<string>reductionDecoratorScale</string>
+	<key>flexiblePresenterVisibility</key>
+	<string>exponentIncludeScope</string>
+	<key>greatSizedboxFeedback</key>
+	<string>memberOrPattern</string>
+	<key>normDecoratorScale</key>
+	<string>logarithmInterpreterOrigin</string>
+	<key>reducerFacadeShape</key>
+	<string>contractionAroundState</string>
+	<key>responseFlyweightPressure</key>
+	<string>rowUntilKind</string>
+</dict>
+</plist>

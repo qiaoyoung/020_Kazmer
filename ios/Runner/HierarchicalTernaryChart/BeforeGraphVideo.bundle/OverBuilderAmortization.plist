@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>axisDespiteState</key>
+	<string>marginValuePadding</string>
+	<key>boxshadowVersusMethod</key>
+	<string>hardViewShape</string>
+	<key>custompaintDecoratorSpeed</key>
+	<string>rowPlatformBrightness</string>
+	<key>eagerCacheOrigin</key>
+	<string>flexPhaseBrightness</string>
+	<key>graphicThanOperation</key>
+	<string>staticChannelPosition</string>
+	<key>independentReducerPosition</key>
+	<string>queryBufferFlags</string>
+	<key>tableWithoutMediator</key>
+	<string>repositoryLayerOffset</string>
+	<key>variantOutsideCycle</key>
+	<string>usedNotifierName</string>
+	<key>vectorPlatformType</key>
+	<string>mutableErrorTint</string>
+</dict>
+</plist>

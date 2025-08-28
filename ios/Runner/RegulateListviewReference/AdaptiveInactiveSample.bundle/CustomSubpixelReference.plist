@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>equipmentMethodColor</key>
+	<string>navigatorWorkSkewy</string>
+	<key>resultInterpreterDepth</key>
+	<string>backwardDescriptionInset</string>
+	<key>robustInteractorCenter</key>
+	<string>previewPhaseFeedback</string>
+	<key>semanticModelPosition</key>
+	<string>curveFormDistance</string>
+</dict>
+</plist>

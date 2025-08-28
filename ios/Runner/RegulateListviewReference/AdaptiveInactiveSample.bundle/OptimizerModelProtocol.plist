@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>advancedQueueFormat</key>
+	<string>lossBufferOpacity</string>
+	<key>crucialPromiseFormat</key>
+	<string>displayableMetadataInterval</string>
+	<key>flexFromWork</key>
+	<string>exceptionInSystem</string>
+	<key>ignoredChecklistDepth</key>
+	<string>publicMetadataStyle</string>
+	<key>localizationAtTier</key>
+	<string>callbackThroughInterpreter</string>
+</dict>
+</plist>

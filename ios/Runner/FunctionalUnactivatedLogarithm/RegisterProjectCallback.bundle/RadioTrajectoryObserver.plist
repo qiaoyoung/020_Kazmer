@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>intuitiveProgressbarContrast</key>
+	<string>navigatorNumberDuration</string>
+	<key>invisibleBorderRight</key>
+	<string>dropdownbuttonStructureColor</string>
+	<key>menuCommandKind</key>
+	<string>delegateCommandStyle</string>
+	<key>richtextOutsideActivity</key>
+	<string>agilePrecisionAcceleration</string>
+	<key>smartServiceForce</key>
+	<string>reactiveInteractorCount</string>
+</dict>
+</plist>

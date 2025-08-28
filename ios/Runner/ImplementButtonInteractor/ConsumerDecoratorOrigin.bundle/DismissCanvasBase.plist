@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>buttonFrameworkDelay</key>
+	<string>resourceAgainstInterpreter</string>
+	<key>decorationBeyondStage</key>
+	<string>constraintAmongParam</string>
+	<key>discardedNotifierShape</key>
+	<string>normOutsideStrategy</string>
+	<key>gesturedetectorContextTop</key>
+	<string>particleThroughAction</string>
+</dict>
+</plist>

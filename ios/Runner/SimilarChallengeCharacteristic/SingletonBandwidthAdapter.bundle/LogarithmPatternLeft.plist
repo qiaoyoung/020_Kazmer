@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedFeatureName</key>
+	<string>synchronousRepositoryFrequency</string>
+	<key>borderPlatformAppearance</key>
+	<string>captionTempleCenter</string>
+	<key>displayableStorageAcceleration</key>
+	<string>grayscaleAroundEnvironment</string>
+	<key>handlerOutsideProcess</key>
+	<string>easyObserverSkewx</string>
+	<key>isolateProxyMode</key>
+	<string>permissiveWidgetValidation</string>
+	<key>singletonCycleDepth</key>
+	<string>enabledThreadRotation</string>
+	<key>skirtUntilEnvironment</key>
+	<string>pointParameterPadding</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>delegateMethodState</key>
+	<string>intuitiveParticleLeft</string>
+	<key>fusedScreenStyle</key>
+	<string>layoutByBridge</string>
+	<key>reductionAgainstWork</key>
+	<string>paddingVersusLayer</string>
+	<key>sliderAwaySingleton</key>
+	<string>mediumBorderScale</string>
+	<key>tableNumberSpeed</key>
+	<string>enabledRouterTail</string>
+</dict>
+</plist>

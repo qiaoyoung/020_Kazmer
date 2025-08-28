@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedcontainerAtPlatform</key>
+	<string>operationWithoutTask</string>
+	<key>featureForLayer</key>
+	<string>finalCoordinatorSkewy</string>
+	<key>fixedParticleBehavior</key>
+	<string>vectorWithVar</string>
+	<key>graphicFlyweightCount</key>
+	<string>fragmentSystemMode</string>
+	<key>resourceFunctionOpacity</key>
+	<string>mediumModelVisibility</string>
+	<key>roleVersusCycle</key>
+	<string>binaryInComposite</string>
+	<key>serviceIncludePattern</key>
+	<string>cycleFormRight</string>
+</dict>
+</plist>

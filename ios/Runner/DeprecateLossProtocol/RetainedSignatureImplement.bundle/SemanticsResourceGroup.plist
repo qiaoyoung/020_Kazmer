@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>declarativeRadioVisible</key>
+	<string>nextBehaviorTheme</string>
+	<key>disabledAnimationMode</key>
+	<string>painterAsType</string>
+	<key>localizationSincePlatform</key>
+	<string>queryBridgeDuration</string>
+	<key>normLikeComposite</key>
+	<string>labelScopeAppearance</string>
+	<key>persistentTransitionDuration</key>
+	<string>observerAtAction</string>
+	<key>pinchableChartMomentum</key>
+	<string>lastUnaryFrequency</string>
+	<key>singleVectorSpeed</key>
+	<string>textfieldAwayStructure</string>
+	<key>stateChainAlignment</key>
+	<string>offsetNearContext</string>
+</dict>
+</plist>

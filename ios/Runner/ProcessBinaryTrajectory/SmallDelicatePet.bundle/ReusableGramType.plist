@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customServiceSkewy</key>
+	<string>displayableApertureStyle</string>
+	<key>imageViaMode</key>
+	<string>resolverFrameworkPressure</string>
+	<key>profileAsOperation</key>
+	<string>ephemeralNotifierStyle</string>
+	<key>standalonePositionName</key>
+	<string>globalButtonIndex</string>
+</dict>
+</plist>

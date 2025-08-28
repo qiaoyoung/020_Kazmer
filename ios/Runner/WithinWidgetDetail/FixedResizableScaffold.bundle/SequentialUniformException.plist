@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accordionEntitySize</key>
+	<string>pinchableGemMargin</string>
+	<key>alignmentAboutPattern</key>
+	<string>fusedButtonTransparency</string>
+	<key>chartIncludeComposite</key>
+	<string>alignmentKindDepth</string>
+	<key>diversifiedWidgetInset</key>
+	<string>granularMenuAppearance</string>
+	<key>explicitGateFeedback</key>
+	<string>textJobSkewx</string>
+	<key>featurePerContext</key>
+	<string>chartOrEnvironment</string>
+	<key>layoutParamCoord</key>
+	<string>lostInstructionScale</string>
+	<key>statelessFlyweightTint</key>
+	<string>zoneKindHue</string>
+</dict>
+</plist>

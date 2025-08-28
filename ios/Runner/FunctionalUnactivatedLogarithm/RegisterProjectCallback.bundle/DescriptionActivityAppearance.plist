@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncActivityPadding</key>
+	<string>webTabbarTop</string>
+	<key>backwardChapterType</key>
+	<string>sampleWorkInset</string>
+	<key>checkboxKindIndex</key>
+	<string>usedRadiusBound</string>
+	<key>clipperJobCount</key>
+	<string>eventVersusComposite</string>
+	<key>errorAsWork</key>
+	<string>constraintForFacade</string>
+	<key>exceptionDuringContext</key>
+	<string>observerVersusForm</string>
+	<key>plateModeMomentum</key>
+	<string>binaryIncludePhase</string>
+	<key>resizableLossLocation</key>
+	<string>providerWithoutContext</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>requiredCosineTransparency</key>
+	<string>cellInsideMethod</string>
+	<key>sortedSpecifierKind</key>
+	<string>sequentialBinaryBound</string>
+	<key>stackSinceDecorator</key>
+	<string>buttonProxyDistance</string>
+	<key>tabviewChainDepth</key>
+	<string>bufferOrComposite</string>
+	<key>ternaryAsKind</key>
+	<string>plateForFunction</string>
+	<key>widgetPhaseDuration</key>
+	<string>labelByTemple</string>
+</dict>
+</plist>

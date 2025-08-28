@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>advancedHistogramFrequency</key>
+	<string>binaryInStrategy</string>
+	<key>channelsAgainstBuffer</key>
+	<string>petModeOpacity</string>
+	<key>chapterEnvironmentTint</key>
+	<string>serviceViaDecorator</string>
+	<key>cycleAlongParam</key>
+	<string>notificationParamBorder</string>
+	<key>eagerTickerRate</key>
+	<string>euclideanTouchAlignment</string>
+	<key>nodeSingletonLeft</key>
+	<string>mobileEntropyInteraction</string>
+	<key>paddingInMethod</key>
+	<string>queryParameterInset</string>
+	<key>responseWithTask</key>
+	<string>referenceInNumber</string>
+</dict>
+</plist>

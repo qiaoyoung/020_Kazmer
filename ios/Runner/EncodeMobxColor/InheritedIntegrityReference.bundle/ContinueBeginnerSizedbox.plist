@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleChecklistPadding</key>
+	<string>decorationUntilMemento</string>
+	<key>configurationThanType</key>
+	<string>blocOfTask</string>
+	<key>disabledDialogsFormat</key>
+	<string>nodeBesidePhase</string>
+	<key>gemPhaseFlags</key>
+	<string>particleCycleAppearance</string>
+	<key>loopUntilAdapter</key>
+	<string>radiusPhaseDuration</string>
+	<key>responseValueFrequency</key>
+	<string>bitrateSystemShade</string>
+	<key>subpixelLayerBehavior</key>
+	<string>techniqueProxySaturation</string>
+</dict>
+</plist>

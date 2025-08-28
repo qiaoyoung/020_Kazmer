@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activatedNotificationAcceleration</key>
+	<string>uniformTimerPadding</string>
+	<key>bufferFormAcceleration</key>
+	<string>cursorScopeInteraction</string>
+	<key>composableButtonName</key>
+	<string>exceptionParamLocation</string>
+	<key>materialFactoryTint</key>
+	<string>usedTransformerDepth</string>
+	<key>resilientCoordinatorScale</key>
+	<string>appbarOrMethod</string>
+	<key>sceneFromObserver</key>
+	<string>iterativeSignatureRight</string>
+	<key>textfieldBesideMethod</key>
+	<string>textThroughMethod</string>
+</dict>
+</plist>

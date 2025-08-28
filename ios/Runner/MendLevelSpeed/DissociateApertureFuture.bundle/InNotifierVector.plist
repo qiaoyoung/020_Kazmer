@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>draggableErrorBorder</key>
+	<string>gradientForMemento</string>
+	<key>materialAlertOffset</key>
+	<string>bufferJobAlignment</string>
+	<key>notificationOfEnvironment</key>
+	<string>advancedPresenterSize</string>
+	<key>pageviewLayerShape</key>
+	<string>navigatorFrameworkCenter</string>
+	<key>requestBeyondSingleton</key>
+	<string>errorAsVisitor</string>
+	<key>secondPaddingDistance</key>
+	<string>handlerDespiteEnvironment</string>
+	<key>workflowModeMomentum</key>
+	<string>delegateOutsideInterpreter</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activePageviewFlags</key>
+	<string>nibDecoratorInteraction</string>
+	<key>animationSystemFlags</key>
+	<string>dependencyExceptAction</string>
+	<key>aspectParamTop</key>
+	<string>gridThanPlatform</string>
+	<key>chartObserverVisible</key>
+	<string>immediateLabelCount</string>
+	<key>customAsyncSize</key>
+	<string>arithmeticIncludeMediator</string>
+	<key>navigationTierStatus</key>
+	<string>labelBeyondInterpreter</string>
+	<key>oldLayoutType</key>
+	<string>smartVariantInterval</string>
+	<key>radioVariableBottom</key>
+	<string>containerExceptState</string>
+</dict>
+</plist>

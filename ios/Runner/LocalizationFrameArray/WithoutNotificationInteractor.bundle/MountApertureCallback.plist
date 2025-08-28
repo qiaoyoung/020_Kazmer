@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>interfacePhaseRotation</key>
+	<string>frameFacadeColor</string>
+	<key>materialDurationDirection</key>
+	<string>globalChartPadding</string>
+	<key>modelLikeParam</key>
+	<string>globalViewSpacing</string>
+	<key>plateOrActivity</key>
+	<string>cardCompositeMargin</string>
+	<key>progressbarOrMode</key>
+	<string>symmetricDelegateCenter</string>
+	<key>sampleOfForm</key>
+	<string>constraintParamFrequency</string>
+	<key>spotSingletonLeft</key>
+	<string>storageAndJob</string>
+	<key>visibleCommandTint</key>
+	<string>missionWithoutOperation</string>
+	<key>zoneBridgeTint</key>
+	<string>behaviorThroughInterpreter</string>
+</dict>
+</plist>

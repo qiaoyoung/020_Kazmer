@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>adaptiveKernelStyle</key>
+	<string>associatedProgressbarState</string>
+	<key>containerBufferInteraction</key>
+	<string>subsequentAnchorContrast</string>
+	<key>eventKindSaturation</key>
+	<string>promiseParamValidation</string>
+	<key>protectedShaderFeedback</key>
+	<string>responsiveBuilderBottom</string>
+	<key>robustInjectionBound</key>
+	<string>publicSpineRight</string>
+	<key>sessionDespiteTask</key>
+	<string>animationLayerIndex</string>
+	<key>standaloneDocumentHue</key>
+	<string>invisiblePriorityEdge</string>
+	<key>subscriptionAgainstContext</key>
+	<string>bitrateByProcess</string>
+	<key>topicTypeSaturation</key>
+	<string>cupertinoNearDecorator</string>
+</dict>
+</plist>

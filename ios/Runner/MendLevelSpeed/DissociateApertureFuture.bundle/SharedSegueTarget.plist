@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>columnWithStage</key>
+	<string>currentMultiplicationDuration</string>
+	<key>commonRequestCoord</key>
+	<string>chapterBridgePosition</string>
+	<key>commonRichtextTension</key>
+	<string>webSemanticsTransparency</string>
+	<key>constraintSystemColor</key>
+	<string>apertureFromValue</string>
+	<key>consumerFormColor</key>
+	<string>accessibleSamplePosition</string>
+	<key>imageSystemHue</key>
+	<string>staticLogarithmDistance</string>
+</dict>
+</plist>

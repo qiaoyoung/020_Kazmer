@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accordionGraphRight</key>
+	<string>titleSingletonDistance</string>
+	<key>alphaVersusTask</key>
+	<string>queryInsidePlatform</string>
+	<key>draggableQueueVisibility</key>
+	<string>assetSinceBuffer</string>
+	<key>frameCompositeRight</key>
+	<string>textOutsideAction</string>
+	<key>largeProviderInset</key>
+	<string>arithmeticVersusParameter</string>
+	<key>normFacadeOffset</key>
+	<string>gridPhaseLocation</string>
+	<key>previewWorkType</key>
+	<string>declarativePreviewPressure</string>
+</dict>
+</plist>

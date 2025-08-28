@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commandFromObserver</key>
+	<string>requiredPageviewStyle</string>
+	<key>scrollableProjectionShade</key>
+	<string>similarRowTop</string>
+	<key>tabviewBeyondCommand</key>
+	<string>intuitiveStampTheme</string>
+	<key>utilAdapterScale</key>
+	<string>compositionalNotificationTail</string>
+</dict>
+</plist>

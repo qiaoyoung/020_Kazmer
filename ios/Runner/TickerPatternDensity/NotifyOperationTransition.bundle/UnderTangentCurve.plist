@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bitratePhaseInset</key>
+	<string>dropdownbuttonNearVariable</string>
+	<key>constraintKindFlags</key>
+	<string>currentNibIndex</string>
+	<key>dependencyAlongObserver</key>
+	<string>cacheContainMemento</string>
+	<key>eventSingletonOffset</key>
+	<string>inheritedRectPosition</string>
+	<key>futureWorkInset</key>
+	<string>standaloneResourceShape</string>
+	<key>giftBesideStructure</key>
+	<string>storeLevelHue</string>
+	<key>lastRoleHead</key>
+	<string>progressbarBesideDecorator</string>
+	<key>layerAgainstVariable</key>
+	<string>notificationCommandDensity</string>
+</dict>
+</plist>

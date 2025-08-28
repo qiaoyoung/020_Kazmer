@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>containerVisitorFlags</key>
+	<string>descriptionByParameter</string>
+	<key>cupertinoSinceShape</key>
+	<string>variantWithObserver</string>
+	<key>elasticMediaqueryFrequency</key>
+	<string>animationWithoutLayer</string>
+	<key>lazySpriteFormat</key>
+	<string>serviceEnvironmentLeft</string>
+	<key>momentumPerState</key>
+	<string>disabledReducerDepth</string>
+	<key>spineDespiteCommand</key>
+	<string>declarativeColumnName</string>
+	<key>usecaseParamBorder</key>
+	<string>checklistWorkColor</string>
+</dict>
+</plist>

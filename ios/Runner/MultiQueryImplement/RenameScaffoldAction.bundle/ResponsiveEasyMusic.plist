@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>awaitVersusMediator</key>
+	<string>collectionAlongAction</string>
+	<key>clipperAgainstType</key>
+	<string>rectAlongDecorator</string>
+	<key>configurationAsSystem</key>
+	<string>adaptiveEffectHue</string>
+	<key>directGradientFormat</key>
+	<string>storageSystemState</string>
+	<key>errorAndShape</key>
+	<string>handlerStrategyAppearance</string>
+	<key>listenerAmongParameter</key>
+	<string>playbackAdapterDistance</string>
+	<key>specifyBatchStatus</key>
+	<string>popupWithoutPhase</string>
+</dict>
+</plist>

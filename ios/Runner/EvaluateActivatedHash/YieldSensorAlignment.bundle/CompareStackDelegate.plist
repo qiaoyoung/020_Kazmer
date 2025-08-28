@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>crudeControllerScale</key>
+	<string>checklistVersusVar</string>
+	<key>decorationIncludeWork</key>
+	<string>sharedBaselineDepth</string>
+	<key>entityWithoutMemento</key>
+	<string>primaryMenuInset</string>
+	<key>listenerStructureStyle</key>
+	<string>sortedSlashScale</string>
+	<key>stepProxyLeft</key>
+	<string>resourceBridgeCount</string>
+	<key>textStructureKind</key>
+	<string>criticalViewDuration</string>
+</dict>
+</plist>

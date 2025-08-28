@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>borderInPhase</key>
+	<string>animatedcontainerScopeOpacity</string>
+	<key>characterInsideBuffer</key>
+	<string>desktopTableLocation</string>
+	<key>completerCommandPosition</key>
+	<string>isolateOutsideJob</string>
+	<key>elasticHistogramSkewx</key>
+	<string>modelIncludeType</string>
+	<key>mutableInjectionDelay</key>
+	<string>streamOperationStatus</string>
+	<key>profileStageFormat</key>
+	<string>unactivatedCapacitiesStatus</string>
+	<key>radiusKindAlignment</key>
+	<string>challengeAsBuffer</string>
+	<key>repositoryCompositeTheme</key>
+	<string>sequentialPresenterAlignment</string>
+</dict>
+</plist>

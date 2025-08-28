@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aspectActionBorder</key>
+	<string>signFromStrategy</string>
+	<key>buttonFromFacade</key>
+	<string>pointFromMemento</string>
+	<key>constraintAmongNumber</key>
+	<string>sharedRowAcceleration</string>
+	<key>coordinatorBeyondJob</key>
+	<string>missedRadiusShape</string>
+	<key>custompaintFlyweightTop</key>
+	<string>mediaFormBehavior</string>
+	<key>precisionFunctionBehavior</key>
+	<string>injectionBridgeType</string>
+	<key>subtleCommandFormat</key>
+	<string>lazyThemeBottom</string>
+</dict>
+</plist>

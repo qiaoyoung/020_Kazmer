@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>adaptiveRouteMode</key>
+	<string>fragmentVersusCycle</string>
+	<key>alertOrValue</key>
+	<string>priorityBeyondBuffer</string>
+	<key>desktopTabbarMomentum</key>
+	<string>offsetAlongBridge</string>
+	<key>entropyAgainstScope</key>
+	<string>brushStyleSkewx</string>
+	<key>firstCoordinatorShape</key>
+	<string>easyClipperStyle</string>
+	<key>fusedListenerForce</key>
+	<string>logarithmTaskCoord</string>
+	<key>singletonDespitePhase</key>
+	<string>semanticFrameAcceleration</string>
+</dict>
+</plist>

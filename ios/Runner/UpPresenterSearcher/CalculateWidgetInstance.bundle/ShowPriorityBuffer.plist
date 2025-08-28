@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accordionLabelCenter</key>
+	<string>subpixelVariableContrast</string>
+	<key>columnBeyondTier</key>
+	<string>sharedObserverTheme</string>
+	<key>declarativeRequestSaturation</key>
+	<string>vectorOrLevel</string>
+	<key>eagerAllocatorVisible</key>
+	<string>secondPositionHead</string>
+	<key>lazyPopupOrientation</key>
+	<string>navigatorTierPressure</string>
+	<key>metadataMediatorTension</key>
+	<string>giftAgainstStage</string>
+	<key>robustListenerFrequency</key>
+	<string>anchorValueEdge</string>
+	<key>semanticAccessoryVelocity</key>
+	<string>nibEnvironmentFlags</string>
+	<key>transformerOutsideKind</key>
+	<string>grainPerAction</string>
+</dict>
+</plist>

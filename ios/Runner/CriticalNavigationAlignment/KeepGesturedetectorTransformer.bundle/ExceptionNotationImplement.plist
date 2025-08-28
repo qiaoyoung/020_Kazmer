@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>adaptiveMasterBound</key>
+	<string>actionSingletonSkewy</string>
+	<key>listenerVarDelay</key>
+	<string>interactiveNotifierAlignment</string>
+	<key>mobileAsyncRotation</key>
+	<string>retainedCallbackKind</string>
+	<key>playbackProxyBottom</key>
+	<string>containerNearJob</string>
+	<key>spineAlongBridge</key>
+	<string>visibleConfigurationTheme</string>
+	<key>widgetPerState</key>
+	<string>tickerAndAdapter</string>
+</dict>
+</plist>

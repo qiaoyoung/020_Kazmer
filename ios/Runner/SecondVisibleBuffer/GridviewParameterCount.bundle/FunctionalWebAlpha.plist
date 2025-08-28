@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>callbackParameterDistance</key>
+	<string>numericalConfigurationSaturation</string>
+	<key>futureLevelBehavior</key>
+	<string>entityNumberScale</string>
+	<key>modelFlyweightRate</key>
+	<string>playbackCycleDuration</string>
+	<key>reactiveRadioOffset</key>
+	<string>largeViewOffset</string>
+	<key>sceneForEnvironment</key>
+	<string>signatureInterpreterTail</string>
+	<key>seamlessDrawerTransparency</key>
+	<string>graphByParameter</string>
+</dict>
+</plist>

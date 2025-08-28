@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lossSystemRate</key>
+	<string>dependencyForObserver</string>
+	<key>notifierBeyondVar</key>
+	<string>reducerAtState</string>
+	<key>promiseOutsideContext</key>
+	<string>stackThroughProxy</string>
+	<key>rowFromInterpreter</key>
+	<string>pageviewBeyondBuffer</string>
+	<key>tappableInjectionSaturation</key>
+	<string>mediaqueryOrMemento</string>
+	<key>transformerProcessOffset</key>
+	<string>multiHandlerBorder</string>
+</dict>
+</plist>

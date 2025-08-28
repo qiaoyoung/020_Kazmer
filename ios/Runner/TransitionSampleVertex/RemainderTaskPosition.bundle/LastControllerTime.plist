@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>curveBufferOrientation</key>
+	<string>resultCompositeForce</string>
+	<key>dependencySinceState</key>
+	<string>cubitOfFacade</string>
+	<key>entityVisitorStyle</key>
+	<string>coordinatorPlatformValidation</string>
+	<key>euclideanLocalizationTransparency</key>
+	<string>factoryCycleBehavior</string>
+	<key>loopAsAction</key>
+	<string>hashDuringSingleton</string>
+	<key>lossViaPlatform</key>
+	<string>mediaOfLevel</string>
+	<key>opaqueGridviewCenter</key>
+	<string>scrollableDelegateMode</string>
+	<key>persistentModulusResponse</key>
+	<string>histogramInterpreterEdge</string>
+	<key>reducerFunctionVelocity</key>
+	<string>scrollThanBuffer</string>
+	<key>sortedDurationState</key>
+	<string>mobxFunctionResponse</string>
+</dict>
+</plist>

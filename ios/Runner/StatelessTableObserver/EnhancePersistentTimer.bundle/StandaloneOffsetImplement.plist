@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>hardRouteSpeed</key>
+	<string>unactivatedStateAcceleration</string>
+	<key>resolverAsComposite</key>
+	<string>resizableWidgetRight</string>
+	<key>scaffoldWithActivity</key>
+	<string>tangentAsDecorator</string>
+	<key>standaloneProjectCoord</key>
+	<string>immediateExceptionOffset</string>
+</dict>
+</plist>

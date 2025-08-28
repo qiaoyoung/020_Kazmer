@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fixedBrushMomentum</key>
+	<string>featureLikeAction</string>
+	<key>granularViewFeedback</key>
+	<string>concurrentReducerTint</string>
+	<key>lastAnchorPosition</key>
+	<string>displayableGridviewName</string>
+	<key>notifierLayerHue</key>
+	<string>allocatorBesideChain</string>
+	<key>resourceStyleShape</key>
+	<string>builderWithObserver</string>
+	<key>semanticsByWork</key>
+	<string>reactiveTextStatus</string>
+</dict>
+</plist>

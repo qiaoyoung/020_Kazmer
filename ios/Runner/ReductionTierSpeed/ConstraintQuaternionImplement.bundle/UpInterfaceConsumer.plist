@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>momentumInCycle</key>
+	<string>layerForLevel</string>
+	<key>observerFrameworkDirection</key>
+	<string>spriteSinceLevel</string>
+	<key>semanticLogCount</key>
+	<string>semanticsFormTail</string>
+	<key>signForPlatform</key>
+	<string>subsequentTextureState</string>
+	<key>signTaskBorder</key>
+	<string>lazyOperationTail</string>
+</dict>
+</plist>

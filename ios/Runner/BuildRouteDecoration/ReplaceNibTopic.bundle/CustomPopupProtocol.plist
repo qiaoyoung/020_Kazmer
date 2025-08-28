@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aspectratioProxyInteraction</key>
+	<string>observerAroundFacade</string>
+	<key>awaitStageVisibility</key>
+	<string>coordinatorInParameter</string>
+	<key>curveTypeInset</key>
+	<string>baselineCompositeSize</string>
+	<key>gestureStateFormat</key>
+	<string>hyperbolicDropdownbuttonFlags</string>
+	<key>respectiveSubscriptionType</key>
+	<string>slashParamDistance</string>
+</dict>
+</plist>

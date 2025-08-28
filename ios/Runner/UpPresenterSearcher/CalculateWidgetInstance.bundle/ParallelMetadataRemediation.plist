@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>coordinatorContainFacade</key>
+	<string>cupertinoStoreTag</string>
+	<key>paddingVariableTheme</key>
+	<string>materialIconDistance</string>
+	<key>pageviewProxyType</key>
+	<string>usedManagerPosition</string>
+	<key>serviceViaDecorator</key>
+	<string>boxPlatformIndex</string>
+	<key>swiftAmongNumber</key>
+	<string>priorityOrScope</string>
+</dict>
+</plist>

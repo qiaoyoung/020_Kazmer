@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncStackSpacing</key>
+	<string>tweenContextDistance</string>
+	<key>baseSinceStyle</key>
+	<string>methodCompositeRate</string>
+	<key>navigatorVersusBridge</key>
+	<string>queryLayerBrightness</string>
+	<key>resourceParameterRate</key>
+	<string>spotPrototypeRight</string>
+</dict>
+</plist>

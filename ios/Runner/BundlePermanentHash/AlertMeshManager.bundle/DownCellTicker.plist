@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>localizationActivityDensity</key>
+	<string>responsiveRequestHue</string>
+	<key>logarithmExceptMethod</key>
+	<string>rapidFrameAppearance</string>
+	<key>presenterWithValue</key>
+	<string>controllerDecoratorBrightness</string>
+	<key>providerForPattern</key>
+	<string>heapFunctionShape</string>
+	<key>rapidWidgetIndex</key>
+	<string>hardActionSaturation</string>
+	<key>storeOperationStatus</key>
+	<string>disparateTextBehavior</string>
+	<key>titleDuringVisitor</key>
+	<string>resourceStateAppearance</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cardForStage</key>
+	<string>greatCallbackShape</string>
+	<key>durationAgainstValue</key>
+	<string>providerStrategyContrast</string>
+	<key>lostDialogsFeedback</key>
+	<string>accordionReducerFeedback</string>
+	<key>navigatorVisitorOffset</key>
+	<string>menuStructureInteraction</string>
+	<key>precisionExceptPrototype</key>
+	<string>listenerNearDecorator</string>
+	<key>responsivePromiseValidation</key>
+	<string>granularListenerLeft</string>
+	<key>resultAgainstAction</key>
+	<string>effectCommandSize</string>
+	<key>spotUntilTemple</key>
+	<string>euclideanUtilBound</string>
+	<key>unsortedCurveBehavior</key>
+	<string>previewPerTask</string>
+</dict>
+</plist>

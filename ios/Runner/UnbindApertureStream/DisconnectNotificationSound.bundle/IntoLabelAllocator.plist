@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cellIncludeMediator</key>
+	<string>reducerCompositeDelay</string>
+	<key>graphForComposite</key>
+	<string>declarativeRadiusMargin</string>
+	<key>lastStateTop</key>
+	<string>subpixelVersusAdapter</string>
+	<key>memberCommandSpacing</key>
+	<string>semanticsFormDirection</string>
+	<key>providerTierSaturation</key>
+	<string>aspectratioForCommand</string>
+	<key>resilientInteractorLocation</key>
+	<string>protectedHistogramAlignment</string>
+	<key>scaleExceptLayer</key>
+	<string>cosineInShape</string>
+	<key>statelessContainerInteraction</key>
+	<string>positionAroundForm</string>
+	<key>subscriptionByVariable</key>
+	<string>musicStageDirection</string>
+</dict>
+</plist>

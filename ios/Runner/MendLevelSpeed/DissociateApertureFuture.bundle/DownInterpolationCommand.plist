@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bulletAgainstFramework</key>
+	<string>rapidArithmeticBehavior</string>
+	<key>dependencyFlyweightSkewx</key>
+	<string>usecaseByPhase</string>
+	<key>hierarchicalBitrateSpeed</key>
+	<string>interactiveCoordinatorDensity</string>
+	<key>hierarchicalTitleCount</key>
+	<string>associatedSemanticsPosition</string>
+	<key>independentResultPadding</key>
+	<string>associatedTransformerPosition</string>
+	<key>primaryDescriptorDepth</key>
+	<string>interactorFunctionAcceleration</string>
+	<key>priorChartStatus</key>
+	<string>pivotalAccessoryInteraction</string>
+	<key>topicTaskInterval</key>
+	<string>basicProtocolLocation</string>
+	<key>transitionWithoutCommand</key>
+	<string>intuitiveDelegateDensity</string>
+	<key>unactivatedIconPosition</key>
+	<string>alphaChainState</string>
+</dict>
+</plist>

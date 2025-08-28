@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleDelegateTransparency</key>
+	<string>smartInteractorTag</string>
+	<key>agileColumnBrightness</key>
+	<string>injectionVariableTail</string>
+	<key>boxshadowEnvironmentOpacity</key>
+	<string>resourcePlatformShade</string>
+	<key>curveVisitorDuration</key>
+	<string>difficultCurveDensity</string>
+	<key>imperativeTransitionEdge</key>
+	<string>granularChannelsMargin</string>
+	<key>originalCompleterDirection</key>
+	<string>constCommandDuration</string>
+	<key>singletonMediatorInset</key>
+	<string>marginAroundEnvironment</string>
+	<key>switchOutsidePrototype</key>
+	<string>rowMethodContrast</string>
+	<key>unsortedInkwellVisibility</key>
+	<string>sizeSinceEnvironment</string>
+</dict>
+</plist>

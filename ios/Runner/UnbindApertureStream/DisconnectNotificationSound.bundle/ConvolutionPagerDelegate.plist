@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>enabledStepIndex</key>
+	<string>interactiveObserverEdge</string>
+	<key>invisibleGrayscaleDensity</key>
+	<string>associatedHashIndex</string>
+	<key>labelInterpreterCenter</key>
+	<string>routerAgainstProxy</string>
+	<key>navigatorBufferForce</key>
+	<string>composableSinkOrigin</string>
+	<key>paddingProxyVisible</key>
+	<string>taskPerTask</string>
+	<key>reactiveAsyncSaturation</key>
+	<string>cycleFlyweightValidation</string>
+	<key>tweenAndStage</key>
+	<string>immutableMethodContrast</string>
+</dict>
+</plist>

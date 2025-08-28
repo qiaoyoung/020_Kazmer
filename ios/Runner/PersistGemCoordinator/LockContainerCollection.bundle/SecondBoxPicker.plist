@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capacitiesJobSpeed</key>
+	<string>streamCommandBottom</string>
+	<key>composableTransitionBottom</key>
+	<string>commandAdapterBottom</string>
+	<key>desktopPreviewSaturation</key>
+	<string>buttonContextAlignment</string>
+	<key>eventStageTint</key>
+	<string>commonAspectratioCoord</string>
+	<key>fragmentParameterName</key>
+	<string>disabledExceptionOffset</string>
+	<key>imperativeTechniqueAlignment</key>
+	<string>shaderAwayBuffer</string>
+	<key>presenterPatternFrequency</key>
+	<string>retainedProgressbarTag</string>
+	<key>streamProcessStatus</key>
+	<string>modulusBeyondVisitor</string>
+	<key>tabviewAgainstCycle</key>
+	<string>subscriptionAsJob</string>
+</dict>
+</plist>

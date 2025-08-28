@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>histogramPatternHue</key>
+	<string>sampleShapeAppearance</string>
+	<key>interpolationStyleInterval</key>
+	<string>errorContainJob</string>
+	<key>previewAtPrototype</key>
+	<string>themeContextOrientation</string>
+	<key>projectContainBridge</key>
+	<string>currentPainterType</string>
+</dict>
+</plist>

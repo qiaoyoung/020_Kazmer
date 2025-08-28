@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessoryParamColor</key>
+	<string>animatedPriorityBorder</string>
+	<key>mutableToolShape</key>
+	<string>tweenModeEdge</string>
+	<key>skinBesideContext</key>
+	<string>capsuleMediatorSaturation</string>
+	<key>stateDuringState</key>
+	<string>routerSystemSpeed</string>
+	<key>usecaseModeFeedback</key>
+	<string>memberObserverVelocity</string>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capacitiesAndProcess</key>
+	<string>similarSkirtDensity</string>
+	<key>customizedPaddingCenter</key>
+	<string>curveAwayBuffer</string>
+	<key>dialogsScopeSpeed</key>
+	<string>seamlessResourceScale</string>
+	<key>localizationAtPlatform</key>
+	<string>lazySignatureAcceleration</string>
+	<key>permissiveCosineInset</key>
+	<string>futureVisitorLocation</string>
+	<key>referenceInLayer</key>
+	<string>futurePerContext</string>
+	<key>repositoryExceptType</key>
+	<string>mediocreContainerCoord</string>
+	<key>repositoryScopeSkewy</key>
+	<string>constViewState</string>
+	<key>sineNumberAlignment</key>
+	<string>statelessAgainstProcess</string>
+	<key>synchronousFramePadding</key>
+	<string>chartEnvironmentKind</string>
+</dict>
+</plist>

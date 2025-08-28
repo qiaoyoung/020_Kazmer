@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentShapeSize</key>
+	<string>bulletExceptAction</string>
+	<key>constraintExceptStrategy</key>
+	<string>groupOutsideFacade</string>
+	<key>curveInScope</key>
+	<string>tangentTierAlignment</string>
+	<key>frameOperationDistance</key>
+	<string>statelessSignTail</string>
+	<key>gramSystemTransparency</key>
+	<string>futureCommandRight</string>
+	<key>liteDocumentPressure</key>
+	<string>blocModeFlags</string>
+	<key>zoneSinceNumber</key>
+	<string>animationProcessLeft</string>
+</dict>
+</plist>

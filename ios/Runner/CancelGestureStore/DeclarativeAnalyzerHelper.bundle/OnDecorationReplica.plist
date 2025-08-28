@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>completerFacadeBehavior</key>
+	<string>respectiveGradientSkewy</string>
+	<key>configurationNumberPadding</key>
+	<string>particleScopeTint</string>
+	<key>interactorInsideType</key>
+	<string>lastSlashMargin</string>
+	<key>particlePatternAcceleration</key>
+	<string>bulletActivityLeft</string>
+	<key>publicTickerRotation</key>
+	<string>constResponseCenter</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>explicitDelegateSpacing</key>
+	<string>dependencyAmongFacade</string>
+	<key>grainBeyondStrategy</key>
+	<string>lastFutureScale</string>
+	<key>missedDropdownbuttonStyle</key>
+	<string>basicServiceVisible</string>
+	<key>modulusUntilFramework</key>
+	<string>remainderStyleSkewy</string>
+	<key>subsequentAlignmentCenter</key>
+	<string>currentLayoutInset</string>
+</dict>
+</plist>

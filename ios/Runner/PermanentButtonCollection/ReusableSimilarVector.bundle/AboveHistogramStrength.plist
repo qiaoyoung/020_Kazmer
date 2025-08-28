@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>columnPatternDistance</key>
+	<string>constraintStageBehavior</string>
+	<key>handlerTypeForce</key>
+	<string>sceneDuringJob</string>
+	<key>mediocreParticleFeedback</key>
+	<string>newestCosineState</string>
+	<key>notificationProcessInteraction</key>
+	<string>priorityLevelContrast</string>
+	<key>popupLikePattern</key>
+	<string>sinkVarDensity</string>
+	<key>transformerNearOperation</key>
+	<string>rectEnvironmentBorder</string>
+	<key>transitionValueFeedback</key>
+	<string>scrollStageAcceleration</string>
+</dict>
+</plist>

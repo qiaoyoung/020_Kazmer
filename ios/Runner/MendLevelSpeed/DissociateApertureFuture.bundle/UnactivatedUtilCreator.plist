@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alphaAsShape</key>
+	<string>skinNearProcess</string>
+	<key>delegateNumberBehavior</key>
+	<string>requestWithoutTier</string>
+	<key>gesturedetectorCommandDistance</key>
+	<string>grainDecoratorHue</string>
+	<key>painterTypeTint</key>
+	<string>spineLevelEdge</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baselineValueEdge</key>
+	<string>textfieldWithBridge</string>
+	<key>completerViaType</key>
+	<string>actionVisitorKind</string>
+	<key>densePopupPosition</key>
+	<string>heroOrPattern</string>
+	<key>intensityWorkOrientation</key>
+	<string>delegateSystemBrightness</string>
+	<key>navigationLevelPadding</key>
+	<string>requestOutsideValue</string>
+	<key>previewModeType</key>
+	<string>resultOrJob</string>
+	<key>secondBlocDelay</key>
+	<string>reducerPatternBehavior</string>
+</dict>
+</plist>

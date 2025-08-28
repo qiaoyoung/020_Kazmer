@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncSessionInterval</key>
+	<string>radiusLevelLeft</string>
+	<key>easyIsolateRate</key>
+	<string>buttonPerBridge</string>
+	<key>normBufferTint</key>
+	<string>easyGemDistance</string>
+	<key>precisionAmongStage</key>
+	<string>smartFutureSize</string>
+	<key>queueContainKind</key>
+	<string>directlyMediaMode</string>
+	<key>resolverBesideActivity</key>
+	<string>symmetricSinkInset</string>
+	<key>resolverContainVisitor</key>
+	<string>tappableTickerAcceleration</string>
+</dict>
+</plist>

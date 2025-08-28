@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basicCollectionInteraction</key>
+	<string>seamlessActionDirection</string>
+	<key>capsuleFacadeTop</key>
+	<string>commonChannelCoord</string>
+	<key>channelFunctionInset</key>
+	<string>flexValueRotation</string>
+	<key>cubitFacadeName</key>
+	<string>layoutProcessTop</string>
+	<key>dynamicNavigationIndex</key>
+	<string>borderByMethod</string>
+	<key>responseLevelMargin</key>
+	<string>missionInterpreterBrightness</string>
+	<key>smartSwiftCount</key>
+	<string>navigatorStrategyFeedback</string>
+</dict>
+</plist>

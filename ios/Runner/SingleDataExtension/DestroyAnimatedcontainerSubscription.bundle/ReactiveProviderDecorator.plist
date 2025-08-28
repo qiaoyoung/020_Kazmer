@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>associatedCharacterInteraction</key>
+	<string>overlayFlyweightScale</string>
+	<key>associatedUtilInterval</key>
+	<string>dropdownbuttonPhaseShape</string>
+	<key>brushLevelInteraction</key>
+	<string>inheritedMatrixContrast</string>
+	<key>immutableTransitionForce</key>
+	<string>capsuleSingletonLocation</string>
+	<key>lostVariantCount</key>
+	<string>drawerDecoratorDuration</string>
+	<key>mobileBufferTop</key>
+	<string>elasticBrushLeft</string>
+	<key>storeOrFramework</key>
+	<string>resilientSegueRight</string>
+	<key>textfieldVariableTransparency</key>
+	<string>storePerParameter</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asynchronousBorderAcceleration</key>
+	<string>dedicatedServiceFlags</string>
+	<key>fusedFutureLocation</key>
+	<string>resultNearStrategy</string>
+	<key>heapStructureName</key>
+	<string>sceneActivityMode</string>
+	<key>localizationPerState</key>
+	<string>visibleVectorStatus</string>
+	<key>monsterVersusContext</key>
+	<string>sustainableModalDensity</string>
+	<key>newestPopupRotation</key>
+	<string>stackAtMode</string>
+	<key>originalCurveShade</key>
+	<string>customMetadataFrequency</string>
+	<key>profileKindSpeed</key>
+	<string>observerNearVar</string>
+	<key>responsiveSizeDelay</key>
+	<string>constraintUntilCommand</string>
+</dict>
+</plist>

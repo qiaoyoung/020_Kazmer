@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cubeFunctionBehavior</key>
+	<string>interpolationStructureOrientation</string>
+	<key>mobileUntilType</key>
+	<string>anchorTypeVisible</string>
+	<key>nibPhaseOpacity</key>
+	<string>constraintDuringScope</string>
+	<key>semanticChecklistOrigin</key>
+	<string>anchorAsActivity</string>
+</dict>
+</plist>

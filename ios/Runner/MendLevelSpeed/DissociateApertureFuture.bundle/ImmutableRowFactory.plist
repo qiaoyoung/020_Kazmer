@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>borderByOperation</key>
+	<string>stampActivityTag</string>
+	<key>cacheMediatorAcceleration</key>
+	<string>hashStrategySaturation</string>
+	<key>grayscaleAdapterPressure</key>
+	<string>borderScopeTension</string>
+	<key>presenterMethodFlags</key>
+	<string>significantRectPosition</string>
+	<key>richtextStageTag</key>
+	<string>explicitOperationCenter</string>
+	<key>sceneSincePattern</key>
+	<string>nativeFutureRate</string>
+	<key>shaderFrameworkTint</key>
+	<string>shaderAtCommand</string>
+	<key>spriteTaskFeedback</key>
+	<string>completionOutsideProcess</string>
+	<key>synchronousGrainCount</key>
+	<string>dialogsAgainstPattern</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncCommandLocation</key>
+	<string>mediumChapterCenter</string>
+	<key>cubitObserverSpeed</key>
+	<string>sineValueLocation</string>
+	<key>ephemeralTransformerBorder</key>
+	<string>deferredLoopDirection</string>
+	<key>sineSinceFramework</key>
+	<string>finalApertureShape</string>
+	<key>sustainableButtonOpacity</key>
+	<string>commonShaderScale</string>
+</dict>
+</plist>

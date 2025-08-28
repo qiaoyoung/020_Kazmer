@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>descriptionBridgeMomentum</key>
+	<string>vectorAndEnvironment</string>
+	<key>offsetByScope</key>
+	<string>workflowValueBehavior</string>
+	<key>skinParamName</key>
+	<string>fixedOffsetVelocity</string>
+	<key>titleCycleBottom</key>
+	<string>statelessPatternMode</string>
+</dict>
+</plist>

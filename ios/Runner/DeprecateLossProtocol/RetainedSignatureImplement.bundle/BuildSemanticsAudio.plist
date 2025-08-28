@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>inactiveScaleColor</key>
+	<string>managerJobTransparency</string>
+	<key>intensityNearTier</key>
+	<string>widgetOutsideTier</string>
+	<key>reactiveViewFlags</key>
+	<string>semanticOverlaySpacing</string>
+	<key>resultContainProxy</key>
+	<string>permanentPlateRate</string>
+</dict>
+</plist>

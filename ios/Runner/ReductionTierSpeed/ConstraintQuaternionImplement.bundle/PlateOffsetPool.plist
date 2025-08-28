@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>challengeDuringFacade</key>
+	<string>directSensorSpacing</string>
+	<key>chartStyleVisible</key>
+	<string>composableMovementSpacing</string>
+	<key>desktopResultEdge</key>
+	<string>multiplicationInterpreterBehavior</string>
+	<key>dynamicTexturePadding</key>
+	<string>awaitTierSkewx</string>
+	<key>localTexturePressure</key>
+	<string>liteTaskAlignment</string>
+	<key>tickerCommandVisibility</key>
+	<string>dependencyWithTier</string>
+	<key>transitionMediatorSize</key>
+	<string>disabledFlexSpacing</string>
+</dict>
+</plist>

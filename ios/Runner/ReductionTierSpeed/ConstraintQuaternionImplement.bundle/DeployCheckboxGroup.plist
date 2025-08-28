@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>batchBridgeStyle</key>
+	<string>transformerChainForce</string>
+	<key>chapterCompositeTheme</key>
+	<string>switchInCommand</string>
+	<key>futureAlongEnvironment</key>
+	<string>textAroundVar</string>
+	<key>missionExceptFlyweight</key>
+	<string>durationExceptProxy</string>
+	<key>radiusWithMode</key>
+	<string>sensorContextSaturation</string>
+	<key>responseCommandMargin</key>
+	<string>entityEnvironmentBehavior</string>
+	<key>segmentAboutState</key>
+	<string>asynchronousStatefulHead</string>
+	<key>unaryAmongNumber</key>
+	<string>spotExceptState</string>
+</dict>
+</plist>

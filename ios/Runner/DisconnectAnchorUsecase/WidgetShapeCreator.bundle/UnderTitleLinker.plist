@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationOutsideValue</key>
+	<string>previewOutsideMediator</string>
+	<key>composablePaddingRate</key>
+	<string>nativeLayoutFrequency</string>
+	<key>dropdownbuttonStrategyBottom</key>
+	<string>rowObserverPressure</string>
+	<key>indicatorNumberResponse</key>
+	<string>singleLabelVisibility</string>
+	<key>labelOfFacade</key>
+	<string>requestPrototypeType</string>
+	<key>movementInsideEnvironment</key>
+	<string>collectionNearInterpreter</string>
+	<key>rowTempleHead</key>
+	<string>declarativeMusicSkewx</string>
+	<key>seamlessMethodTail</key>
+	<string>granularInteractorDuration</string>
+	<key>transformerByParameter</key>
+	<string>sliderValueSpacing</string>
+</dict>
+</plist>

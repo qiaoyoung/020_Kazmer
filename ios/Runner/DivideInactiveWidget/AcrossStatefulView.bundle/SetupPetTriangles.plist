@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capsuleOrSingleton</key>
+	<string>spritePatternSpeed</string>
+	<key>delegateOperationDepth</key>
+	<string>containerTaskCenter</string>
+	<key>sliderProxyStyle</key>
+	<string>titleDuringActivity</string>
+	<key>textureStyleDistance</key>
+	<string>textModeValidation</string>
+</dict>
+</plist>

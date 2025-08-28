@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>custompaintTaskMargin</key>
+	<string>smallTextfieldOpacity</string>
+	<key>cycleActivityInteraction</key>
+	<string>stepShapeFeedback</string>
+	<key>immediateBuilderBottom</key>
+	<string>cubitVersusVisitor</string>
+	<key>invisibleAwaitAcceleration</key>
+	<string>intermediateMethodOrientation</string>
+	<key>largeTweenSize</key>
+	<string>awaitParamPosition</string>
+	<key>queueVariableRate</key>
+	<string>featureAgainstStructure</string>
+	<key>rectCycleAlignment</key>
+	<string>advancedNormVisibility</string>
+	<key>sliderAwayBridge</key>
+	<string>offsetPerMethod</string>
+	<key>transformerAgainstFlyweight</key>
+	<string>keyBinaryPadding</string>
+	<key>webFeatureValidation</key>
+	<string>hashVarBottom</string>
+</dict>
+</plist>

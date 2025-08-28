@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>materialNavigationAlignment</key>
+	<string>dimensionWithoutMethod</string>
+	<key>previewAlongPattern</key>
+	<string>pageviewTaskOrientation</string>
+	<key>providerWorkDensity</key>
+	<string>sharedGramTop</string>
+	<key>stepOperationStyle</key>
+	<string>finalObserverFlags</string>
+</dict>
+</plist>

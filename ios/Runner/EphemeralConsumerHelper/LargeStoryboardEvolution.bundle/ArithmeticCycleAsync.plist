@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>elasticAppbarInset</key>
+	<string>durationTierRotation</string>
+	<key>fragmentOutsideMediator</key>
+	<string>associatedAlphaTop</string>
+	<key>independentRowAlignment</key>
+	<string>responseInterpreterOpacity</string>
+	<key>momentumDecoratorDistance</key>
+	<string>cursorStrategySaturation</string>
+	<key>pinchableMatrixBound</key>
+	<string>nextSpotDepth</string>
+	<key>sineMethodTransparency</key>
+	<string>characterOperationMode</string>
+</dict>
+</plist>

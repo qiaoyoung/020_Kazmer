@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncOperationVisibility</key>
+	<string>isolateValueSkewx</string>
+	<key>hashExceptInterpreter</key>
+	<string>loopByMethod</string>
+	<key>kernelLevelResponse</key>
+	<string>hierarchicalClipperMode</string>
+	<key>observerNearKind</key>
+	<string>exceptionTaskInteraction</string>
+	<key>riverpodAlongTask</key>
+	<string>geometricSingletonVisibility</string>
+	<key>routerOfStyle</key>
+	<string>publicFlexAcceleration</string>
+</dict>
+</plist>

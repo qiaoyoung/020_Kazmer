@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alphaFormAppearance</key>
+	<string>frameActivityLeft</string>
+	<key>aspectAroundTask</key>
+	<string>opaqueToolTransparency</string>
+	<key>chartEnvironmentShape</key>
+	<string>concurrentSampleDuration</string>
+	<key>mediumHeroInteraction</key>
+	<string>logVariableVisibility</string>
+	<key>protectedCurveFormat</key>
+	<string>queryOutsideShape</string>
+	<key>scaffoldShapePosition</key>
+	<string>autoDependencyMargin</string>
+	<key>taskCompositeAlignment</key>
+	<string>subsequentStoreTop</string>
+	<key>tensorImageHue</key>
+	<string>sizeBesidePattern</string>
+	<key>webLoopCoord</key>
+	<string>statelessStructureShape</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>concurrentGrainMargin</key>
+	<string>asynchronousSpriteSize</string>
+	<key>consumerOperationAcceleration</key>
+	<string>iterativeCheckboxRotation</string>
+	<key>primaryAllocatorVelocity</key>
+	<string>channelViaScope</string>
+	<key>remainderMethodPosition</key>
+	<string>stateCompositeRotation</string>
+	<key>responseSinceVar</key>
+	<string>geometricTickerFlags</string>
+	<key>stepFromContext</key>
+	<string>compositionalCompletionTheme</string>
+</dict>
+</plist>

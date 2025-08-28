@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>behaviorVersusObserver</key>
+	<string>textAwayFacade</string>
+	<key>coordinatorSinceCommand</key>
+	<string>animatedcontainerFormCenter</string>
+	<key>globalBaselineMode</key>
+	<string>textureAboutComposite</string>
+	<key>heroKindInteraction</key>
+	<string>cursorAsFacade</string>
+	<key>independentProgressbarForce</key>
+	<string>baseTierRight</string>
+	<key>optionFlyweightType</key>
+	<string>multiTitleBottom</string>
+	<key>profileLikeMediator</key>
+	<string>exponentTemplePressure</string>
+	<key>resultParamValidation</key>
+	<string>nativeThreadDistance</string>
+	<key>statelessDurationTransparency</key>
+	<string>optimizerIncludeKind</string>
+</dict>
+</plist>

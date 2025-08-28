@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cardShapeOffset</key>
+	<string>tappableScrollResponse</string>
+	<key>coordinatorLikeStage</key>
+	<string>lazyRadiusInteraction</string>
+	<key>normFacadeFeedback</key>
+	<string>spriteTaskCoord</string>
+	<key>petVisitorDuration</key>
+	<string>exceptionActivityPressure</string>
+	<key>protocolLikeScope</key>
+	<string>subpixelParamDirection</string>
+	<key>radiusIncludeChain</key>
+	<string>reductionBesideChain</string>
+	<key>reductionStateState</key>
+	<string>playbackJobFormat</string>
+	<key>skirtAtOperation</key>
+	<string>sliderObserverEdge</string>
+	<key>staticStoryboardDepth</key>
+	<string>completerStrategyResponse</string>
+</dict>
+</plist>

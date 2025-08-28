@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>advancedStateDuration</key>
+	<string>instructionUntilProxy</string>
+	<key>beginnerZoneSpacing</key>
+	<string>groupBufferMode</string>
+	<key>capacitiesOrScope</key>
+	<string>momentumBeyondProxy</string>
+	<key>capsuleAsType</key>
+	<string>basicPreviewCount</string>
+	<key>chapterShapePressure</key>
+	<string>robustHistogramSpacing</string>
+	<key>pinchableRadiusDepth</key>
+	<string>difficultMasterAcceleration</string>
+	<key>previewIncludeFlyweight</key>
+	<string>lastMediaFormat</string>
+	<key>resourceBufferPressure</key>
+	<string>containerFacadeIndex</string>
+	<key>resultProcessDuration</key>
+	<string>delegateDecoratorPressure</string>
+	<key>streamNearActivity</key>
+	<string>appbarAtCommand</string>
+</dict>
+</plist>

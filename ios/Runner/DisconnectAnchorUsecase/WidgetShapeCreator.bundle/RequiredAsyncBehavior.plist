@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>channelVersusStrategy</key>
+	<string>singletonOfLevel</string>
+	<key>immediateCoordinatorFormat</key>
+	<string>marginBufferLeft</string>
+	<key>stateAlongScope</key>
+	<string>checklistFacadeIndex</string>
+	<key>substantialProgressbarStatus</key>
+	<string>responseOfVar</string>
+</dict>
+</plist>

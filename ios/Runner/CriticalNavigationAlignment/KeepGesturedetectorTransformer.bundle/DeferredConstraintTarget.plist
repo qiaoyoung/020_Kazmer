@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dedicatedTopicBehavior</key>
+	<string>gesturedetectorScopeBehavior</string>
+	<key>frameNearContext</key>
+	<string>uniqueNodeOrigin</string>
+	<key>injectionMethodContrast</key>
+	<string>usecaseContextScale</string>
+	<key>mobileAccessoryVisibility</key>
+	<string>mediocrePreviewBrightness</string>
+	<key>notificationMethodSize</key>
+	<string>shaderFrameworkType</string>
+	<key>sessionAndTemple</key>
+	<string>mutableCursorPressure</string>
+	<key>timerProxyFrequency</key>
+	<string>errorBufferResponse</string>
+	<key>widgetBufferCoord</key>
+	<string>methodInsideFlyweight</string>
+</dict>
+</plist>

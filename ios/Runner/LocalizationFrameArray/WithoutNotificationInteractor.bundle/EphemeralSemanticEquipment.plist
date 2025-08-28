@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>equalizationFormOffset</key>
+	<string>sustainableGrainOffset</string>
+	<key>featureStateShade</key>
+	<string>contractionModeShape</string>
+	<key>normalBlocDuration</key>
+	<string>frameStrategyPosition</string>
+	<key>previewModeRate</key>
+	<string>featureTaskOffset</string>
+	<key>titleThroughFacade</key>
+	<string>streamVersusCycle</string>
+	<key>typicalTaskBottom</key>
+	<string>explicitCubitMargin</string>
+</dict>
+</plist>

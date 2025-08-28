@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>checklistAndType</key>
+	<string>collectionActionPressure</string>
+	<key>ephemeralWidgetInteraction</key>
+	<string>cupertinoAnimationOrigin</string>
+	<key>gateViaVar</key>
+	<string>riverpodPlatformRotation</string>
+	<key>intermediateProviderCount</key>
+	<string>materialBufferMargin</string>
+	<key>resourceAgainstSingleton</key>
+	<string>stampDecoratorTension</string>
+</dict>
+</plist>

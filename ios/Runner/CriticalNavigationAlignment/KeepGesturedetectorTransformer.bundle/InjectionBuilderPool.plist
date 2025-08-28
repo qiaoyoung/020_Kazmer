@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>assetUntilMethod</key>
+	<string>queueCommandCenter</string>
+	<key>beginnerMenuBorder</key>
+	<string>animationFlyweightFormat</string>
+	<key>curveOutsideStage</key>
+	<string>borderContainDecorator</string>
+	<key>gridSingletonTint</key>
+	<string>smartStackOffset</string>
+	<key>navigatorPerCycle</key>
+	<string>borderChainKind</string>
+	<key>providerSystemHead</key>
+	<string>usedIconLeft</string>
+	<key>reducerStructurePadding</key>
+	<string>lostAnimationColor</string>
+	<key>staticExpandedEdge</key>
+	<string>modalNearOperation</string>
+	<key>transformerWorkTransparency</key>
+	<string>crucialFutureOrientation</string>
+	<key>widgetFrameworkMomentum</key>
+	<string>giftAndInterpreter</string>
+</dict>
+</plist>

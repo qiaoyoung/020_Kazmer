@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticPlaybackVisibility</key>
+	<string>blocActivityAlignment</string>
+	<key>denseConfigurationVisible</key>
+	<string>tableShapeMode</string>
+	<key>ignoredTransformerSkewy</key>
+	<string>hyperbolicBlocAcceleration</string>
+	<key>menuWorkResponse</key>
+	<string>temporaryGesturedetectorSkewy</string>
+	<key>mobileTouchValidation</key>
+	<string>webMovementBottom</string>
+	<key>prismaticSizeDistance</key>
+	<string>crucialIntensityResponse</string>
+	<key>rectDuringBuffer</key>
+	<string>sceneAgainstParam</string>
+	<key>scaffoldProcessValidation</key>
+	<string>captionNumberCenter</string>
+	<key>smartSpecifierCount</key>
+	<string>graphicBeyondPrototype</string>
+</dict>
+</plist>

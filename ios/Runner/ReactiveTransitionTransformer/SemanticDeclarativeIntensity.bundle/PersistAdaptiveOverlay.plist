@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cupertinoFactoryLocation</key>
+	<string>modalOperationTheme</string>
+	<key>modalFromActivity</key>
+	<string>gestureFlyweightCenter</string>
+	<key>rowVersusStyle</key>
+	<string>histogramCommandDuration</string>
+	<key>themeActionResponse</key>
+	<string>unsortedMenuPosition</string>
+	<key>viewBufferValidation</key>
+	<string>symbolOutsideAction</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chapterAmongScope</key>
+	<string>transitionFunctionName</string>
+	<key>controllerMementoTop</key>
+	<string>blocBridgeTransparency</string>
+	<key>expandedForPlatform</key>
+	<string>spriteOutsidePattern</string>
+	<key>heapLayerTop</key>
+	<string>tweenAlongStrategy</string>
+	<key>ignoredStoreBehavior</key>
+	<string>localizationInsideContext</string>
+	<key>mobileThanContext</key>
+	<string>dedicatedAnimationInteraction</string>
+	<key>shaderNearChain</key>
+	<string>controllerFacadeMomentum</string>
+	<key>sortedProgressbarFeedback</key>
+	<string>ephemeralStatefulOrientation</string>
+</dict>
+</plist>

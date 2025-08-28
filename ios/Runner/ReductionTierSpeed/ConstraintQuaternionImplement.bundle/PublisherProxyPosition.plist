@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>localizationVersusInterpreter</key>
+	<string>discardedCharacterBehavior</string>
+	<key>mediocreCompleterTint</key>
+	<string>multiplicationOutsideLayer</string>
+	<key>nextCubeIndex</key>
+	<string>convolutionOrParam</string>
+	<key>tabbarVariableSaturation</key>
+	<string>playbackOutsideParameter</string>
+</dict>
+</plist>

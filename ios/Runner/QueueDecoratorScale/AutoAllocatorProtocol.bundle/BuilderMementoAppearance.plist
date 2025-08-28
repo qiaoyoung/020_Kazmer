@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationInCommand</key>
+	<string>bitrateSingletonMode</string>
+	<key>groupDecoratorVisible</key>
+	<string>normSingletonPressure</string>
+	<key>localizationActionOrientation</key>
+	<string>decorationVariableAppearance</string>
+	<key>routeAlongNumber</key>
+	<string>resizablePositionStatus</string>
+	<key>singletonPatternMode</key>
+	<string>resolverBesideAdapter</string>
+	<key>sortedSubscriptionAlignment</key>
+	<string>storageFormStatus</string>
+</dict>
+</plist>

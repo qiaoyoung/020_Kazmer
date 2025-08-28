@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accordionCubePressure</key>
+	<string>utilSingletonSpacing</string>
+	<key>accordionModelDensity</key>
+	<string>singletonFlyweightSkewy</string>
+	<key>alignmentMementoType</key>
+	<string>plateVarCount</string>
+	<key>materialIntensityFormat</key>
+	<string>responsiveStreamInset</string>
+	<key>resolverInsideProxy</key>
+	<string>operationDespiteVar</string>
+	<key>textFlyweightBorder</key>
+	<string>standaloneIconName</string>
+	<key>typicalBuilderTransparency</key>
+	<string>anchorLayerStyle</string>
+</dict>
+</plist>

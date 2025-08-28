@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>builderCommandStyle</key>
+	<string>notifierStageSpeed</string>
+	<key>convolutionContextHead</key>
+	<string>particleInsideShape</string>
+	<key>delegateNumberLocation</key>
+	<string>gradientContainStrategy</string>
+	<key>grayscaleFromFunction</key>
+	<string>multiConfigurationColor</string>
+	<key>gridviewExceptActivity</key>
+	<string>permissiveContainerScale</string>
+	<key>hardGraphRight</key>
+	<string>particleViaType</string>
+	<key>iconBesideSystem</key>
+	<string>textfieldNumberInset</string>
+	<key>labelVisitorOffset</key>
+	<string>riverpodEnvironmentInteraction</string>
+	<key>mediaChainAlignment</key>
+	<string>requestEnvironmentDistance</string>
+	<key>modalAboutTask</key>
+	<string>statefulSkirtDepth</string>
+</dict>
+</plist>

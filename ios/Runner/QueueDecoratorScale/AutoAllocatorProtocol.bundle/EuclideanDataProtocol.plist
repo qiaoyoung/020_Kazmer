@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>assetStrategyVelocity</key>
+	<string>hashAgainstProxy</string>
+	<key>buttonSingletonDelay</key>
+	<string>responseWithPrototype</string>
+	<key>frameTempleBound</key>
+	<string>staticRiverpodForce</string>
+	<key>grainAlongBuffer</key>
+	<string>certificateAroundCycle</string>
+	<key>kernelSystemOrientation</key>
+	<string>delegateCommandSpeed</string>
+	<key>movementAdapterSkewx</key>
+	<string>lostMusicResponse</string>
+	<key>requestAwayOperation</key>
+	<string>timerSincePattern</string>
+	<key>roleCycleDelay</key>
+	<string>customizedChecklistBrightness</string>
+	<key>statefulErrorResponse</key>
+	<string>pinchableStorageOpacity</string>
+</dict>
+</plist>

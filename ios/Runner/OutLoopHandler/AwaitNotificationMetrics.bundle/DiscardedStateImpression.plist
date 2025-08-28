@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationParameterInterval</key>
+	<string>labelFrameworkColor</string>
+	<key>behaviorAgainstStructure</key>
+	<string>builderProxyIndex</string>
+	<key>dimensionJobStatus</key>
+	<string>missedOffsetInset</string>
+	<key>eagerIntensityIndex</key>
+	<string>expandedExceptBridge</string>
+	<key>eventMethodState</key>
+	<string>topicPerVar</string>
+	<key>labelPlatformBound</key>
+	<string>handlerOperationBound</string>
+	<key>listviewModeCount</key>
+	<string>coordinatorOrComposite</string>
+	<key>optimizerAgainstMemento</key>
+	<string>behaviorInsideOperation</string>
+	<key>signLayerEdge</key>
+	<string>pinchableSpriteHue</string>
+</dict>
+</plist>

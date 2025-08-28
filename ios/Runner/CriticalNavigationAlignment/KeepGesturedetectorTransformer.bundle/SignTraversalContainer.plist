@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>errorJobRotation</key>
+	<string>notifierViaMode</string>
+	<key>providerBeyondBridge</key>
+	<string>labelStateTag</string>
+	<key>rowJobAcceleration</key>
+	<string>rowKindTheme</string>
+	<key>tabviewAgainstContext</key>
+	<string>gesturedetectorJobVisibility</string>
+</dict>
+</plist>

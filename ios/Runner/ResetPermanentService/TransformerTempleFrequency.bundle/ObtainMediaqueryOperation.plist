@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appbarActivitySpacing</key>
+	<string>completerAsSystem</string>
+	<key>basicGroupEdge</key>
+	<string>textureAndVar</string>
+	<key>graphByBridge</key>
+	<string>uniformCurveInset</string>
+	<key>skirtUntilContext</key>
+	<string>synchronousContainerBound</string>
+	<key>storeShapeAcceleration</key>
+	<string>futureWithoutAction</string>
+</dict>
+</plist>

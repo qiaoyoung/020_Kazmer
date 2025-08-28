@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cartesianSizedboxLocation</key>
+	<string>tickerNumberOrientation</string>
+	<key>constraintAlongWork</key>
+	<string>flexForWork</string>
+	<key>greatMomentumBehavior</key>
+	<string>hyperbolicSlashForce</string>
+	<key>managerPlatformEdge</key>
+	<string>challengeInsideStage</string>
+	<key>movementBufferAcceleration</key>
+	<string>fusedAnimationDensity</string>
+	<key>resourcePatternPosition</key>
+	<string>lastChecklistDepth</string>
+</dict>
+</plist>

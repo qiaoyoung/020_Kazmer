@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionPatternShape</key>
+	<string>gemForTemple</string>
+	<key>actionTaskTop</key>
+	<string>vectorNearFacade</string>
+	<key>inheritedWidgetDelay</key>
+	<string>singletonAroundStructure</string>
+	<key>offsetAsAdapter</key>
+	<string>sortedCoordinatorTheme</string>
+	<key>resultPerPrototype</key>
+	<string>offsetScopeRate</string>
+	<key>slashShapeAppearance</key>
+	<string>sequentialTweenDelay</string>
+	<key>statelessStyleFrequency</key>
+	<string>extensionAtMethod</string>
+	<key>subpixelSingletonStatus</key>
+	<string>synchronousPresenterTint</string>
+	<key>textureOutsideEnvironment</key>
+	<string>chartFunctionCount</string>
+</dict>
+</plist>

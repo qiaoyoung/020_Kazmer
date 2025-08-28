@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>desktopRowMode</key>
+	<string>reducerAsCommand</string>
+	<key>ephemeralMetadataFrequency</key>
+	<string>prevVariantCoord</string>
+	<key>extensionFacadeType</key>
+	<string>progressbarExceptFlyweight</string>
+	<key>methodAsAdapter</key>
+	<string>anchorFormStyle</string>
+	<key>positionAmongNumber</key>
+	<string>cupertinoAwaitDuration</string>
+	<key>routerAtMode</key>
+	<string>cacheStrategyInset</string>
+	<key>routerProxyTop</key>
+	<string>seamlessRiverpodAppearance</string>
+	<key>tweenInsideScope</key>
+	<string>stampLikeCycle</string>
+	<key>workflowVisitorTop</key>
+	<string>cupertinoCubeSaturation</string>
+</dict>
+</plist>

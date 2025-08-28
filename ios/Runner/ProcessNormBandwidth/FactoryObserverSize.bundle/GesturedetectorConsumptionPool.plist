@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customTransitionDelay</key>
+	<string>bulletBesideState</string>
+	<key>mutableAxisSpeed</key>
+	<string>unsortedRowContrast</string>
+	<key>permanentTaskHead</key>
+	<string>opaqueViewBorder</string>
+	<key>rowByType</key>
+	<string>marginJobDelay</string>
+	<key>textContainMemento</key>
+	<string>serviceNearKind</string>
+	<key>tickerOrMemento</key>
+	<string>sinkBesideAction</string>
+</dict>
+</plist>

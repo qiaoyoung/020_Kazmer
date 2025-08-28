@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>equipmentDecoratorVelocity</key>
+	<string>appbarThroughMediator</string>
+	<key>inheritedHandlerTransparency</key>
+	<string>touchTaskKind</string>
+	<key>nextCubitRight</key>
+	<string>appbarFrameworkSpeed</string>
+	<key>observerActionValidation</key>
+	<string>prevGraphicState</string>
+	<key>publicLocalizationBorder</key>
+	<string>gridIncludeWork</string>
+	<key>rapidGroupDepth</key>
+	<string>secondStepPadding</string>
+</dict>
+</plist>

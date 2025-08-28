@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>completionSinceNumber</key>
+	<string>actionNearPlatform</string>
+	<key>decorationObserverPosition</key>
+	<string>easySingletonBrightness</string>
+	<key>iconExceptAction</key>
+	<string>crudePositionShade</string>
+	<key>materialIncludeStrategy</key>
+	<string>arithmeticValueValidation</string>
+	<key>resourceJobScale</key>
+	<string>staticWidgetFlags</string>
+	<key>resourceMementoState</key>
+	<string>listenerWithDecorator</string>
+	<key>smallCapsuleInset</key>
+	<string>equalizationActivityStatus</string>
+	<key>streamInProxy</key>
+	<string>logParamOffset</string>
+</dict>
+</plist>

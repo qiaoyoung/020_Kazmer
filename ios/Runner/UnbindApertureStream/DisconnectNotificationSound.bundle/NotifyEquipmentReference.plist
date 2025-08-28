@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>graphCommandMode</key>
+	<string>frameAtWork</string>
+	<key>keyTransformerColor</key>
+	<string>actionStageShade</string>
+	<key>mediumMobileBorder</key>
+	<string>managerByPhase</string>
+	<key>normalStatelessOrientation</key>
+	<string>coordinatorPatternFormat</string>
+	<key>serviceThanVar</key>
+	<string>specifyWidgetEdge</string>
+	<key>sliderIncludeFunction</key>
+	<string>asyncFormCenter</string>
+	<key>smallResultDelay</key>
+	<string>transitionSingletonTail</string>
+	<key>statelessTypeDuration</key>
+	<string>mobxWithAdapter</string>
+	<key>zoneExceptBuffer</key>
+	<string>blocContainAdapter</string>
+</dict>
+</plist>

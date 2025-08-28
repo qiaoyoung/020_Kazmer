@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncPriorityCenter</key>
+	<string>skirtStateContrast</string>
+	<key>flexibleDecorationRotation</key>
+	<string>toolOrMethod</string>
+	<key>intermediateAwaitAlignment</key>
+	<string>coordinatorUntilStyle</string>
+	<key>prevCompositionRotation</key>
+	<string>secondAnimationSpeed</string>
+	<key>progressbarStageName</key>
+	<string>adaptiveDescriptionPadding</string>
+	<key>queueObserverEdge</key>
+	<string>spotAwayMode</string>
+</dict>
+</plist>

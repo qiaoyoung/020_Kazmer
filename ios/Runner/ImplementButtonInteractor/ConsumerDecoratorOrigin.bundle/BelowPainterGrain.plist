@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseOrTemple</key>
+	<string>decorationEnvironmentRotation</string>
+	<key>blocDespiteShape</key>
+	<string>constraintAsValue</string>
+	<key>clipperValueInteraction</key>
+	<string>scaleDespiteEnvironment</string>
+	<key>effectContainPrototype</key>
+	<string>tweenAdapterDensity</string>
+	<key>gramModeEdge</key>
+	<string>retainedPlaybackRight</string>
+	<key>queryDecoratorMargin</key>
+	<string>clipperThroughStage</string>
+	<key>samplePatternInterval</key>
+	<string>heroBeyondCommand</string>
+	<key>sliderPhaseFrequency</key>
+	<string>inheritedGroupRotation</string>
+</dict>
+</plist>

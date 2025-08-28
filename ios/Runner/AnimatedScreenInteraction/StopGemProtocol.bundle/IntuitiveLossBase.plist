@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>associatedDialogsDirection</key>
+	<string>observerVersusPrototype</string>
+	<key>granularBulletAcceleration</key>
+	<string>menuVariableStatus</string>
+	<key>ignoredTimerRotation</key>
+	<string>persistentGesturedetectorBound</string>
+	<key>popupAboutShape</key>
+	<string>containerAlongFramework</string>
+	<key>screenAdapterTop</key>
+	<string>gramTypeInset</string>
+	<key>titleViaChain</key>
+	<string>arithmeticFeatureAcceleration</string>
+	<key>usecaseTaskAlignment</key>
+	<string>semanticsFromTier</string>
+</dict>
+</plist>

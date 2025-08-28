@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>awaitBridgeCoord</key>
+	<string>explicitAwaitSpacing</string>
+	<key>contractionUntilEnvironment</key>
+	<string>crucialCollectionFrequency</string>
+	<key>customizedLayoutResponse</key>
+	<string>hashContainStyle</string>
+	<key>eagerModelBottom</key>
+	<string>customizedAnchorMargin</string>
+	<key>entityActivityOffset</key>
+	<string>desktopSliderShade</string>
+	<key>notifierPlatformMomentum</key>
+	<string>cupertinoBufferAcceleration</string>
+	<key>rapidConfigurationFormat</key>
+	<string>resolverPerStage</string>
+	<key>requestWithParameter</key>
+	<string>sinkLikeTask</string>
+	<key>respectiveReducerTag</key>
+	<string>unactivatedDecorationResponse</string>
+</dict>
+</plist>

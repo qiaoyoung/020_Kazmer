@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleModulusFrequency</key>
+	<string>movementOperationDirection</string>
+	<key>chapterCommandInterval</key>
+	<string>indicatorOperationShape</string>
+	<key>currentActionOrientation</key>
+	<string>scrollableCoordinatorMargin</string>
+	<key>effectBufferForce</key>
+	<string>blocFormTail</string>
+	<key>independentPromiseDepth</key>
+	<string>sliderVisitorIndex</string>
+	<key>sharedResolverCoord</key>
+	<string>pinchableApertureTint</string>
+	<key>tappableOverlayType</key>
+	<string>projectionAlongCommand</string>
+</dict>
+</plist>

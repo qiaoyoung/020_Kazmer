@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>delegateMethodInset</key>
+	<string>contractionOrScope</string>
+	<key>explicitResourceAcceleration</key>
+	<string>positionSinceOperation</string>
+	<key>futureThanCommand</key>
+	<string>adaptiveActionRotation</string>
+	<key>grayscaleCommandSpacing</key>
+	<string>dynamicFutureSaturation</string>
+	<key>missedTabviewMode</key>
+	<string>behaviorDuringActivity</string>
+	<key>notificationSinceMethod</key>
+	<string>sequentialAppbarStyle</string>
+	<key>primaryTextureTransparency</key>
+	<string>immediateProviderLocation</string>
+	<key>relationalLabelType</key>
+	<string>storyboardProcessMargin</string>
+	<key>similarRouterFeedback</key>
+	<string>associatedBufferTail</string>
+</dict>
+</plist>

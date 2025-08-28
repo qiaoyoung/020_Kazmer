@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncPresenterFormat</key>
+	<string>gridviewPrototypeTheme</string>
+	<key>axisThroughMediator</key>
+	<string>textfieldCommandResponse</string>
+	<key>controllerModeMargin</key>
+	<string>paddingBridgeDuration</string>
+	<key>cupertinoWithSystem</key>
+	<string>segmentAwayTask</string>
+	<key>prismaticZoneSkewy</key>
+	<string>configurationBesidePrototype</string>
+	<key>sophisticatedSegueAlignment</key>
+	<string>segueLikeStage</string>
+	<key>taskNumberLeft</key>
+	<string>labelNumberOffset</string>
+</dict>
+</plist>

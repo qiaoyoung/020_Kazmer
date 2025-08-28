@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>denseTopicFeedback</key>
+	<string>serviceStateScale</string>
+	<key>diffableStorePosition</key>
+	<string>alignmentPlatformColor</string>
+	<key>hierarchicalTransitionMode</key>
+	<string>slashOutsideBuffer</string>
+	<key>layoutPhaseName</key>
+	<string>singletonOrMediator</string>
+	<key>newestProviderState</key>
+	<string>secondRepositoryCount</string>
+	<key>rowAtOperation</key>
+	<string>directPreviewAlignment</string>
+	<key>taskThanPlatform</key>
+	<string>lastModalPosition</string>
+</dict>
+</plist>

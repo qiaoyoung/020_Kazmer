@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>constraintPatternType</key>
+	<string>resultParameterAppearance</string>
+	<key>curveFormEdge</key>
+	<string>cubitUntilPrototype</string>
+	<key>extensionValueVelocity</key>
+	<string>cardActivityBrightness</string>
+	<key>fixedChannelFlags</key>
+	<string>ephemeralCollectionVisible</string>
+	<key>protectedAlertLeft</key>
+	<string>columnTierType</string>
+	<key>rapidQueueBrightness</key>
+	<string>aspectratioKindVelocity</string>
+	<key>resilientTransformerMomentum</key>
+	<string>intuitiveNavigatorStyle</string>
+	<key>standaloneEventMode</key>
+	<string>radioInsideActivity</string>
+	<key>workflowAsState</key>
+	<string>storyboardActionSpeed</string>
+</dict>
+</plist>

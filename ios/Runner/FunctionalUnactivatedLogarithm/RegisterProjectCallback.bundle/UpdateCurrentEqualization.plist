@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>decorationSingletonFrequency</key>
+	<string>previewOfWork</string>
+	<key>invisibleCoordinatorHue</key>
+	<string>statelessProgressbarDirection</string>
+	<key>responseWithoutLayer</key>
+	<string>assetIncludePrototype</string>
+	<key>tickerLikeStructure</key>
+	<string>instructionPatternVisible</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>criticalDependencyValidation</key>
+	<string>customTweenResponse</string>
+	<key>durationBridgeFormat</key>
+	<string>mobxWithPrototype</string>
+	<key>entityByVariable</key>
+	<string>greatMarginLeft</string>
+	<key>gramAboutSystem</key>
+	<string>titleOfPattern</string>
+	<key>scrollPerStrategy</key>
+	<string>transitionVariableLeft</string>
+	<key>sortedAnimationVelocity</key>
+	<string>subsequentCommandResponse</string>
+	<key>timerFlyweightMode</key>
+	<string>protectedBaseShade</string>
+</dict>
+</plist>

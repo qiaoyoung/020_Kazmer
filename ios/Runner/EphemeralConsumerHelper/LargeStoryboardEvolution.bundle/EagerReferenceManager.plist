@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cupertinoChartValidation</key>
+	<string>sequentialChartRate</string>
+	<key>desktopTouchPosition</key>
+	<string>custompaintAtSingleton</string>
+	<key>functionalPrecisionDensity</key>
+	<string>mainExpandedFeedback</string>
+	<key>imperativeSpriteAlignment</key>
+	<string>channelExceptJob</string>
+	<key>interactorWorkHead</key>
+	<string>cursorChainStyle</string>
+	<key>interpolationSingletonBound</key>
+	<string>usedAnimationMode</string>
+	<key>reusableResolverOpacity</key>
+	<string>swiftAlongAction</string>
+	<key>sequentialRichtextVelocity</key>
+	<string>permanentSwitchBorder</string>
+	<key>taskPerDecorator</key>
+	<string>collectionAsPlatform</string>
+	<key>usedAxisForce</key>
+	<string>queueAroundLevel</string>
+</dict>
+</plist>

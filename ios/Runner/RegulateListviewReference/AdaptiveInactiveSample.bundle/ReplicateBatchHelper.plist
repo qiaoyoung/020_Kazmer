@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>diversifiedContractionStyle</key>
+	<string>consumerMementoTransparency</string>
+	<key>drawerLikeStrategy</key>
+	<string>alignmentUntilPrototype</string>
+	<key>lostErrorRate</key>
+	<string>staticPageviewVisibility</string>
+	<key>notificationAroundFacade</key>
+	<string>localSceneOpacity</string>
+	<key>reductionScopeDelay</key>
+	<string>frameAndMode</string>
+	<key>smartViewType</key>
+	<string>normValueTheme</string>
+	<key>ternaryProxyBehavior</key>
+	<string>typicalTextureEdge</string>
+	<key>transitionAndMemento</key>
+	<string>declarativeRoleMargin</string>
+	<key>vectorVersusEnvironment</key>
+	<string>asynchronousDialogsFormat</string>
+</dict>
+</plist>

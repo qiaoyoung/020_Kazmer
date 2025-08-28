@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleExtensionVisible</key>
+	<string>tensorImageContrast</string>
+	<key>checkboxOperationSpacing</key>
+	<string>sizeViaEnvironment</string>
+	<key>grainLikeAction</key>
+	<string>providerObserverBorder</string>
+	<key>missedImageHead</key>
+	<string>opaqueRowBound</string>
+	<key>scrollableChartCoord</key>
+	<string>hyperbolicShaderDistance</string>
+	<key>singletonFacadeValidation</key>
+	<string>smartSymbolTint</string>
+	<key>textureUntilBuffer</key>
+	<string>descriptionCompositeSkewx</string>
+</dict>
+</plist>

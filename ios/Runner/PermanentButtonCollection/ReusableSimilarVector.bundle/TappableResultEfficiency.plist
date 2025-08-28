@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>equipmentPatternHead</key>
+	<string>currentTickerLeft</string>
+	<key>frameAlongAction</key>
+	<string>eventFromComposite</string>
+	<key>frameForFramework</key>
+	<string>channelsAndTask</string>
+	<key>grainIncludeMemento</key>
+	<string>hashByComposite</string>
+	<key>repositoryUntilObserver</key>
+	<string>titleCycleContrast</string>
+	<key>scrollableLayoutTail</key>
+	<string>draggableEventOffset</string>
+</dict>
+</plist>

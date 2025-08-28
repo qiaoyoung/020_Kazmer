@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>consumerVisitorStyle</key>
+	<string>alertMethodPadding</string>
+	<key>graphInsideBuffer</key>
+	<string>allocatorVariableCoord</string>
+	<key>layoutTypeResponse</key>
+	<string>hierarchicalObserverDirection</string>
+	<key>metadataActivityStyle</key>
+	<string>signatureAtMemento</string>
+	<key>publicTernaryTag</key>
+	<string>buttonSingletonStyle</string>
+	<key>screenSinceCycle</key>
+	<string>movementBufferVelocity</string>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>callbackAboutFlyweight</key>
+	<string>sliderBridgeVisible</string>
+	<key>cubitActivityAppearance</key>
+	<string>expandedVersusTask</string>
+	<key>expandedAtActivity</key>
+	<string>directlyFeatureOffset</string>
+	<key>keyCaptionTint</key>
+	<string>diffableSignatureDelay</string>
+	<key>largeSceneBehavior</key>
+	<string>priorityMethodName</string>
+	<key>overlayValueOffset</key>
+	<string>builderKindLeft</string>
+	<key>routeAgainstContext</key>
+	<string>subtleProviderRight</string>
+	<key>semanticConstraintTheme</key>
+	<string>layoutPhasePadding</string>
+	<key>sensorContextCoord</key>
+	<string>sliderPrototypeVelocity</string>
+	<key>threadSinceAdapter</key>
+	<string>usedOverlayScale</string>
+</dict>
+</plist>

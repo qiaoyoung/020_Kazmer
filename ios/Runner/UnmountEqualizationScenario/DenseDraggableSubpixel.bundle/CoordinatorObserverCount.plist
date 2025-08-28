@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>denseInjectionTop</key>
+	<string>monsterAsSingleton</string>
+	<key>drawerByFunction</key>
+	<string>textBesideWork</string>
+	<key>giftStageVisibility</key>
+	<string>widgetBesideContext</string>
+	<key>semanticResourceInset</key>
+	<string>expandedMementoInset</string>
+</dict>
+</plist>

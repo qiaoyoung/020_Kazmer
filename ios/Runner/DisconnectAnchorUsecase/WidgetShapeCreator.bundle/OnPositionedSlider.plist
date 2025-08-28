@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>directGestureSkewy</key>
+	<string>imageAsBuffer</string>
+	<key>priorityNearAdapter</key>
+	<string>modalCommandInteraction</string>
+	<key>sequentialResolverCenter</key>
+	<string>firstPointIndex</string>
+	<key>streamThanAction</key>
+	<string>intuitiveChecklistAppearance</string>
+	<key>threadViaAction</key>
+	<string>pointLevelDistance</string>
+</dict>
+</plist>

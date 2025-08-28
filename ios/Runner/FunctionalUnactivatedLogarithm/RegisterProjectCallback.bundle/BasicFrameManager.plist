@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedcontainerProxyVelocity</key>
+	<string>requestBesideMediator</string>
+	<key>bitrateBesideObserver</key>
+	<string>oldSliderBottom</string>
+	<key>blocCommandVelocity</key>
+	<string>curveAroundObserver</string>
+	<key>primarySwitchCount</key>
+	<string>significantProjectLeft</string>
+	<key>retainedInterfaceStatus</key>
+	<string>memberMementoFormat</string>
+</dict>
+</plist>

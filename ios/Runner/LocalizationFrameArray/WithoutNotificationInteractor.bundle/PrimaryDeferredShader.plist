@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoTableBehavior</key>
+	<string>mainLabelRotation</string>
+	<key>completerOutsideSingleton</key>
+	<string>petWorkForce</string>
+	<key>crucialCubeInterval</key>
+	<string>animatedMarginPosition</string>
+	<key>granularDecorationBottom</key>
+	<string>mobxWithoutTask</string>
+	<key>queryLayerBottom</key>
+	<string>criticalLoopShade</string>
+	<key>reductionOfLevel</key>
+	<string>boxshadowInLevel</string>
+	<key>subscriptionAboutOperation</key>
+	<string>secondCubeBorder</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>awaitJobRate</key>
+	<string>drawerViaFlyweight</string>
+	<key>cubitFromMediator</key>
+	<string>binaryShapeRotation</string>
+	<key>topicObserverFormat</key>
+	<string>optionForState</string>
+	<key>zonePlatformFrequency</key>
+	<string>activatedProgressbarEdge</string>
+</dict>
+</plist>

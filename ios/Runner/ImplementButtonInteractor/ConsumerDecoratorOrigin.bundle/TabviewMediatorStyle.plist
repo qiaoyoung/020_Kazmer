@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>controllerOutsideStyle</key>
+	<string>methodLevelScale</string>
+	<key>iconPerPlatform</key>
+	<string>listenerFlyweightResponse</string>
+	<key>modalWithoutStage</key>
+	<string>checkboxPerNumber</string>
+	<key>persistentTextureSpeed</key>
+	<string>characterAtVisitor</string>
+	<key>scrollableChannelContrast</key>
+	<string>resourceParameterFrequency</string>
+	<key>segmentWithoutVisitor</key>
+	<string>streamVariableMargin</string>
+	<key>signatureModeInteraction</key>
+	<string>nibBufferColor</string>
+</dict>
+</plist>

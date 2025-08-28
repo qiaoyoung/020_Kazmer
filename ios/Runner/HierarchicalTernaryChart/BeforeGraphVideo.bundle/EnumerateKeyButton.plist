@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cellInFlyweight</key>
+	<string>queryUntilAction</string>
+	<key>mediaqueryCycleState</key>
+	<string>euclideanFragmentBrightness</string>
+	<key>persistentTextFrequency</key>
+	<string>interfaceWithFacade</string>
+	<key>presenterPlatformDirection</key>
+	<string>notifierBufferDepth</string>
+</dict>
+</plist>

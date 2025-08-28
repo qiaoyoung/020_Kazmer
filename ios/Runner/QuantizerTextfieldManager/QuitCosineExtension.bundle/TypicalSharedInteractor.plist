@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>builderUntilVisitor</key>
+	<string>behaviorAmongAdapter</string>
+	<key>catalystExceptCycle</key>
+	<string>sampleLayerRate</string>
+	<key>descriptionBeyondNumber</key>
+	<string>directlyDependencySpeed</string>
+	<key>labelMethodContrast</key>
+	<string>materialCompositeColor</string>
+	<key>particleInsideLevel</key>
+	<string>apertureNearLevel</string>
+	<key>scrollableZoneAppearance</key>
+	<string>gridCycleSkewy</string>
+	<key>similarSwiftSpacing</key>
+	<string>positionKindBorder</string>
+	<key>smallContainerAcceleration</key>
+	<string>threadForInterpreter</string>
+	<key>standaloneObserverSkewy</key>
+	<string>layerSingletonFrequency</string>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customLayerOffset</key>
+	<string>transitionKindBehavior</string>
+	<key>isolateChainPressure</key>
+	<string>anchorPerForm</string>
+	<key>managerSingletonInteraction</key>
+	<string>notificationFormEdge</string>
+	<key>playbackStyleBrightness</key>
+	<string>bufferSystemSkewx</string>
+	<key>reactiveSkinMomentum</key>
+	<string>directCallbackFrequency</string>
+	<key>scrollPatternSkewx</key>
+	<string>mutableInterfaceEdge</string>
+	<key>secondResourceFormat</key>
+	<string>animatedSubscriptionBehavior</string>
+	<key>sinkBridgeName</key>
+	<string>customHandlerAlignment</string>
+	<key>spineTierShape</key>
+	<string>animatedTimerIndex</string>
+	<key>statelessResourceTag</key>
+	<string>taskBeyondVariable</string>
+</dict>
+</plist>

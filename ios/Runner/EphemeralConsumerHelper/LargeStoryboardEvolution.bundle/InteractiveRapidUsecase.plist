@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activatedBaseAppearance</key>
+	<string>hardEqualizationLocation</string>
+	<key>deferredCubitTop</key>
+	<string>animatedPrioritySpeed</string>
+	<key>eventMediatorTheme</key>
+	<string>tweenMethodShade</string>
+	<key>notificationLevelTheme</key>
+	<string>animatedDelegateInterval</string>
+	<key>resultFromPlatform</key>
+	<string>featurePatternFrequency</string>
+	<key>routeOrInterpreter</key>
+	<string>dialogsInMemento</string>
+	<key>tabviewLevelName</key>
+	<string>querySingletonDensity</string>
+</dict>
+</plist>

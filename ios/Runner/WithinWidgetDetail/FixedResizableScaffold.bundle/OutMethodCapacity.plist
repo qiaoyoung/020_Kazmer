@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mediaIncludeFlyweight</key>
+	<string>effectDuringNumber</string>
+	<key>mobileFacadeInteraction</key>
+	<string>taskParamTint</string>
+	<key>prevGridDistance</key>
+	<string>spriteAgainstStrategy</string>
+	<key>toolParamEdge</key>
+	<string>hyperbolicControllerScale</string>
+	<key>workflowCycleStyle</key>
+	<string>inkwellFlyweightStyle</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionDuringSingleton</key>
+	<string>tweenUntilProcess</string>
+	<key>currentSegmentTop</key>
+	<string>statefulStateStatus</string>
+	<key>desktopControllerDelay</key>
+	<string>touchExceptMethod</string>
+	<key>layoutNumberMargin</key>
+	<string>viewAtActivity</string>
+	<key>statefulLayerKind</key>
+	<string>criticalDescriptionSaturation</string>
+	<key>tabviewStatePosition</key>
+	<string>observerMementoBorder</string>
+</dict>
+</plist>

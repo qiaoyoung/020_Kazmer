@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoReductionMargin</key>
+	<string>navigationTypeDistance</string>
+	<key>constRouterFeedback</key>
+	<string>dynamicQueryDensity</string>
+	<key>localizationShapeVisible</key>
+	<string>slashJobOpacity</string>
+</dict>
+</plist>

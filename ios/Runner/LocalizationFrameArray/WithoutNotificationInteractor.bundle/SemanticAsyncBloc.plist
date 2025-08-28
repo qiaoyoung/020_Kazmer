@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basicStorageBorder</key>
+	<string>mapTierContrast</string>
+	<key>commandAtWork</key>
+	<string>drawerInsideBridge</string>
+	<key>dependencyFrameworkCoord</key>
+	<string>mediaqueryBridgeTint</string>
+	<key>directStoreSize</key>
+	<string>certificateChainLocation</string>
+	<key>optionVersusDecorator</key>
+	<string>uniformCollectionAppearance</string>
+	<key>textfieldInterpreterOffset</key>
+	<string>positionMementoSpacing</string>
+</dict>
+</plist>

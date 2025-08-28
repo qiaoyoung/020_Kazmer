@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>anchorOfSystem</key>
+	<string>cacheWithoutEnvironment</string>
+	<key>brushLikeOperation</key>
+	<string>cellSinceLevel</string>
+	<key>concreteCoordinatorTransparency</key>
+	<string>resultPhaseRotation</string>
+	<key>gradientOutsideStage</key>
+	<string>deferredLogarithmFormat</string>
+	<key>mobxBridgeKind</key>
+	<string>frameAtStrategy</string>
+	<key>routerWorkFeedback</key>
+	<string>secondMapTint</string>
+	<key>tickerOutsidePlatform</key>
+	<string>particleShapeTag</string>
+</dict>
+</plist>

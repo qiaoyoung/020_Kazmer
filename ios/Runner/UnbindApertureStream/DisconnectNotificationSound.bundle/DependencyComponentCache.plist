@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>decorationFunctionMargin</key>
+	<string>modulusAlongPattern</string>
+	<key>isolateFromOperation</key>
+	<string>requiredRemainderDirection</string>
+	<key>pointLayerAcceleration</key>
+	<string>animationIncludeMethod</string>
+	<key>utilSingletonPosition</key>
+	<string>difficultBaselineVisible</string>
+</dict>
+</plist>

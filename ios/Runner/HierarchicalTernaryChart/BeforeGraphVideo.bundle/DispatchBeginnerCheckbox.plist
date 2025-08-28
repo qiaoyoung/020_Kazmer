@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blocPerFramework</key>
+	<string>asynchronousPriorityRate</string>
+	<key>liteLabelRotation</key>
+	<string>capsuleSinceAction</string>
+	<key>notifierMethodVisibility</key>
+	<string>nextMobileTransparency</string>
+	<key>overlayOperationBehavior</key>
+	<string>methodWithoutMediator</string>
+	<key>segueValueScale</key>
+	<string>offsetCompositeInteraction</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capacitiesValueTransparency</key>
+	<string>checklistFunctionHue</string>
+	<key>explicitContainerTransparency</key>
+	<string>fusedRemainderSpacing</string>
+	<key>layerProcessValidation</key>
+	<string>significantButtonName</string>
+	<key>mapBesideStrategy</key>
+	<string>menuTierScale</string>
+</dict>
+</plist>

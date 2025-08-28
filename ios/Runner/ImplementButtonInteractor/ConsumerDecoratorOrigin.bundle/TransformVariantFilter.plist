@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedCosineStyle</key>
+	<string>containerExceptMethod</string>
+	<key>configurationLikeStrategy</key>
+	<string>sampleInterpreterBehavior</string>
+	<key>cupertinoSliderCenter</key>
+	<string>opaqueErrorShape</string>
+	<key>featurePerEnvironment</key>
+	<string>backwardFeatureSpacing</string>
+	<key>geometricStorageTension</key>
+	<string>liteUsecaseTail</string>
+	<key>listenerOrJob</key>
+	<string>callbackWithoutVisitor</string>
+	<key>localizationProxyDepth</key>
+	<string>responseIncludeFunction</string>
+	<key>notifierScopeOrigin</key>
+	<string>notifierContextShade</string>
+	<key>singleWidgetAppearance</key>
+	<string>multiplicationWorkAppearance</string>
+	<key>unactivatedUtilDepth</key>
+	<string>petInProxy</string>
+</dict>
+</plist>

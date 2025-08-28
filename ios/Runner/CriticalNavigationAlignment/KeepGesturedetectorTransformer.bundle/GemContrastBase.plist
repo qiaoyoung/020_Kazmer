@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleStatelessStyle</key>
+	<string>mediaFrameworkBehavior</string>
+	<key>awaitAsValue</key>
+	<string>completerAndForm</string>
+	<key>axisContainScope</key>
+	<string>requestInsideStage</string>
+	<key>backwardNavigationIndex</key>
+	<string>smartListenerForce</string>
+	<key>capsuleWorkBorder</key>
+	<string>controllerOfCommand</string>
+	<key>directNavigatorMode</key>
+	<string>graphViaTask</string>
+	<key>diversifiedFactoryPosition</key>
+	<string>timerAgainstActivity</string>
+	<key>sineDespiteVariable</key>
+	<string>agileLogarithmLocation</string>
+	<key>statefulButtonTension</key>
+	<string>previewInsideContext</string>
+	<key>statelessErrorFlags</key>
+	<string>chapterPlatformBound</string>
+</dict>
+</plist>

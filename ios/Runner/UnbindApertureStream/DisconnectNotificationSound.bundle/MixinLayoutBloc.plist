@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>respectiveViewEdge</key>
+	<string>drawerAroundProcess</string>
+	<key>shaderMethodTag</key>
+	<string>reactiveSwitchFormat</string>
+	<key>smartRichtextColor</key>
+	<string>graphTaskShade</string>
+	<key>staticQueueSpacing</key>
+	<string>configurationAdapterDistance</string>
+	<key>subscriptionTypeVisible</key>
+	<string>managerFromEnvironment</string>
+</dict>
+</plist>

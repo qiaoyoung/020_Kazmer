@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appbarValueKind</key>
+	<string>normForJob</string>
+	<key>checkboxChainAlignment</key>
+	<string>alignmentContainObserver</string>
+	<key>directErrorType</key>
+	<string>mediumImageSpeed</string>
+	<key>grainParameterSize</key>
+	<string>offsetOrBuffer</string>
+	<key>interactorValueValidation</key>
+	<string>coordinatorAlongType</string>
+	<key>painterContainCycle</key>
+	<string>customErrorTail</string>
+</dict>
+</plist>

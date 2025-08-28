@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>configurationViaType</key>
+	<string>layerVersusFacade</string>
+	<key>crudeGrainSkewy</key>
+	<string>statefulPatternBrightness</string>
+	<key>immutableLoopHue</key>
+	<string>discardedIconScale</string>
+	<key>invisibleFlexState</key>
+	<string>hyperbolicUsecaseOpacity</string>
+	<key>mobileIncludeAction</key>
+	<string>handlerAtProcess</string>
+	<key>optionThroughActivity</key>
+	<string>richtextStrategyOffset</string>
+	<key>symbolAmongSingleton</key>
+	<string>spineValueHue</string>
+	<key>typicalLossShade</key>
+	<string>customCurveSkewx</string>
+	<key>webTimerScale</key>
+	<string>advancedButtonSpacing</string>
+</dict>
+</plist>

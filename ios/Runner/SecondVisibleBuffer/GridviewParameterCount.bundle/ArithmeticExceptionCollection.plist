@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>callbackAlongStyle</key>
+	<string>tickerShapeCoord</string>
+	<key>criticalDescriptorCoord</key>
+	<string>intuitiveNavigatorShape</string>
+	<key>customizedScaleTransparency</key>
+	<string>transformerVisitorOffset</string>
+	<key>lastActionEdge</key>
+	<string>backwardUsecaseAppearance</string>
+	<key>listenerBridgeInterval</key>
+	<string>delegateByMethod</string>
+</dict>
+</plist>

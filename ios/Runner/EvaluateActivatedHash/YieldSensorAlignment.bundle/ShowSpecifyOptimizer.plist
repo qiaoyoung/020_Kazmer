@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dedicatedBorderShape</key>
+	<string>desktopRequestContrast</string>
+	<key>missedLayoutKind</key>
+	<string>materialPatternInset</string>
+	<key>scaleOutsideParam</key>
+	<string>sampleCycleShape</string>
+	<key>secondObserverPosition</key>
+	<string>sizeWithNumber</string>
+	<key>textureActivityOrigin</key>
+	<string>cycleStageStyle</string>
+</dict>
+</plist>

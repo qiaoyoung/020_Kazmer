@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>anchorValueBrightness</key>
+	<string>dimensionSingletonDelay</string>
+	<key>elasticCursorOrigin</key>
+	<string>nibIncludeComposite</string>
+	<key>isolateContainAction</key>
+	<string>alignmentAlongFlyweight</string>
+	<key>layerFrameworkAcceleration</key>
+	<string>mediaquerySinceObserver</string>
+	<key>promiseVersusLayer</key>
+	<string>rapidDurationDelay</string>
+	<key>robustModalFormat</key>
+	<string>transitionWithoutParam</string>
+	<key>seamlessSubscriptionCenter</key>
+	<string>transitionBridgeStatus</string>
+</dict>
+</plist>

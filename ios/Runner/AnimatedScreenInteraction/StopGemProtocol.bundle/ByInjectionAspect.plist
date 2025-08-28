@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basicCompositionBound</key>
+	<string>inactiveStreamTint</string>
+	<key>flexibleSwiftSkewy</key>
+	<string>swiftEnvironmentLeft</string>
+	<key>interactiveStreamHue</key>
+	<string>textureSingletonAcceleration</string>
+	<key>metadataPerParam</key>
+	<string>awaitAroundVariable</string>
+	<key>taskExceptDecorator</key>
+	<string>cubitNearObserver</string>
+</dict>
+</plist>

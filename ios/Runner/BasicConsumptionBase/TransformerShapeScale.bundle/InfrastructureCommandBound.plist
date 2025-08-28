@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basicLayerBorder</key>
+	<string>opaqueControllerShade</string>
+	<key>blocModeDensity</key>
+	<string>paddingThroughAdapter</string>
+	<key>deferredActionInset</key>
+	<string>temporaryLabelValidation</string>
+	<key>displayableCoordinatorVelocity</key>
+	<string>dedicatedAlignmentRate</string>
+	<key>easyTitleState</key>
+	<string>serviceValueBottom</string>
+	<key>reducerInsideChain</key>
+	<string>adaptiveCertificateRight</string>
+	<key>reductionThanDecorator</key>
+	<string>providerVersusNumber</string>
+</dict>
+</plist>

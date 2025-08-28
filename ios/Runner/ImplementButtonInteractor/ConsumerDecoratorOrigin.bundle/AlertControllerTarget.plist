@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>concreteLayoutKind</key>
+	<string>lossWithAction</string>
+	<key>controllerScopeAlignment</key>
+	<string>sharedRouteMode</string>
+	<key>frameSingletonSaturation</key>
+	<string>bufferPatternSpeed</string>
+	<key>grayscaleEnvironmentVisibility</key>
+	<string>extensionAtType</string>
+	<key>prismaticBaseMode</key>
+	<string>rapidNavigatorInset</string>
+	<key>responseBufferDepth</key>
+	<string>synchronousNodeIndex</string>
+	<key>shaderFrameworkVisibility</key>
+	<string>semanticDurationMode</string>
+</dict>
+</plist>

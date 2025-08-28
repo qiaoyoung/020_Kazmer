@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoHandlerBorder</key>
+	<string>riverpodFrameworkSize</string>
+	<key>batchObserverShade</key>
+	<string>relationalQueueOffset</string>
+	<key>offsetBesideNumber</key>
+	<string>modelParamRotation</string>
+	<key>queryChainInteraction</key>
+	<string>graphCycleMode</string>
+</dict>
+</plist>

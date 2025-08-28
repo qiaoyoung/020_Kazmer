@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compositionalGradientPressure</key>
+	<string>transitionFormInset</string>
+	<key>flexBufferSaturation</key>
+	<string>transitionInsideProcess</string>
+	<key>grayscaleAndValue</key>
+	<string>groupPatternSpeed</string>
+	<key>requiredLayoutCount</key>
+	<string>animationFromDecorator</string>
+	<key>secondFactoryState</key>
+	<string>anchorAndFacade</string>
+</dict>
+</plist>

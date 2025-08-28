@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appbarDuringMediator</key>
+	<string>framePrototypeDuration</string>
+	<key>criticalCommandBehavior</key>
+	<string>radiusValueDistance</string>
+	<key>discardedButtonTint</key>
+	<string>cursorOfState</string>
+	<key>loopParamStatus</key>
+	<string>activatedGroupVisibility</string>
+	<key>popupBesideObserver</key>
+	<string>menuMethodHead</string>
+	<key>screenCompositeStyle</key>
+	<string>symmetricSinePressure</string>
+	<key>tabbarShapePressure</key>
+	<string>pinchablePresenterSaturation</string>
+	<key>touchSinceStage</key>
+	<string>signAndFacade</string>
+</dict>
+</plist>

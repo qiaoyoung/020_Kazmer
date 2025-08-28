@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aspectInStructure</key>
+	<string>ternaryShapeOffset</string>
+	<key>imperativeReductionDepth</key>
+	<string>loopViaMethod</string>
+	<key>iterativeCaptionDistance</key>
+	<string>mobxBufferBehavior</string>
+	<key>pinchableFrameBottom</key>
+	<string>equalizationAgainstParameter</string>
+	<key>robustOverlaySize</key>
+	<string>hyperbolicTabviewFrequency</string>
+</dict>
+</plist>

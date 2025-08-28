@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compositionalSubpixelOpacity</key>
+	<string>visibleUnaryOrientation</string>
+	<key>drawerAmongCommand</key>
+	<string>globalFrameSkewy</string>
+	<key>fusedCompleterTint</key>
+	<string>declarativeResolverSkewy</string>
+	<key>heroCycleBehavior</key>
+	<string>widgetDecoratorBehavior</string>
+	<key>layoutChainFrequency</key>
+	<string>backwardLoopBound</string>
+	<key>previewFunctionTension</key>
+	<string>scaleInterpreterHead</string>
+</dict>
+</plist>

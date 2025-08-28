@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entityInParameter</key>
+	<string>previewDecoratorAppearance</string>
+	<key>hyperbolicBrushKind</key>
+	<string>statefulPreviewBottom</string>
+	<key>mainTextfieldCenter</key>
+	<string>tappablePreviewRotation</string>
+	<key>referenceAdapterSkewy</key>
+	<string>actionForPattern</string>
+</dict>
+</plist>

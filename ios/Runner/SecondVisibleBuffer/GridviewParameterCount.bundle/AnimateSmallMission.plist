@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activatedLocalizationInterval</key>
+	<string>mobileProcessAppearance</string>
+	<key>advancedCallbackInteraction</key>
+	<string>blocOrTier</string>
+	<key>concreteActivityOpacity</key>
+	<string>positionScopeMargin</string>
+	<key>disabledSliderInteraction</key>
+	<string>storageVersusCycle</string>
+	<key>intuitiveStoreShape</key>
+	<string>rapidIndicatorRotation</string>
+	<key>masterThroughState</key>
+	<string>routeLikeObserver</string>
+	<key>pivotalTopicTail</key>
+	<string>positionedPrototypeCount</string>
+	<key>threadSingletonCount</key>
+	<string>semanticTextFeedback</string>
+	<key>unaryAtShape</key>
+	<string>expandedModeShape</string>
+</dict>
+</plist>

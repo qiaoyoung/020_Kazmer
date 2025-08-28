@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cubitWithBridge</key>
+	<string>particleStyleBorder</string>
+	<key>interpolationBeyondVariable</key>
+	<string>symmetricColumnDensity</string>
+	<key>missedCallbackVisibility</key>
+	<string>touchKindAcceleration</string>
+	<key>priorStepStatus</key>
+	<string>configurationAroundStructure</string>
+	<key>requestStateTint</key>
+	<string>mobileInsideStrategy</string>
+	<key>responseAlongChain</key>
+	<string>fixedColumnFormat</string>
+	<key>similarSizeMomentum</key>
+	<string>serviceThanActivity</string>
+	<key>topicUntilPlatform</key>
+	<string>logOperationOrientation</string>
+</dict>
+</plist>

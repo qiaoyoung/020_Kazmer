@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>behaviorAndCycle</key>
+	<string>radiusContainCycle</string>
+	<key>buttonAboutProxy</key>
+	<string>gemBeyondMode</string>
+	<key>commonFrameSkewx</key>
+	<string>captionCommandAlignment</string>
+	<key>customViewVelocity</key>
+	<string>captionJobName</string>
+	<key>globalChecklistShade</key>
+	<string>cosineTaskSaturation</string>
+	<key>hardResponseVisibility</key>
+	<string>paddingStrategyVisibility</string>
+	<key>intermediateChecklistInteraction</key>
+	<string>radiusTypeRate</string>
+	<key>movementLayerOrientation</key>
+	<string>semanticSliderContrast</string>
+	<key>pivotalTimerRight</key>
+	<string>compositionVisitorSize</string>
+	<key>resourceProxyTheme</key>
+	<string>animationBesideFacade</string>
+</dict>
+</plist>

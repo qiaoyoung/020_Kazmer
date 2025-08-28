@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>associatedTableVelocity</key>
+	<string>interactiveStepInterval</string>
+	<key>customConfigurationLocation</key>
+	<string>positionOrLayer</string>
+	<key>resourceStructureBorder</key>
+	<string>integerPerNumber</string>
+	<key>rowOrScope</key>
+	<string>notifierContextSize</string>
+	<key>segueStageState</key>
+	<string>decorationFunctionScale</string>
+	<key>sliderPlatformSkewy</key>
+	<string>spriteOfFramework</string>
+	<key>streamPrototypeInset</key>
+	<string>criticalGroupOrientation</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>assetThanSingleton</key>
+	<string>queryPhaseRotation</string>
+	<key>precisionFlyweightLeft</key>
+	<string>mutableCallbackRate</string>
+	<key>storeAndStructure</key>
+	<string>numericalSliderStyle</string>
+	<key>tappableAlignmentDirection</key>
+	<string>cubitEnvironmentResponse</string>
+	<key>zoneFunctionRotation</key>
+	<string>requiredCardColor</string>
+</dict>
+</plist>

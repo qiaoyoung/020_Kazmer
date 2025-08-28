@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionKindPressure</key>
+	<string>resizableTouchTransparency</string>
+	<key>containerWithTask</key>
+	<string>presenterLevelMomentum</string>
+	<key>curveActionTail</key>
+	<string>mediumConstraintSkewx</string>
+	<key>declarativeChecklistRotation</key>
+	<string>rapidWidgetOffset</string>
+	<key>scalePatternFlags</key>
+	<string>currentProviderBehavior</string>
+	<key>sensorPlatformFlags</key>
+	<string>sensorAwayForm</string>
+	<key>storyboardAtParameter</key>
+	<string>priorArithmeticSize</string>
+	<key>uniqueMarginTension</key>
+	<string>gridviewStageSize</string>
+</dict>
+</plist>

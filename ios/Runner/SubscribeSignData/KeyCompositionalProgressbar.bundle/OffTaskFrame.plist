@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alertFromStrategy</key>
+	<string>remainderValueCount</string>
+	<key>baselineInBridge</key>
+	<string>cellLikeBuffer</string>
+	<key>gesturedetectorIncludeProcess</key>
+	<string>accordionTableKind</string>
+	<key>lazyCollectionDistance</key>
+	<string>checklistContainPrototype</string>
+	<key>progressbarContextInteraction</key>
+	<string>publicCommandInterval</string>
+	<key>scrollOrSystem</key>
+	<string>streamBesideInterpreter</string>
+	<key>smallCompositionTension</key>
+	<string>diffableSampleOpacity</string>
+	<key>transformerDecoratorTail</key>
+	<string>statelessStructureDepth</string>
+	<key>transitionThanPhase</key>
+	<string>requestStageBottom</string>
+</dict>
+</plist>

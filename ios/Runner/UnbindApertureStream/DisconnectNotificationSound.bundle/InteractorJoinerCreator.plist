@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>draggableConfigurationDistance</key>
+	<string>popupAboutStyle</string>
+	<key>eagerVectorVelocity</key>
+	<string>segueFormTail</string>
+	<key>flexibleDurationResponse</key>
+	<string>gradientLevelStatus</string>
+	<key>mediaqueryInKind</key>
+	<string>cycleAroundVisitor</string>
+	<key>navigatorAndVar</key>
+	<string>graphTaskResponse</string>
+	<key>responsiveStackInset</key>
+	<string>servicePhaseType</string>
+	<key>scaleVersusAdapter</key>
+	<string>matrixInMode</string>
+</dict>
+</plist>

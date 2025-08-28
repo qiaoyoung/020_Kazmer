@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>imperativeControllerValidation</key>
+	<string>factoryAsMemento</string>
+	<key>particleParamPadding</key>
+	<string>radioStageInset</string>
+	<key>providerPatternInset</key>
+	<string>commandWithoutPhase</string>
+	<key>sustainableFutureDepth</key>
+	<string>interfaceActionVisibility</string>
+	<key>usedQueueLocation</key>
+	<string>eventWithParam</string>
+</dict>
+</plist>

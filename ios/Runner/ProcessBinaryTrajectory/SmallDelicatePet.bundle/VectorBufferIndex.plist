@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>associatedGramSpeed</key>
+	<string>substantialBorderFeedback</string>
+	<key>indicatorAboutComposite</key>
+	<string>retainedRouteValidation</string>
+	<key>interpolationMediatorOpacity</key>
+	<string>explicitReducerRate</string>
+	<key>textureBridgeSaturation</key>
+	<string>completerAtVar</string>
+</dict>
+</plist>

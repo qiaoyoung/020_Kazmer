@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dialogsOfSystem</key>
+	<string>navigatorOrVar</string>
+	<key>layerAsStage</key>
+	<string>storageSystemShade</string>
+	<key>reusableDimensionResponse</key>
+	<string>statefulMapRate</string>
+	<key>sampleFormInterval</key>
+	<string>chartMementoVisible</string>
+	<key>usageVisitorPressure</key>
+	<string>sortedBuilderMode</string>
+</dict>
+</plist>

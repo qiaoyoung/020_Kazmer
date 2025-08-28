@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>convolutionThroughKind</key>
+	<string>boxVisitorCount</string>
+	<key>descriptorOrDecorator</key>
+	<string>exceptionFromStyle</string>
+	<key>desktopPopupAppearance</key>
+	<string>textureStageOffset</string>
+	<key>layoutBeyondContext</key>
+	<string>axisTypeCount</string>
+	<key>sequentialQueryContrast</key>
+	<string>dynamicPopupTop</string>
+	<key>visibleBuilderRate</key>
+	<string>decorationFlyweightDelay</string>
+</dict>
+</plist>

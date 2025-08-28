@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>factoryFunctionSpeed</key>
+	<string>serviceEnvironmentPressure</string>
+	<key>lostScrollValidation</key>
+	<string>mainStoreMargin</string>
+	<key>mediumLabelSize</key>
+	<string>baselineCycleDelay</string>
+	<key>mobileManagerRate</key>
+	<string>heroObserverKind</string>
+	<key>newestInteractorShape</key>
+	<string>transitionExceptDecorator</string>
+	<key>requestOperationHead</key>
+	<string>autoModulusEdge</string>
+	<key>textIncludeTask</key>
+	<string>boxWithoutStage</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entityParamKind</key>
+	<string>normOfAction</string>
+	<key>exceptionWorkSkewx</key>
+	<string>indicatorAtParam</string>
+	<key>modalMethodDuration</key>
+	<string>criticalSpotCount</string>
+	<key>originalTransformerDirection</key>
+	<string>desktopSceneVelocity</string>
+	<key>radioAmongPhase</key>
+	<string>handlerExceptFramework</string>
+	<key>taskStructureOrientation</key>
+	<string>retainedSubpixelStatus</string>
+</dict>
+</plist>

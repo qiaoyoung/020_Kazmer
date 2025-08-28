@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticLabelTransparency</key>
+	<string>resultStageState</string>
+	<key>fixedOptionSpacing</key>
+	<string>drawerChainTheme</string>
+	<key>lazyCoordinatorBehavior</key>
+	<string>permissiveCurveInset</string>
+	<key>persistentControllerDensity</key>
+	<string>autoProgressbarBorder</string>
+	<key>plateParamDelay</key>
+	<string>uniquePlaybackOrientation</string>
+	<key>significantInkwellBrightness</key>
+	<string>beginnerServiceBrightness</string>
+	<key>tappableHeroType</key>
+	<string>sophisticatedStorageBehavior</string>
+	<key>taskAboutPlatform</key>
+	<string>resourceStylePadding</string>
+	<key>vectorCommandRate</key>
+	<string>transitionVarShape</string>
+</dict>
+</plist>

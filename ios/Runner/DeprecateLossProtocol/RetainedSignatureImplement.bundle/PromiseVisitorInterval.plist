@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessoryFacadeAlignment</key>
+	<string>collectionProcessInset</string>
+	<key>builderPatternMode</key>
+	<string>typicalUtilFrequency</string>
+	<key>diffableRectAlignment</key>
+	<string>textThanLevel</string>
+	<key>discardedCompleterLocation</key>
+	<string>resilientScreenFrequency</string>
+	<key>ignoredCurveHead</key>
+	<string>cacheFromAdapter</string>
+	<key>interfaceSingletonSaturation</key>
+	<string>reactiveStreamTop</string>
+	<key>loopWithoutBridge</key>
+	<string>uniqueTabbarRotation</string>
+</dict>
+</plist>

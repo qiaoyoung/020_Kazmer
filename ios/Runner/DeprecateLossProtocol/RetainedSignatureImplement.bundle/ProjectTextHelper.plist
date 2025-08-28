@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionDecoratorBorder</key>
+	<string>memberDuringCommand</string>
+	<key>configurationCommandMomentum</key>
+	<string>skirtCompositeMode</string>
+	<key>pinchableSkirtLeft</key>
+	<string>prismaticCurveRate</string>
+	<key>previewSingletonInset</key>
+	<string>dialogsExceptActivity</string>
+	<key>spineValueResponse</key>
+	<string>collectionInsideType</string>
+</dict>
+</plist>

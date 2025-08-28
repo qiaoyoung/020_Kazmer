@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>collectionOutsideFacade</key>
+	<string>zoneSingletonDistance</string>
+	<key>gesturedetectorMediatorOpacity</key>
+	<string>sharedPrioritySkewy</string>
+	<key>interfaceActivityMode</key>
+	<string>actionNumberKind</string>
+	<key>plateDespiteAction</key>
+	<string>granularColumnTransparency</string>
+	<key>repositoryAdapterTension</key>
+	<string>particleAsChain</string>
+</dict>
+</plist>

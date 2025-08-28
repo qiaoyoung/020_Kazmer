@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncDespiteComposite</key>
+	<string>scrollNearScope</string>
+	<key>cellOrJob</key>
+	<string>scenePerLevel</string>
+	<key>explicitPositionedOrientation</key>
+	<string>ternaryEnvironmentHead</string>
+	<key>observerShapeRate</key>
+	<string>memberAroundPlatform</string>
+	<key>popupAndFlyweight</key>
+	<string>memberPlatformVelocity</string>
+	<key>radioStyleDensity</key>
+	<string>newestSubscriptionVisibility</string>
+	<key>reactiveBoxshadowBottom</key>
+	<string>interactorExceptPlatform</string>
+	<key>sliderLayerMargin</key>
+	<string>protocolPerContext</string>
+</dict>
+</plist>

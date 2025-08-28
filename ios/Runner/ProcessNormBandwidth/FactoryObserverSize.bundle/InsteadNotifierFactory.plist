@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionBridgeTail</key>
+	<string>checklistIncludeWork</string>
+	<key>asyncBridgeEdge</key>
+	<string>eagerRowTheme</string>
+	<key>capsuleAndCommand</key>
+	<string>otherMapContrast</string>
+	<key>delegateBesideLevel</key>
+	<string>keyModulusDistance</string>
+	<key>disparateQueueShape</key>
+	<string>imperativeConstraintKind</string>
+	<key>mobileCallbackPadding</key>
+	<string>switchPatternDensity</string>
+	<key>nextPointTension</key>
+	<string>statefulPointFeedback</string>
+	<key>originalMovementPressure</key>
+	<string>buttonInSystem</string>
+	<key>sampleMethodInset</key>
+	<string>sceneAboutEnvironment</string>
+	<key>webAllocatorAppearance</key>
+	<string>roleWorkCoord</string>
+</dict>
+</plist>

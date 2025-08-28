@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>basicDelegateSkewy</key>
+	<string>semanticsPatternTail</string>
+	<key>directlyInteractorSpeed</key>
+	<string>notifierAgainstFramework</string>
+	<key>equalizationWithLayer</key>
+	<string>callbackForScope</string>
+	<key>functionalActivitySpacing</key>
+	<string>notificationInsideFacade</string>
+	<key>primarySceneFeedback</key>
+	<string>painterAndStructure</string>
+	<key>resourceTaskHue</key>
+	<string>boxOperationFormat</string>
+	<key>stampChainAlignment</key>
+	<string>intensityLayerColor</string>
+</dict>
+</plist>

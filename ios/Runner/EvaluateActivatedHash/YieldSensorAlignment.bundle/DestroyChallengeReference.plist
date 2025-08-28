@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>heapModeShade</key>
+	<string>awaitShapeCenter</string>
+	<key>nibOutsideMode</key>
+	<string>textfieldWithStrategy</string>
+	<key>publicTransitionBrightness</key>
+	<string>activatedViewOrigin</string>
+	<key>responseNumberHue</key>
+	<string>tappableMasterStatus</string>
+	<key>scaleInterpreterRotation</key>
+	<string>entityInsideObserver</string>
+</dict>
+</plist>

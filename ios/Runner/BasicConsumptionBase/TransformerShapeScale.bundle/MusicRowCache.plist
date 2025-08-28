@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>channelInsideKind</key>
+	<string>methodEnvironmentLeft</string>
+	<key>completerContainScope</key>
+	<string>storageViaMethod</string>
+	<key>constraintObserverColor</key>
+	<string>inkwellAdapterDensity</string>
+	<key>delegateTaskBehavior</key>
+	<string>multiplicationCommandDuration</string>
+	<key>positionBeyondPrototype</key>
+	<string>elasticPositionedRate</string>
+	<key>scrollableRiverpodDelay</key>
+	<string>mediaqueryDespiteEnvironment</string>
+	<key>storyboardDespiteVariable</key>
+	<string>extensionByPhase</string>
+	<key>taskOutsideProcess</key>
+	<string>vectorSingletonIndex</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activityBeyondTemple</key>
+	<string>queryOperationPadding</string>
+	<key>functionalListviewType</key>
+	<string>popupTierEdge</string>
+	<key>offsetStyleBrightness</key>
+	<string>bufferOutsideStyle</string>
+	<key>repositorySinceBridge</key>
+	<string>gestureStageKind</string>
+</dict>
+</plist>

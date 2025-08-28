@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>agileAnimationAppearance</key>
+	<string>routerCycleLeft</string>
+	<key>composableMasterValidation</key>
+	<string>compositionalTopicTop</string>
+	<key>curvePerStyle</key>
+	<string>pivotalNavigationDuration</string>
+	<key>eagerPresenterRight</key>
+	<string>cycleBeyondPlatform</string>
+	<key>flexibleCycleEdge</key>
+	<string>functionalHashPosition</string>
+	<key>transformerAlongEnvironment</key>
+	<string>stateBridgeSkewy</string>
+</dict>
+</plist>

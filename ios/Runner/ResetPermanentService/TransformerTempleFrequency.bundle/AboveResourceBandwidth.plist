@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cartesianContainerValidation</key>
+	<string>singletonAndBridge</string>
+	<key>containerViaNumber</key>
+	<string>stateAsProcess</string>
+	<key>flexibleCheckboxOrientation</key>
+	<string>transitionInterpreterState</string>
+	<key>positionForNumber</key>
+	<string>routeAboutStyle</string>
+	<key>retainedCertificateTop</key>
+	<string>robustObserverCenter</string>
+</dict>
+</plist>

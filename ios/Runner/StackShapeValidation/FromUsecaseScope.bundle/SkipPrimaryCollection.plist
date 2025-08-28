@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customizedInteractorFrequency</key>
+	<string>singletonDespiteFlyweight</string>
+	<key>dependencyInsidePhase</key>
+	<string>queueVersusInterpreter</string>
+	<key>durationModeBehavior</key>
+	<string>synchronousPresenterBrightness</string>
+	<key>featureFlyweightShape</key>
+	<string>specifierSingletonPosition</string>
+	<key>mutableInterpolationResponse</key>
+	<string>listenerShapeRate</string>
+	<key>singletonShapeInset</key>
+	<string>storeThanInterpreter</string>
+	<key>webGrainPadding</key>
+	<string>immediateConfigurationShape</string>
+</dict>
+</plist>

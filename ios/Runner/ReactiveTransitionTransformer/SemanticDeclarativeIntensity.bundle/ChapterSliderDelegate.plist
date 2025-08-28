@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capacitiesStateRight</key>
+	<string>bitrateBufferFeedback</string>
+	<key>decorationInTask</key>
+	<string>usageActionBehavior</string>
+	<key>documentEnvironmentFeedback</key>
+	<string>subpixelInsideProcess</string>
+	<key>globalResourceDuration</key>
+	<string>vectorValueTransparency</string>
+	<key>managerParameterSkewy</key>
+	<string>rowParameterSpacing</string>
+	<key>mapTypeType</key>
+	<string>slashNearChain</string>
+	<key>statelessFlexOpacity</key>
+	<string>disabledButtonCoord</string>
+</dict>
+</plist>

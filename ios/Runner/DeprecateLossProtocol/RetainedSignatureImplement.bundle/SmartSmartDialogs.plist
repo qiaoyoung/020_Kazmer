@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bufferStrategyDistance</key>
+	<string>serviceSystemOffset</string>
+	<key>cubitTierInterval</key>
+	<string>interactiveStepBorder</string>
+	<key>frameThroughParam</key>
+	<string>directScreenBottom</string>
+	<key>greatProgressbarPosition</key>
+	<string>toolActivityTint</string>
+	<key>newestAnimationDensity</key>
+	<string>materialServiceStyle</string>
+	<key>pointStylePressure</key>
+	<string>inactiveReductionCenter</string>
+	<key>requiredModulusForce</key>
+	<string>sophisticatedShaderTension</string>
+	<key>textBeyondObserver</key>
+	<string>easyBuilderSkewx</string>
+	<key>timerAndFramework</key>
+	<string>dialogsKindTag</string>
+</dict>
+</plist>

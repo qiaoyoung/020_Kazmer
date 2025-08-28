@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>checklistNumberOrigin</key>
+	<string>gridAlongForm</string>
+	<key>composableTweenStyle</key>
+	<string>animatedWidgetAlignment</string>
+	<key>cupertinoTopicColor</key>
+	<string>agileStoryboardFeedback</string>
+	<key>descriptorLikePrototype</key>
+	<string>nextAnimationHead</string>
+	<key>previewFacadeFlags</key>
+	<string>reusableChannelVisibility</string>
+</dict>
+</plist>

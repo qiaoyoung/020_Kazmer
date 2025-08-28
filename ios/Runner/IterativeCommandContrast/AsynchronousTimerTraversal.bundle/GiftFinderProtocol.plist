@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asynchronousMediaqueryInteraction</key>
+	<string>responseForShape</string>
+	<key>containerTaskAcceleration</key>
+	<string>notifierAmongShape</string>
+	<key>customEffectCount</key>
+	<string>associatedIndicatorName</string>
+	<key>densePointDensity</key>
+	<string>resourcePerStructure</string>
+	<key>modalThanComposite</key>
+	<string>stampPerParameter</string>
+	<key>mutableAspectSkewx</key>
+	<string>paddingProxyEdge</string>
+	<key>sustainableStampDepth</key>
+	<string>captionWorkType</string>
+	<key>synchronousAllocatorInset</key>
+	<string>iterativeTextureSize</string>
+</dict>
+</plist>

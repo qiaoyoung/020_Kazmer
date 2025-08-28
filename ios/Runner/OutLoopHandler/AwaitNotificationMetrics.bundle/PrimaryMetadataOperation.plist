@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bulletUntilAdapter</key>
+	<string>singleQueueBound</string>
+	<key>constCurveTension</key>
+	<string>reusableHeroDensity</string>
+	<key>declarativeNotificationScale</key>
+	<string>resourceIncludeLayer</string>
+	<key>navigatorPatternStatus</key>
+	<string>precisionDespiteContext</string>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>curveTaskSpacing</key>
+	<string>associatedPlaybackFormat</string>
+	<key>deferredMatrixSkewy</key>
+	<string>deferredLayerEdge</string>
+	<key>globalIntegerSpacing</key>
+	<string>immutableKernelDepth</string>
+	<key>layoutFacadeValidation</key>
+	<string>layerStructureAppearance</string>
+	<key>managerFlyweightTop</key>
+	<string>particleShapeInset</string>
+	<key>normAboutState</key>
+	<string>immediateWorkflowCoord</string>
+	<key>particleValueDistance</key>
+	<string>callbackDuringFlyweight</string>
+	<key>playbackIncludeParameter</key>
+	<string>decorationChainColor</string>
+	<key>secondSwitchStyle</key>
+	<string>logJobIndex</string>
+	<key>statelessAmongProxy</key>
+	<string>viewAsFlyweight</string>
+</dict>
+</plist>

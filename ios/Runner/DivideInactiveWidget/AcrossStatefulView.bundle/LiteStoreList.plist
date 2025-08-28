@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>interfaceVariableDirection</key>
+	<string>visibleConsumerAlignment</string>
+	<key>kernelWorkType</key>
+	<string>cubeAroundTask</string>
+	<key>operationTypeMode</key>
+	<string>layerExceptTask</string>
+	<key>similarLabelInteraction</key>
+	<string>relationalLayoutLeft</string>
+	<key>stateAtComposite</key>
+	<string>rowVarStyle</string>
+	<key>stepOrBuffer</key>
+	<string>directFeatureBehavior</string>
+	<key>transformerStyleSpacing</key>
+	<string>repositoryMethodPadding</string>
+</dict>
+</plist>

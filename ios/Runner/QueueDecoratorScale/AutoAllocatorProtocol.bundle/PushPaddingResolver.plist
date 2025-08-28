@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commonObserverBound</key>
+	<string>indicatorFromStage</string>
+	<key>controllerIncludePrototype</key>
+	<string>reductionAlongProxy</string>
+	<key>modelAgainstMode</key>
+	<string>comprehensiveNodeAppearance</string>
+	<key>multiSignBehavior</key>
+	<string>scrollableCubitAcceleration</string>
+	<key>permanentGestureResponse</key>
+	<string>sizeStageDensity</string>
+	<key>statefulLabelInset</key>
+	<string>radiusInsideState</string>
+	<key>staticQueryBorder</key>
+	<string>ephemeralResourceForce</string>
+</dict>
+</plist>

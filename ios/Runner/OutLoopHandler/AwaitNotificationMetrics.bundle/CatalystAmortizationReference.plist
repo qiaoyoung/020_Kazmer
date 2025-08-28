@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beginnerTabviewScale</key>
+	<string>hashTypeRight</string>
+	<key>inactiveBufferPadding</key>
+	<string>iconBufferResponse</string>
+	<key>mediumNavigatorInteraction</key>
+	<string>skinDuringContext</string>
+	<key>previewModeLocation</key>
+	<string>petBesideStructure</string>
+	<key>resultValueMargin</key>
+	<string>advancedCaptionRotation</string>
+</dict>
+</plist>

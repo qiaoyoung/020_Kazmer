@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>characterStateDistance</key>
+	<string>commonUtilVelocity</string>
+	<key>menuFlyweightTint</key>
+	<string>sceneWithoutValue</string>
+	<key>otherOptimizerOrigin</key>
+	<string>momentumFlyweightCenter</string>
+	<key>reactiveRadiusValidation</key>
+	<string>cubitTypeSpacing</string>
+	<key>viewForSystem</key>
+	<string>listenerLevelSpacing</string>
+</dict>
+</plist>

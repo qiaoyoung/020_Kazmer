@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>behaviorDuringAction</key>
+	<string>usedSliderValidation</string>
+	<key>cubitWorkRotation</key>
+	<string>resolverVersusVar</string>
+	<key>momentumUntilValue</key>
+	<string>semanticsStyleInteraction</string>
+	<key>nodeBeyondParameter</key>
+	<string>significantUtilKind</string>
+	<key>resizableProjectTheme</key>
+	<string>callbackScopeForce</string>
+	<key>statefulByCycle</key>
+	<string>exponentProxyAppearance</string>
+	<key>textAgainstProcess</key>
+	<string>standaloneReductionOffset</string>
+	<key>unaryThanActivity</key>
+	<string>iconProxyOrientation</string>
+</dict>
+</plist>

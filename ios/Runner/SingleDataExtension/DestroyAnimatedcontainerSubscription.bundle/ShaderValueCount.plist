@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alertByOperation</key>
+	<string>deferredOverlayPadding</string>
+	<key>cardNearChain</key>
+	<string>musicModeBehavior</string>
+	<key>cupertinoDependencyInteraction</key>
+	<string>stateBufferAlignment</string>
+	<key>deferredBaselineOrigin</key>
+	<string>adaptiveStatelessVisible</string>
+	<key>logarithmStateDelay</key>
+	<string>binaryViaMediator</string>
+	<key>observerExceptType</key>
+	<string>dropdownbuttonNearDecorator</string>
+	<key>responseValueLeft</key>
+	<string>oldSegueLeft</string>
+	<key>threadAmongBuffer</key>
+	<string>awaitWithoutPrototype</string>
+	<key>titleAgainstPhase</key>
+	<string>decorationOutsideJob</string>
+</dict>
+</plist>

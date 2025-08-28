@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cosineInsideComposite</key>
+	<string>advancedResourceTransparency</string>
+	<key>disparateEventCount</key>
+	<string>compositionSinceState</string>
+	<key>kernelCommandMode</key>
+	<string>frameBeyondProcess</string>
+	<key>liteCertificatePosition</key>
+	<string>animatedRowRight</string>
+	<key>metadataFromPlatform</key>
+	<string>taskActionScale</string>
+	<key>normalStatelessDelay</key>
+	<string>instructionProcessSize</string>
+	<key>oldManagerDuration</key>
+	<string>geometricBoxshadowAppearance</string>
+	<key>resultWithoutVisitor</key>
+	<string>crucialScreenVisible</string>
+	<key>switchPhaseScale</key>
+	<string>spotMementoTransparency</string>
+</dict>
+</plist>

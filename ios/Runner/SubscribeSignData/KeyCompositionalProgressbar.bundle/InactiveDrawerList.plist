@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncTextType</key>
+	<string>smartEffectBehavior</string>
+	<key>configurationSystemLeft</key>
+	<string>staticCoordinatorDirection</string>
+	<key>euclideanSpriteDirection</key>
+	<string>subsequentTextOpacity</string>
+	<key>hierarchicalProgressbarState</key>
+	<string>dynamicTickerSkewx</string>
+	<key>hyperbolicDelegateDepth</key>
+	<string>boxTaskTop</string>
+	<key>ignoredThreadBehavior</key>
+	<string>gradientPerAdapter</string>
+	<key>richtextTypeSkewy</key>
+	<string>riverpodSingletonFrequency</string>
+	<key>routerSinceMemento</key>
+	<string>directlyDelegateBottom</string>
+	<key>sliderThroughProxy</key>
+	<string>associatedCellLocation</string>
+</dict>
+</plist>

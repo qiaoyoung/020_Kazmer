@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aspectMementoLocation</key>
+	<string>navigatorMementoMode</string>
+	<key>dimensionWithoutComposite</key>
+	<string>batchAlongShape</string>
+	<key>granularResourceShape</key>
+	<string>builderWithoutStyle</string>
+	<key>gridTaskScale</key>
+	<string>builderJobSpacing</string>
+	<key>labelInPlatform</key>
+	<string>factoryOutsideBridge</string>
+	<key>riverpodInsideStyle</key>
+	<string>ephemeralBitrateRate</string>
+	<key>sizedboxOperationSaturation</key>
+	<string>stateOperationState</string>
+	<key>tabviewNumberColor</key>
+	<string>viewBridgeOrigin</string>
+	<key>textNumberValidation</key>
+	<string>delegateWorkDelay</string>
+	<key>widgetAgainstFunction</key>
+	<string>offsetViaType</string>
+</dict>
+</plist>

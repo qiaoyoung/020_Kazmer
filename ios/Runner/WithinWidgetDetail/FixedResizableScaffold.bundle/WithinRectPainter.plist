@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>equipmentVersusContext</key>
+	<string>allocatorInsideFlyweight</string>
+	<key>independentAwaitShade</key>
+	<string>listviewWorkSize</string>
+	<key>notificationPhaseTag</key>
+	<string>constraintWithoutAdapter</string>
+	<key>paddingOfFacade</key>
+	<string>gramNearValue</string>
+	<key>singletonVersusMode</key>
+	<string>resolverInContext</string>
+	<key>skinParamTag</key>
+	<string>observerCompositeShade</string>
+	<key>tabbarBesideActivity</key>
+	<string>diffableMetadataTransparency</string>
+	<key>ternaryAroundKind</key>
+	<string>featureAmongSystem</string>
+	<key>zoneContextMargin</key>
+	<string>durationLayerFrequency</string>
+</dict>
+</plist>

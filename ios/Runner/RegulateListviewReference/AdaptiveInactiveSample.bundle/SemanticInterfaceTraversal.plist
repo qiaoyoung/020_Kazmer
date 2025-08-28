@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedActionCenter</key>
+	<string>widgetTaskTheme</string>
+	<key>dimensionAsParam</key>
+	<string>curveViaLayer</string>
+	<key>effectDecoratorPadding</key>
+	<string>scrollVariableStyle</string>
+	<key>nodePatternBottom</key>
+	<string>utilVisitorState</string>
+	<key>positionPerTier</key>
+	<string>lazyDelegateFrequency</string>
+	<key>publicLayerBehavior</key>
+	<string>interfaceAgainstDecorator</string>
+	<key>responsiveDecorationShape</key>
+	<string>zoneAdapterSkewy</string>
+	<key>rowAsMemento</key>
+	<string>getxActivityOrientation</string>
+	<key>titleAndSingleton</key>
+	<string>normalPositionSpeed</string>
+</dict>
+</plist>

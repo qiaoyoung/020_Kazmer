@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedcontainerWorkDepth</key>
+	<string>synchronousFutureInteraction</string>
+	<key>behaviorCompositeOpacity</key>
+	<string>taskUntilObserver</string>
+	<key>crudeDelegateDirection</key>
+	<string>enabledFeatureDelay</string>
+	<key>eventMediatorInterval</key>
+	<string>notificationForNumber</string>
+	<key>inactiveLogInteraction</key>
+	<string>effectAtTier</string>
+	<key>layerAwayTier</key>
+	<string>offsetFormRotation</string>
+	<key>publicCurveSpacing</key>
+	<string>missionAlongObserver</string>
+	<key>sensorWithSingleton</key>
+	<string>controllerFrameworkOrientation</string>
+	<key>similarRouteFormat</key>
+	<string>documentAtStage</string>
+	<key>sizedboxUntilSingleton</key>
+	<string>particleLayerPressure</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentParameterSize</key>
+	<string>pivotalMetadataVisibility</string>
+	<key>alignmentStrategyMargin</key>
+	<string>graphInComposite</string>
+	<key>animatedResultScale</key>
+	<string>oldHandlerSaturation</string>
+	<key>deferredRemainderStyle</key>
+	<string>positionOrStrategy</string>
+	<key>gridviewInsideProxy</key>
+	<string>referenceVisitorVelocity</string>
+	<key>intensitySystemDirection</key>
+	<string>injectionSingletonBorder</string>
+	<key>intuitiveTransitionDensity</key>
+	<string>indicatorFormOrientation</string>
+	<key>notifierTaskHead</key>
+	<string>sizeIncludeVisitor</string>
+	<key>singleCompletionLocation</key>
+	<string>actionSingletonRight</string>
+</dict>
+</plist>

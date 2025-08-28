@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentAgainstDecorator</key>
+	<string>independentAnimationSaturation</string>
+	<key>blocFacadeAppearance</key>
+	<string>assetLikeSingleton</string>
+	<key>challengeBeyondAdapter</key>
+	<string>concurrentResultCount</string>
+	<key>diffableMenuRate</key>
+	<string>priorTaskTransparency</string>
+	<key>gridviewVariableResponse</key>
+	<string>activatedMenuSkewy</string>
+	<key>handlerScopeDuration</key>
+	<string>tappableTextOpacity</string>
+	<key>interactorOrPlatform</key>
+	<string>typicalTextureOrigin</string>
+	<key>queryExceptState</key>
+	<string>rapidExponentValidation</string>
+	<key>radiusPlatformInteraction</key>
+	<string>errorUntilForm</string>
+</dict>
+</plist>

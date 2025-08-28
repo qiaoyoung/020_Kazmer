@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compositionThroughFacade</key>
+	<string>grayscaleFunctionFrequency</string>
+	<key>consultativeBufferType</key>
+	<string>tensorVectorPadding</string>
+	<key>controllerValueHue</key>
+	<string>inactiveTitleSaturation</string>
+	<key>cupertinoActionStyle</key>
+	<string>petInPattern</string>
+	<key>iterativeParticleInterval</key>
+	<string>certificatePrototypeFrequency</string>
+	<key>multiObserverSpeed</key>
+	<string>histogramTempleAlignment</string>
+	<key>newestSampleDepth</key>
+	<string>responsiveSignTension</string>
+	<key>reducerContextTransparency</key>
+	<string>scrollFacadeTransparency</string>
+</dict>
+</plist>

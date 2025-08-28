@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>buttonAtStyle</key>
+	<string>brushAroundSystem</string>
+	<key>equalizationFrameworkFlags</key>
+	<string>lazyGateVelocity</string>
+	<key>equalizationWorkDuration</key>
+	<string>ephemeralPopupHue</string>
+	<key>interactorProxyOpacity</key>
+	<string>sequentialGramVisible</string>
+	<key>transitionBufferLocation</key>
+	<string>musicBeyondLayer</string>
+	<key>unsortedUsecaseCoord</key>
+	<string>spriteCycleAlignment</string>
+</dict>
+</plist>

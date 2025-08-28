@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>binaryUntilPattern</key>
+	<string>aspectThroughVar</string>
+	<key>bufferOperationDirection</key>
+	<string>notifierAgainstFunction</string>
+	<key>coordinatorInterpreterTag</key>
+	<string>reducerDespiteLevel</string>
+	<key>interfaceVariableOrigin</key>
+	<string>captionScopeDirection</string>
+	<key>nodeBufferStyle</key>
+	<string>tabbarDespiteCommand</string>
+	<key>observerEnvironmentColor</key>
+	<string>opaqueCompleterMode</string>
+	<key>requestMethodVisibility</key>
+	<string>topicDespiteDecorator</string>
+	<key>scrollableMenuBrightness</key>
+	<string>descriptorWithoutForm</string>
+</dict>
+</plist>

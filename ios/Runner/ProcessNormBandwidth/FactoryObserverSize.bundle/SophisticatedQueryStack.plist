@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoGramAlignment</key>
+	<string>sinkPerKind</string>
+	<key>characterThroughContext</key>
+	<string>sensorStageDensity</string>
+	<key>rectExceptKind</key>
+	<string>errorTypeTail</string>
+	<key>serviceInsideAction</key>
+	<string>geometricTextureInteraction</string>
+</dict>
+</plist>

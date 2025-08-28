@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationStyleState</key>
+	<string>anchorKindSpacing</string>
+	<key>bulletInMode</key>
+	<string>permanentRouterSkewy</string>
+	<key>containerAsMethod</key>
+	<string>queueAtCycle</string>
+	<key>semanticRiverpodVisibility</key>
+	<string>inactiveMatrixForce</string>
+	<key>textfieldAsPhase</key>
+	<string>unactivatedSineTension</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>awaitActivityDirection</key>
+	<string>completerDuringForm</string>
+	<key>factoryEnvironmentKind</key>
+	<string>controllerValueMode</string>
+	<key>featureWithoutComposite</key>
+	<string>gemMediatorSpeed</string>
+	<key>mediocreWidgetSkewx</key>
+	<string>heroStageOrigin</string>
+	<key>scrollableResourceBehavior</key>
+	<string>brushMethodHue</string>
+</dict>
+</plist>

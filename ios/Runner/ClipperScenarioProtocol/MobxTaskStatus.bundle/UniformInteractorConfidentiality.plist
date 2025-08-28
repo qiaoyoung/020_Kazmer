@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>axisIncludeParameter</key>
+	<string>equipmentObserverShade</string>
+	<key>chartShapeTheme</key>
+	<string>alignmentTaskFormat</string>
+	<key>menuAboutObserver</key>
+	<string>projectAlongFacade</string>
+	<key>observerForInterpreter</key>
+	<string>scaleAdapterCenter</string>
+</dict>
+</plist>

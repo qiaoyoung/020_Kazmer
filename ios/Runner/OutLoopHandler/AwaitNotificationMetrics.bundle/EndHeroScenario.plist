@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncContextShade</key>
+	<string>touchVarLeft</string>
+	<key>builderCommandStyle</key>
+	<string>dynamicPopupCoord</string>
+	<key>dedicatedTitleFeedback</key>
+	<string>previewFrameworkResponse</string>
+	<key>independentDelegateEdge</key>
+	<string>denseOverlaySize</string>
+	<key>listviewSinceKind</key>
+	<string>offsetKindMode</string>
+	<key>resourceAgainstLevel</key>
+	<string>cubitNearWork</string>
+	<key>stackAndJob</key>
+	<string>scaffoldValueSpacing</string>
+	<key>textAdapterSkewy</key>
+	<string>rapidScreenDirection</string>
+	<key>utilAroundParameter</key>
+	<string>scaleModeSpacing</string>
+	<key>variantInCycle</key>
+	<string>dynamicPrecisionInteraction</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beginnerSceneBorder</key>
+	<string>frameInsideStructure</string>
+	<key>greatSpriteIndex</key>
+	<string>requestViaSingleton</string>
+	<key>invisibleAllocatorOrigin</key>
+	<string>multiplicationModeTag</string>
+	<key>positionedLikeCycle</key>
+	<string>eventStructureForce</string>
+	<key>rowAndScope</key>
+	<string>parallelViewKind</string>
+</dict>
+</plist>

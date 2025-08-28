@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>associatedBinaryMomentum</key>
+	<string>tangentParamAppearance</string>
+	<key>listenerIncludeCommand</key>
+	<string>globalShaderShape</string>
+	<key>observerPatternDelay</key>
+	<string>characterStructureSaturation</string>
+	<key>sharedBehaviorMomentum</key>
+	<string>anchorInForm</string>
+	<key>standaloneMultiplicationVelocity</key>
+	<string>subscriptionSincePlatform</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>consumerVarBrightness</key>
+	<string>directlyEntityOpacity</string>
+	<key>crudeUnaryResponse</key>
+	<string>responsiveEntityName</string>
+	<key>currentEqualizationSaturation</key>
+	<string>momentumLevelScale</string>
+	<key>fixedGridColor</key>
+	<string>previewOutsideType</string>
+	<key>futureSingletonAcceleration</key>
+	<string>subscriptionLevelOrientation</string>
+	<key>heroChainShape</key>
+	<string>deferredCoordinatorBound</string>
+</dict>
+</plist>

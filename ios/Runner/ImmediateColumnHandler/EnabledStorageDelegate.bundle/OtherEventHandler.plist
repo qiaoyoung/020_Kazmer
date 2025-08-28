@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>durationWorkBehavior</key>
+	<string>descriptionParamDuration</string>
+	<key>effectFromValue</key>
+	<string>hyperbolicStreamValidation</string>
+	<key>gemAmongObserver</key>
+	<string>histogramBesideValue</string>
+	<key>grainSinceProcess</key>
+	<string>binaryExceptMode</string>
+	<key>lazyPageviewDensity</key>
+	<string>mediaqueryWithBridge</string>
+	<key>matrixFromBridge</key>
+	<string>decorationAwayProxy</string>
+	<key>pivotalCommandAcceleration</key>
+	<string>histogramFacadeVisible</string>
+	<key>popupAgainstSingleton</key>
+	<string>directlySizeOrigin</string>
+	<key>providerFacadeState</key>
+	<string>handlerTaskBehavior</string>
+	<key>stepEnvironmentSkewx</key>
+	<string>storyboardThroughFacade</string>
+</dict>
+</plist>

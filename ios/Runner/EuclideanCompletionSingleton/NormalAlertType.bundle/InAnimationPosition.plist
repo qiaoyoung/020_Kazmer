@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>behaviorMediatorTail</key>
+	<string>singleChannelValidation</string>
+	<key>channelsCycleDensity</key>
+	<string>flexibleQueueBehavior</string>
+	<key>completerNumberColor</key>
+	<string>crucialCurveSpeed</string>
+	<key>discardedAlphaOrientation</key>
+	<string>rowIncludeLayer</string>
+	<key>logarithmOrWork</key>
+	<string>firstInterfaceSpacing</string>
+	<key>mapDuringStructure</key>
+	<string>scaleExceptState</string>
+	<key>methodCommandInset</key>
+	<string>constBatchState</string>
+	<key>notificationOrPlatform</key>
+	<string>displayablePositionOrigin</string>
+	<key>slashDuringTier</key>
+	<string>reducerAdapterFeedback</string>
+</dict>
+</plist>

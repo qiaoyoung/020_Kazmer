@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncMetadataVisible</key>
+	<string>cubitFlyweightTint</string>
+	<key>managerEnvironmentBrightness</key>
+	<string>tensorWidgetContrast</string>
+	<key>mediocreConfigurationHue</key>
+	<string>interactiveFeatureBehavior</string>
+	<key>reducerPerPlatform</key>
+	<string>originalTextState</string>
+</dict>
+</plist>

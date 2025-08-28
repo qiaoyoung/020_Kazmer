@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aspectShapeInterval</key>
+	<string>specifyInteractorRotation</string>
+	<key>diffableListenerInterval</key>
+	<string>responsiveLoopRight</string>
+	<key>gesturedetectorOrBuffer</key>
+	<string>globalTouchVisibility</string>
+	<key>lazyHashOrientation</key>
+	<string>interfaceWithoutShape</string>
+	<key>mainTimerStyle</key>
+	<string>viewScopeVelocity</string>
+	<key>missedMenuVisibility</key>
+	<string>mainColumnMargin</string>
+	<key>overlayLevelSkewy</key>
+	<string>factoryTempleRate</string>
+	<key>rectObserverStyle</key>
+	<string>notificationPerComposite</string>
+</dict>
+</plist>

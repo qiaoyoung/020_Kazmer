@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bufferPerLevel</key>
+	<string>layoutContainVar</string>
+	<key>desktopRowInterval</key>
+	<string>euclideanArithmeticAlignment</string>
+	<key>granularInterfaceDirection</key>
+	<string>denseShaderTransparency</string>
+	<key>intermediateIsolateTension</key>
+	<string>lazySemanticsStatus</string>
+	<key>loopCycleCount</key>
+	<string>decorationAdapterSkewx</string>
+	<key>offsetFlyweightVisibility</key>
+	<string>blocTierInterval</string>
+	<key>webExtensionPadding</key>
+	<string>layoutFromComposite</string>
+</dict>
+</plist>

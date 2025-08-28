@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chapterAdapterAcceleration</key>
+	<string>challengeSingletonHue</string>
+	<key>giftForObserver</key>
+	<string>ignoredStatefulTag</string>
+	<key>missionFlyweightDuration</key>
+	<string>commandMediatorTag</string>
+	<key>streamProcessEdge</key>
+	<string>deferredScaffoldTheme</string>
+	<key>transformerMethodEdge</key>
+	<string>inheritedOverlayShade</string>
+</dict>
+</plist>

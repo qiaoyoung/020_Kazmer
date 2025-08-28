@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>boxshadowContainActivity</key>
+	<string>anchorAboutKind</string>
+	<key>callbackTierCount</key>
+	<string>swiftByTier</string>
+	<key>constConfigurationSkewy</key>
+	<string>unactivatedDialogsForce</string>
+	<key>dynamicCursorOffset</key>
+	<string>tableForFunction</string>
+	<key>listviewContainScope</key>
+	<string>builderLevelBottom</string>
+	<key>playbackViaEnvironment</key>
+	<string>publicControllerBound</string>
+	<key>queryCommandColor</key>
+	<string>grayscaleOfCommand</string>
+	<key>statelessAmongChain</key>
+	<string>routerOrAdapter</string>
+	<key>transformerDecoratorHead</key>
+	<string>inkwellFromBridge</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>documentPerTask</key>
+	<string>queryUntilParameter</string>
+	<key>iconSingletonShape</key>
+	<string>standaloneModelAlignment</string>
+	<key>largeButtonRotation</key>
+	<string>eventViaInterpreter</string>
+	<key>liteResolverOpacity</key>
+	<string>positionThanWork</string>
+	<key>responsiveRiverpodEdge</key>
+	<string>arithmeticModeOpacity</string>
+</dict>
+</plist>

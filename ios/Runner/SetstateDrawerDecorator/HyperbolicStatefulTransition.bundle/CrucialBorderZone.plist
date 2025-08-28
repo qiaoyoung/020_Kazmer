@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleRowBorder</key>
+	<string>frameModeDistance</string>
+	<key>animationValuePressure</key>
+	<string>publicProgressbarSaturation</string>
+	<key>interfaceContainTier</key>
+	<string>statefulMultiplicationScale</string>
+	<key>intuitiveMatrixKind</key>
+	<string>workflowDecoratorTransparency</string>
+	<key>invisibleGraphInset</key>
+	<string>riverpodThroughMediator</string>
+	<key>offsetFrameworkOrientation</key>
+	<string>activeEntityInset</string>
+	<key>semanticsDuringStage</key>
+	<string>dependencyPhaseLeft</string>
+	<key>themeOfStrategy</key>
+	<string>mobxStageOpacity</string>
+</dict>
+</plist>

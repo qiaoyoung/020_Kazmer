@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>callbackPatternAcceleration</key>
+	<string>custompaintWorkScale</string>
+	<key>certificateAdapterBrightness</key>
+	<string>rowNearDecorator</string>
+	<key>ephemeralStorageSpacing</key>
+	<string>gridFacadeColor</string>
+	<key>iterativeModelTransparency</key>
+	<string>documentMethodDirection</string>
+	<key>priorityExceptStructure</key>
+	<string>transitionFromFramework</string>
+	<key>timerThanMethod</key>
+	<string>disparateDescriptorTheme</string>
+	<key>uniqueSinkCount</key>
+	<string>responseInsideContext</string>
+</dict>
+</plist>

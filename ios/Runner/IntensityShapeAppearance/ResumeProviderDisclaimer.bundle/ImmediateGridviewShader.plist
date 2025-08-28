@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>desktopGridMode</key>
+	<string>repositoryInsideChain</string>
+	<key>elasticAssetInteraction</key>
+	<string>previewAlongObserver</string>
+	<key>frameOutsideActivity</key>
+	<string>permanentCharacterPressure</string>
+	<key>ignoredSpecifierVisibility</key>
+	<string>descriptionPerContext</string>
+	<key>interactorFacadeAppearance</key>
+	<string>hierarchicalPlateLeft</string>
+	<key>loopForStructure</key>
+	<string>storeDespitePhase</string>
+	<key>metadataOrInterpreter</key>
+	<string>listviewVarDepth</string>
+	<key>projectContainStyle</key>
+	<string>resourceMethodMode</string>
+	<key>routerCycleFeedback</key>
+	<string>backwardChapterShade</string>
+</dict>
+</plist>

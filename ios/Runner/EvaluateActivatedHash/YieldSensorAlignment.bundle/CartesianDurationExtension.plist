@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beginnerUsecasePosition</key>
+	<string>movementVersusContext</string>
+	<key>configurationInsideVisitor</key>
+	<string>petFunctionSpacing</string>
+	<key>errorDuringFlyweight</key>
+	<string>effectDuringMethod</string>
+	<key>handlerBeyondStage</key>
+	<string>channelVersusSingleton</string>
+	<key>navigatorOrMediator</key>
+	<string>durationActionFlags</string>
+	<key>sliderExceptContext</key>
+	<string>builderVariableEdge</string>
+	<key>spineVersusFacade</key>
+	<string>sceneStateVisible</string>
+	<key>transformerForAction</key>
+	<string>apertureAndProcess</string>
+</dict>
+</plist>

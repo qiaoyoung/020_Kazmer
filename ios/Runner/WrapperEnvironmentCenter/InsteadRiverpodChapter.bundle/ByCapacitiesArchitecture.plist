@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>controllerFlyweightStyle</key>
+	<string>modelFromProxy</string>
+	<key>finalNotificationSpeed</key>
+	<string>inkwellOutsideLayer</string>
+	<key>interfaceBeyondMemento</key>
+	<string>navigatorStageScale</string>
+	<key>lazyStorageAcceleration</key>
+	<string>persistentHashDuration</string>
+	<key>navigatorJobTail</key>
+	<string>arithmeticShapeScale</string>
+	<key>resolverIncludeForm</key>
+	<string>tensorAlertStatus</string>
+	<key>ternaryStateDistance</key>
+	<string>respectiveListenerInteraction</string>
+	<key>timerPatternName</key>
+	<string>reusableInjectionTheme</string>
+</dict>
+</plist>

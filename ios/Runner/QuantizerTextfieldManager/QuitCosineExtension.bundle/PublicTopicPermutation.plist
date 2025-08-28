@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dimensionThroughTier</key>
+	<string>blocWorkMargin</string>
+	<key>immediateLayerStyle</key>
+	<string>customizedProgressbarInset</string>
+	<key>inheritedNotificationFrequency</key>
+	<string>subscriptionNumberKind</string>
+	<key>rectNearMemento</key>
+	<string>opaqueExtensionTag</string>
+	<key>responsiveButtonRotation</key>
+	<string>sceneDuringObserver</string>
+	<key>reusablePositionTint</key>
+	<string>segmentStageForce</string>
+	<key>semanticConfigurationForce</key>
+	<string>singleSliderPadding</string>
+	<key>sensorAboutDecorator</key>
+	<string>paddingExceptState</string>
+	<key>uniqueStepFormat</key>
+	<string>hyperbolicListenerLeft</string>
+</dict>
+</plist>

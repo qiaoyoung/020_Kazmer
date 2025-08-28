@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activatedRadiusDepth</key>
+	<string>immediateRowKind</string>
+	<key>alertUntilShape</key>
+	<string>multiInteractorVisibility</string>
+	<key>directlySpineKind</key>
+	<string>intuitiveEffectTag</string>
+	<key>indicatorAlongDecorator</key>
+	<string>extensionVersusCycle</string>
+	<key>managerBeyondPlatform</key>
+	<string>activatedUsageForce</string>
+	<key>skirtPerAction</key>
+	<string>eagerGesturedetectorName</string>
+	<key>textureKindSkewx</key>
+	<string>standaloneLabelSkewy</string>
+</dict>
+</plist>

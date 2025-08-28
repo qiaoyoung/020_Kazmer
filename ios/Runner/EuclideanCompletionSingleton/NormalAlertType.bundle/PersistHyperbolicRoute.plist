@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentUntilShape</key>
+	<string>paddingVersusScope</string>
+	<key>animationMediatorSize</key>
+	<string>autoBatchResponse</string>
+	<key>brushStrategyCoord</key>
+	<string>pageviewForStyle</string>
+	<key>futureInsideVariable</key>
+	<string>declarativeQueueStyle</string>
+	<key>intuitiveIntegerAlignment</key>
+	<string>assetAmongBuffer</string>
+	<key>referenceOutsideDecorator</key>
+	<string>deferredAccessoryStatus</string>
+	<key>smartPreviewDepth</key>
+	<string>singletonProxyName</string>
+	<key>sustainableDecorationInteraction</key>
+	<string>buttonAgainstSingleton</string>
+	<key>uniqueAlphaFormat</key>
+	<string>builderOperationState</string>
+</dict>
+</plist>

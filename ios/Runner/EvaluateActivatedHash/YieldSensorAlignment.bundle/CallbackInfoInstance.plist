@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>clipperStageContrast</key>
+	<string>customizedServiceDistance</string>
+	<key>lostSymbolDensity</key>
+	<string>immediateMasterInteraction</string>
+	<key>modalCompositeVisible</key>
+	<string>activityShapeTag</string>
+	<key>pageviewOfFramework</key>
+	<string>futureLevelPadding</string>
+	<key>persistentAnchorVisible</key>
+	<string>routerAlongComposite</string>
+	<key>seamlessTangentDensity</key>
+	<string>timerLayerSaturation</string>
+	<key>singletonContainMemento</key>
+	<string>secondInteractorTop</string>
+	<key>streamObserverLeft</key>
+	<string>capacitiesStageVisible</string>
+	<key>subscriptionThanComposite</key>
+	<string>stateStrategyScale</string>
+</dict>
+</plist>

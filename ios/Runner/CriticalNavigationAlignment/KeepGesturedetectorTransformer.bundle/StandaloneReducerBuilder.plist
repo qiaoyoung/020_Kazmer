@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>containerAdapterSize</key>
+	<string>stepAboutLayer</string>
+	<key>factoryDespiteInterpreter</key>
+	<string>ephemeralHeapBorder</string>
+	<key>graphFromScope</key>
+	<string>fusedQueryLeft</string>
+	<key>isolateAwayMemento</key>
+	<string>mutableMovementColor</string>
+	<key>reusableNavigatorBorder</key>
+	<string>eagerTitleInset</string>
+	<key>spriteChainMargin</key>
+	<string>constraintWithoutChain</string>
+	<key>statelessKernelForce</key>
+	<string>nextNotifierHue</string>
+	<key>tickerAsEnvironment</key>
+	<string>advancedResponseStyle</string>
+</dict>
+</plist>

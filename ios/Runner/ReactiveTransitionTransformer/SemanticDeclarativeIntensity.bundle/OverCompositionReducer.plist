@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoAlertOpacity</key>
+	<string>completionAtLevel</string>
+	<key>compositionalParticleDirection</key>
+	<string>logAtObserver</string>
+	<key>lostCustompaintName</key>
+	<string>textureParamMode</string>
+	<key>robustTextureDelay</key>
+	<string>directKernelInset</string>
+	<key>sharedLabelCenter</key>
+	<string>transitionAtFramework</string>
+	<key>uniqueModelFrequency</key>
+	<string>optionVisitorState</string>
+</dict>
+</plist>

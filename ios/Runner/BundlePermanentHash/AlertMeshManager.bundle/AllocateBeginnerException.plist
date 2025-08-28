@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>builderPhaseColor</key>
+	<string>popupBesideParam</string>
+	<key>decorationAroundStyle</key>
+	<string>cycleObserverDensity</string>
+	<key>groupSystemStyle</key>
+	<string>discardedDurationOrigin</string>
+	<key>injectionAndBuffer</key>
+	<string>allocatorLevelSaturation</string>
+	<key>lazyCompleterColor</key>
+	<string>stackProxyTheme</string>
+	<key>streamDecoratorResponse</key>
+	<string>immediateViewAlignment</string>
+	<key>textThroughMode</key>
+	<string>alphaFromVar</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mobileEffectDensity</key>
+	<string>requestWithFlyweight</string>
+	<key>nativeDecorationType</key>
+	<string>usageThanPrototype</string>
+	<key>popupWorkBehavior</key>
+	<string>assetOutsideChain</string>
+	<key>sequentialReductionBottom</key>
+	<string>eventPlatformValidation</string>
+</dict>
+</plist>

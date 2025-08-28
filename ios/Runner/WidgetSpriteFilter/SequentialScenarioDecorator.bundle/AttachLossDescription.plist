@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chartTempleName</key>
+	<string>localizationInFlyweight</string>
+	<key>cursorFromStage</key>
+	<string>stepThanFlyweight</string>
+	<key>decorationChainBorder</key>
+	<string>textureInsideStrategy</string>
+	<key>fixedRowStatus</key>
+	<string>uniqueBitrateIndex</string>
+	<key>granularContainerFrequency</key>
+	<string>heroUntilSystem</string>
+	<key>numericalGridAlignment</key>
+	<string>denseContractionDirection</string>
+	<key>pointNumberInterval</key>
+	<string>entityFacadeAppearance</string>
+	<key>screenExceptContext</key>
+	<string>gridInsideComposite</string>
+</dict>
+</plist>

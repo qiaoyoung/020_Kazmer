@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>materialParameterBrightness</key>
+	<string>frameOfActivity</string>
+	<key>mediaqueryValueTheme</key>
+	<string>lossActionTheme</string>
+	<key>mobileSinceInterpreter</key>
+	<string>canvasCommandContrast</string>
+	<key>providerWithoutPhase</key>
+	<string>durationWithPattern</string>
+	<key>sharedResponseValidation</key>
+	<string>composableViewCenter</string>
+	<key>sliderStageTint</key>
+	<string>streamVariableDepth</string>
+</dict>
+</plist>

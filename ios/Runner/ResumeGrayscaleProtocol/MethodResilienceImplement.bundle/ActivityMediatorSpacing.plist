@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>advancedListenerScale</key>
+	<string>gridStrategyVisible</string>
+	<key>cubitBufferAppearance</key>
+	<string>globalParticleScale</string>
+	<key>cubitIncludeOperation</key>
+	<string>similarTransitionFlags</string>
+	<key>declarativeSpriteBehavior</key>
+	<string>symbolStructureRotation</string>
+	<key>movementBufferPressure</key>
+	<string>discardedPopupFormat</string>
+	<key>signatureVarBrightness</key>
+	<string>retainedConfigurationSaturation</string>
+	<key>skinJobInteraction</key>
+	<string>sizeAboutFacade</string>
+	<key>streamMediatorFlags</key>
+	<string>localizationBufferLocation</string>
+	<key>ternaryAtMemento</key>
+	<string>layoutOperationType</string>
+</dict>
+</plist>

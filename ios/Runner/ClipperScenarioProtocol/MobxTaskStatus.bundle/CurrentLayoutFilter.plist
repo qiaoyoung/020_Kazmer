@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>reusableMediaSkewx</key>
+	<string>desktopMovementMode</string>
+	<key>robustProgressbarBound</key>
+	<string>clipperUntilNumber</string>
+	<key>scrollableTransitionForce</key>
+	<string>switchInStage</string>
+	<key>sustainableObserverBrightness</key>
+	<string>retainedConvolutionMomentum</string>
+</dict>
+</plist>

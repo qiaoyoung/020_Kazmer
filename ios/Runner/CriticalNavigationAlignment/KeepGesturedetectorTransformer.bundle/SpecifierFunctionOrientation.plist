@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentExceptEnvironment</key>
+	<string>instructionCycleFormat</string>
+	<key>constReferenceRate</key>
+	<string>synchronousWidgetScale</string>
+	<key>constSingletonOpacity</key>
+	<string>hashSingletonEdge</string>
+	<key>diversifiedQueueVisibility</key>
+	<string>crudeBorderType</string>
+	<key>entityUntilVisitor</key>
+	<string>blocVersusBuffer</string>
+	<key>futureMementoBound</key>
+	<string>sustainableCurveFormat</string>
+	<key>gesturedetectorCycleType</key>
+	<string>tableVisitorKind</string>
+	<key>mobxKindState</key>
+	<string>originalMatrixStatus</string>
+	<key>textureVarVisible</key>
+	<string>signStyleValidation</string>
+</dict>
+</plist>

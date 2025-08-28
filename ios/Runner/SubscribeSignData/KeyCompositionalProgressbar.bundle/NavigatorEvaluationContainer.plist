@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentPrototypeBehavior</key>
+	<string>curveStageName</string>
+	<key>effectFromActivity</key>
+	<string>euclideanTickerRate</string>
+	<key>isolateAboutShape</key>
+	<string>timerFlyweightTransparency</string>
+	<key>masterActivityInteraction</key>
+	<string>custompaintContextTint</string>
+	<key>originalNodeType</key>
+	<string>equalizationInterpreterOffset</string>
+	<key>rowAlongCommand</key>
+	<string>originalBoxMargin</string>
+	<key>rowContextDistance</key>
+	<string>imperativeIconType</string>
+	<key>spriteOperationDepth</key>
+	<string>uniqueModelDensity</string>
+</dict>
+</plist>

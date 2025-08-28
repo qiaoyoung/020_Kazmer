@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>challengeTierRate</key>
+	<string>cartesianCubitMargin</string>
+	<key>commonBuilderRotation</key>
+	<string>usecaseWithoutLayer</string>
+	<key>fixedGridviewIndex</key>
+	<string>grainActionHead</string>
+	<key>futureCycleEdge</key>
+	<string>responsiveOptionDirection</string>
+	<key>greatRequestInterval</key>
+	<string>requestOrProcess</string>
+	<key>hyperbolicCursorInterval</key>
+	<string>eventJobMargin</string>
+	<key>layoutPerPlatform</key>
+	<string>localizationAndDecorator</string>
+	<key>requiredBitrateHue</key>
+	<string>handlerViaValue</string>
+	<key>transitionAdapterTheme</key>
+	<string>relationalEventInset</string>
+</dict>
+</plist>

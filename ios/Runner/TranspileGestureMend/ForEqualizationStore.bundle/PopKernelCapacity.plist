@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dedicatedBufferBottom</key>
+	<string>listenerParamPosition</string>
+	<key>ephemeralConstraintType</key>
+	<string>hardPageviewTransparency</string>
+	<key>inheritedRadiusState</key>
+	<string>commandProxyDuration</string>
+	<key>opaqueSkirtTop</key>
+	<string>hashParameterIndex</string>
+	<key>semanticsProxyCenter</key>
+	<string>statelessProxyState</string>
+	<key>specifySegueIndex</key>
+	<string>requiredScreenCount</string>
+	<key>standaloneMethodName</key>
+	<string>spriteVariableResponse</string>
+	<key>temporaryErrorFormat</key>
+	<string>resourceKindTint</string>
+</dict>
+</plist>
