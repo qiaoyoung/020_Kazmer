@@ -36,19 +36,8 @@ static NSString *const kSavedDomainKey = @"SavedDomainKey";
     {
         _appKey = @"bb423e522c32002210fe5623f81a89ea";//本项目使用
 //        _apiURL = @"https://app.netease.im/api";
-#ifdef DEBUG
-        //        _apnsCername = @"DEVELOPER";
-        _apnsCername = @"pushDev";
+        _apnsCername = @"push_Kazmer_release";
         _pkCername = @"pushkit_voice_test";
-
-#else
-        _apnsCername = @"pushAdHoc";
-        _pkCername = @"pushkit_voice";
-
-#endif
-        
-      
-        
         
         _allowAutoLogin = YES; //如果网上的host和本地的一致，允许自动登录
         
