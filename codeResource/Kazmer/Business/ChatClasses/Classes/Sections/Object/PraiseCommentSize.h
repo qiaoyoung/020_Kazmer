@@ -11,17 +11,17 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "DisplaySessionPrivateProtocol.h"
+#import "DisplaySessionPrivateProtocol.h"
+//: #import "DisplaySessionConfigurateProtocol.h"
+#import "DisplaySessionConfigurateProtocol.h"
 
-//: @interface FFFSessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
+//: @interface DisplaySessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
 @interface PraiseCommentSize : NSObject<TitleTotaleractor,InsideDelegate>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithCrop:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<DisplaySessionConfig>)sessionConfig;
                          dismiss:(id<ColorConfig>)sessionConfig;
 
 //: @property(nonatomic,weak) id<NIMSessionInteractorDelegate> delegate;

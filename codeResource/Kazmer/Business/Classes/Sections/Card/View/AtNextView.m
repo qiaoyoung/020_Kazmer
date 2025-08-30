@@ -182,7 +182,7 @@ Byte kContent_cellText[] = {18, 7, 58, 10, 79, 242, 83, 8, 170, 149, 233, 12, 7,
         lab.textColor = [UIColor cell:StringFromMarkData(kTextData)];
         //: lab.font = [UIFont systemFontOfSize:14];
         lab.font = [UIFont systemFontOfSize:14];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
+        //: lab.text = [DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
         lab.text = [MakeManager cell:StringFromMarkData(kNameRecentScaleData)];
         //: [_deleteView addSubview:lab];
         [_deleteView addSubview:lab];
@@ -223,7 +223,7 @@ Byte kContent_cellText[] = {18, 7, 58, 10, 79, 242, 83, 8, 170, 149, 233, 12, 7,
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
 //        _titleLabel.text = LangKey(@"report_User");
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_Content"];
+        //: _titleLabel.text = [DisplayLanguageManager getTextWithKey:@"report_Content"];
         _titleLabel.text = [MakeManager cell:StringFromMarkData(kTextDeviceData)];
 
     }
@@ -277,7 +277,7 @@ Byte kContent_cellText[] = {18, 7, 58, 10, 79, 242, 83, 8, 170, 149, 233, 12, 7,
         lab.textColor = [UIColor cell:StringFromMarkData(kTextData)];
         //: lab.font = [UIFont systemFontOfSize:14];
         lab.font = [UIFont systemFontOfSize:14];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
+        //: lab.text = [DisplayLanguageManager getTextWithKey:@"activity_group_chat_avatar_add_black"];
         lab.text = [MakeManager cell:StringFromMarkData(kTitle_cellValue)];
         //: [_blockView addSubview:lab];
         [_blockView addSubview:lab];
@@ -339,7 +339,7 @@ Byte kContent_cellText[] = {18, 7, 58, 10, 79, 242, 83, 8, 170, 149, 233, 12, 7,
     labsubLabel.textColor = [UIColor cell:StringFromMarkData(kTextData)];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select"];
+    //: labsubLabel.text = [DisplayLanguageManager getTextWithKey:@"report_next_select"];
     labsubLabel.text = [MakeManager cell:StringFromMarkData(kTitleDetailValue)];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -395,7 +395,7 @@ Byte kContent_cellText[] = {18, 7, 58, 10, 79, 242, 83, 8, 170, 149, 233, 12, 7,
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:StringFromMarkData(kNamePlayText)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor cell:StringFromMarkData(kContentKnowKeyString)];
@@ -423,7 +423,7 @@ Byte kContent_cellText[] = {18, 7, 58, 10, 79, 242, 83, 8, 170, 149, 233, 12, 7,
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:StringFromMarkData(kTextData)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:StringFromMarkData(kNameContentData)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];

@@ -205,7 +205,7 @@ NSString *showUserKey = @"showUserKey";
     BOOL needPlay = YES;
     //: for (UIViewController *vc in nav.viewControllers) {
     for (UIViewController *vc in nav.viewControllers) {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[DisplaySessionViewController class]])
         if ([vc isKindOfClass:[ReplyViewController class]])
         {
             //: needPlay = NO;
@@ -380,7 +380,7 @@ NSString *showUserKey = @"showUserKey";
     }
 }
 
-//: - (FFFSessionViewController *)currentSessionViewController
+//: - (DisplaySessionViewController *)currentSessionViewController
 - (ReplyViewController *)array
 {
     //: UINavigationController *nav = [USERMainTabController instance].selectedViewController;
@@ -388,10 +388,10 @@ NSString *showUserKey = @"showUserKey";
     //: for (UIViewController *vc in nav.viewControllers)
     for (UIViewController *vc in nav.viewControllers)
     {
-        //: if ([vc isKindOfClass:[FFFSessionViewController class]])
+        //: if ([vc isKindOfClass:[DisplaySessionViewController class]])
         if ([vc isKindOfClass:[ReplyViewController class]])
         {
-            //: return (FFFSessionViewController *)vc;
+            //: return (DisplaySessionViewController *)vc;
             return (ReplyViewController *)vc;
         }
     }
@@ -532,7 +532,7 @@ NSString *showUserKey = @"showUserKey";
 {
     //: NSString *text = @"你收到了一个白板请求".user_localized;
     NSString *text = [ScaleOvernightData sharedInstance].kTextTeachLessTitle.nominate;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:caller option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:caller keepingOption:nil];
     //: if ([info.showName length])
     if ([info.showName length])
@@ -590,7 +590,7 @@ NSString *showUserKey = @"showUserKey";
         if ([vc isKindOfClass:[WayOfLifeViewController class]]
             //: && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
             && [vc.session.sessionId isEqualToString:notification.session.sessionId]) {
-            //: FFFMessageModel *model = [vc uiDeleteMessage:notification.message];
+            //: DisplayMessageModel *model = [vc uiDeleteMessage:notification.message];
             CleanDoing *model = [vc keep:notification.message];
             //: if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||
             if (notification.notificationType == NIMRevokeMessageNotificationTypeP2POneWay ||

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTimerHolder.h"
+//: #import "DisplayKitTimerHolder.h"
 #import "LargenessHolder.h"
 
-//: @interface FFFKitTimerHolder ()
+//: @interface DisplayKitTimerHolder ()
 @interface LargenessHolder ()
 {
     //: NSTimer *_timer;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFKitTimerHolder
+//: @implementation DisplayKitTimerHolder
 @implementation LargenessHolder
 
 //: - (void)dealloc
@@ -37,7 +37,7 @@
 
 //: - (void)startTimer: (NSTimeInterval)seconds
 - (void)delegateMonitor: (NSTimeInterval)seconds
-          //: delegate: (id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate: (id<DisplayKitTimerHolderDelegate>)delegate
           repeats: (id<CornerDelegate>)delegate
            //: repeats: (BOOL)repeats
            date: (BOOL)repeats

@@ -166,7 +166,7 @@
     return kTitle_inventMigrationData;
 }
 
-//: #ffffff
+//: #fffDisplay
 + (NSString *)kTextRawData {
     /* static */ NSString *kTextRawData = nil;
     if (!kTextRawData) {
@@ -698,7 +698,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLoginViewController.h"
+//: #import "DisplayLoginViewController.h"
 #import "PageViewController.h"
 //: #import "USERMainTabController.h"
 #import "TranslateTabletBarController.h"
@@ -716,14 +716,14 @@
 #import "CellCornerInside.h"
 //: #import "UIActionSheet+USERBlock.h"
 #import "UIActionSheet+NameAddContent.h"
-//: #import "FFFRegisterViewController.h"
+//: #import "DisplayRegisterViewController.h"
 #import "CenterViewController.h"
 //: #import "USERRegistConfigManager.h"
 #import "StandardManager.h"
 //: #import <CoreTelephony/CTCellularData.h>
 #import <CoreTelephony/CTCellularData.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
 //: #import "CCCAutoLoginManager.h"
@@ -735,7 +735,7 @@
 //: #import "GetBackPasswordViewController.h"
 #import "StandardViewController.h"
 
-//: @interface FFFLoginViewController ()<UITextFieldDelegate> {
+//: @interface DisplayLoginViewController ()<UITextFieldDelegate> {
 @interface PageViewController ()<UITextFieldDelegate> {
     //: BOOL _isloading;
     BOOL _isloading;
@@ -776,7 +776,7 @@
 //: @end
 @end
 
-//: @implementation FFFLoginViewController
+//: @implementation DisplayLoginViewController
 @implementation PageViewController
 
 //: - (void)textFieldDidBeginEditing:(UITextField *)textField {
@@ -820,7 +820,7 @@
                 }
                 //: userDefaults.language = lang;
                 userDefaults.language = lang;
-                //: [[FFFLanguageManager shareInstance] setLanguagre:lang];
+                //: [[DisplayLanguageManager shareInstance] setLanguagre:lang];
                 [[MakeManager range] setShould:lang];
                 //: [[NSNotificationCenter defaultCenter] postNotificationName:@"NotificationLogout" object:nil];
                 [[NSNotificationCenter defaultCenter] postNotificationName:[YoungBirdData kTextReservationString] object:nil];
@@ -834,7 +834,7 @@
                                        customContentKey:lang];
 
                     //: dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
-                    dispatch_after(dispatch_time((0ull), (int64_t)(1 * 1000000000ull)), dispatch_get_main_queue(), ^{
+                    dispatch_after(dispatch_time((DISPATCH_TIME_NOW), (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         //: id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
                         id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
                         //: NIMPushNotificationSetting *setting = [apnsManager currentSetting];
@@ -1265,7 +1265,7 @@
 -(YYLabel *)registLabel{
     //: if (!_registLabel) {
     if (!_registLabel) {
-        //: NSString *noCount = [FFFLanguageManager getTextWithKey:@"activity_login_has_no_account"];
+        //: NSString *noCount = [DisplayLanguageManager getTextWithKey:@"activity_login_has_no_account"];
         NSString *noCount = [MakeManager cell:[YoungBirdData kText_onShallowData]];
         //: NSString *originText = [NSString stringWithFormat:@"%@",noCount];
         NSString *originText = [NSString stringWithFormat:@"%@",noCount];
@@ -1321,7 +1321,7 @@
 //: - (void)doRegister
 - (void)languageOf
 {
-    //: FFFRegisterViewController *vc = [[FFFRegisterViewController alloc]init];
+    //: DisplayRegisterViewController *vc = [[DisplayRegisterViewController alloc]init];
     CenterViewController *vc = [[CenterViewController alloc]init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -1330,7 +1330,7 @@
 -(YYLabel *)protocolLabel{
     //: if (!_protocolLabel) {
     if (!_protocolLabel) {
-        //: NSString *originText = [FFFLanguageManager getTextWithKey:@"activity_register_agree"];
+        //: NSString *originText = [DisplayLanguageManager getTextWithKey:@"activity_register_agree"];
         NSString *originText = [MakeManager cell:[YoungBirdData kTitlePlaceString]];
         //: NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
         NSMutableAttributedString *text1 = [[NSMutableAttributedString alloc] initWithString:originText];
@@ -1353,7 +1353,7 @@
 
             //: ZMONPolicyPrivacyViewController *vc = [[ZMONPolicyPrivacyViewController alloc] init];
             MakeViewController *vc = [[MakeViewController alloc] init];
-            //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+            //: vc.webTitle = [DisplayLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
             vc.webTitle = [MakeManager cell:[YoungBirdData kTextStableString]];
             //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
             vc.urlString = [TableContext name].yshref;
@@ -1414,7 +1414,7 @@
 
     //: if (_usernameTextField.text && _usernameTextField.text.length <= 0){
     if (_usernameTextField.text && _usernameTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"register_account_activity_account"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[MakeManager cell:[YoungBirdData kContent_pullData]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -1422,7 +1422,7 @@
 
     //: if (_passwordTextField.text && _passwordTextField.text.length <= 0){
     if (_passwordTextField.text && _passwordTextField.text.length <= 0){
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"register_account_activity_psw"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[MakeManager cell:[YoungBirdData kText_nutAlsoString]] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -1518,7 +1518,7 @@
                     //: if (error != nil) {
                     if (error != nil) {
 
-                        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"login_activity_login_failed"] duration:2.0 position:CSToastPositionCenter];
+                        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"login_activity_login_failed"] duration:2.0 position:CSToastPositionCenter];
                         [self.view makeToast:[MakeManager cell:[YoungBirdData kTitleSuggestString]] duration:2.0 position:CSToastPositionCenter];
 
                         //: return;
@@ -1534,7 +1534,7 @@
                   style.imageSize = CGSizeMake(20, 20);
                 //: style.messageColor = [UIColor colorWithHexString:@"#5D5F66"];
                 style.messageColor = [UIColor cell:[YoungBirdData kName_wheatString]];
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"login_activity_login_success"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_success"] style:style completion:nil];
+                //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"login_activity_login_success"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_success"] style:style completion:nil];
                 [self.view makeToast:[MakeManager cell:[YoungBirdData kText_civilianName]] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:[YoungBirdData kName_everValue]] style:style completion:nil];
 
                     //: USERLoginData *sdkData = [[USERLoginData alloc] init];
@@ -1596,7 +1596,7 @@
         style.messageColor = [UIColor cell:[YoungBirdData kName_wheatString]];
         //: style.imageSize = CGSizeMake(20, 20);
         style.imageSize = CGSizeMake(20, 20);
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:@"login_error"] style:style completion:nil];
         [self.view makeToast:[MakeManager cell:[YoungBirdData kTitle_frameValue]] duration:2.0 position:CSToastPositionCenter title:nil image:[UIImage imageNamed:[YoungBirdData kTitleDoingValue]] style:style completion:nil];
 
     //: }];
@@ -1626,7 +1626,7 @@
 
     //: UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
     UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(0, _logoImageView.bottom, [[UIScreen mainScreen] bounds].size.width, 30)];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_login_welcome"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"activity_login_welcome"];
     labtitle.text = [MakeManager cell:[YoungBirdData kContent_retireTitle]];
     //: labtitle.textColor = [UIColor blackColor];
     labtitle.textColor = [UIColor blackColor];
@@ -1639,7 +1639,7 @@
 
     //: UIView *usernameView = [[UIView alloc]initWithFrame:CGRectMake(20, labtitle.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
     UIView *usernameView = [[UIView alloc]initWithFrame:CGRectMake(20, labtitle.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
-    //: usernameView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: usernameView.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
     usernameView.backgroundColor = [UIColor cell:[YoungBirdData kTextRawData]];
     //: usernameView.layer.cornerRadius = 24;
     usernameView.layer.cornerRadius = 24;
@@ -1661,7 +1661,7 @@
     _usernameTextField.font = [UIFont systemFontOfSize:16];
     //: _usernameTextField.textColor = [UIColor colorWithHexString:@"#333333"];
     _usernameTextField.textColor = [UIColor cell:[YoungBirdData kNameConsumptionValue]];
-    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"register_account_activity_account"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[DisplayLanguageManager getTextWithKey:@"register_account_activity_account"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[MakeManager cell:[YoungBirdData kContent_pullData]] attributes:@{NSForegroundColorAttributeName:[UIColor cell:[YoungBirdData kName_stopString]]}];
     //: _usernameTextField.attributedPlaceholder = attrString;
     _usernameTextField.attributedPlaceholder = attrString;
@@ -1675,7 +1675,7 @@
 
     //: UIView *psdView = [[UIView alloc]initWithFrame:CGRectMake(20, usernameView.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
     UIView *psdView = [[UIView alloc]initWithFrame:CGRectMake(20, usernameView.bottom+20, [[UIScreen mainScreen] bounds].size.width-40, 48)];
-    //: psdView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: psdView.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
     psdView.backgroundColor = [UIColor cell:[YoungBirdData kTextRawData]];
     //: psdView.layer.masksToBounds = YES;
     psdView.layer.masksToBounds = YES;
@@ -1700,7 +1700,7 @@
     //: _passwordTextField.secureTextEntry = YES;
     _passwordTextField.secureTextEntry = YES;
 //    self.passwordTextField.delegate = self;
-    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"register_account_activity_psw"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[DisplayLanguageManager getTextWithKey:@"register_account_activity_psw"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString1 = [[NSMutableAttributedString alloc]initWithString:[MakeManager cell:[YoungBirdData kText_nutAlsoString]] attributes:@{NSForegroundColorAttributeName:[UIColor cell:[YoungBirdData kName_stopString]]}];
     //: _passwordTextField.attributedPlaceholder = attrString1;
     _passwordTextField.attributedPlaceholder = attrString1;
@@ -1729,7 +1729,7 @@
     _loginButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_loginButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_login_login"] forState:UIControlStateNormal];
+    //: [_loginButton setTitle:[DisplayLanguageManager getTextWithKey:@"activity_login_login"] forState:UIControlStateNormal];
     [_loginButton setTitle:[MakeManager cell:[YoungBirdData kTitleErrorString]] forState:UIControlStateNormal];
     //: [_loginButton addTarget:self action:@selector(doLogin) forControlEvents:UIControlEventTouchUpInside];
     [_loginButton addTarget:self action:@selector(nameFor) forControlEvents:UIControlEventTouchUpInside];
@@ -1754,7 +1754,7 @@
     [_registerButton addTarget:self action:@selector(languageOf) forControlEvents:UIControlEventTouchUpInside];
     //: NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
     NSDictionary *attributes = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[FFFLanguageManager getTextWithKey:@"activity_register_title"] attributes:attributes];
+    //: NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[DisplayLanguageManager getTextWithKey:@"activity_register_title"] attributes:attributes];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[MakeManager cell:[YoungBirdData kTitleNutShowText]] attributes:attributes];
     //: [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];
     [_registerButton setAttributedTitle:attributedString forState:UIControlStateNormal];

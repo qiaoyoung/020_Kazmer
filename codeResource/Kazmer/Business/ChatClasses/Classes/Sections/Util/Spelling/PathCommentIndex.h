@@ -12,10 +12,10 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface FFFPinyinConverter : NSObject
+//: @interface DisplayPinyinConverter : NSObject
 @interface PathCommentIndex : NSObject
 
-//: + (FFFPinyinConverter *)sharedInstance;
+//: + (DisplayPinyinConverter *)sharedInstance;
 + (PathCommentIndex *)responseInstance;
 
 //: - (NSString *)toPinyin: (NSString *)source;

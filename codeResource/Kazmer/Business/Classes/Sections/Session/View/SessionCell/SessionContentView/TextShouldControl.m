@@ -26,7 +26,7 @@ Byte kTextClerkThoughString[] = {26, 27, 71, 9, 68, 241, 71, 68, 118, 176, 170, 
 #import "UIView+Turn.h"
 //: #import "M80AttributedLabel.h"
 #import "LabelNameScrollView.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "USERWhiteboardAttachment.h"
 #import "MessageAttachment.h"
@@ -72,7 +72,7 @@ Byte kTextClerkThoughString[] = {26, 27, 71, 9, 68, 241, 71, 68, 118, 176, 170, 
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(DisplayMessageModel *)data{
 - (void)from:(CleanDoing *)data{
     //: [super refresh:data];
     [super from:data];

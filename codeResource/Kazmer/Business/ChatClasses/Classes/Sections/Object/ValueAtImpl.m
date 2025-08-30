@@ -9,24 +9,24 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "DisplaySessionLayoutImpl.h"
 #import "ValueAtImpl.h"
 //: #import "UITableView+NIMScrollToBottom.h"
 #import "UITableView+NIMScrollToBottom.h"
-//: #import "FFFMessageCell.h"
+//: #import "DisplayMessageCell.h"
 #import "IndoorsView.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
+//: #import "DisplaySessionTableAdapter.h"
 #import "FinancialCenterAdapter.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "DisplayKitKeyboardInfo.h"
 #import "RedInfo.h"
-//: #import "FFFReplyContentView.h"
+//: #import "DisplayReplyContentView.h"
 #import "BookView.h"
 
-//: @interface FFFSessionLayoutImpl()
+//: @interface DisplaySessionLayoutImpl()
 @interface ValueAtImpl()
 {
     //: NSMutableArray *_inserts;
@@ -41,7 +41,7 @@
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
+//: @property (nonatomic,strong) id<DisplaySessionConfig> sessionConfig;
 @property (nonatomic,strong) id<ColorConfig> sessionConfig;
 
 //: @property (nonatomic,weak) id<NIMSessionLayoutDelegate> delegate;
@@ -50,12 +50,12 @@
 //: @end
 @end
 
-//: @implementation FFFSessionLayoutImpl
+//: @implementation DisplaySessionLayoutImpl
 @implementation ValueAtImpl
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithInfo:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<DisplaySessionConfig>)sessionConfig
                          specialSession:(id<ColorConfig>)sessionConfig
 {
     //: self = [super init];
@@ -196,7 +196,7 @@
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (void)calculateContent:(FFFMessageModel *)model{
+//: - (void)calculateContent:(DisplayMessageModel *)model{
 - (void)contentShow:(CleanDoing *)model{
     //: if ([NSThread isMainThread]) {^{ [model contentSize:self.tableView.device_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model contentSize:self.tableView.device_width]; });};
     if ([NSThread isMainThread]) {^{ [model size:self.tableView.device_width]; }();} else {dispatch_sync(dispatch_get_main_queue(), ^{ [model size:self.tableView.device_width]; });};
@@ -361,7 +361,7 @@
 //: - (void)update:(NSIndexPath *)indexPath
 - (void)afterView:(NSIndexPath *)indexPath
 {
-    //: FFFMessageCell *cell = (FFFMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
+    //: DisplayMessageCell *cell = (DisplayMessageCell *)[self.tableView cellForRowAtIndexPath:indexPath];
     IndoorsView *cell = (IndoorsView *)[self.tableView cellForRowAtIndexPath:indexPath];
     //: if (cell) {
     if (cell) {

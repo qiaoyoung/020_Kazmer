@@ -38,7 +38,7 @@ Byte kContent_playValueStandardString[] = {56, 7, 15, 11, 132, 234, 215, 173, 21
 // __M_A_C_R_O__
 //: #import "USERBlackListTableViewCell.h"
 #import "TranslateViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
@@ -126,7 +126,7 @@ Byte kContent_playValueStandardString[] = {56, 7, 15, 11, 132, 234, 215, 173, 21
 //    [_avatarImageView sd_setImageWithURL:[NSURL URLWithString:data.imageUrl] placeholderImage:nil];
 //    self.labName.text = data.nickname;
 
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:data.userId option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:data.userId option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:data.userId keepingOption:nil];
     //: self.labName.text = info.showName;
     self.labName.text = info.showName;
@@ -166,7 +166,7 @@ Byte kContent_playValueStandardString[] = {56, 7, 15, 11, 132, 234, 215, 173, 21
 //         _cancleBtn.titleLabel.textAlignment = NSTextAlignmentRight;
     //: _cancleBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     _cancleBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    //: [_cancleBtn setTitle:[FFFLanguageManager getTextWithKey:@"black_list_item_remove"] forState:(UIControlStateNormal)];
+    //: [_cancleBtn setTitle:[DisplayLanguageManager getTextWithKey:@"black_list_item_remove"] forState:(UIControlStateNormal)];
     [_cancleBtn setTitle:[MakeManager cell:StringFromAtInevitablyData(kTextColorAlsoValue)] forState:(UIControlStateNormal)];//移除
     //: [_cancleBtn addTarget:self action:@selector(onTouchButton) forControlEvents:(UIControlEventTouchUpInside)];
     [_cancleBtn addTarget:self action:@selector(toButton) forControlEvents:(UIControlEventTouchUpInside)];

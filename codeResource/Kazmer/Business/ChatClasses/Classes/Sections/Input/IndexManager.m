@@ -126,10 +126,10 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "DisplayInputEmoticonDefine.h"
+#import "DisplayInputEmoticonDefine.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
 //: #import "MyUserKit.h"
@@ -232,14 +232,14 @@ typedef struct {
 //: @end
 @end
 
-//: @interface FFFInputEmoticonManager ()
+//: @interface DisplayInputEmoticonManager ()
 @interface IndexManager ()
 //: @property (nonatomic,strong) NSArray *catalogs;
 @property (nonatomic,strong) NSArray *catalogs;
 //: @end
 @end
 
-//: @implementation FFFInputEmoticonManager
+//: @implementation DisplayInputEmoticonManager
 @implementation IndexManager
 
 //: - (NIMInputEmoticonCatalog *)catalogByInfo:(NSDictionary *)info
@@ -415,13 +415,13 @@ typedef struct {
 //: + (instancetype)sharedManager
 + (instancetype)item
 {
-    //: static FFFInputEmoticonManager *instance = nil;
+    //: static DisplayInputEmoticonManager *instance = nil;
     static IndexManager *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFInputEmoticonManager alloc]init];
+        //: instance = [[DisplayInputEmoticonManager alloc]init];
         instance = [[IndexManager alloc]init];
     //: });
     });

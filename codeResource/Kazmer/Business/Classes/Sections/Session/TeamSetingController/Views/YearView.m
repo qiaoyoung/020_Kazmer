@@ -194,7 +194,7 @@
         _titleLabel.numberOfLines = 1;
         //: _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text =[FFFLanguageManager getTextWithKey:@"my_group_name"];
+        //: _titleLabel.text =[DisplayLanguageManager getTextWithKey:@"my_group_name"];
         _titleLabel.text =[MakeManager cell:[[SquadData sharedInstance] kNameImageTideOutfitData]];
     }
     //: return _titleLabel;
@@ -305,7 +305,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:[[SquadData sharedInstance] kNameInspectorData]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:[[SquadData sharedInstance] kTitleValueString]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -387,7 +387,7 @@
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+        //: _searchField.placeholder = [DisplayLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
         _searchField.placeholder = [MakeManager cell:[[SquadData sharedInstance] kContent_denseString]];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
@@ -448,7 +448,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:[[SquadData sharedInstance] kNameAircraftString]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor cell:[[SquadData sharedInstance] kName_vitaminData]];

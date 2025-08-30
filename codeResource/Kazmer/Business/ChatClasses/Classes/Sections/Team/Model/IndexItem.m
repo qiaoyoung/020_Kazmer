@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "DisplayTeamCardMemberItem.h"
 #import "IndexItem.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
@@ -50,7 +50,7 @@
 - (NSString *)secret {
     //: NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
     NIMSession *session = [NIMSession session:self.userId type:NIMSessionTypeP2P];
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [DisplayKitUtil showNick:self.userId inSession:session];
     return [AtPull can:self.userId changeSession:session];
 }
 
@@ -62,7 +62,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)theoreticalAccount{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:self.userId keepingOption:nil];
     //: return info.avatarImage;
     return info.avatarImage;
@@ -95,7 +95,7 @@
 //: @end
 @end
 
-//: @interface FFFTeamCardMemberItem ()
+//: @interface DisplayTeamCardMemberItem ()
 @interface IndexItem ()
 
 //: @property (nonatomic, assign) NIMTeamType teamType;
@@ -107,7 +107,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardMemberItem
+//: @implementation DisplayTeamCardMemberItem
 @implementation IndexItem
 
 //: - (NSString *)title {
@@ -130,7 +130,7 @@
             session = [NIMSession session:self.add type:NIMSessionTypeTeam];
         }
     }
-    //: return [FFFKitUtil showNick:self.userId inSession:session];
+    //: return [DisplayKitUtil showNick:self.userId inSession:session];
     return [AtPull can:self.userId changeSession:session];
 }
 
@@ -165,12 +165,12 @@
 
 //: - (BOOL)isEqual:(id)object{
 - (BOOL)isEqual:(id)object{
-    //: if (![object isKindOfClass:[FFFTeamCardMemberItem class]]) {
+    //: if (![object isKindOfClass:[DisplayTeamCardMemberItem class]]) {
     if (![object isKindOfClass:[IndexItem class]]) {
         //: return NO;
         return NO;
     }
-    //: FFFTeamCardMemberItem *obj = (FFFTeamCardMemberItem*)object;
+    //: DisplayTeamCardMemberItem *obj = (DisplayTeamCardMemberItem*)object;
     IndexItem *obj = (IndexItem*)object;
     //: return [obj.userId isEqual:self.userId];
     return [obj.userId isEqual:self.userId];
@@ -194,7 +194,7 @@
     return _member.isMuted;
 }
 
-//: #pragma mark - <FFFKitCardHeaderData>
+//: #pragma mark - <DisplayKitCardHeaderData>
 #pragma mark - <HalogenComment>
 //: - (NSString *)teamId {
 - (NSString *)add {
@@ -248,7 +248,7 @@
 
 //: - (UIImage *)imageNormal{
 - (UIImage *)theoreticalAccount{
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.userId option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:self.userId keepingOption:nil];
     //: return info.avatarImage;
     return info.avatarImage;

@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTimestampCell.h"
+//: #import "DisplaySessionTimestampCell.h"
 #import "TeamViewCell.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface USERTimestampCell : FFFSessionTimestampCell
+//: @interface USERTimestampCell : DisplaySessionTimestampCell
 @interface UserViewCell : TeamViewCell
 
 //: @end

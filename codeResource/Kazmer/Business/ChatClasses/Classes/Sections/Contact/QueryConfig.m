@@ -86,19 +86,19 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectConfig.h"
+//: #import "DisplayContactSelectConfig.h"
 #import "QueryConfig.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 //: #import "UserGroupedData.h"
 #import "UserRecord.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
-//: #import "FFFKitInfo.h"
+//: #import "DisplayKitInfo.h"
 #import "CancelTeamCorner.h"
 
 //: @implementation NIMContactFriendSelectConfig : NSObject
@@ -170,13 +170,13 @@
 
 //: - (NSString *)title{
 - (NSString *)languageKit{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [DisplayLanguageManager getTextWithKey:@"select_contact"];
     return [MakeManager cell:[LapData kNameCharityData]];
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (DisplayKitInfo *)getInfoById:(NSString *)selectedId {
 - (CancelTeamCorner *)frame:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: DisplayKitInfo *info = nil;
     CancelTeamCorner *info = nil;
     //: info = [[MyUserKit sharedKit] infoByUser:selectedId option:nil];
     info = [[Mortification text] tingVoice:selectedId keepingOption:nil];
@@ -243,11 +243,11 @@
     }
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (DisplayKitInfo *)getInfoById:(NSString *)selectedId {
 - (CancelTeamCorner *)frame:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: DisplayKitInfo *info = nil;
     CancelTeamCorner *info = nil;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
     CellClean *option = [[CellClean alloc] init];
     //: option.session = _session;
     option.session = _session;
@@ -265,7 +265,7 @@
 
 //: - (NSString *)title{
 - (NSString *)languageKit{
-    //: return [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: return [DisplayLanguageManager getTextWithKey:@"select_contact"];
     return [MakeManager cell:[LapData kNameCharityData]];
 }
 
@@ -461,9 +461,9 @@
     }
 }
 
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId {
+//: - (DisplayKitInfo *)getInfoById:(NSString *)selectedId {
 - (CancelTeamCorner *)frame:(NSString *)selectedId {
-    //: FFFKitInfo *info = nil;
+    //: DisplayKitInfo *info = nil;
     CancelTeamCorner *info = nil;
     //: if (_teamType == NIMKitTeamTypeNomal) {
     if (_teamType == NIMKitTeamTypeNomal) {

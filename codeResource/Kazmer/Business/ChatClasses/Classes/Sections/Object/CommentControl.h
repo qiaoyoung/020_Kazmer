@@ -11,19 +11,19 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "DisplaySessionConfigurateProtocol.h"
+#import "DisplaySessionConfigurateProtocol.h"
+//: #import "DisplaySessionPrivateProtocol.h"
+#import "DisplaySessionPrivateProtocol.h"
+//: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
 
-//: @interface FFFSessionDataSourceImpl : NSObject<NIMSessionDataSource>
+//: @interface DisplaySessionDataSourceImpl : NSObject<NIMSessionDataSource>
 @interface CommentControl : NSObject<AggregationSource>
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithTip:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<DisplaySessionConfig>)sessionConfig;
                          viewFileSessionWith:(id<ColorConfig>)sessionConfig;
 
 //: @end

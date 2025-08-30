@@ -12,47 +12,47 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFLanguageManager.h"
+//: #import "DisplayLanguageManager.h"
 #import "MakeManager.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitInfo.h"
+//: #import "DisplayKitInfo.h"
 #import "CancelTeamCorner.h"
-//: #import "FFFMediaItem.h"            //多媒体面板对象
+//: #import "DisplayMediaItem.h"            //多媒体面板对象
 #import "CommingleItem.h"            //多媒体面板对象
-//: #import "FFFMessageModel.h"         //message Wrapper
+//: #import "DisplayMessageModel.h"         //message Wrapper
 #import "CleanDoing.h"         //message Wrapper
-//: #import "FFFKitMessageProvider.h"
+//: #import "DisplayKitMessageProvider.h"
 #import "LabelSessionProvider.h"
-//: #import "FFFCellConfig.h"           //message cell配置协议
-#import "FFFCellConfig.h"           //message cell配置协议
-//: #import "FFFInputProtocol.h"        //输入框回调
-#import "FFFInputProtocol.h"        //输入框回调
-//: #import "FFFKitDataProvider.h"      //APP内容提供器
+//: #import "DisplayCellConfig.h"           //message cell配置协议
+#import "DisplayCellConfig.h"           //message cell配置协议
+//: #import "DisplayInputProtocol.h"        //输入框回调
+#import "DisplayInputProtocol.h"        //输入框回调
+//: #import "DisplayKitDataProvider.h"      //APP内容提供器
 #import "DisplayProvider.h"      //APP内容提供器
-//: #import "FFFMessageCellProtocol.h"  //message cell事件回调
-#import "FFFMessageCellProtocol.h"  //message cell事件回调
-//: #import "FFFSessionConfig.h"        //会话页面配置
+//: #import "DisplayMessageCellProtocol.h"  //message cell事件回调
+#import "DisplayMessageCellProtocol.h"  //message cell事件回调
+//: #import "DisplaySessionConfig.h"        //会话页面配置
 #import "ColorConfig.h"        //会话页面配置
-//: #import "FFFKitEvent.h"             //点击事件封装类
+//: #import "DisplayKitEvent.h"             //点击事件封装类
 #import "ToiletKitSession.h"             //点击事件封装类
-//: #import "FFFCellLayoutConfig.h"
+//: #import "DisplayCellLayoutConfig.h"
 #import "CellManWith.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
-//: #import "FFFKitConfig.h"
+//: #import "DisplayKitConfig.h"
 #import "MessageAtAdd.h"
-//: #import "FFFSessionViewController.h"
+//: #import "DisplaySessionViewController.h"
 #import "ReplyViewController.h"
-//: #import "FFFSessionListViewController.h"
+//: #import "DisplaySessionListViewController.h"
 #import "PullViewController.h"
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "DisplayKitIndependentModeExtraInfo.h"
 #import "BigInfo.h"
-//: #import "FFFChatUIManagerProtocol.h"
-#import "FFFChatUIManagerProtocol.h"
-//: #import "FFFCollectionViewLeftAlignedLayout.h"
+//: #import "DisplayChatUIManagerProtocol.h"
+#import "DisplayChatUIManagerProtocol.h"
+//: #import "DisplayCollectionViewLeftAlignedLayout.h"
 #import "TagCellViewLayout.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "DisplayKitQuickCommentUtil.h"
 #import "ControlInside.h"
 
 //: extern double NIMKitVersionNumber;
@@ -119,13 +119,13 @@ extern const unsigned char dreamColorShowStr[];
 /**
  *  返回当前的排版配置
  */
-//: - (id<FFFCellLayoutConfig>)layoutConfig;
+//: - (id<DisplayCellLayoutConfig>)layoutConfig;
 - (id<CellManWith>)layoutConfig;
 
 /**
  *  注册自定义的排版配置，通过注册自定义排版配置来实现自定义消息的定制化排版
  */
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig;
+//: - (void)registerLayoutConfig:(DisplayCellLayoutConfig *)layoutConfig;
 - (void)pressBlueConfig:(CellManWith *)layoutConfig;
 
 /**
@@ -139,7 +139,7 @@ extern const unsigned char dreamColorShowStr[];
 /**
  *  内容提供者，由上层开发者注入。如果没有则使用默认 provider
  */
-//: @property (nonatomic,strong) id<FFFKitDataProvider> provider;
+//: @property (nonatomic,strong) id<DisplayKitDataProvider> provider;
 @property (nonatomic,strong) id<DisplayProvider> provider;
 
 /**
@@ -157,7 +157,7 @@ extern const unsigned char dreamColorShowStr[];
 /**
  *  UI 配置器
  */
-//: @property (nonatomic,strong) FFFKitConfig *config;
+//: @property (nonatomic,strong) DisplayKitConfig *config;
 @property (nonatomic,strong) MessageAtAdd *config;
 
 /**
@@ -165,7 +165,7 @@ extern const unsigned char dreamColorShowStr[];
  *
  *  此字段需要配合默认的 DisplayProvider ( CommentTopIndex ) 使用，如果上层自己定义了 provider ， 则忽略此字段。
  */
-//: @property (nonatomic,strong) FFFKitIndependentModeExtraInfo *independentModeExtraInfo;
+//: @property (nonatomic,strong) DisplayKitIndependentModeExtraInfo *independentModeExtraInfo;
 @property (nonatomic,strong) BigInfo *independentModeExtraInfo;
 
 /**
@@ -177,7 +177,7 @@ extern const unsigned char dreamColorShowStr[];
 /**
  * 聊天模块常用UI方法
  */
-//: @property (nonatomic, readonly) id<FFFChatUIManager> chatUIManager;
+//: @property (nonatomic, readonly) id<DisplayChatUIManager> chatUIManager;
 @property (nonatomic, readonly) id<TextAt> chatUIManager;
 
 /**
@@ -189,9 +189,9 @@ extern const unsigned char dreamColorShowStr[];
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (DisplayKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (CancelTeamCorner *)cellList:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(DisplayKitInfoFetchOption *)option;
                          view:(CellClean *)option;
 /**
  *  群信息变更通知接口
@@ -205,9 +205,9 @@ extern const unsigned char dreamColorShowStr[];
 /**
  *  返回用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (DisplayKitInfo *)infoByUser:(NSString *)userId
 - (CancelTeamCorner *)tingVoice:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(DisplayKitInfoFetchOption *)option;
                     keepingOption:(CellClean *)option;
 //: + (instancetype)sharedKit;
 + (instancetype)text;
@@ -225,9 +225,9 @@ extern const unsigned char dreamColorShowStr[];
 /**
  *  返回群信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (DisplayKitInfo *)infoByTeam:(NSString *)teamId
 - (CancelTeamCorner *)ability:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(DisplayKitInfoFetchOption *)option;
                     naturalEvent_strong:(CellClean *)option;
 
 /**

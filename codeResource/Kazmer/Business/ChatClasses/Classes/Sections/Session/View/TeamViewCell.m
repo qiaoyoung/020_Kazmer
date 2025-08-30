@@ -89,31 +89,31 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTimestampCell.h"
+//: #import "DisplaySessionTimestampCell.h"
 #import "TeamViewCell.h"
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "DisplayCellConfig.h"
+#import "DisplayCellConfig.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFTimestampModel.h"
+//: #import "DisplayTimestampModel.h"
 #import "WithPage.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFSessionTimestampCell()
+//: @interface DisplaySessionTimestampCell()
 @interface TeamViewCell()
 
-//: @property (nonatomic,strong) FFFTimestampModel *model;
+//: @property (nonatomic,strong) DisplayTimestampModel *model;
 @property (nonatomic,strong) WithPage *model;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTimestampCell
+//: @implementation DisplaySessionTimestampCell
 @implementation TeamViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -161,7 +161,7 @@ typedef struct {
 }
 
 
-//: - (void)refreshData:(FFFTimestampModel *)data{
+//: - (void)refreshData:(DisplayTimestampModel *)data{
 - (void)count:(WithPage *)data{
     //: if (self.model == data) {
     if (self.model == data) {
@@ -172,16 +172,16 @@ typedef struct {
     self.model = data;
     //: if([self checkData]){
     if([self analyzeWithoutDataComplete]){
-        //: FFFTimestampModel *model = (FFFTimestampModel *)data;
+        //: DisplayTimestampModel *model = (DisplayTimestampModel *)data;
         WithPage *model = (WithPage *)data;
-        //: [_timeLabel setText:[FFFKitUtil showTime:model.messageTime showDetail:YES]];
+        //: [_timeLabel setText:[DisplayKitUtil showTime:model.messageTime showDetail:YES]];
         [_timeLabel setText:[AtPull account:model.messageTime notice:YES]];
     }
 }
 
 //: - (BOOL)checkData{
 - (BOOL)analyzeWithoutDataComplete{
-    //: return [self.model isKindOfClass:[FFFTimestampModel class]];
+    //: return [self.model isKindOfClass:[DisplayTimestampModel class]];
     return [self.model isKindOfClass:[WithPage class]];
 }
 

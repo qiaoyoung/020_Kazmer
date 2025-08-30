@@ -19,21 +19,21 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @protocol FFFKitSelectCardData;
+//: @protocol DisplayKitSelectCardData;
 @protocol ChangeLength;
 
-//: @interface FFFTeamHelper : NSObject
+//: @interface DisplayTeamHelper : NSObject
 @interface MaxHelper : NSObject
 
 //验证方式
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)beInviteModeItemsWithSeleced:(NIMTeamBeInviteMode)mode;
+//: + (NSMutableArray<id <DisplayKitSelectCardData>> *)beInviteModeItemsWithSeleced:(NIMTeamBeInviteMode)mode;
 + (NSMutableArray<id <ChangeLength>> *)arouse:(NIMTeamBeInviteMode)mode;
 
 //群禁言
 //: + (NSString *)teamMuteText:(BOOL)isMute;
 + (NSString *)sovietSocialistRepublicText:(BOOL)isMute;
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)notifyStateItemsWithSeleced:(NIMTeamNotifyState)state;
+//: + (NSMutableArray<id <DisplayKitSelectCardData>> *)notifyStateItemsWithSeleced:(NIMTeamNotifyState)state;
 + (NSMutableArray<id <ChangeLength>> *)itemsKey:(NIMTeamNotifyState)state;
 
 //邀请模式
@@ -59,25 +59,25 @@ NS_ASSUME_NONNULL_BEGIN
 //: + (NSString *)notifyStateText:(NIMTeamNotifyState)state;
 + (NSString *)layer:(NIMTeamNotifyState)state;
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)updateInfoModeItemsWithSeleced:(NIMTeamUpdateInfoMode)mode;
+//: + (NSMutableArray<id <DisplayKitSelectCardData>> *)updateInfoModeItemsWithSeleced:(NIMTeamUpdateInfoMode)mode;
 + (NSMutableArray<id <ChangeLength>> *)attemper:(NIMTeamUpdateInfoMode)mode;
 
 //: + (NSString *)beInviteModeText:(NIMTeamBeInviteMode)mode;
 + (NSString *)device:(NIMTeamBeInviteMode)mode;
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)joinModeItemsWithSeleced:(NIMTeamJoinMode)mode;
+//: + (NSMutableArray<id <DisplayKitSelectCardData>> *)joinModeItemsWithSeleced:(NIMTeamJoinMode)mode;
 + (NSMutableArray<id <ChangeLength>> *)bilocation:(NIMTeamJoinMode)mode;
 
 //: + (NSString *)jonModeText:(NIMTeamJoinMode)mode;
 + (NSString *)modeTing:(NIMTeamJoinMode)mode;
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)InviteModeItemsWithSeleced:(NIMTeamInviteMode)mode;
+//: + (NSMutableArray<id <DisplayKitSelectCardData>> *)InviteModeItemsWithSeleced:(NIMTeamInviteMode)mode;
 + (NSMutableArray<id <ChangeLength>> *)asShould:(NIMTeamInviteMode)mode;
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)superNotifyStateItemsWithSeleced:(NIMTeamNotifyState)state;
+//: + (NSMutableArray<id <DisplayKitSelectCardData>> *)superNotifyStateItemsWithSeleced:(NIMTeamNotifyState)state;
 + (NSMutableArray<id <ChangeLength>> *)sunna:(NIMTeamNotifyState)state;
 
-//: + (NSMutableArray<id <FFFKitSelectCardData>> *)teamMuteItemsWithSeleced:(BOOL)isMute;
+//: + (NSMutableArray<id <DisplayKitSelectCardData>> *)teamMuteItemsWithSeleced:(BOOL)isMute;
 + (NSMutableArray<id <ChangeLength>> *)withObject:(BOOL)isMute;
 
 //: @end

@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "DisplaySessionConfigurateProtocol.h"
+#import "DisplaySessionConfigurateProtocol.h"
+//: #import "DisplayMessageCellProtocol.h"
+#import "DisplayMessageCellProtocol.h"
 
-//: @interface FFFSessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
+//: @interface DisplaySessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 @interface FinancialCenterAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 
 //: @property (nonatomic,weak) id<NIMSessionInteractor> interactor;
 @property (nonatomic,weak) id<TitleTotaleractor> interactor;
 
-//: @property (nonatomic,weak) id<FFFMessageCellDelegate> delegate;
+//: @property (nonatomic,weak) id<DisplayMessageCellDelegate> delegate;
 @property (nonatomic,weak) id<CompartmentPath> delegate;
 
 //: @end

@@ -242,7 +242,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFCommonTableData.m
+//  DisplayCommonTableData.m
 //  NIM
 //
 //  Created by chris on 15/6/26.
@@ -250,8 +250,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DisplayCommonTableData.h"
+#import "DisplayCommonTableData.h"
 
 //: @implementation NIMCommonTableSection
 @implementation CuttingEdgeSection

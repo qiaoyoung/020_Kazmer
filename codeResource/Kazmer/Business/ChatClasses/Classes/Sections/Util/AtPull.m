@@ -237,13 +237,13 @@ Byte kTitleFantasticText[] = {5, 20, 72, 7, 37, 77, 98, 37, 29, 43, 43, 25, 31, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
 //: #import "NSDictionary+MyUserKit.h"
 #import "NSDictionary+Mortification.h"
@@ -251,7 +251,7 @@ Byte kTitleFantasticText[] = {5, 20, 72, 7, 37, 77, 98, 37, 29, 43, 43, 25, 31, 
 //: static NSDateComponentsFormatter *_dateComponentsFormatter;
 static NSDateComponentsFormatter *appCommentRangeName;
 
-//: @implementation FFFKitUtil
+//: @implementation DisplayKitUtil
 @implementation AtPull
 
 //: + (NSDateComponentsFormatter *)dateComponentsFormatter {
@@ -289,11 +289,11 @@ static NSDateComponentsFormatter *appCommentRangeName;
     NSString *currentAccount = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: if ([content.sourceID isEqualToString:currentAccount]) {
     if ([content.sourceID isEqualToString:currentAccount]) {
-        //: source = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+        //: source = [DisplayLanguageManager getTextWithKey:@"message_helper_you"];
         source = [MakeManager cell:StringFromFireRaisingData(kTextGreenContent)];//@"你".;
     //: }else{
     }else{
-        //: source = [FFFKitUtil showNick:content.sourceID inSession:message.session];
+        //: source = [DisplayKitUtil showNick:content.sourceID inSession:message.session];
         source = [AtPull can:content.sourceID changeSession:message.session];
     }
     //: return source;
@@ -332,27 +332,27 @@ static NSDateComponentsFormatter *appCommentRangeName;
     {
         //: NIMSuperTeamNotificationContent *content = (NIMSuperTeamNotificationContent*)object.content;
         NIMSuperTeamNotificationContent *content = (NIMSuperTeamNotificationContent*)object.content;
-        //: NSString *source = [FFFKitUtil superTeamNotificationSourceName:message];
+        //: NSString *source = [DisplayKitUtil superTeamNotificationSourceName:message];
         NSString *source = [AtPull enable:message];
-        //: NSArray *targets = [FFFKitUtil superTeamNotificationTargetNames:message];
+        //: NSArray *targets = [DisplayKitUtil superTeamNotificationTargetNames:message];
         NSArray *targets = [AtPull notification:message];
         //: NSString *targetText = [targets count] > 1 ? [targets componentsJoinedByString:@","] : [targets firstObject];
         NSString *targetText = [targets count] > 1 ? [targets componentsJoinedByString:@","] : [targets firstObject];
-        //: NSString *teamName = [FFFKitUtil superTeamNotificationTeamShowName:message];
+        //: NSString *teamName = [DisplayKitUtil superTeamNotificationTeamShowName:message];
         NSString *teamName = [AtPull past:message];
 
         //: switch (content.operationType) {
         switch (content.operationType) {
             //: case NIMSuperTeamOperationTypeInvite:{
             case NIMSuperTeamOperationTypeInvite:{
-                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_helper_invite"],targets.firstObject];
+                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_helper_invite"],targets.firstObject];
                 NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kName_braData)],targets.firstObject];
                 //: if (targets.count>1) {
                 if (targets.count>1) {
-                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[FFFLanguageManager getTextWithKey:@"message_people"]];
+                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[DisplayLanguageManager getTextWithKey:@"message_people"]];
                     str = [str stringByAppendingFormat:@"%zd%@",targets.count,[MakeManager cell:StringFromFireRaisingData(kTextChopArtiString)]];
                 }
-                //: str = [str stringByAppendingFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"message_enter"],teamName];
+                //: str = [str stringByAppendingFormat:@"%@%@",[DisplayLanguageManager getTextWithKey:@"message_enter"],teamName];
                 str = [str stringByAppendingFormat:@"%@%@",[MakeManager cell:StringFromFireRaisingData(kTitleColorFileData)],teamName];
                 //: formatedMessage = str;
                 formatedMessage = str;
@@ -361,20 +361,20 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 break;
             //: case NIMSuperTeamOperationTypeDismiss:
             case NIMSuperTeamOperationTypeDismiss:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_dismissed"],teamName];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_dismissed"],teamName];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kTitleHarassmentExceptData)],teamName];
                 //: break;
                 break;
             //: case NIMSuperTeamOperationTypeKick:{
             case NIMSuperTeamOperationTypeKick:{
-                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_remove_by"],targets.firstObject];
+                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_remove_by"],targets.firstObject];
                 NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kName_whereverText)],targets.firstObject];
                 //: if (targets.count>1) {
                 if (targets.count>1) {
-                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[FFFLanguageManager getTextWithKey:@"message_people"]];
+                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[DisplayLanguageManager getTextWithKey:@"message_people"]];
                     str = [str stringByAppendingFormat:@"%zd%@",targets.count,[MakeManager cell:StringFromFireRaisingData(kTextChopArtiString)]];
                 }
-                //: str = [str stringByAppendingFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"message_move_out"],teamName];
+                //: str = [str stringByAppendingFormat:@"%@%@",[DisplayLanguageManager getTextWithKey:@"message_move_out"],teamName];
                 str = [str stringByAppendingFormat:@"%@%@",[MakeManager cell:StringFromFireRaisingData(kName_okayData)],teamName];
                 //: formatedMessage = str;
                 formatedMessage = str;
@@ -384,7 +384,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
             //: case NIMSuperTeamOperationTypeUpdate:
             case NIMSuperTeamOperationTypeUpdate:
             {
-                //: NSString *update = [FFFLanguageManager getTextWithKey:@"message_have_update"];
+                //: NSString *update = [DisplayLanguageManager getTextWithKey:@"message_have_update"];
                 NSString *update = [MakeManager cell:StringFromFireRaisingData(kNameDevoteValue)];
                 //: id attachment = [content attachment];
                 id attachment = [content attachment];
@@ -392,7 +392,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 if ([attachment isKindOfClass:[NIMUpdateSuperTeamInfoAttachment class]]) {
                     //: NIMUpdateSuperTeamInfoAttachment *teamAttachment = (NIMUpdateSuperTeamInfoAttachment *)attachment;
                     NIMUpdateSuperTeamInfoAttachment *teamAttachment = (NIMUpdateSuperTeamInfoAttachment *)attachment;
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_information"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_information"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kText_appointedData)]];
                     //如果只是单个项目项被修改则显示具体的修改项
                     //: if ([teamAttachment.values count] == 1) {
@@ -403,43 +403,43 @@ static NSDateComponentsFormatter *appCommentRangeName;
                         switch (tag) {
                             //: case NIMSuperTeamUpdateTagName:
                             case NIMSuperTeamUpdateTagName:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_name"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_name"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kTitle_tribeData)]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagIntro:
                             case NIMSuperTeamUpdateTagIntro:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_introduce"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_introduce"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kNameRuralDisturbString)]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagAnouncement:
                             case NIMSuperTeamUpdateTagAnouncement:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_proclamation"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_proclamation"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kText_suspicionData)]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagAvatar:
                             case NIMSuperTeamUpdateTagAvatar:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_verification_mode"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_verification_mode"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kContent_axData)]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagJoinMode:
                             case NIMSuperTeamUpdateTagJoinMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_head_portrait"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_head_portrait"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kName_threadValue)]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagBeInviteMode:
                             case NIMSuperTeamUpdateTagBeInviteMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_invite_permission"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_invite_permission"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[MakeManager cell:StringFromFireRaisingData(kTitle_daughterValue)]];
                                 //: break;
                                 break;
                             //: case NIMSuperTeamUpdateTagClientCustom:
                             case NIMSuperTeamUpdateTagClientCustom:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_custom_extension"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_custom_extension"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[MakeManager cell:StringFromFireRaisingData(kTitle_varietyData)]];
                                 //: break;
                                 break;
@@ -449,7 +449,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
                                 NSString *muteState = teamAttachment.values.allValues.firstObject;
                                 //: BOOL muted = [muteState isEqualToString:@"0"] ? NO : YES;
                                 BOOL muted = [muteState isEqualToString:@"0"] ? NO : YES;
-                                //: formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_forbidden_speech"]]: [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_been_lifted"]];
+                                //: formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_forbidden_speech"]]: [NSString stringWithFormat:@"%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_been_lifted"]];
                                 formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[MakeManager cell:StringFromFireRaisingData(kNameEyebrowHerbString)]]: [NSString stringWithFormat:@"%@%@",source,[MakeManager cell:StringFromFireRaisingData(kNameStableString)]];
                                 //: break;
                                 break;
@@ -464,7 +464,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 }
                 //: if (formatedMessage.length == 0){
                 if (formatedMessage.length == 0){
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_information"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_information"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kText_appointedData)]];
                 }
             }
@@ -472,7 +472,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 break;
             //: case NIMSuperTeamOperationTypeLeave:
             case NIMSuperTeamOperationTypeLeave:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_leave"],teamName];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_leave"],teamName];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kName_twistSubData)],teamName];
                 //: break;
                 break;
@@ -481,11 +481,11 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 //: if ([source isEqualToString:targetText]) {
                 if ([source isEqualToString:targetText]) {
                     //说明是以不需要验证的方式进入
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_enter"],teamName];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_enter"],teamName];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kTitleColorFileData)],teamName];
                 //: }else{
                 }else{
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_passed"],targetText,[FFFLanguageManager getTextWithKey:@"message_apply_for"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_passed"],targetText,[DisplayLanguageManager getTextWithKey:@"message_apply_for"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kNameCompareData)],targetText,[MakeManager cell:StringFromFireRaisingData(kName_detailValue)]];
                 }
             }
@@ -493,25 +493,25 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 break;
             //: case NIMSuperTeamOperationTypeTransferOwner:
             case NIMSuperTeamOperationTypeTransferOwner:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_transferred_group_master"],targets.firstObject];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_transferred_group_master"],targets.firstObject];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kNameCationData)],targets.firstObject];
                 //: break;
                 break;
             //: case NIMSuperTeamOperationTypeAddManager:
             case NIMSuperTeamOperationTypeAddManager:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[FFFLanguageManager getTextWithKey:@"message_group_administrator"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[DisplayLanguageManager getTextWithKey:@"message_group_administrator"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[MakeManager cell:StringFromFireRaisingData(kText_fishRatherIronValue)]];
                 //: break;
                 break;
             //: case NIMSuperTeamOperationTypeRemoveManager:
             case NIMSuperTeamOperationTypeRemoveManager:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[FFFLanguageManager getTextWithKey:@"message_group_revoked"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[DisplayLanguageManager getTextWithKey:@"message_group_revoked"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@",targets.firstObject,[MakeManager cell:StringFromFireRaisingData(kText_ruralDiaryAppointedName)]];
                 //: break;
                 break;
             //: case NIMSuperTeamOperationTypeAcceptInvitation:
             case NIMSuperTeamOperationTypeAcceptInvitation:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_accept"],targetText,[FFFLanguageManager getTextWithKey:@"message_invited_into"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_accept"],targetText,[DisplayLanguageManager getTextWithKey:@"message_invited_into"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kTitleEtcName)],targetText,[MakeManager cell:StringFromFireRaisingData(kTitle_properData)]];
                 //: break;
                 break;
@@ -524,11 +524,11 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 {
                     //: BOOL mute = [(NIMMuteSuperTeamMemberAttachment *)attachment flag];
                     BOOL mute = [(NIMMuteSuperTeamMemberAttachment *)attachment flag];
-                    //: NSString *muteStr = mute? [FFFLanguageManager getTextWithKey:@"message_banned_post"] : [FFFLanguageManager getTextWithKey:@"message_remove_banned"];
+                    //: NSString *muteStr = mute? [DisplayLanguageManager getTextWithKey:@"message_banned_post"] : [DisplayLanguageManager getTextWithKey:@"message_remove_banned"];
                     NSString *muteStr = mute? [MakeManager cell:StringFromFireRaisingData(kTitlePosterJoinString)] : [MakeManager cell:StringFromFireRaisingData(kTextLearnData)];
                     //: NSString *str = [targets componentsJoinedByString:@","];
                     NSString *str = [targets componentsJoinedByString:@","];
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[FFFLanguageManager getTextWithKey:@"message_remove_by"],source,muteStr];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[DisplayLanguageManager getTextWithKey:@"message_remove_by"],source,muteStr];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[MakeManager cell:StringFromFireRaisingData(kName_whereverText)],source,muteStr];
                 }
             }
@@ -541,7 +541,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
     }
     //: if (!formatedMessage.length) {
     if (!formatedMessage.length) {
-        //: formatedMessage = [FFFLanguageManager getTextWithKey:@"message_unknown_system_message"];
+        //: formatedMessage = [DisplayLanguageManager getTextWithKey:@"message_unknown_system_message"];
         formatedMessage = [MakeManager cell:StringFromFireRaisingData(kText_accessibleDegreeString)];//@"未知系统消息";
     }
     //: return formatedMessage;
@@ -561,25 +561,25 @@ static NSDateComponentsFormatter *appCommentRangeName;
     //: if (totalMin > 0 && totalMin <= 5 * 60)
     if (totalMin > 0 && totalMin <= 5 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"wee_hours"];
+        //: showPeriodOfTime = [DisplayLanguageManager getTextWithKey:@"wee_hours"];
         showPeriodOfTime = [MakeManager cell:StringFromFireRaisingData(kName_migrationValue)];//@"凌晨";
     }
     //: else if (totalMin > 5 * 60 && totalMin < 12 * 60)
     else if (totalMin > 5 * 60 && totalMin < 12 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_am"];
+        //: showPeriodOfTime = [DisplayLanguageManager getTextWithKey:@"day_am"];
         showPeriodOfTime = [MakeManager cell:StringFromFireRaisingData(kTextDenseName)];//@"上午";
     }
     //: else if (totalMin >= 12 * 60 && totalMin <= 18 * 60)
     else if (totalMin >= 12 * 60 && totalMin <= 18 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_pm"];
+        //: showPeriodOfTime = [DisplayLanguageManager getTextWithKey:@"day_pm"];
         showPeriodOfTime = [MakeManager cell:StringFromFireRaisingData(kTitle_gearSnapGentData)];//@"下午";
     }
     //: else if ((totalMin > 18 * 60 && totalMin <= (23 * 60 + 59)) || totalMin == 0)
     else if ((totalMin > 18 * 60 && totalMin <= (23 * 60 + 59)) || totalMin == 0)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_night"];
+        //: showPeriodOfTime = [DisplayLanguageManager getTextWithKey:@"day_night"];
         showPeriodOfTime = [MakeManager cell:StringFromFireRaisingData(kName_viewEchoValue)];//@"晚上";
     }
     //: return showPeriodOfTime;
@@ -594,7 +594,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
         //: return nil;
         return nil;
     }
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
     CellClean *option = [[CellClean alloc] init];
     //: option.message = message;
     option.message = message;
@@ -616,14 +616,14 @@ static NSDateComponentsFormatter *appCommentRangeName;
     switch (content.eventType) {
         //: case NIMNetCallEventTypeMiss:{
         case NIMNetCallEventTypeMiss:{
-            //: text = [FFFLanguageManager getTextWithKey:@"app_avchat_no_pick_up"];
+            //: text = [DisplayLanguageManager getTextWithKey:@"app_avchat_no_pick_up"];
             text = [MakeManager cell:StringFromFireRaisingData(kName_multipleData)];//@"未接听".;
             //: break;
             break;
         }
         //: case NIMNetCallEventTypeBill:{
         case NIMNetCallEventTypeBill:{
-            //: text = ([object.message.from isEqualToString:currentAccount])? [FFFLanguageManager getTextWithKey:@"message_call_duration"] : [FFFLanguageManager getTextWithKey:@"message_call_receiving"];
+            //: text = ([object.message.from isEqualToString:currentAccount])? [DisplayLanguageManager getTextWithKey:@"message_call_duration"] : [DisplayLanguageManager getTextWithKey:@"message_call_receiving"];
             text = ([object.message.from isEqualToString:currentAccount])? [MakeManager cell:StringFromFireRaisingData(kContentHarassmentData)] : [MakeManager cell:StringFromFireRaisingData(kNameDayValue)];
             //: NSTimeInterval duration = content.duration;
             NSTimeInterval duration = content.duration;
@@ -636,14 +636,14 @@ static NSDateComponentsFormatter *appCommentRangeName;
         }
         //: case NIMNetCallEventTypeReject:{
         case NIMNetCallEventTypeReject:{
-            //: text = ([object.message.from isEqualToString:currentAccount])? [FFFLanguageManager getTextWithKey:@"app_avchat_is_busy_opposite"] : [FFFLanguageManager getTextWithKey:@"message_helper_already_no"];
+            //: text = ([object.message.from isEqualToString:currentAccount])? [DisplayLanguageManager getTextWithKey:@"app_avchat_is_busy_opposite"] : [DisplayLanguageManager getTextWithKey:@"message_helper_already_no"];
             text = ([object.message.from isEqualToString:currentAccount])? [MakeManager cell:StringFromFireRaisingData(kTitle_researchString)] : [MakeManager cell:StringFromFireRaisingData(kTitleStableStepName)];
             //: break;
             break;
         }
         //: case NIMNetCallEventTypeNoResponse:{
         case NIMNetCallEventTypeNoResponse:{
-            //: text = [FFFLanguageManager getTextWithKey:@"message_access_failure"];
+            //: text = [DisplayLanguageManager getTextWithKey:@"message_access_failure"];
             text = [MakeManager cell:StringFromFireRaisingData(kNameBoarBeauValue)];//@"未接通，已取消".;
             //: break;
             break;
@@ -671,11 +671,11 @@ static NSDateComponentsFormatter *appCommentRangeName;
     NSString *currentAccount = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: if ([content.sourceID isEqualToString:currentAccount]) {
     if ([content.sourceID isEqualToString:currentAccount]) {
-        //: source = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+        //: source = [DisplayLanguageManager getTextWithKey:@"message_helper_you"];
         source = [MakeManager cell:StringFromFireRaisingData(kTextGreenContent)];//@"你".;
     //: }else{
     }else{
-        //: source = [FFFKitUtil showNick:content.sourceID inSession:message.session];
+        //: source = [DisplayKitUtil showNick:content.sourceID inSession:message.session];
         source = [AtPull can:content.sourceID changeSession:message.session];
     }
     //: return source;
@@ -692,7 +692,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
 + (NSString *)domain:(NIMMessage *)message{
     //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:message.session.sessionId];
     NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:message.session.sessionId];
-    //: NSString *teamName = [FFFLanguageManager getTextWithKey:@"contact_my_group_activity_title"];
+    //: NSString *teamName = [DisplayLanguageManager getTextWithKey:@"contact_my_group_activity_title"];
     NSString *teamName = [MakeManager cell:StringFromFireRaisingData(kText_magSilkMysteryString)];
     //: return teamName;
     return teamName;
@@ -701,7 +701,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
 
 //: + (NSString *)superTeamNotificationTeamShowName:(NIMMessage *)message{
 + (NSString *)past:(NIMMessage *)message{
-    //: NSString *teamName = [FFFLanguageManager getTextWithKey:@"message_super_team"];
+    //: NSString *teamName = [DisplayLanguageManager getTextWithKey:@"message_super_team"];
     NSString *teamName = [MakeManager cell:StringFromFireRaisingData(kNameBraString)];//@"超大群".;
     //: return teamName;
     return teamName;
@@ -715,22 +715,22 @@ static NSDateComponentsFormatter *appCommentRangeName;
     switch (object.notificationType) {
         //: case NIMNotificationTypeTeam:{
         case NIMNotificationTypeTeam:{
-            //: return [FFFKitUtil teamNotificationFormatedMessage:message];
+            //: return [DisplayKitUtil teamNotificationFormatedMessage:message];
             return [AtPull create:message];
         }
         //: case NIMNotificationTypeSuperTeam:{
         case NIMNotificationTypeSuperTeam:{
-            //: return [FFFKitUtil superTeamNotificationFormatedMessage:message];
+            //: return [DisplayKitUtil superTeamNotificationFormatedMessage:message];
             return [AtPull rangeFor:message];
         }
         //: case NIMNotificationTypeNetCall:{
         case NIMNotificationTypeNetCall:{
-            //: return [FFFKitUtil netcallNotificationFormatedMessage:message];
+            //: return [DisplayKitUtil netcallNotificationFormatedMessage:message];
             return [AtPull language:message];
         }
         //: case NIMNotificationTypeChatroom:{
         case NIMNotificationTypeChatroom:{
-            //: return [FFFKitUtil chatroomNotificationFormatedMessage:message];
+            //: return [DisplayKitUtil chatroomNotificationFormatedMessage:message];
             return [AtPull southwest:message];
         }
         //: default:
@@ -752,7 +752,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
     for (NIMChatroomNotificationMember *memebr in content.targets) {
         //: if ([memebr.userId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
         if ([memebr.userId isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]]) {
-           //: [targetNicks addObject:[FFFLanguageManager getTextWithKey:@"message_helper_you"]];
+           //: [targetNicks addObject:[DisplayLanguageManager getTextWithKey:@"message_helper_you"]];
            [targetNicks addObject:[MakeManager cell:StringFromFireRaisingData(kTextGreenContent)]];// @"你".
         //: }else{
         }else{
@@ -770,19 +770,19 @@ static NSDateComponentsFormatter *appCommentRangeName;
         //: case NIMChatroomEventTypeEnter:
         case NIMChatroomEventTypeEnter:
         {
-            //: return [NSString stringWithFormat:@"%@%@%@".nim_localized,[FFFLanguageManager getTextWithKey:@"message_welcome"],targetText,[FFFLanguageManager getTextWithKey:@""]];
+            //: return [NSString stringWithFormat:@"%@%@%@".nim_localized,[DisplayLanguageManager getTextWithKey:@"message_welcome"],targetText,[DisplayLanguageManager getTextWithKey:@""]];
             return [NSString stringWithFormat:@"%@%@%@".disable,[MakeManager cell:StringFromFireRaisingData(kName_clearlyData)],targetText,[MakeManager cell:@""]];
         }
         //: case NIMChatroomEventTypeAddBlack:
         case NIMChatroomEventTypeAddBlack:
         {
-            //: return [NSString stringWithFormat:@"%@ %@", targetText,[FFFLanguageManager getTextWithKey:@"message_blacklisted_administrator"]];
+            //: return [NSString stringWithFormat:@"%@ %@", targetText,[DisplayLanguageManager getTextWithKey:@"message_blacklisted_administrator"]];
             return [NSString stringWithFormat:@"%@ %@", targetText,[MakeManager cell:StringFromFireRaisingData(kName_multipleViewValue)]];
         }
         //: case NIMChatroomEventTypeRemoveBlack:
         case NIMChatroomEventTypeRemoveBlack:
         {
-            //: return [NSString stringWithFormat:@"%@ %@",targetText,[FFFLanguageManager getTextWithKey:@"message_removed_blacklist_administrator"]];
+            //: return [NSString stringWithFormat:@"%@ %@",targetText,[DisplayLanguageManager getTextWithKey:@"message_removed_blacklist_administrator"]];
             return [NSString stringWithFormat:@"%@ %@",targetText,[MakeManager cell:StringFromFireRaisingData(kTitleEyebrowString)]];
         }
         //: case NIMChatroomEventTypeAddMute:
@@ -791,68 +791,68 @@ static NSDateComponentsFormatter *appCommentRangeName;
             //: if (content.targets.count == 1 && [[content.targets.firstObject userId] isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]])
             if (content.targets.count == 1 && [[content.targets.firstObject userId] isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]])
             {
-                //: return [FFFLanguageManager getTextWithKey:@"message_temporarily_muted"];
+                //: return [DisplayLanguageManager getTextWithKey:@"message_temporarily_muted"];
                 return [MakeManager cell:StringFromFireRaisingData(kTitleInevitablyText)];//@"你已被禁言".;
             }
             //: else
             else
             {
-                //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_muted_administrator"]];
+                //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_muted_administrator"]];
                 return [NSString stringWithFormat:@"%@ %@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kName_colorfulSenString)]];
             }
         }
         //: case NIMChatroomEventTypeRemoveMute:
         case NIMChatroomEventTypeRemoveMute:
         {
-            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_unmuted_administrator"]];
+            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_unmuted_administrator"]];
             return [NSString stringWithFormat:@"%@ %@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kTitle_denseMatData)]];
         }
         //: case NIMChatroomEventTypeAddManager:
         case NIMChatroomEventTypeAddManager:
         {
-            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_appointed_admin"]];
+            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_appointed_admin"]];
             return [NSString stringWithFormat:@"%@ %@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kNameSateData)]];
         }
         //: case NIMChatroomEventTypeRemoveManager:
         case NIMChatroomEventTypeRemoveManager:
         {
-            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_dismissed_admin"]];
+            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_dismissed_admin"]];
             return [NSString stringWithFormat:@"%@ %@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kNameHoweverData)]];
         }
         //: case NIMChatroomEventTypeRemoveCommon:
         case NIMChatroomEventTypeRemoveCommon:
         {
-            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_dismissed_member_identity"]];
+            //: return [NSString stringWithFormat:@"%@ %@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_dismissed_member_identity"]];
             return [NSString stringWithFormat:@"%@ %@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kText_penalClerkNightmareData)]];
         }
         //: case NIMChatroomEventTypeAddCommon:
         case NIMChatroomEventTypeAddCommon:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_added_member"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_added_member"]];
             return [NSString stringWithFormat:@"%@%@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kTitleFantasticText)]];
         }
         //: case NIMChatroomEventTypeInfoUpdated:
         case NIMChatroomEventTypeInfoUpdated:
         {
-            //: return [FFFLanguageManager getTextWithKey:@"message_announcement_updated"];
+            //: return [DisplayLanguageManager getTextWithKey:@"message_announcement_updated"];
             return [MakeManager cell:StringFromFireRaisingData(kContent_sateLieName)];//@"直播间公告已更新".;
         }
         //: case NIMChatroomEventTypeKicked:
         case NIMChatroomEventTypeKicked:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_removed_room"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_removed_room"]];
             return [NSString stringWithFormat:@"%@%@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kNameShowContent)]];
         }
         //: case NIMChatroomEventTypeExit:
         case NIMChatroomEventTypeExit:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_left_room"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_left_room"]];
             return [NSString stringWithFormat:@"%@%@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kTitleAughtData)]];
         }
         //: case NIMChatroomEventTypeClosed:
         case NIMChatroomEventTypeClosed:
         {
-            //: return [FFFLanguageManager getTextWithKey:@"message_room_closed"];
+            //: return [DisplayLanguageManager getTextWithKey:@"message_room_closed"];
             return [MakeManager cell:StringFromFireRaisingData(kNameEyebrowBullString)];//@"直播间已关闭".;
         }
         //: case NIMChatroomEventTypeAddMuteTemporarily:
@@ -861,45 +861,45 @@ static NSDateComponentsFormatter *appCommentRangeName;
             //: if (content.targets.count == 1 && [[content.targets.firstObject userId] isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]])
             if (content.targets.count == 1 && [[content.targets.firstObject userId] isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]])
             {
-                //: return [FFFLanguageManager getTextWithKey:@"message_temporarily_muted"];
+                //: return [DisplayLanguageManager getTextWithKey:@"message_temporarily_muted"];
                 return [MakeManager cell:StringFromFireRaisingData(kTitleInevitablyText)];//@"你已被临时禁言".;
             }
             //: else
             else
             {
-                //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_muted_administrator"]];
+                //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_muted_administrator"]];
                 return [NSString stringWithFormat:@"%@%@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kName_colorfulSenString)]];
             }
         }
         //: case NIMChatroomEventTypeRemoveMuteTemporarily:
         case NIMChatroomEventTypeRemoveMuteTemporarily:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_dismiss_temporary"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_dismiss_temporary"]];
             return [NSString stringWithFormat:@"%@%@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kName_addedValue)]];
         }
         //: case NIMChatroomEventTypeMemberUpdateInfo:
         case NIMChatroomEventTypeMemberUpdateInfo:
         {
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[FFFLanguageManager getTextWithKey:@"message_updated_information"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,targetText,[DisplayLanguageManager getTextWithKey:@"message_updated_information"]];
             return [NSString stringWithFormat:@"%@%@".disable,targetText,[MakeManager cell:StringFromFireRaisingData(kText_literalUmValue)]];
         }
         //: case NIMChatroomEventTypeRoomMuted:
         case NIMChatroomEventTypeRoomMuted:
         {
-            //: return [FFFLanguageManager getTextWithKey:@"message_administrator_speak"];
+            //: return [DisplayLanguageManager getTextWithKey:@"message_administrator_speak"];
             return [MakeManager cell:StringFromFireRaisingData(kName_flowerString)];//@"全体禁言，管理员可发言".;
         }
         //: case NIMChatroomEventTypeRoomUnMuted:
         case NIMChatroomEventTypeRoomUnMuted:
         {
-            //: return [FFFLanguageManager getTextWithKey:@"message_dismiss_whole_mute"];
+            //: return [DisplayLanguageManager getTextWithKey:@"message_dismiss_whole_mute"];
             return [MakeManager cell:StringFromFireRaisingData(kTitleWhereverValue)];//@"解除全体禁言".;
         }
         //: case NIMChatroomEventTypeQueueChange:
         case NIMChatroomEventTypeQueueChange:
         //: case NIMChatroomEventTypeQueueBatchChange:
         case NIMChatroomEventTypeQueueBatchChange:
-            //: return [NSString stringWithFormat:@"%@%@".nim_localized,opeText,[FFFLanguageManager getTextWithKey:@"message_changed_room_queue"]];
+            //: return [NSString stringWithFormat:@"%@%@".nim_localized,opeText,[DisplayLanguageManager getTextWithKey:@"message_changed_room_queue"]];
             return [NSString stringWithFormat:@"%@%@".disable,opeText,[MakeManager cell:StringFromFireRaisingData(kNameOffValue)]];
         //: default:
         default:
@@ -924,11 +924,11 @@ static NSDateComponentsFormatter *appCommentRangeName;
     for (NSString *item in content.targetIDs) {
         //: if ([item isEqualToString:currentAccount]) {
         if ([item isEqualToString:currentAccount]) {
-            //: [targets addObject:[FFFLanguageManager getTextWithKey:@"message_helper_you"]];
+            //: [targets addObject:[DisplayLanguageManager getTextWithKey:@"message_helper_you"]];
             [targets addObject:[MakeManager cell:StringFromFireRaisingData(kTextGreenContent)]];
         //: }else{
         }else{
-            //: NSString *targetShowName = [FFFKitUtil showNick:item inSession:message.session];
+            //: NSString *targetShowName = [DisplayKitUtil showNick:item inSession:message.session];
             NSString *targetShowName = [AtPull can:item changeSession:message.session];
             //: [targets addObject:targetShowName];
             [targets addObject:targetShowName];
@@ -953,11 +953,11 @@ static NSDateComponentsFormatter *appCommentRangeName;
     for (NSString *item in content.targetIDs) {
         //: if ([item isEqualToString:currentAccount]) {
         if ([item isEqualToString:currentAccount]) {
-            //: [targets addObject:[FFFLanguageManager getTextWithKey:@"message_helper_you"]];
+            //: [targets addObject:[DisplayLanguageManager getTextWithKey:@"message_helper_you"]];
             [targets addObject:[MakeManager cell:StringFromFireRaisingData(kTextGreenContent)]];
         //: }else{
         }else{
-            //: NSString *targetShowName = [FFFKitUtil showNick:item inSession:message.session];
+            //: NSString *targetShowName = [DisplayKitUtil showNick:item inSession:message.session];
             NSString *targetShowName = [AtPull can:item changeSession:message.session];
             //: [targets addObject:targetShowName];
             [targets addObject:targetShowName];
@@ -973,19 +973,19 @@ static NSDateComponentsFormatter *appCommentRangeName;
 {
     //: static NSDictionary *daysOfWeekDict = nil;
     static NSDictionary *daysOfWeekDict = nil;
-    //: daysOfWeekDict = @{@(1):[FFFLanguageManager getTextWithKey:@"Sunday"],//@"星期日".,
+    //: daysOfWeekDict = @{@(1):[DisplayLanguageManager getTextWithKey:@"Sunday"],//@"星期日".,
     daysOfWeekDict = @{@(1):[MakeManager cell:StringFromFireRaisingData(kName_teamForeignerValue)],//@"星期日".,
-                       //: @(2):[FFFLanguageManager getTextWithKey:@"Monday"],//@"星期一".,
+                       //: @(2):[DisplayLanguageManager getTextWithKey:@"Monday"],//@"星期一".,
                        @(2):[MakeManager cell:StringFromFireRaisingData(kNameLiteralHardwareValue)],//@"星期一".,
-                       //: @(3):[FFFLanguageManager getTextWithKey:@"Tuesday"],//@"星期二".,
+                       //: @(3):[DisplayLanguageManager getTextWithKey:@"Tuesday"],//@"星期二".,
                        @(3):[MakeManager cell:StringFromFireRaisingData(kTitleSymbolData)],//@"星期二".,
-                       //: @(4):[FFFLanguageManager getTextWithKey:@"Wednesday"],//@"星期三".,
+                       //: @(4):[DisplayLanguageManager getTextWithKey:@"Wednesday"],//@"星期三".,
                        @(4):[MakeManager cell:StringFromFireRaisingData(kTextTonightData)],//@"星期三".,
-                       //: @(5):[FFFLanguageManager getTextWithKey:@"Thursday"],//@"星期四".,
+                       //: @(5):[DisplayLanguageManager getTextWithKey:@"Thursday"],//@"星期四".,
                        @(5):[MakeManager cell:StringFromFireRaisingData(kTextPromptCombatName)],//@"星期四".,
-                       //: @(6):[FFFLanguageManager getTextWithKey:@"Friday"],//@"星期五".,
+                       //: @(6):[DisplayLanguageManager getTextWithKey:@"Friday"],//@"星期五".,
                        @(6):[MakeManager cell:StringFromFireRaisingData(kTextCurrentValue)],//@"星期五".,
-                       //: @(7):[FFFLanguageManager getTextWithKey:@"Saturday"]};
+                       //: @(7):[DisplayLanguageManager getTextWithKey:@"Saturday"]};
                        @(7):[MakeManager cell:StringFromFireRaisingData(kNameWrapString)]};//@"星期六".,};
     //: return [daysOfWeekDict objectForKey:@(dayOfWeek)];
     return [daysOfWeekDict objectForKey:@(dayOfWeek)];
@@ -996,7 +996,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
 {
     //: NSString *ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, comment.replyType];
     NSString *ID = [NSString stringWithFormat:dream_framePathMessage, comment.replyType];
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+    //: NIMInputEmoticon *emoticon = [[DisplayInputEmoticonManager sharedManager] emoticonByID:ID];
     BubbleNameReload *emoticon = [[IndexManager item] tyke:ID];
     //: NSString *content = nil;
     NSString *content = nil;
@@ -1051,7 +1051,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
         switch (message.messageType) {
             //: case NIMMessageTypeNotification:
             case NIMMessageTypeNotification:
-                //: text = [FFFKitUtil notificationMessage:message];
+                //: text = [DisplayKitUtil notificationMessage:message];
                 text = [AtPull background:message];
                 //: break;
                 break;
@@ -1096,27 +1096,27 @@ static NSDateComponentsFormatter *appCommentRangeName;
     {
         //: NIMTeamNotificationContent *content = (NIMTeamNotificationContent*)object.content;
         NIMTeamNotificationContent *content = (NIMTeamNotificationContent*)object.content;
-        //: NSString *source = [FFFKitUtil teamNotificationSourceName:message];
+        //: NSString *source = [DisplayKitUtil teamNotificationSourceName:message];
         NSString *source = [AtPull subName:message];
-        //: NSArray *targets = [FFFKitUtil teamNotificationTargetNames:message];
+        //: NSArray *targets = [DisplayKitUtil teamNotificationTargetNames:message];
         NSArray *targets = [AtPull mark:message];
         //: NSString *targetText = [targets count] > 1 ? [targets componentsJoinedByString:@","] : [targets firstObject];
         NSString *targetText = [targets count] > 1 ? [targets componentsJoinedByString:@","] : [targets firstObject];
-        //: NSString *teamName = [FFFKitUtil teamNotificationTeamShowName:message];
+        //: NSString *teamName = [DisplayKitUtil teamNotificationTeamShowName:message];
         NSString *teamName = [AtPull domain:message];
 
         //: switch (content.operationType) {
         switch (content.operationType) {
             //: case NIMTeamOperationTypeInvite:{
             case NIMTeamOperationTypeInvite:{
-                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_helper_invite"],targets.firstObject];
+                //: NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_helper_invite"],targets.firstObject];
                 NSString *str = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kName_braData)],targets.firstObject];
                 //: if (targets.count>1) {
                 if (targets.count>1) {
-                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[FFFLanguageManager getTextWithKey:@"message_people"]];
+                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[DisplayLanguageManager getTextWithKey:@"message_people"]];
                     str = [str stringByAppendingFormat:@"%zd%@",targets.count,[MakeManager cell:StringFromFireRaisingData(kTextChopArtiString)]];
                 }
-                //: str = [str stringByAppendingFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"message_enter"],teamName];
+                //: str = [str stringByAppendingFormat:@"%@%@",[DisplayLanguageManager getTextWithKey:@"message_enter"],teamName];
                 str = [str stringByAppendingFormat:@"%@%@",[MakeManager cell:StringFromFireRaisingData(kTitleColorFileData)],teamName];
                 //: formatedMessage = str;
                 formatedMessage = str;
@@ -1125,7 +1125,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 break;
             //: case NIMTeamOperationTypeDismiss:
             case NIMTeamOperationTypeDismiss:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_dismissed"],teamName];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_dismissed"],teamName];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kTitleHarassmentExceptData)],teamName];
                 //: break;
                 break;
@@ -1135,10 +1135,10 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 NSString *str = [NSString stringWithFormat:@"%@ %@",source,targets.firstObject];
                 //: if (targets.count>1) {
                 if (targets.count>1) {
-                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[FFFLanguageManager getTextWithKey:@"message_people"]];
+                    //: str = [str stringByAppendingFormat:@"%zd%@",targets.count,[DisplayLanguageManager getTextWithKey:@"message_people"]];
                     str = [str stringByAppendingFormat:@"%zd%@",targets.count,[MakeManager cell:StringFromFireRaisingData(kTextChopArtiString)]];
                 }
-                //: str = [str stringByAppendingFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"message_move_out"],teamName];
+                //: str = [str stringByAppendingFormat:@"%@%@",[DisplayLanguageManager getTextWithKey:@"message_move_out"],teamName];
                 str = [str stringByAppendingFormat:@"%@%@",[MakeManager cell:StringFromFireRaisingData(kName_okayData)],teamName];
                 //: formatedMessage = str;
                 formatedMessage = str;
@@ -1149,7 +1149,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
             case NIMTeamOperationTypeUpdate:
             {
 
-                //: NSString *update = [FFFLanguageManager getTextWithKey:@"message_have_update"];
+                //: NSString *update = [DisplayLanguageManager getTextWithKey:@"message_have_update"];
                 NSString *update = [MakeManager cell:StringFromFireRaisingData(kNameDevoteValue)];
                 //: id attachment = [content attachment];
                 id attachment = [content attachment];
@@ -1157,7 +1157,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 if ([attachment isKindOfClass:[NIMUpdateTeamInfoAttachment class]]) {
                     //: NIMUpdateTeamInfoAttachment *teamAttachment = (NIMUpdateTeamInfoAttachment *)attachment;
                     NIMUpdateTeamInfoAttachment *teamAttachment = (NIMUpdateTeamInfoAttachment *)attachment;
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_information"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_information"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kText_appointedData)]];
                     //如果只是单个项目项被修改则显示具体的修改项
                     //: if ([teamAttachment.values count] == 1) {
@@ -1168,49 +1168,49 @@ static NSDateComponentsFormatter *appCommentRangeName;
                         switch (tag) {
                             //: case NIMTeamUpdateTagName:
                             case NIMTeamUpdateTagName:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_name"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_name"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kTitle_tribeData)]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagIntro:
                             case NIMTeamUpdateTagIntro:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_introduce"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_introduce"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kNameRuralDisturbString)]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagAnouncement:
                             case NIMTeamUpdateTagAnouncement:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_proclamation"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_proclamation"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kText_suspicionData)]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagJoinMode:
                             case NIMTeamUpdateTagJoinMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_verification_mode"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_verification_mode"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kContent_axData)]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagAvatar:
                             case NIMTeamUpdateTagAvatar:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_head_portrait"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_head_portrait"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kName_threadValue)]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagInviteMode:
                             case NIMTeamUpdateTagInviteMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_invite_permission"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_invite_permission"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[MakeManager cell:StringFromFireRaisingData(kTitle_daughterValue)]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagBeInviteMode:
                             case NIMTeamUpdateTagBeInviteMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_permissions_updated"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_permissions_updated"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[MakeManager cell:StringFromFireRaisingData(kContent_data)]];
                                 //: break;
                                 break;
                             //: case NIMTeamUpdateTagUpdateInfoMode:
                             case NIMTeamUpdateTagUpdateInfoMode:
-                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_modification_permissions"]];
+                                //: formatedMessage = [NSString stringWithFormat:@"%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_modification_permissions"]];
                                 formatedMessage = [NSString stringWithFormat:@"%@%@",source,[MakeManager cell:StringFromFireRaisingData(kNameProvedData)]];
                                 //: break;
                                 break;
@@ -1220,7 +1220,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
                                 NSString *muteState = teamAttachment.values.allValues.firstObject;
                                 //: BOOL muted = [muteState isEqualToString:@"0"] ? NO : YES;
                                 BOOL muted = [muteState isEqualToString:@"0"] ? NO : YES;
-                                //: formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_forbidden_speech"]]: [NSString stringWithFormat:@"%@%@",source,[FFFLanguageManager getTextWithKey:@"message_been_lifted"]];
+                                //: formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_forbidden_speech"]]: [NSString stringWithFormat:@"%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_been_lifted"]];
                                 formatedMessage = muted? [NSString stringWithFormat:@"%@%@",source,[MakeManager cell:StringFromFireRaisingData(kNameEyebrowHerbString)]]: [NSString stringWithFormat:@"%@%@",source,[MakeManager cell:StringFromFireRaisingData(kNameStableString)]];
                                 //: break;
                                 break;
@@ -1235,7 +1235,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 }
                 //: if (formatedMessage == nil){
                 if (formatedMessage == nil){
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[FFFLanguageManager getTextWithKey:@"message_information"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[DisplayLanguageManager getTextWithKey:@"message_information"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,update,teamName,[MakeManager cell:StringFromFireRaisingData(kText_appointedData)]];
                 }
             }
@@ -1243,7 +1243,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 break;
             //: case NIMTeamOperationTypeLeave:
             case NIMTeamOperationTypeLeave:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_leave"],teamName];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_leave"],teamName];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kName_twistSubData)],teamName];
                 //: break;
                 break;
@@ -1252,11 +1252,11 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 //: if ([source isEqualToString:targetText]) {
                 if ([source isEqualToString:targetText]) {
                     //说明是以不需要验证的方式进入
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_enter"],teamName];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_enter"],teamName];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kTitleColorFileData)],teamName];
                 //: }else{
                 }else{
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_passed"],targetText,[FFFLanguageManager getTextWithKey:@"message_apply_for"]];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_passed"],targetText,[DisplayLanguageManager getTextWithKey:@"message_apply_for"]];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kNameCompareData)],targetText,[MakeManager cell:StringFromFireRaisingData(kName_detailValue)]];
                 }
             }
@@ -1264,25 +1264,25 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 break;
             //: case NIMTeamOperationTypeTransferOwner:
             case NIMTeamOperationTypeTransferOwner:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_transferred_group_master"],targetText];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_transferred_group_master"],targetText];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kNameCationData)],targetText];
                 //: break;
                 break;
             //: case NIMTeamOperationTypeAddManager:
             case NIMTeamOperationTypeAddManager:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[FFFLanguageManager getTextWithKey:@"message_group_administrator"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[DisplayLanguageManager getTextWithKey:@"message_group_administrator"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[MakeManager cell:StringFromFireRaisingData(kText_fishRatherIronValue)]];
                 //: break;
                 break;
             //: case NIMTeamOperationTypeRemoveManager:
             case NIMTeamOperationTypeRemoveManager:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[FFFLanguageManager getTextWithKey:@"message_group_revoked"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[DisplayLanguageManager getTextWithKey:@"message_group_revoked"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@",targetText,[MakeManager cell:StringFromFireRaisingData(kText_ruralDiaryAppointedName)]];
                 //: break;
                 break;
             //: case NIMTeamOperationTypeAcceptInvitation:
             case NIMTeamOperationTypeAcceptInvitation:
-                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[FFFLanguageManager getTextWithKey:@"message_accept"],targetText,[FFFLanguageManager getTextWithKey:@"message_invited_into"]];
+                //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[DisplayLanguageManager getTextWithKey:@"message_accept"],targetText,[DisplayLanguageManager getTextWithKey:@"message_invited_into"]];
                 formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",source,[MakeManager cell:StringFromFireRaisingData(kTitleEtcName)],targetText,[MakeManager cell:StringFromFireRaisingData(kTitle_properData)]];
                 //: break;
                 break;
@@ -1295,11 +1295,11 @@ static NSDateComponentsFormatter *appCommentRangeName;
                 {
                     //: BOOL mute = [(NIMMuteTeamMemberAttachment *)attachment flag];
                     BOOL mute = [(NIMMuteTeamMemberAttachment *)attachment flag];
-                    //: NSString *muteStr = mute? [FFFLanguageManager getTextWithKey:@"message_banned_post"] : [FFFLanguageManager getTextWithKey:@"message_remove_banned"];
+                    //: NSString *muteStr = mute? [DisplayLanguageManager getTextWithKey:@"message_banned_post"] : [DisplayLanguageManager getTextWithKey:@"message_remove_banned"];
                     NSString *muteStr = mute? [MakeManager cell:StringFromFireRaisingData(kTitlePosterJoinString)] : [MakeManager cell:StringFromFireRaisingData(kTextLearnData)];
                     //: NSString *str = [targets componentsJoinedByString:@","];
                     NSString *str = [targets componentsJoinedByString:@","];
-                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[FFFLanguageManager getTextWithKey:@"message_remove_by"],source,muteStr];
+                    //: formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[DisplayLanguageManager getTextWithKey:@"message_remove_by"],source,muteStr];
                     formatedMessage = [NSString stringWithFormat:@"%@%@%@%@",str,[MakeManager cell:StringFromFireRaisingData(kName_whereverText)],source,muteStr];
                 }
             }
@@ -1313,7 +1313,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
     }
     //: if (!formatedMessage.length) {
     if (!formatedMessage.length) {
-        //: formatedMessage = [FFFLanguageManager getTextWithKey:@"message_unknown_system_message"];
+        //: formatedMessage = [DisplayLanguageManager getTextWithKey:@"message_unknown_system_message"];
         formatedMessage = [MakeManager cell:StringFromFireRaisingData(kText_accessibleDegreeString)];//@"未知系统消息".;
     }
     //: return formatedMessage;
@@ -1328,35 +1328,35 @@ static NSDateComponentsFormatter *appCommentRangeName;
     switch (record.callStatus) {
         //: case NIMRtcCallStatusCanceled:
         case NIMRtcCallStatusCanceled:
-            //: return [FFFLanguageManager getTextWithKey:@"app_avchat_cancel"];
+            //: return [DisplayLanguageManager getTextWithKey:@"app_avchat_cancel"];
             return [MakeManager cell:StringFromFireRaisingData(kTitle_fistValue)];//@"已取消".;
         //: case NIMRtcCallStatusTimeout:
         case NIMRtcCallStatusTimeout:
-            //: return [FFFLanguageManager getTextWithKey:@"app_avchat_no_pick_up"];
+            //: return [DisplayLanguageManager getTextWithKey:@"app_avchat_no_pick_up"];
             return [MakeManager cell:StringFromFireRaisingData(kName_multipleData)];//@"未接听".;
         //: case NIMRtcCallStatusRejected:
         case NIMRtcCallStatusRejected:
-            //: return [FFFLanguageManager getTextWithKey:@"app_avchat_has_reject"];
+            //: return [DisplayLanguageManager getTextWithKey:@"app_avchat_has_reject"];
             return [MakeManager cell:StringFromFireRaisingData(kName_packData)];//@"已拒绝".;
         //: case NIMRtcCallStatusBusy:
         case NIMRtcCallStatusBusy:
             //: if ([message.from isEqualToString:NIMSDK.sharedSDK.loginManager.currentAccount]) {
             if ([message.from isEqualToString:NIMSDK.sharedSDK.loginManager.currentAccount]) {
-                //: return [FFFLanguageManager getTextWithKey:@"app_avchat_has_reject"];
+                //: return [DisplayLanguageManager getTextWithKey:@"app_avchat_has_reject"];
                 return [MakeManager cell:StringFromFireRaisingData(kName_packData)];//@"已拒绝".;
             }
-            //: return [FFFLanguageManager getTextWithKey:@"app_avchat_is_busy_opposite"];
+            //: return [DisplayLanguageManager getTextWithKey:@"app_avchat_is_busy_opposite"];
             return [MakeManager cell:StringFromFireRaisingData(kTitle_researchString)];//@"对方正忙".;
         //: case NIMRtcCallStatusComplete: {
         case NIMRtcCallStatusComplete: {
             //: NSTimeInterval duration = [record.durations nimkit_jsonInteger:NIMSDK.sharedSDK.loginManager.currentAccount?:@""];
             NSTimeInterval duration = [record.durations add:NIMSDK.sharedSDK.loginManager.currentAccount?:@""];
-            //: return [NSString stringWithFormat:@"%@ %@",[FFFLanguageManager getTextWithKey:@"message_call_duration"],[FFFKitUtil durationTextWithSeconds:duration]];
+            //: return [NSString stringWithFormat:@"%@ %@",[DisplayLanguageManager getTextWithKey:@"message_call_duration"],[DisplayKitUtil durationTextWithSeconds:duration]];
             return [NSString stringWithFormat:@"%@ %@",[MakeManager cell:StringFromFireRaisingData(kContentHarassmentData)],[AtPull ting:duration]];
         }
         //: default:
         default:
-            //: return [FFFLanguageManager getTextWithKey:@"online_state_event_manager_unknown"];
+            //: return [DisplayLanguageManager getTextWithKey:@"online_state_event_manager_unknown"];
             return [MakeManager cell:StringFromFireRaisingData(kText_wortName)];//@"未知".;
     }
 }
@@ -1374,7 +1374,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
         //: return nil;
         return nil;
     }
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
     CellClean *option = [[CellClean alloc] init];
     //: option.session = session;
     option.session = session;
@@ -1404,7 +1404,7 @@ static NSDateComponentsFormatter *appCommentRangeName;
     //: double OnedayTimeIntervalValue = 24*60*60; 
     double OnedayTimeIntervalValue = 24*60*60; //一天的秒数
 
-    //: result = [FFFKitUtil getPeriodOfTime:hour withMinute:msgDateComponents.minute];
+    //: result = [DisplayKitUtil getPeriodOfTime:hour withMinute:msgDateComponents.minute];
     result = [AtPull with:hour color:msgDateComponents.minute];
     //: if (hour > 12)
     if (hour > 12)
@@ -1425,13 +1425,13 @@ static NSDateComponentsFormatter *appCommentRangeName;
     //: else if(isSameMonth && (nowDateComponents.day == (msgDateComponents.day+1)))
     else if(isSameMonth && (nowDateComponents.day == (msgDateComponents.day+1)))//昨天
     {
-        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[FFFLanguageManager getTextWithKey:@"yesterday"],result,hour,(int)msgDateComponents.minute] : [FFFLanguageManager getTextWithKey:@"yesterday"];
+        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[DisplayLanguageManager getTextWithKey:@"yesterday"],result,hour,(int)msgDateComponents.minute] : [DisplayLanguageManager getTextWithKey:@"yesterday"];
         result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[MakeManager cell:StringFromFireRaisingData(kNameDayString)],result,hour,(int)msgDateComponents.minute] : [MakeManager cell:StringFromFireRaisingData(kNameDayString)];//@"昨天";
     }
     //: else if([nowDate timeIntervalSinceDate:msgDate] < 7 * OnedayTimeIntervalValue)
     else if([nowDate timeIntervalSinceDate:msgDate] < 7 * OnedayTimeIntervalValue)//一周内
     {
-        //: NSString *weekDay = [FFFKitUtil weekdayStr:msgDateComponents.weekday];
+        //: NSString *weekDay = [DisplayKitUtil weekdayStr:msgDateComponents.weekday];
         NSString *weekDay = [AtPull foam:msgDateComponents.weekday];
         //: result = showDetail? [weekDay stringByAppendingFormat:@"%@ %zd:%02d",result,hour,(int)msgDateComponents.minute] : weekDay;
         result = showDetail? [weekDay stringByAppendingFormat:@"%@ %zd:%02d",result,hour,(int)msgDateComponents.minute] : weekDay;

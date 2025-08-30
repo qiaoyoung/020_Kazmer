@@ -286,7 +286,7 @@ typedef struct {
     return kTitle_withData;
 }
 
-//: #ffffff
+//: #fffDisplay
 - (NSString *)kText_cellData {
     /* static */ NSString *kText_cellData = nil;
     if (!kText_cellData) {
@@ -342,7 +342,7 @@ typedef struct {
 - (NSString *)kNameTeamMainString {
     /* static */ NSString *kNameTeamMainString = nil;
     if (!kNameTeamMainString) {
-		NSString *origin = @"F8F2CEE2F4E9CEFCF0FFFA";
+		NSString *origin = @"F8F2CEE2F4E9CEFCF0DisplayA";
 		NSData *data = [ShoppingData ShoppingDataToData:origin];
         StructShoppingData value = (StructShoppingData){145, (Byte *)data.bytes, 10, 171, 209};
         kNameTeamMainString = [self StringFromShoppingData:&value];
@@ -354,7 +354,7 @@ typedef struct {
 - (NSString *)kNameTopDenseSculptureContent {
     /* static */ NSString *kNameTopDenseSculptureContent = nil;
     if (!kNameTopDenseSculptureContent) {
-		NSString *origin = @"EBE9FEE3FCE3FEF3D5EDF8E5FFFAD5E7EFE7E8EFF8D5E3E4ECE5B8D5E3E4FCE3FEEFF8E0";
+		NSString *origin = @"EBE9FEE3FCE3FEF3D5EDF8E5DisplayAD5E7EFE7E8EFF8D5E3E4ECE5B8D5E3E4FCE3FEEFF8E0";
 		NSData *data = [ShoppingData ShoppingDataToData:origin];
         StructShoppingData value = (StructShoppingData){138, (Byte *)data.bytes, 35, 199, 119};
         kNameTopDenseSculptureContent = [self StringFromShoppingData:&value];
@@ -435,35 +435,35 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "DisplayTeamMemberCardViewController.h"
 #import "RowViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "DisplayCommonTableData.h"
+#import "DisplayCommonTableData.h"
+//: #import "DisplayCommonTableDelegate.h"
 #import "TeamMake.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "DisplayTeamCardMemberItem.h"
 #import "IndexItem.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 //: #import "ZMONSetGroupNickNameView.h"
 #import "YearView.h"
-//: #import "FFFKitColorButtonCell.h"
+//: #import "DisplayKitColorButtonCell.h"
 #import "KitView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
-//: #import "FFFTeamHelper.h"
+//: #import "DisplayTeamHelper.h"
 #import "MaxHelper.h"
 
-//: @interface FFFTeamMemberCardViewController ()<NIMUserManagerDelegate>
+//: @interface DisplayTeamMemberCardViewController ()<NIMUserManagerDelegate>
 @interface RowViewController ()<NIMUserManagerDelegate>
 
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) DisplayCommonTableDelegate *delegator;
 @property (nonatomic,strong) TeamMake *delegator;
 
 //: @property (strong, nonatomic) UIButton *btnRes;
@@ -493,7 +493,7 @@ typedef struct {
 //: @property (nonatomic, strong) NSString *userAcount;
 @property (nonatomic, strong) NSString *userAcount;
 
-//: @property (nonatomic,weak) id <FFFTeamMemberListDataSource> dataSource;
+//: @property (nonatomic,weak) id <DisplayTeamMemberListDataSource> dataSource;
 @property (nonatomic,weak) id <AccountSource> dataSource;
 //: @property (strong, nonatomic) UISwitch *switchNotice;
 @property (strong, nonatomic) UISwitch *switchNotice;
@@ -527,7 +527,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFTeamMemberCardViewController
+//: @implementation DisplayTeamMemberCardViewController
 @implementation RowViewController
 
 //: #pragma mark - Private
@@ -567,11 +567,11 @@ typedef struct {
         NSString *msg = nil;
         //: if (!error) {
         if (!error) {
-            //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+            //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
             msg = [MakeManager cell:[[ShoppingData sharedInstance] kName_consumptionString]];
         //: }else{
         }else{
-            //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+            //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
             msg = [MakeManager cell:[[ShoppingData sharedInstance] kTextWheatData]];
             //: switcher.on = !mute;
             switcher.on = !mute;
@@ -667,7 +667,7 @@ typedef struct {
         self.labTitleRemark.font = [UIFont systemFontOfSize:14.f];
         //: self.labTitleRemark.textColor = [UIColor colorWithHexString:@"#2C3042"];
         self.labTitleRemark.textColor = [UIColor cell:[[ShoppingData sharedInstance] kContent_scienceString]];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [DisplayLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [MakeManager cell:[[ShoppingData sharedInstance] kTextColorString]];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -710,7 +710,7 @@ typedef struct {
         lab2.font = [UIFont systemFontOfSize:14];
         //: lab2.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab2.textColor = [UIColor cell:[[ShoppingData sharedInstance] kContent_scienceString]];
-        //: lab2.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
+        //: lab2.text = [DisplayLanguageManager getTextWithKey:@"activity_group_member_info2_shenfen"];
         lab2.text = [MakeManager cell:[[ShoppingData sharedInstance] kTextTopValue]];
         //: [box2 addSubview:lab2];
         [box2 addSubview:lab2];
@@ -720,7 +720,7 @@ typedef struct {
         sublab2.font = [UIFont systemFontOfSize:12];
         //: sublab2.textColor = [UIColor colorWithHexString:@"#4B43DE"];
         sublab2.textColor = [UIColor cell:[[ShoppingData sharedInstance] kContentHideData]];
-        //: sublab2.text = [FFFTeamHelper memberTypeText:self.member.type];
+        //: sublab2.text = [DisplayTeamHelper memberTypeText:self.member.type];
         sublab2.text = [MaxHelper queryed:self.member.type];
         //: [box2 addSubview:sublab2];
         [box2 addSubview:sublab2];
@@ -753,7 +753,7 @@ typedef struct {
         lab3.font = [UIFont systemFontOfSize:14];
         //: lab3.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab3.textColor = [UIColor cell:[[ShoppingData sharedInstance] kContent_scienceString]];
-        //: lab3.text = [FFFLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
+        //: lab3.text = [DisplayLanguageManager getTextWithKey:@"activity_group_member_info2_inviter"];
         lab3.text = [MakeManager cell:[[ShoppingData sharedInstance] kNameTopDenseSculptureContent]];
         //: [box3 addSubview:lab3];
         [box3 addSubview:lab3];
@@ -796,7 +796,7 @@ typedef struct {
         lab4.font = [UIFont systemFontOfSize:14];
         //: lab4.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lab4.textColor = [UIColor cell:[[ShoppingData sharedInstance] kContent_scienceString]];
-        //: lab4.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
+        //: lab4.text = [DisplayLanguageManager getTextWithKey:@"group_member_info_activity_mute_msg"];
         lab4.text = [MakeManager cell:[[ShoppingData sharedInstance] kName_selectedKeyData]];
         //: [box4 addSubview:lab4];
         [box4 addSubview:lab4];
@@ -812,7 +812,7 @@ typedef struct {
         [box4 addSubview:pushSwitch];
 
 
-        //: BOOL canEdit = [FFFKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
+        //: BOOL canEdit = [DisplayKitUtil canEditTeamInfo:self.teamListManager.myTeamInfo];
         BOOL canEdit = [AtPull location:self.teamListManager.myTeamInfo];
         //: if(canEdit){
         if(canEdit){
@@ -828,7 +828,7 @@ typedef struct {
             [self.btnDelete setTitle:[[ShoppingData sharedInstance] kName_hardwareData].disable forState:UIControlStateNormal];
             //: [self.btnDelete addTarget:self action:@selector(removeMember) forControlEvents:UIControlEventTouchUpInside];
             [self.btnDelete addTarget:self action:@selector(netVoice) forControlEvents:UIControlEventTouchUpInside];
-            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+            //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
             self.btnDelete.backgroundColor = [UIColor cell:[[ShoppingData sharedInstance] kText_cellData]];
             //: self.btnDelete.layer.borderWidth = 1;
             self.btnDelete.layer.borderWidth = 1;

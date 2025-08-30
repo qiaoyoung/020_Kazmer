@@ -33,11 +33,11 @@ Byte kName_dozeAxString[] = {46, 20, 51, 5, 27, 136, 134, 120, 133, 128, 152, 16
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTableAdapter.h"
+//: #import "DisplaySessionTableAdapter.h"
 #import "FinancialCenterAdapter.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
-//: #import "FFFMessageCellFactory.h"
+//: #import "DisplayMessageCellFactory.h"
 #import "ManFactory.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
@@ -46,16 +46,16 @@ Byte kName_dozeAxString[] = {46, 20, 51, 5, 27, 136, 134, 120, 133, 128, 152, 16
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
 
-//: @interface FFFSessionTableAdapter()
+//: @interface DisplaySessionTableAdapter()
 @interface FinancialCenterAdapter()
 
-//: @property (nonatomic,strong) FFFMessageCellFactory *cellFactory;
+//: @property (nonatomic,strong) DisplayMessageCellFactory *cellFactory;
 @property (nonatomic,strong) ManFactory *cellFactory;
 
 //: @end
 @end
 
-//: @implementation FFFSessionTableAdapter
+//: @implementation DisplaySessionTableAdapter
 @implementation FinancialCenterAdapter
 
 //: - (instancetype)init
@@ -65,7 +65,7 @@ Byte kName_dozeAxString[] = {46, 20, 51, 5, 27, 136, 134, 120, 133, 128, 152, 16
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _cellFactory = [[FFFMessageCellFactory alloc] init];
+        //: _cellFactory = [[DisplayMessageCellFactory alloc] init];
         _cellFactory = [[ManFactory alloc] init];
     }
     //: return self;
@@ -93,20 +93,20 @@ Byte kName_dozeAxString[] = {46, 20, 51, 5, 27, 136, 134, 120, 133, 128, 152, 16
     UITableViewCell *cell = nil;
     //: id model = [[self.interactor items] objectAtIndex:indexPath.row];
     id model = [[self.interactor textDevice] objectAtIndex:indexPath.row];
-    //: if ([model isKindOfClass:[FFFMessageModel class]]) {
+    //: if ([model isKindOfClass:[DisplayMessageModel class]]) {
     if ([model isKindOfClass:[CleanDoing class]]) {
         //: cell = [self.cellFactory cellInTable:tableView
         cell = [self.cellFactory dateMode:tableView
                                    //: forMessageMode:model];
                                    paddy:model];
-        //: [(FFFMessageCell *)cell setDelegate:self.delegate];
+        //: [(DisplayMessageCell *)cell setDelegate:self.delegate];
         [(IndoorsView *)cell setDelegate:self.delegate];
         //: [self.interactor willDisplayMessageModel:model];
         [self.interactor viewWith:model];
-        //: [(FFFMessageCell *)cell refreshData:model];
+        //: [(DisplayMessageCell *)cell refreshData:model];
         [(IndoorsView *)cell pin:model];
     }
-    //: else if ([model isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([model isKindOfClass:[DisplayTimestampModel class]])
     else if ([model isKindOfClass:[WithPage class]])
     {
         //: cell = [self.cellFactory cellInTable:tableView
@@ -156,10 +156,10 @@ Byte kName_dozeAxString[] = {46, 20, 51, 5, 27, 136, 134, 120, 133, 128, 152, 16
     CGFloat cellHeight = 0;
     //: id modelInArray = [[self.interactor items] objectAtIndex:indexPath.row];
     id modelInArray = [[self.interactor textDevice] objectAtIndex:indexPath.row];
-    //: if ([modelInArray isKindOfClass:[FFFMessageModel class]])
+    //: if ([modelInArray isKindOfClass:[DisplayMessageModel class]])
     if ([modelInArray isKindOfClass:[CleanDoing class]])
     {
-        //: FFFMessageModel *model = (FFFMessageModel *)modelInArray;
+        //: DisplayMessageModel *model = (DisplayMessageModel *)modelInArray;
         CleanDoing *model = (CleanDoing *)modelInArray;
 
         // 撤回的消息 发送自定义消息
@@ -272,10 +272,10 @@ Byte kName_dozeAxString[] = {46, 20, 51, 5, 27, 136, 134, 120, 133, 128, 152, 16
 
 
     }
-    //: else if ([modelInArray isKindOfClass:[FFFTimestampModel class]])
+    //: else if ([modelInArray isKindOfClass:[DisplayTimestampModel class]])
     else if ([modelInArray isKindOfClass:[WithPage class]])
     {
-        //: cellHeight = [(FFFTimestampModel *)modelInArray height];
+        //: cellHeight = [(DisplayTimestampModel *)modelInArray height];
         cellHeight = [(WithPage *)modelInArray height];
     }
     //: else

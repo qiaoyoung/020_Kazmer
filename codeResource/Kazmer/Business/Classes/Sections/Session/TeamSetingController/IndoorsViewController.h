@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamListDataManager.h"
+//: #import "DisplayTeamListDataManager.h"
 #import "MentionManager.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -20,13 +20,13 @@ NS_ASSUME_NONNULL_BEGIN
 //: typedef void(^SpeiceAvaterBackBlock) (UIImage *groupAvater);
 typedef void(^SpeiceAvaterBackBlock) (UIImage *groupAvater);
 
-//: @interface FFFGroupAvatarViewController : UIViewController
+//: @interface DisplayGroupAvatarViewController : UIViewController
 @interface IndoorsViewController : UIViewController
 
 //: @property (nonatomic, copy) SpeiceAvaterBackBlock speiceBackBlock;
 @property (nonatomic, copy) SpeiceAvaterBackBlock speiceBackBlock;
 //群组管理
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) DisplayTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MentionManager *teamListManager;
 //: @property (nonatomic,strong) NSString *groupName;
 @property (nonatomic,strong) NSString *groupName;

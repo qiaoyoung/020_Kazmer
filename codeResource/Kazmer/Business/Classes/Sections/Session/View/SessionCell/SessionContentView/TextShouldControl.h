@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
 
 //: @class M80AttributedLabel;
@@ -20,7 +20,7 @@
 
 
 
-//: @interface USERSessionWhiteBoardContentView : FFFSessionMessageContentView
+//: @interface USERSessionWhiteBoardContentView : DisplaySessionMessageContentView
 @interface TextShouldControl : WithTopView
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;

@@ -15,7 +15,7 @@
 //: @class NIMCommonTableRow;
 @class IndexTargetRow;
 
-//: @protocol FFFCommonTableViewCell <NSObject>
+//: @protocol DisplayCommonTableViewCell <NSObject>
 @protocol ImageCell <NSObject>
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;

@@ -199,7 +199,7 @@ Byte kName_detailString[] = {27, 28, 6, 46, 220, 203, 101, 116, 101, 108, 101, 1
 //: team_create_helper_create_failed
 Byte kNameDetailData[] = {2, 32, 3, 100, 101, 108, 105, 97, 102, 95, 101, 116, 97, 101, 114, 99, 95, 114, 101, 112, 108, 101, 104, 95, 101, 116, 97, 101, 114, 99, 95, 109, 97, 101, 116, 5};
 
-//: #ffffff
+//: #fffDisplay
 Byte kContent_showValue[] = {66, 7, 13, 173, 89, 29, 88, 133, 198, 210, 229, 193, 30, 102, 102, 102, 102, 102, 102, 35, 78};
 
 //: avatar
@@ -218,10 +218,10 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 // __M_A_C_R_O__
 //: #import "USERPersonalCardViewController.h"
 #import "CornerViewController.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "DisplayCommonTableDelegate.h"
 #import "TeamMake.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DisplayCommonTableData.h"
+#import "DisplayCommonTableData.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 //: #import "SVProgressHUD.h"
@@ -240,7 +240,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 #import "ViewUtil.h"
 //: #import "HMDataPicker.h"
 #import "ColouringView.h"
-//: #import "FFFRemarksView.h"
+//: #import "DisplayRemarksView.h"
 #import "GrowingView.h"
 //: #import "USEROpinionBackViewController.h"
 #import "BackViewController.h"
@@ -264,9 +264,9 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 #import "CrownViewController.h"
 //: #import "CCCContactsViewController.h"
 #import "ActionViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "DisplayContactSelectViewController.h"
 #import "RecordTitleViewController.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "DisplayKitFileLocationHelper.h"
 #import "PageHelper.h"
 
 //: @interface USERPersonalCardViewController ()<NIMUserManagerDelegate,HMDataPickerDelegate,USERReportDelegate,USERReportNextDelegate>
@@ -317,13 +317,13 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 @property (nonatomic,copy) NSString *userId;
 //: @property (strong, nonatomic) UILabel *labTitSign;
 @property (strong, nonatomic) UILabel *labTitSign;
-//: @property (nonatomic, strong) FFFRemarksView *changeRemarksView;
+//: @property (nonatomic, strong) DisplayRemarksView *changeRemarksView;
 @property (nonatomic, strong) GrowingView *changeRemarksView;
 //: @property (nonatomic, strong) UIView *userView;
 @property (nonatomic, strong) UIView *userView;
 //: @property (nonatomic, strong) UIButton *messageBtn;
 @property (nonatomic, strong) UIButton *messageBtn;
-//: @property (nonatomic,strong) FFFCommonTableDelegate *delegator;
+//: @property (nonatomic,strong) DisplayCommonTableDelegate *delegator;
 @property (nonatomic,strong) TeamMake *delegator;
 //: @property (nonatomic, strong) ZMONReportBlackView *reprotBlackView;
 @property (nonatomic, strong) TotalryView *reprotBlackView;
@@ -405,11 +405,11 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 
                    //: if (!error) {
                    if (!error) {
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[MakeManager cell:StringFromTheoryData(kTitleKnowName)] duration:2.0f position:CSToastPositionCenter];
                    //: }else{
                    }else{
-                       //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                       //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                        [self.view makeToast:[MakeManager cell:StringFromTheoryData(kText_colorString)] duration:2.0f position:CSToastPositionCenter];
 
                    }
@@ -486,7 +486,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [DisplayLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [MakeManager cell:StringFromTheoryData(kNameStopData)];
 //            [SVProgressHUD show];
 
@@ -506,7 +506,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
                     [self.navigationController pushViewController:vc animated:YES];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[MakeManager cell:StringFromTheoryData(kNameDetailData)] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -564,7 +564,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         [self.loadingView ingatheringBy];
         //: if (error) {
         if (error) {
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
+            //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
             [wself.view makeToast:[MakeManager cell:StringFromTheoryData(kTextRangeString)] duration:2.0f position:CSToastPositionCenter];
             //: [wself refresh];
             [wself twelvemonth];
@@ -617,13 +617,13 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [MakeManager cell:StringFromTheoryData(kContentRecentTitle)];//@"添加成功"
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [DisplayLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [MakeManager cell:StringFromTheoryData(kName_cellText)];//@"请求成功"
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [DisplayLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [MakeManager cell:StringFromTheoryData(kTitleViewData)];//@"添加失败"
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [DisplayLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [MakeManager cell:StringFromTheoryData(kTitleItemSharedValue)];//@"请求失败"
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -709,7 +709,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         self.labTitlenotice.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitlenotice.textColor = [UIColor blackColor];
         self.labTitlenotice.textColor = [UIColor blackColor];
-        //: self.labTitlenotice.text = [FFFLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
+        //: self.labTitlenotice.text = [DisplayLanguageManager getTextWithKey:@"message_info_activity_msg_notice"];
         self.labTitlenotice.text = [MakeManager cell:StringFromTheoryData(kTextValueDataHeightName)];
         //: [noticeView addSubview:self.labTitlenotice];
         [noticeView addSubview:self.labTitlenotice];
@@ -744,7 +744,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         self.labTitleBlack.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleBlack.textColor = [UIColor blackColor];
         self.labTitleBlack.textColor = [UIColor blackColor];
-        //: self.labTitleBlack.text = [FFFLanguageManager getTextWithKey:@"func_viewholder_black"];
+        //: self.labTitleBlack.text = [DisplayLanguageManager getTextWithKey:@"func_viewholder_black"];
         self.labTitleBlack.text = [MakeManager cell:StringFromTheoryData(kName_currentString)];
         //: [blackView addSubview:self.labTitleBlack];
         [blackView addSubview:self.labTitleBlack];
@@ -759,7 +759,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         blackBtn.titleLabel.font = [UIFont systemFontOfSize:12];
         //: [blackBtn setTitleColor:[UIColor colorWithHexString:@"#4B43DE"] forState:UIControlStateNormal];
         [blackBtn setTitleColor:[UIColor cell:StringFromTheoryData(kName_itemString)] forState:UIControlStateNormal];
-        //: [blackBtn setTitle:[FFFLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
+        //: [blackBtn setTitle:[DisplayLanguageManager getTextWithKey:@"gotoBlacklist"] forState:UIControlStateNormal];
         [blackBtn setTitle:[MakeManager cell:StringFromTheoryData(kNameDetailContent)] forState:UIControlStateNormal];
         //: [blackView addSubview:blackBtn];
         [blackView addSubview:blackBtn];
@@ -834,7 +834,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         self.labTitleRemark.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleRemark.textColor = [UIColor blackColor];
         self.labTitleRemark.textColor = [UIColor blackColor];
-        //: self.labTitleRemark.text = [FFFLanguageManager getTextWithKey:@"message_remark_name"];
+        //: self.labTitleRemark.text = [DisplayLanguageManager getTextWithKey:@"message_remark_name"];
         self.labTitleRemark.text = [MakeManager cell:StringFromTheoryData(kTitle_itemData)];
         //: [nameView addSubview:self.labTitleRemark];
         [nameView addSubview:self.labTitleRemark];
@@ -901,7 +901,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         self.labTitleResport.font = [UIFont systemFontOfSize:16.f];
         //: self.labTitleResport.textColor = [UIColor blackColor];
         self.labTitleResport.textColor = [UIColor blackColor];
-        //: self.labTitleResport.text = [FFFLanguageManager getTextWithKey:@"report_activity_title"];
+        //: self.labTitleResport.text = [DisplayLanguageManager getTextWithKey:@"report_activity_title"];
         self.labTitleResport.text = [MakeManager cell:StringFromTheoryData(kTextErrorValue)];
         //: [reportView addSubview:self.labTitleResport];
         [reportView addSubview:self.labTitleResport];
@@ -921,11 +921,11 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         self.btnAdd.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnAdd setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnAdd setTitleColor:[UIColor cell:StringFromTheoryData(kName_hideValue)] forState:UIControlStateNormal];
-        //: [self.btnAdd setTitle:[FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
+        //: [self.btnAdd setTitle:[DisplayLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
         [self.btnAdd setTitle:[MakeManager cell:StringFromTheoryData(kTextCellString)] forState:UIControlStateNormal];
         //: [self.btnAdd addTarget:self action:@selector(addFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnAdd addTarget:self action:@selector(chromaticColour) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnAdd.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
         self.btnAdd.backgroundColor = [UIColor cell:StringFromTheoryData(kContent_showValue)];
         //: self.btnAdd.layer.borderWidth = 1;
         self.btnAdd.layer.borderWidth = 1;
@@ -944,11 +944,11 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         self.btnDelete.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [self.btnDelete setTitleColor:[UIColor colorWithHexString:@"#FF483D"] forState:UIControlStateNormal];
         [self.btnDelete setTitleColor:[UIColor cell:StringFromTheoryData(kName_hideValue)] forState:UIControlStateNormal];
-        //: [self.btnDelete setTitle:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
+        //: [self.btnDelete setTitle:[DisplayLanguageManager getTextWithKey:@"friend_circle_adapter_delete"] forState:UIControlStateNormal];
         [self.btnDelete setTitle:[MakeManager cell:StringFromTheoryData(kName_detailString)] forState:UIControlStateNormal];
         //: [self.btnDelete addTarget:self action:@selector(deleteFriend) forControlEvents:UIControlEventTouchUpInside];
         [self.btnDelete addTarget:self action:@selector(lengthValue) forControlEvents:UIControlEventTouchUpInside];
-        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.btnDelete.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
         self.btnDelete.backgroundColor = [UIColor cell:StringFromTheoryData(kContent_showValue)];
         //: self.btnDelete.layer.borderWidth = 1;
         self.btnDelete.layer.borderWidth = 1;
@@ -988,12 +988,12 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
     [manager deleteRecentSession:recent];
 }
 
-//: - (FFFRemarksView *)changeRemarksView
+//: - (DisplayRemarksView *)changeRemarksView
 - (GrowingView *)changeRemarksView
 {
     //: if(!_changeRemarksView){
     if(!_changeRemarksView){
-        //: _changeRemarksView = [[FFFRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _changeRemarksView = [[DisplayRemarksView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _changeRemarksView = [[GrowingView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 //        _changeRemarksView.hidden = YES;
 
@@ -1040,7 +1040,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 //        [SVProgressHUD dismiss];
         //: [self.loadingView animationClose];
         [self.loadingView ingatheringBy];
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"add_friend_request_fail"]
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"add_friend_request_fail"]
         [self.view makeToast:[MakeManager cell:StringFromTheoryData(kTitleItemSharedValue)]
                     //: duration:2.0
                     duration:2.0
@@ -1176,9 +1176,9 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
                     //: self.switchNotice.on = needNotify;
                     self.switchNotice.on = needNotify;
 
-                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labRemark.text = self.user.alias.length ? self.user.alias : [DisplayLanguageManager getTextWithKey:@"未设置"];
                     self.labRemark.text = self.user.alias.length ? self.user.alias : [MakeManager cell:StringFromTheoryData(kContent_deviceString)];
-                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [FFFLanguageManager getTextWithKey:@"未设置"];
+                    //: self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [DisplayLanguageManager getTextWithKey:@"未设置"];
                     self.labSign.text = self.user.userInfo.sign.length ? self.user.userInfo.sign : [MakeManager cell:StringFromTheoryData(kContent_deviceString)];
 
                     //: if(isMyFriend){
@@ -1232,7 +1232,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: DisplayContactSelectViewController *vc = [[DisplayContactSelectViewController alloc] initWithConfig:config];
     RecordTitleViewController *vc = [[RecordTitleViewController alloc] initWithSightConfig:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -1266,7 +1266,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 - (void)lengthValue{
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;//@"删除好友后，将同时解除双方的好友关系"
-    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
+    //: UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"] message:[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend_tip"] delegate:nil cancelButtonTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] otherButtonTitles:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"], nil];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[MakeManager cell:StringFromTheoryData(kTitle_placeName)] message:[MakeManager cell:StringFromTheoryData(kTitleFlushData)] delegate:nil cancelButtonTitle:[MakeManager cell:StringFromTheoryData(kText_modelShowData)] otherButtonTitles:[MakeManager cell:StringFromTheoryData(kContentOffString)], nil];
     //: [alert showAlertWithCompletionHandler:^(NSInteger index) {
     [alert tipMessage:^(NSInteger index) {
@@ -1289,7 +1289,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
                 [self.loadingView ingatheringBy];
                 //: if (!error) {
                 if (!error) {
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[MakeManager cell:StringFromTheoryData(kContentItemKnowString)] duration:2.0f position:CSToastPositionCenter];
                     //: [wself refresh];
                     [wself twelvemonth];
@@ -1297,7 +1297,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
                     [self nim];
                 //: }else{
                 }else{
-                    //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                    //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                     [wself.view makeToast:[MakeManager cell:StringFromTheoryData(kName_stopValue)] duration:2.0f position:CSToastPositionCenter];
                 }
             //: }];
@@ -1426,7 +1426,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
             //: NSString *avatar = [data newStringValueForKey:@"avatar"];
             NSString *avatar = [data comment:StringFromTheoryData(kTitle_detailString)];
 
-            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[FFFLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
+            //: NSString *str = [NSString stringWithFormat:@"%@:%@",[DisplayLanguageManager getTextWithKey:@"register_avtivity_account"],self.userAcount];
             NSString *str = [NSString stringWithFormat:@"%@:%@",[MakeManager cell:StringFromTheoryData(kTitle_loopString)],self.userAcount];
             //: self.accountId.text = str;
             self.accountId.text = str;
@@ -1586,9 +1586,9 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
             [_messageBtn addTarget:self action:@selector(pullDisable) forControlEvents:UIControlEventTouchUpInside];
             //: _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _messageBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitleColor:[UIColor colorWithHexString:@"#fffDisplay"] forState:UIControlStateNormal];
             [_messageBtn setTitleColor:[UIColor cell:StringFromTheoryData(kContent_showValue)] forState:UIControlStateNormal];
-            //: [_messageBtn setTitle:[FFFLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
+            //: [_messageBtn setTitle:[DisplayLanguageManager getTextWithKey:@"message_info_activity_message_info"] forState:UIControlStateNormal];
             [_messageBtn setTitle:[MakeManager cell:StringFromTheoryData(kTextModelMessageData)] forState:UIControlStateNormal];
             //: _messageBtn.layer.cornerRadius = 22;
             _messageBtn.layer.cornerRadius = 22;
@@ -1605,9 +1605,9 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
             [_groupBtn addTarget:self action:@selector(willCan) forControlEvents:UIControlEventTouchUpInside];
             //: _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
             _groupBtn.titleLabel.font = [UIFont systemFontOfSize:12];
-            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitleColor:[UIColor colorWithHexString:@"#fffDisplay"] forState:UIControlStateNormal];
             [_groupBtn setTitleColor:[UIColor cell:StringFromTheoryData(kContent_showValue)] forState:UIControlStateNormal];
-            //: [_groupBtn setTitle:[FFFLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
+            //: [_groupBtn setTitle:[DisplayLanguageManager getTextWithKey:@"Group_chat"] forState:UIControlStateNormal];
             [_groupBtn setTitle:[MakeManager cell:StringFromTheoryData(kContent_imageString)] forState:UIControlStateNormal];
             //: _groupBtn.layer.cornerRadius = 22;
             _groupBtn.layer.cornerRadius = 22;
@@ -1653,7 +1653,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         NSString *canAddFriend = [_teamSetingConfig comment:StringFromTheoryData(kTextStandardString)];
         //: if (canAddFriend.integerValue <= 0) {
         if (canAddFriend.integerValue <= 0) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
+            //: [SVProgressHUD showMessage:[DisplayLanguageManager getTextWithKey:@"please_contact_your_administrator"]];
             [SVProgressHUD firstTeam:[MakeManager cell:StringFromTheoryData(kTitleImageViewName)]];
             //: return;
             return;
@@ -1724,11 +1724,11 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 
             //: if (!error) {
             if (!error) {
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_delete_success"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[MakeManager cell:StringFromTheoryData(kContentItemKnowString)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
+                //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"friend_delete_fail"] duration:2.0f position:CSToastPositionCenter];
                 [self.view makeToast:[MakeManager cell:StringFromTheoryData(kName_stopValue)] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];
@@ -1798,9 +1798,9 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image be:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [DisplayKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [PageHelper item:StringFromTheoryData(kTitleRecordString)];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[DisplayKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[PageHelper cell] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -1821,7 +1821,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[MakeManager cell:StringFromTheoryData(kTitle_pinData)]
                              //: duration:2
                              duration:2
@@ -1835,7 +1835,7 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[MakeManager cell:StringFromTheoryData(kTitle_pinData)]
                     //: duration:2
                     duration:2
@@ -1874,11 +1874,11 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
             [self.loadingView ingatheringBy];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_chat_avatar_activity_add_black_success"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[MakeManager cell:StringFromTheoryData(kTitleKnowName)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"black_list_activity_add_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[MakeManager cell:StringFromTheoryData(kText_colorString)] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself twelvemonth];
@@ -1894,11 +1894,11 @@ Byte kTitle_detailString[] = {99, 6, 11, 61, 97, 24, 65, 249, 198, 174, 191, 114
             [self.loadingView ingatheringBy];
             //: if (!error) {
             if (!error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"black_list_activity_remove_black"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[MakeManager cell:StringFromTheoryData(kTitleTapValue)] duration:2.0f position:CSToastPositionCenter];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"black_list_activity_remove_black_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[MakeManager cell:StringFromTheoryData(kTitleItemString)] duration:2.0f position:CSToastPositionCenter];
                 //: [wself refresh];
                 [wself twelvemonth];

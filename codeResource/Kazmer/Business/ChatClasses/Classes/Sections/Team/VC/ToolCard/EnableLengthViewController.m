@@ -139,12 +139,12 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamIntroduceViewController.h"
+//: #import "DisplayTeamIntroduceViewController.h"
 #import "EnableLengthViewController.h"
 //: #import "UITextView+Util.h"
 #import "UITextView+Util.h"
 
-//: @interface FFFTeamIntroduceViewController ()<UITextFieldDelegate, UITextViewDelegate>
+//: @interface DisplayTeamIntroduceViewController ()<UITextFieldDelegate, UITextViewDelegate>
 @interface EnableLengthViewController ()<UITextFieldDelegate, UITextViewDelegate>
 
 
@@ -162,7 +162,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFTeamIntroduceViewController
+//: @implementation DisplayTeamIntroduceViewController
 @implementation EnableLengthViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -219,7 +219,7 @@ typedef struct {
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Group_description"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"Group_description"];
     labtitle.text = [MakeManager cell:[WrapData sharedInstance].kTextWrapString];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -247,7 +247,7 @@ typedef struct {
     self.contentTextView.font = [UIFont systemFontOfSize:16.f];
     //: self.contentTextView.delegate = self;
     self.contentTextView.delegate = self;
-    //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
+    //: self.contentTextView.placeholder = [DisplayLanguageManager getTextWithKey:@"Please_enter_content"];
     self.contentTextView.placeholder = [MakeManager cell:[WrapData sharedInstance].kTitleYoursString];
     //: self.contentTextView.text = self.defaultContent;
     self.contentTextView.text = self.defaultContent;
@@ -271,7 +271,7 @@ typedef struct {
         submitButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
         //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+        //: [submitButton setTitle:[DisplayLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
         [submitButton setTitle:[MakeManager cell:[WrapData sharedInstance].kContentForeignerName] forState:UIControlStateNormal];
         //: [submitButton addTarget:self action:@selector(onSave:) forControlEvents:UIControlEventTouchUpInside];
         [submitButton addTarget:self action:@selector(colorses:) forControlEvents:UIControlEventTouchUpInside];

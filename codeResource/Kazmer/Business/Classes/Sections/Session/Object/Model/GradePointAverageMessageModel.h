@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface USERMessageModel : FFFMessageModel
+//: @interface USERMessageModel : DisplayMessageModel
 @interface GradePointAverageMessageModel : CleanDoing
 
 //: @property (nonatomic, assign) BOOL hiddenSeparatorLine; 

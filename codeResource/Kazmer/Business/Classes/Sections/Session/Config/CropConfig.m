@@ -296,7 +296,7 @@
 // __M_A_C_R_O__
 //: #import "USERSessionConfig.h"
 #import "CropConfig.h"
-//: #import "FFFMediaItem.h"
+//: #import "DisplayMediaItem.h"
 #import "CommingleItem.h"
 //: #import "USERBundleSetting.h"
 #import "UserLabelMan.h"
@@ -308,13 +308,13 @@
 #import "UserLabelMan.h"
 //: #import "NSString+USER.h"
 #import "NSString+Turn.h"
-//: #import "FFFSessionConfig.h"
+//: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
 //: #import "USERSessionUtil.h"
 #import "SessionStandard.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 
 //: @interface USERSessionConfig()
@@ -370,13 +370,13 @@
 - (NSArray<NSNumber *> *)positionShow{
     //: return @[
     return @[
-//        @(FFFInputBarItemTypeMore),
-//        @(FFFInputBarItemTypeEmoticon),
-//             @(FFFInputBarItemTypeVoice),
-             //: @(FFFInputBarItemTypeTextAndRecord),
-             @(FFFInputBarItemTypeTextAndRecord),
-        //: @(FFFInputBarItemTypeSend),
-        @(FFFInputBarItemTypeSend),
+//        @(DisplayInputBarItemTypeMore),
+//        @(DisplayInputBarItemTypeEmoticon),
+//             @(DisplayInputBarItemTypeVoice),
+             //: @(DisplayInputBarItemTypeTextAndRecord),
+             @(DisplayInputBarItemTypeTextAndRecord),
+        //: @(DisplayInputBarItemTypeSend),
+        @(DisplayInputBarItemTypeSend),
             //: ];
             ];
 }
@@ -420,18 +420,18 @@
     return YES;
 }
 
-//: - (NSArray<FFFMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
+//: - (NSArray<DisplayMediaItem *> *)menuItemsWithMessage:(NIMMessage *)message {
 - (NSArray<CommingleItem *> *)inputsed:(NIMMessage *)message {
     //: NSMutableArray *items = [NSMutableArray array];
     NSMutableArray *items = [NSMutableArray array];
 
-    //: FFFMediaItem *Praise = [FFFMediaItem item:@"onTapMenuItemPraise:"
+    //: DisplayMediaItem *Praise = [DisplayMediaItem item:@"onTapMenuItemPraise:"
     CommingleItem *Praise = [CommingleItem garrisonName:[OutdoorData sharedInstance].kTitleThoughString
                                  //: normalImage:[UIImage imageNamed:@"menu_praise"]
                                  heading:[UIImage imageNamed:[OutdoorData sharedInstance].kNameHideText]
                                //: selectedImage:nil
                                with:nil
-                                       //: title:[FFFLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
+                                       //: title:[DisplayLanguageManager getTextWithKey:@"friend_circle_adapter_like"]];
                                        item:[MakeManager cell:[OutdoorData sharedInstance].kText_pullCurrentData]];
 
 //    CommingleItem *reply = [CommingleItem item:@"onTapMenuItemReply:"
@@ -439,22 +439,22 @@
 //                               selectedImage:nil
 //                                       title:LangKey(@"回复")];
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: DisplayMediaItem *copy = [DisplayMediaItem item:@"onTapMenuItemCopy:"
     CommingleItem *copy = [CommingleItem garrisonName:[OutdoorData sharedInstance].kName_vitaminString
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 heading:[UIImage imageNamed:[OutdoorData sharedInstance].kText_immigrantString]
                               //: selectedImage:nil
                               with:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[DisplayLanguageManager getTextWithKey:@"复制"]];
                                       item:[MakeManager cell:@"复制"]];
 
-    //: FFFMediaItem *forword = [FFFMediaItem item:@"onTapMenuItemForword:"
+    //: DisplayMediaItem *forword = [DisplayMediaItem item:@"onTapMenuItemForword:"
     CommingleItem *forword = [CommingleItem garrisonName:[OutdoorData sharedInstance].kNameWheatData
                                    //: normalImage:[UIImage imageNamed:@"menu_forword"]
                                    heading:[UIImage imageNamed:[OutdoorData sharedInstance].kContent_everName]
                                  //: selectedImage:nil
                                  with:nil
-                                         //: title:[FFFLanguageManager getTextWithKey:@"转发"]];
+                                         //: title:[DisplayLanguageManager getTextWithKey:@"转发"]];
                                          item:[MakeManager cell:@"转发"]];
 
 //    CommingleItem *mark = [CommingleItem item:@"onTapMenuItemMark:"
@@ -470,40 +470,40 @@
 //                             selectedImage:nil
 //                                     title:pinTitle];
 
-    //: FFFMediaItem *report = [FFFMediaItem item:@"onTapMenuItemReport:"
+    //: DisplayMediaItem *report = [DisplayMediaItem item:@"onTapMenuItemReport:"
     CommingleItem *report = [CommingleItem garrisonName:[OutdoorData sharedInstance].kTitleLastValue
                                   //: normalImage:[UIImage imageNamed:@"menu_report"]
                                   heading:[UIImage imageNamed:[OutdoorData sharedInstance].kTitle_denseValue]
                                 //: selectedImage:nil
                                 with:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"report_Content"]];
+                                        //: title:[DisplayLanguageManager getTextWithKey:@"report_Content"]];
                                         item:[MakeManager cell:[OutdoorData sharedInstance].kTitleRangeData]];
 
-    //: FFFMediaItem *translation = [FFFMediaItem item:@"onTapMenuItemTranslation:"
+    //: DisplayMediaItem *translation = [DisplayMediaItem item:@"onTapMenuItemTranslation:"
     CommingleItem *translation = [CommingleItem garrisonName:[OutdoorData sharedInstance].kContentHardwareValue
                                   //: normalImage:[UIImage imageNamed:@"menu_translation"]
                                   heading:[UIImage imageNamed:[OutdoorData sharedInstance].kTitleToColorContent]
                                 //: selectedImage:nil
                                 with:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"翻译"]];
+                                        //: title:[DisplayLanguageManager getTextWithKey:@"翻译"]];
                                         item:[MakeManager cell:@"翻译"]];
 
-    //: FFFMediaItem *revoke = [FFFMediaItem item:@"onTapMenuItemRevoke:"
+    //: DisplayMediaItem *revoke = [DisplayMediaItem item:@"onTapMenuItemRevoke:"
     CommingleItem *revoke = [CommingleItem garrisonName:[OutdoorData sharedInstance].kTitleRecordTotalelligenceValue
                                   //: normalImage:[UIImage imageNamed:@"menu_revoke"]
                                   heading:[UIImage imageNamed:[OutdoorData sharedInstance].kContentCountactName]
                                 //: selectedImage:nil
                                 with:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"撤回"]];
+                                        //: title:[DisplayLanguageManager getTextWithKey:@"撤回"]];
                                         item:[MakeManager cell:@"撤回"]];
 
-    //: FFFMediaItem *delete = [FFFMediaItem item:@"onTapMenuItemDelete:"
+    //: DisplayMediaItem *delete = [DisplayMediaItem item:@"onTapMenuItemDelete:"
     CommingleItem *delete = [CommingleItem garrisonName:[OutdoorData sharedInstance].kContentFierceData
                                   //: normalImage:[UIImage imageNamed:@"menu_del"]
                                   heading:[UIImage imageNamed:[OutdoorData sharedInstance].kTextRecentValue]
                                 //: selectedImage:nil
                                 with:nil
-                                        //: title:[FFFLanguageManager getTextWithKey:@"删除"]];
+                                        //: title:[DisplayLanguageManager getTextWithKey:@"删除"]];
                                         item:[MakeManager cell:@"删除"]];
 
 //    CommingleItem *mutiSelect = [CommingleItem item:@"onTapMenuItemMutiSelect:"
@@ -672,7 +672,7 @@
     {
         //: NSString * ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, [index integerValue]];
         NSString * ID = [NSString stringWithFormat:dream_framePathMessage, [index integerValue]];
-        //: NIMInputEmoticon *item = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+        //: NIMInputEmoticon *item = [[DisplayInputEmoticonManager sharedManager] emoticonByID:ID];
         BubbleNameReload *item = [[IndexManager item] tyke:ID];
         //: if (item)
         if (item)

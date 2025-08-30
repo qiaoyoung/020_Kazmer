@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
@@ -20,16 +20,16 @@
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFSessionMessageContentView()
+//: @interface DisplaySessionMessageContentView()
 @interface WithTopView()
 
 //: @end
 @end
 
-//: @implementation FFFSessionMessageContentView
+//: @implementation DisplaySessionMessageContentView
 @implementation WithTopView
 
-//: - (void)refresh:(FFFMessageModel*)data
+//: - (void)refresh:(DisplayMessageModel*)data
 - (void)from:(CleanDoing*)data
 {
     //: _model = data;
@@ -103,7 +103,7 @@
 - (UIImage *)colorLength:(UIControlState)state label:(BOOL)outgoing
 {
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
     ManPull *setting = [[Mortification text].config toWith:self.model.message];
     //: if (state == UIControlStateNormal)
     if (state == UIControlStateNormal)

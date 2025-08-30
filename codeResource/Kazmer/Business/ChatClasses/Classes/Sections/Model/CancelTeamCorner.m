@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfo.h"
+//: #import "DisplayKitInfo.h"
 #import "CancelTeamCorner.h"
 
-//: @implementation FFFKitInfo
+//: @implementation DisplayKitInfo
 @implementation CancelTeamCorner
 
 //: @end

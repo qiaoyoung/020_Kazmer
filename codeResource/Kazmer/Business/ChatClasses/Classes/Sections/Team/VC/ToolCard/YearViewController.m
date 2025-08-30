@@ -30,17 +30,17 @@ Byte kName_safetyText[] = {21, 18, 82, 14, 106, 213, 226, 204, 160, 106, 244, 19
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardSelectedViewController.h"
+//: #import "DisplayTeamCardSelectedViewController.h"
 #import "YearViewController.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
+//: #import "DisplayTeamCartSetTableViewCell.h"
 #import "TableOfContentsView.h"
 
-//: @interface FFFTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
+//: @interface DisplayTeamCardSelectedViewController ()<UITableViewDelegate, UITableViewDataSource>
 @interface YearViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-//: @property (nonatomic, strong) NSMutableArray <id <FFFKitSelectCardData>> *datas;
+//: @property (nonatomic, strong) NSMutableArray <id <DisplayKitSelectCardData>> *datas;
 @property (nonatomic, strong) NSMutableArray <id <ChangeLength>> *datas;
 
 //: @property (nonatomic, strong) UITableView *tableView;
@@ -58,16 +58,16 @@ Byte kName_safetyText[] = {21, 18, 82, 14, 106, 213, 226, 204, 160, 106, 244, 19
 //: @end
 @end
 
-//: @implementation FFFTeamCardSelectedViewController
+//: @implementation DisplayTeamCardSelectedViewController
 @implementation YearViewController
 
 //: + (instancetype)instanceWithTitle:(NSString *)title
 + (instancetype)nameInstance:(NSString *)title
-                            //: items:(NSMutableArray <id <FFFKitSelectCardData>> *)items
+                            //: items:(NSMutableArray <id <DisplayKitSelectCardData>> *)items
                             item:(NSMutableArray <id <ChangeLength>> *)items
                            //: result:(NIMSelectedCompletion)result {
                            must:(NIMSelectedCompletion)result {
-    //: FFFTeamCardSelectedViewController *vc = [[FFFTeamCardSelectedViewController alloc] initWithItems:items];
+    //: DisplayTeamCardSelectedViewController *vc = [[DisplayTeamCardSelectedViewController alloc] initWithItems:items];
     YearViewController *vc = [[YearViewController alloc] initWithColoring:items];
     //: vc.titleString = title ?: @"";
     vc.titleString = title ?: @"";
@@ -77,7 +77,7 @@ Byte kName_safetyText[] = {21, 18, 82, 14, 106, 213, 226, 204, 160, 106, 244, 19
     return vc;
 }
 
-//: - (instancetype)initWithItems:(NSMutableArray <id <FFFKitSelectCardData>> *)items {
+//: - (instancetype)initWithItems:(NSMutableArray <id <DisplayKitSelectCardData>> *)items {
 - (instancetype)initWithColoring:(NSMutableArray <id <ChangeLength>> *)items {
     //: if (self = [super init]) {
     if (self = [super init]) {
@@ -87,7 +87,7 @@ Byte kName_safetyText[] = {21, 18, 82, 14, 106, 213, 226, 204, 160, 106, 244, 19
         _selectedIndex = -1;
         //: __weak typeof(self) weakSelf = self;
         __weak typeof(self) weakSelf = self;
-        //: [items enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //: [items enumerateObjectsUsingBlock:^(id<DisplayKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [items enumerateObjectsUsingBlock:^(id<ChangeLength> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if (obj.selected) {
             if (obj.systemManager) {
@@ -184,7 +184,7 @@ Byte kName_safetyText[] = {21, 18, 82, 14, 106, 213, 226, 204, 160, 106, 244, 19
 - (void)outputManager{
     //: if (_oriSelectedIndex != _selectedIndex) {
     if (_oriSelectedIndex != _selectedIndex) {
-        //: id <FFFKitSelectCardData> bodyData = _datas[_selectedIndex];
+        //: id <DisplayKitSelectCardData> bodyData = _datas[_selectedIndex];
         id <ChangeLength> bodyData = _datas[_selectedIndex];
         //: if (_resultHandle) {
         if (_resultHandle) {
@@ -325,18 +325,18 @@ Byte kName_safetyText[] = {21, 18, 82, 14, 106, 213, 226, 204, 160, 106, 244, 19
 
 //: - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //: id <FFFKitSelectCardData> bodyData = _datas[indexPath.section];
+    //: id <DisplayKitSelectCardData> bodyData = _datas[indexPath.section];
     id <ChangeLength> bodyData = _datas[indexPath.section];
 
 //    TableOfContentsView *cell = [TableOfContentsView cellWithTableView:tableView];
     //: NSString *identifier = [NSString stringWithFormat:@"ZMONTeamCartSet%ld",(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:StringFromEstimatedData(kName_safetyText),(long)indexPath.row];
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: DisplayTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     TableOfContentsView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[DisplayTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[TableOfContentsView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
 
@@ -359,7 +359,7 @@ Byte kName_safetyText[] = {21, 18, 82, 14, 106, 213, 226, 204, 160, 106, 244, 19
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     //: _selectedIndex = indexPath.section;
     _selectedIndex = indexPath.section;
-    //: [_datas enumerateObjectsUsingBlock:^(id<FFFKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    //: [_datas enumerateObjectsUsingBlock:^(id<DisplayKitSelectCardData> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     [_datas enumerateObjectsUsingBlock:^(id<ChangeLength> _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //: BOOL selected = (idx == indexPath.section);
         BOOL selected = (idx == indexPath.section);
@@ -407,7 +407,7 @@ Byte kName_safetyText[] = {21, 18, 82, 14, 106, 213, 226, 204, 160, 106, 244, 19
 //        btnClear.layer.cornerRadius = 24;
         //: btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
         btnClear.frame = CGRectMake(0, 20, [[UIScreen mainScreen] bounds].size.width-30, 48);
-        //: [btnClear setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+        //: [btnClear setTitle:[DisplayLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
         [btnClear setTitle:[MakeManager cell:StringFromEstimatedData(kContent_properString)] forState:UIControlStateNormal];
         //: [btnClear addTarget:self action:@selector(onDone) forControlEvents:UIControlEventTouchUpInside];
         [btnClear addTarget:self action:@selector(outputManager) forControlEvents:UIControlEventTouchUpInside];

@@ -149,7 +149,7 @@
 //: - (void)refreshWithModel:(NIMTeamMember *)member
 - (void)by:(NIMTeamMember *)member
 {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:member.userId keepingOption:nil];
     //: self.titleLabel.text = info.showName;
     self.titleLabel.text = info.showName;

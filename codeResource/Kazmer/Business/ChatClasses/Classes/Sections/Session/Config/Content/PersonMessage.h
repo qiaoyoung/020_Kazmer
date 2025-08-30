@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "DisplayBaseSessionContentConfig.h"
+#import "DisplayBaseSessionContentConfig.h"
 
-//: @interface FFFUnsupportContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface DisplayUnsupportContentConfig : NSObject<CCCSessionContentConfig>
 @interface PersonMessage : NSObject<OnTopConfig>
 //: @end
 @end

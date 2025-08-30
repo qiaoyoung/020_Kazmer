@@ -47,7 +47,7 @@ typedef void(^YLRestFail)(int code, NSString *msg);
 + (NSURLSessionTask *)yieldFail:(NSString *)url content:(NSDictionary *)params voiceButton:(NSArray *)images path:(YLRestSuccess)success name:(YLRestFail)fail;
 
 //: + (NSURLSessionTask *)upload:(NSString *)url params:(NSDictionary *)params data:(NSData *)data success:(YLRestSuccess)success fail:(YLRestFail)fail;
-+ (NSURLSessionTask *)mailCamera:(NSString *)url uploadOnMuffFail:(NSDictionary *)params reply:(NSData *)data fail:(YLRestSuccess)success dredgeOrFailBar:(YLRestFail)fail;
++ (NSURLSessionTask *)mailCamera:(NSString *)url uploadOnMuDisplayail:(NSDictionary *)params reply:(NSData *)data fail:(YLRestSuccess)success dredgeOrFailBar:(YLRestFail)fail;
 
 //: + (NSURLSessionTask *)upload:(NSString *)url params:(NSDictionary *)params file:(NSString *)file success:(YLRestSuccess)success fail:(YLRestFail)fail;
 + (NSURLSessionTask *)ingeminate:(NSString *)url reload:(NSDictionary *)params table:(NSString *)file backgroundOf:(YLRestSuccess)success response:(YLRestFail)fail;

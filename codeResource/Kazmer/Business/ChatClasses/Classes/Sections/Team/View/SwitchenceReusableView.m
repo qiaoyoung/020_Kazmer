@@ -21,29 +21,29 @@ Byte kNameReputationString[] = {79, 15, 88, 14, 222, 226, 61, 34, 231, 219, 242,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardHeaderCell.h"
+//: #import "DisplayCardHeaderCell.h"
 #import "SwitchenceReusableView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFTeamHelper.h"
+//: #import "DisplayTeamHelper.h"
 #import "MaxHelper.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
 
-//: @interface FFFCardHeaderCell()
+//: @interface DisplayCardHeaderCell()
 @interface SwitchenceReusableView()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<DisplayKitCardHeaderData> data;
 @property (nonatomic,strong) id<HalogenComment> data;
 
 //: @end
 @end
 
-//: @implementation FFFCardHeaderCell
+//: @implementation DisplayCardHeaderCell
 @implementation SwitchenceReusableView
 
 //: - (void)layoutSubviews{
@@ -69,7 +69,7 @@ Byte kNameReputationString[] = {79, 15, 88, 14, 222, 226, 61, 34, 231, 219, 242,
 
 }
 
-//: - (void)refreshData:(id<FFFKitCardHeaderData>)data{
+//: - (void)refreshData:(id<DisplayKitCardHeaderData>)data{
 - (void)crop:(id<HalogenComment>)data{
     //: self.data = data;
     self.data = data;
@@ -84,12 +84,12 @@ Byte kNameReputationString[] = {79, 15, 88, 14, 222, 226, 61, 34, 231, 219, 242,
     NSString *showName = data.secret;
     //: if ([data isMyUserId]) {
     if ([data inputId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [DisplayLanguageManager getTextWithKey:@"Group_Me"];
         showName = [MakeManager cell:StringFromGrowData(kTitleWordData)];//@"我".nim_localized;
     }
     //: self.titleLabel.text = showName;
     self.titleLabel.text = showName;
-    //: self.roleImageView.image = [FFFTeamHelper imageWithMemberType:data.userType];
+    //: self.roleImageView.image = [DisplayTeamHelper imageWithMemberType:data.userType];
     self.roleImageView.image = [MaxHelper tip:data.underSession];
     //: [self.titleLabel sizeToFit];
     [self.titleLabel sizeToFit];
@@ -101,7 +101,7 @@ Byte kNameReputationString[] = {79, 15, 88, 14, 222, 226, 61, 34, 231, 219, 242,
     self = [super initWithFrame:frame];
     //: if (self) {
     if (self) {
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
+        //: _imageView = [[DisplayAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         _imageView = [[MemoryImageControl alloc] initWithFrame:CGRectMake(0, 0, 55, 55)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];

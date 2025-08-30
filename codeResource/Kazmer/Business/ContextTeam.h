@@ -16,7 +16,7 @@
 //: @class USERRedPacketConfig;
 @class USERRedPacketConfig;
 
-//: @interface FFFConfig : NSObject
+//: @interface DisplayConfig : NSObject
 @interface ContextTeam : NSObject
 
 // 获取当前域名

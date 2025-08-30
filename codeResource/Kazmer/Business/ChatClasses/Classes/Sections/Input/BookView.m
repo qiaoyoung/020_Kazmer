@@ -25,7 +25,7 @@ PlaceGenderData kText_labDoingHouseValue = (PlaceGenderData){91, (Byte []){29, 1
 //: icon_reply_close
 PlaceGenderData kTitleCompareName = (PlaceGenderData){118, (Byte []){31, 21, 25, 24, 41, 4, 19, 6, 26, 15, 41, 21, 26, 25, 5, 19, 219}, 16, 179, 224, 148, 19};
 
-//: #ffffff
+//: #fffDisplay
 PlaceGenderData kName_properString = (PlaceGenderData){63, (Byte []){28, 89, 89, 89, 89, 89, 89, 20}, 7, 221, 139, 160, 68};
 
 // __DEBUG__
@@ -39,7 +39,7 @@ PlaceGenderData kName_properString = (PlaceGenderData){63, (Byte []){28, 89, 89,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyContentView.h"
+//: #import "DisplayReplyContentView.h"
 #import "BookView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
@@ -48,13 +48,13 @@ PlaceGenderData kName_properString = (PlaceGenderData){63, (Byte []){28, 89, 89,
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 
-//: @interface FFFReplyContentView ()
+//: @interface DisplayReplyContentView ()
 @interface BookView ()
 
 //: @end
 @end
 
-//: @implementation FFFReplyContentView
+//: @implementation DisplayReplyContentView
 @implementation BookView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -65,7 +65,7 @@ PlaceGenderData kName_properString = (PlaceGenderData){63, (Byte []){28, 89, 89,
     //: if (self)
     if (self)
     {
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
         self.backgroundColor = [UIColor cell:StringFromPlaceGenderData(&kName_properString)];
 
         //: UIView *bg = [[UIView alloc]initWithFrame:CGRectMake(15, 2, [[UIScreen mainScreen] bounds].size.width-30, 48)];

@@ -16,7 +16,7 @@ Byte kNameThoughContent[] = {89, 9, 16, 10, 133, 189, 165, 127, 172, 36, 19, 54,
 //: ic_praise%@
 Byte kNameConfrontString[] = {95, 11, 96, 9, 219, 13, 85, 129, 163, 9, 3, 255, 16, 18, 1, 9, 19, 5, 197, 224, 218};
 
-//: ffffff
+//: fffDisplay
 Byte kName_jobValue[] = {27, 6, 4, 6, 214, 21, 98, 98, 98, 98, 98, 98, 144};
 
 //: #333333
@@ -48,43 +48,43 @@ Byte kTitle_ribbonMeantimeData[] = {96, 10, 60, 10, 221, 37, 68, 231, 201, 112, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAdvancedMessageCell.h"
+//: #import "DisplayAdvancedMessageCell.h"
 #import "WithMessageCell.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
-//: #import "FFFQuickCommentCell.h"
+//: #import "DisplayQuickCommentCell.h"
 #import "TranslateReusableView.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "M80AttributedLabel.h"
 #import "LabelNameScrollView.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "DisplayKitQuickCommentUtil.h"
 #import "ControlInside.h"
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+Mortification.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFCollectionViewLeftAlignedLayout.h"
+//: #import "DisplayCollectionViewLeftAlignedLayout.h"
 #import "TagCellViewLayout.h"
 //: #import "M80AttributedLabel.h"
 #import "LabelNameScrollView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
 
-//: static NSString * const kNIMListCellReuseID = @"FFFQuickCommentCell";
+//: static NSString * const kNIMListCellReuseID = @"DisplayQuickCommentCell";
 static NSString * const kUserFormat = @"TranslateReusableView";
 //: static const CGFloat kNIMAdvancedBackgroundPadding = 5;
 static const CGFloat app_attributeStr = 5;
 
-//: @interface FFFAdvancedMessageCell () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+//: @interface DisplayAdvancedMessageCell () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 @interface WithMessageCell () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 //: @property (nonatomic,strong) NSArray *objects;
@@ -96,7 +96,7 @@ static const CGFloat app_attributeStr = 5;
 //: @end
 @end
 
-//: @implementation FFFAdvancedMessageCell
+//: @implementation DisplayAdvancedMessageCell
 @implementation WithMessageCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -155,7 +155,7 @@ static const CGFloat app_attributeStr = 5;
 
         //: _translationView = [[UIView alloc]init];
         _translationView = [[UIView alloc]init];
-        //: _translationView.backgroundColor = [UIColor colorWithHexString:@"ffffff"];
+        //: _translationView.backgroundColor = [UIColor colorWithHexString:@"fffDisplay"];
         _translationView.backgroundColor = [UIColor cell:StringFromWheatColaData(kName_jobValue)];
         //: _translationView.layer.cornerRadius = 8;
         _translationView.layer.cornerRadius = 8;
@@ -175,7 +175,7 @@ static const CGFloat app_attributeStr = 5;
     return self;
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data
+//: - (void)refreshData:(DisplayMessageModel *)data
 - (void)pin:(CleanDoing *)data
 {
 
@@ -330,7 +330,7 @@ static const CGFloat app_attributeStr = 5;
 
     }
 }
-//: - (void)refreshtranslationView:(FFFMessageModel *)data
+//: - (void)refreshtranslationView:(DisplayMessageModel *)data
 - (void)labelClick:(CleanDoing *)data
 {
     //: if([data.message.localExt.allKeys containsObject:@"USERMessageTranslate"])
@@ -394,7 +394,7 @@ static const CGFloat app_attributeStr = 5;
 
 
 
-//: - (void)refreshEmoticonsView:(FFFMessageModel *)data
+//: - (void)refreshEmoticonsView:(DisplayMessageModel *)data
 - (void)mobileView:(CleanDoing *)data
 {
     //: self.objects = nil;
@@ -407,7 +407,7 @@ static const CGFloat app_attributeStr = 5;
     //: self.map = result;
     self.map = result;
     // 按最近评论优先排序
-    //: self.objects = [FFFKitQuickCommentUtil sortedKeys:result];
+    //: self.objects = [DisplayKitQuickCommentUtil sortedKeys:result];
     self.objects = [ControlInside thread:result];
 
     //: if (self.objects.count > 0)
@@ -457,7 +457,7 @@ static const CGFloat app_attributeStr = 5;
 
 }
 
-//: - (void)refreshCollection:(FFFMessageModel *)data
+//: - (void)refreshCollection:(DisplayMessageModel *)data
 - (void)dark:(CleanDoing *)data
 {
     //: if ([data needShowEmoticonsView])
@@ -468,7 +468,7 @@ static const CGFloat app_attributeStr = 5;
         //: if (!collectionView)
         if (!collectionView)
         {
-            //: UICollectionViewFlowLayout *flowLayout = [[FFFCollectionViewLeftAlignedLayout alloc] init];
+            //: UICollectionViewFlowLayout *flowLayout = [[DisplayCollectionViewLeftAlignedLayout alloc] init];
             UICollectionViewFlowLayout *flowLayout = [[TagCellViewLayout alloc] init];
             //: flowLayout.minimumLineSpacing = NIMKitCommentUtilCellPadding;
             flowLayout.minimumLineSpacing = mOwnerIdent;
@@ -478,7 +478,7 @@ static const CGFloat app_attributeStr = 5;
             collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero
                                                 //: collectionViewLayout:flowLayout];
                                                 collectionViewLayout:flowLayout];
-            //: [collectionView registerClass:[FFFQuickCommentCell class] forCellWithReuseIdentifier:kNIMListCellReuseID];
+            //: [collectionView registerClass:[DisplayQuickCommentCell class] forCellWithReuseIdentifier:kNIMListCellReuseID];
             [collectionView registerClass:[TranslateReusableView class] forCellWithReuseIdentifier:kUserFormat];
             //: self.emoticonsContainerView = collectionView;
             self.emoticonsContainerView = collectionView;
@@ -497,7 +497,7 @@ static const CGFloat app_attributeStr = 5;
     }
 }
 
-//: - (void)refreshPinView:(FFFMessageModel *)data
+//: - (void)refreshPinView:(DisplayMessageModel *)data
 - (void)viewReloadItem:(CleanDoing *)data
 {
     //: if (data.pinUserName.length && data.shouldShowPinContent)
@@ -516,7 +516,7 @@ static const CGFloat app_attributeStr = 5;
     }
 }
 
-//: - (void)refreshReplyCountView:(FFFMessageModel *)data
+//: - (void)refreshReplyCountView:(DisplayMessageModel *)data
 - (void)secret:(CleanDoing *)data
 {
     //: NSInteger count = data.childMessagesCount;
@@ -779,7 +779,7 @@ static const CGFloat app_attributeStr = 5;
 //: - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //: FFFQuickCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNIMListCellReuseID forIndexPath:indexPath];
+    //: DisplayQuickCommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNIMListCellReuseID forIndexPath:indexPath];
     TranslateReusableView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kUserFormat forIndexPath:indexPath];
     //: NSNumber *number = [self.objects objectAtIndex:indexPath.item];
     NSNumber *number = [self.objects objectAtIndex:indexPath.item];
@@ -801,7 +801,7 @@ static const CGFloat app_attributeStr = 5;
     NSNumber *number = [self.objects objectAtIndex:indexPath.item];
     //: NSArray *comments = [self.map objectForKey:number];
     NSArray *comments = [self.map objectForKey:number];
-    //: CGSize size = [FFFKitQuickCommentUtil itemSizeWithComments:comments];
+    //: CGSize size = [DisplayKitQuickCommentUtil itemSizeWithComments:comments];
     CGSize size = [ControlInside overItem:comments];
     //: return size;
     return size;
@@ -817,7 +817,7 @@ static const CGFloat app_attributeStr = 5;
 //: - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //: NIMQuickComment *comment = [FFFKitQuickCommentUtil myCommentFromComments:indexPath.item
+    //: NIMQuickComment *comment = [DisplayKitQuickCommentUtil myCommentFromComments:indexPath.item
     NIMQuickComment *comment = [ControlInside pinComments:indexPath.item
                                                                  //: keys:self.objects
                                                                  by:self.objects

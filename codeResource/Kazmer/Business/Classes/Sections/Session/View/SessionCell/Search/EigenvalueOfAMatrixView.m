@@ -18,7 +18,7 @@
 #import "SessionStandard.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 
 //: CGFloat SearchCellTitleFontSize = 13.f;
@@ -51,7 +51,7 @@ CGFloat dream_dataFormat = 15.f; //cell的高度是由文本高度决定的。�
 //: @interface USERSearchMessageContentCell()
 @interface EigenvalueOfAMatrixView()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) DisplayAvatarImageView *avatar;
 @property (nonatomic,strong) MemoryImageControl *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -78,7 +78,7 @@ CGFloat dream_dataFormat = 15.f; //cell的高度是由文本高度决定的。�
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     //: if (self) {
     if (self) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+        //: _avatar = [[DisplayAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         _avatar = [[MemoryImageControl alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -115,7 +115,7 @@ CGFloat dream_dataFormat = 15.f; //cell的高度是由文本高度决定的。�
     self.object = object;
     //: NIMMessage *message = object.message;
     NIMMessage *message = object.message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:message.from option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:message.from keepingOption:nil];
     //: NSURL *avatarURL;
     NSURL *avatarURL;

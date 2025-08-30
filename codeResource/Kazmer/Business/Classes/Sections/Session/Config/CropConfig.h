@@ -12,9 +12,9 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFSessionConfig;
+//: @class DisplaySessionConfig;
 @class ColorConfig;
-//: @interface USERSessionConfig : NSObject<FFFSessionConfig>
+//: @interface USERSessionConfig : NSObject<DisplaySessionConfig>
 @interface CropConfig : NSObject<ColorConfig>
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;

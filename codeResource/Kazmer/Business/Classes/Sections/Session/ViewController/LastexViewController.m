@@ -240,7 +240,7 @@
     return should;
 }
 
-//: - (id<FFFSessionConfig>)sessionConfig
+//: - (id<DisplaySessionConfig>)sessionConfig
 - (id<ColorConfig>)sessionConfig
 {
     //: if (_sessionConfig == nil) {

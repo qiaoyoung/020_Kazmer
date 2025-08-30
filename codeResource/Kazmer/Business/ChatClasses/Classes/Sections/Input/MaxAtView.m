@@ -21,11 +21,11 @@ Byte kNameClimateData[] = {10, 22, 30, 11, 51, 235, 127, 172, 99, 232, 48, 135, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputMoreContainerView.h"
+//: #import "DisplayInputMoreContainerView.h"
 #import "MaxAtView.h"
-//: #import "FFFPageView.h"
+//: #import "DisplayPageView.h"
 #import "MarginView.h"
-//: #import "FFFMediaItem.h"
+//: #import "DisplayMediaItem.h"
 #import "CommingleItem.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
@@ -48,7 +48,7 @@ NSInteger k_formatId = 11;
 
 
 
-//: @interface FFFInputMoreContainerView() <FFFPageViewDataSource,FFFPageViewDelegate,CustomMediaPickerViewDelegate>
+//: @interface DisplayInputMoreContainerView() <DisplayPageViewDataSource,DisplayPageViewDelegate,CustomMediaPickerViewDelegate>
 @interface MaxAtView() <CellMessageTag,SecondNameDelegate,YearDelegate>
 {
     //: NSArray *_mediaButtons;
@@ -58,13 +58,13 @@ NSInteger k_formatId = 11;
 }
 
 
-//: @property (nonatomic, strong) FFFPageView *pageView;
+//: @property (nonatomic, strong) DisplayPageView *pageView;
 @property (nonatomic, strong) MarginView *pageView;
 
 //: @end
 @end
 
-//: @implementation FFFInputMoreContainerView
+//: @implementation DisplayInputMoreContainerView
 @implementation MaxAtView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -96,7 +96,7 @@ NSInteger k_formatId = 11;
     return self;
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config
+//: - (void)setConfig:(id<DisplaySessionConfig>)config
 - (void)setConfig:(id<ColorConfig>)config
 {
     //: _config = config;
@@ -194,7 +194,7 @@ NSInteger k_formatId = 11;
         //: items = [self.config mediaItems];
         items = [self.config cypherCell];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(DisplayMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(CommingleItem *item, NSUInteger idx, BOOL *stop) {
         //: [mediaItems addObject:item];
         [mediaItems addObject:item];
@@ -278,7 +278,7 @@ NSInteger k_formatId = 11;
 
 //: #pragma mark PageViewDataSource
 #pragma mark PageViewDataSource
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView
+//: - (NSInteger)numberOfPages: (DisplayPageView *)pageView
 - (NSInteger)directionned: (MarginView *)pageView
 {
     //: NSInteger count = [_mediaButtons count] / NIMMaxItemCountInPage;
@@ -289,7 +289,7 @@ NSInteger k_formatId = 11;
     return ((count) > (1) ? (count) : (1));
 }
 
-//: - (UIView*)mediaPageView:(FFFPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
+//: - (UIView*)mediaPageView:(DisplayPageView*)pageView beginItem:(NSInteger)begin endItem:(NSInteger)end
 - (UIView*)menuItem:(MarginView*)pageView keep:(NSInteger)begin to:(NSInteger)end
 {
     //: UIView *subView = [[UIView alloc] init];
@@ -343,7 +343,7 @@ NSInteger k_formatId = 11;
     return subView;
 }
 
-//: - (UIView*)oneLineMediaInPageView:(FFFPageView *)pageView
+//: - (UIView*)oneLineMediaInPageView:(DisplayPageView *)pageView
 - (UIView*)send:(MarginView *)pageView
                        //: viewInPage: (NSInteger)index
                        text: (NSInteger)index
@@ -373,7 +373,7 @@ NSInteger k_formatId = 11;
     return subView;
 }
 
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index
+//: - (UIView *)pageView: (DisplayPageView *)pageView viewInPage: (NSInteger)index
 - (UIView *)sight: (MarginView *)pageView modelBlueBackground: (NSInteger)index
 {
     //: if ([_mediaButtons count] == 2 || [_mediaButtons count] == 3) 
@@ -412,7 +412,7 @@ NSInteger k_formatId = 11;
 {
     //: NSInteger index = [(UIButton *)sender tag];
     NSInteger index = [(UIButton *)sender tag];
-    //: FFFMediaItem *item = _mediaItems[index];
+    //: DisplayMediaItem *item = _mediaItems[index];
     CommingleItem *item = _mediaItems[index];
     //: if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(onTapMediaItem:)]) {
     if (_actionDelegate && [_actionDelegate respondsToSelector:@selector(messageTable:)]) {

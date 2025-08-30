@@ -98,10 +98,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupEditTableViewCell.h"
+//: #import "DisplayGroupEditTableViewCell.h"
 #import "TitleSizeViewCell.h"
 
-//: @implementation FFFGroupEditTableViewCell
+//: @implementation DisplayGroupEditTableViewCell
 @implementation TitleSizeViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

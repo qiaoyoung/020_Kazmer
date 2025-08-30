@@ -15,16 +15,16 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: typedef NS_ENUM(NSUInteger, FFFTextHighlightType) {
-typedef NS_ENUM(NSUInteger, FFFTextHighlightType) {
-    //: FFFTextHighlightTypeDefault = 0, 
-    FFFTextHighlightTypeDefault = 0, /// 服务下发了不认识的类型
-    //: FFFTextHighlightTypeEmoji,
-    FFFTextHighlightTypeEmoji,
+//: typedef NS_ENUM(NSUInteger, DisplayTextHighlightType) {
+typedef NS_ENUM(NSUInteger, DisplayTextHighlightType) {
+    //: DisplayTextHighlightTypeDefault = 0, 
+    DisplayTextHighlightTypeDefault = 0, /// 服务下发了不认识的类型
+    //: DisplayTextHighlightTypeEmoji,
+    DisplayTextHighlightTypeEmoji,
 //: };
 };
 
-//: @interface FFFTextHighlight : YYTextHighlight
+//: @interface DisplayTextHighlight : YYTextHighlight
 @interface SpectralColorTitleHighlight : YYTextHighlight
 
 //: @property (nonatomic, copy) NSString *link;
@@ -33,8 +33,8 @@ typedef NS_ENUM(NSUInteger, FFFTextHighlightType) {
 @property (nonatomic, copy) NSString *text;
 //: @property (nonatomic, assign) BOOL needFollow; 
 @property (nonatomic, assign) BOOL needFollow;//点击发布后自动关注@对象
-//: @property (nonatomic, assign) FFFTextHighlightType type;
-@property (nonatomic, assign) FFFTextHighlightType type;
+//: @property (nonatomic, assign) DisplayTextHighlightType type;
+@property (nonatomic, assign) DisplayTextHighlightType type;
 //: @property (nonatomic, copy) NSString *textId;
 @property (nonatomic, copy) NSString *textId;
 //: @property (nonatomic, assign) BOOL associate; 

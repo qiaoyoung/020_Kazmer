@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.h
+//  DisplayBaseSessionContentConfig.h
 // Mortification
 //
 //  Created by amao on 9/15/15.
@@ -13,8 +13,8 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 
 //: @protocol CCCSessionContentConfig <NSObject>
 @protocol OnTopConfig <NSObject>
@@ -39,7 +39,7 @@
 //: @end
 @end
 
-//: @interface FFFSessionContentConfigFactory : NSObject
+//: @interface DisplaySessionContentConfigFactory : NSObject
 @interface SumryCrop : NSObject
 //: + (instancetype)sharedFacotry;
 + (instancetype)transferFacotry;

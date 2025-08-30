@@ -109,9 +109,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDataCell.h"
+//: #import "DisplayContactDataCell.h"
 #import "ContactViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
@@ -120,13 +120,13 @@
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 
-//: @interface FFFContactDataCell()
+//: @interface DisplayContactDataCell()
 @interface ContactViewCell()
 
 //: @end
 @end
 
-//: @implementation FFFContactDataCell
+//: @implementation DisplayContactDataCell
 @implementation ContactViewCell
 
 //: - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated{
@@ -173,13 +173,13 @@
     [self rubric:member.tabTitle];
     //: self.memberId = [member memberId];
     self.memberId = [member littleLeagueTeam];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:self.memberId keepingOption:nil];
     //: [self refreshAvatar:info];
     [self manager:info];
 }
 
-//: - (void)refreshAvatar:(FFFKitInfo *)info{
+//: - (void)refreshAvatar:(DisplayKitInfo *)info{
 - (void)manager:(CancelTeamCorner *)info{
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
@@ -193,7 +193,7 @@
     [self rubric:team.teamName];
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     CancelTeamCorner *info = [[Mortification text] ability:self.memberId naturalEvent_strong:nil];
     //: [self refreshAvatar:info];
     [self manager:info];
@@ -216,7 +216,7 @@
         [self.contentView addSubview:bgView];
 
 
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
+        //: _avatarImageView = [[DisplayAvatarImageView alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         _avatarImageView = [[MemoryImageControl alloc] initWithFrame:CGRectMake(15, 12, 48, 48)];
         //: [_avatarImageView addTarget:self action:@selector(onPressAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [_avatarImageView addTarget:self action:@selector(instanceAvatar:) forControlEvents:UIControlEventTouchUpInside];

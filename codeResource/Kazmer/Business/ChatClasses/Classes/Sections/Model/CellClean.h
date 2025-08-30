@@ -17,7 +17,7 @@
 //: @class NIMMessage;
 @class NIMMessage;
 
-//: @interface FFFKitInfoFetchOption : NSObject
+//: @interface DisplayKitInfoFetchOption : NSObject
 @interface CellClean : NSObject
 
 /**

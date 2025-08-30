@@ -14,7 +14,7 @@
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface USERCellLayoutConfig : FFFCellLayoutConfig<FFFCellLayoutConfig>
+//: @interface USERCellLayoutConfig : DisplayCellLayoutConfig<DisplayCellLayoutConfig>
 @interface LabelLayoutConfig : CellManWith<CellManWith>
 
 //: @end

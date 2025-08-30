@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 
-//: @implementation FFFKitInfoFetchOption
+//: @implementation DisplayKitInfoFetchOption
 @implementation CellClean
 
 //: @end

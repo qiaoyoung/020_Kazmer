@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFCardDataSourceProtocol.h
+//  DisplayCardDataSourceProtocol.h
 //  NIM
 //
 //  Created by chris on 15/3/5.
@@ -16,10 +16,10 @@
 
 // __M_A_C_R_O__
 
-//: @protocol FFFKitSelectCardData;
+//: @protocol DisplayKitSelectCardData;
 @protocol ChangeLength;
 
-//: typedef void(^NIMTeamCardRowSelectedBlock)(id <FFFKitSelectCardData> item);
+//: typedef void(^NIMTeamCardRowSelectedBlock)(id <DisplayKitSelectCardData> item);
 typedef void(^NIMTeamCardRowSelectedBlock)(id <ChangeLength> item);
 
 //: typedef NS_ENUM(NSInteger, NIMKitCardHeaderOpeator){
@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, NIMKitTeamCardRowItemType) {
 //: };
 };
 
-//: @protocol FFFKitCardHeaderData <NSObject>
+//: @protocol DisplayKitCardHeaderData <NSObject>
 @protocol HalogenComment <NSObject>
 
 //: - (NSString*)teamId;
@@ -89,7 +89,7 @@ typedef NS_ENUM(NSInteger, NIMKitTeamCardRowItemType) {
 //: @end
 @end
 
-//: @protocol FFFKitSelectCardData <NSObject>
+//: @protocol DisplayKitSelectCardData <NSObject>
 @protocol ChangeLength <NSObject>
 
 //: - (id)value;
@@ -128,7 +128,7 @@ typedef NS_ENUM(NSInteger, NIMKitTeamCardRowItemType) {
 //: - (NIMTeamCardRowSelectedBlock)selectedBlock;
 - (NIMTeamCardRowSelectedBlock)tab;
 
-//: - (NSMutableArray <id <FFFKitSelectCardData>> *)optionItems;
+//: - (NSMutableArray <id <DisplayKitSelectCardData>> *)optionItems;
 - (NSMutableArray <id <ChangeLength>> *)maturityDate;
 
 //: @optional

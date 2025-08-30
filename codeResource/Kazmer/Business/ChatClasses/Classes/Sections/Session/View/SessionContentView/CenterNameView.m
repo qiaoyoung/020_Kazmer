@@ -94,16 +94,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionRtcCallRecordContentView.h"
+//: #import "DisplaySessionRtcCallRecordContentView.h"
 #import "CenterNameView.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 
-//: @implementation FFFSessionRtcCallRecordContentView
+//: @implementation DisplaySessionRtcCallRecordContentView
 @implementation CenterNameView
 
 //: - (instancetype)initSessionMessageContentView
@@ -130,17 +130,17 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(DisplayMessageModel *)data {
 - (void)from:(CleanDoing *)data {
     //: [super refresh:data];
     [super from:data];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ManPull *setting = [[Mortification text].config toWith:data.message];
     //: self.textLabel.textColor = setting.textColor;
     self.textLabel.textColor = setting.textColor;
     //: self.textLabel.font = setting.font;
     self.textLabel.font = setting.font;
-    //: self.textLabel.text = [FFFKitUtil messageTipContent:data.message];
+    //: self.textLabel.text = [DisplayKitUtil messageTipContent:data.message];
     self.textLabel.text = [AtPull view:data.message];
 
     //: NIMRtcCallRecordObject *record = data.message.messageObject;

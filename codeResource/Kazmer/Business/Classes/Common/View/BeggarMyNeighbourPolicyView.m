@@ -260,7 +260,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:[[ForgeData sharedInstance] kTitle_riceData]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"reject"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"reject"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:[[ForgeData sharedInstance] kTextProgressValue]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -308,7 +308,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"agree"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"agree"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:[[ForgeData sharedInstance] kNameDevoteText]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor cell:[[ForgeData sharedInstance] kTitleHoweverData]];

@@ -17,7 +17,7 @@ extern NSString *const k_frameMessage(NSString *value); //自定义消息阅后�
 //: extern NSString *const NIMDemoEventNameCloseSnapPicture; 
 extern NSString *const noti_nameEventResponseStr(NSString *value); //自定义消息阅后即焚，关闭阅后即焚预览窗口
 
-//: @interface USERSessionSnapchatContentView : FFFSessionMessageContentView
+//: @interface USERSessionSnapchatContentView : DisplaySessionMessageContentView
 @interface RowContentView : WithTopView
 
 //: @end

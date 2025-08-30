@@ -268,7 +268,7 @@
         title_1.font = [UIFont boldSystemFontOfSize:25];
         //: title_1.textAlignment = NSTextAlignmentCenter;
         title_1.textAlignment = NSTextAlignmentCenter;
-        //: title_1.text = [FFFLanguageManager getTextWithKey:@"sign_gold_title"];
+        //: title_1.text = [DisplayLanguageManager getTextWithKey:@"sign_gold_title"];
         title_1.text = [MakeManager cell:[[FileData sharedInstance] kTextRecentName]];
         //: [topImageView addSubview:title_1];
         [topImageView addSubview:title_1];
@@ -293,7 +293,7 @@
         title_2.textAlignment = NSTextAlignmentCenter;
         //: title_2.font = [UIFont boldSystemFontOfSize:15];
         title_2.font = [UIFont boldSystemFontOfSize:15];
-        //: title_2.text = [FFFLanguageManager getTextWithKey:@"sign_keep_title"];
+        //: title_2.text = [DisplayLanguageManager getTextWithKey:@"sign_keep_title"];
         title_2.text = [MakeManager cell:[[FileData sharedInstance] kText_violenceName]];
         //: [topImageView addSubview:title_2];
         [topImageView addSubview:title_2];
@@ -319,7 +319,7 @@
         closeButton.titleLabel.font = [UIFont systemFontOfSize:15];
         //: closeButton.backgroundColor = [UIColor colorWithHexString:@"#EE4A5C"];
         closeButton.backgroundColor = [UIColor cell:[[FileData sharedInstance] kNameMonthData]];
-        //: [closeButton setTitle:[FFFLanguageManager getTextWithKey:@"dialog_sign_now"] forState:UIControlStateNormal];
+        //: [closeButton setTitle:[DisplayLanguageManager getTextWithKey:@"dialog_sign_now"] forState:UIControlStateNormal];
         [closeButton setTitle:[MakeManager cell:[[FileData sharedInstance] kNameBridgeString]] forState:UIControlStateNormal];
         //: [closeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [closeButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

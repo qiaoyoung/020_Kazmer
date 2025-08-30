@@ -40,7 +40,7 @@
 @implementation MakeMember
 
 //: - (NSString *)memberId{
-- (NSString *)corner{
+- (NSString *)littleLeagueTeam{
     //: return self.userId;
     return self.userId;
 }

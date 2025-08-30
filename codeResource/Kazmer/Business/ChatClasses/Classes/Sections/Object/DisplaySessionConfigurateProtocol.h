@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFSessionConfigurateProtocol.h
+//  DisplaySessionConfigurateProtocol.h
 // Mortification
 //
 //  Created by chris on 2016/11/7.
@@ -9,7 +9,7 @@
 //
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 
 // __M_A_C_R_O__
@@ -90,10 +90,10 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //: - (void)insertMessages:(NSArray *)messages;
 - (void)managerMessages:(NSArray *)messages;
 
-//: - (FFFMessageModel *)updateMessage:(NIMMessage *)message;
+//: - (DisplayMessageModel *)updateMessage:(NIMMessage *)message;
 - (CleanDoing *)valueInfo:(NIMMessage *)message;
 
-//: - (FFFMessageModel *)deleteMessage:(NIMMessage *)message;
+//: - (DisplayMessageModel *)deleteMessage:(NIMMessage *)message;
 - (CleanDoing *)date:(NIMMessage *)message;
 
 //: - (void)addPinForMessage:(NIMMessage *)message;
@@ -109,7 +109,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //: - (void)markRead:(BOOL)needMarkDataModel;
 - (void)block:(BOOL)needMarkDataModel;
 
-//: - (FFFMessageModel *)findMessageModel:(NIMMessage *)message;
+//: - (DisplayMessageModel *)findMessageModel:(NIMMessage *)message;
 - (CleanDoing *)telegram:(NIMMessage *)message;
 
 //: - (BOOL)shouldHandleReceipt;
@@ -136,7 +136,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 //: - (void)loadMessagePins:(void (^)(NSError *error))handler;
 - (void)mark:(void (^)(NSError *error))handler;
 
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(DisplayMessageModel *)model;
 - (void)viewWith:(CleanDoing *)model;
 
 //排版接口
@@ -154,7 +154,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 - (void)attract;
 
 //按钮响应接口
-//: - (void)mediaAudioPressed:(FFFMessageModel *)messageModel;
+//: - (void)mediaAudioPressed:(DisplayMessageModel *)messageModel;
 - (void)record:(CleanDoing *)messageModel;
 
 //: - (void)mediaPicturePressed;
@@ -182,7 +182,7 @@ typedef NS_ENUM(NSUInteger, NIMKitSessionState) {
 - (void)setMark:(NIMKitSessionState)sessionState;
 
 //: - (void)setReferenceMessage:(NIMMessage *)message;
-- (void)setMessage:(NIMMessage *)message;
+- (void)setReferenceMessage:(NIMMessage *)message;
 
 //: @end
 @end

@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFMediaItem : NSObject
+//: @interface DisplayMediaItem : NSObject
 @interface CommingleItem : NSObject
 
 //: @property (nonatomic,copy) NSString *title;
@@ -27,7 +27,7 @@
 //: @property (nonatomic,strong) UIImage *selectedImage;
 @property (nonatomic,strong) UIImage *selectedImage;
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (DisplayMediaItem *)item:(NSString *)selector
 + (CommingleItem *)garrisonName:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            heading:(UIImage *)normalImage

@@ -429,13 +429,13 @@ typedef struct {
         } else if (status == SGPermissionStatusDenied) {
 
 
-            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"] message:[DisplayLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
             UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MakeManager cell:[ProcrusteanBedData kText_topName]] message:[MakeManager cell:[ProcrusteanBedData kTitle_showText]] preferredStyle:UIAlertControllerStyleAlert];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[ProcrusteanBedData kNameErrorData]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             //: }])];
             }])];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[ProcrusteanBedData kTitle_withValue]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                 NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -457,13 +457,13 @@ typedef struct {
 //                [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //            }
 
-            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+            //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"] message:[DisplayLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
             UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MakeManager cell:[ProcrusteanBedData kText_topName]] message:[MakeManager cell:[ProcrusteanBedData kTitle_showText]] preferredStyle:UIAlertControllerStyleAlert];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[ProcrusteanBedData kNameErrorData]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             //: }])];
             }])];
-            //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[ProcrusteanBedData kTitle_withValue]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                 NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];

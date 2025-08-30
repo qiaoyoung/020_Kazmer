@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitAudioCenter.h"
+//: #import "DisplayKitAudioCenter.h"
 #import "CommixCenter.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 
-//: @interface FFFKitAudioCenter()<NIMMediaManagerDelegate>
+//: @interface DisplayKitAudioCenter()<NIMMediaManagerDelegate>
 @interface CommixCenter()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,assign) NSInteger retryCount;
@@ -23,19 +23,19 @@
 //: @end
 @end
 
-//: @implementation FFFKitAudioCenter
+//: @implementation DisplayKitAudioCenter
 @implementation CommixCenter
 
 //: + (instancetype)instance
 + (instancetype)emptyDataTeam
 {
-    //: static FFFKitAudioCenter *instance;
+    //: static DisplayKitAudioCenter *instance;
     static CommixCenter *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitAudioCenter alloc] init];
+        //: instance = [[DisplayKitAudioCenter alloc] init];
         instance = [[CommixCenter alloc] init];
     //: });
     });

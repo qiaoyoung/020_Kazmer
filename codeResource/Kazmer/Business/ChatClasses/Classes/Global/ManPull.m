@@ -37,12 +37,12 @@ AnimaData kTitleFolioName = (AnimaData){235, (Byte []){130, 136, 132, 133, 180, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "DisplayKitSetting.h"
 #import "ManPull.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 
-//: @implementation FFFKitSetting
+//: @implementation DisplayKitSetting
 @implementation ManPull
 
 //: - (instancetype)init:(BOOL)isRight

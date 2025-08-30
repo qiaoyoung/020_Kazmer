@@ -39,20 +39,20 @@ Byte kTitle_clerkString[] = {20, 3, 72, 10, 217, 235, 14, 142, 146, 28, 37, 40, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaPickerController.h"
+//: #import "DisplayKitMediaPickerController.h"
 #import "ViewKitNavigationController.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "DisplayKitProgressHUD.h"
 #import "NameMessageEffectView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
+//: #import "DisplayKitFileLocationHelper.h"
 #import "PageHelper.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
-//: @interface FFFKitMediaPickerController ()<TZImagePickerControllerDelegate>
+//: @interface DisplayKitMediaPickerController ()<TZImagePickerControllerDelegate>
 @interface ViewKitNavigationController ()<TZImagePickerControllerDelegate>
 
 //: @property (nonatomic, assign) UIStatusBarStyle myStatusBarStyle;
@@ -61,7 +61,7 @@ Byte kTitle_clerkString[] = {20, 3, 72, 10, 217, 235, 14, 142, 146, 28, 37, 40, 
 //: @end
 @end
 
-//: @implementation FFFKitMediaPickerController
+//: @implementation DisplayKitMediaPickerController
 @implementation ViewKitNavigationController
 
 //: - (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount {
@@ -185,11 +185,11 @@ Byte kTitle_clerkString[] = {20, 3, 72, 10, 217, 235, 14, 142, 146, 28, 37, 40, 
 
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self requestAsset:assets.firstObject handler:^(NSString *path, PHAssetMediaType type) {
     [self appInfoRecording:assets.firstObject session:^(NSString *path, PHAssetMediaType type) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if ([weakSelf.nim_delegate respondsToSelector:@selector(onPickerSelectedWithType:images:path:)]) {
         if ([weakSelf.nim_delegate respondsToSelector:@selector(pressed:outsideStreetwise:team:)]) {
@@ -240,9 +240,9 @@ Byte kTitle_clerkString[] = {20, 3, 72, 10, 217, 235, 14, 142, 146, 28, 37, 40, 
                 } else {
                     //: AVURLAsset *URLAsset = (AVURLAsset *)assetR;
                     AVURLAsset *URLAsset = (AVURLAsset *)assetR;
-                    //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+                    //: NSString *outputFileName = [DisplayKitFileLocationHelper genFilenameWithExt:@"mp4"];
                     NSString *outputFileName = [PageHelper item:StringFromConsistData(kTitle_clerkString)];
-                    //: outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+                    //: outputPath = [DisplayKitFileLocationHelper filepathForVideo:outputFileName];
                     outputPath = [PageHelper background:outputFileName];
                     //: BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];
                     BOOL fileExist = [[NSFileManager defaultManager] fileExistsAtPath:URLAsset.URL.path];

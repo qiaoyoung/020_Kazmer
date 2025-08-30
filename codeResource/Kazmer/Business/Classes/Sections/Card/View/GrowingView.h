@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: typedef void(^SpeiceBackBlock) (NSString *nickName);
 typedef void(^SpeiceBackBlock) (NSString *nickName);
 
-//: @interface FFFRemarksView : UIView
+//: @interface DisplayRemarksView : UIView
 @interface GrowingView : UIView
 
 //: @property (nonatomic, strong) NIMUser *user;

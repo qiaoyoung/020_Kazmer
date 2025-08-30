@@ -9,38 +9,38 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellLayoutConfig.h"
+//: #import "DisplayCellLayoutConfig.h"
 #import "CellManWith.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "DisplaySessionUnknowContentView.h"
 #import "ViewControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "DisplayBaseSessionContentConfig.h"
+#import "DisplayBaseSessionContentConfig.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFCellLayoutConfig()
+//: @interface DisplayCellLayoutConfig()
 @interface CellManWith()
 
 //: @end
 @end
 
-//: @implementation FFFCellLayoutConfig
+//: @implementation DisplayCellLayoutConfig
 @implementation CellManWith
 
-//: - (BOOL)shouldDisplayBubbleBackground:(FFFMessageModel *)model
+//: - (BOOL)shouldDisplayBubbleBackground:(DisplayMessageModel *)model
 - (BOOL)airBubble:(CleanDoing *)model
 {
-    //: id<CCCSessionContentConfig> config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig> config = [[DisplaySessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<OnTopConfig> config = [[SumryCrop transferFacotry] standard:model.message];
     //: if ([config respondsToSelector:@selector(enableBackgroundBubbleView:)])
     if ([config respondsToSelector:@selector(scaling:)])
@@ -52,10 +52,10 @@
     return YES;
 }
 
-//: - (UIEdgeInsets)replyCellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)replyCellInsets:(DisplayMessageModel *)model
 - (UIEdgeInsets)title:(CleanDoing *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"DisplaySessionNotificationContentView"]) {
     if ([[self compartment:model] isEqualToString:@"VanguardNameView"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -87,7 +87,7 @@
 }
 
 
-//: - (CGPoint)avatarMargin:(FFFMessageModel *)model
+//: - (CGPoint)avatarMargin:(DisplayMessageModel *)model
 - (CGPoint)sizeSend:(CleanDoing *)model
 {
     //: return CGPointMake(8.f, 0.f);
@@ -95,48 +95,48 @@
 }
 
 
-//: - (CGSize)contentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth{
+//: - (CGSize)contentSize:(DisplayMessageModel *)model cellWidth:(CGFloat)cellWidth{
 - (CGSize)viewBar:(CleanDoing *)model tinkle:(CGFloat)cellWidth{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[DisplaySessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<OnTopConfig>config = [[SumryCrop transferFacotry] standard:model.message];
     //: return [config contentSize:cellWidth message:model.message];
     return [config step:cellWidth menu:model.message];
 }
 
-//: - (UIEdgeInsets)contentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)contentViewInsets:(DisplayMessageModel *)model{
 - (UIEdgeInsets)old:(CleanDoing *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[DisplaySessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<OnTopConfig>config = [[SumryCrop transferFacotry] standard:model.message];
     //: return [config contentViewInsets:model.message];
     return [config nameSearched:model.message];
 }
 
 
-//: - (CGSize)avatarSize:(FFFMessageModel *)model
+//: - (CGSize)avatarSize:(DisplayMessageModel *)model
 - (CGSize)message:(CleanDoing *)model
 {
     //: return CGSizeMake(36, 36);
     return CGSizeMake(36, 36);
 }
 
-//: - (NSString *)replyContent:(FFFMessageModel *)model {
+//: - (NSString *)replyContent:(DisplayMessageModel *)model {
 - (NSString *)searchedAcross:(CleanDoing *)model {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[DisplaySessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<OnTopConfig>config = [[SumryCrop transferFacotry] readTeam:model.repliedMessage];
     //: NSString *cellContent = [config cellContent:model.repliedMessage];
     NSString *cellContent = [config viewTing:model.repliedMessage];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"DisplaySessionUnknowContentView";
     return cellContent.length ? cellContent : @"ViewControl";
 }
 
-//: - (BOOL)shouldShowLeft:(FFFMessageModel *)model
+//: - (BOOL)shouldShowLeft:(DisplayMessageModel *)model
 - (BOOL)corner:(CleanDoing *)model
 {
     //: return !model.message.isOutgoingMsg;
     return !model.message.isOutgoingMsg;
 }
 
-//: - (BOOL)shouldShowNickName:(FFFMessageModel *)model{
+//: - (BOOL)shouldShowNickName:(DisplayMessageModel *)model{
 - (BOOL)bar:(CleanDoing *)model{
     //: NIMMessage *message = model.message;
     NIMMessage *message = model.message;
@@ -166,23 +166,23 @@
 }
 
 
-//: - (CGSize)replyContentSize:(FFFMessageModel *)model cellWidth:(CGFloat)cellWidth {
+//: - (CGSize)replyContentSize:(DisplayMessageModel *)model cellWidth:(CGFloat)cellWidth {
 - (CGSize)nameWidth:(CleanDoing *)model aggregationFloat:(CGFloat)cellWidth {
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[DisplaySessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<OnTopConfig>config = [[SumryCrop transferFacotry] readTeam:model.repliedMessage];
     //: return [config contentSize:cellWidth message:model.repliedMessage];
     return [config step:cellWidth menu:model.repliedMessage];
 }
 
 
-//: - (BOOL)disableRetryButton:(FFFMessageModel *)model
+//: - (BOOL)disableRetryButton:(DisplayMessageModel *)model
 - (BOOL)names:(CleanDoing *)model
 {
 
     //: if (model.message.session.sessionType == NIMSessionTypeTeam)
     if (model.message.session.sessionType == NIMSessionTypeTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig corner:model];
@@ -202,7 +202,7 @@
     //: else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     else if (model.message.session.sessionType == NIMSessionTypeSuperTeam)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
         //: BOOL left = [layoutConfig shouldShowLeft:model];
         BOOL left = [layoutConfig corner:model];
@@ -235,17 +235,17 @@
     }
 }
 
-//: - (BOOL)shouldShowAvatar:(FFFMessageModel *)model
+//: - (BOOL)shouldShowAvatar:(DisplayMessageModel *)model
 - (BOOL)back:(CleanDoing *)model
 {
     //: return [[MyUserKit sharedKit].config setting:model.message].showAvatar;
     return [[Mortification text].config toWith:model.message].showAvatar;
 }
 
-//: - (UIEdgeInsets)cellInsets:(FFFMessageModel *)model
+//: - (UIEdgeInsets)cellInsets:(DisplayMessageModel *)model
 - (UIEdgeInsets)concealed:(CleanDoing *)model
 {
-    //: if ([[self cellContent:model] isEqualToString:@"FFFSessionNotificationContentView"]) {
+    //: if ([[self cellContent:model] isEqualToString:@"DisplaySessionNotificationContentView"]) {
     if ([[self compartment:model] isEqualToString:@"VanguardNameView"]) {
         //: return UIEdgeInsetsZero;
         return UIEdgeInsetsZero;
@@ -276,36 +276,36 @@
 
 }
 
-//: - (UIEdgeInsets)replyContentViewInsets:(FFFMessageModel *)model{
+//: - (UIEdgeInsets)replyContentViewInsets:(DisplayMessageModel *)model{
 - (UIEdgeInsets)notLine:(CleanDoing *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
+    //: id<CCCSessionContentConfig>config = [[DisplaySessionContentConfigFactory sharedFacotry] replyConfigBy:model.repliedMessage];
     id<OnTopConfig>config = [[SumryCrop transferFacotry] readTeam:model.repliedMessage];
     //: return [config contentViewInsets:model.repliedMessage];
     return [config nameSearched:model.repliedMessage];
 }
 
 
-//: - (CGPoint)nickNameMargin:(FFFMessageModel *)model
+//: - (CGPoint)nickNameMargin:(DisplayMessageModel *)model
 - (CGPoint)perimeter:(CleanDoing *)model
 {
     //: return [self shouldShowAvatar:model] ? CGPointMake([self avatarSize:model].width + 15.f, -3.f) : CGPointMake(10.f, -3.f);
     return [self back:model] ? CGPointMake([self message:model].width + 15.f, -3.f) : CGPointMake(10.f, -3.f);
 }
 
-//: - (NSArray *)customViews:(FFFMessageModel *)model
+//: - (NSArray *)customViews:(DisplayMessageModel *)model
 - (NSArray *)margin:(CleanDoing *)model
 {
     //: return nil;
     return nil;
 }
 
-//: - (NSString *)cellContent:(FFFMessageModel *)model{
+//: - (NSString *)cellContent:(DisplayMessageModel *)model{
 - (NSString *)compartment:(CleanDoing *)model{
-    //: id<CCCSessionContentConfig>config = [[FFFSessionContentConfigFactory sharedFacotry] configBy:model.message];
+    //: id<CCCSessionContentConfig>config = [[DisplaySessionContentConfigFactory sharedFacotry] configBy:model.message];
     id<OnTopConfig>config = [[SumryCrop transferFacotry] standard:model.message];
     //: NSString *cellContent = [config cellContent:model.message];
     NSString *cellContent = [config viewTing:model.message];
-    //: return cellContent.length ? cellContent : @"FFFSessionUnknowContentView";
+    //: return cellContent.length ? cellContent : @"DisplaySessionUnknowContentView";
     return cellContent.length ? cellContent : @"ViewControl";
 }
 

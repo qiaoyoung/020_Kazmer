@@ -13,10 +13,10 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 
-//: @interface FFFKitUtil : NSObject
+//: @interface DisplayKitUtil : NSObject
 @interface AtPull : NSObject
 
 //: + (BOOL)canEditSuperTeamInfo:(NIMTeamMember *)member;

@@ -17,7 +17,7 @@ BasementData kTitle_deployContent = (BasementData){208, (Byte []){164, 185, 189,
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellMaker.m
+//  DisplayMessageCellMaker.m
 // Mortification
 //
 //  Created by chris.
@@ -25,28 +25,28 @@ BasementData kTitle_deployContent = (BasementData){208, (Byte []){164, 185, 189,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCellFactory.h"
+//: #import "DisplayMessageCellFactory.h"
 #import "ManFactory.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
-//: #import "FFFTimestampModel.h"
+//: #import "DisplayTimestampModel.h"
 #import "WithPage.h"
-//: #import "FFFSessionAudioContentView.h"
+//: #import "DisplaySessionAudioContentView.h"
 #import "ForefrontTitleView.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "DisplayKitAudioCenter.h"
 #import "CommixCenter.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 
-//: @interface FFFMessageCellFactory()
+//: @interface DisplayMessageCellFactory()
 @interface ManFactory()
 
 //: @end
 @end
 
-//: @implementation FFFMessageCellFactory
+//: @implementation DisplayMessageCellFactory
 @implementation ManFactory
 
 //: - (instancetype)init
@@ -67,42 +67,42 @@ BasementData kTitle_deployContent = (BasementData){208, (Byte []){164, 185, 189,
 
 }
 
-//: - (FFFMessageCell *)cellInTable:(UITableView*)tableView
+//: - (DisplayMessageCell *)cellInTable:(UITableView*)tableView
 - (IndoorsView *)dateMode:(UITableView*)tableView
-                 //: forMessageMode:(FFFMessageModel *)model
+                 //: forMessageMode:(DisplayMessageModel *)model
                  paddy:(CleanDoing *)model
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
     //: NSString *identity = [layoutConfig cellContent:model];
     NSString *identity = [layoutConfig compartment:model];
-    //: FFFMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: DisplayMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     IndoorsView *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFAdvancedMessageCell";
+        //: NSString *clz = @"DisplayAdvancedMessageCell";
         NSString *clz = @"WithMessageCell";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         //: cell = [tableView dequeueReusableCellWithIdentifier:identity];
         cell = [tableView dequeueReusableCellWithIdentifier:identity];
     }
-    //: return (FFFMessageCell *)cell;
+    //: return (DisplayMessageCell *)cell;
     return (IndoorsView *)cell;
 }
 
-//: - (FFFSessionTimestampCell *)cellInTable:(UITableView *)tableView
+//: - (DisplaySessionTimestampCell *)cellInTable:(UITableView *)tableView
 - (TeamViewCell *)day:(UITableView *)tableView
-                            //: forTimeModel:(FFFTimestampModel *)model
+                            //: forTimeModel:(DisplayTimestampModel *)model
                             button:(WithPage *)model
 {
     //: NSString *identity = @"time";
     NSString *identity = StringFromBasementData(&kTitle_deployContent);
-    //: FFFSessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    //: DisplaySessionTimestampCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     TeamViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
     //: if (!cell) {
     if (!cell) {
-        //: NSString *clz = @"FFFSessionTimestampCell";
+        //: NSString *clz = @"DisplaySessionTimestampCell";
         NSString *clz = @"TeamViewCell";
         //: [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
         [tableView registerClass:NSClassFromString(clz) forCellReuseIdentifier:identity];
@@ -111,7 +111,7 @@ BasementData kTitle_deployContent = (BasementData){208, (Byte []){164, 185, 189,
     }
     //: [cell refreshData:model];
     [cell count:model];
-    //: return (FFFSessionTimestampCell *)cell;
+    //: return (DisplaySessionTimestampCell *)cell;
     return (TeamViewCell *)cell;
 }
 

@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfig.h"
+//: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "DisplayInputProtocol.h"
+#import "DisplayInputProtocol.h"
 //: #import "CustomAlbumPickerView.h"
 #import "TargetReplyView.h"
 
@@ -27,10 +27,10 @@
 //: @end
 @end
 
-//: @interface FFFInputMoreContainerView : UIView
+//: @interface DisplayInputMoreContainerView : UIView
 @interface MaxAtView : UIView
 
-//: @property (nonatomic,weak) id<FFFSessionConfig> config;
+//: @property (nonatomic,weak) id<DisplaySessionConfig> config;
 @property (nonatomic,weak) id<ColorConfig> config;
 //: @property (nonatomic,weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic,weak) id<PullDelegate> actionDelegate;

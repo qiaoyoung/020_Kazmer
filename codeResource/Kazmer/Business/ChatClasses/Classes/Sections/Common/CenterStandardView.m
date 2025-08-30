@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBadgeView.h"
+//: #import "DisplayBadgeView.h"
 #import "CenterStandardView.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
 
-//: @interface FFFBadgeView ()
+//: @interface DisplayBadgeView ()
 @interface CenterStandardView ()
 
 //: @property (strong) UIColor *badgeBackgroundColor;
@@ -38,7 +38,7 @@
 //: @end
 @end
 
-//: @implementation FFFBadgeView
+//: @implementation DisplayBadgeView
 @implementation CenterStandardView
 
 //: + (instancetype)viewWithBadgeTip:(NSString *)badgeValue{
@@ -48,7 +48,7 @@
         //: badgeValue = @"";
         badgeValue = @"";
     }
-    //: FFFBadgeView *instance = [[FFFBadgeView alloc] init];
+    //: DisplayBadgeView *instance = [[DisplayBadgeView alloc] init];
     CenterStandardView *instance = [[CenterStandardView alloc] init];
     //: instance.frame = [instance frameWithStr:badgeValue];
     instance.frame = [instance locationStr:badgeValue];

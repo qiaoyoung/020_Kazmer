@@ -9,35 +9,35 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionDataSourceImpl.h"
+//: #import "DisplaySessionDataSourceImpl.h"
 #import "CommentControl.h"
-//: #import "FFFSessionMsgDatasource.h"
+//: #import "DisplaySessionMsgDatasource.h"
 #import "BubbleCropView.h"
 
-//: @interface FFFSessionDataSourceImpl()
+//: @interface DisplaySessionDataSourceImpl()
 @interface CommentControl()
 
 //: @property (nonatomic,strong) NIMSession *session;
 @property (nonatomic,strong) NIMSession *session;
 
-//: @property (nonatomic,strong) FFFSessionMsgDatasource *dataSource;
+//: @property (nonatomic,strong) DisplaySessionMsgDatasource *dataSource;
 @property (nonatomic,strong) BubbleCropView *dataSource;
 
 //: @property (nonatomic,strong) NSMutableArray *pendingMessages; 
 @property (nonatomic,strong) NSMutableArray *pendingMessages;//缓存的插入消息,聊天室需要在另外个线程计算高度,减少UI刷新
 
-//: @property (nonatomic,strong) id<FFFSessionConfig> sessionConfig;
+//: @property (nonatomic,strong) id<DisplaySessionConfig> sessionConfig;
 @property (nonatomic,strong) id<ColorConfig> sessionConfig;
 
 //: @end
 @end
 
-//: @implementation FFFSessionDataSourceImpl
+//: @implementation DisplaySessionDataSourceImpl
 @implementation CommentControl
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithTip:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig
+                         //: config:(id<DisplaySessionConfig>)sessionConfig
                          viewFileSessionWith:(id<ColorConfig>)sessionConfig
 {
     //: self = [super init];
@@ -50,7 +50,7 @@
         _sessionConfig = sessionConfig;
         //: _pendingMessages = [[NSMutableArray alloc] init];
         _pendingMessages = [[NSMutableArray alloc] init];
-        //: _dataSource = [[FFFSessionMsgDatasource alloc] initWithSession:_session config:_sessionConfig];
+        //: _dataSource = [[DisplaySessionMsgDatasource alloc] initWithSession:_session config:_sessionConfig];
         _dataSource = [[BubbleCropView alloc] initWithCanadianProvince:_session cellStreetSmart:_sessionConfig];
     }
     //: return self;
@@ -94,7 +94,7 @@
     return result;
 }
 
-//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model
+//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(DisplayMessageModel *)model
 - (CropTitleResult *)imageModel:(CleanDoing *)model
 {
     //: NSArray *indexs = [self.dataSource deleteMessageModel:model];
@@ -118,7 +118,7 @@
     return result;
 }
 
-//: - (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model
+//: - (NIMSessionMessageOperateResult *)updateMessageModel:(DisplayMessageModel *)model
 - (CropTitleResult *)modify:(CleanDoing *)model
 {
     //: NSInteger index = [self.dataSource indexAtModelArray:model];
@@ -137,7 +137,7 @@
     return result;
 }
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel *)model
+//: - (NSInteger)indexAtModelArray:(DisplayMessageModel *)model
 - (NSInteger)checkion:(CleanDoing *)model
 {
     //: return [self.dataSource indexAtModelArray:model];
@@ -151,13 +151,13 @@
     return [self.dataSource namePull:range];
 }
 
-//: - (FFFMessageModel *)findModel:(NIMMessage *)message{
+//: - (DisplayMessageModel *)findModel:(NIMMessage *)message{
 - (CleanDoing *)need:(NIMMessage *)message{
-    //: FFFMessageModel *model;
+    //: DisplayMessageModel *model;
     CleanDoing *model;
-    //: for (FFFMessageModel *item in self.dataSource.items.reverseObjectEnumerator.allObjects) {
+    //: for (DisplayMessageModel *item in self.dataSource.items.reverseObjectEnumerator.allObjects) {
     for (CleanDoing *item in self.dataSource.items.reverseObjectEnumerator.allObjects) {
-        //: if ([item isKindOfClass:[FFFMessageModel class]] && [item.message.messageId isEqual:message.messageId]) {
+        //: if ([item isKindOfClass:[DisplayMessageModel class]] && [item.message.messageId isEqual:message.messageId]) {
         if ([item isKindOfClass:[CleanDoing class]] && [item.message.messageId isEqual:message.messageId]) {
             //: model = item;
             model = item;
@@ -214,7 +214,7 @@
     [self.dataSource examineedMail:handler];
 }
 
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model
+//: - (void)willDisplayMessageModel:(DisplayMessageModel *)model
 - (void)table:(CleanDoing *)model
 {
     //: [self.dataSource willDisplayMessageModel:model];
@@ -248,9 +248,9 @@
             //: message = item;
             message = item;
         }
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[DisplayMessageModel class]]) {
         if ([item isKindOfClass:[CleanDoing class]]) {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(DisplayMessageModel *)item message];
             message = [(CleanDoing *)item message];
         }
         //: if (message && !message.isOutgoingMsg
@@ -298,9 +298,9 @@
     for (NSInteger i = [[self.dataSource items] count] - 1; i >= 0; i--) {
         //: id item = [[self.dataSource items] objectAtIndex:i];
         id item = [[self.dataSource items] objectAtIndex:i];
-        //: if ([item isKindOfClass:[FFFMessageModel class]]) {
+        //: if ([item isKindOfClass:[DisplayMessageModel class]]) {
         if ([item isKindOfClass:[CleanDoing class]]) {
-            //: FFFMessageModel *model = (FFFMessageModel *)item;
+            //: DisplayMessageModel *model = (DisplayMessageModel *)item;
             CleanDoing *model = (CleanDoing *)item;
             //: NIMMessage *message = [model message];
             NIMMessage *message = [model message];
@@ -376,10 +376,10 @@
     {
         //: id item = [[self.dataSource items] objectAtIndex:i];
         id item = [[self.dataSource items] objectAtIndex:i];
-        //: if ([item isKindOfClass:[FFFMessageModel class]])
+        //: if ([item isKindOfClass:[DisplayMessageModel class]])
         if ([item isKindOfClass:[CleanDoing class]])
         {
-            //: FFFMessageModel *model = (FFFMessageModel *)item;
+            //: DisplayMessageModel *model = (DisplayMessageModel *)item;
             CleanDoing *model = (CleanDoing *)item;
             //: NIMMessage *message = [model message];
             NIMMessage *message = [model message];
@@ -473,10 +473,10 @@
             //: message = item;
             message = item;
         }
-        //: else if ([item isKindOfClass:[FFFMessageModel class]])
+        //: else if ([item isKindOfClass:[DisplayMessageModel class]])
         else if ([item isKindOfClass:[CleanDoing class]])
         {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(DisplayMessageModel *)item message];
             message = [(CleanDoing *)item message];
         }
         //: if (message)
@@ -522,10 +522,10 @@
             //: message = item;
             message = item;
         }
-        //: else if ([item isKindOfClass:[FFFMessageModel class]])
+        //: else if ([item isKindOfClass:[DisplayMessageModel class]])
         else if ([item isKindOfClass:[CleanDoing class]])
         {
-            //: message = [(FFFMessageModel *)item message];
+            //: message = [(DisplayMessageModel *)item message];
             message = [(CleanDoing *)item message];
         }
         //: if (message)

@@ -92,7 +92,7 @@ Byte kTitle_wordFishValue[] = {5, 7, 54, 6, 220, 12, 237, 255, 14, 255, 16, 0, 0
     tip.textColor = [UIColor blackColor];
     //: tip.textAlignment = NSTextAlignmentCenter;
     tip.textAlignment = NSTextAlignmentCenter;
-    //: tip.text = [FFFLanguageManager getTextWithKey:@"warm_prompt"];
+    //: tip.text = [DisplayLanguageManager getTextWithKey:@"warm_prompt"];
     tip.text = [MakeManager cell:StringFromDealOutData(kName_sealData)];
     //: [_box addSubview:tip];
     [_box addSubview:tip];
@@ -168,7 +168,7 @@ Byte kTitle_wordFishValue[] = {5, 7, 54, 6, 220, 12, 237, 255, 14, 255, 16, 0, 0
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:StringFromDealOutData(kTitle_wordFishValue)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:StringFromDealOutData(kTitleCellPoundValue)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -195,7 +195,7 @@ Byte kTitle_wordFishValue[] = {5, 7, 54, 6, 220, 12, 237, 255, 14, 255, 16, 0, 0
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:StringFromDealOutData(kName_estimatedString)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor cell:StringFromDealOutData(kTitleMysteryName)];

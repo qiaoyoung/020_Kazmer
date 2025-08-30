@@ -314,7 +314,7 @@
 + (NSString *)kText_surelyData {
     /* static */ NSString *kText_surelyData = nil;
     if (!kText_surelyData) {
-		NSString *origin = @"0B3304554805F9FEFFF905F9FEFF4AE3";
+		NSString *origin = @"0B3304554805F9FEDisplay905F9FEFF4AE3";
 		NSData *data = [CastData CastDataToData:origin];
         Byte *value = (Byte *)data.bytes;
         kText_surelyData = [self StringFromCastData:value];
@@ -335,11 +335,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitConfig.h"
+//: #import "DisplayKitConfig.h"
 #import "MessageAtAdd.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFMediaItem.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
+//: #import "DisplayMediaItem.h"
 #import "CommingleItem.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
@@ -348,7 +348,7 @@
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFKitSettings()
+//: @interface DisplayKitSettings()
 @interface ScalePath()
 {
     //: BOOL _isRight;
@@ -362,47 +362,47 @@
 @end
 
 
-//: @implementation FFFKitConfig
+//: @implementation DisplayKitConfig
 @implementation MessageAtAdd
 
 //: - (NSArray *)defaultMediaItems
 - (NSArray *)buttonTing
 {
-    //: return @[[FFFMediaItem item:@"onTapMediaItemPicture:"
+    //: return @[[DisplayMediaItem item:@"onTapMediaItemPicture:"
     return @[[CommingleItem garrisonName:[CastData kTextSustainString]
            //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
            heading:[UIImage imageNamed:[CastData kTitlePullText]]
          //: selectedImage:[UIImage imageNamed:@"bk_media_picture_normal"]
          with:[UIImage imageNamed:[CastData kTitlePullText]]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
+                 //: title:[DisplayLanguageManager getTextWithKey:@"message_send_album"]],//@"相册".
                  item:[MakeManager cell:[CastData kText_daughterString]]],//@"相册".
 
-    //: [FFFMediaItem item:@"onTapMediaItemShoot:"
+    //: [DisplayMediaItem item:@"onTapMediaItemShoot:"
     [CommingleItem garrisonName:[CastData kNameVisibleData]
            //: normalImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
            heading:[UIImage imageNamed:[CastData kName_bronzeString]]
          //: selectedImage:[UIImage imageNamed:@"bk_media_shoot_normal"]
          with:[UIImage imageNamed:[CastData kName_bronzeString]]
-                 //: title:[FFFLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
+                 //: title:[DisplayLanguageManager getTextWithKey:@"message_send_camera"]],//@"拍摄".
                  item:[MakeManager cell:[CastData kContent_deviceName]]],//@"拍摄".
 
-    //: [FFFMediaItem item:@"onTapMediaItemLocation:"
+    //: [DisplayMediaItem item:@"onTapMediaItemLocation:"
     [CommingleItem garrisonName:[CastData kContentYoursName]
            //: normalImage:[UIImage imageNamed:@"bk_media_position_normal"]
            heading:[UIImage imageNamed:[CastData kTitle_towData]]
          //: selectedImage:[UIImage imageNamed:@"bk_media_position_normal"]
          with:[UIImage imageNamed:[CastData kTitle_towData]]
-                 //: title:[FFFLanguageManager getTextWithKey:@"Audios"]],//@"位置".
+                 //: title:[DisplayLanguageManager getTextWithKey:@"Audios"]],//@"位置".
                  item:[MakeManager cell:[CastData kContent_devastatingName]]],//@"位置".
 
     //: ];
     ];
 }
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message
+//: - (DisplayKitSetting *)setting:(NIMMessage *)message
 - (ManPull *)toWith:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: DisplayKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     ScalePath *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: switch (message.messageType) {
     switch (message.messageType) {
@@ -487,13 +487,13 @@
     //: if (message.messageType == NIMMessageTypeText)
     if (message.messageType == NIMMessageTypeText)
     {
-        //: [menuItems addObject:[FFFMediaItem item:@"onTapMenuItemCopy:"
+        //: [menuItems addObject:[DisplayMediaItem item:@"onTapMenuItemCopy:"
         [menuItems addObject:[CommingleItem garrisonName:[CastData kContentDenValue]
                                     //: normalImage:[UIImage imageNamed:@"bk_media_picture_normal"]
                                     heading:[UIImage imageNamed:[CastData kTitlePullText]]
                                   //: selectedImage:[UIImage imageNamed:@"bk_media_picture_pressed"]
                                   with:[UIImage imageNamed:[CastData kContent_storyName]]
-                                          //: title:[FFFLanguageManager getTextWithKey:@"复制"]]];
+                                          //: title:[DisplayLanguageManager getTextWithKey:@"复制"]]];
                                           item:[MakeManager cell:@"复制"]]];
     }
 
@@ -516,7 +516,7 @@
     _messageLimit = 20;
     //: _recordMaxDuration = 60.f;
     _recordMaxDuration = 60.f;
-    //: _placeholder = [FFFLanguageManager getTextWithKey:@"message_please_enter_content"];
+    //: _placeholder = [DisplayLanguageManager getTextWithKey:@"message_please_enter_content"];
     _placeholder = [MakeManager cell:[CastData kText_nousData]];//@"请输入消息".;
     //: _inputMaxLength = 1000;
     _inputMaxLength = 1000;
@@ -532,9 +532,9 @@
     _avatarType = NIMKitAvatarTypeRounded;
     //: _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
     _cellBackgroundColor = [UIColor colorWithRed:((float)((0xE4E7EC & 0xFF0000) >> 16))/255.0 green:((float)((0xE4E7EC & 0x00FF00) >> 8))/255.0 blue:((float)(0xE4E7EC & 0x0000FF))/255.0 alpha:1.0];
-    //: _leftBubbleSettings = [[FFFKitSettings alloc] init:NO];
+    //: _leftBubbleSettings = [[DisplayKitSettings alloc] init:NO];
     _leftBubbleSettings = [[ScalePath alloc] initDelete:NO];
-    //: _rightBubbleSettings = [[FFFKitSettings alloc] init:YES];
+    //: _rightBubbleSettings = [[DisplayKitSettings alloc] init:YES];
     _rightBubbleSettings = [[ScalePath alloc] initDelete:YES];
 }
 
@@ -560,10 +560,10 @@
     return self;
 }
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message
+//: - (DisplayKitSetting *)repliedSetting:(NIMMessage *)message
 - (ManPull *)willRemote:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
+    //: DisplayKitSettings *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     ScalePath *settings = message.isOutgoingMsg? self.rightBubbleSettings : self.leftBubbleSettings;
     //: return settings.repliedSetting;
     return settings.repliedSetting;
@@ -573,13 +573,13 @@
 @end
 
 
-//: @implementation FFFKitSettings
+//: @implementation DisplayKitSettings
 @implementation ScalePath
 
 //: - (void)applyDefaultSuperTeamNotificationSettings
 - (void)size
 {
-    //: _superTeamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _superTeamNotificationSetting = [[DisplayKitSetting alloc] init:_isRight];
     _superTeamNotificationSetting = [[ManPull alloc] initReceive:_isRight];
     //: _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _superTeamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -600,7 +600,7 @@
 //: - (void)applyDefaultTipSettings
 - (void)noPathSettings
 {
-    //: _tipSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _tipSetting = [[DisplayKitSetting alloc] init:_isRight];
     _tipSetting = [[ManPull alloc] initReceive:_isRight];
     //: _tipSetting.contentInsets = UIEdgeInsetsZero;
     _tipSetting.contentInsets = UIEdgeInsetsZero;
@@ -621,7 +621,7 @@
 //: - (void)applyDefaultLocationSettings
 - (void)name
 {
-    //: _locationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _locationSetting = [[DisplayKitSetting alloc] init:_isRight];
     _locationSetting = [[ManPull alloc] initReceive:_isRight];
     //: _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _locationSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kContentSeedString]) : UIEdgeInsetsFromString([CastData kName_wrapThumbData]);
@@ -636,7 +636,7 @@
 //: - (void)applyDefaultImageSettings
 - (void)bottom
 {
-    //: _imageSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _imageSetting = [[DisplayKitSetting alloc] init:_isRight];
     _imageSetting = [[ManPull alloc] initReceive:_isRight];
     //: _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _imageSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kContentSeedString]) : UIEdgeInsetsFromString([CastData kName_wrapThumbData]);
@@ -647,7 +647,7 @@
 //: - (void)applyDefaultRepliedSettings
 - (void)tool
 {
-    //: _repliedSetting = [[FFFKitSetting alloc] init];
+    //: _repliedSetting = [[DisplayKitSetting alloc] init];
     _repliedSetting = [[ManPull alloc] init];
     //: _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _repliedSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kText_surelyData]) : UIEdgeInsetsFromString([CastData kText_surelyData]);
@@ -662,7 +662,7 @@
 //: - (void)applyDefaultNetcallNotificationSettings
 - (void)greenShow
 {
-    //: _netcallNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _netcallNotificationSetting = [[DisplayKitSetting alloc] init:_isRight];
     _netcallNotificationSetting = [[ManPull alloc] initReceive:_isRight];
     //: _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{11,11,9,15}") : UIEdgeInsetsFromString(@"{11,15,9,9}");
     _netcallNotificationSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kName_herbProduceingValue]) : UIEdgeInsetsFromString([CastData kTitle_relieveData]);
@@ -677,7 +677,7 @@
 //: - (void)applyDefaultUnsupportSettings
 - (void)cellRead
 {
-    //: _unsupportSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _unsupportSetting = [[DisplayKitSetting alloc] init:_isRight];
     _unsupportSetting = [[ManPull alloc] initReceive:_isRight];
     //: _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{10,10,10,10}") : UIEdgeInsetsFromString(@"{10,10,10,10}");
     _unsupportSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kText_ontoJustString]) : UIEdgeInsetsFromString([CastData kText_ontoJustString]);
@@ -692,7 +692,7 @@
 //: - (void)applyDefaultVideoSettings
 - (void)sacrificeHandle
 {
-    //: _videoSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _videoSetting = [[DisplayKitSetting alloc] init:_isRight];
     _videoSetting = [[ManPull alloc] initReceive:_isRight];
     //: _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _videoSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kContentSeedString]) : UIEdgeInsetsFromString([CastData kName_wrapThumbData]);
@@ -722,7 +722,7 @@
 //: - (void)applyDefaultFileSettings
 - (void)titleOn
 {
-    //: _fileSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _fileSetting = [[DisplayKitSetting alloc] init:_isRight];
     _fileSetting = [[ManPull alloc] initReceive:_isRight];
     //: _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{3,3,3,8}") : UIEdgeInsetsFromString(@"{3,8,3,3}");
     _fileSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kContentSeedString]) : UIEdgeInsetsFromString([CastData kName_wrapThumbData]);
@@ -735,7 +735,7 @@
 //: - (void)applyDefaultTextSettings
 - (void)accountSettings
 {
-    //: _textSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _textSetting = [[DisplayKitSetting alloc] init:_isRight];
     _textSetting = [[ManPull alloc] initReceive:_isRight];
     //: _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _textSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kText_surelyData]) : UIEdgeInsetsFromString([CastData kText_surelyData]);
@@ -751,7 +751,7 @@
 //: - (void)applyDefaultTeamNotificationSettings
 - (void)value
 {
-    //: _teamNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _teamNotificationSetting = [[DisplayKitSetting alloc] init:_isRight];
     _teamNotificationSetting = [[ManPull alloc] initReceive:_isRight];
     //: _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _teamNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -773,7 +773,7 @@
 //: - (void)applyDefaultChatroomNotificationSettings
 - (void)center
 {
-    //: _chatroomNotificationSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _chatroomNotificationSetting = [[DisplayKitSetting alloc] init:_isRight];
     _chatroomNotificationSetting = [[ManPull alloc] initReceive:_isRight];
     //: _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
     _chatroomNotificationSetting.contentInsets = UIEdgeInsetsZero;
@@ -827,7 +827,7 @@
 //: - (void)applyDefaultAudioSettings
 - (void)clear
 {
-    //: _audioSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _audioSetting = [[DisplayKitSetting alloc] init:_isRight];
     _audioSetting = [[ManPull alloc] initReceive:_isRight];
     //: _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{8,12,8,12}") : UIEdgeInsetsFromString(@"{8,12,8,12}");
     _audioSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kText_surelyData]) : UIEdgeInsetsFromString([CastData kText_surelyData]);
@@ -842,7 +842,7 @@
 //: - (void)applyDefaultRtcCallRecordSettings
 - (void)trailHead
 {
-    //: _rtcCallRecordSetting = [[FFFKitSetting alloc] init:_isRight];
+    //: _rtcCallRecordSetting = [[DisplayKitSetting alloc] init:_isRight];
     _rtcCallRecordSetting = [[ManPull alloc] initReceive:_isRight];
     //: _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString(@"{9,11,9,15}") : UIEdgeInsetsFromString(@"{9,15,9,9}");
     _rtcCallRecordSetting.contentInsets = _isRight? UIEdgeInsetsFromString([CastData kTextMeltValue]) : UIEdgeInsetsFromString([CastData kTextThinkValue]);

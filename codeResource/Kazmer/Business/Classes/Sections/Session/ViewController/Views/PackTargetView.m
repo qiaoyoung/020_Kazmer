@@ -172,7 +172,7 @@
 // __M_A_C_R_O__
 //: #import "USERRedPackagePaySheet.h"
 #import "PackTargetView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "TPPasswordTextView.h"
 #import "RowPathGlowingView.h"
@@ -263,7 +263,7 @@
         titleLabel_1.textColor = [UIColor cell:[CombinationEchoData kText_excitementData]];
         //: titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
         titleLabel_1.font = [UIFont boldSystemFontOfSize:16];
-        //: titleLabel_1.text = [FFFLanguageManager getTextWithKey:@"activity_pay_psw_input"];
+        //: titleLabel_1.text = [DisplayLanguageManager getTextWithKey:@"activity_pay_psw_input"];
         titleLabel_1.text = [MakeManager cell:[CombinationEchoData kContentSenData]];
         //: titleLabel_1.textAlignment = NSTextAlignmentLeft;
         titleLabel_1.textAlignment = NSTextAlignmentLeft;
@@ -309,7 +309,7 @@
         title.textColor = [UIColor blackColor];
         //: title.font = [UIFont systemFontOfSize:15];
         title.font = [UIFont systemFontOfSize:15];
-        //: title.text = [FFFLanguageManager getTextWithKey:@"red_packet"];
+        //: title.text = [DisplayLanguageManager getTextWithKey:@"red_packet"];
         title.text = [MakeManager cell:[CombinationEchoData kTitle_etcName]];
         //: [_backView addSubview:title];
         [_backView addSubview:title];
@@ -446,7 +446,7 @@
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:userID keepingOption:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

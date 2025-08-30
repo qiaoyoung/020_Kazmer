@@ -84,14 +84,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFVideoContentConfig.h"
+//: #import "DisplayVideoContentConfig.h"
 #import "GrowingCancel.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @implementation FFFVideoContentConfig
+//: @implementation DisplayVideoContentConfig
 @implementation GrowingCancel
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)step:(CGFloat)cellWidth menu:(NIMMessage *)message
@@ -131,7 +131,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: return @"FFFSessionVideoContentView";
+    //: return @"DisplaySessionVideoContentView";
     return @"MessageContentView";
 }
 

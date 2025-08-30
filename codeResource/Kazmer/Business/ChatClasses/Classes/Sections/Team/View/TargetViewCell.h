@@ -21,7 +21,7 @@ extern NSString *const m_pathId;
 //: extern NSString *const kTeamMemberInfo;
 extern NSString *const dreamTitleData;
 
-//: @protocol FFFTeamMemberListCellActionDelegate <NSObject>
+//: @protocol DisplayTeamMemberListCellActionDelegate <NSObject>
 @protocol RollShouldDelegate <NSObject>
 
 //: - (void)didSelectAddOpeartor;
@@ -31,7 +31,7 @@ extern NSString *const dreamTitleData;
 @end
 
 
-//: @interface FFFTeamMemberListCell : UITableViewCell
+//: @interface DisplayTeamMemberListCell : UITableViewCell
 @interface TargetViewCell : UITableViewCell
 
 
@@ -44,7 +44,7 @@ extern NSString *const dreamTitleData;
 //: @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 @property(nonatomic, strong) NSMutableArray <NSDictionary *> *infos;
 
-//: @property(nonatomic, weak) id<FFFTeamMemberListCellActionDelegate>delegate;
+//: @property(nonatomic, weak) id<DisplayTeamMemberListCellActionDelegate>delegate;
 @property(nonatomic, weak) id<RollShouldDelegate>delegate;
 
 //: @end

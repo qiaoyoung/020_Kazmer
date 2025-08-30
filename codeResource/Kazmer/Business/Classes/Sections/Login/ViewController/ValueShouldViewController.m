@@ -183,7 +183,7 @@
 + (NSString *)kTitleConsumptionName {
     /* static */ NSString *kTitleConsumptionName = nil;
     if (!kTitleConsumptionName) {
-		NSString *origin = @"04390C0252640C3BB51FFF972F28353BBA";
+		NSString *origin = @"04390C0252640C3BB51Display972F28353BBA";
 		NSData *data = [MakeAMotionData MakeAMotionDataToData:origin];
         Byte *value = (Byte *)data.bytes;
         kTitleConsumptionName = [self StringFromMakeAMotionData:value];
@@ -326,7 +326,7 @@
     return kTitleSelectedContent;
 }
 
-//: #ffffff
+//: #fffDisplay
 + (NSString *)kName_inevitablyRecordString {
     /* static */ NSString *kName_inevitablyRecordString = nil;
     if (!kName_inevitablyRecordString) {
@@ -520,7 +520,7 @@
 
     //: UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(15, (44.0f + [UIDevice vg_statusBarHeight])+20, [[UIScreen mainScreen] bounds].size.width-30, 30)];
     UILabel *labtitle = [[UILabel alloc]initWithFrame:CGRectMake(15, (44.0f + [UIDevice comeDownSuperphylum])+20, [[UIScreen mainScreen] bounds].size.width-30, 30)];
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"register_good_nick"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"register_good_nick"];
     labtitle.text = [MakeManager cell:[MakeAMotionData kTitleLoopValue]];
     //: labtitle.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     labtitle.textColor = [UIColor cell:[MakeAMotionData kContentMoleString]];
@@ -586,7 +586,7 @@
     _usernameTextField.textColor = [UIColor cell:[MakeAMotionData kText_seeminglyData]];
     //    _usernameTextField.keyboardType = UIKeyboardTypeASCIICapable;
 //    _usernameTextField.delegate = self;
-    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[FFFLanguageManager getTextWithKey:@"nickname_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
+    //: NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[DisplayLanguageManager getTextWithKey:@"nickname_tip"] attributes:@{NSForegroundColorAttributeName:[UIColor colorWithHexString:@"#999999"]}];
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc]initWithString:[MakeManager cell:[MakeAMotionData kText_fierceData]] attributes:@{NSForegroundColorAttributeName:[UIColor cell:[MakeAMotionData kText_currentData]]}];
     //: _usernameTextField.attributedPlaceholder = attrString;
     _usernameTextField.attributedPlaceholder = attrString;
@@ -601,7 +601,7 @@
     _loginButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_loginButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [_loginButton setTitle:[DisplayLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [_loginButton setTitle:[MakeManager cell:[MakeAMotionData kContent_recordTitle]] forState:UIControlStateNormal];
     //: [_loginButton addTarget:self action:@selector(nextButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [_loginButton addTarget:self action:@selector(contentRefer) forControlEvents:UIControlEventTouchUpInside];
@@ -620,9 +620,9 @@
     _registerButton.backgroundColor = [UIColor cell:[MakeAMotionData kTitle_viewName]];
     //: _registerButton.titleLabel.font = [UIFont systemFontOfSize:16];
     _registerButton.titleLabel.font = [UIFont systemFontOfSize:16];
-    //: [_registerButton setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+    //: [_registerButton setTitleColor:[UIColor colorWithHexString:@"#fffDisplay"] forState:UIControlStateNormal];
     [_registerButton setTitleColor:[UIColor cell:[MakeAMotionData kName_inevitablyRecordString]] forState:UIControlStateNormal];
-    //: [_registerButton setTitle:[NSString stringWithFormat:@"%@,%@",[FFFLanguageManager getTextWithKey:@"activity_register_account_has_account"],[FFFLanguageManager getTextWithKey:@"activity_login_login"]] forState:UIControlStateNormal];
+    //: [_registerButton setTitle:[NSString stringWithFormat:@"%@,%@",[DisplayLanguageManager getTextWithKey:@"activity_register_account_has_account"],[DisplayLanguageManager getTextWithKey:@"activity_login_login"]] forState:UIControlStateNormal];
     [_registerButton setTitle:[NSString stringWithFormat:@"%@,%@",[MakeManager cell:[MakeAMotionData kTitleSelectedContent]],[MakeManager cell:[MakeAMotionData kTitleGrayDisturbName]]] forState:UIControlStateNormal];
     //: [_registerButton addTarget:self action:@selector(gotologin) forControlEvents:UIControlEventTouchUpInside];
     [_registerButton addTarget:self action:@selector(cellFind) forControlEvents:UIControlEventTouchUpInside];
@@ -653,7 +653,7 @@
 {
     //: if (_usernameTextField.text.length == 0) {
     if (_usernameTextField.text.length == 0) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"]
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"register_avtivity3_nick"]
         [self.view makeToast:[MakeManager cell:[MakeAMotionData kTitleItemDetailValue]]
                     //: duration:2.0
                     duration:2.0
@@ -664,7 +664,7 @@
     }
     //: if ([_usernameTextField.text isEqualToString:self.accountName]) {
     if ([_usernameTextField.text isEqualToString:self.accountName]) {
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"nickname_same_account"]
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"nickname_same_account"]
         [self.view makeToast:[MakeManager cell:[MakeAMotionData kTitleScaleCrawData]]
                     //: duration:2.0
                     duration:2.0
@@ -684,7 +684,7 @@
         manager.headerImage = _headerImage;
     //: }else{
     }else{
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"register_avtivity3_avatar"]];
+        //: [SVProgressHUD showMessage:[DisplayLanguageManager getTextWithKey:@"register_avtivity3_avatar"]];
         [SVProgressHUD firstTeam:[MakeManager cell:[MakeAMotionData kName_civilianValue]]];
         //: return;
         return;
@@ -711,7 +711,7 @@
 //
 //    }];
 
-    //: UIAlertAction *picture = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"message_send_album"] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    //: UIAlertAction *picture = [UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"message_send_album"] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
     UIAlertAction *picture = [UIAlertAction actionWithTitle:[MakeManager cell:[MakeAMotionData kText_inventString]] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
 
 //        [self pushTZImagePickerControllerWithAsset:nil];
@@ -721,7 +721,7 @@
             //: }];
             }];
 
-    //: UIAlertAction *cancle = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
+    //: UIAlertAction *cancle = [UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
     UIAlertAction *cancle = [UIAlertAction actionWithTitle:[MakeManager cell:[MakeAMotionData kText_toothValue]] style:UIAlertActionStyleCancel handler:^(UIAlertAction *_Nonnull action) {
    //: }];
    }];
@@ -976,13 +976,13 @@
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"] message:[DisplayLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MakeManager cell:[MakeAMotionData kNameMessageScienceString]] message:[MakeManager cell:[MakeAMotionData kTextMainValue]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[MakeAMotionData kText_toothValue]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[MakeAMotionData kContent_messageData]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1033,7 +1033,7 @@
                 self.avaterUrl = urlString;
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[MakeManager cell:[MakeAMotionData kContentMagnitudeelligenceName]]
                              //: duration:2
                              duration:2
@@ -1044,7 +1044,7 @@
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_update_failed"]
         [self.view makeToast:[MakeManager cell:[MakeAMotionData kTextPullString]]
                     //: duration:2
                     duration:2
@@ -1116,13 +1116,13 @@
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"] message:[DisplayLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MakeManager cell:[MakeAMotionData kNameMessageScienceString]] message:[MakeManager cell:[MakeAMotionData kText_intactValue]] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[MakeAMotionData kText_toothValue]] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[MakeAMotionData kContent_messageData]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];

@@ -189,7 +189,7 @@ NSString *const noti_nameEventResponseStr (NSString *value) {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(DisplayMessageModel *)model{
 - (void)from:(CleanDoing *)model{
     //: [super refresh:model];
     [super from:model];
@@ -204,7 +204,7 @@ NSString *const noti_nameEventResponseStr (NSString *value) {
     //: self.longpressGesture.enabled = !attachment.isFired;
     self.longpressGesture.enabled = !attachment.isFired;
 
-    //禁用掉FFFMessageCell中的长按手势，防止手势冲突
+    //禁用掉DisplayMessageCell中的长按手势，防止手势冲突
     //: [self disableMessageCellGesture:!attachment.isFired];
     [self eroticizeBubbleMotility:!attachment.isFired];
 }
@@ -291,7 +291,7 @@ NSString *const noti_nameEventResponseStr (NSString *value) {
 - (void)unbar{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(surprised:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
         ToiletKitSession *event = [[ToiletKitSession alloc] init];
         //: event.eventName = NIMDemoEventNameOpenSnapPicture;
         event.eventName = k_frameMessage(nil);
@@ -308,7 +308,7 @@ NSString *const noti_nameEventResponseStr (NSString *value) {
 - (void)from{
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(surprised:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
         ToiletKitSession *event = [[ToiletKitSession alloc] init];
         //: event.eventName = NIMDemoEventNameCloseSnapPicture;
         event.eventName = noti_nameEventResponseStr(nil);

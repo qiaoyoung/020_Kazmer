@@ -85,7 +85,7 @@ typedef struct {
 #import "SessionWith.h"
 //: #import "USERSessionMsgConverter.h"
 #import "TopConverter.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 
 //: typedef void(^USERMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnull error, NIMMessage * _Nonnull message);
@@ -281,11 +281,11 @@ typedef void(^USERMergeForwardTaskResult)(uint64_t identifier, NSError * _Nonnul
                 //show name
                 //: NIMSession *fromSession = [weakSelf.messages firstObject].session;
                 NIMSession *fromSession = [weakSelf.messages firstObject].session;
-                //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+                //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
                 CellClean *option = [[CellClean alloc] init];
                 //: option.session = fromSession;
                 option.session = fromSession;
-                //: FFFKitInfo *info = nil;
+                //: DisplayKitInfo *info = nil;
                 CancelTeamCorner *info = nil;
                 //: if (fromSession.sessionType == NIMSessionTypeP2P) {
                 if (fromSession.sessionType == NIMSessionTypeP2P) {

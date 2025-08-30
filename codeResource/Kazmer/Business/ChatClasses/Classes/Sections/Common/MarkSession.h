@@ -15,7 +15,7 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @protocol FFFKitMediaPickerDelegate <NSObject>
+//: @protocol DisplayKitMediaPickerDelegate <NSObject>
 @protocol MarkSession <NSObject>
 
 //: - (void)onPickerSelectedWithType:(PHAssetMediaType)type

@@ -33,24 +33,24 @@ SignData kName_certainlyString = (SignData){201, (Byte []){234, 140, 143, 143, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextView.h"
+//: #import "DisplayTextView.h"
 #import "TitleScrollView.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "DisplayBubbleMenuView.h"
 #import "ResultCuttingEdgeView.h"
-//: #import "FFFBubbleButtonModel.h"
+//: #import "DisplayBubbleButtonModel.h"
 #import "MessageTeam.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
-//: #import "FFFMediaItem.h"
+//: #import "DisplayMediaItem.h"
 #import "CommingleItem.h"
 
-//: @interface FFFTextView()<UITextViewDelegate, UITextInputDelegate>
+//: @interface DisplayTextView()<UITextViewDelegate, UITextInputDelegate>
 @interface TitleScrollView()<UITextViewDelegate, UITextInputDelegate>
 
 //: @end
 @end
 
-//: @implementation FFFTextView
+//: @implementation DisplayTextView
 @implementation TitleScrollView
 
 //: - (void)new_genMediaButton {
@@ -62,17 +62,17 @@ SignData kName_certainlyString = (SignData){201, (Byte []){234, 140, 143, 143, 1
     NSMutableArray *selectedPartRangeButtons = [NSMutableArray array];
 
 
-    //: FFFMediaItem *copy = [FFFMediaItem item:@"onTapMenuItemCopy:"
+    //: DisplayMediaItem *copy = [DisplayMediaItem item:@"onTapMenuItemCopy:"
     CommingleItem *copy = [CommingleItem garrisonName:StringFromSignData(&kTextComfortData)
                                 //: normalImage:[UIImage imageNamed:@"menu_copy"]
                                 heading:[UIImage imageNamed:StringFromSignData(&kText_fantasticContent)]
                               //: selectedImage:nil
                               with:nil
-                                      //: title:[FFFLanguageManager getTextWithKey:@"复制"]];
+                                      //: title:[DisplayLanguageManager getTextWithKey:@"复制"]];
                                       item:[MakeManager cell:@"复制"]];
 
 
-    //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+    //: DisplayBubbleButtonModel *model = [[DisplayBubbleButtonModel alloc] init];
     MessageTeam *model = [[MessageTeam alloc] init];
     //: model.normalImage = copy.normalImage;
     model.normalImage = copy.normalImage;
@@ -188,7 +188,7 @@ SignData kName_certainlyString = (SignData){201, (Byte []){234, 140, 143, 143, 1
     //: CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
     CGRect cursorStartRectToWindow = [self convertRect:startRect toView:((AppDelegate*)([UIApplication sharedApplication].delegate)).window];
 
-    //: [[FFFBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(FFFMediaItem *item) {
+    //: [[DisplayBubbleMenuView shareMenuView] showViewWithButtonModels:self.selectedAllRangeButtons cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(DisplayMediaItem *item) {
     [[ResultCuttingEdgeView namePrixFixe] panoramicView:self.selectedAllRangeButtons emotion:cursorStartRectToWindow timeBy:tempRect past:^(CommingleItem *item) {
 
         //: !_selectBlock ? : _selectBlock(item);
@@ -196,7 +196,7 @@ SignData kName_certainlyString = (SignData){201, (Byte []){234, 140, 143, 143, 1
 
         //: [self hideTextSelection];
         [self title];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [DisplayBubbleMenuView.shareMenuView removeFromSuperview];
         [ResultCuttingEdgeView.namePrixFixe removeFromSuperview];
 
     //: } praiseBlock:^(NSInteger tag) {
@@ -206,7 +206,7 @@ SignData kName_certainlyString = (SignData){201, (Byte []){234, 140, 143, 143, 1
 
         //: [self hideTextSelection];
         [self title];
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [DisplayBubbleMenuView.shareMenuView removeFromSuperview];
         [ResultCuttingEdgeView.namePrixFixe removeFromSuperview];
     //: }];
     }];
@@ -217,7 +217,7 @@ SignData kName_certainlyString = (SignData){201, (Byte []){234, 140, 143, 143, 1
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     //: [self hideTextSelection];
     [self title];
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [DisplayBubbleMenuView.shareMenuView removeFromSuperview];
     [ResultCuttingEdgeView.namePrixFixe removeFromSuperview];
     //: [super touchesEnded:touches withEvent:event];
     [super touchesEnded:touches withEvent:event];
@@ -354,10 +354,10 @@ SignData kName_certainlyString = (SignData){201, (Byte []){234, 140, 143, 143, 1
         //: items = [self.config menuItemsWithMessage:message];
         items = [self.config inputsed:message];
     }
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(DisplayMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(CommingleItem *item, NSUInteger idx, BOOL *stop) {
 
-        //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+        //: DisplayBubbleButtonModel *model = [[DisplayBubbleButtonModel alloc] init];
         MessageTeam *model = [[MessageTeam alloc] init];
         //: model.normalImage = item.normalImage;
         model.normalImage = item.normalImage;
@@ -370,7 +370,7 @@ SignData kName_certainlyString = (SignData){201, (Byte []){234, 140, 143, 143, 1
         [selectedAllRangeButtons addObject:model];
 
         //: if (item.selctor == @selector(onTapMenuItemCopy:)) {
-        if (item.selctor == @selector(mediaed:)) {
+        if (item.selctor == @selector(onTapMenuItemCopy:)) {
             //: [selectedPartRangeButtons addObject:model];
             [selectedPartRangeButtons addObject:model];
         }

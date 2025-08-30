@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "DisplayCardDataSourceProtocol.h"
+#import "DisplayCardDataSourceProtocol.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: typedef void(^NIMSelectedCompletion)(id <FFFKitSelectCardData> item);
+//: typedef void(^NIMSelectedCompletion)(id <DisplayKitSelectCardData> item);
 typedef void(^NIMSelectedCompletion)(id <ChangeLength> item);
 
-//: @interface FFFTeamCardSelectedViewController : UIViewController
+//: @interface DisplayTeamCardSelectedViewController : UIViewController
 @interface YearViewController : UIViewController
 
 //: @property (nonatomic, copy) NSString *titleString;
@@ -33,7 +33,7 @@ typedef void(^NIMSelectedCompletion)(id <ChangeLength> item);
 
 //: + (instancetype)instanceWithTitle:(NSString *)title
 + (instancetype)nameInstance:(NSString *)title
-                            //: items:(NSMutableArray <id <FFFKitSelectCardData>> *)items
+                            //: items:(NSMutableArray <id <DisplayKitSelectCardData>> *)items
                             item:(NSMutableArray <id <ChangeLength>> *)items
                            //: result:(NIMSelectedCompletion)result;
                            must:(NIMSelectedCompletion)result;

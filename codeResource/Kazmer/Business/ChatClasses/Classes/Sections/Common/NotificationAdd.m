@@ -82,7 +82,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitNotificationFirer.h"
+//: #import "DisplayKitNotificationFirer.h"
 #import "NotificationAdd.h"
 
 //: NSString *const noti_cellUrl = @"noti_cellUrl";
@@ -101,7 +101,7 @@ NSString *const kUserStr = @"kUserStr";
 //: NSString *const showDoingLoadData = @"InfoId";
 NSString *const showDoingLoadData = @"InfoId";
 
-//: @implementation FFFKitNotificationFirer
+//: @implementation DisplayKitNotificationFirer
 @implementation NotificationAdd
 
 //: - (instancetype)init{
@@ -110,7 +110,7 @@ NSString *const showDoingLoadData = @"InfoId";
     self = [super init];
     //: if (self) {
     if (self) {
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[DisplayKitTimerHolder alloc] init];
         _timer = [[LargenessHolder alloc] init];
         //: _timeInterval = 1.0f;
         _timeInterval = 1.0f;
@@ -134,10 +134,10 @@ NSString *const showDoingLoadData = @"InfoId";
     [self.cachedInfo setObject:info forKey:info.save];
 }
 
-//: #pragma mark - FFFKitTimerHolderDelegate
+//: #pragma mark - DisplayKitTimerHolderDelegate
 #pragma mark - CornerDelegate
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder{
+//: - (void)onNIMKitTimerFired:(DisplayKitTimerHolder *)holder{
 - (void)shoulding:(LargenessHolder *)holder{
     //: NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];

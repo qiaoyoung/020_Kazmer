@@ -28,7 +28,7 @@ Byte kName_pinString[] = {77, 17, 1, 10, 6, 127, 106, 122, 231, 156, 116, 98, 10
 //: safe_arrow_next
 Byte kNameCommitValue[] = {93, 15, 5, 4, 120, 102, 107, 106, 100, 102, 119, 119, 116, 124, 100, 115, 106, 125, 121, 50};
 
-//: #ffffff
+//: #fffDisplay
 Byte kName_stableContent[] = {64, 7, 30, 7, 245, 35, 192, 65, 132, 132, 132, 132, 132, 132, 72};
 
 // __DEBUG__
@@ -148,7 +148,7 @@ Byte kName_stableContent[] = {64, 7, 30, 7, 245, 35, 192, 65, 132, 132, 132, 132
         labtitle1.font = [UIFont systemFontOfSize:11.f];
         //: labtitle1.textColor = [UIColor blackColor];
         labtitle1.textColor = [UIColor blackColor];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"Read_agree_agreement"];
+        //: labtitle1.text = [DisplayLanguageManager getTextWithKey:@"Read_agree_agreement"];
         labtitle1.text = [MakeManager cell:StringFromInevitablyData(kTitleMessageName)];
         //: labtitle1.numberOfLines = 2;
         labtitle1.numberOfLines = 2;
@@ -173,7 +173,7 @@ Byte kName_stableContent[] = {64, 7, 30, 7, 245, 35, 192, 65, 132, 132, 132, 132
         labtitle2.font = [UIFont systemFontOfSize:11.f];
         //: labtitle2.textColor = [UIColor blackColor];
         labtitle2.textColor = [UIColor blackColor];
-        //: labtitle2.text = [FFFLanguageManager getTextWithKey:@"Vertify_login_password"];
+        //: labtitle2.text = [DisplayLanguageManager getTextWithKey:@"Vertify_login_password"];
         labtitle2.text = [MakeManager cell:StringFromInevitablyData(kContentStepCurrentValue)];
         //: labtitle2.numberOfLines = 2;
         labtitle2.numberOfLines = 2;
@@ -198,7 +198,7 @@ Byte kName_stableContent[] = {64, 7, 30, 7, 245, 35, 192, 65, 132, 132, 132, 132
         labtitle3.font = [UIFont systemFontOfSize:11.f];
         //: labtitle3.textColor = [UIColor blackColor];
         labtitle3.textColor = [UIColor blackColor];
-        //: labtitle3.text = [FFFLanguageManager getTextWithKey:@"Complete_operation"];
+        //: labtitle3.text = [DisplayLanguageManager getTextWithKey:@"Complete_operation"];
         labtitle3.text = [MakeManager cell:StringFromInevitablyData(kNameCivilianValue)];
         //: labtitle3.numberOfLines = 2;
         labtitle3.numberOfLines = 2;
@@ -261,7 +261,7 @@ Byte kName_stableContent[] = {64, 7, 30, 7, 245, 35, 192, 65, 132, 132, 132, 132
         [_sureBtn addTarget:self action:@selector(valueTitle) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffDisplay"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor cell:StringFromInevitablyData(kName_stableContent)] forState:UIControlStateNormal];
         //: [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];
         [_sureBtn setTitle:@"OK" forState:UIControlStateNormal];

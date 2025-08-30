@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFSessionShareCardContentView : FFFSessionMessageContentView
+//: @interface DisplaySessionShareCardContentView : DisplaySessionMessageContentView
 @interface ValueControl : WithTopView
 
 

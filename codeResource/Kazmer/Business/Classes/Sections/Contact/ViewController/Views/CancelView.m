@@ -213,7 +213,7 @@ ModelData kContent_keyString = (ModelData){246, (Byte []){213, 195, 178, 195, 17
     _mesBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_mesBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_mesBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_mesBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_my_tag_activity_my_friend"] forState:UIControlStateNormal];
+    //: [_mesBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_my_tag_activity_my_friend"] forState:UIControlStateNormal];
     [_mesBtn setTitle:[MakeManager cell:StringFromModelData(&kTitleFrameData)] forState:UIControlStateNormal];
     //: [_mesBtn addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_mesBtn addTarget:self action:@selector(rangeClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -233,7 +233,7 @@ ModelData kContent_keyString = (ModelData){246, (Byte []){213, 195, 178, 195, 17
     _resqBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_resqBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_resqBtn setTitleColor:[UIColor cell:StringFromModelData(&kContent_keyString)] forState:UIControlStateNormal];
-    //: [_resqBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_resqBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_resqBtn setTitle:[MakeManager cell:StringFromModelData(&kNameWithValue)] forState:UIControlStateNormal];
     //: [_resqBtn addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_resqBtn addTarget:self action:@selector(rangeClick:) forControlEvents:UIControlEventTouchUpInside];

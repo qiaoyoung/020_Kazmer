@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFGrowingTextView;
+//: @class DisplayGrowingTextView;
 @class AtPraiseScrollView;
 
-//: @protocol FFFGrowingTextViewDelegate <NSObject>
+//: @protocol DisplayGrowingTextViewDelegate <NSObject>
 @protocol TagComment <NSObject>
 //: @optional
 @optional
@@ -29,22 +29,22 @@
 //: - (BOOL)shouldInteractWithTextAttachment:(NSTextAttachment *)textAttachment inRange:(NSRange)range;
 - (BOOL)ambit:(NSTextAttachment *)textAttachment bubbleRange:(NSRange)range;
 
-//: - (void)textViewDidBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidBeginEditing:(DisplayGrowingTextView *)growingTextView;
 - (void)tidingsed:(AtPraiseScrollView *)growingTextView;
 
-//: - (void)textViewDidChangeSelection:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChangeSelection:(DisplayGrowingTextView *)growingTextView;
 - (void)barTing:(AtPraiseScrollView *)growingTextView;
 
-//: - (void)textViewDidEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidEndEditing:(DisplayGrowingTextView *)growingTextView;
 - (void)texts:(AtPraiseScrollView *)growingTextView;
 
-//: - (BOOL)textViewShouldBeginEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldBeginEditing:(DisplayGrowingTextView *)growingTextView;
 - (BOOL)onPin:(AtPraiseScrollView *)growingTextView;
 
-//: - (BOOL)textViewShouldEndEditing:(FFFGrowingTextView *)growingTextView;
+//: - (BOOL)textViewShouldEndEditing:(DisplayGrowingTextView *)growingTextView;
 - (BOOL)pushUpThan:(AtPraiseScrollView *)growingTextView;
 
-//: - (void)textViewDidChange:(FFFGrowingTextView *)growingTextView;
+//: - (void)textViewDidChange:(DisplayGrowingTextView *)growingTextView;
 - (void)aspected:(AtPraiseScrollView *)growingTextView;
 
 //: - (void)willChangeHeight:(CGFloat)height;
@@ -56,13 +56,13 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView : UIScrollView
+//: @interface DisplayGrowingTextView : UIScrollView
 @interface AtPraiseScrollView : UIScrollView
 
 //: @property (nonatomic,assign) NSInteger maxNumberOfLines;
 @property (nonatomic,assign) NSInteger maxNumberOfLines;
 
-//: @property (nonatomic,weak) id<FFFGrowingTextViewDelegate> textViewDelegate;
+//: @property (nonatomic,weak) id<DisplayGrowingTextViewDelegate> textViewDelegate;
 @property (nonatomic,weak) id<TagComment> textViewDelegate;
 
 //: @property (nonatomic,assign) NSInteger minNumberOfLines;
@@ -74,7 +74,7 @@
 //: @end
 @end
 
-//: @interface FFFGrowingTextView(TextView)
+//: @interface DisplayGrowingTextView(TextView)
 @interface AtPraiseScrollView(TextView)
 
 //: @property (nonatomic,assign) UIReturnKeyType returnKeyType;

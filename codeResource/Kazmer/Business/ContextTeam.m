@@ -42,7 +42,7 @@ Byte kTitle_screwData[] = {77, 53, 26, 13, 194, 66, 56, 47, 224, 58, 215, 46, 10
 //
 
 // __M_A_C_R_O__
-//: #import "FFFConfig.h"
+//: #import "DisplayConfig.h"
 #import "ContextTeam.h"
 //: #import "RestUtil.h"
 #import "ParameterUtil.h"
@@ -50,7 +50,7 @@ Byte kTitle_screwData[] = {77, 53, 26, 13, 194, 66, 56, 47, 224, 58, 215, 46, 10
 //: static NSString *const kSavedDomainKey = @"SavedDomainKey";
 static NSString *const appSumMessage = @"SavedDomainKey";
 
-//: @interface FFFConfig ()
+//: @interface DisplayConfig ()
 @interface ContextTeam ()
 
 //: @property (nonatomic,copy) NSString *hostFrom2;
@@ -61,7 +61,7 @@ static NSString *const appSumMessage = @"SavedDomainKey";
 //: @end
 @end
 
-//: @implementation FFFConfig
+//: @implementation DisplayConfig
 @implementation ContextTeam
 
 //: - (NSString *)getCurrentDomain {
@@ -227,13 +227,13 @@ static NSString *const appSumMessage = @"SavedDomainKey";
 //: + (instancetype)sharedConfig
 + (instancetype)mutual
 {
-    //: static FFFConfig *instance = nil;
+    //: static DisplayConfig *instance = nil;
     static ContextTeam *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFConfig alloc] init];
+        //: instance = [[DisplayConfig alloc] init];
         instance = [[ContextTeam alloc] init];
     //: });
     });

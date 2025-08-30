@@ -215,7 +215,7 @@
 
         //: _textField = [[UITextField alloc] init];
         _textField = [[UITextField alloc] init];
-        //: _textField.placeholder = [FFFLanguageManager getTextWithKey:@"register_avtivity3_nick"];
+        //: _textField.placeholder = [DisplayLanguageManager getTextWithKey:@"register_avtivity3_nick"];
         _textField.placeholder = [MakeManager cell:[VernalEquinoxData sharedInstance].kContent_sharedString];
         //: [backGroundView addSubview:_textField];
         [backGroundView addSubview:_textField];
@@ -256,7 +256,7 @@
         UIButton *knowButton = [UIButton buttonWithType:UIButtonTypeCustom];
         //: knowButton.titleLabel.font = [UIFont systemFontOfSize:16];
         knowButton.titleLabel.font = [UIFont systemFontOfSize:16];
-        //: [knowButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
+        //: [knowButton setTitle:[DisplayLanguageManager getTextWithKey:@"activity_register_next"] forState:UIControlStateNormal];
         [knowButton setTitle:[MakeManager cell:[VernalEquinoxData sharedInstance].kTitle_eyebrowName] forState:UIControlStateNormal];
         //: [knowButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [knowButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];

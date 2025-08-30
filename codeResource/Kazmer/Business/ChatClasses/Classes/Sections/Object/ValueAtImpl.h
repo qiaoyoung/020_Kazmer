@@ -9,23 +9,23 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurator.h"
+//: #import "DisplaySessionConfigurator.h"
 #import "TitleTargetYear.h"
-//: #import "FFFSessionPrivateProtocol.h"
-#import "FFFSessionPrivateProtocol.h"
+//: #import "DisplaySessionPrivateProtocol.h"
+#import "DisplaySessionPrivateProtocol.h"
 
-//: @interface FFFSessionLayoutImpl : NSObject<NIMSessionLayout>
+//: @interface DisplaySessionLayoutImpl : NSObject<NIMSessionLayout>
 @interface ValueAtImpl : NSObject<CancelLayout>
 
 //: @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UITableView *tableView;
 
-//: @property (nonatomic,strong) FFFInputView *inputView;
+//: @property (nonatomic,strong) DisplayInputView *inputView;
 @property (nonatomic,strong) ContextInputView *inputView;
 
 //: - (instancetype)initWithSession:(NIMSession *)session
 - (instancetype)initWithInfo:(NIMSession *)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<DisplaySessionConfig>)sessionConfig;
                          specialSession:(id<ColorConfig>)sessionConfig;
 
 //: @end

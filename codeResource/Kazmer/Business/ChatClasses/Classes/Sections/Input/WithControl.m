@@ -9,29 +9,29 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonButton.h"
+//: #import "DisplayInputEmoticonButton.h"
 #import "WithControl.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "DisplayInputEmoticonDefine.h"
+#import "DisplayInputEmoticonDefine.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitDevice.h"
+//: #import "DisplayKitDevice.h"
 #import "MaxDevice.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+Mortification.h"
 //: #import "SSZipArchiveManager.h"
 #import "PersonShould.h"
 
-//: @implementation FFFInputEmoticonButton
+//: @implementation DisplayInputEmoticonButton
 @implementation WithControl
 
-//: + (FFFInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
+//: + (DisplayInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate{
 + (WithControl*)duringBottom:(BubbleNameReload*)data with:(NSString*)catalogID center:( id<PraiseStandard>)delegate{
-    //: FFFInputEmoticonButton* icon = [[FFFInputEmoticonButton alloc] init];
+    //: DisplayInputEmoticonButton* icon = [[DisplayInputEmoticonButton alloc] init];
     WithControl* icon = [[WithControl alloc] init];
     //: [icon addTarget:icon action:@selector(onIconSelected:) forControlEvents:UIControlEventTouchUpInside];
     [icon addTarget:icon action:@selector(doing:) forControlEvents:UIControlEventTouchUpInside];

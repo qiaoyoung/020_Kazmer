@@ -17,7 +17,7 @@ NSString * originAction(NSString *api) {
     //: NSString* resultApi;
     NSString* resultApi;
 //    resultApi = [[ContextTeam sharedConfig].domainURL stringByAppendingString:api];
-    //: resultApi = [[[FFFConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
+    //: resultApi = [[[DisplayConfig sharedConfig] getCurrentDomain] stringByAppendingString:api];
     resultApi = [[[ContextTeam mutual] betweenContainer] stringByAppendingString:api];
     //: return resultApi;
     return resultApi;

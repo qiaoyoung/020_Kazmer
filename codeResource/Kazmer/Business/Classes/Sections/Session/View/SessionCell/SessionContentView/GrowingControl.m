@@ -305,7 +305,7 @@ NSString *const app_likelyMsg (NSString *value) {
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(surprised:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
         ToiletKitSession *event = [[ToiletKitSession alloc] init];
         //: event.eventName = NIMDemoEventNameOpenRedPacket;
         event.eventName = app_likelyMsg(nil);
@@ -320,7 +320,7 @@ NSString *const app_likelyMsg (NSString *value) {
 
 //: #pragma mark - 系统父类方法
 #pragma mark - 系统父类方法
-//: - (void)refresh:(FFFMessageModel*)data{
+//: - (void)refresh:(DisplayMessageModel*)data{
 - (void)from:(CleanDoing*)data{
     //: [super refresh:data];
     [super from:data];

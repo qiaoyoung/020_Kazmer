@@ -134,7 +134,7 @@
         //: for (id<USERGroupMemberProtocol> member in members) {
         for (id<CancelProtocol> member in members) {
             //: if ([[member memberId] isEqualToString:uid]) {
-            if ([[member corner] isEqualToString:uid]) {
+            if ([[member littleLeagueTeam] isEqualToString:uid]) {
                 //: return member;
                 return member;
             }
@@ -252,7 +252,7 @@
     //: for (id<USERGroupMemberProtocol>member in members) {
     for (id<CancelProtocol>member in members) {
         //: if ([[member memberId] isEqualToString:me]) {
-        if ([[member corner] isEqualToString:me]) {
+        if ([[member littleLeagueTeam] isEqualToString:me]) {
             //: continue;
             continue;
         }

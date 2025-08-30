@@ -13,13 +13,13 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 
-//: @interface FFFKitEvent : NSObject
+//: @interface DisplayKitEvent : NSObject
 @interface ToiletKitSession : NSObject
 
-//: @property (nonatomic,strong) FFFMessageModel *messageModel;
+//: @property (nonatomic,strong) DisplayMessageModel *messageModel;
 @property (nonatomic,strong) CleanDoing *messageModel;
 
 //: @property (nonatomic,strong) id data;
@@ -34,12 +34,12 @@
 
 
 
-//: extern NSString *const FFFKitEventNameTapContent;
+//: extern NSString *const DisplayKitEventNameTapContent;
 extern NSString *const userStateId;
-//: extern NSString *const FFFKitEventNameTapLabelLink;
+//: extern NSString *const DisplayKitEventNameTapLabelLink;
 extern NSString *const show_contentData;
-//: extern NSString *const FFFKitEventNameTapAudio;
+//: extern NSString *const DisplayKitEventNameTapAudio;
 extern NSString *const app_successDoingceMsg;
 
-//: extern NSString *const FFFKitEventNameTapRepliedContent;
+//: extern NSString *const DisplayKitEventNameTapRepliedContent;
 extern NSString *const kCommentSystemIdent;

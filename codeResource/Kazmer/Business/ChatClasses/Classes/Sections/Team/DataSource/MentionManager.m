@@ -51,10 +51,10 @@ Byte kTextEyebrowGearName[] = {72, 12, 55, 7, 43, 127, 65, 178, 75, 73, 177, 120
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamListDataManager.h"
+//: #import "DisplayTeamListDataManager.h"
 #import "MentionManager.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
@@ -63,13 +63,13 @@ NSString *const notiBeginStr = @"kNIMTeamListDataTeamInfoUpdate";
 //: NSString *const kNIMTeamListDataTeamMembersChanged = @"kNIMTeamListDataTeamMembersChanged";
 NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 
-//: @interface FFFTeamListDataManager ()<NIMTeamManagerDelegate>
+//: @interface DisplayTeamListDataManager ()<NIMTeamManagerDelegate>
 @interface MentionManager ()<NIMTeamManagerDelegate>
 
 //: @property (nonatomic, strong) NIMTeamMember *myTeamInfo;
 @property (nonatomic, strong) NIMTeamMember *myTeamInfo;
 
-//: @property (nonatomic, strong) NSMutableArray <FFFTeamCardMemberItem *> *members;
+//: @property (nonatomic, strong) NSMutableArray <DisplayTeamCardMemberItem *> *members;
 @property (nonatomic, strong) NSMutableArray <IndexItem *> *members;
 
 //: @property (nonatomic, strong) NIMSession *session;
@@ -78,13 +78,13 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 //: @property (nonatomic, strong) NIMTeam *team;
 @property (nonatomic, strong) NIMTeam *team;
 
-//: @property (nonatomic, strong) FFFTeamCardMemberItem *myCard;
+//: @property (nonatomic, strong) DisplayTeamCardMemberItem *myCard;
 @property (nonatomic, strong) IndexItem *myCard;
 
 //: @end
 @end
 
-//: @implementation FFFTeamListDataManager
+//: @implementation DisplayTeamListDataManager
 @implementation MentionManager
 
 //: - (void)handleUpdateTeamInfoMode:(NIMTeamUpdateInfoMode)mode
@@ -99,11 +99,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.updateInfoMode = mode;
         self.team.updateInfoMode = mode;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: } else {
     } else {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
 
@@ -126,11 +126,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.joinMode = mode;
         self.team.joinMode = mode;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
 
@@ -164,25 +164,25 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
         if (self.team.type == NIMTeamTypeNormal) { //高级群需要验证，普通群直接进
             //: [self addMembers:members];
             [self teamMembers:members];
-            //: msg = [FFFLanguageManager getTextWithKey:@"邀请成功"];
+            //: msg = [DisplayLanguageManager getTextWithKey:@"邀请成功"];
             msg = [MakeManager cell:StringFromRegulationData(kText_seldomValue)];
         //: } else {
         } else {
             //: if (self.team.beInviteMode == NIMTeamBeInviteModeNeedAuth) {
             if (self.team.beInviteMode == NIMTeamBeInviteModeNeedAuth) {
-                //: msg = [FFFLanguageManager getTextWithKey:@"邀请成功，等待验证"];
+                //: msg = [DisplayLanguageManager getTextWithKey:@"邀请成功，等待验证"];
                 msg = [MakeManager cell:StringFromRegulationData(kNameCombatData)];
             //: } else {
             } else {
                 //: [self addMembers:members];
                 [self teamMembers:members];
-                //: msg = [FFFLanguageManager getTextWithKey:@"邀请成功"];
+                //: msg = [DisplayLanguageManager getTextWithKey:@"邀请成功"];
                 msg = [MakeManager cell:StringFromRegulationData(kText_seldomValue)];
             }
         }
     //: } else {
     } else {
-        //: msg = [NSString stringWithFormat:@"%@ :%zd",[FFFLanguageManager getTextWithKey:@"邀请失败"],error.code];
+        //: msg = [NSString stringWithFormat:@"%@ :%zd",[DisplayLanguageManager getTextWithKey:@"邀请失败"],error.code];
         msg = [NSString stringWithFormat:@"%@ :%zd",[MakeManager cell:StringFromRegulationData(kTextEyebrowGearName)],error.code];
     }
     //: if (completion) {
@@ -293,7 +293,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (!error) {
     if (!error) {
-        //: [self.members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        //: [self.members enumerateObjectsUsingBlock:^(DisplayTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [self.members enumerateObjectsUsingBlock:^(IndexItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             //: if ([obj.userId isEqualToString:userId]) {
             if ([obj.userId isEqualToString:userId]) {
@@ -304,11 +304,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
             }
         //: }];
         }];
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -351,7 +351,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (error) {
     if (error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kTitle_collegeNimValue)];
     //: } else {
     } else {
@@ -369,7 +369,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 - (NSMutableArray *)memberIds {
     //: NSMutableArray *ret = [NSMutableArray array];
     NSMutableArray *ret = [NSMutableArray array];
-    //: [_members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    //: [_members enumerateObjectsUsingBlock:^(DisplayTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     [_members enumerateObjectsUsingBlock:^(IndexItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //: if (obj.userId) {
         if (obj.userId) {
@@ -382,11 +382,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     return ret;
 }
 
-//: - (FFFTeamCardMemberItem *)memberWithUserId:(NSString *)userId {
+//: - (DisplayTeamCardMemberItem *)memberWithUserId:(NSString *)userId {
 - (IndexItem *)memberNameRecessWearer:(NSString *)userId {
-    //: __block FFFTeamCardMemberItem *ret = nil;
+    //: __block DisplayTeamCardMemberItem *ret = nil;
     __block IndexItem *ret = nil;
-    //: [_members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    //: [_members enumerateObjectsUsingBlock:^(DisplayTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
     [_members enumerateObjectsUsingBlock:^(IndexItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         //: if ([obj.userId isEqualToString:userId]) {
         if ([obj.userId isEqualToString:userId]) {
@@ -459,7 +459,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
         [self doEnd:userIds];
     //: } else {
     } else {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -470,7 +470,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 }
 
 
-//: - (void)updateMembersWithOption:(FFFMembersFetchOption *)option
+//: - (void)updateMembersWithOption:(DisplayMembersFetchOption *)option
 - (void)language:(LengthOption *)option
                         //: members:(NSArray <NIMTeamMember *> *)members {
                         can:(NSArray <NIMTeamMember *> *)members {
@@ -495,7 +495,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
                 self.myTeamInfo = member;
             }
 
-            //: FFFTeamCardMemberItem *item = [[FFFTeamCardMemberItem alloc] initWithMember:member
+            //: DisplayTeamCardMemberItem *item = [[DisplayTeamCardMemberItem alloc] initWithMember:member
             IndexItem *item = [[IndexItem alloc] initWithName:member
                                                                                //: teamType:_team.type];
                                                                                majorLeagueTeam:_team.type];
@@ -519,7 +519,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
                 self.myTeamInfo = member;
             }
 
-            //: FFFTeamCardMemberItem *item = [[FFFTeamCardMemberItem alloc] initWithMember:member
+            //: DisplayTeamCardMemberItem *item = [[DisplayTeamCardMemberItem alloc] initWithMember:member
             IndexItem *item = [[IndexItem alloc] initWithName:member
                                                                                //: teamType:_team.type];
                                                                                majorLeagueTeam:_team.type];
@@ -541,11 +541,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.beInviteMode = mode;
         self.team.beInviteMode = mode;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
 
@@ -589,7 +589,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     }
 }
 
-//: #pragma mark - <FFFTeamOperation>
+//: #pragma mark - <DisplayTeamOperation>
 #pragma mark - <ActivityImage>
 //: - (void)addUsers:(NSArray *)userIds
 - (void)length:(NSArray *)userIds
@@ -656,7 +656,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (error) {
     if (error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -678,11 +678,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.inviteMode = mode;
         self.team.inviteMode = mode;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: } else {
     } else {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
 
@@ -875,11 +875,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.myTeamInfo.nickname = nick;
         self.myTeamInfo.nickname = nick;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
 
@@ -935,7 +935,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 
 //: - (NIMTeamMember*)teamInfo:(NSString*)uid{
 - (NIMTeamMember*)substanceInfo:(NSString*)uid{
-    //: for (FFFTeamCardMemberItem *member in _members) {
+    //: for (DisplayTeamCardMemberItem *member in _members) {
     for (IndexItem *member in _members) {
         //: if ([member.userId isEqualToString:uid]) {
         if ([member.userId isEqualToString:uid]) {
@@ -947,7 +947,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     return nil;
 }
 
-//: #pragma mark - <FFFTeamMemberListDataSource>
+//: #pragma mark - <DisplayTeamMemberListDataSource>
 #pragma mark - <AccountSource>
 //: - (NSInteger)memberNumber {
 - (NSInteger)digitizerTap {
@@ -958,7 +958,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 
 //: - (void)handleFetchTeamMembers:(NSArray <NIMTeamMember *> *)members
 - (void)highlight:(NSArray <NIMTeamMember *> *)members
-                        //: option:(FFFMembersFetchOption *)option
+                        //: option:(DisplayMembersFetchOption *)option
                         length:(LengthOption *)option
                          //: error:(NSError *)error
                          ting:(NSError *)error
@@ -978,7 +978,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
         msg = StringFromRegulationData(kTitleUmString).disable;
     //: } else {
     } else {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -1061,7 +1061,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     }
     //: _team = team;
     _team = team;
-    //: FFFMembersFetchOption *option = [[FFFMembersFetchOption alloc] init];
+    //: DisplayMembersFetchOption *option = [[DisplayMembersFetchOption alloc] init];
     LengthOption *option = [[LengthOption alloc] init];
     //: option.count = _members.count + 50;
     option.count = _members.count + 50;
@@ -1089,11 +1089,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (!error) {
     if (!error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -1111,11 +1111,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     NSString *msg = nil;
     //: if (!error) {
     if (!error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -1185,7 +1185,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 - (void)setMyTeamInfo:(NIMTeamMember *)myTeamInfo {
     //: _myTeamInfo = myTeamInfo;
     _myTeamInfo = myTeamInfo;
-    //: _myCard = [[FFFTeamCardMemberItem alloc] initWithMember:myTeamInfo
+    //: _myCard = [[DisplayTeamCardMemberItem alloc] initWithMember:myTeamInfo
     _myCard = [[IndexItem alloc] initWithName:myTeamInfo
                                                    //: teamType:_team.type];
                                                    majorLeagueTeam:_team.type];
@@ -1330,7 +1330,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
         items = [NSMutableArray array];
         //: for (NIMTeamMember *member in members) {
         for (NIMTeamMember *member in members) {
-            //: FFFTeamCardMemberItem *item = [[FFFTeamCardMemberItem alloc] initWithMember:member
+            //: DisplayTeamCardMemberItem *item = [[DisplayTeamCardMemberItem alloc] initWithMember:member
             IndexItem *item = [[IndexItem alloc] initWithName:member
                                                                                //: teamType:_team.type];
                                                                                majorLeagueTeam:_team.type];
@@ -1406,7 +1406,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     __block NSString *msg = nil;
     //: if (error) {
     if (error) {
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -1428,11 +1428,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.teamName = name;
         self.team.teamName = name;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -1456,7 +1456,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: for (NSString *userId in userIds) {
         for (NSString *userId in userIds) {
-            //: [self.members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            //: [self.members enumerateObjectsUsingBlock:^(DisplayTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             [self.members enumerateObjectsUsingBlock:^(IndexItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 //: if ([obj.userId isEqualToString:userId]) {
                 if ([obj.userId isEqualToString:userId]) {
@@ -1471,11 +1471,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
             }];
         }
 
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
 
@@ -1667,7 +1667,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: for (NSString *userId in userIds) {
         for (NSString *userId in userIds) {
-            //: [self.members enumerateObjectsUsingBlock:^(FFFTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            //: [self.members enumerateObjectsUsingBlock:^(DisplayTeamCardMemberItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             [self.members enumerateObjectsUsingBlock:^(IndexItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 //: if ([obj.userId isEqualToString:userId]) {
                 if ([obj.userId isEqualToString:userId]) {
@@ -1679,11 +1679,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
             //: }];
             }];
         }
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -1703,7 +1703,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 
     //: for (NIMTeamMember *member in members) {
     for (NIMTeamMember *member in members) {
-        //: FFFTeamCardMemberItem *item = [[FFFTeamCardMemberItem alloc] initWithMember:member
+        //: DisplayTeamCardMemberItem *item = [[DisplayTeamCardMemberItem alloc] initWithMember:member
         IndexItem *item = [[IndexItem alloc] initWithName:member
                                                                            //: teamType:_team.type];
                                                                            majorLeagueTeam:_team.type];
@@ -1761,7 +1761,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 
 //: - (void)removeMemberItem:(NSString *)userId {
 - (void)bottom:(NSString *)userId {
-    //: for (FFFTeamCardMemberItem *obj in _members) {
+    //: for (DisplayTeamCardMemberItem *obj in _members) {
     for (IndexItem *obj in _members) {
         //: if ([obj.userId isEqualToString:userId]) {
         if ([obj.userId isEqualToString:userId]) {
@@ -1785,11 +1785,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     if (!error) {
         //: self.team.intro = intro;
         self.team.intro = intro;
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
     //: if (completion) {
@@ -1820,11 +1820,11 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
             //: [self removeMembers:@[userId]];
             [self doEnd:@[userId]];
         }
-        //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
         msg = [MakeManager cell:StringFromRegulationData(kTitleSuchString)];
     //: }else{
     }else{
-        //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+        //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
         msg = [MakeManager cell:StringFromRegulationData(kContent_beauPlayerValue)];
     }
 
@@ -1837,7 +1837,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
 
 //: #pragma mark - Private
 #pragma mark - Private
-//: - (void)addMemberItem:(FFFTeamCardMemberItem *)item {
+//: - (void)addMemberItem:(DisplayTeamCardMemberItem *)item {
 - (void)crySize:(IndexItem *)item {
     //: if (!item) {
     if (!item) {
@@ -1863,7 +1863,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
     }
 }
 
-//: - (void)fetchTeamMembersWithOption:(FFFMembersFetchOption *)option
+//: - (void)fetchTeamMembersWithOption:(DisplayMembersFetchOption *)option
 - (void)atTitle:(LengthOption *)option
                         //: completion:(NIMTeamListDataBlock)block {
                         seatCompletion:(NIMTeamListDataBlock)block {
@@ -1956,7 +1956,7 @@ NSString *const app_contentKey = @"kNIMTeamListDataTeamMembersChanged";
         } else {
             //: if (block) {
             if (block) {
-                //: block(error, [FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]);
+                //: block(error, [DisplayLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]);
                 block(error, [MakeManager cell:StringFromRegulationData(kTitleSateString)]);
             }
         }

@@ -308,7 +308,7 @@
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:[MakeManager cell:[ArrestData sharedInstance].kContentAnyoneData] duration:2.0 position:CSToastPositionCenter];
     }
 
@@ -496,7 +496,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_wallet_zhuan"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"activity_wallet_zhuan"];
     labtitle.text = [MakeManager cell:[ArrestData sharedInstance].kName_grayValue];
     //: [navView addSubview:labtitle];
     [navView addSubview:labtitle];
@@ -527,7 +527,7 @@
     _btnfriend.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_btnfriend setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
+    //: [_btnfriend setTitle:[DisplayLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
     [_btnfriend setTitle:[MakeManager cell:[ArrestData sharedInstance].kContentSoulData] forState:UIControlStateNormal];
     //: [_btnfriend addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btnfriend addTarget:self action:@selector(rangeClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -546,7 +546,7 @@
     _btngroup.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btngroup setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_btngroup setTitleColor:[UIColor cell:[ArrestData sharedInstance].kContent_exceptData] forState:UIControlStateNormal];
-    //: [_btngroup setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_btngroup setTitle:[DisplayLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_btngroup setTitle:[MakeManager cell:[ArrestData sharedInstance].kNameOriginValue] forState:UIControlStateNormal];
     //: [_btngroup addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btngroup addTarget:self action:@selector(rangeClick:) forControlEvents:UIControlEventTouchUpInside];

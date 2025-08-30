@@ -108,7 +108,7 @@ NSString *const m_contentKey (NSString *value) {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(DisplayMessageModel *)data{
 - (void)from:(CleanDoing *)data{
     //: [super refresh:data];
     [super from:data];
@@ -194,7 +194,7 @@ NSString *const m_contentKey (NSString *value) {
 - (void)gens:(UIButton *)sender {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(surprised:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
         ToiletKitSession *event = [[ToiletKitSession alloc] init];
         //: event.eventName = NIMDemoEventNameOpenMergeMessage;
         event.eventName = m_contentKey(nil);

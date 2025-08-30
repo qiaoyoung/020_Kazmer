@@ -105,21 +105,21 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardHeaderView.h"
+//: #import "DisplayTeamCardHeaderView.h"
 #import "DerisionView.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 
-//: @interface FFFTeamCardHeaderView ()
+//: @interface DisplayTeamCardHeaderView ()
 @interface DerisionView ()
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) DisplayAvatarImageView *avatar;
 @property (nonatomic,strong) MemoryImageControl *avatar;
 
 //: @property (nonatomic,strong) UILabel *titleLabel;
@@ -134,7 +134,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFTeamCardHeaderView
+//: @implementation DisplayTeamCardHeaderView
 @implementation DerisionView
 
 //: - (instancetype)initWithFrame:(CGRect)frame {
@@ -259,11 +259,11 @@ typedef struct {
 
 //: #pragma mark - Getter
 #pragma mark - Getter
-//: - (FFFAvatarImageView *)avatar {
+//: - (DisplayAvatarImageView *)avatar {
 - (MemoryImageControl *)avatar {
     //: if (!_avatar) {
     if (!_avatar) {
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _avatar = [[DisplayAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _avatar = [[MemoryImageControl alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [_avatar addTarget:self
         [_avatar addTarget:self

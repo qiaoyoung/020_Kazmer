@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface USERSessionListViewController : FFFSessionListViewController
+//: @interface USERSessionListViewController : DisplaySessionListViewController
 @interface TopViewController : PullViewController
 
 //: @property (nonatomic,strong) UIButton *addBtn;

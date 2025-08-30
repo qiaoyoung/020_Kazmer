@@ -234,7 +234,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"activity_qrcode_save_code"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"activity_qrcode_save_code"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:[[ErrorData sharedInstance] kName_targetValue]] forState:UIControlStateNormal];
         //: [_sureBtn setImage:[UIImage imageNamed:@"ic_down"] forState:UIControlStateNormal];
         [_sureBtn setImage:[UIImage imageNamed:[[ErrorData sharedInstance] kContentModelName]] forState:UIControlStateNormal];
@@ -353,7 +353,7 @@
           if (error) {
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{
-                  //: NSString *failed = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+                  //: NSString *failed = [DisplayLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
                   NSString *failed = [MakeManager cell:[[ErrorData sharedInstance] kName_fileValue]];//@"保存失败"
                   //: [SVProgressHUD showMessage:failed];
                   [SVProgressHUD firstTeam:failed];
@@ -361,7 +361,7 @@
               });
           //: } else {
           } else {
-              //: NSString *success = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"];
+              //: NSString *success = [DisplayLanguageManager getTextWithKey:@"group_info_activity_update_success"];
               NSString *success = [MakeManager cell:[[ErrorData sharedInstance] kTextViewValue]];//保存成功
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{
@@ -413,7 +413,7 @@
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:userID keepingOption:nil];
 
     //: [_box addSubview:self.iconImageView];
@@ -468,7 +468,7 @@
     contentLabel.textColor = [UIColor cell:[[ErrorData sharedInstance] kTitle_placeData]];
     //: contentLabel.textAlignment = NSTextAlignmentCenter;
     contentLabel.textAlignment = NSTextAlignmentCenter;
-    //: contentLabel.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+    //: contentLabel.text = [DisplayLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
     contentLabel.text = [MakeManager cell:[[ErrorData sharedInstance] kTitle_cellString]];//@"扫描二维码，加我为好友";
     //: [_box addSubview:contentLabel];
     [_box addSubview:contentLabel];

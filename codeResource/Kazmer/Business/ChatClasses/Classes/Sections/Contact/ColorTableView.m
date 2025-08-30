@@ -39,10 +39,10 @@ Byte kText_paleString[] = {96, 8, 52, 6, 66, 75, 134, 153, 165, 169, 157, 166, 1
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSetGroupNameView.h"
+//: #import "DisplaySetGroupNameView.h"
 #import "ColorTableView.h"
 
-//: @interface FFFSetGroupNameView ()<UITextFieldDelegate>
+//: @interface DisplaySetGroupNameView ()<UITextFieldDelegate>
 @interface ColorTableView ()<UITextFieldDelegate>
 
 //: @property (nonatomic,assign) NSInteger inputLimit;
@@ -69,7 +69,7 @@ Byte kText_paleString[] = {96, 8, 52, 6, 66, 75, 134, 153, 165, 169, 157, 166, 1
 //: @end
 @end
 
-//: @implementation FFFSetGroupNameView
+//: @implementation DisplaySetGroupNameView
 @implementation ColorTableView
 
 //: - (instancetype)initWithFrame:(CGRect)frame
@@ -216,7 +216,7 @@ Byte kText_paleString[] = {96, 8, 52, 6, 66, 75, 134, 153, 165, 169, 157, 166, 1
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 1;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_group_nickname_title"];
+        //: _titleLabel.text = [DisplayLanguageManager getTextWithKey:@"activity_group_nickname_title"];
         _titleLabel.text = [MakeManager cell:StringFromMerelyRuralData(kNameChopRiveValue)];
     }
     //: return _titleLabel;
@@ -234,7 +234,7 @@ Byte kText_paleString[] = {96, 8, 52, 6, 66, 75, 134, 153, 165, 169, 157, 166, 1
         _subtitleLabel.textAlignment = NSTextAlignmentCenter;
         //: _subtitleLabel.textColor = [UIColor colorWithHexString:@"#4B43DE"];
         _subtitleLabel.textColor = [UIColor cell:StringFromMerelyRuralData(kTitleFantasticPoetData)];
-        //: _subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"Required"];
+        //: _subtitleLabel.text = [DisplayLanguageManager getTextWithKey:@"Required"];
         _subtitleLabel.text = [MakeManager cell:StringFromMerelyRuralData(kText_paleString)];
     }
     //: return _subtitleLabel;
@@ -271,7 +271,7 @@ Byte kText_paleString[] = {96, 8, 52, 6, 66, 75, 134, 153, 165, 169, 157, 166, 1
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:StringFromMerelyRuralData(kNameSculptureValue)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:StringFromMerelyRuralData(kTextMilkContent)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -298,7 +298,7 @@ Byte kText_paleString[] = {96, 8, 52, 6, 66, 75, 134, 153, 165, 169, 157, 166, 1
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:StringFromMerelyRuralData(kText_distributionName)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor cell:StringFromMerelyRuralData(kTitleFantasticPoetData)];
@@ -337,7 +337,7 @@ Byte kText_paleString[] = {96, 8, 52, 6, 66, 75, 134, 153, 165, 169, 157, 166, 1
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
+        //: _searchField.placeholder = [DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_name"];
         _searchField.placeholder = [MakeManager cell:StringFromMerelyRuralData(kTitleArrestString)];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];

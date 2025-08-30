@@ -300,15 +300,15 @@
 // __M_A_C_R_O__
 //: #import "TeamMemberNormalViewController.h"
 #import "CancelViewController.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "DisplayContactSelectViewController.h"
 #import "RecordTitleViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "DisplayCardHeaderCell.h"
 #import "SwitchenceReusableView.h"
 //: #import "TeamMemberNormalCollectionViewCell.h"
 #import "ResultViewCell.h"
 //: #import "USERPersonalCardViewController.h"
 #import "CornerViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "DisplayTeamMemberCardViewController.h"
 #import "RowViewController.h"
 
 //: @interface TeamMemberNormalViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,NIMContactSelectDelegate>
@@ -448,7 +448,7 @@
     //: TeamMemberNormalCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TeamMemberNormalCollectionViewCell" forIndexPath:indexPath];
     ResultViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ResultViewCell" forIndexPath:indexPath];
     //    cell.delegate = self;
-//    cell.backgroundColor  = RGB_COLOR_String(@"#ffffff");
+//    cell.backgroundColor  = RGB_COLOR_String(@"#fffDisplay");
 
     //: NIMTeamMember *member = self.memberList[indexPath.row];
     NIMTeamMember *member = self.memberList[indexPath.row];
@@ -474,7 +474,7 @@
         config.filterIds = users;
         //: config.needMutiSelected = YES;
         config.needMutiSelected = YES;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: DisplayContactSelectViewController *vc = [[DisplayContactSelectViewController alloc] initWithConfig:config];
         RecordTitleViewController *vc = [[RecordTitleViewController alloc] initWithSightConfig:config];
         //: vc.delegate = self;
         vc.delegate = self;
@@ -569,7 +569,7 @@
                     //: self.owerInfo = member;
                     self.owerInfo = member;
 
-                    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
+                    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:member.userId option:nil];
                     CancelTeamCorner *info = [[Mortification text] tingVoice:member.userId keepingOption:nil];
                     //: self.titleLabel.text = info.showName;
                     self.titleLabel.text = info.showName;
@@ -623,7 +623,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"group_info_activity_team_member"];
     labtitle.text = [MakeManager cell:[[ButData sharedInstance] kContentToothValue]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -679,7 +679,7 @@
     subtitleLabel.textColor = [UIColor cell:[[ButData sharedInstance] kTextAircraftName]];
     //: subtitleLabel.textAlignment = NSTextAlignmentRight;
     subtitleLabel.textAlignment = NSTextAlignmentRight;
-    //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
+    //: subtitleLabel.text = [DisplayLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
     subtitleLabel.text = [MakeManager cell:[[ButData sharedInstance] kName_violenceString]];
     //: [owerView addSubview:subtitleLabel];
     [owerView addSubview:subtitleLabel];

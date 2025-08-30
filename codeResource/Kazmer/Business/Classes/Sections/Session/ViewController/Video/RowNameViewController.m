@@ -145,7 +145,7 @@
     return kTitle_divineData;
 }
 
-//: #66FFFFFF
+//: #66FFFDisplay
 + (NSString *)kName_hydraTitle {
     /* static */ NSString *kName_hydraTitle = nil;
     if (!kName_hydraTitle) {
@@ -193,7 +193,7 @@
     return kTitle_moleData;
 }
 
-//: #ffffff
+//: #fffDisplay
 + (NSString *)kText_basementValue {
     /* static */ NSString *kText_basementValue = nil;
     if (!kText_basementValue) {
@@ -478,7 +478,7 @@
     //: self.progressSlider.maximumTrackTintColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];
     self.progressSlider.maximumTrackTintColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];
 //    self.progressSlider.thumbTintColor = ThemeColor;
-    //: [self.progressSlider setThumbImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff"] radius:3.0] forState:UIControlStateNormal];
+    //: [self.progressSlider setThumbImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#fffDisplay"] radius:3.0] forState:UIControlStateNormal];
     [self.progressSlider setThumbImage:[UIImage attributeRadius:[UIColor cell:[TowData kText_basementValue]] makeForInsideMode:3.0] forState:UIControlStateNormal];
     //: self.progressSlider.layer.cornerRadius = 3;
     self.progressSlider.layer.cornerRadius = 3;
@@ -497,7 +497,7 @@
     _btnRate.backgroundColor = [UIColor blackColor];
     //: _btnRate.layer.cornerRadius = 9;
     _btnRate.layer.cornerRadius = 9;
-    //: _btnRate.layer.borderColor = [UIColor colorWithHexString:@"#66FFFFFF"].CGColor;
+    //: _btnRate.layer.borderColor = [UIColor colorWithHexString:@"#66FFFDisplay"].CGColor;
     _btnRate.layer.borderColor = [UIColor cell:[TowData kName_hydraTitle]].CGColor;
     //: _btnRate.layer.borderWidth = 1;
     _btnRate.layer.borderWidth = 1;
@@ -505,7 +505,7 @@
     [_btnRate addTarget:self action:@selector(colorToRate:) forControlEvents:UIControlEventTouchUpInside];
     //: _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
     _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
-    //: [_btnRate setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+    //: [_btnRate setTitleColor:[UIColor colorWithHexString:@"#fffDisplay"] forState:UIControlStateNormal];
     [_btnRate setTitleColor:[UIColor cell:[TowData kText_basementValue]] forState:UIControlStateNormal];
     //: [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
     [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
@@ -529,7 +529,7 @@
                 [wself morePlay];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]
                 [wself.view makeToast:[MakeManager cell:[TowData kTextWrapData]]
                              //: duration:2
                              duration:2
@@ -645,7 +645,7 @@
     } completionHandler:^(BOOL success, NSError * _Nullable error) {
         //: dispatch_async(dispatch_get_main_queue(), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            //: NSString *toast = (success)?[FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+            //: NSString *toast = (success)?[DisplayLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[DisplayLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
             NSString *toast = (success)?[MakeManager cell:[TowData kTitle_divineData]] :[MakeManager cell:[TowData kText_assistanceName]];
             //: [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
             [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
@@ -961,7 +961,7 @@
 
 //        //设置滑块图片样式
         // 1 通过颜色创建 Image
-        //: UIImage *normalImage = [UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff"] radius:7.0];
+        //: UIImage *normalImage = [UIImage createImageWithColor:[UIColor colorWithHexString:@"#fffDisplay"] radius:7.0];
         UIImage *normalImage = [UIImage attributeRadius:[UIColor cell:[TowData kText_basementValue]] makeForInsideMode:7.0];
 
         //        UIView *normalImageView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 8, 8)];
@@ -982,8 +982,8 @@
 //        [_videoSlider setThumbImage:highlightImage forState:UIControlStateHighlighted];
 
 //        _videoSlider.trackColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:0.2];//轨道的颜色
-//        _videoSlider.bufferColor = RGB_COLOR_String(@"#ffffff");//缓冲的颜色
-//        _videoSlider.thumbValueColor = RGB_COLOR_String(@"#ffffff");///播放进度的颜色
+//        _videoSlider.bufferColor = RGB_COLOR_String(@"#fffDisplay");//缓冲的颜色
+//        _videoSlider.thumbValueColor = RGB_COLOR_String(@"#fffDisplay");///播放进度的颜色
         ///
         //: _videoSlider.trackHeight = 6;
         _videoSlider.trackHeight = 6;

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDataCell.h"
+//: #import "DisplayContactDataCell.h"
 #import "ContactViewCell.h"
 
-//: @interface USERContactDataCell : FFFContactDataCell
+//: @interface USERContactDataCell : DisplayContactDataCell
 @interface StandardContactDataCell : ContactViewCell
 
 //: @end

@@ -212,7 +212,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"delete"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:[[MajorLeagueClubData sharedInstance] kTitleRecordName]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor cell:[[MajorLeagueClubData sharedInstance] kTitle_nimData]];
@@ -272,7 +272,7 @@
         _titleLabel.textColor = [UIColor blackColor];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
+        //: _titleLabel.text = [DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_remove_friend"];
         _titleLabel.text = [MakeManager cell:[[MajorLeagueClubData sharedInstance] kContentFrameString]];
     }
     //: return _titleLabel;
@@ -303,7 +303,7 @@
     labsubLabel.textColor = [UIColor cell:[[MajorLeagueClubData sharedInstance] kTextModelDetailString]];
     //: labsubLabel.numberOfLines = 0;
     labsubLabel.numberOfLines = 0;
-    //: labsubLabel.text = [FFFLanguageManager getTextWithKey:@"report_next_select_delete"];
+    //: labsubLabel.text = [DisplayLanguageManager getTextWithKey:@"report_next_select_delete"];
     labsubLabel.text = [MakeManager cell:[[MajorLeagueClubData sharedInstance] kName_normalString]];
     //: [_box addSubview:labsubLabel];
     [_box addSubview:labsubLabel];
@@ -337,7 +337,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:[[MajorLeagueClubData sharedInstance] kTitleTapName]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:[[MajorLeagueClubData sharedInstance] kTitle_rangeString]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];

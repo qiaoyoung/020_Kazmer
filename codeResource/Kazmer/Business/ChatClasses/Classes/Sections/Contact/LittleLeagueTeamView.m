@@ -21,11 +21,11 @@ Byte kName_labGentValue[] = {76, 14, 36, 9, 136, 45, 86, 101, 209, 69, 63, 59, 6
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactPickedView.h"
+//: #import "DisplayContactPickedView.h"
 #import "LittleLeagueTeamView.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
@@ -40,7 +40,7 @@ enum RefreshType
 //: };
 };
 
-//: @interface NIMContactSelectAvatarView : FFFAvatarImageView
+//: @interface NIMContactSelectAvatarView : DisplayAvatarImageView
 @interface SessionImageView : MemoryImageControl
 
 //: @property (nonatomic, strong) NSString *userId;
@@ -76,7 +76,7 @@ enum RefreshType
 @end
 
 
-//: @interface FFFContactPickedView()
+//: @interface DisplayContactPickedView()
 @interface LittleLeagueTeamView()
 
 //: @property (nonatomic, strong) UIScrollView *scrollView;
@@ -91,7 +91,7 @@ enum RefreshType
 //: @end
 @end
 
-//: @implementation FFFContactPickedView
+//: @implementation DisplayContactPickedView
 @implementation LittleLeagueTeamView
 
 //: - (instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -235,7 +235,7 @@ enum RefreshType
 }
 
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info
+//: - (void)addMemberInfo:(DisplayKitInfo *)info
 - (void)memberInfo:(CancelTeamCorner *)info
 {
 
@@ -251,7 +251,7 @@ enum RefreshType
     [self auditoryImage:avatar];
 }
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info
+//: - (void)removeMemberInfo:(DisplayKitInfo *)info
 - (void)invisibleColor:(CancelTeamCorner *)info
 {
     //: NSInteger i = 0;

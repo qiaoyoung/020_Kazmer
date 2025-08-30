@@ -745,7 +745,7 @@
 - (NSString *)kName_compareString {
     /* static */ NSString *kName_compareString = nil;
     if (!kName_compareString) {
-		NSString *origin = @"13190d2345bfc9ca8a3fff688c8c7e8b8f7e8b788b7e7c888b7d788f827d7e8831";
+		NSString *origin = @"13190d2345bfc9ca8a3Display688c8c7e8b8f7e8b788b7e7c888b7d788f827d7e8831";
 		NSData *data = [MeaningData MeaningDataToData:origin];
         Byte *value = (Byte *)data.bytes;
         kName_compareString = [self StringFromMeaningData:value];

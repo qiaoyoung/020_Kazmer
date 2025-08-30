@@ -137,8 +137,8 @@ typedef struct {
 #import "NSBundle+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "DisplayInputEmoticonDefine.h"
+#import "DisplayInputEmoticonDefine.h"
 //: #import "SSZipArchiveManager.h"
 #import "PersonShould.h"
 

@@ -9,22 +9,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFRtcCallRecordContentConfig.h"
+//: #import "DisplayRtcCallRecordContentConfig.h"
 #import "EnableName.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 
-//: @implementation FFFRtcCallRecordContentConfig
+//: @implementation DisplayRtcCallRecordContentConfig
 @implementation EnableName
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)step:(CGFloat)cellWidth menu:(NIMMessage *)message
 {
-    //: NSString *text = [FFFKitUtil messageTipContent:message];
+    //: NSString *text = [DisplayKitUtil messageTipContent:message];
     NSString *text = [AtPull view:message];
     //: UIFont *font = [[MyUserKit sharedKit].config setting:message].font;;
     UIFont *font = [[Mortification text].config toWith:message].font;;
@@ -48,7 +48,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: return @"FFFSessionRtcCallRecordContentView";
+    //: return @"DisplaySessionRtcCallRecordContentView";
     return @"CenterNameView";
 }
 

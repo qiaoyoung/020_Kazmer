@@ -13,10 +13,10 @@
 #import <UIKit/UIKit.h>
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "DisplayCardDataSourceProtocol.h"
+#import "DisplayCardDataSourceProtocol.h"
 
-//: @class FFFAvatarImageView;
+//: @class DisplayAvatarImageView;
 @class MemoryImageControl;
 
 
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-//: @interface FFFGroupMemberTableViewCell : UITableViewCell
+//: @interface DisplayGroupMemberTableViewCell : UITableViewCell
 @interface StandardViewCell : UITableViewCell
 
 

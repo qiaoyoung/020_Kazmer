@@ -1,33 +1,33 @@
 //
-//  SAMKeychainQuery.m
-//  SAMKeychain
+//  BlendKeychainQuery.m
+//  BlendKeychain
 //
 //  Created by Caleb Davenport on 3/19/13.
 //  Copyright (c) 2013-2014 Sam Soffes. All rights reserved.
 //
 
-#import "SAMKeychainQuery.h"
-#import "SAMKeychain.h"
+#import "BlendKeychainQuery.h"
+#import "BlendKeychain.h"
 
-@implementation SAMKeychainQuery
+@implementation BlendKeychainQuery
 
 @synthesize account = _account;
 @synthesize service = _service;
 @synthesize label = _label;
 @synthesize passwordData = _passwordData;
 
-#ifdef SAMKEYCHAIN_ACCESS_GROUP_AVAILABLE
+#ifdef BlendKeychain_ACCESS_GROUP_AVAILABLE
 @synthesize accessGroup = _accessGroup;
 #endif
 
-#ifdef SAMKEYCHAIN_SYNCHRONIZATION_AVAILABLE
+#ifdef BlendKeychain_SYNCHRONIZATION_AVAILABLE
 @synthesize synchronizationMode = _synchronizationMode;
 #endif
 
 #pragma mark - Public
 
 - (BOOL)save:(NSError *__autoreleasing *)error {
-	OSStatus status = SAMKeychainErrorBadArguments;
+	OSStatus status = BlendKeychainErrorBadArguments;
 	if (!self.service || !self.account || !self.passwordData) {
 		if (error) {
 			*error = [[self class] errorWithCode:status];
@@ -41,7 +41,7 @@
 		query = [[NSMutableDictionary alloc]init];
 		[query setObject:self.passwordData forKey:(__bridge id)kSecValueData];
 #if __IPHONE_4_0 && TARGET_OS_IPHONE
-		CFTypeRef accessibilityType = [SAMKeychain accessibilityType];
+		CFTypeRef accessibilityType = [BlendKeychain accessibilityType];
 		if (accessibilityType) {
 			[query setObject:(__bridge id)accessibilityType forKey:(__bridge id)kSecAttrAccessible];
 		}
@@ -54,7 +54,7 @@
 		}
 		[query setObject:self.passwordData forKey:(__bridge id)kSecValueData];
 #if __IPHONE_4_0 && TARGET_OS_IPHONE
-		CFTypeRef accessibilityType = [SAMKeychain accessibilityType];
+		CFTypeRef accessibilityType = [BlendKeychain accessibilityType];
 		if (accessibilityType) {
 			[query setObject:(__bridge id)accessibilityType forKey:(__bridge id)kSecAttrAccessible];
 		}
@@ -68,7 +68,7 @@
 
 
 - (BOOL)deleteItem:(NSError *__autoreleasing *)error {
-	OSStatus status = SAMKeychainErrorBadArguments;
+	OSStatus status = BlendKeychainErrorBadArguments;
 	if (!self.service || !self.account) {
 		if (error) {
 			*error = [[self class] errorWithCode:status];
@@ -111,7 +111,7 @@
 	[query setObject:@YES forKey:(__bridge id)kSecReturnAttributes];
 	[query setObject:(__bridge id)kSecMatchLimitAll forKey:(__bridge id)kSecMatchLimit];
 #if __IPHONE_4_0 && TARGET_OS_IPHONE
-	CFTypeRef accessibilityType = [SAMKeychain accessibilityType];
+	CFTypeRef accessibilityType = [BlendKeychain accessibilityType];
 	if (accessibilityType) {
 		[query setObject:(__bridge id)accessibilityType forKey:(__bridge id)kSecAttrAccessible];
 	}
@@ -129,7 +129,7 @@
 
 
 - (BOOL)fetch:(NSError *__autoreleasing *)error {
-	OSStatus status = SAMKeychainErrorBadArguments;
+	OSStatus status = BlendKeychainErrorBadArguments;
 	if (!self.service || !self.account) {
 		if (error) {
 			*error = [[self class] errorWithCode:status];
@@ -185,7 +185,7 @@
 
 #pragma mark - Synchronization Status
 
-#ifdef SAMKEYCHAIN_SYNCHRONIZATION_AVAILABLE
+#ifdef BlendKeychain_SYNCHRONIZATION_AVAILABLE
 + (BOOL)isSynchronizationAvailable {
 #if TARGET_OS_IPHONE
 	// Apple suggested way to check for 7.0 at runtime
@@ -212,7 +212,7 @@
 		[dictionary setObject:self.account forKey:(__bridge id)kSecAttrAccount];
 	}
 
-#ifdef SAMKEYCHAIN_ACCESS_GROUP_AVAILABLE
+#ifdef BlendKeychain_ACCESS_GROUP_AVAILABLE
 #if !TARGET_IPHONE_SIMULATOR
 	if (self.accessGroup) {
 		[dictionary setObject:self.accessGroup forKey:(__bridge id)kSecAttrAccessGroup];
@@ -220,20 +220,20 @@
 #endif
 #endif
 
-#ifdef SAMKEYCHAIN_SYNCHRONIZATION_AVAILABLE
+#ifdef BlendKeychain_SYNCHRONIZATION_AVAILABLE
 	if ([[self class] isSynchronizationAvailable]) {
 		id value;
 
 		switch (self.synchronizationMode) {
-			case SAMKeychainQuerySynchronizationModeNo: {
+			case BlendKeychainQuerySynchronizationModeNo: {
 			  value = @NO;
 			  break;
 			}
-			case SAMKeychainQuerySynchronizationModeYes: {
+			case BlendKeychainQuerySynchronizationModeYes: {
 			  value = @YES;
 			  break;
 			}
-			case SAMKeychainQuerySynchronizationModeAny: {
+			case BlendKeychainQuerySynchronizationModeAny: {
 			  value = (__bridge id)(kSecAttrSynchronizableAny);
 			  break;
 			}
@@ -251,54 +251,54 @@
 	static dispatch_once_t onceToken;
 	static NSBundle *resourcesBundle = nil;
 	dispatch_once(&onceToken, ^{
-		NSURL *url = [[NSBundle bundleForClass:[SAMKeychainQuery class]] URLForResource:@"SAMKeychain" withExtension:@"bundle"];
+		NSURL *url = [[NSBundle bundleForClass:[BlendKeychainQuery class]] URLForResource:@"BlendKeychain" withExtension:@"bundle"];
 		resourcesBundle = [NSBundle bundleWithURL:url];
 	});
 	
 	NSString *message = nil;
 	switch (code) {
 		case errSecSuccess: return nil;
-		case SAMKeychainErrorBadArguments: message = NSLocalizedStringFromTableInBundle(@"SAMKeychainErrorBadArguments", @"SAMKeychain", resourcesBundle, nil); break;
+		case BlendKeychainErrorBadArguments: message = NSLocalizedStringFromTableInBundle(@"BlendKeychainErrorBadArguments", @"BlendKeychain", resourcesBundle, nil); break;
 
 #if TARGET_OS_IPHONE
 		case errSecUnimplemented: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecUnimplemented", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecUnimplemented", @"BlendKeychain", resourcesBundle, nil);
 			break;
 		}
 		case errSecParam: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecParam", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecParam", @"BlendKeychain", resourcesBundle, nil);
 			break;
 		}
 		case errSecAllocate: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecAllocate", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecAllocate", @"BlendKeychain", resourcesBundle, nil);
 			break;
 		}
 		case errSecNotAvailable: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecNotAvailable", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecNotAvailable", @"BlendKeychain", resourcesBundle, nil);
 			break;
 		}
 		case errSecDuplicateItem: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecDuplicateItem", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecDuplicateItem", @"BlendKeychain", resourcesBundle, nil);
 			break;
 		}
 		case errSecItemNotFound: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecItemNotFound", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecItemNotFound", @"BlendKeychain", resourcesBundle, nil);
 			break;
 		}
 		case errSecInteractionNotAllowed: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecInteractionNotAllowed", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecInteractionNotAllowed", @"BlendKeychain", resourcesBundle, nil);
 			break;
 		}
 		case errSecDecode: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecDecode", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecDecode", @"BlendKeychain", resourcesBundle, nil);
 			break;
 		}
 		case errSecAuthFailed: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecAuthFailed", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecAuthFailed", @"BlendKeychain", resourcesBundle, nil);
 			break;
 		}
 		default: {
-			message = NSLocalizedStringFromTableInBundle(@"errSecDefault", @"SAMKeychain", resourcesBundle, nil);
+			message = NSLocalizedStringFromTableInBundle(@"errSecDefault", @"BlendKeychain", resourcesBundle, nil);
 		}
 #else
 		default:
@@ -310,7 +310,7 @@
 	if (message) {
 		userInfo = @{ NSLocalizedDescriptionKey : message };
 	}
-	return [NSError errorWithDomain:kSAMKeychainErrorDomain code:code userInfo:userInfo];
+	return [NSError errorWithDomain:kBlendKeychainErrorDomain code:code userInfo:userInfo];
 }
 
 @end

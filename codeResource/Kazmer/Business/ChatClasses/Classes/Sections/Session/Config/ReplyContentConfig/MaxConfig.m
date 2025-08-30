@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "DisplayReplyedTextContentConfig.h"
 #import "MaxConfig.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFReplyedTextContentConfig ()
+//: @interface DisplayReplyedTextContentConfig ()
 @interface MaxConfig ()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -25,7 +25,7 @@
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentConfig
+//: @implementation DisplayReplyedTextContentConfig
 @implementation MaxConfig
 
 
@@ -79,7 +79,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: return @"FFFReplyedTextContentView";
+    //: return @"DisplayReplyedTextContentView";
     return @"ShouldTextView";
 }
 

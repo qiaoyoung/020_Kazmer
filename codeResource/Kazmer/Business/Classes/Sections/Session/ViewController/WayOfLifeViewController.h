@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "DisplaySessionViewController.h"
 #import "ReplyViewController.h"
 
 //: extern NSString *kUSERDemoRevokeMessageFromMeNotication;
 extern NSString *appTitleTableKey;
 
-//: @interface USERSessionViewController : FFFSessionViewController
+//: @interface USERSessionViewController : DisplaySessionViewController
 @interface WayOfLifeViewController : ReplyViewController
 
 //: @property (nonatomic,assign) BOOL disableOnlineState; 

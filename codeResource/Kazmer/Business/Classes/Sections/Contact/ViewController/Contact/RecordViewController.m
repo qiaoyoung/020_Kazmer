@@ -395,13 +395,13 @@ typedef struct {
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [MakeManager cell:[TrademarkData kTitleMainData]];//@"添加成功".
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [DisplayLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [MakeManager cell:[TrademarkData kName_frameValue]];//@"请求成功".
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [DisplayLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [MakeManager cell:[TrademarkData kTextRecentTeamName]];//@"添加失败".
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [DisplayLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [MakeManager cell:[TrademarkData kContent_tapData]];//@"请求失败".
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -479,12 +479,12 @@ typedef struct {
 
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
+            //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
             [wself.view makeToast:[MakeManager cell:[TrademarkData kTitleHideData]] duration:2.0 position:CSToastPositionCenter];
         }
     //: } failed:^(id responseObject, NSError *error) {
     } blue:^(id responseObject, NSError *error) {
-        //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
+        //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"please_contact_your_administrator"] duration:2.0 position:CSToastPositionCenter];
         [wself.view makeToast:[MakeManager cell:[TrademarkData kTitleHideData]] duration:2.0 position:CSToastPositionCenter];
     //: }];
     }];
@@ -639,7 +639,7 @@ typedef struct {
     if(!_textField){
         //: _textField = [[UITextField alloc]init];
         _textField = [[UITextField alloc]init];
-        //: _textField.placeholder = [FFFLanguageManager getTextWithKey:@"add_friend_activity_input_account"];
+        //: _textField.placeholder = [DisplayLanguageManager getTextWithKey:@"add_friend_activity_input_account"];
         _textField.placeholder = [MakeManager cell:[TrademarkData kTitleCellString]];
         //: _textField.textColor = [UIColor colorWithHexString:@"#333333"];
         _textField.textColor = [UIColor cell:[TrademarkData kTitle_hideText]];
@@ -755,7 +755,7 @@ typedef struct {
         }else{
             //: if (wself) {
             if (wself) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_number_no"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_number_no"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[MakeManager cell:[TrademarkData kTitleFlushString]] duration:2.0 position:CSToastPositionCenter];
             }
         }
@@ -811,7 +811,7 @@ typedef struct {
     labNavtitle.textColor = [UIColor blackColor];
     //: labNavtitle.font = [UIFont boldSystemFontOfSize:16];
     labNavtitle.font = [UIFont boldSystemFontOfSize:16];
-    //: labNavtitle.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+    //: labNavtitle.text = [DisplayLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
     labNavtitle.text = [MakeManager cell:[TrademarkData kTitleModelText]];
     //: labNavtitle.textAlignment = NSTextAlignmentCenter;
     labNavtitle.textAlignment = NSTextAlignmentCenter;
@@ -893,7 +893,7 @@ typedef struct {
     labRecommended.font = [UIFont systemFontOfSize:14.f];
     //: labRecommended.textColor = [UIColor colorWithHexString:@"#2C3042"];
     labRecommended.textColor = [UIColor cell:[TrademarkData kTitle_teamString]];
-    //: labRecommended.text = [FFFLanguageManager getTextWithKey:@"hot_guys"];
+    //: labRecommended.text = [DisplayLanguageManager getTextWithKey:@"hot_guys"];
     labRecommended.text = [MakeManager cell:[TrademarkData kTitle_atLastName]];
     //: [self.view addSubview:labRecommended];
     [self.view addSubview:labRecommended];

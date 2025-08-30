@@ -11,7 +11,7 @@
 //: #27303F
 @property (nonatomic, copy) NSString *kTitleChickDeviceString;
 
-//: #ffffff
+//: #fffDisplay
 @property (nonatomic, copy) NSString *kNameCurrentValue;
 
 //: #F6F7FA
@@ -77,7 +77,7 @@
     return _kTitleChickDeviceString;
 }
 
-//: #ffffff
+//: #fffDisplay
 - (NSString *)kNameCurrentValue {
     if (!_kNameCurrentValue) {
 		NSArray<NSString *> *origin = @[@"7", @"9", @"245", @"248", @"124", @"123", @"213", @"206", @"17", @"102", @"102", @"102", @"102", @"102", @"102", @"35", @"167"];
@@ -140,7 +140,7 @@
         //: self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
         self.labTitle.frame = CGRectMake(40+32, 0, [[UIScreen mainScreen] bounds].size.width-80, 56);
 
-        //: self.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: self.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
         self.backgroundColor = [UIColor cell:[FileWheatData sharedInstance].kNameCurrentValue];
         //: self.layer.cornerRadius = 12;
         self.layer.cornerRadius = 12;

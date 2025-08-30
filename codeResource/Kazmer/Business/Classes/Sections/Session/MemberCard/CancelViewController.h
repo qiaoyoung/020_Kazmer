@@ -13,9 +13,9 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "DisplayTeamMemberListDataSource.h"
 #import "AccountSource.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "DisplayTeamListDataManager.h"
 #import "MentionManager.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @interface TeamMemberNormalViewController : UIViewController
 @interface CancelViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) DisplayTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MentionManager *teamListManager;
 
 //: @end

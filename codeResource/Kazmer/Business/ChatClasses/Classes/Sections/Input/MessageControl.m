@@ -86,18 +86,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonTabView.h"
+//: #import "DisplayInputEmoticonTabView.h"
 #import "MessageControl.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 
-//: const NSInteger FFFInputEmoticonTabViewHeight = 44;
+//: const NSInteger DisplayInputEmoticonTabViewHeight = 44;
 const NSInteger mBubbleStr = 44;
 //: const NSInteger NIMInputEmoticonSendButtonWidth = 56;
 const NSInteger userPageKey = 56;
@@ -105,7 +105,7 @@ const NSInteger userPageKey = 56;
 //: const CGFloat NIMInputLineBoarder = .5f;
 const CGFloat mBeTitle = .5f;
 
-//: @interface FFFInputEmoticonTabView()
+//: @interface DisplayInputEmoticonTabView()
 @interface MessageControl()
 
 //: @property (nonatomic,strong) NSMutableArray * tabs;
@@ -119,12 +119,12 @@ const CGFloat mBeTitle = .5f;
 
 
 
-//: @implementation FFFInputEmoticonTabView
+//: @implementation DisplayInputEmoticonTabView
 @implementation MessageControl
 
 //: - (instancetype)initWithFrame:(CGRect)frame{
 - (instancetype)initWithFrame:(CGRect)frame{
-    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, FFFInputEmoticonTabViewHeight)];
+    //: self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, DisplayInputEmoticonTabViewHeight)];
     self = [super initWithFrame:CGRectMake(0, 0, frame.size.width, mBubbleStr)];
     //: if (self) {
     if (self) {
@@ -160,7 +160,7 @@ const CGFloat mBeTitle = .5f;
 //        _sendButton.layer.shadowOpacity = 1;
 //        _sendButton.layer.shadowRadius = 8;
 //        
-        //: _sendButton.device_height = FFFInputEmoticonTabViewHeight;
+        //: _sendButton.device_height = DisplayInputEmoticonTabViewHeight;
         _sendButton.device_height = mBubbleStr;
         //: _sendButton.device_width = NIMInputEmoticonSendButtonWidth;
         _sendButton.device_width = userPageKey;
@@ -223,7 +223,7 @@ const CGFloat mBeTitle = .5f;
         //: [_tabs addObject:button];
         [_tabs addObject:button];
 
-//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, FFFInputEmoticonTabViewHeight)];
+//        UIView *sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, NIMInputLineBoarder, DisplayInputEmoticonTabViewHeight)];
 ////        sep.backgroundColor = sepColor;
 //        sep.backgroundColor = [UIColor whiteColor];
 //        [_seps addObject:sep];
@@ -281,7 +281,7 @@ const CGFloat mBeTitle = .5f;
         UIButton *button = self.tabs[index];
         //: button.device_width = NIMInputEmoticonSendButtonWidth;
         button.device_width = userPageKey;
-        //: button.device_height = FFFInputEmoticonTabViewHeight;
+        //: button.device_height = DisplayInputEmoticonTabViewHeight;
         button.device_height = mBubbleStr;
         //: button.nim_left = left;
         button.nim_left = left;

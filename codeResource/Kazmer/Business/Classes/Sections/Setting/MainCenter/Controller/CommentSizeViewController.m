@@ -148,7 +148,7 @@ Byte kNameModelData[] = {35, 7, 87, 6, 151, 128, 204, 221, 235, 221, 220, 237, 2
 //: user_ic_5
 Byte kNameCrawString[] = {76, 9, 12, 9, 247, 191, 221, 3, 234, 105, 103, 89, 102, 83, 93, 87, 83, 41, 196};
 
-//: #ffffff
+//: #fffDisplay
 Byte kName_nutCrawData[] = {18, 7, 74, 7, 66, 170, 176, 217, 28, 28, 28, 28, 28, 28, 183};
 
 //: feedback_activity_title
@@ -215,9 +215,9 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
 // __M_A_C_R_O__
 //: #import "USERMainCenterViewController.h"
 #import "CommentSizeViewController.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableDelegate.h"
+//: #import "DisplayCommonTableData.h"
+#import "DisplayCommonTableData.h"
+//: #import "DisplayCommonTableDelegate.h"
 #import "TeamMake.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -251,7 +251,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
 #import "UIView+Turn.h"
 //: #import "UIAlertView+USERBlock.h"
 #import "UIAlertView+NameAddContent.h"
-//: #import "FFFUserInfoViewController.h"//个人资料
+//: #import "DisplayUserInfoViewController.h"//个人资料
 #import "AmmunitionViewController.h"//个人资料
 //: #import "USERUserQRCodeViewController.h" //我的二维码
 #import "CellViewController.h" //我的二维码
@@ -303,7 +303,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:userID keepingOption:nil];
 
     //: self.titleLabel.text = me.userInfo.nickName;
@@ -331,7 +331,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
 #pragma mark - USERMainCenterDelegate
 //: -(void)userInfoCenter{
 -(void)quickTag{
-    //: FFFUserInfoViewController *vc = [[FFFUserInfoViewController alloc] init];
+    //: DisplayUserInfoViewController *vc = [[DisplayUserInfoViewController alloc] init];
     AmmunitionViewController *vc = [[AmmunitionViewController alloc] init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -359,7 +359,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
 
     //: ZMONPolicyPrivacyViewController *vc = [[ZMONPolicyPrivacyViewController alloc] init];
     MakeViewController *vc = [[MakeViewController alloc] init];
-    //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: vc.webTitle = [DisplayLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     vc.webTitle = [MakeManager cell:StringFromSuggestData(kTitleSearchedString)];//@"隐私协议";
     //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
     vc.urlString = [TableContext name].yshref;
@@ -477,18 +477,18 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
 }
 //: -(void)exitApp{
 -(void)parent{
-    //: NSString *alertStr = [FFFLanguageManager getTextWithKey:@"system_change_language_title"];
+    //: NSString *alertStr = [DisplayLanguageManager getTextWithKey:@"system_change_language_title"];
     NSString *alertStr = [MakeManager cell:StringFromSuggestData(kTitle_violenceStableRecentValue)];
     //: UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:alertStr preferredStyle:UIAlertControllerStyleAlert];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:alertStr preferredStyle:UIAlertControllerStyleAlert];
-    //: [alert addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alert addAction:[UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alert addAction:[UIAlertAction actionWithTitle:[MakeManager cell:StringFromSuggestData(kTitlePorchString)] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: exit(0);
         exit(0);
     //: }]];
     }]];
 
-    //: [alert addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    //: [alert addAction:[UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
     [alert addAction:[UIAlertAction actionWithTitle:[MakeManager cell:StringFromSuggestData(kNameTopContentMessageString)] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
 
     //: }]];
@@ -540,7 +540,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     NSString *userID = [[NIMSDK sharedSDK].loginManager currentAccount];
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:userID keepingOption:nil];
 
     //: _headerImage = [[UIImageView alloc] initWithFrame:CGRectMake(20,(44.0f + [UIDevice vg_statusBarHeight]), 64, 64)];
@@ -590,7 +590,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     qrBtn.titleLabel.font = [UIFont systemFontOfSize:12];
     //: [qrBtn setTitleColor:[UIColor colorWithHexString:@"#4B43DE"] forState:UIControlStateNormal];
     [qrBtn setTitleColor:[UIColor cell:StringFromSuggestData(kNameModelData)] forState:UIControlStateNormal];
-    //: [qrBtn setTitle:[FFFLanguageManager getTextWithKey:@"qrcode_activity_title"] forState:UIControlStateNormal];
+    //: [qrBtn setTitle:[DisplayLanguageManager getTextWithKey:@"qrcode_activity_title"] forState:UIControlStateNormal];
     [qrBtn setTitle:[MakeManager cell:StringFromSuggestData(kTitle_toolWithCurrentData)] forState:UIControlStateNormal];
     //: [qrBtn layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleTop) imageTitleSpace:10];
     [qrBtn byViewSpace:(MKButtonEdgeInsetsStyleTop) toolCell:10];
@@ -599,7 +599,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
 
     //: UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight])+100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice vg_statusBarHeight])-(49.0f))];
     UIView *contentView = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice comeDownSuperphylum])+100, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height-(44.0f + [UIDevice comeDownSuperphylum])-(49.0f))];
-    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: contentView.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
     contentView.backgroundColor = [UIColor cell:StringFromSuggestData(kName_nutCrawData)];
     //: contentView.layer.cornerRadius = 34;
     contentView.layer.cornerRadius = 34;
@@ -636,7 +636,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     labedit.font = [UIFont systemFontOfSize:14];
     //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
     labedit.textColor = [UIColor cell:StringFromSuggestData(kTitleNutString)];
-    //: labedit.text = [FFFLanguageManager getTextWithKey:@"edit_profile"];
+    //: labedit.text = [DisplayLanguageManager getTextWithKey:@"edit_profile"];
     labedit.text = [MakeManager cell:StringFromSuggestData(kName_grayText)];
     //: [editView addSubview:labedit];
     [editView addSubview:labedit];
@@ -710,7 +710,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     label11.font = [UIFont systemFontOfSize:13.f];
     //: label11.textColor = [UIColor blackColor];
     label11.textColor = [UIColor blackColor];
-    //: label11.text = [FFFLanguageManager getTextWithKey:@"receiver_model"];
+    //: label11.text = [DisplayLanguageManager getTextWithKey:@"receiver_model"];
     label11.text = [MakeManager cell:StringFromSuggestData(kText_detailData)];
     //: [box1 addSubview:label11];
     [box1 addSubview:label11];
@@ -749,7 +749,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     labellog.font = [UIFont systemFontOfSize:13.f];
     //: labellog.textColor = [UIColor blackColor];
     labellog.textColor = [UIColor blackColor];
-    //: labellog.text = [FFFLanguageManager getTextWithKey:@"my_log"];
+    //: labellog.text = [DisplayLanguageManager getTextWithKey:@"my_log"];
     labellog.text = [MakeManager cell:StringFromSuggestData(kText_nonprofitData)];
     //: [boxlog addSubview:labellog];
     [boxlog addSubview:labellog];
@@ -785,7 +785,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     label23.font = [UIFont systemFontOfSize:13.f];
     //: label23.textColor = [UIColor blackColor];
     label23.textColor = [UIColor blackColor];
-    //: label23.text = [FFFLanguageManager getTextWithKey:@"safe_setting_activity_title"];
+    //: label23.text = [DisplayLanguageManager getTextWithKey:@"safe_setting_activity_title"];
     label23.text = [MakeManager cell:StringFromSuggestData(kTitleScienceName)];
     //: [box6 addSubview:label23];
     [box6 addSubview:label23];
@@ -835,7 +835,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     label14.font = [UIFont systemFontOfSize:13.f];
     //: label14.textColor = [UIColor blackColor];
     label14.textColor = [UIColor blackColor];
-    //: label14.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: label14.text = [DisplayLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     label14.text = [MakeManager cell:StringFromSuggestData(kTitleSearchedString)];//@"用户协议和隐私协议";
     //: [box3 addSubview:label14];
     [box3 addSubview:label14];
@@ -877,7 +877,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     label22.font = [UIFont systemFontOfSize:13.f];
     //: label22.textColor = [UIColor blackColor];
     label22.textColor = [UIColor blackColor];
-    //: label22.text = [FFFLanguageManager getTextWithKey:@"feedback_activity_title"];
+    //: label22.text = [DisplayLanguageManager getTextWithKey:@"feedback_activity_title"];
     label22.text = [MakeManager cell:StringFromSuggestData(kText_recentShowValue)];
     //: [box5 addSubview:label22];
     [box5 addSubview:label22];
@@ -915,7 +915,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     label31.textColor = [UIColor blackColor];
     //: [box7 addSubview:label31];
     [box7 addSubview:label31];
-    //: NSString *fragment_my_version = [FFFLanguageManager getTextWithKey:@"fragment_my_version"];
+    //: NSString *fragment_my_version = [DisplayLanguageManager getTextWithKey:@"fragment_my_version"];
     NSString *fragment_my_version = [MakeManager cell:StringFromSuggestData(kTitle_withVitaminContent)];
     //: NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
     NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
@@ -932,7 +932,7 @@ Byte kName_violationString[] = {42, 6, 52, 8, 83, 125, 131, 34, 1, 16, 1, 18, 2,
     loginButton.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [loginButton setTitleColor:[UIColor colorWithHexString:@"5D5F66"] forState:UIControlStateNormal];
     [loginButton setTitleColor:[UIColor cell:StringFromSuggestData(kName_violationString)] forState:UIControlStateNormal];
-    //: [loginButton setTitle:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_exit"] forState:UIControlStateNormal];
+    //: [loginButton setTitle:[DisplayLanguageManager getTextWithKey:@"activity_comment_setting_exit"] forState:UIControlStateNormal];
     [loginButton setTitle:[MakeManager cell:StringFromSuggestData(kTextToothData)] forState:UIControlStateNormal];
     //: [loginButton addTarget:self action:@selector(logoutCurrentAccount) forControlEvents:UIControlEventTouchUpInside];
     [loginButton addTarget:self action:@selector(overLabel) forControlEvents:UIControlEventTouchUpInside];

@@ -26,7 +26,7 @@ Byte kTextKitchenString[] = {79, 24, 24, 12, 25, 173, 21, 39, 138, 65, 146, 14, 
 // __M_A_C_R_O__
 //: #import "USERUserUtil.h"
 #import "ViewUtil.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 
 //: @implementation USERUserUtil
@@ -40,19 +40,19 @@ Byte kTextKitchenString[] = {79, 24, 24, 12, 25, 173, 21, 39, 138, 65, 146, 14, 
     switch (gender) {
         //: case NIMUserGenderMale:
         case NIMUserGenderMale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+            //: genderStr = [DisplayLanguageManager getTextWithKey:@"friend_info_activity_nan"];
             genderStr = [MakeManager cell:StringFromPoundData(kTextKitchenString)];
             //: break;
             break;
         //: case NIMUserGenderFemale:
         case NIMUserGenderFemale:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+            //: genderStr = [DisplayLanguageManager getTextWithKey:@"friend_info_activity_nv"];
             genderStr = [MakeManager cell:StringFromPoundData(kContentThereText)];
             //: break;
             break;
         //: case NIMUserGenderUnknown:
         case NIMUserGenderUnknown:
-            //: genderStr = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+            //: genderStr = [DisplayLanguageManager getTextWithKey:@"friend_info_activity_xu"];
             genderStr = [MakeManager cell:StringFromPoundData(kText_frameData)];
         //: default:
         default:

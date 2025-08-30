@@ -163,7 +163,7 @@
 #import "CalendarViewCell.h"
 //: #import "USERSessionUtil.h"
 #import "SessionStandard.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
@@ -280,7 +280,7 @@
     self.titleLabel.text = team.teamName;
     //: self.memberId = [team teamId];
     self.memberId = [team teamId];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByTeam:self.memberId option:nil];
     CancelTeamCorner *info = [[Mortification text] ability:self.memberId naturalEvent_strong:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
@@ -354,7 +354,7 @@
     self.titleLabel.text = member.tabTitle;
     //: self.memberId = [member memberId];
     self.memberId = [member littleLeagueTeam];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:self.memberId option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:self.memberId keepingOption:nil];
     //: NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;
     NSURL *url = info.avatarUrlString ? [NSURL URLWithString:info.avatarUrlString] : nil;

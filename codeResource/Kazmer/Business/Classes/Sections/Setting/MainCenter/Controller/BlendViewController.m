@@ -325,7 +325,7 @@
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"deactivate_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[DisplayLanguageManager getTextWithKey:@"deactivate_account"]];
     [self.deactivateNextView toScale:[MakeManager cell:[CivilianData kContentHideString]]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView book];
@@ -363,7 +363,7 @@
     if(indexPath.section == 0){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_blacklist"];
         cell.iconImageView.image = [UIImage imageNamed:[CivilianData kTextGrayString]];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+        //: cell.titleLabel.text = [DisplayLanguageManager getTextWithKey:@"black_list_activity_black"];
         cell.titleLabel.text = [MakeManager cell:[CivilianData kNameScaleText]];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -372,7 +372,7 @@
     else if (indexPath.section == 1){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_changepsd"];
         cell.iconImageView.image = [UIImage imageNamed:[CivilianData kContent_shoppingString]];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"modify_activity_title"];
+        //: cell.titleLabel.text = [DisplayLanguageManager getTextWithKey:@"modify_activity_title"];
         cell.titleLabel.text = [MakeManager cell:[CivilianData kName_modelContent]];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -386,7 +386,7 @@
     else if (indexPath.section == 2){
         //: cell.iconImageView.image = [UIImage imageNamed:@"safe_accountdelete"];
         cell.iconImageView.image = [UIImage imageNamed:[CivilianData kTitle_mainValue]];
-        //: cell.titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: cell.titleLabel.text = [DisplayLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         cell.titleLabel.text = [MakeManager cell:[CivilianData kTextPlayTitleString]];
         //: cell.labSubtitle.hidden = YES;
         cell.labSubtitle.hidden = YES;
@@ -601,7 +601,7 @@
 {
     //: [self.view addSubview:self.deactivateNextView];
     [self.view addSubview:self.deactivateNextView];
-    //: [self.deactivateNextView reloadWithNickname:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
+    //: [self.deactivateNextView reloadWithNickname:[DisplayLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]];
     [self.deactivateNextView toScale:[MakeManager cell:[CivilianData kTextPlayTitleString]]];
     //: [self.deactivateNextView animationShow];
     [self.deactivateNextView book];
@@ -701,7 +701,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"safe_setting_activity_title"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"safe_setting_activity_title"];
     labtitle.text = [MakeManager cell:[CivilianData kName_titleData]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];

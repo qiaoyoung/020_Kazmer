@@ -23,8 +23,8 @@ Byte kTitleContentData[] = {4, 30, 12, 155, 147, 151, 57, 97, 196, 144, 235, 11,
 // __M_A_C_R_O__
 //: #import "USERCardVerificationCell.h"
 #import "LiquidEcstasyView.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DisplayCommonTableData.h"
+#import "DisplayCommonTableData.h"
 
 //: @interface USERCardVerificationCell ()<UITextViewDelegate>
 @interface LiquidEcstasyView ()<UITextViewDelegate>
@@ -70,9 +70,9 @@ Byte kTitleContentData[] = {4, 30, 12, 155, 147, 151, 57, 97, 196, 144, 235, 11,
 //        }];
 //
 
-        //: NSString *activity_add_friend_my_is = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
+        //: NSString *activity_add_friend_my_is = [DisplayLanguageManager getTextWithKey:@"activity_add_friend_my_is"];
         NSString *activity_add_friend_my_is = [MakeManager cell:StringFromRangeDetailData(kTitle_colorString)];
-        //: NSString *activity_add_friend_my_request = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
+        //: NSString *activity_add_friend_my_request = [DisplayLanguageManager getTextWithKey:@"activity_add_friend_my_request"];
         NSString *activity_add_friend_my_request = [MakeManager cell:StringFromRangeDetailData(kTitleContentData)];
 
         //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:[[NIMSDK sharedSDK].loginManager currentAccount]];

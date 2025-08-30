@@ -26,7 +26,7 @@
 
 
 
-//: @interface FFFInputEmoticonButton : UIButton
+//: @interface DisplayInputEmoticonButton : UIButton
 @interface WithControl : UIButton
 
 //: @property (nonatomic, strong) NIMInputEmoticon *emoticonData;
@@ -38,7 +38,7 @@
 //: @property (nonatomic, weak) id<NIMEmoticonButtonTouchDelegate> delegate;
 @property (nonatomic, weak) id<PraiseStandard> delegate;
 
-//: + (FFFInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate;
+//: + (DisplayInputEmoticonButton*)iconButtonWithData:(NIMInputEmoticon*)data catalogID:(NSString*)catalogID delegate:( id<NIMEmoticonButtonTouchDelegate>)delegate;
 + (WithControl*)duringBottom:(BubbleNameReload*)data with:(NSString*)catalogID center:( id<PraiseStandard>)delegate;
 
 //: - (void)onIconSelected:(id)sender;

@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface USERThreadDataSourceProvider : NSObject <FFFKitMessageProvider>
+//: @interface USERThreadDataSourceProvider : NSObject <DisplayKitMessageProvider>
 @interface PathProvider : NSObject <LabelSessionProvider>
 
 //: @property (nonatomic,strong) NIMMessage *threadMessage;

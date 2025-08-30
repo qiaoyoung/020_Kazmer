@@ -36,14 +36,14 @@ BoneData kTitleDevoteSquareData = (BoneData){110, (Byte []){7, 13, 1, 0, 49, 15,
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCardOperationItem.h"
+//: #import "DisplayCardOperationItem.h"
 #import "TagMake.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 
-//: @interface FFFCardOperationItem()
+//: @interface DisplayCardOperationItem()
 @interface TagMake()
 
 //: @property(nonatomic,assign) NIMKitCardHeaderOpeator opera;
@@ -52,7 +52,7 @@ BoneData kTitleDevoteSquareData = (BoneData){110, (Byte []){7, 13, 1, 0, 49, 15,
 //: @end
 @end
 
-//: @implementation FFFCardOperationItem
+//: @implementation DisplayCardOperationItem
 @implementation TagMake
 
 //: - (instancetype)initWithOperation:(NIMKitCardHeaderOpeator)opera{

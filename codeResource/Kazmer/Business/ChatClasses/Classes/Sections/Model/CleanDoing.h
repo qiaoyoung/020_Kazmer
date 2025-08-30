@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfig.h"
+//: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
 
-//: @interface FFFMessageModel : NSObject
+//: @interface DisplayMessageModel : NSObject
 @interface CleanDoing : NSObject
 
 /**
@@ -182,11 +182,11 @@
 - (void)image;
 
 /**
- *  NIMMessage封装成FFFMessageModel的方法
+ *  NIMMessage封装成DisplayMessageModel的方法
  *
  *  @param  message 消息体
  *
- *  @return FFFMessageModel实例
+ *  @return DisplayMessageModel实例
  */
 //: - (instancetype)initWithMessage:(NIMMessage*)message;
 - (instancetype)initWithLayer:(NIMMessage*)message;

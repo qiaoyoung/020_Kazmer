@@ -158,7 +158,7 @@
 #import "MakeViewController.h"
 //: #import <WebKit/WebKit.h>
 #import <WebKit/WebKit.h>
-//: #import "FFFRegisterViewController.h"
+//: #import "DisplayRegisterViewController.h"
 #import "CenterViewController.h"
 //: #import "SSZipArchiveManager.h"
 #import "PersonShould.h"
@@ -507,7 +507,7 @@
 //: - (void)doAgree{
 - (void)loadMax{
 
-    //: FFFRegisterViewController *vc = [[FFFRegisterViewController alloc]init];
+    //: DisplayRegisterViewController *vc = [[DisplayRegisterViewController alloc]init];
     CenterViewController *vc = [[CenterViewController alloc]init];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];

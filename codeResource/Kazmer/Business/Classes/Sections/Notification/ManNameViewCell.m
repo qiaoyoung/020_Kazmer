@@ -378,9 +378,9 @@
 #import "ManNameViewCell.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 
 //: @interface USERSystemNotificationCell ()
@@ -432,7 +432,7 @@
         //: [_refuseButton addTarget:self action:@selector(onRefusebtn) forControlEvents:(UIControlEventTouchUpInside)];
         [_refuseButton addTarget:self action:@selector(pinUser) forControlEvents:(UIControlEventTouchUpInside)];
 //        [_refuseButton setTitleColor:kTextColor_2c3042 forState:(UIControlStateNormal)];
-//        [_refuseButton setBackgroundColor:RGB_COLOR_String(@"#ffffff")];
+//        [_refuseButton setBackgroundColor:RGB_COLOR_String(@"#fffDisplay")];
         //: [_refuseButton setImage:[UIImage imageNamed:@"ic_btn_disaccept"] forState:UIControlStateNormal];
         [_refuseButton setImage:[UIImage imageNamed:[ConductorData kTitleCurrentValue]] forState:UIControlStateNormal];
 //        _refuseButton.layer.cornerRadius = 16;
@@ -455,7 +455,7 @@
         //: [_acceptButton addTarget:self action:@selector(onAcceptBtn) forControlEvents:(UIControlEventTouchUpInside)];
         [_acceptButton addTarget:self action:@selector(pregnantChange) forControlEvents:(UIControlEventTouchUpInside)];
 //        [_acceptButton setTitleColor:[KEKESkinColorManager shareInstance].skinColor forState:(UIControlStateNormal)];
-//        [_acceptButton setBackgroundColor:RGB_COLOR_String(@"#ffffff")];
+//        [_acceptButton setBackgroundColor:RGB_COLOR_String(@"#fffDisplay")];
         //: [_acceptButton setImage:[UIImage imageNamed:@"ic_btn_accept"] forState:UIControlStateNormal];
         [_acceptButton setImage:[UIImage imageNamed:[ConductorData kNameFileData]] forState:UIControlStateNormal];
 //        _acceptButton.layer.cornerRadius = 16;
@@ -465,7 +465,7 @@
     return _acceptButton;
 }
 
-//: - (void)updateSourceMember:(FFFKitInfo *)sourceMember{
+//: - (void)updateSourceMember:(DisplayKitInfo *)sourceMember{
 - (void)pathRed:(CancelTeamCorner *)sourceMember{
 
     //: NIMSystemNotificationType type = self.notification.type;
@@ -489,7 +489,7 @@
         //: case NIMSystemNotificationTypeTeamApply:
         case NIMSystemNotificationTypeTeamApply:
         {
-            //: NSString *message_helper_apply_to_group = [FFFLanguageManager getTextWithKey:@"message_helper_apply_to_group"];
+            //: NSString *message_helper_apply_to_group = [DisplayLanguageManager getTextWithKey:@"message_helper_apply_to_group"];
             NSString *message_helper_apply_to_group = [MakeManager cell:[ConductorData kTitle_playString]];//@"申请加入群".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -501,9 +501,9 @@
         //: case NIMSystemNotificationTypeTeamApplyReject:
         case NIMSystemNotificationTypeTeamApplyReject:
         {
-            //: NSString *contact_fragment_group = [FFFLanguageManager getTextWithKey:@"contact_fragment_group"];
+            //: NSString *contact_fragment_group = [DisplayLanguageManager getTextWithKey:@"contact_fragment_group"];
             NSString *contact_fragment_group = [MakeManager cell:[ConductorData kName_fileKnowData]];//@"群".nim_localized
-            //: NSString *message_helper_refuse_you = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_you"];
+            //: NSString *message_helper_refuse_you = [DisplayLanguageManager getTextWithKey:@"message_helper_refuse_you"];
             NSString *message_helper_refuse_you = [MakeManager cell:[ConductorData kTextColorValue]];//@"拒绝你加入".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -521,9 +521,9 @@
         //: case NIMSystemNotificationTypeTeamInvite:
         case NIMSystemNotificationTypeTeamInvite:
         {
-            //: NSString *contact_fragment_group = [FFFLanguageManager getTextWithKey:@"contact_fragment_group"];
+            //: NSString *contact_fragment_group = [DisplayLanguageManager getTextWithKey:@"contact_fragment_group"];
             NSString *contact_fragment_group = [MakeManager cell:[ConductorData kName_fileKnowData]];//@"群".nim_localized
-            //: NSString *invite_you_group = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: NSString *invite_you_group = [DisplayLanguageManager getTextWithKey:@"invite_you_group"];
             NSString *invite_you_group = [MakeManager cell:[ConductorData kTextMessageName]];//@"邀请你加入".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -549,9 +549,9 @@
         //: case NIMSystemNotificationTypeTeamIviteReject:
         case NIMSystemNotificationTypeTeamIviteReject:
         {
-            //: NSString *message_helper_refuse_group = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_group"];
+            //: NSString *message_helper_refuse_group = [DisplayLanguageManager getTextWithKey:@"message_helper_refuse_group"];
             NSString *message_helper_refuse_group = [MakeManager cell:[ConductorData kText_itemData]];
-            //: NSString *message_helper_invite = [FFFLanguageManager getTextWithKey:@"message_helper_invite"];
+            //: NSString *message_helper_invite = [DisplayLanguageManager getTextWithKey:@"message_helper_invite"];
             NSString *message_helper_invite = [MakeManager cell:[ConductorData kNameCellValue]];//@"邀请".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.notification.targetID];
@@ -569,7 +569,7 @@
         //: case NIMSystemNotificationTypeSuperTeamApply:
         case NIMSystemNotificationTypeSuperTeamApply:
         {
-            //: NSString *apply_join_supergroup = [FFFLanguageManager getTextWithKey:@"apply_join_supergroup"];
+            //: NSString *apply_join_supergroup = [DisplayLanguageManager getTextWithKey:@"apply_join_supergroup"];
             NSString *apply_join_supergroup = [MakeManager cell:[ConductorData kText_targetWithData]];//@"申请加入超大群 %@".nim_localized
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -581,9 +581,9 @@
         //: case NIMSystemNotificationTypeSuperTeamApplyReject:
         case NIMSystemNotificationTypeSuperTeamApplyReject:
         {
-            //: NSString *large_group = [FFFLanguageManager getTextWithKey:@"large_group"];
+            //: NSString *large_group = [DisplayLanguageManager getTextWithKey:@"large_group"];
             NSString *large_group = [MakeManager cell:[ConductorData kName_placeTitleValue]];//超大群
-            //: NSString *to_deny_entry = [FFFLanguageManager getTextWithKey:@"to_deny_entry"];
+            //: NSString *to_deny_entry = [DisplayLanguageManager getTextWithKey:@"to_deny_entry"];
             NSString *to_deny_entry = [MakeManager cell:[ConductorData kName_errorString]];//拒绝你加入
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -595,9 +595,9 @@
         //: case NIMSystemNotificationTypeSuperTeamInvite:
         case NIMSystemNotificationTypeSuperTeamInvite:
         {
-            //: NSString *large_group = [FFFLanguageManager getTextWithKey:@"large_group"];
+            //: NSString *large_group = [DisplayLanguageManager getTextWithKey:@"large_group"];
             NSString *large_group = [MakeManager cell:[ConductorData kName_placeTitleValue]];//超大群
-            //: NSString *invite_you_join_us = [FFFLanguageManager getTextWithKey:@"invite_you_join_us"];
+            //: NSString *invite_you_join_us = [DisplayLanguageManager getTextWithKey:@"invite_you_join_us"];
             NSString *invite_you_join_us = [MakeManager cell:[ConductorData kTextDateData]];//邀请你加入
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -609,7 +609,7 @@
         //: case NIMSystemNotificationTypeSuperTeamIviteReject:
         case NIMSystemNotificationTypeSuperTeamIviteReject:
         {
-            //: NSString *rejected_group_invitation = [FFFLanguageManager getTextWithKey:@"rejected_group_invitation"];
+            //: NSString *rejected_group_invitation = [DisplayLanguageManager getTextWithKey:@"rejected_group_invitation"];
             NSString *rejected_group_invitation = [MakeManager cell:[ConductorData kName_textString]];
             //: NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
             NIMTeam *team = [[NIMSDK sharedSDK].superTeamManager teamById:self.notification.targetID];
@@ -636,25 +636,25 @@
                 switch (operation) {
                     //: case NIMUserOperationAdd:
                     case NIMUserOperationAdd:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_already_add"];
+                        //: text = [DisplayLanguageManager getTextWithKey:@"message_helper_already_add"];
                         text = [MakeManager cell:[ConductorData kNameShowMonthData]];//@"已添加你为好友".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationRequest:
                     case NIMUserOperationRequest:
-                        //: text = [FFFLanguageManager getTextWithKey:@"request_add_you_as_a_friend"];
+                        //: text = [DisplayLanguageManager getTextWithKey:@"request_add_you_as_a_friend"];
                         text = [MakeManager cell:[ConductorData kTitle_fileName]];//@"请求添加你为好友".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationVerify:
                     case NIMUserOperationVerify:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_allow_you_apply"];
+                        //: text = [DisplayLanguageManager getTextWithKey:@"message_helper_allow_you_apply"];
                         text = [MakeManager cell:[ConductorData kTitle_currentText]];//@"通过了你的好友请求".nim_localized;
                         //: break;
                         break;
                     //: case NIMUserOperationReject:
                     case NIMUserOperationReject:
-                        //: text = [FFFLanguageManager getTextWithKey:@"message_helper_refuse_you_apply"];
+                        //: text = [DisplayLanguageManager getTextWithKey:@"message_helper_refuse_you_apply"];
                         text = [MakeManager cell:[ConductorData kName_targetValueLoopText]];//@"拒绝了你的好友请求".nim_localized;
                         //: break;
                         break;
@@ -887,25 +887,25 @@
         switch (self.notification.handleStatus) {
             //: case NotificationHandleTypeOk:
             case NotificationHandleTypeOk:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_ok"];
+                //: self.handleInfoLabel.text = [DisplayLanguageManager getTextWithKey:@"message_helper_already_ok"];
                 self.handleInfoLabel.text = [MakeManager cell:[ConductorData kTitle_deviceTargetValue]];//@"已同意".nim_localized;
                 //: break;
                 break;
             //: case NotificationHandleTypeNo:
             case NotificationHandleTypeNo:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_no"];
+                //: self.handleInfoLabel.text = [DisplayLanguageManager getTextWithKey:@"message_helper_already_no"];
                 self.handleInfoLabel.text = [MakeManager cell:[ConductorData kNameHideEndString]];//@"已拒绝".nim_localized;
                 //: break;
                 break;
             //: case NotificationHandleTypeOutOfDate:
             case NotificationHandleTypeOutOfDate:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"message_helper_already_time"];
+                //: self.handleInfoLabel.text = [DisplayLanguageManager getTextWithKey:@"message_helper_already_time"];
                 self.handleInfoLabel.text = [MakeManager cell:[ConductorData kTitleNimLastString]];//@"已过期".nim_localized;
                 //: break;
                 break;
             //: default:
             default:
-                //: self.handleInfoLabel.text = [FFFLanguageManager getTextWithKey:@"is_read"];
+                //: self.handleInfoLabel.text = [DisplayLanguageManager getTextWithKey:@"is_read"];
                 self.handleInfoLabel.text = [MakeManager cell:[ConductorData kTitle_onData]];
                 //: break;
                 break;
@@ -917,12 +917,12 @@
     }
 
 
-    //: self.timeLabel.text = [FFFKitUtil showTime:self.notification.timestamp showDetail:YES];
+    //: self.timeLabel.text = [DisplayKitUtil showTime:self.notification.timestamp showDetail:YES];
     self.timeLabel.text = [AtPull account:self.notification.timestamp notice:YES];
 
     //: NSString *sourceID = self.notification.sourceID;
     NSString *sourceID = self.notification.sourceID;
-    //: FFFKitInfo *sourceMember = [[MyUserKit sharedKit] infoByUser:sourceID option:nil];
+    //: DisplayKitInfo *sourceMember = [[MyUserKit sharedKit] infoByUser:sourceID option:nil];
     CancelTeamCorner *sourceMember = [[Mortification text] tingVoice:sourceID keepingOption:nil];
     //: [self updateSourceMember:sourceMember];
     [self pathRed:sourceMember];

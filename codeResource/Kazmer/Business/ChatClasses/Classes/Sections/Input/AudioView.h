@@ -11,18 +11,18 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionConfig.h"
+//: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
+//: #import "DisplayInputProtocol.h"
+#import "DisplayInputProtocol.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFInputAudioView : UIView
+//: @interface DisplayInputAudioView : UIView
 @interface AudioView : UIView
 
-//: @property (nonatomic,weak) id<FFFSessionConfig> config;
+//: @property (nonatomic,weak) id<DisplaySessionConfig> config;
 @property (nonatomic,weak) id<ColorConfig> config;
 //: @property (nonatomic,weak) id<NIMInputActionDelegate> actionDelegate;
 @property (nonatomic,weak) id<PullDelegate> actionDelegate;

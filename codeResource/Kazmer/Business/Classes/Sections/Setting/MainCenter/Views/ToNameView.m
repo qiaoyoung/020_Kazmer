@@ -65,7 +65,7 @@ typedef struct {
     return kTitleAddData;
 }
 
-//: #ffffff
+//: #fffDisplay
 + (NSString *)kTextTotalactString {
     /* static */ NSString *kTextTotalactString = nil;
     if (!kTextTotalactString) {
@@ -269,7 +269,7 @@ typedef struct {
     CGFloat totalwidth = 295;
     //: _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
     _box = [[UIView alloc]initWithFrame:CGRectMake(([[UIScreen mainScreen] bounds].size.width-totalwidth)/2, ([[UIScreen mainScreen] bounds].size.height-250)/2, totalwidth, 250)];
-    //: _box.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _box.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
     _box.backgroundColor = [UIColor cell:[ReservationData kTextTotalactString]];
     //: _box.layer.cornerRadius = 20;
     _box.layer.cornerRadius = 20;
@@ -323,7 +323,7 @@ typedef struct {
     _labUnknow.textColor = [UIColor cell:[ReservationData kTextVitaminButImageName]];
     //: _labUnknow.textAlignment = NSTextAlignmentCenter;
     _labUnknow.textAlignment = NSTextAlignmentCenter;
-    //: _labUnknow.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_xu"];
+    //: _labUnknow.text = [DisplayLanguageManager getTextWithKey:@"friend_info_activity_xu"];
     _labUnknow.text = [MakeManager cell:[ReservationData kTitleCropStopValue]];
     //: [view1 addSubview:_labUnknow];
     [view1 addSubview:_labUnknow];
@@ -369,7 +369,7 @@ typedef struct {
     _labMan.textColor = [UIColor blackColor];
     //: _labMan.textAlignment = NSTextAlignmentCenter;
     _labMan.textAlignment = NSTextAlignmentCenter;
-    //: _labMan.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nan"];
+    //: _labMan.text = [DisplayLanguageManager getTextWithKey:@"friend_info_activity_nan"];
     _labMan.text = [MakeManager cell:[ReservationData kContent_mainValue]];
     //: [view2 addSubview:_labMan];
     [view2 addSubview:_labMan];
@@ -414,7 +414,7 @@ typedef struct {
     _labWoman.textColor = [UIColor blackColor];
     //: _labWoman.textAlignment = NSTextAlignmentCenter;
     _labWoman.textAlignment = NSTextAlignmentCenter;
-    //: _labWoman.text = [FFFLanguageManager getTextWithKey:@"friend_info_activity_nv"];
+    //: _labWoman.text = [DisplayLanguageManager getTextWithKey:@"friend_info_activity_nv"];
     _labWoman.text = [MakeManager cell:[ReservationData kTextHardwareValue]];
     //: [view3 addSubview:_labWoman];
     [view3 addSubview:_labWoman];
@@ -449,9 +449,9 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:[ReservationData kNameDisturbValue]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:[ReservationData kTextTitleValue]] forState:UIControlStateNormal];
-        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _closeBtn.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
         _closeBtn.backgroundColor = [UIColor cell:[ReservationData kTextTotalactString]];
         //: _closeBtn.layer.cornerRadius = 22;
         _closeBtn.layer.cornerRadius = 22;
@@ -486,9 +486,9 @@ typedef struct {
         [_sureBtn addTarget:self action:@selector(userView) forControlEvents:UIControlEventTouchUpInside];
         //: _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
-        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#ffffff"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitleColor:[UIColor colorWithHexString:@"#fffDisplay"] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor cell:[ReservationData kTextTotalactString]] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:[ReservationData kTitle_modelData]] forState:UIControlStateNormal];
         //: CGFloat width = (295-60)/2;
         CGFloat width = (295-60)/2;
@@ -596,7 +596,7 @@ typedef struct {
         //: _titleLabel.textColor = [UIColor colorWithHexString:@"#000000"];
         _titleLabel.textColor = [UIColor cell:[ReservationData kTitleAddData]];
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_friend_info_sex"];
+        //: _titleLabel.text = [DisplayLanguageManager getTextWithKey:@"activity_friend_info_sex"];
         _titleLabel.text = [MakeManager cell:[ReservationData kTextNonprofitValue]];
     }
     //: return _titleLabel;

@@ -38,7 +38,7 @@ Byte kTitlePaleValue[] = {70, 11, 12, 80, 206, 60, 91, 165, 95, 118, 62, 136, 10
 // __M_A_C_R_O__
 //: #import "USERMessageUtil.h"
 #import "PrimrosePathUtil.h"
-//: #import "FFFMessageUtil.h"
+//: #import "DisplayMessageUtil.h"
 #import "AddPullSize.h"
 //: #import "USERShareCardAttachment.h"
 #import "ProfitsToAttachmentColor.h"
@@ -55,25 +55,25 @@ Byte kTitlePaleValue[] = {70, 11, 12, 80, 206, 60, 91, 165, 95, 118, 62, 136, 10
     //: if ([object.attachment isKindOfClass:[USERSnapchatAttachment class]])
     if ([object.attachment isKindOfClass:[DigitizerAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_yue"];
+        //: text = [DisplayLanguageManager getTextWithKey:@"home_fragment_yue"];
         text = [MakeManager cell:StringFromApseData(kName_detailedText)];//@"[阅后即焚]";
     }
     //: else if ([object.attachment isKindOfClass:[USERJanKenPonAttachment class]])
     else if ([object.attachment isKindOfClass:[GlossAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"message_guess"];
+        //: text = [DisplayLanguageManager getTextWithKey:@"message_guess"];
         text = [MakeManager cell:StringFromApseData(kNameSnapGentString)];//@"[猜拳]";
     }
     //: else if ([object.attachment isKindOfClass:[USERWhiteboardAttachment class]])
     else if ([object.attachment isKindOfClass:[MessageAttachment class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_bai"];
+        //: text = [DisplayLanguageManager getTextWithKey:@"home_fragment_bai"];
         text = [MakeManager cell:StringFromApseData(kContent_treasureData)];//@"[白板]";
     }
     //: else if ([object.attachment isKindOfClass:[USERRedPacketAttachment class]])
     else if ([object.attachment isKindOfClass:[LabelTagContext class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"message_red_packet"];
+        //: text = [DisplayLanguageManager getTextWithKey:@"message_red_packet"];
         text = [MakeManager cell:StringFromApseData(kNameEquivalentValue)];//@"[红包消息]";
     }
     //: else if ([object.attachment isKindOfClass:[USERRedPacketTipAttachment class]])
@@ -87,7 +87,7 @@ Byte kTitlePaleValue[] = {70, 11, 12, 80, 206, 60, 91, 165, 95, 118, 62, 136, 10
     //: else if ([object.attachment isKindOfClass:[USERMultiRetweetAttachment class]])
     else if ([object.attachment isKindOfClass:[SessionWith class]])
     {
-        //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_liao"];
+        //: text = [DisplayLanguageManager getTextWithKey:@"home_fragment_liao"];
         text = [MakeManager cell:StringFromApseData(kName_movieValue)];//@"[聊天记录]";
     }
     //: else if ([object.attachment isKindOfClass:[USERShareCardAttachment class]])
@@ -97,11 +97,11 @@ Byte kTitlePaleValue[] = {70, 11, 12, 80, 206, 60, 91, 165, 95, 118, 62, 136, 10
         ProfitsToAttachmentColor *cardAtt = (ProfitsToAttachmentColor *)object.attachment;
         //: if ([cardAtt.type boolValue]) {
         if ([cardAtt.type boolValue]) {
-            //: text = [FFFLanguageManager getTextWithKey:@"group_card"];
+            //: text = [DisplayLanguageManager getTextWithKey:@"group_card"];
             text = [MakeManager cell:StringFromApseData(kName_vitaminDetailString)];
         //: } else {
         } else {
-            //: text = [FFFLanguageManager getTextWithKey:@"person_card"];
+            //: text = [DisplayLanguageManager getTextWithKey:@"person_card"];
             text = [MakeManager cell:StringFromApseData(kTitlePaleValue)];
         }
     }
@@ -129,7 +129,7 @@ Byte kTitlePaleValue[] = {70, 11, 12, 80, 206, 60, 91, 165, 95, 118, 62, 136, 10
         text = [self shouldDown:message];
     //: } else {
     } else {
-        //: text = [FFFMessageUtil messageContent:message];
+        //: text = [DisplayMessageUtil messageContent:message];
         text = [AddPullSize nearExtra:message];
     }
     //: return text;

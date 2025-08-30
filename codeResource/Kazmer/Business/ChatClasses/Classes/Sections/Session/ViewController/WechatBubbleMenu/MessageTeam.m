@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBubbleButtonModel.h"
+//: #import "DisplayBubbleButtonModel.h"
 #import "MessageTeam.h"
 
-//: @implementation FFFBubbleButtonModel
+//: @implementation DisplayBubbleButtonModel
 @implementation MessageTeam
 
 //: @end

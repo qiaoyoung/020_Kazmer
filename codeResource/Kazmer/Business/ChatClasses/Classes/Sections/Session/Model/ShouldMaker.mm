@@ -25,7 +25,7 @@ Byte kTextBronzeData[] = {8, 16, 74, 8, 46, 20, 68, 192, 171, 186, 184, 189, 119
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageMaker.m
+//  DisplayMessageMaker.m
 // Mortification
 //
 //  Created by chris.
@@ -33,13 +33,13 @@ Byte kTextBronzeData[] = {8, 16, 74, 8, 46, 20, 68, 192, 171, 186, 184, 189, 119
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageMaker.h"
+//: #import "DisplayMessageMaker.h"
 #import "ShouldMaker.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFInputAtCache.h"
+//: #import "DisplayInputAtCache.h"
 #import "LabelSizeImage.h"
 
 //: NSString * generateUUID(void) {
@@ -57,7 +57,7 @@ NSString * dataDocument(void) {
     return uuidString;
 }
 
-//: @implementation FFFMessageMaker
+//: @implementation DisplayMessageMaker
 @implementation ShouldMaker
 
 //: + (NIMMessage*)msgWithText:(NSString*)text
@@ -123,7 +123,7 @@ NSString * dataDocument(void) {
     option.compressQuality = 0.7;
     //: imageObject.option = option;
     imageObject.option = option;
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [DisplayMessageMaker generateImageMessage:imageObject];
     return [ShouldMaker bottom:imageObject];
 }
 
@@ -132,7 +132,7 @@ NSString * dataDocument(void) {
 {
     //: NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
     NIMImageObject * imageObject = [[NIMImageObject alloc] initWithFilepath:path];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [DisplayMessageMaker generateImageMessage:imageObject];
     return [ShouldMaker bottom:imageObject];
 }
 
@@ -141,7 +141,7 @@ NSString * dataDocument(void) {
 {
     //: NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
     NIMImageObject *imageObject = [[NIMImageObject alloc] initWithData:data extension:extension];
-    //: return [FFFMessageMaker generateImageMessage:imageObject];
+    //: return [DisplayMessageMaker generateImageMessage:imageObject];
     return [ShouldMaker bottom:imageObject];
 }
 
@@ -157,7 +157,7 @@ NSString * dataDocument(void) {
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = imageObject;
     message.messageObject = imageObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
+    //: message.apnsContent = [DisplayLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
     message.apnsContent = [MakeManager cell:StringFromBeautyData(kNameSkirtDistributeValue)];
     //: [self setupMessage:message];
     [self womanizer:message];

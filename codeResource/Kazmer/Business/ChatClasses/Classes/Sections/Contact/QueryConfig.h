@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFKitInfo.h"
+//: #import "DisplayKitInfo.h"
 #import "CancelTeamCorner.h"
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
+//: #import "DisplayGroupedUsrInfo.h"
+#import "DisplayGroupedUsrInfo.h"
 
 /**
  *  联系人选择器数据回调
@@ -22,7 +22,7 @@
 //: typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *titles);
 typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *titles);
 
-//: @protocol FFFContactSelectConfig <NSObject>
+//: @protocol DisplayContactSelectConfig <NSObject>
 @protocol QueryConfig <NSObject>
 
 //: @optional
@@ -81,12 +81,12 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 /**
  *  提供联系人id、显示名、头像等信息
  */
-//: - (FFFKitInfo *)getInfoById:(NSString *)selectedId;
+//: - (DisplayKitInfo *)getInfoById:(NSString *)selectedId;
 - (CancelTeamCorner *)frame:(NSString *)selectedId;
 
 /// 是否显示头部的群头像 群名字headerview
 //: - (BOOL)showSelectHeaderview;
-- (BOOL)bar;
+- (BOOL)showSelectHeaderview;
 
 //: @end
 @end
@@ -94,7 +94,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 /**
  *  内置配置-选择好友
  */
-//: @interface NIMContactFriendSelectConfig : NSObject<FFFContactSelectConfig>
+//: @interface NIMContactFriendSelectConfig : NSObject<DisplayContactSelectConfig>
 @interface MakeAction : NSObject<QueryConfig>
 
 //: @property (nonatomic,assign) BOOL showSelectDetail;
@@ -121,7 +121,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 /**
  *  内置配置-选择群成员
  */
-//: @interface NIMContactTeamMemberSelectConfig : NSObject<FFFContactSelectConfig>
+//: @interface NIMContactTeamMemberSelectConfig : NSObject<DisplayContactSelectConfig>
 @interface MessageConfig : NSObject<QueryConfig>
 
 //: @property (nonatomic,assign) BOOL showSelectDetail;
@@ -158,7 +158,7 @@ typedef void(^NIMContactDataProviderHandler)(NSDictionary *contentDic, NSArray *
 /**
  *  内置配置-选择群
  */
-//: @interface NIMContactTeamSelectConfig : NSObject<FFFContactSelectConfig>
+//: @interface NIMContactTeamSelectConfig : NSObject<DisplayContactSelectConfig>
 @interface LabelTarget : NSObject<QueryConfig>
 
 //: @property (nonatomic,assign) NIMKitTeamType teamType;

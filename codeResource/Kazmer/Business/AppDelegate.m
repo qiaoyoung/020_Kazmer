@@ -588,13 +588,13 @@
 // __M_A_C_R_O__
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
-//: #import "FFFLoginViewController.h"
+//: #import "DisplayLoginViewController.h"
 #import "PageViewController.h"
 //: #import "UIView+Toast.h"
 #import "UIView+Toast.h"
 //: #import "USERNotificationCenter.h"
 #import "CellCornerInside.h"
-//: #import "FFFConfig.h"
+//: #import "DisplayConfig.h"
 #import "ContextTeam.h"
 //: #import "USERSessionUtil.h"
 #import "SessionStandard.h"
@@ -642,7 +642,7 @@
 #import <objc/runtime.h>
 //: #import "TYLNoticeRequest.h"
 #import "FruitageTarget.h"
-//: #import "FFFKitDevice.h"
+//: #import "DisplayKitDevice.h"
 #import "MaxDevice.h"
 //: #import <UMCommon/UMCommon.h>
 #import <UMCommon/UMCommon.h>
@@ -697,7 +697,7 @@ NSString *show_sessionUrl = @"NotificationLogout";
 {
     //: [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
     [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
-    //: FFFLoginViewController *loginController = [[FFFLoginViewController alloc] init];
+    //: DisplayLoginViewController *loginController = [[DisplayLoginViewController alloc] init];
     PageViewController *loginController = [[PageViewController alloc] init];
     //: UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginController];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loginController];
@@ -764,7 +764,7 @@ NSString *show_sessionUrl = @"NotificationLogout";
 - (void)emptyBefore
 {
 
-    //: NSString *langType = [FFFKitDevice language];
+    //: NSString *langType = [DisplayKitDevice language];
     NSString *langType = [MaxDevice past];
     //: NSLog(@"langType : %@",langType);
     NSLog([PickUpData sharedInstance].kContent_classifyString,langType);//zh-Hant-TW 中文繁体（台湾）
@@ -1042,7 +1042,7 @@ NSString *show_sessionUrl = @"NotificationLogout";
         [vc addAction:retryAction];
     }
 
-    //: UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]
+    //: UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"]
     UIAlertAction *logoutAction = [UIAlertAction actionWithTitle:[MakeManager cell:[PickUpData sharedInstance].kTextChopName]
                                                            //: style:UIAlertActionStyleDestructive
                                                            style:UIAlertActionStyleDestructive
@@ -1172,13 +1172,13 @@ NSString *show_sessionUrl = @"NotificationLogout";
     //appkey 是应用的标识，不同应用之间的数据（用户、消息、群组等）是完全隔离的。
     //如需打网易云信 Demo 包，请勿修改 appkey ，开发自己的应用时，请替换为自己的 appkey 。
     //并请对应更换 Demo 代码中的获取好友列表、个人信息等网易云信 SDK 未提供的接口。
-    //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+    //: NSString *appKey = [[DisplayConfig sharedConfig] appKey];
     NSString *appKey = [[ContextTeam mutual] appKey];
     //: NIMSDKOption *option = [NIMSDKOption optionWithAppKey:appKey];
     NIMSDKOption *option = [NIMSDKOption optionWithAppKey:appKey];
-    //: option.apnsCername = [[FFFConfig sharedConfig] apnsCername];
+    //: option.apnsCername = [[DisplayConfig sharedConfig] apnsCername];
     option.apnsCername = [[ContextTeam mutual] apnsCername];
-    //: option.pkCername = [[FFFConfig sharedConfig] pkCername];
+    //: option.pkCername = [[DisplayConfig sharedConfig] pkCername];
     option.pkCername = [[ContextTeam mutual] pkCername];
 
     //: [[NIMSDK sharedSDK] registerWithOption:option];
@@ -1395,7 +1395,7 @@ NSString *show_sessionUrl = @"NotificationLogout";
 {
 
     //: dispatch_after(dispatch_time((0ull), (int64_t)(3 * 1000000000ull)), dispatch_get_main_queue(), ^{
-    dispatch_after(dispatch_time((0ull), (int64_t)(3 * 1000000000ull)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time((DISPATCH_TIME_NOW), (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         //: id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
         id<NIMApnsManager> apnsManager = [[NIMSDK sharedSDK] apnsManager];
         //: NIMPushNotificationSetting *setting = [apnsManager currentSetting];
@@ -1539,14 +1539,14 @@ NSString *show_sessionUrl = @"NotificationLogout";
 //: - (void)addRootViewController {
 - (void)tingPostReply {
     // 检查并更新域名
-    //: [[FFFConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
+    //: [[DisplayConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
     [[ContextTeam mutual] latestBubble:^(BOOL success) {
         //: if (success) {
         if (success) {
-            //: NSLog(@"域名更新成功: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+            //: NSLog(@"域名更新成功: %@", [[DisplayConfig sharedConfig] getCurrentDomain]);
         //: } else {
         } else {
-            //: NSLog(@"使用默认域名: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+            //: NSLog(@"使用默认域名: %@", [[DisplayConfig sharedConfig] getCurrentDomain]);
         }
     //: }];
     }];
@@ -1650,7 +1650,7 @@ NSString *show_sessionUrl = @"NotificationLogout";
     FlipData *data = [[BlendManager iconAcrossManager] currentLoginData];
 
     //如果有缓存用户名密码推荐使用自动登录
-    //: BOOL allow = [FFFConfig sharedConfig].allowAutoLogin;
+    //: BOOL allow = [DisplayConfig sharedConfig].allowAutoLogin;
     BOOL allow = [ContextTeam mutual].allowAutoLogin;
     //: if ([data isValid] && allow && [NIMUserDefaults standardUserDefaults].loginToken)
     if ([data exceptBubble] && allow && [TableContext name].loginToken)
@@ -1825,7 +1825,7 @@ NSString *show_sessionUrl = @"NotificationLogout";
             //: action.type = LEEActionTypeCancel;
             action.type = LEEActionTypeCancel;
 
-            //: action.title = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
+            //: action.title = [DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"];
             action.title = [MakeManager cell:[PickUpData sharedInstance].kName_showLiteralData];
 
             //: action.titleColor = [UIColor whiteColor];

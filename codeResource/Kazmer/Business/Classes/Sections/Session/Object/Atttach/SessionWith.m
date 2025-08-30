@@ -66,7 +66,7 @@ StandardData kTitle_securityValue = (StandardData){80, (Byte []){61, 52, 101, 19
 #import "SessionWith.h"
 //: #import "USERFileLocationHelper.h"
 #import "DisplayHelper.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 //: #import "NSDictionary+USERJson.h"
 #import "NSDictionary+ControlJson.h"
@@ -74,7 +74,7 @@ StandardData kTitle_securityValue = (StandardData){80, (Byte []){61, 52, 101, 19
 #import "LabelNameScrollView+Mortification.h"
 //: #import "USERMessageUtil.h"
 #import "PrimrosePathUtil.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "DisplayInputEmoticonParser.h"
 #import "MessageParser.h"
 
 //: @interface USERMultiRetweetAttachment ()
@@ -393,7 +393,7 @@ StandardData kTitle_securityValue = (StandardData){80, (Byte []){61, 52, 101, 19
     NSMutableString *ret = [NSMutableString string];
     //: if (msg.length > (32)) {
     if (msg.length > (32)) {
-        //: NSArray *tokens = [[FFFInputEmoticonParser currentParser] tokens:msg];
+        //: NSArray *tokens = [[DisplayInputEmoticonParser currentParser] tokens:msg];
         NSArray *tokens = [[MessageParser item] show:msg];
         //: for (NIMInputTextToken *token in tokens) { 
         for (TextPage *token in tokens) { //防止emoji表情被截断
@@ -442,13 +442,13 @@ StandardData kTitle_securityValue = (StandardData){80, (Byte []){61, 52, 101, 19
     }
     //: USERMessageAbstract *ret = [[USERMessageAbstract alloc] init];
     ReckonAbstract *ret = [[ReckonAbstract alloc] init];
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
     CellClean *option = [[CellClean alloc] init];
     //: option.session = message.session;
     option.session = message.session;
     //: option.message = message;
     option.message = message;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit].provider infoByUser:message.from option:option];
     CancelTeamCorner *info = [[Mortification text].provider tingVoice:message.from keepingOption:option];
     //: ret.sender = info.showName ?: @"null";
     ret.sender = info.showName ?: StringFromStandardData(&kTitleShowCellString);

@@ -14,7 +14,7 @@
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
-//: @interface FFFRegisterViewController : UIViewController
+//: @interface DisplayRegisterViewController : UIViewController
 @interface CenterViewController : UIViewController
 
 //: @end

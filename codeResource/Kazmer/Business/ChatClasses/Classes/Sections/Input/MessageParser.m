@@ -18,9 +18,9 @@ Byte kContentMoleRaspName[] = {99, 29, 6, 11, 184, 88, 250, 52, 123, 12, 188, 98
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputEmoticonParser.h"
+//: #import "DisplayInputEmoticonParser.h"
 #import "MessageParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
 
 //: @implementation NIMInputTextToken
@@ -28,7 +28,7 @@ Byte kContentMoleRaspName[] = {99, 29, 6, 11, 184, 88, 250, 52, 123, 12, 188, 98
 //: @end
 @end
 
-//: @interface FFFInputEmoticonParser ()
+//: @interface DisplayInputEmoticonParser ()
 @interface MessageParser ()
 //: @property (nonatomic,strong) NSCache *tokens;
 @property (nonatomic,strong) NSCache *tokens;
@@ -36,7 +36,7 @@ Byte kContentMoleRaspName[] = {99, 29, 6, 11, 184, 88, 250, 52, 123, 12, 188, 98
 @end
 
 
-//: @implementation FFFInputEmoticonParser
+//: @implementation DisplayInputEmoticonParser
 @implementation MessageParser
 //: - (instancetype)init
 - (instancetype)init
@@ -54,13 +54,13 @@ Byte kContentMoleRaspName[] = {99, 29, 6, 11, 184, 88, 250, 52, 123, 12, 188, 98
 //: + (instancetype)currentParser
 + (instancetype)item
 {
-    //: static FFFInputEmoticonParser *instance = nil;
+    //: static DisplayInputEmoticonParser *instance = nil;
     static MessageParser *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFInputEmoticonParser alloc] init];
+        //: instance = [[DisplayInputEmoticonParser alloc] init];
         instance = [[MessageParser alloc] init];
     //: });
     });
@@ -124,7 +124,7 @@ Byte kContentMoleRaspName[] = {99, 29, 6, 11, 184, 88, 250, 52, 123, 12, 188, 98
                        usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
                            //: NSString *rangeText = [text substringWithRange:result.range];
                            NSString *rangeText = [text substringWithRange:result.range];
-                           //: if ([[FFFInputEmoticonManager sharedManager] emoticonByTag:rangeText])
+                           //: if ([[DisplayInputEmoticonManager sharedManager] emoticonByTag:rangeText])
                            if ([[IndexManager item] disable:rangeText])
                            {
                                //: if (result.range.location > index)

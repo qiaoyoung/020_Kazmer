@@ -9,22 +9,22 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "DisplayTeamCardMemberItem.h"
 #import "IndexItem.h"
-//: #import "FFFMembersFetchOption.h"
+//: #import "DisplayMembersFetchOption.h"
 #import "LengthOption.h"
 
 // __M_A_C_R_O__
 
 //: typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
 typedef void(^NIMTeamListDataBlock)(NSError * _Nullable error, NSString * _Nullable msg);
-//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<FFFTeamCardMemberItem *> * _Nullable members);
+//: typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<DisplayTeamCardMemberItem *> * _Nullable members);
 typedef void(^NIMTeamMuteListDataBlock)(NSError * _Nullable error, NSMutableArray<IndexItem *> * _Nullable members);
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
 
-//: @protocol FFFTeamOperation <NSObject>
+//: @protocol DisplayTeamOperation <NSObject>
 @protocol ActivityImage <NSObject>
 
 //加人
@@ -144,7 +144,7 @@ NS_ASSUME_NONNULL_BEGIN
                  color:(NIMTeamListDataBlock)completion;
 
 //查询群成员
-//: - (void)fetchTeamMembersWithOption:(FFFMembersFetchOption * _Nullable )option
+//: - (void)fetchTeamMembersWithOption:(DisplayMembersFetchOption * _Nullable )option
 - (void)atTitle:(LengthOption * _Nullable )option
                         //: completion:(NIMTeamListDataBlock)completion;
                         seatCompletion:(NIMTeamListDataBlock)completion;
@@ -166,25 +166,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-//: @protocol FFFTeamMemberListDataSource <FFFTeamOperation>
+//: @protocol DisplayTeamMemberListDataSource <DisplayTeamOperation>
 @protocol AccountSource <ActivityImage>
 
 //: - (NIMTeam *)team;
 - (NIMTeam *)telephoneMessage;
 
 //: - (NIMSession *)session;
-- (NIMSession *)cellViewSystem;
+- (NIMSession *)session;
 
 //: - (NSInteger)memberNumber;
 - (NSInteger)digitizerTap;
 
-//: - (NSMutableArray <FFFTeamCardMemberItem *> *)members;
+//: - (NSMutableArray <DisplayTeamCardMemberItem *> *)members;
 - (NSMutableArray <IndexItem *> *)tableMessage;
 
-//: - (FFFTeamCardMemberItem *)myCard;
+//: - (DisplayTeamCardMemberItem *)myCard;
 - (IndexItem *)doing;
 
-//: - (FFFTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
+//: - (DisplayTeamCardMemberItem *)memberWithUserId:(NSString *)userId;
 - (IndexItem *)memberNameRecessWearer:(NSString *)userId;
 
 //: @end

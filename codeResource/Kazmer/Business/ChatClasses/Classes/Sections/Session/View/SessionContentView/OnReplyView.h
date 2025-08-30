@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
 
-//: @interface FFFSessionNetChatNotifyContentView : FFFSessionMessageContentView
+//: @interface DisplaySessionNetChatNotifyContentView : DisplaySessionMessageContentView
 @interface OnReplyView : WithTopView
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;

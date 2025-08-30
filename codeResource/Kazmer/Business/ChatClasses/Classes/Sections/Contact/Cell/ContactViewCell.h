@@ -11,12 +11,12 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
-//: #import "FFFKitInfo.h"
+//: #import "DisplayContactDefines.h"
+#import "DisplayContactDefines.h"
+//: #import "DisplayKitInfo.h"
 #import "CancelTeamCorner.h"
 
-//: @protocol FFFContactDataCellDelegate <NSObject>
+//: @protocol DisplayContactDataCellDelegate <NSObject>
 @protocol DenominateDelegate <NSObject>
 
 //: - (void)onPressAvatar:(NSString *)memberId;
@@ -25,18 +25,18 @@
 //: @end
 @end
 
-//: @class FFFAvatarImageView;
+//: @class DisplayAvatarImageView;
 @class MemoryImageControl;
 
-//: @interface FFFContactDataCell : UITableViewCell
+//: @interface DisplayContactDataCell : UITableViewCell
 @interface ContactViewCell : UITableViewCell
 
 //: @property (nonatomic,strong) UILabel *labName;
 @property (nonatomic,strong) UILabel *labName;
 
-//: @property (nonatomic,strong) FFFAvatarImageView * avatarImageView;
+//: @property (nonatomic,strong) DisplayAvatarImageView * avatarImageView;
 @property (nonatomic,strong) MemoryImageControl * avatarImageView;
-//: @property (nonatomic,weak) id<FFFContactDataCellDelegate> delegate;
+//: @property (nonatomic,weak) id<DisplayContactDataCellDelegate> delegate;
 @property (nonatomic,weak) id<DenominateDelegate> delegate;
 //: @property (nonatomic,copy) NSString *memberId;
 @property (nonatomic,copy) NSString *memberId;

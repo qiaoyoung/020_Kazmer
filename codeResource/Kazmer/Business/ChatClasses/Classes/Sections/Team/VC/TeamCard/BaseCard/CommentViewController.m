@@ -201,24 +201,24 @@
 //  
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardViewController.h"
+//: #import "DisplayTeamCardViewController.h"
 #import "CommentViewController.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFKitColorButtonCell.h"
+//: #import "DisplayKitColorButtonCell.h"
 #import "KitView.h"
-//: #import "FFFTeamMemberListCell.h"
+//: #import "DisplayTeamMemberListCell.h"
 #import "TargetViewCell.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFTeamCardSelectedViewController.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
+//: #import "DisplayTeamCardSelectedViewController.h"
 #import "YearViewController.h"
-//: #import "FFFGroupEditTableViewCell.h"
+//: #import "DisplayGroupEditTableViewCell.h"
 #import "TitleSizeViewCell.h"
 
-//: @interface FFFTeamCardViewController () <UITableViewDataSource,
+//: @interface DisplayTeamCardViewController () <UITableViewDataSource,
 @interface CommentViewController () <UITableViewDataSource,
                                          //: UITableViewDelegate,
                                          UITableViewDelegate,
@@ -231,7 +231,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardViewController
+//: @implementation DisplayTeamCardViewController
 @implementation CommentViewController
 
 //: - (void)viewDidLoad {
@@ -315,7 +315,7 @@
 
 //: - (UIAlertAction *)makeCancelAction {
 - (UIAlertAction *)up {
-    //: UIAlertAction *cancel = [UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+    //: UIAlertAction *cancel = [UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
     UIAlertAction *cancel = [UIAlertAction actionWithTitle:[MakeManager cell:[SilkData sharedInstance].kTextHospitalNumbValue]
                                                      //: style:UIAlertActionStyleCancel
                                                      style:UIAlertActionStyleCancel
@@ -641,11 +641,11 @@
 {
     //: NSString *identifier = [NSString stringWithFormat:@"builidCommonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SilkData sharedInstance].kText_aestheticYoursString,(long)indexPath.section,(long)indexPath.row];
-    //: FFFGroupEditTableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: DisplayGroupEditTableViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     TitleSizeViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFGroupEditTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[DisplayGroupEditTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[TitleSizeViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: CGFloat left = 60.f;
         CGFloat left = 60.f;
@@ -739,11 +739,11 @@
     }
     //: if (bodyData.type == TeamCardRowItemTypeSelected) {
     if (bodyData.title == TeamCardRowItemTypeSelected) {
-        //: FFFTeamCardSelectedViewController *vc = [FFFTeamCardSelectedViewController instanceWithTitle:bodyData.title
+        //: DisplayTeamCardSelectedViewController *vc = [DisplayTeamCardSelectedViewController instanceWithTitle:bodyData.title
         YearViewController *vc = [YearViewController nameInstance:bodyData.sumeract
                                                                                //: items:bodyData.optionItems
                                                                                item:bodyData.maturityDate
-                                                                              //: result:^(id<FFFKitSelectCardData> _Nonnull item) {
+                                                                              //: result:^(id<DisplayKitSelectCardData> _Nonnull item) {
                                                                               must:^(id<ChangeLength> _Nonnull item) {
               //: if (bodyData.selectedBlock) {
               if (bodyData.tab) {
@@ -776,17 +776,17 @@
 //    tableButtonCell
     //: NSString *identifier = [NSString stringWithFormat:@"tableButtonCell%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SilkData sharedInstance].kName_endData,(long)indexPath.section,(long)indexPath.row];
-    //: FFFKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: DisplayKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     KitView * cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[DisplayKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[KitView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //: cell.button.style = FFFKitColorButtonCellStyleRed;
-    cell.button.style = FFFKitColorButtonCellStyleRed;
+    //: cell.button.style = DisplayKitColorButtonCellStyleRed;
+    cell.button.style = DisplayKitColorButtonCellStyleRed;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     [cell.button setTitle:bodyData.sumeract forState:UIControlStateNormal];
     //: return cell;
@@ -795,17 +795,17 @@
 
 //: - (UITableViewCell*)builidBlueButtonCell:(id<USERCardBodyData>) bodyData{
 - (UITableViewCell*)camera:(id<TranslateName>) bodyData{
-    //: FFFKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableButtonCell"];
+    //: DisplayKitColorButtonCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableButtonCell"];
     KitView * cell = [self.tableView dequeueReusableCellWithIdentifier:[SilkData sharedInstance].kTextProvedString];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableButtonCell"];
+        //: cell = [[DisplayKitColorButtonCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"tableButtonCell"];
         cell = [[KitView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[SilkData sharedInstance].kTextProvedString];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    //: cell.button.style = FFFKitColorButtonCellStyleBlue;
-    cell.button.style = FFFKitColorButtonCellStyleBlue;
+    //: cell.button.style = DisplayKitColorButtonCellStyleBlue;
+    cell.button.style = DisplayKitColorButtonCellStyleBlue;
     //: [cell.button setTitle:bodyData.title forState:UIControlStateNormal];
     [cell.button setTitle:bodyData.sumeract forState:UIControlStateNormal];
     //: return cell;
@@ -814,11 +814,11 @@
 
 //: - (UITableViewCell*)builidTeamMemberCell:(id<USERCardBodyData>) bodyData{
 - (UITableViewCell*)compartmentLengthNameerJoinerCell:(id<TranslateName>) bodyData{
-    //: FFFTeamMemberListCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableMemberCell"];
+    //: DisplayTeamMemberListCell * cell = [self.tableView dequeueReusableCellWithIdentifier:@"tableMemberCell"];
     TargetViewCell * cell = [self.tableView dequeueReusableCellWithIdentifier:[SilkData sharedInstance].kTitle_showNumbString];
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFTeamMemberListCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"tableMemberCell"];
+        //: cell = [[DisplayTeamMemberListCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"tableMemberCell"];
         cell = [[TargetViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[SilkData sharedInstance].kTitle_showNumbString];
     }
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -872,13 +872,13 @@
 {
     //: NSString *identifier = [NSString stringWithFormat:@"TableSwitch%ld%ld",(long)indexPath.section,(long)indexPath.row];
     NSString *identifier = [NSString stringWithFormat:[SilkData sharedInstance].kTitle_upperString,(long)indexPath.section,(long)indexPath.row];
-    //: FFFTeamSwitchTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    //: DisplayTeamSwitchTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     MarginOfSafetyView *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFTeamSwitchTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[DisplayTeamSwitchTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[MarginOfSafetyView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: CGFloat left = 60.f;
         CGFloat left = 60.f;
@@ -951,7 +951,7 @@
 
 //: #pragma mark - Setter
 #pragma mark - Setter
-//: - (void)setDatas:(NSArray<NSArray<FFFTeamCardRowItem *> *> *)datas {
+//: - (void)setDatas:(NSArray<NSArray<DisplayTeamCardRowItem *> *> *)datas {
 - (void)setDatas:(NSArray<NSArray<ManPath *> *> *)datas {
     //: _datas = datas;
     _datas = datas;
@@ -1019,10 +1019,10 @@
 //: - (UIView *)didGetHeaderView { return [UIView new]; }
 - (UIView *)range { return [UIView new]; }
 
-//: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell {}
+//: - (void)didBuildTeamMemberCell:(DisplayTeamMemberListCell *)cell {}
 - (void)add:(TargetViewCell *)cell {}
 
-//: - (void)didBuildTeamSwitchCell:(FFFTeamSwitchTableViewCell *)cell {}
+//: - (void)didBuildTeamSwitchCell:(DisplayTeamSwitchTableViewCell *)cell {}
 - (void)bubble:(MarginOfSafetyView *)cell {}
 
 //: - (void)reloadTableViewData {};

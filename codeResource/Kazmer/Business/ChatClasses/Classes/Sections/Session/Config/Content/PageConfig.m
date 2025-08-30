@@ -49,12 +49,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAudioContentConfig.h"
+//: #import "DisplayAudioContentConfig.h"
 #import "PageConfig.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @implementation FFFAudioContentConfig
+//: @implementation DisplayAudioContentConfig
 @implementation PageConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -83,7 +83,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: return @"FFFSessionAudioContentView";
+    //: return @"DisplaySessionAudioContentView";
     return @"ForefrontTitleView";
 }
 

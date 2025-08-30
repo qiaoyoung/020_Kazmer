@@ -11,20 +11,20 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFKitMessageProvider.h"
+//: #import "DisplayKitMessageProvider.h"
 #import "LabelSessionProvider.h"
-//: #import "FFFSessionConfig.h"
+//: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
 
-//: @class FFFMessageModel;
+//: @class DisplayMessageModel;
 @class CleanDoing;
 
-//: @interface FFFSessionMsgDatasource : NSObject
+//: @interface DisplaySessionMsgDatasource : NSObject
 @interface BubbleCropView : NSObject
 
 //: - (instancetype)initWithSession:(NIMSession*)session
 - (instancetype)initWithCanadianProvince:(NIMSession*)session
-                         //: config:(id<FFFSessionConfig>)sessionConfig;
+                         //: config:(id<DisplaySessionConfig>)sessionConfig;
                          cellStreetSmart:(id<ColorConfig>)sessionConfig;
 
 
@@ -36,10 +36,10 @@
 @property (nonatomic, readonly) NSInteger messageLimit;//每页消息显示条数
 //: @property (nonatomic, readonly) NSInteger showTimeInterval; 
 @property (nonatomic, readonly) NSInteger showTimeInterval;//两条消息相隔多久显示一条时间戳
-//: @property (nonatomic, weak) id<FFFSessionConfig> sessionConfig;
+//: @property (nonatomic, weak) id<DisplaySessionConfig> sessionConfig;
 @property (nonatomic, weak) id<ColorConfig> sessionConfig;
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel*)model;
+//: - (NSInteger)indexAtModelArray:(DisplayMessageModel*)model;
 - (NSInteger)nameArray:(CleanDoing*)model;
 
 //复位消息
@@ -62,7 +62,7 @@
 - (void)examineedMail:(void (^)(NSError *))handler;
 
 // 展示message之前做额外配置
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(DisplayMessageModel *)model;
 - (void)wire:(CleanDoing *)model;
 
 //添加消息，会根据时间戳插入到相应位置
@@ -74,7 +74,7 @@
 - (NSArray<NSNumber *> *)list:(NSArray *)models;
 
 //删除消息
-//: - (NSArray<NSNumber *> *)deleteMessageModel:(FFFMessageModel*)model;
+//: - (NSArray<NSNumber *> *)deleteMessageModel:(DisplayMessageModel*)model;
 - (NSArray<NSNumber *> *)information:(CleanDoing*)model;
 
 //根据范围批量删除消息

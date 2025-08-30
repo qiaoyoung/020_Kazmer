@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTimestampModel.h"
+//: #import "DisplayTimestampModel.h"
 #import "WithPage.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 
-//: @implementation FFFTimestampModel
+//: @implementation DisplayTimestampModel
 @implementation WithPage
 
 //: - (instancetype)init{

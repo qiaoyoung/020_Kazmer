@@ -30,24 +30,24 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputToolBar.h"
+//: #import "DisplayInputToolBar.h"
 #import "ResultCommentView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFInputBarItemType.h"
-#import "FFFInputBarItemType.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputBarItemType.h"
+#import "DisplayInputBarItemType.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
 //: #import "YYText.h"
 #import "YYText.h"
-//: #import "FFFTextHighlight.h"
+//: #import "DisplayTextHighlight.h"
 #import "SpectralColorTitleHighlight.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "DisplayKitKeyboardInfo.h"
 #import "RedInfo.h"
 
-//: @interface FFFInputToolBar()<FFFGrowingTextViewDelegate>
+//: @interface DisplayInputToolBar()<DisplayGrowingTextViewDelegate>
 @interface ResultCommentView()<TagComment>
 
 //: @property (nonatomic,copy) NSDictionary *dict;
@@ -62,7 +62,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 //: @end
 @end
 
-//: @implementation FFFInputToolBar
+//: @implementation DisplayInputToolBar
 @implementation ResultCommentView
 
 //: - (void)willChangeHeight:(CGFloat)height
@@ -79,7 +79,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 
 
 
-//: - (BOOL)textViewShouldBeginEditing:(FFFGrowingTextView *)growingTextView
+//: - (BOOL)textViewShouldBeginEditing:(DisplayGrowingTextView *)growingTextView
 - (BOOL)onPin:(AtPraiseScrollView *)growingTextView
 {
     //: BOOL should = YES;
@@ -163,8 +163,8 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 //: - (void)adjustTextAndRecordView
 - (void)key
 {
-    //: if ([self.types containsObject:@(FFFInputBarItemTypeTextAndRecord)])
-    if ([self.types containsObject:@(FFFInputBarItemTypeTextAndRecord)])
+    //: if ([self.types containsObject:@(DisplayInputBarItemTypeTextAndRecord)])
+    if ([self.types containsObject:@(DisplayInputBarItemTypeTextAndRecord)])
     {
 //        self.inputTextView.center  = self.inputTextBkgImage.center;
 
@@ -192,7 +192,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
     return [self.inputTextView isFirstResponder];
 }
 
-//: - (void)textViewDidEndEditing:(FFFGrowingTextView *)growingTextView
+//: - (void)textViewDidEndEditing:(DisplayGrowingTextView *)growingTextView
 - (void)texts:(AtPraiseScrollView *)growingTextView
 {
     //: if ([self.delegate respondsToSelector:@selector(textViewDidEndEditing)]) {
@@ -305,7 +305,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 //        _inputTextBkgImage = [[UIImageView alloc] initWithFrame:CGRectZero];
 //        [_inputTextBkgImage setImage:[[UIImage imageNamed:@"icon_input_text_bg_"] resizableImageWithCapInsets:UIEdgeInsetsMake(15,80,15,80) resizingMode:UIImageResizingModeStretch]];
 
-        //: _inputTextView = [[FFFGrowingTextView alloc] initWithFrame:CGRectZero];
+        //: _inputTextView = [[DisplayGrowingTextView alloc] initWithFrame:CGRectZero];
         _inputTextView = [[AtPraiseScrollView alloc] initWithFrame:CGRectZero];
         //: _inputTextView.font = [UIFont systemFontOfSize:14.0f];
         _inputTextView.font = [UIFont systemFontOfSize:14.0f];
@@ -344,13 +344,13 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 
         //: self.types = @[
         self.types = @[
-//            @(FFFInputBarItemTypeMore),
-//            @(FFFInputBarItemTypeEmoticon),
-//                         @(FFFInputBarItemTypeVoice),
-                         //: @(FFFInputBarItemTypeTextAndRecord),
-                         @(FFFInputBarItemTypeTextAndRecord),
-                         //: @(FFFInputBarItemTypeSend),
-                         @(FFFInputBarItemTypeSend),
+//            @(DisplayInputBarItemTypeMore),
+//            @(DisplayInputBarItemTypeEmoticon),
+//                         @(DisplayInputBarItemTypeVoice),
+                         //: @(DisplayInputBarItemTypeTextAndRecord),
+                         @(DisplayInputBarItemTypeTextAndRecord),
+                         //: @(DisplayInputBarItemTypeSend),
+                         @(DisplayInputBarItemTypeSend),
 
                        //: ];
                        ];
@@ -363,7 +363,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 }
 
 
-//: #pragma mark - FFFGrowingTextViewDelegate
+//: #pragma mark - DisplayGrowingTextViewDelegate
 #pragma mark - TagComment
 //: - (BOOL)shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)replacementText
 - (BOOL)sub:(NSRange)range can:(NSString *)replacementText
@@ -422,7 +422,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 {
 //    CGFloat textViewWidth = 0;
 //    for (NSNumber *type in self.types) {
-//        if (type.integerValue == FFFInputBarItemTypeTextAndRecord) {
+//        if (type.integerValue == DisplayInputBarItemTypeTextAndRecord) {
 //            continue;
 //        }
 //        UIView *view = [self subViewForType:type.integerValue];
@@ -472,19 +472,19 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 
 //: #pragma mark - Get
 #pragma mark - Get
-//: - (UIView *)subViewForType:(FFFInputBarItemType)type{
-- (UIView *)fillIn:(FFFInputBarItemType)type{
+//: - (UIView *)subViewForType:(DisplayInputBarItemType)type{
+- (UIView *)fillIn:(DisplayInputBarItemType)type{
     //: if (!_dict) {
     if (!_dict) {
         //: _dict = @{
         _dict = @{
-//                  @(FFFInputBarItemTypeVoice) : self.voiceButton,
-//                  @(FFFInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
-                  //: @(FFFInputBarItemTypeEmoticon) : self.emoticonBtn,
-                  @(FFFInputBarItemTypeEmoticon) : self.emoticonBtn,
-//                  @(FFFInputBarItemTypeMore)     : self.moreMediaBtn,
-                  //: @(FFFInputBarItemTypeSend) : self.sendButton,
-                  @(FFFInputBarItemTypeSend) : self.sendButton,
+//                  @(DisplayInputBarItemTypeVoice) : self.voiceButton,
+//                  @(DisplayInputBarItemTypeTextAndRecord)  : self.inputTextBkgImage,
+                  //: @(DisplayInputBarItemTypeEmoticon) : self.emoticonBtn,
+                  @(DisplayInputBarItemTypeEmoticon) : self.emoticonBtn,
+//                  @(DisplayInputBarItemTypeMore)     : self.moreMediaBtn,
+                  //: @(DisplayInputBarItemTypeSend) : self.sendButton,
+                  @(DisplayInputBarItemTypeSend) : self.sendButton,
                 //: };
                 };
     }
@@ -493,7 +493,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 }
 
 
-//: - (void)textViewDidChange:(FFFGrowingTextView *)growingTextView
+//: - (void)textViewDidChange:(DisplayGrowingTextView *)growingTextView
 - (void)aspected:(AtPraiseScrollView *)growingTextView
 {
     //: if ([self.delegate respondsToSelector:@selector(textViewDidChange)]) {
@@ -572,7 +572,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
 @end
 
 
-//: @implementation FFFInputToolBar(InputText)
+//: @implementation DisplayInputToolBar(InputText)
 @implementation ResultCommentView(InputText)
 
 //: - (NSMutableAttributedString *)nim_setText:(NSString *)text
@@ -582,7 +582,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
     //: NSMutableAttributedString *attributedStringM = [[NSMutableAttributedString alloc] initWithAttributedString:self.inputTextView.attributedText];
     NSMutableAttributedString *attributedStringM = [[NSMutableAttributedString alloc] initWithAttributedString:self.inputTextView.attributedText];
 
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByTag:text];
+    //: NIMInputEmoticon *emoticon = [[DisplayInputEmoticonManager sharedManager] emoticonByTag:text];
     BubbleNameReload *emoticon = [[IndexManager item] disable:text];
     //: UIImage *image = nil;
     UIImage *image = nil;
@@ -615,10 +615,10 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
         //: [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
         [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
 
-        //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+        //: DisplayTextHighlight *highlight = [[DisplayTextHighlight alloc] init];
         SpectralColorTitleHighlight *highlight = [[SpectralColorTitleHighlight alloc] init];
-        //: highlight.type = FFFTextHighlightTypeEmoji;
-        highlight.type = FFFTextHighlightTypeEmoji;
+        //: highlight.type = DisplayTextHighlightTypeEmoji;
+        highlight.type = DisplayTextHighlightTypeEmoji;
         //: highlight.text = emoticon.tag;
         highlight.text = emoticon.tag;
 
@@ -640,10 +640,10 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
         //: [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
         [attributedStringM insertAttributedString:emojiAtt atIndex:_inputTextView.selectedRange.location];
 
-        //: FFFTextHighlight *highlight = [[FFFTextHighlight alloc] init];
+        //: DisplayTextHighlight *highlight = [[DisplayTextHighlight alloc] init];
         SpectralColorTitleHighlight *highlight = [[SpectralColorTitleHighlight alloc] init];
-        //: highlight.type = FFFTextHighlightTypeEmoji;
-        highlight.type = FFFTextHighlightTypeEmoji;
+        //: highlight.type = DisplayTextHighlightTypeEmoji;
+        highlight.type = DisplayTextHighlightTypeEmoji;
         //: highlight.text = emoticon.tag;
         highlight.text = emoticon.tag;
 

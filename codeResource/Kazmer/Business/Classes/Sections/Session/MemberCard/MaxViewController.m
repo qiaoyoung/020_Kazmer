@@ -274,29 +274,29 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "CCCTeamMemberListViewController.h"
 #import "MaxViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "DisplayCardHeaderCell.h"
 #import "SwitchenceReusableView.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "DisplayTeamCardMemberItem.h"
 #import "IndexItem.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "DisplayTeamMemberCardViewController.h"
 #import "RowViewController.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
+//: #import "DisplayKitProgressHUD.h"
 #import "NameMessageEffectView.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "DisplayTeamListDataManager.h"
 #import "MentionManager.h"
 //: #import "USERPersonalCardViewController.h"
 #import "CornerViewController.h"
 //: #import "USERContactDataCell.h"
 #import "StandardContactDataCell.h"
-//: #import "FFFGroupMemberTableViewCell.h"
+//: #import "DisplayGroupMemberTableViewCell.h"
 #import "StandardViewCell.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "DisplayContactSelectViewController.h"
 #import "RecordTitleViewController.h"
 
 //: typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
@@ -340,11 +340,11 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
 //: - (void)cellShouldBeRemoved:(NSString *)uid
 - (void)lines:(NSString *)uid
 {
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager kickUsers:@[uid] completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager moveCompletion:@[uid] holder:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: [self.view makeToast:msg duration:2.0 position:CSToastPositionCenter];
         [self.view makeToast:msg duration:2.0 position:CSToastPositionCenter];
@@ -414,11 +414,11 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
             NSString *msg = nil;
             //: if (!error) {
             if (!error) {
-                //: msg = [FFFLanguageManager getTextWithKey:@"modify_activity_modify_success"];
+                //: msg = [DisplayLanguageManager getTextWithKey:@"modify_activity_modify_success"];
                 msg = [MakeManager cell:[[NameModelData sharedInstance] kTitleWheatValue]];
             //: }else{
             }else{
-                //: msg = [FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
+                //: msg = [DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"];
                 msg = [MakeManager cell:[[NameModelData sharedInstance] kTitle_messageString]];
             }
             //: [self.view makeToast:msg duration:2.0 position:CSToastPositionCenter];
@@ -439,14 +439,14 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
 //: - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    //: FFFGroupMemberTableViewCell *cell = [FFFGroupMemberTableViewCell cellWithTableView:tableView];
+    //: DisplayGroupMemberTableViewCell *cell = [DisplayGroupMemberTableViewCell cellWithTableView:tableView];
     StandardViewCell *cell = [StandardViewCell along:tableView];
     //: cell.delegate = self;
     cell.delegate = self;
 
     //: NSString *uId = _teamListManager.memberIds[indexPath.section];
     NSString *uId = _teamListManager.memberIds[indexPath.section];
-    //: FFFKitInfo *usrInfo = [[MyUserKit sharedKit] infoByUser:uId option:nil];
+    //: DisplayKitInfo *usrInfo = [[MyUserKit sharedKit] infoByUser:uId option:nil];
     CancelTeamCorner *usrInfo = [[Mortification text] tingVoice:uId keepingOption:nil];
 
     //: [cell reloadWithUserId:uId];
@@ -455,7 +455,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
     [cell.roleImageView sd_setImageWithURL:[NSURL URLWithString:usrInfo.avatarUrlString] placeholderImage:usrInfo.avatarImage];
     //: cell.titleLabel.text = usrInfo.showName;
     cell.titleLabel.text = usrInfo.showName;
-    //: cell.subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
+    //: cell.subtitleLabel.text = [DisplayLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"];
     cell.subtitleLabel.text = [MakeManager cell:[[NameModelData sharedInstance] kTitleRecentString]];
 
     //: BOOL isown = [uId isEqualToString:_teamListManager.team.owner];
@@ -537,7 +537,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_team_member"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"group_info_activity_team_member"];
     labtitle.text = [MakeManager cell:[[NameModelData sharedInstance] kContent_thoughData]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -625,7 +625,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
         config.filterIds = users;
         //: config.needMutiSelected = YES;
         config.needMutiSelected = YES;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: DisplayContactSelectViewController *vc = [[DisplayContactSelectViewController alloc] initWithConfig:config];
         RecordTitleViewController *vc = [[RecordTitleViewController alloc] initWithSightConfig:config];
         //: vc.delegate = self;
         vc.delegate = self;
@@ -746,7 +746,7 @@ typedef void(^NIMTeamMemberListFetchDataBlock)(BOOL isCompletion);
     }];
 }
 
-//: - (instancetype)initWithDataSource:(FFFTeamListDataManager *)dataSource {
+//: - (instancetype)initWithDataSource:(DisplayTeamListDataManager *)dataSource {
 - (instancetype)initWithCellName:(MentionManager *)dataSource {
     //: self = [super initWithNibName:nil bundle:nil];
     self = [super initWithNibName:nil bundle:nil];

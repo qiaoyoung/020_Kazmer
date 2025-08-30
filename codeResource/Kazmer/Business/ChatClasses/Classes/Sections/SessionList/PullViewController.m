@@ -146,29 +146,29 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionListViewController.h"
+//: #import "DisplaySessionListViewController.h"
 #import "PullViewController.h"
-//: #import "FFFSessionViewController.h"
+//: #import "DisplaySessionViewController.h"
 #import "ReplyViewController.h"
-//: #import "FFFSessionListCell.h"
+//: #import "DisplaySessionListCell.h"
 #import "RedViewCell.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
-//: #import "FFFMessageUtil.h"
+//: #import "DisplayMessageUtil.h"
 #import "AddPullSize.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 //: #import <YYText.h>
 #import <YYText.h>
-//: #import "FFFTextHighlight.h"
+//: #import "DisplayTextHighlight.h"
 #import "SpectralColorTitleHighlight.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "DisplayInputEmoticonParser.h"
 #import "MessageParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
@@ -179,7 +179,7 @@
 //: #import "LEEAlert.h"
 #import "ControlTag.h"
 
-//: @interface FFFSessionListViewController ()
+//: @interface DisplaySessionListViewController ()
 @interface PullViewController ()
 
 //@property (nonatomic,strong)  UIImageView *navBarHairlineImageView;
@@ -187,7 +187,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionListViewController
+//: @implementation DisplaySessionListViewController
 @implementation PullViewController
 
 ///置顶会话的cell
@@ -273,7 +273,7 @@
 - (NSString *)languageUnitAndExecutiveSession:(NIMRecentSession *)recent {
     //: if (recent.session.sessionType == NIMSessionTypeP2P) {
     if (recent.session.sessionType == NIMSessionTypeP2P) {
-        //: return [FFFKitUtil showNick:recent.session.sessionId inSession:recent.session];
+        //: return [DisplayKitUtil showNick:recent.session.sessionId inSession:recent.session];
         return [AtPull can:recent.session.sessionId changeSession:recent.session];
     //: } else if (recent.session.sessionType == NIMSessionTypeTeam) {
     } else if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -370,7 +370,7 @@
 - (void)gestures:(id)sender {
     //: HMWebViewController *vc = [[HMWebViewController alloc] init];
     DominoEffectViewController *vc = [[DominoEffectViewController alloc] init];
-    //: vc.webTitle = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
+    //: vc.webTitle = [DisplayLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
     vc.webTitle = [MakeManager cell:[OutfitData sharedInstance].kNameGlanceString];
     //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
     vc.urlString = [TableContext name].yshref;
@@ -391,13 +391,13 @@
 - (NSString *)afterShow:(NIMRecentSession *)recent{
     //: if (recent.lastMessage) {
     if (recent.lastMessage) {
-        //: return [FFFKitUtil showTime:recent.lastMessage.timestamp showDetail:NO];
+        //: return [DisplayKitUtil showTime:recent.lastMessage.timestamp showDetail:NO];
         return [AtPull account:recent.lastMessage.timestamp notice:NO];
     }
     // 服务端时间戳以毫秒为单位,需要转化
     //: NSTimeInterval timeSecond = recent.updateTime / 1000.0;
     NSTimeInterval timeSecond = recent.updateTime / 1000.0;
-    //: return [FFFKitUtil showTime:timeSecond showDetail:NO];
+    //: return [DisplayKitUtil showTime:timeSecond showDetail:NO];
     return [AtPull account:timeSecond notice:NO];
 }
 
@@ -542,7 +542,7 @@
 #pragma mark - Private
 //: - (NSString *)messageContent:(NIMMessage*)lastMessage{
 - (NSString *)statusCounteract:(NIMMessage*)lastMessage{
-    //: NSString *text = [FFFMessageUtil messageContent:lastMessage];
+    //: NSString *text = [DisplayMessageUtil messageContent:lastMessage];
     NSString *text = [AddPullSize nearExtra:lastMessage];
     //: if (lastMessage.session.sessionType == NIMSessionTypeP2P || lastMessage.messageType == NIMMessageTypeTip)
     if (lastMessage.session.sessionType == NIMSessionTypeP2P || lastMessage.messageType == NIMMessageTypeTip)
@@ -556,12 +556,12 @@
 
         //: NIMMessage *msg = [self lastMessageWithNoNotificationMessage:lastMessage];
         NIMMessage *msg = [self sinceColor:lastMessage];
-        //: text = [FFFMessageUtil messageContent:msg];
+        //: text = [DisplayMessageUtil messageContent:msg];
         text = [AddPullSize nearExtra:msg];
 
         //: NSString *from = msg.from;
         NSString *from = msg.from;
-        //: NSString *nickName = [FFFKitUtil showNick:from inSession:msg.session];
+        //: NSString *nickName = [DisplayKitUtil showNick:from inSession:msg.session];
         NSString *nickName = [AtPull can:from changeSession:msg.session];
         //: return nickName.length ? [nickName stringByAppendingFormat:@" : %@",text] : @"";
         return nickName.length ? [nickName stringByAppendingFormat:@" : %@",text] : @"";
@@ -609,7 +609,7 @@
     [ControlTag corner].config
         //: .LeeAddTitle(^(UILabel * _Nonnull label) {
         .LeeAddTitle(^(UILabel * _Nonnull label) {
-            //: label.text = [FFFLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"];
+            //: label.text = [DisplayLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"];
             label.text = [MakeManager cell:[OutfitData sharedInstance].kText_researchData];
             //: label.font = [UIFont boldSystemFontOfSize:17];
             label.font = [UIFont boldSystemFontOfSize:17];
@@ -620,7 +620,7 @@
     //: .LeeAddContent(^(UILabel *label) {
     .LeeAddContent(^(UILabel *label) {
 
-        //: NSString *markString = [FFFLanguageManager getTextWithKey:@"UserAgreementProtocol"];
+        //: NSString *markString = [DisplayLanguageManager getTextWithKey:@"UserAgreementProtocol"];
         NSString *markString = [MakeManager cell:[OutfitData sharedInstance].kNameSustainData];
 
         //: NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
@@ -648,7 +648,7 @@
             NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle),
             //: NSForegroundColorAttributeName: [UIColor colorWithRed:6/255.0f green:53/255.0f blue:253/255.0f alpha:1.0f],
             NSForegroundColorAttributeName: [UIColor colorWithRed:6/255.0f green:53/255.0f blue:253/255.0f alpha:1.0f],
-        //: } range:[attrsString.string rangeOfString:[FFFLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"]]];
+        //: } range:[attrsString.string rangeOfString:[DisplayLanguageManager getTextWithKey:@"UserAgreement_PrivacyPolicy"]]];
         } range:[attrsString.string rangeOfString:[MakeManager cell:[OutfitData sharedInstance].kText_researchData]]];
 
         //: label.attributedText = attrsString;
@@ -668,7 +668,7 @@
     //: .LeeAddAction(^(LEEAction *action) {
     .LeeAddAction(^(WithAction *action) {
 
-        //: action.title = [FFFLanguageManager getTextWithKey:@"reject"];
+        //: action.title = [DisplayLanguageManager getTextWithKey:@"reject"];
         action.title = [MakeManager cell:[OutfitData sharedInstance].kTextCommandFriendlyData];
 
         //: action.titleColor = [UIColor darkGrayColor];
@@ -694,7 +694,7 @@
         //: action.type = LEEActionTypeCancel;
         action.type = LEEActionTypeCancel;
 
-        //: action.title = [FFFLanguageManager getTextWithKey:@"agree"];
+        //: action.title = [DisplayLanguageManager getTextWithKey:@"agree"];
         action.title = [MakeManager cell:[OutfitData sharedInstance].kContent_dateData];
 
         //: action.titleColor = [UIColor whiteColor];
@@ -731,7 +731,7 @@
 
 //: - (void)onSelectedRecent:(NIMRecentSession *)recentSession atIndexPath:(NSIndexPath *)indexPath{
 - (void)graduatedTable:(NIMRecentSession *)recentSession caterer:(NSIndexPath *)indexPath{
-    //: FFFSessionViewController *vc = [[FFFSessionViewController alloc] initWithSession:recentSession.session];
+    //: DisplaySessionViewController *vc = [[DisplaySessionViewController alloc] initWithSession:recentSession.session];
     ReplyViewController *vc = [[ReplyViewController alloc] initWithTitleSession:recentSession.session];
     //: [self.navigationController pushViewController:vc animated:YES];
     [self.navigationController pushViewController:vc animated:YES];
@@ -810,13 +810,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //: static NSString *cellId = @"cellId";
     static NSString *cellId = @"cellId";
-    //: FFFSessionListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    //: DisplaySessionListCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     RedViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     //: cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //: if (!cell) {
     if (!cell) {
-        //: cell = [[FFFSessionListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        //: cell = [[DisplaySessionListCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         cell = [[RedViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
         //: [cell.avatarImageView addTarget:self action:@selector(onTouchAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [cell.avatarImageView addTarget:self action:@selector(doSumTool:) forControlEvents:UIControlEventTouchUpInside];

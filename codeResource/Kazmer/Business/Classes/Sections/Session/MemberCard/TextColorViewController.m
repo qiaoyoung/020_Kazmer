@@ -35,7 +35,7 @@
 //: back_arrow_bl
 @property (nonatomic, copy) NSString *kNameSculptureString;
 
-//: #FFF6CF
+//: #Display6CF
 @property (nonatomic, copy) NSString *kTextRecordData;
 
 @end
@@ -125,7 +125,7 @@
     return _kNameRedRecentString;
 }
 
-//: #FFF6CF
+//: #Display6CF
 - (NSString *)kTextRecordData {
     if (!_kTextRecordData) {
 		NSString *origin = @"073a04555d808080707d806e";
@@ -224,17 +224,17 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMuteMemberListViewController.h"
+//: #import "DisplayTeamMuteMemberListViewController.h"
 #import "TextColorViewController.h"
-//: #import "FFFTeamMemberCardViewController.h"
+//: #import "DisplayTeamMemberCardViewController.h"
 #import "RowViewController.h"
-//: #import "FFFCardHeaderCell.h"
+//: #import "DisplayCardHeaderCell.h"
 #import "SwitchenceReusableView.h"
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "DisplayTeamCardMemberItem.h"
 #import "IndexItem.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
+//: #import "DisplayKitProgressHUD.h"
 #import "NameMessageEffectView.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
@@ -245,7 +245,7 @@
 //: #import "USERBlackListTableViewCell.h"
 #import "TranslateViewCell.h"
 
-//: @interface FFFTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,USERUserListCellDelegate>
+//: @interface DisplayTeamMuteMemberListViewController ()<UITableViewDataSource,UITableViewDelegate,USERUserListCellDelegate>
 @interface TextColorViewController ()<UITableViewDataSource,UITableViewDelegate,EasyLayDelegate>
 
 //: @property (nonatomic,strong) UIView *defView;
@@ -261,7 +261,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamMuteMemberListViewController
+//: @implementation DisplayTeamMuteMemberListViewController
 @implementation TextColorViewController
 
 
@@ -288,7 +288,7 @@
 
         //: if(!error) {
         if(!error) {
-            //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
+            //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_chat_avatar_activity_remove_black_success"]
             [self.view makeToast:[MakeManager cell:[ChickData sharedInstance].kNameReservationValue]
                          //: duration:2
                          duration:2
@@ -395,7 +395,7 @@
     if(!_box){
         //: _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 26)];
         _box = [[UIView alloc]initWithFrame:CGRectMake(0, (44.0f + [UIDevice comeDownSuperphylum]), [[UIScreen mainScreen] bounds].size.width, 26)];
-        //: _box.backgroundColor = [UIColor colorWithHexString:@"#FFF6CF"];
+        //: _box.backgroundColor = [UIColor colorWithHexString:@"#Display6CF"];
         _box.backgroundColor = [UIColor cell:[ChickData sharedInstance].kTextRecordData];
 
         //: UIImageView *defImg = [[UIImageView alloc]initWithFrame:CGRectMake(15, 6, 14, 14)];
@@ -412,7 +412,7 @@
         //: subtitleLabel.textColor = [UIColor colorWithHexString:@"#FF483D"];
         subtitleLabel.textColor = [UIColor cell:[ChickData sharedInstance].kContent_everData];
 //        subtitleLabel.textAlignment = NSTextAlignmentLeft;
-        //: subtitleLabel.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
+        //: subtitleLabel.text = [DisplayLanguageManager getTextWithKey:@"black_list_activity_black_list_tip"];
         subtitleLabel.text = [MakeManager cell:[ChickData sharedInstance].kTextToothName];
         //: [_box addSubview:subtitleLabel];
         [_box addSubview:subtitleLabel];
@@ -430,7 +430,7 @@
     //: NIMTeamMember *member = self.memberList[indexPath.section];
     NIMTeamMember *member = self.memberList[indexPath.section];
 
-    //: FFFTeamMemberCardViewController *vc = [[FFFTeamMemberCardViewController alloc] init];
+    //: DisplayTeamMemberCardViewController *vc = [[DisplayTeamMemberCardViewController alloc] init];
     RowViewController *vc = [[RowViewController alloc] init];
     //: vc.teamListManager = self.teamListManager;
     vc.teamListManager = self.teamListManager;
@@ -467,7 +467,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [DisplayLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [MakeManager cell:[ChickData sharedInstance].kName_itemValue];
 
 
@@ -510,7 +510,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"black_list_activity_black"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"black_list_activity_black"];
     labtitle.text = [MakeManager cell:[ChickData sharedInstance].kName_placeShallowString];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];

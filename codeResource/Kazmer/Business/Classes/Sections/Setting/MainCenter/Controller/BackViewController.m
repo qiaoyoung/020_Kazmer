@@ -823,7 +823,7 @@ typedef struct {
         //: NSLog(@"%@",error);
         //: [SVProgressHUD dismiss];
         [SVProgressHUD dismiss];
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
+        //: [SVProgressHUD showMessage:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
         [SVProgressHUD firstTeam:[MakeManager cell:[[BridgeData sharedInstance] kTitleMonthName]]];
     //: }];
     }];
@@ -1073,7 +1073,7 @@ typedef struct {
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"report_activity_title"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"report_activity_title"];
     labtitle.text = [MakeManager cell:[[BridgeData sharedInstance] kName_scienceTapData]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -1103,7 +1103,7 @@ typedef struct {
 
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, (44.0f + [UIDevice vg_statusBarHeight])+15, [[UIScreen mainScreen] bounds].size.width-30, 200)];
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, (44.0f + [UIDevice comeDownSuperphylum])+15, [[UIScreen mainScreen] bounds].size.width-30, 200)];
-    //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"report_info"];
+    //: _textView.placeholder = [DisplayLanguageManager getTextWithKey:@"report_info"];
     _textView.placeholder = [MakeManager cell:[[BridgeData sharedInstance] kTitleRawPorchValue]];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor whiteColor];

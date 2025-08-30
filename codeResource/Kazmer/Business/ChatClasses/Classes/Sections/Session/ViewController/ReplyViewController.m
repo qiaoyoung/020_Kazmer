@@ -224,7 +224,7 @@ typedef struct {
 - (NSString *)kText_butFlyingName {
     /* static */ NSString *kText_butFlyingName = nil;
     if (!kText_butFlyingName) {
-		NSString *origin = @"FFF7E1E1F3F5F7CDE1F7FCF6CDF1F3FFF7E0F395";
+		NSString *origin = @"Display7E1E1F3F5F7CDE1F7FCF6CDF1F3Display7E0F395";
 		NSData *data = [DeployCommandData DeployCommandDataToData:origin];
         StructDeployCommandData value = (StructDeployCommandData){146, (Byte *)data.bytes, 19, 135, 227, 153};
         kText_butFlyingName = [self StringFromDeployCommandData:&value];
@@ -437,68 +437,68 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "DisplaySessionConfigurateProtocol.h"
+#import "DisplaySessionConfigurateProtocol.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageCellProtocol.h"
+#import "DisplayMessageCellProtocol.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
-//: #import "FFFBadgeView.h"
+//: #import "DisplayBadgeView.h"
 #import "CenterStandardView.h"
 //: #import "UITableView+NIMScrollToBottom.h"
 #import "UITableView+NIMScrollToBottom.h"
-//: #import "FFFMessageMaker.h"
+//: #import "DisplayMessageMaker.h"
 #import "ShouldMaker.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFSessionConfigurator.h"
+//: #import "DisplaySessionConfigurator.h"
 #import "TitleTargetYear.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
-//: #import "FFFKitTitleView.h"
+//: #import "DisplayKitTitleView.h"
 #import "LabelHeadView.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "DisplayKitKeyboardInfo.h"
 #import "RedInfo.h"
-//: #import "FFFReplyContentView.h"
+//: #import "DisplayReplyContentView.h"
 #import "BookView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
+//: #import "DisplayKitQuickCommentUtil.h"
 #import "ControlInside.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "DisplayBubbleMenuView.h"
 #import "ResultCuttingEdgeView.h"
-//: #import "FFFTextView.h"
+//: #import "DisplayTextView.h"
 #import "TitleScrollView.h"
 //: #import "AppDelegate.h"
 #import "AppDelegate.h"
 //: #import "NSObject+tyl_internalIdentifier.h"
 #import "NSObject+TelegramContext.h"
-//: #import "FFFBubbleMenuView.h"
+//: #import "DisplayBubbleMenuView.h"
 #import "ResultCuttingEdgeView.h"
-//: #import "FFFBubbleButtonModel.h"
+//: #import "DisplayBubbleButtonModel.h"
 #import "MessageTeam.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
-//: #import "FFFInputAudioView.h"
+//: #import "DisplayInputEmoticonDefine.h"
+#import "DisplayInputEmoticonDefine.h"
+//: #import "DisplayInputAudioView.h"
 #import "AudioView.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
 //: #import "USERPersonalCardViewController.h"
 #import "CornerViewController.h"
-//: #import "FFFTeamCardViewController.h"
+//: #import "DisplayTeamCardViewController.h"
 #import "CommentViewController.h"
-//: #import "FFFAdvancedTeamCardViewController.h"
+//: #import "DisplayAdvancedTeamCardViewController.h"
 #import "OpenDefenceViewController.h"
 //: #import "PhotoContainerView.h"
 #import "LyricView.h"
 //: #import "SSZipArchiveManager.h"
 #import "PersonShould.h"
 
-//: @interface FFFSessionViewController ()<NIMMediaManagerDelegate,NIMInputDelegate,FFFTeamCardViewControllerDelegate,NIMConversationManagerDelegate,CustomUISeletePhotosDelegate,UIGestureRecognizerDelegate>
+//: @interface DisplaySessionViewController ()<NIMMediaManagerDelegate,NIMInputDelegate,DisplayTeamCardViewControllerDelegate,NIMConversationManagerDelegate,CustomUISeletePhotosDelegate,UIGestureRecognizerDelegate>
 @interface ReplyViewController ()<NIMMediaManagerDelegate,PathFlip,TextDelegate,NIMConversationManagerDelegate,UserDelegate,UIGestureRecognizerDelegate>
 
 //: @property (nonatomic,strong) UILabel *subtitle;
@@ -507,7 +507,7 @@ typedef struct {
 //: @property (nonatomic,readwrite) NIMMessage *messageForMenu;
 @property (nonatomic,readwrite) NIMMessage *messageForMenu;
 
-//: @property (nonatomic,strong) FFFSessionConfigurator *configurator;
+//: @property (nonatomic,strong) DisplaySessionConfigurator *configurator;
 @property (nonatomic,strong) TitleTargetYear *configurator;
 
 //: @property (nonatomic, strong) UIButton *btnAudio;
@@ -525,14 +525,14 @@ typedef struct {
 @property (nonatomic, strong) UIView *photopicview;
 //: @property (nonatomic,strong) UIButton *btnBlock;
 @property (nonatomic,strong) UIButton *btnBlock;
-//: @property (nonatomic, strong) FFFInputAudioView *audioContent;
+//: @property (nonatomic, strong) DisplayInputAudioView *audioContent;
 @property (nonatomic, strong) AudioView *audioContent;
 //: @property (nonatomic,assign) NSInteger sessionUnreadCount;
 @property (nonatomic,assign) NSInteger sessionUnreadCount;
 //: @property (nonatomic,strong) UITapGestureRecognizer *tableViewTapGesture;
 @property (nonatomic,strong) UITapGestureRecognizer *tableViewTapGesture;
 
-//: @property (nonatomic,strong) FFFBadgeView *badgeView;
+//: @property (nonatomic,strong) DisplayBadgeView *badgeView;
 @property (nonatomic,strong) CenterStandardView *badgeView;
 //: @property (nonatomic,strong) UIImageView *headerImage;
 @property (nonatomic,strong) UIImageView *headerImage;
@@ -548,7 +548,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFSessionViewController
+//: @implementation DisplaySessionViewController
 @implementation ReplyViewController
 
 //: - (void)recordAudioInterruptionBegin {
@@ -559,8 +559,8 @@ typedef struct {
 
 //: #pragma mark - 配置项
 #pragma mark - 配置项
-//: - (id<FFFSessionConfig>)sessionConfig
-- (id<ColorConfig>)messageBar
+//: - (id<DisplaySessionConfig>)sessionConfig
+- (id<ColorConfig>)sessionConfig
 {
     //: return nil; 
     return nil; //使用默认配置
@@ -632,10 +632,10 @@ typedef struct {
     //: BOOL disable = NO;
     BOOL disable = NO;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableAudioPlayedStatusIcon)])
-    if ([self.messageBar respondsToSelector:@selector(upIcon)])
+    if ([self.sessionConfig respondsToSelector:@selector(upIcon)])
     {
         //: disable = [self.sessionConfig disableAudioPlayedStatusIcon];
-        disable = [self.messageBar upIcon];
+        disable = [self.sessionConfig upIcon];
     }
     //: return disable;
     return disable;
@@ -759,7 +759,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[MakeManager cell:[[DeployCommandData sharedInstance] kNameServingString]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -774,7 +774,7 @@ typedef struct {
 //: - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 //    [self.serviceContentTextView hideTextSelection];
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [DisplayBubbleMenuView.shareMenuView removeFromSuperview];
     [ResultCuttingEdgeView.namePrixFixe removeFromSuperview];
     //: [self.view endEditing:YES];
     [self.view endEditing:YES];
@@ -790,9 +790,9 @@ typedef struct {
 }
 //: - (void)enterTeamCard:(id)sender {
 - (void)iconing:(id)sender {
-    //: FFFTeamCardViewController *vc = nil;
+    //: DisplayTeamCardViewController *vc = nil;
     CommentViewController *vc = nil;
-    //: FFFTeamCardViewControllerOption *option = [[FFFTeamCardViewControllerOption alloc] init];
+    //: DisplayTeamCardViewControllerOption *option = [[DisplayTeamCardViewControllerOption alloc] init];
     SessionOption *option = [[SessionOption alloc] init];
     //: option.isTop = [NIMSDK.sharedSDK.chatExtendManager stickTopInfoForSession:self.session] != nil;
     option.isTop = [NIMSDK.sharedSDK.chatExtendManager stickTopInfoForSession:self.session] != nil;
@@ -801,7 +801,7 @@ typedef struct {
     NIMTeam *team = [[NIMSDK sharedSDK].teamManager teamById:self.session.sessionId];
     //: if(team.type == NIMTeamTypeAdvanced){
     if(team.type == NIMTeamTypeAdvanced){
-            //: vc = [[FFFAdvancedTeamCardViewController alloc] initWithTeam:team
+            //: vc = [[DisplayAdvancedTeamCardViewController alloc] initWithTeam:team
             vc = [[OpenDefenceViewController alloc] initWithTowardRecording:team
                                                                  //: session:self.session
                                                                  pass:self.session
@@ -819,7 +819,7 @@ typedef struct {
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
-//: - (BOOL)onTapMediaItem:(FFFMediaItem *)item{
+//: - (BOOL)onTapMediaItem:(DisplayMediaItem *)item{
 - (BOOL)messageTable:(CommingleItem *)item{
     //: SEL sel = item.selctor;
     SEL sel = item.selctor;
@@ -843,8 +843,8 @@ typedef struct {
 - (void)with{}
 
 
-//: - (void)onTapMenuItemCopy:(FFFMediaItem *)item
-- (void)mediaed:(CommingleItem *)item
+//: - (void)onTapMenuItemCopy:(DisplayMediaItem *)item
+- (void)onTapMenuItemCopy:(CommingleItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
     NIMMessage *message = [self messageForMenu];
@@ -877,7 +877,7 @@ typedef struct {
     [self.customAlbumView.albumPickerView.selectedAssets removeAllObjects];
     //: [self.customAlbumView.albumPickerView.collectionView reloadData];
     [self.customAlbumView.albumPickerView.collectionView reloadData];
-    //: [self.customAlbumView.confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+    //: [self.customAlbumView.confirmButton setTitle:[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
     [self.customAlbumView.confirmButton setTitle:[MakeManager cell:[[DeployCommandData sharedInstance] kContent_bronzeName]] forState:UIControlStateNormal];
     //: [self.customAlbumView animationShow];
     [self.customAlbumView sign];
@@ -936,7 +936,7 @@ typedef struct {
     }
 }
 
-//: - (void)onTapMenuItemDelete:(FFFMediaItem *)item
+//: - (void)onTapMenuItemDelete:(DisplayMediaItem *)item
 - (void)asHandle:(CommingleItem *)item
 {
     //: NIMMessage *message = [self messageForMenu];
@@ -1015,7 +1015,7 @@ typedef struct {
 
     //: self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
     self.sessionUnreadCount = [NIMSDK sharedSDK].conversationManager.allUnreadCount;
-     //: _badgeView = [FFFBadgeView viewWithBadgeTip:@""];
+     //: _badgeView = [DisplayBadgeView viewWithBadgeTip:@""];
      _badgeView = [CenterStandardView streetSmart:@""];
     //: _badgeView.frame = CGRectMake(backBtn.right+5, backBtn.top+8, 24, 24);
     _badgeView.frame = CGRectMake(backBtn.right+5, backBtn.top+8, 24, 24);
@@ -1145,16 +1145,16 @@ typedef struct {
     //: self.messageForMenu = nil;
     self.messageForMenu = nil;
     //: [self.interactor setReferenceMessage:nil];
-    [self.interactor setMessage:nil];
+    [self.interactor setReferenceMessage:nil];
 
     //: if ([self.sessionConfig respondsToSelector:@selector(clearThreadMessageAfterSent)])
-    if ([self.messageBar respondsToSelector:@selector(untilMediaSent)])
+    if ([self.sessionConfig respondsToSelector:@selector(untilMediaSent)])
     {
         //: if ([self.sessionConfig clearThreadMessageAfterSent])
-        if ([self.messageBar untilMediaSent])
+        if ([self.sessionConfig untilMediaSent])
         {
             //: [self.sessionConfig cleanThreadMessage];
-            [self.messageBar threadClose];
+            [self.sessionConfig threadClose];
         }
     }
 }
@@ -1172,7 +1172,7 @@ typedef struct {
         [users addObject:self.session.sessionId];
     }
 
-    //: NIMMessage *message = [FFFMessageMaker msgWithText:text];
+    //: NIMMessage *message = [DisplayMessageMaker msgWithText:text];
     NIMMessage *message = [ShouldMaker file:text];
     //: NSString *type = @"";
     NSString *type = @"";
@@ -1214,11 +1214,11 @@ typedef struct {
         contents = [NSString stringWithFormat:@"%zd\"",(NSInteger)((audioObject.duration+500)/1000)];
     }
 
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
     CellClean *option = [[CellClean alloc] init];
     //: option.message = replymessage;
     option.message = replymessage;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:replymessage.from option:option];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:replymessage.from option:option];
     CancelTeamCorner *info = [[Mortification text] tingVoice:replymessage.from keepingOption:option];
 
     //: NSDictionary *dic = @{
@@ -1247,7 +1247,7 @@ typedef struct {
         //: apnsOption.forcePush = YES;
         apnsOption.forcePush = YES;
 
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
         CellClean *option = [[CellClean alloc] init];
         //: option.session = self.session;
         option.session = self.session;
@@ -1289,9 +1289,9 @@ typedef struct {
     //: BOOL needProximityMonitor = YES;
     BOOL needProximityMonitor = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableProximityMonitor)]) {
-    if ([self.messageBar respondsToSelector:@selector(showMonitor)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(showMonitor)]) {
         //: needProximityMonitor = !self.sessionConfig.disableProximityMonitor;
-        needProximityMonitor = !self.messageBar.showMonitor;
+        needProximityMonitor = !self.sessionConfig.showMonitor;
     }
     //: return needProximityMonitor;
     return needProximityMonitor;
@@ -1324,7 +1324,7 @@ typedef struct {
 
         //: UIViewController *topvc = [self getTopMostController];
         UIViewController *topvc = [self heritage];
-        //: if (![topvc isKindOfClass:NSClassFromString(@"USERSessionViewController")] && ![topvc isKindOfClass:[FFFSessionViewController class]]) {
+        //: if (![topvc isKindOfClass:NSClassFromString(@"USERSessionViewController")] && ![topvc isKindOfClass:[DisplaySessionViewController class]]) {
         if (![topvc isKindOfClass:NSClassFromString(@"WayOfLifeViewController")] && ![topvc isKindOfClass:[ReplyViewController class]]) {
             //: return;
             return;
@@ -1353,7 +1353,7 @@ typedef struct {
 {
 //    ResultCuttingEdgeView.shareMenuView.praiseView.hidden = YES;
 //    ResultCuttingEdgeView.shareMenuView.buttonsBgView.hidden = NO;
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [DisplayBubbleMenuView.shareMenuView removeFromSuperview];
     [ResultCuttingEdgeView.namePrixFixe removeFromSuperview];
     //: [self.sessionInputView endEditing:YES];
     [self.sessionInputView endEditing:YES];
@@ -1378,7 +1378,7 @@ typedef struct {
             [SVProgressHUD dismiss];
             //: if (error) {
             if (error) {
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2.0f position:CSToastPositionCenter];
                 [wself.view makeToast:[MakeManager cell:[[DeployCommandData sharedInstance] kNameServingString]] duration:2.0f position:CSToastPositionCenter];
             }
         //: }];
@@ -1426,9 +1426,9 @@ typedef struct {
     }];
 }
 
-//: - (FFFMessageModel *)uiDeleteMessage:(NIMMessage *)message{
+//: - (DisplayMessageModel *)uiDeleteMessage:(NIMMessage *)message{
 - (CleanDoing *)keep:(NIMMessage *)message{
-    //: FFFMessageModel *model = [self.interactor deleteMessage:message];
+    //: DisplayMessageModel *model = [self.interactor deleteMessage:message];
     CleanDoing *model = [self.interactor date:message];
     //: if (model.shouldShowReadLabel && model.message.session.sessionType == NIMSessionTypeP2P)
     if (model.shouldShowReadLabel && model.message.session.sessionType == NIMSessionTypeP2P)
@@ -1466,7 +1466,7 @@ typedef struct {
             break;
         //: case NIMSessionTypeP2P:{
         case NIMSessionTypeP2P:{
-            //: title = [FFFKitUtil showNick:self.session.sessionId inSession:self.session];
+            //: title = [DisplayKitUtil showNick:self.session.sessionId inSession:self.session];
             title = [AtPull can:self.session.sessionId changeSession:self.session];
         }
             //: break;
@@ -1501,7 +1501,7 @@ typedef struct {
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setMessage:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -1512,7 +1512,7 @@ typedef struct {
     //: if ([self shouldShowMenuByMessage:message])
     if ([self container:message])
     {
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [DisplayBubbleMenuView.shareMenuView removeFromSuperview];
         [ResultCuttingEdgeView.namePrixFixe removeFromSuperview];
         //: [self showMenuWithMessage:message withView:view];
         [self withColor:message cleanTo:view];
@@ -1590,7 +1590,7 @@ typedef struct {
                       //: compltion:^(NSMapTable *result)
                       wisecrack:^(NSMapTable *result)
      {
-        //: NIMQuickComment *oldComment = [FFFKitQuickCommentUtil myCommentFromComments:0 keys:@[@(number)] comments:result];
+        //: NIMQuickComment *oldComment = [DisplayKitQuickCommentUtil myCommentFromComments:0 keys:@[@(number)] comments:result];
         NIMQuickComment *oldComment = [ControlInside pinComments:0 by:@[@(number)] vanguard:result];
         //: BOOL contains = oldComment ? YES : NO;
         BOOL contains = oldComment ? YES : NO;
@@ -1606,7 +1606,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[MakeManager cell:[[DeployCommandData sharedInstance] kNameServingString]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -1629,7 +1629,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[MakeManager cell:[[DeployCommandData sharedInstance] kNameServingString]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -1663,10 +1663,10 @@ typedef struct {
 //    [self sendMessage:message];
 //
 
-    //: NIMMessage *message = [FFFMessageMaker msgWithImageData:imageData extension:@""];
+    //: NIMMessage *message = [DisplayMessageMaker msgWithImageData:imageData extension:@""];
     NIMMessage *message = [ShouldMaker naturalLanguageTing:imageData simulationExtension:@""];
 //    message.messageSubType = 77;//标记gif用
-    //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+    //: NSMutableDictionary *dic = [[DisplayConfig sharedConfig] Gdic];
     NSMutableDictionary *dic = [[ContextTeam mutual] Gdic];
 //    NSData *imageData = UIImagePNGRepresentation(image);
     //: [dic setObject:imageData forKey:message.messageId];
@@ -1675,7 +1675,7 @@ typedef struct {
     //: [self sendMessage:message];
     [self user:message];
 
-    //: [self.sessionInputView.toolBar setPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"]];
+    //: [self.sessionInputView.toolBar setPlaceHolder:[DisplayLanguageManager getTextWithKey:@"message_please_enter_content"]];
     [self.sessionInputView.toolBar setSetAndThole:[MakeManager cell:[[DeployCommandData sharedInstance] kName_editorValue]]];
 
 //    [self.sessionInputView endEditing:YES];
@@ -1762,7 +1762,7 @@ typedef struct {
         btnAlbum.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [btnAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btnAlbum setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        //: [btnAlbum setTitle:[FFFLanguageManager getTextWithKey:@"message_send_album"] forState:UIControlStateNormal];
+        //: [btnAlbum setTitle:[DisplayLanguageManager getTextWithKey:@"message_send_album"] forState:UIControlStateNormal];
         [btnAlbum setTitle:[MakeManager cell:[[DeployCommandData sharedInstance] kName_stepValue]] forState:UIControlStateNormal];
         //: [btnAlbum layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleTop) imageTitleSpace:10];
         [btnAlbum byViewSpace:(MKButtonEdgeInsetsStyleTop) toolCell:10];
@@ -1783,7 +1783,7 @@ typedef struct {
         btnShot.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [btnShot setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btnShot setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        //: [btnShot setTitle:[FFFLanguageManager getTextWithKey:@"message_send_camera"] forState:UIControlStateNormal];
+        //: [btnShot setTitle:[DisplayLanguageManager getTextWithKey:@"message_send_camera"] forState:UIControlStateNormal];
         [btnShot setTitle:[MakeManager cell:[[DeployCommandData sharedInstance] kText_butFlyingName]] forState:UIControlStateNormal];
         //: [btnShot layoutButtonWithEdgeInsetsStyle:(MKButtonEdgeInsetsStyleTop) imageTitleSpace:10];
         [btnShot byViewSpace:(MKButtonEdgeInsetsStyleTop) toolCell:10];
@@ -1817,8 +1817,8 @@ typedef struct {
     _sessionInputView.recording = NO;
 }
 
-//: #pragma mark - FFFSessionConfiguratorDelegate
-#pragma mark - FFFSessionConfiguratorDelegate
+//: #pragma mark - DisplaySessionConfiguratorDelegate
+#pragma mark - DisplaySessionConfiguratorDelegate
 
 //: - (void)didFetchMessageData
 - (void)oldWith
@@ -1851,7 +1851,7 @@ typedef struct {
 - (void)setSetWithPlaceholder:(BOOL)ban {
     //: if (ban){
     if (ban){
-        //: [self.sessionInputView setInputTextPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_administrator_speak"] color:[UIColor redColor]];
+        //: [self.sessionInputView setInputTextPlaceHolder:[DisplayLanguageManager getTextWithKey:@"message_administrator_speak"] color:[UIColor redColor]];
         [self.sessionInputView soap:[MakeManager cell:[[DeployCommandData sharedInstance] kTitle_packText]] titleDisableBefore:[UIColor redColor]];
         //: self.sessionInputView.userInteractionEnabled = NO;
         self.sessionInputView.userInteractionEnabled = NO;
@@ -1859,7 +1859,7 @@ typedef struct {
         self.canTapVoiceBtn = NO;
     //: } else {
     } else {
-        //: [self.sessionInputView setInputTextPlaceHolder:[FFFLanguageManager getTextWithKey:@"message_please_enter_content"] color:[UIColor grayColor]];
+        //: [self.sessionInputView setInputTextPlaceHolder:[DisplayLanguageManager getTextWithKey:@"message_please_enter_content"] color:[UIColor grayColor]];
         [self.sessionInputView soap:[MakeManager cell:[[DeployCommandData sharedInstance] kName_editorValue]] titleDisableBefore:[UIColor grayColor]];
         //: self.sessionInputView.userInteractionEnabled = YES;
         self.sessionInputView.userInteractionEnabled = YES;
@@ -2000,7 +2000,7 @@ typedef struct {
     return _btnAudio;
 }
 
-//: - (void)onTapMediaItemShoot:(FFFMediaItem *)item
+//: - (void)onTapMediaItemShoot:(DisplayMediaItem *)item
 - (void)button:(CommingleItem *)item
 {
     //: [self.interactor mediaShootPressed];
@@ -2014,9 +2014,9 @@ typedef struct {
     //: NIMAudioType type = NIMAudioTypeAAC;
     NIMAudioType type = NIMAudioTypeAAC;
     //: if ([self.sessionConfig respondsToSelector:@selector(recordType)]) {
-    if ([self.messageBar respondsToSelector:@selector(beSecond)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(beSecond)]) {
         //: type = [self.sessionConfig recordType];
-        type = [self.messageBar beSecond];
+        type = [self.sessionConfig beSecond];
     }
     //: return type;
     return type;
@@ -2055,12 +2055,12 @@ typedef struct {
     _tableView.dataSource = nil;
 }
 
-//: - (FFFInputAudioView *)audioContent
+//: - (DisplayInputAudioView *)audioContent
 - (AudioView *)audioContent
 {
     //: if(!_audioContent){
     if(!_audioContent){
-        //: _audioContent = [[FFFInputAudioView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _audioContent = [[DisplayInputAudioView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _audioContent = [[AudioView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
 //        _audioContent.hidden = YES;
     }
@@ -2111,7 +2111,7 @@ typedef struct {
                 if (path) {
                     //: NSLog(@"视频路径: %@", path);
                     // 使用路径...
-                    //: NIMMessage *message = [FFFMessageMaker msgWithVideo:path];
+                    //: NIMMessage *message = [DisplayMessageMaker msgWithVideo:path];
                     NIMMessage *message = [ShouldMaker line:path];
                     //: [self sendMessage:message];
                     [self user:message];
@@ -2132,10 +2132,10 @@ typedef struct {
             [self my:asset with:^(UIImage *image) {
                 //: if (image) {
                 if (image) {
-                    //: NIMMessage *message = [FFFMessageMaker msgWithImage:image];
+                    //: NIMMessage *message = [DisplayMessageMaker msgWithImage:image];
                     NIMMessage *message = [ShouldMaker select:image];
 
-                    //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+                    //: NSMutableDictionary *dic = [[DisplayConfig sharedConfig] Gdic];
                     NSMutableDictionary *dic = [[ContextTeam mutual] Gdic];
                     //: NSData *imageData = UIImagePNGRepresentation(image);
                     NSData *imageData = UIImagePNGRepresentation(image);
@@ -2196,7 +2196,7 @@ typedef struct {
                 //: return;
                 return;
             }
-            //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+            //: [weakSelf.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
             [weakSelf.view makeToast:[MakeManager cell:[[DeployCommandData sharedInstance] kNameServingString]] duration:2 position:CSToastPositionCenter];
         //: }];
         }];
@@ -2220,7 +2220,7 @@ typedef struct {
                 //: return;
                 return;
             }
-            //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+            //: [weakSelf.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
             [weakSelf.view makeToast:[MakeManager cell:[[DeployCommandData sharedInstance] kNameServingString]] duration:2 position:CSToastPositionCenter];
         //: }];
         }];
@@ -2228,7 +2228,7 @@ typedef struct {
 
 }
 
-//: - (void)onTapMediaItemLocation:(FFFMediaItem *)item
+//: - (void)onTapMediaItemLocation:(DisplayMediaItem *)item
 - (void)appearance:(CommingleItem *)item
 {
 //    [self.interactor mediaLocationPressed];
@@ -2340,7 +2340,7 @@ typedef struct {
     if(!error) {
         //: if ([self recordFileCanBeSend:filePath]) {
         if ([self telephoneMessage:filePath]) {
-            //: [self sendMessage:[FFFMessageMaker msgWithAudio:filePath]];
+            //: [self sendMessage:[DisplayMessageMaker msgWithAudio:filePath]];
             [self user:[ShouldMaker data:filePath]];
         //: }else{
         }else{
@@ -2393,7 +2393,7 @@ typedef struct {
             //: NSString *urlString = imageObject.url;
             NSString *urlString = imageObject.url;
 
-            //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+            //: NSMutableDictionary *dic = [[DisplayConfig sharedConfig] Gdic];
             NSMutableDictionary *dic = [[ContextTeam mutual] Gdic];
             //: NSData *data = [dic objectForKey:message.messageId];
             NSData *data = [dic objectForKey:message.messageId];
@@ -2464,22 +2464,22 @@ typedef struct {
     //: NSArray *items;
     NSArray *items;
     //: if (!self.sessionConfig)
-    if (!self.messageBar)
+    if (!self.sessionConfig)
     {
         //: items = [[MyUserKit sharedKit].config defaultMenuItemsWithMessage:message];
         items = [[Mortification text].config valueDown:message];
     }
     //: else if([self.sessionConfig respondsToSelector:@selector(menuItemsWithMessage:)])
-    else if([self.messageBar respondsToSelector:@selector(inputsed:)])
+    else if([self.sessionConfig respondsToSelector:@selector(inputsed:)])
     {
         //: items = [self.sessionConfig menuItemsWithMessage:message];
-        items = [self.messageBar inputsed:message];
+        items = [self.sessionConfig inputsed:message];
     }
 
-    //: [items enumerateObjectsUsingBlock:^(FFFMediaItem *item, NSUInteger idx, BOOL *stop) {
+    //: [items enumerateObjectsUsingBlock:^(DisplayMediaItem *item, NSUInteger idx, BOOL *stop) {
     [items enumerateObjectsUsingBlock:^(CommingleItem *item, NSUInteger idx, BOOL *stop) {
 
-        //: FFFBubbleButtonModel *model = [[FFFBubbleButtonModel alloc] init];
+        //: DisplayBubbleButtonModel *model = [[DisplayBubbleButtonModel alloc] init];
         MessageTeam *model = [[MessageTeam alloc] init];
         //: model.normalImage = item.normalImage;
         model.normalImage = item.normalImage;
@@ -2501,7 +2501,7 @@ typedef struct {
 //: - (void)showMenuWithMessage:(NIMMessage *)message withView:(UIView *)view {
 - (void)withColor:(NIMMessage *)message cleanTo:(UIView *)view {
 
-    //: [[FFFBubbleMenuView shareMenuView] removeFromSuperview];
+    //: [[DisplayBubbleMenuView shareMenuView] removeFromSuperview];
     [[ResultCuttingEdgeView namePrixFixe] removeFromSuperview];
 
     //: NSArray *btns = [self genMediaButtonsWithMessage:message];
@@ -2519,7 +2519,7 @@ typedef struct {
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: [[FFFBubbleMenuView shareMenuView] showViewWithButtonModels:btns cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(FFFMediaItem *item) {
+        //: [[DisplayBubbleMenuView shareMenuView] showViewWithButtonModels:btns cursorStartRect:cursorStartRectToWindow selectionTextRectInWindow:tempRect selectBlock:^(DisplayMediaItem *item) {
         [[ResultCuttingEdgeView namePrixFixe] panoramicView:btns emotion:cursorStartRectToWindow timeBy:tempRect past:^(CommingleItem *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -2528,7 +2528,7 @@ typedef struct {
             //: [self onTapMediaItem:item];
             [self messageTable:item];
 
-            //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+            //: [DisplayBubbleMenuView.shareMenuView removeFromSuperview];
             [ResultCuttingEdgeView.namePrixFixe removeFromSuperview];
         //: }praiseBlock:^(NSInteger tag) {
         }addTogether:^(NSInteger tag) {
@@ -2613,7 +2613,7 @@ typedef struct {
 - (void)location:(UIScrollView *)scrollView {
     //: if ([scrollView isKindOfClass:[UITextView class]]) {
     if ([scrollView isKindOfClass:[UITextView class]]) {
-        //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+        //: [DisplayBubbleMenuView.shareMenuView removeFromSuperview];
         [ResultCuttingEdgeView.namePrixFixe removeFromSuperview];
     }
     //: [self.view endEditing:YES];
@@ -2664,8 +2664,8 @@ typedef struct {
     //: if ([self shouldShowInputView])
     if ([self find])
     {
-        //: self.sessionInputView = [[FFFInputView alloc] initWithFrame:CGRectMake(0, 0, self.view.device_width,0) config:self.sessionConfig];
-        self.sessionInputView = [[ContextInputView alloc] initWithTing:CGRectMake(0, 0, self.view.device_width,0) play:self.messageBar];
+        //: self.sessionInputView = [[DisplayInputView alloc] initWithFrame:CGRectMake(0, 0, self.view.device_width,0) config:self.sessionConfig];
+        self.sessionInputView = [[ContextInputView alloc] initWithTing:CGRectMake(0, 0, self.view.device_width,0) play:self.sessionConfig];
         //: self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         self.sessionInputView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         //: [self.sessionInputView setSession:self.session];
@@ -2714,21 +2714,21 @@ typedef struct {
     //: [self.sessionInputView endEditing:YES];
     [self.sessionInputView endEditing:YES];
     // 隐藏长按弹窗
-    //: [FFFBubbleMenuView.shareMenuView removeFromSuperview];
+    //: [DisplayBubbleMenuView.shareMenuView removeFromSuperview];
     [ResultCuttingEdgeView.namePrixFixe removeFromSuperview];
     //: [self.navigationController.navigationBar setHidden:NO];
     [self.navigationController.navigationBar setHidden:NO];
 }
 
-//: #pragma mark - FFFMessageCellDelegate
+//: #pragma mark - DisplayMessageCellDelegate
 #pragma mark - CompartmentPath
-//: - (BOOL)onTapCell:(FFFKitEvent *)event{
+//: - (BOOL)onTapCell:(DisplayKitEvent *)event{
 - (BOOL)cutOptionExtend:(ToiletKitSession *)event{
     //: BOOL handle = NO;
     BOOL handle = NO;
     //: NSString *eventName = event.eventName;
     NSString *eventName = event.eventName;
-    //: if ([eventName isEqualToString:FFFKitEventNameTapAudio])
+    //: if ([eventName isEqualToString:DisplayKitEventNameTapAudio])
     if ([eventName isEqualToString:app_successDoingceMsg])
     {
         //: [self.interactor mediaAudioPressed:event.messageModel];
@@ -2817,7 +2817,7 @@ typedef struct {
     //: if ([message.session isEqual:_session])
     if ([message.session isEqual:_session])
     {
-        //: FFFMessageModel *model = [self.interactor findMessageModel:message];
+        //: DisplayMessageModel *model = [self.interactor findMessageModel:message];
         CleanDoing *model = [self.interactor telegram:message];
         //下完缩略图之后，因为比例有变化，重新刷下宽高。
         //: [model cleanCache];
@@ -2938,9 +2938,9 @@ typedef struct {
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableInputView)]) {
-    if ([self.messageBar respondsToSelector:@selector(changeUser)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(changeUser)]) {
         //: should = ![self.sessionConfig disableInputView];
-        should = ![self.messageBar changeUser];
+        should = ![self.sessionConfig changeUser];
     }
     //: return should;
     return should;
@@ -2959,7 +2959,7 @@ typedef struct {
                       //: compltion:^(NSMapTable *result)
                       wisecrack:^(NSMapTable *result)
      {
-        //: NIMQuickComment *oldComment = [FFFKitQuickCommentUtil myCommentFromComments:0 keys:@[@(index)] comments:result];
+        //: NIMQuickComment *oldComment = [DisplayKitQuickCommentUtil myCommentFromComments:0 keys:@[@(index)] comments:result];
         NIMQuickComment *oldComment = [ControlInside pinComments:0 by:@[@(index)] vanguard:result];
         //: BOOL contains = oldComment ? YES : NO;
         BOOL contains = oldComment ? YES : NO;
@@ -2973,7 +2973,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[MakeManager cell:[[DeployCommandData sharedInstance] kNameServingString]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -2996,7 +2996,7 @@ typedef struct {
                 //: if (error)
                 if (error)
                 {
-                    //: [weakSelf.view makeToast:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
+                    //: [weakSelf.view makeToast:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"] duration:2 position:CSToastPositionCenter];
                     [weakSelf.view makeToast:[MakeManager cell:[[DeployCommandData sharedInstance] kNameServingString]] duration:2 position:CSToastPositionCenter];
                 }
 
@@ -3070,12 +3070,12 @@ typedef struct {
 //: - (void)setUpTitleView
 - (void)chronicle
 {
-    //: FFFKitTitleView *titleView = (FFFKitTitleView *)self.navigationItem.titleView;
+    //: DisplayKitTitleView *titleView = (DisplayKitTitleView *)self.navigationItem.titleView;
     LabelHeadView *titleView = (LabelHeadView *)self.navigationItem.titleView;
-    //: if (!titleView || ![titleView isKindOfClass:[FFFKitTitleView class]])
+    //: if (!titleView || ![titleView isKindOfClass:[DisplayKitTitleView class]])
     if (!titleView || ![titleView isKindOfClass:[LabelHeadView class]])
     {
-        //: titleView = [[FFFKitTitleView alloc] initWithFrame:CGRectZero];
+        //: titleView = [[DisplayKitTitleView alloc] initWithFrame:CGRectZero];
         titleView = [[LabelHeadView alloc] initWithFrame:CGRectZero];
         //: self.navigationItem.titleView = titleView;
         self.navigationItem.titleView = titleView;
@@ -3160,7 +3160,7 @@ typedef struct {
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setMessage:message];
+    [self.interactor setReferenceMessage:message];
     //: if (![self becomeFirstResponder]) {
     if (![self becomeFirstResponder]) {
         //: handle = NO;
@@ -3201,7 +3201,7 @@ typedef struct {
     //: _messageForMenu = message;
     _messageForMenu = message;
     //: [self.interactor setReferenceMessage:message];
-    [self.interactor setMessage:message];
+    [self.interactor setReferenceMessage:message];
 
     //: handle = [self shouldShowMenuByMessage:message];
     handle = [self container:message];
@@ -3265,7 +3265,7 @@ typedef struct {
         [users addObject:self.session.sessionId];
     }
 
-    //: NIMMessage *message = [FFFMessageMaker msgWithText:text];
+    //: NIMMessage *message = [DisplayMessageMaker msgWithText:text];
     NIMMessage *message = [ShouldMaker file:text];
     //: if (atUsers.count)
     if (atUsers.count)
@@ -3277,7 +3277,7 @@ typedef struct {
         //: apnsOption.forcePush = YES;
         apnsOption.forcePush = YES;
 
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
         CellClean *option = [[CellClean alloc] init];
         //: option.session = self.session;
         option.session = self.session;
@@ -3359,9 +3359,9 @@ typedef struct {
     //: BOOL should = YES;
     BOOL should = YES;
     //: if ([self.sessionConfig respondsToSelector:@selector(disableReceiveNewMessages)]) {
-    if ([self.messageBar respondsToSelector:@selector(tingOn)]) {
+    if ([self.sessionConfig respondsToSelector:@selector(tingOn)]) {
         //: should = ![self.sessionConfig disableReceiveNewMessages];
-        should = ![self.messageBar tingOn];
+        should = ![self.sessionConfig tingOn];
     }
     //: return should;
     return should;
@@ -3388,7 +3388,7 @@ typedef struct {
 
 //: #pragma mark - NIMMeidaButton
 #pragma mark - NIMMeidaButton
-//: - (void)onTapMediaItemPicture:(FFFMediaItem *)item
+//: - (void)onTapMediaItemPicture:(DisplayMediaItem *)item
 - (void)infoSizeSub:(CommingleItem *)item
 {
     //: [self.interactor mediaPicturePressed];
@@ -3445,7 +3445,7 @@ typedef struct {
 //: - (void)setupConfigurator
 - (void)politicalSphere
 {
-    //: _configurator = [[FFFSessionConfigurator alloc] init];
+    //: _configurator = [[DisplaySessionConfigurator alloc] init];
     _configurator = [[TitleTargetYear alloc] init];
     //: [_configurator setup:self];
     [_configurator color:self];

@@ -250,7 +250,7 @@
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:[VitaminData sharedInstance].kName_scienceValue] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:[VitaminData sharedInstance].kContent_civilianRecordString] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -277,7 +277,7 @@
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:[VitaminData sharedInstance].kTitle_nonprofitString] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#FF483D"];
         _sureBtn.backgroundColor = [UIColor cell:[VitaminData sharedInstance].kNameReservationTitle];
@@ -319,7 +319,7 @@
         labtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labtitle1.textColor = [UIColor cell:[VitaminData sharedInstance].kContentLastModelSeeminglyName];
-        //: labtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip1"];
+        //: labtitle1.text = [DisplayLanguageManager getTextWithKey:@"account_delete_tip1"];
         labtitle1.text = [MakeManager cell:[VitaminData sharedInstance].kText_intactContent];
         //: labtitle1.numberOfLines = 0;
         labtitle1.numberOfLines = 0;
@@ -334,7 +334,7 @@
         labsubtitle1.font = [UIFont systemFontOfSize:14.f];
         //: labsubtitle1.textColor = [UIColor colorWithHexString:@"#333333"];
         labsubtitle1.textColor = [UIColor cell:[VitaminData sharedInstance].kContentLastModelSeeminglyName];
-        //: labsubtitle1.text = [FFFLanguageManager getTextWithKey:@"account_delete_tip2"];
+        //: labsubtitle1.text = [DisplayLanguageManager getTextWithKey:@"account_delete_tip2"];
         labsubtitle1.text = [MakeManager cell:[VitaminData sharedInstance].kTitle_selectedData];
         //: labsubtitle1.numberOfLines = 0;
         labsubtitle1.numberOfLines = 0;
@@ -362,7 +362,7 @@
         _titleLabel.textColor = [UIColor cell:[VitaminData sharedInstance].kNameMoleValue];
         //: _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
+        //: _titleLabel.text = [DisplayLanguageManager getTextWithKey:@"activity_comment_setting_cancel_account"];
         _titleLabel.text = [MakeManager cell:[VitaminData sharedInstance].kTextStableValue];
     }
     //: return _titleLabel;

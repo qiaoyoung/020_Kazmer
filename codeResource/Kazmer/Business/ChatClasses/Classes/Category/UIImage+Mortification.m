@@ -107,11 +107,11 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFInputEmoticonDefine.h"
-#import "FFFInputEmoticonDefine.h"
+//: #import "DisplayInputEmoticonDefine.h"
+#import "DisplayInputEmoticonDefine.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitDevice.h"
+//: #import "DisplayKitDevice.h"
 #import "MaxDevice.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+Mortification.h"
@@ -392,7 +392,7 @@ typedef struct {
 //: - (UIImage *)nim_imageForAvatarUpload
 - (UIImage *)small
 {
-    //: CGFloat pixels = [[FFFKitDevice currentDevice] suggestImagePixels];
+    //: CGFloat pixels = [[DisplayKitDevice currentDevice] suggestImagePixels];
     CGFloat pixels = [[MaxDevice green] declare];
     //: UIImage * image = [self nim_imageForUpload:pixels];
     UIImage * image = [self lengthIn:pixels];

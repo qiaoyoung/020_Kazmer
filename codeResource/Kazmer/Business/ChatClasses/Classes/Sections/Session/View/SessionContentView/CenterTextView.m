@@ -9,28 +9,28 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionImageContentView.h"
+//: #import "DisplaySessionImageContentView.h"
 #import "CenterTextView.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "DisplayLoadProgressView.h"
 #import "GatefoldView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "UCZProgressView.h"
 #import "UCZProgressView.h"
 
-//: @interface FFFSessionImageContentView()
+//: @interface DisplaySessionImageContentView()
 @interface CenterTextView()
 
 //: @property (nonatomic,strong,readwrite) YYAnimatedImageView * imageView;
 @property (nonatomic,strong,readwrite) YYAnimatedImageView * imageView;
 
-//: @property (nonatomic,strong) FFFLoadProgressView * progressView;
+//: @property (nonatomic,strong) DisplayLoadProgressView * progressView;
 @property (nonatomic,strong) GatefoldView * progressView;
 
 //@property (nonatomic, strong) UCZProgressView *progressView;
@@ -38,7 +38,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionImageContentView
+//: @implementation DisplaySessionImageContentView
 @implementation CenterTextView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -64,7 +64,7 @@
 ////        self.progressView.tintColor = [KEKESkinColorManager shareInstance].skinColor;
 //        [self addSubview:self.progressView];
 
-        //: _progressView = [[FFFLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        //: _progressView = [[DisplayLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         _progressView = [[GatefoldView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         //: _progressView.maxProgress = 1.0f;
         _progressView.maxProgress = 1.0f;
@@ -75,7 +75,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(DisplayMessageModel *)data
 - (void)from:(CleanDoing *)data
 {
     //: [super refresh:data];
@@ -92,7 +92,7 @@
         //: [imageObject setUploadURL:url];
         [imageObject setUploadURL:url];
 
-        //: NSMutableDictionary *dic = [[FFFConfig sharedConfig] Gdic];
+        //: NSMutableDictionary *dic = [[DisplayConfig sharedConfig] Gdic];
         NSMutableDictionary *dic = [[ContextTeam mutual] Gdic];
         //: NSData *data = [dic objectForKey:self.model.message.messageId];
         NSData *data = [dic objectForKey:self.model.message.messageId];
@@ -195,9 +195,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)labelled:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
     ToiletKitSession *event = [[ToiletKitSession alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = DisplayKitEventNameTapContent;
     event.eventName = userStateId;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

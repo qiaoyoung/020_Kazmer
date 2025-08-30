@@ -449,12 +449,12 @@
 #import "DigitizerAttachment.h"
 //: #import "USERWhiteboardAttachment.h"
 #import "MessageAttachment.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 //: #import "USERSubscribeManager.h"
 #import "TagCleanManager.h"
-//: #import "FFFExtensionHelper.h"
-#import "FFFExtensionHelper.h"
+//: #import "DisplayExtensionHelper.h"
+#import "DisplayExtensionHelper.h"
 //: #import "USERSubscribeDefine.h"
 #import "USERSubscribeDefine.h"
 //: #import "NSDictionary+USERJson.h"
@@ -476,13 +476,13 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
 
 //: + (NSString *)tipOnMessageRevokedLocal:(NSString *)postscript {
 + (NSString *)tingBackground:(NSString *)postscript {
-    //: NSString *tip = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+    //: NSString *tip = [DisplayLanguageManager getTextWithKey:@"message_helper_you"];
     NSString *tip = [MakeManager cell:[[FirmlyData sharedInstance] kContentCeilingString]];//@"你".user_localized;
-    //: NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[FFFLanguageManager getTextWithKey:@"retracted_message"]];
+    //: NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[DisplayLanguageManager getTextWithKey:@"retracted_message"]];
     NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[MakeManager cell:[[FirmlyData sharedInstance] kContentRatherTitle]]];
     //: if (postscript.length != 0) {
     if (postscript.length != 0) {
-        //: msg = [NSString stringWithFormat:@"%@%@.%@:%@", tip,[FFFLanguageManager getTextWithKey:@"retracted_message"],[FFFLanguageManager getTextWithKey:@"postscript"], postscript];
+        //: msg = [NSString stringWithFormat:@"%@%@.%@:%@", tip,[DisplayLanguageManager getTextWithKey:@"retracted_message"],[DisplayLanguageManager getTextWithKey:@"postscript"], postscript];
         msg = [NSString stringWithFormat:@"%@%@.%@:%@", tip,[MakeManager cell:[[FirmlyData sharedInstance] kContentRatherTitle]],[MakeManager cell:[[FirmlyData sharedInstance] kTitle_discriminationText]], postscript];
     }
     //: return msg;
@@ -572,7 +572,7 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
             {
                 //: NSString *clientName = [self resolveOnlineClientName:client];
                 NSString *clientName = [self refreshSize:client];
-                //: state = [NSString stringWithFormat:@"%@ %@", clientName, [FFFLanguageManager getTextWithKey:@"message_online"]];
+                //: state = [NSString stringWithFormat:@"%@ %@", clientName, [DisplayLanguageManager getTextWithKey:@"message_online"]];
                 state = [NSString stringWithFormat:@"%@ %@", clientName, [MakeManager cell:[[FirmlyData sharedInstance] kContent_buildingName]]];
                 //: break;
                 break;
@@ -627,13 +627,13 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
     //: else if(nowDateComponents.day == (msgDateComponents.day+1))
     else if(nowDateComponents.day == (msgDateComponents.day+1))//昨天
     {
-        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[FFFLanguageManager getTextWithKey:@"yesterday"], result,hour,(int)msgDateComponents.minute] : [FFFLanguageManager getTextWithKey:@"yesterday"];
+        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[DisplayLanguageManager getTextWithKey:@"yesterday"], result,hour,(int)msgDateComponents.minute] : [DisplayLanguageManager getTextWithKey:@"yesterday"];
         result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[MakeManager cell:[[FirmlyData sharedInstance] kText_approveString]], result,hour,(int)msgDateComponents.minute] : [MakeManager cell:[[FirmlyData sharedInstance] kText_approveString]];//昨天
     }
     //: else if(nowDateComponents.day == (msgDateComponents.day+2)) 
     else if(nowDateComponents.day == (msgDateComponents.day+2)) //前天
     {
-        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[FFFLanguageManager getTextWithKey:@"before_yesterday"], result,hour,(int)msgDateComponents.minute] : [FFFLanguageManager getTextWithKey:@"before_yesterday"];
+        //: result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[DisplayLanguageManager getTextWithKey:@"before_yesterday"], result,hour,(int)msgDateComponents.minute] : [DisplayLanguageManager getTextWithKey:@"before_yesterday"];
         result = showDetail? [[NSString alloc] initWithFormat:@"%@%@ %zd:%02d",[MakeManager cell:[[FirmlyData sharedInstance] kContent_targetValue]], result,hour,(int)msgDateComponents.minute] : [MakeManager cell:[[FirmlyData sharedInstance] kContent_targetValue]];//@"前天";
     }
     //: else if([nowDate timeIntervalSinceDate:msgDate] < 7 * OnedayTimeIntervalValue)
@@ -691,7 +691,7 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
 {
     //: NSString *clientName = [self resolveOnlineClientName:client];
     NSString *clientName = [self refreshSize:client];
-    //: NSString *state = [NSString stringWithFormat:@"%@ %@",clientName,[FFFLanguageManager getTextWithKey:@"message_online"]];
+    //: NSString *state = [NSString stringWithFormat:@"%@ %@",clientName,[DisplayLanguageManager getTextWithKey:@"message_online"]];
     NSString *state = [NSString stringWithFormat:@"%@ %@",clientName,[MakeManager cell:[[FirmlyData sharedInstance] kContent_buildingName]]];//@"在线".user_localized
     //: NSDictionary *dict = [ext nimkit_jsonDict];
     NSDictionary *dict = [ext eye];
@@ -715,7 +715,7 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
                     client == NIMLoginClientTypemacOS)
                 {
                     //桌面端不显示网络状态，只显示端
-                    //: return [NSString stringWithFormat:@"%@ %@",clientName,[FFFLanguageManager getTextWithKey:@"message_online"]];
+                    //: return [NSString stringWithFormat:@"%@ %@",clientName,[DisplayLanguageManager getTextWithKey:@"message_online"]];
                     return [NSString stringWithFormat:@"%@ %@",clientName,[MakeManager cell:[[FirmlyData sharedInstance] kContent_buildingName]]];//@"在线".user_localized
                 }
                 //: else
@@ -725,24 +725,24 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
                     //: if (detail)
                     if (detail)
                     {
-                        //: return [NSString stringWithFormat:@"%@ - %@ %@",clientName,netState,[FFFLanguageManager getTextWithKey:@"message_online"]];
+                        //: return [NSString stringWithFormat:@"%@ - %@ %@",clientName,netState,[DisplayLanguageManager getTextWithKey:@"message_online"]];
                         return [NSString stringWithFormat:@"%@ - %@ %@",clientName,netState,[MakeManager cell:[[FirmlyData sharedInstance] kContent_buildingName]]];//@"在线".user_localized
                     }
                     //: else
                     else
                     {
-                        //: return [NSString stringWithFormat:@"%@ %@",netState,[FFFLanguageManager getTextWithKey:@"message_online"]];
+                        //: return [NSString stringWithFormat:@"%@ %@",netState,[DisplayLanguageManager getTextWithKey:@"message_online"]];
                         return [NSString stringWithFormat:@"%@ %@",netState,[MakeManager cell:[[FirmlyData sharedInstance] kContent_buildingName]]];//@"在线".user_localized
                     }
                 }
             }
             //: case USEROnlineStateBusy:
             case USEROnlineStateBusy:
-                //: return [FFFLanguageManager getTextWithKey:@"online_state_event_manager_on_line_busy"];
+                //: return [DisplayLanguageManager getTextWithKey:@"online_state_event_manager_on_line_busy"];
                 return [MakeManager cell:[[FirmlyData sharedInstance] kContent_ratherCaptureData]];//@"忙碌".user_localized;
             //: case USEROnlineStateLeave:
             case USEROnlineStateLeave:
-                //: return [FFFLanguageManager getTextWithKey:@"online_state_event_manager_off_line"];
+                //: return [DisplayLanguageManager getTextWithKey:@"online_state_event_manager_off_line"];
                 return [MakeManager cell:[[FirmlyData sharedInstance] kTitle_fileValue]];//@"离开".user_localized;
             //: default:
             default:
@@ -791,7 +791,7 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
 //: + (NSString *)formatAutoLoginMessage:(NSError *)error
 + (NSString *)textBy:(NSError *)error
 {
-    //: NSString *message = [NSString stringWithFormat:@"%@ %@",[FFFLanguageManager getTextWithKey:@"login_failure"], error];
+    //: NSString *message = [NSString stringWithFormat:@"%@ %@",[DisplayLanguageManager getTextWithKey:@"login_failure"], error];
     NSString *message = [NSString stringWithFormat:@"%@ %@",[MakeManager cell:[[FirmlyData sharedInstance] kContentInspectionString]], error];//,@"自动登录失败".user_localized
     //: NSString *domain = error.domain;
     NSString *domain = error.domain;
@@ -803,7 +803,7 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
         //: if (code == NIMLocalErrorCodeAutoLoginRetryLimit)
         if (code == NIMLocalErrorCodeAutoLoginRetryLimit)
         {
-            //: message = [FFFLanguageManager getTextWithKey:@"please_try_again"];
+            //: message = [DisplayLanguageManager getTextWithKey:@"please_try_again"];
             message = [MakeManager cell:[[FirmlyData sharedInstance] kNameRatedString]];//@"自动登录错误次数超限，请检查网络后重试".user_localized;
         }
     }
@@ -813,13 +813,13 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
         //: if (code == NIMRemoteErrorCodeInvalidPass)
         if (code == NIMRemoteErrorCodeInvalidPass)
         {
-            //: message = [FFFLanguageManager getTextWithKey:@"wrong_password"];
+            //: message = [DisplayLanguageManager getTextWithKey:@"wrong_password"];
             message = [MakeManager cell:[[FirmlyData sharedInstance] kTitle_overnightString]];//@"密码错误".user_localized;
         }
         //: else if(code == NIMRemoteErrorCodeExist)
         else if(code == NIMRemoteErrorCodeExist)
         {
-            //: message = [FFFLanguageManager getTextWithKey:@"logged_another_device"];
+            //: message = [DisplayLanguageManager getTextWithKey:@"logged_another_device"];
             message = [MakeManager cell:[[FirmlyData sharedInstance] kName_deployConsistString]];//@"当前已经其他设备登录，请使用手动模式登录".user_localized;
         }
     }
@@ -1034,19 +1034,19 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
 {
     //: static NSDictionary *daysOfWeekDict = nil;
     static NSDictionary *daysOfWeekDict = nil;
-    //: daysOfWeekDict = @{@(1):[FFFLanguageManager getTextWithKey:@"Sunday"],//@"星期日",
+    //: daysOfWeekDict = @{@(1):[DisplayLanguageManager getTextWithKey:@"Sunday"],//@"星期日",
     daysOfWeekDict = @{@(1):[MakeManager cell:[[FirmlyData sharedInstance] kTitle_degreeString]],//@"星期日",
-                       //: @(2):[FFFLanguageManager getTextWithKey:@"Monday"],//@"星期一",
+                       //: @(2):[DisplayLanguageManager getTextWithKey:@"Monday"],//@"星期一",
                        @(2):[MakeManager cell:[[FirmlyData sharedInstance] kTitleWortData]],//@"星期一",
-                       //: @(3):[FFFLanguageManager getTextWithKey:@"Tuesday"],//@"星期二",
+                       //: @(3):[DisplayLanguageManager getTextWithKey:@"Tuesday"],//@"星期二",
                        @(3):[MakeManager cell:[[FirmlyData sharedInstance] kContent_onValue]],//@"星期二",
-                       //: @(4):[FFFLanguageManager getTextWithKey:@"Wednesday"],//@"星期三",
+                       //: @(4):[DisplayLanguageManager getTextWithKey:@"Wednesday"],//@"星期三",
                        @(4):[MakeManager cell:[[FirmlyData sharedInstance] kName_brotherDevoteData]],//@"星期三",
-                       //: @(5):[FFFLanguageManager getTextWithKey:@"Thursday"],//@"星期四",
+                       //: @(5):[DisplayLanguageManager getTextWithKey:@"Thursday"],//@"星期四",
                        @(5):[MakeManager cell:[[FirmlyData sharedInstance] kText_satisfyValue]],//@"星期四",
-                       //: @(6):[FFFLanguageManager getTextWithKey:@"Friday"],//@"星期五",
+                       //: @(6):[DisplayLanguageManager getTextWithKey:@"Friday"],//@"星期五",
                        @(6):[MakeManager cell:[[FirmlyData sharedInstance] kTextSkirtData]],//@"星期五",
-                       //: @(7):[FFFLanguageManager getTextWithKey:@"Saturday"]};
+                       //: @(7):[DisplayLanguageManager getTextWithKey:@"Saturday"]};
                        @(7):[MakeManager cell:[[FirmlyData sharedInstance] kTextGarbageString]]};//@"星期六",};
     //: return [daysOfWeekDict objectForKey:@(dayOfWeek)];
     return [daysOfWeekDict objectForKey:@(dayOfWeek)];
@@ -1076,7 +1076,7 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
     }
     //: if (!nickname.length) {
     if (!nickname.length) {
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
+        //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
         CancelTeamCorner *info = [[Mortification text] tingVoice:uid keepingOption:nil];
         //: nickname = info.showName;
         nickname = info.showName;
@@ -1095,7 +1095,7 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
     do {
         //: if (!notification || ![notification isKindOfClass:[NIMRevokeMessageNotification class]]) {
         if (!notification || ![notification isKindOfClass:[NIMRevokeMessageNotification class]]) {
-            //: tip = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+            //: tip = [DisplayLanguageManager getTextWithKey:@"message_helper_you"];
             tip = [MakeManager cell:[[FirmlyData sharedInstance] kContentCeilingString]];//@"你".user_localized;
             //: break;
             break;
@@ -1114,11 +1114,11 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
     //: } while (false);
     } while (false);
 
-    //: NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[FFFLanguageManager getTextWithKey:@"retracted_message"]];
+    //: NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[DisplayLanguageManager getTextWithKey:@"retracted_message"]];
     NSString *msg = [NSString stringWithFormat:@"%@%@", tip,[MakeManager cell:[[FirmlyData sharedInstance] kContentRatherTitle]]];
     //: if (notification.postscript.length != 0) {
     if (notification.postscript.length != 0) {
-        //: msg = [NSString stringWithFormat:@"%@ %@.%@:%@", tip,[FFFLanguageManager getTextWithKey:@"retracted_message"],[FFFLanguageManager getTextWithKey:@"postscript"], notification.postscript];
+        //: msg = [NSString stringWithFormat:@"%@ %@.%@:%@", tip,[DisplayLanguageManager getTextWithKey:@"retracted_message"],[DisplayLanguageManager getTextWithKey:@"postscript"], notification.postscript];
         msg = [NSString stringWithFormat:@"%@ %@.%@:%@", tip,[MakeManager cell:[[FirmlyData sharedInstance] kContentRatherTitle]],[MakeManager cell:[[FirmlyData sharedInstance] kTitle_discriminationText]], notification.postscript];
     }
     //: return msg;
@@ -1151,25 +1151,25 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
     //: if (totalMin > 0 && totalMin <= 5 * 60)
     if (totalMin > 0 && totalMin <= 5 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"wee_hours"];
+        //: showPeriodOfTime = [DisplayLanguageManager getTextWithKey:@"wee_hours"];
         showPeriodOfTime = [MakeManager cell:[[FirmlyData sharedInstance] kTitle_dealerValue]];//@"凌晨".user_localized;
     }
     //: else if (totalMin > 5 * 60 && totalMin < 12 * 60)
     else if (totalMin > 5 * 60 && totalMin < 12 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_am"];
+        //: showPeriodOfTime = [DisplayLanguageManager getTextWithKey:@"day_am"];
         showPeriodOfTime = [MakeManager cell:[[FirmlyData sharedInstance] kTitleImmigrantValue]];//@"上午".user_localized;
     }
     //: else if (totalMin >= 12 * 60 && totalMin <= 18 * 60)
     else if (totalMin >= 12 * 60 && totalMin <= 18 * 60)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_pm"];
+        //: showPeriodOfTime = [DisplayLanguageManager getTextWithKey:@"day_pm"];
         showPeriodOfTime = [MakeManager cell:[[FirmlyData sharedInstance] kNameChopText]];//@"下午".user_localized;
     }
     //: else if ((totalMin > 18 * 60 && totalMin <= (23 * 60 + 59)) || totalMin == 0)
     else if ((totalMin > 18 * 60 && totalMin <= (23 * 60 + 59)) || totalMin == 0)
     {
-        //: showPeriodOfTime = [FFFLanguageManager getTextWithKey:@"day_night"];
+        //: showPeriodOfTime = [DisplayLanguageManager getTextWithKey:@"day_night"];
         showPeriodOfTime = [MakeManager cell:[[FirmlyData sharedInstance] kTextCropString]];//@"晚上".user_localized;
     }
     //: return showPeriodOfTime;
@@ -1195,7 +1195,7 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
         // 自己撤回自己的
         //: if (revokeBySender && fromMe) {
         if (revokeBySender && fromMe) {
-            //: tipTitle = [FFFLanguageManager getTextWithKey:@"message_helper_you"];
+            //: tipTitle = [DisplayLanguageManager getTextWithKey:@"message_helper_you"];
             tipTitle = [MakeManager cell:[[FirmlyData sharedInstance] kContentCeilingString]];//@"你".user_localized;
             //: break;
             break;
@@ -1203,11 +1203,11 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
 
         //: NIMSession *session = notification.session;
         NIMSession *session = notification.session;
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
         CellClean *option = [[CellClean alloc] init];
         //: option.session = session;
         option.session = session;
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:(revokeBySender ? fromUid : operatorUid) option:option];
+        //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:(revokeBySender ? fromUid : operatorUid) option:option];
         CancelTeamCorner *info = [[Mortification text] tingVoice:(revokeBySender ? fromUid : operatorUid) keepingOption:option];
 
         // 别人撤回自己的
@@ -1233,12 +1233,12 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
         // 被群主/管理员撤回的
         //: if (member.type == NIMTeamMemberTypeOwner) {
         if (member.type == NIMTeamMemberTypeOwner) {
-            //: tipTitle = [[FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"] stringByAppendingString:info.showName];
+            //: tipTitle = [[DisplayLanguageManager getTextWithKey:@"group_member_info_activity_team_creator"] stringByAppendingString:info.showName];
             tipTitle = [[MakeManager cell:[[FirmlyData sharedInstance] kTextRakeString]] stringByAppendingString:info.showName];//@"群主".user_localized
         }
         //: else if (member.type == NIMTeamMemberTypeManager) {
         else if (member.type == NIMTeamMemberTypeManager) {
-            //: tipTitle = [[FFFLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"] stringByAppendingString:info.showName];
+            //: tipTitle = [[DisplayLanguageManager getTextWithKey:@"group_member_info_activity_team_admin"] stringByAppendingString:info.showName];
             tipTitle = [[MakeManager cell:[[FirmlyData sharedInstance] kNameContentItData]] stringByAppendingString:info.showName];//@"管理员".user_localized
         }
     //: } while (false);
@@ -1254,7 +1254,7 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
     NSString *fromUid = notification.messageFromUserId;
     //: BOOL fromMe = [fromUid isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]];
     BOOL fromMe = [fromUid isEqualToString:[[NIMSDK sharedSDK].loginManager currentAccount]];
-    //: return fromMe ? [FFFLanguageManager getTextWithKey:@"message_helper_you"]: [FFFLanguageManager getTextWithKey:@"message_opposite"];
+    //: return fromMe ? [DisplayLanguageManager getTextWithKey:@"message_helper_you"]: [DisplayLanguageManager getTextWithKey:@"message_opposite"];
     return fromMe ? [MakeManager cell:[[FirmlyData sharedInstance] kContentCeilingString]]: [MakeManager cell:[[FirmlyData sharedInstance] kTitleIdeaName]];//@"对方".user_localized;
 }
 

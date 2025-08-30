@@ -145,30 +145,30 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitMediaFetcher.h"
+//: #import "DisplayKitMediaFetcher.h"
 #import "KitFetcher.h"
 //: #import <MobileCoreServices/MobileCoreServices.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "DisplayKitFileLocationHelper.h"
 #import "PageHelper.h"
-//: #import "FFFMessageMaker.h"
+//: #import "DisplayMessageMaker.h"
 #import "ShouldMaker.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
 //: #import "TZImageManager.h"
 #import "TZImageManager.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "DisplayKitProgressHUD.h"
 #import "NameMessageEffectView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFKitMediaPickerController.h"
+//: #import "DisplayKitMediaPickerController.h"
 #import "ViewKitNavigationController.h"
 //: #import "AVAsset+MyUserKit.h"
 #import "AVAsset+Mortification.h"
 
-//: @interface FFFKitMediaFetcher()<FFFKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+//: @interface DisplayKitMediaFetcher()<DisplayKitMediaPickerDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @interface KitFetcher()<MarkSession,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 //: @property (nonatomic,copy) NIMKitLibraryFetchResult libraryResultHandler;
@@ -180,13 +180,13 @@
 //: @property (nonatomic,weak) UIImagePickerController *imagePicker;
 @property (nonatomic,weak) UIImagePickerController *imagePicker;
 
-//: @property (nonatomic,strong) FFFKitMediaPickerController *assetsPicker;
+//: @property (nonatomic,strong) DisplayKitMediaPickerController *assetsPicker;
 @property (nonatomic,strong) ViewKitNavigationController *assetsPicker;
 
 //: @end
 @end
 
-//: @implementation FFFKitMediaFetcher
+//: @implementation DisplayKitMediaFetcher
 @implementation KitFetcher
 
 //: - (instancetype)init
@@ -306,7 +306,7 @@
 - (void)size:(void(^)(UIViewController * _Nullable picker)) handler {
     //: UIViewController *pickerVC = nil;
     UIViewController *pickerVC = nil;
-    //: FFFKitMediaPickerController *vc = [[FFFKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
+    //: DisplayKitMediaPickerController *vc = [[DisplayKitMediaPickerController alloc] initWithMaxImagesCount:self.limit];
     ViewKitNavigationController *vc = [[ViewKitNavigationController alloc] initWithMargin:self.limit];
     //: vc.nim_delegate = self;
     vc.nim_delegate = self;
@@ -379,15 +379,15 @@
             //: default:
             default:
             {
-                //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                //: [[[UIAlertView alloc] initWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"]
                 [[[UIAlertView alloc] initWithTitle:[MakeManager cell:[SustainData sharedInstance].kTitleBoarName]
-                                            //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                            //: message:[DisplayLanguageManager getTextWithKey:@"setting_privacy"]
                                             message:[MakeManager cell:[SustainData sharedInstance].kNameStableData]
                                            //: delegate:self
                                            delegate:self
-                                  //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                  //: cancelButtonTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                   cancelButtonTitle:[MakeManager cell:[SustainData sharedInstance].kTitle_targetData]
-                                  //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                  //: otherButtonTitles:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                   otherButtonTitles:[MakeManager cell:[SustainData sharedInstance].kNameSenData],nil] show];
 
 //                UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:LangKey(@"warm_prompt") message:LangKey(@"setting_privacy") preferredStyle:UIAlertControllerStyleAlert];
@@ -419,15 +419,15 @@
                 if (status == PHAuthorizationStatusRestricted || status == PHAuthorizationStatusDenied) {
 
 
-                    //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+                    //: [[[UIAlertView alloc] initWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"]
                     [[[UIAlertView alloc] initWithTitle:[MakeManager cell:[SustainData sharedInstance].kTitleBoarName]
-                                                //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy"]
+                                                //: message:[DisplayLanguageManager getTextWithKey:@"setting_privacy"]
                                                 message:[MakeManager cell:[SustainData sharedInstance].kNameStableData]
                                                //: delegate:self
                                                delegate:self
-                                      //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                                      //: cancelButtonTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                                       cancelButtonTitle:[MakeManager cell:[SustainData sharedInstance].kTitle_targetData]
-                                      //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                                      //: otherButtonTitles:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                                       otherButtonTitles:[MakeManager cell:[SustainData sharedInstance].kNameSenData],nil] show];
 
                     //: if(handler) handler(nil);
@@ -476,9 +476,9 @@
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             //: NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
             NSURL *inputURL = [info objectForKey:UIImagePickerControllerMediaURL];
-            //: NSString *outputFileName = [FFFKitFileLocationHelper genFilenameWithExt:@"mp4"];
+            //: NSString *outputFileName = [DisplayKitFileLocationHelper genFilenameWithExt:@"mp4"];
             NSString *outputFileName = [PageHelper item:[SustainData sharedInstance].kText_easilyName];
-            //: NSString *outputPath = [FFFKitFileLocationHelper filepathForVideo:outputFileName];
+            //: NSString *outputPath = [DisplayKitFileLocationHelper filepathForVideo:outputFileName];
             NSString *outputPath = [PageHelper background:outputFileName];
             //: AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
             AVURLAsset *asset = [AVURLAsset URLAssetWithURL:inputURL options:nil];
@@ -648,15 +648,15 @@
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[MakeManager cell:[SustainData sharedInstance].kTitleBoarName]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[DisplayLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[MakeManager cell:[SustainData sharedInstance].kText_inkData]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[MakeManager cell:[SustainData sharedInstance].kTitle_targetData]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[MakeManager cell:[SustainData sharedInstance].kNameSenData],nil] show];
         //: return NO;
         return NO;
@@ -669,15 +669,15 @@
     if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
 
 
-        //: [[[UIAlertView alloc] initWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"]
+        //: [[[UIAlertView alloc] initWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"]
         [[[UIAlertView alloc] initWithTitle:[MakeManager cell:[SustainData sharedInstance].kTitleBoarName]
-                                    //: message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"]
+                                    //: message:[DisplayLanguageManager getTextWithKey:@"setting_privacy_camera"]
                                     message:[MakeManager cell:[SustainData sharedInstance].kText_inkData]
                                    //: delegate:self
                                    delegate:self
-                          //: cancelButtonTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
+                          //: cancelButtonTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"]
                           cancelButtonTitle:[MakeManager cell:[SustainData sharedInstance].kTitle_targetData]
-                          //: otherButtonTitles:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
+                          //: otherButtonTitles:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"],nil] show];
                           otherButtonTitles:[MakeManager cell:[SustainData sharedInstance].kNameSenData],nil] show];
 
         //: return NO;

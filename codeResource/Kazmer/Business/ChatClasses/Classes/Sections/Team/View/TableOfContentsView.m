@@ -85,10 +85,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCartSetTableViewCell.h"
+//: #import "DisplayTeamCartSetTableViewCell.h"
 #import "TableOfContentsView.h"
 
-//: @implementation FFFTeamCartSetTableViewCell
+//: @implementation DisplayTeamCartSetTableViewCell
 @implementation TableOfContentsView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -125,14 +125,14 @@
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)yaw:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFTeamCartSetTableViewCell";
+    //: static NSString *identifier = @"DisplayTeamCartSetTableViewCell";
     static NSString *identifier = @"TableOfContentsView";
-    //: FFFTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: DisplayTeamCartSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     TableOfContentsView *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[DisplayTeamCartSetTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[TableOfContentsView alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
 
     }

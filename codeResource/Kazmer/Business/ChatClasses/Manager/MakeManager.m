@@ -742,26 +742,26 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLanguageManager.h"
+//: #import "DisplayLanguageManager.h"
 #import "MakeManager.h"
-//: #import "FFFXMLReader.h"
+//: #import "DisplayXMLReader.h"
 #import "MessageInsideMax.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 //: #import "SSZipArchiveManager.h"
 #import "PersonShould.h"
 
-//: @interface FFFLanguageManager ()<NSXMLParserDelegate>
+//: @interface DisplayLanguageManager ()<NSXMLParserDelegate>
 @interface MakeManager ()<NSXMLParserDelegate>
 //: @property (nonatomic ,strong) NSString *currentElementName;
 @property (nonatomic ,strong) NSString *currentElementName;
 //: @end
 @end
 
-//: @implementation FFFLanguageManager
+//: @implementation DisplayLanguageManager
 @implementation MakeManager
 
-//: static FFFLanguageManager *shareInstance = nil;
+//: static DisplayLanguageManager *shareInstance = nil;
 static MakeManager *m_sessionUrl = nil;
 
 // 获取节点的值 (这个方法在获取到节点头和节点尾后，会分别调用一次)
@@ -778,13 +778,13 @@ static MakeManager *m_sessionUrl = nil;
     }
 }
 
-//: + (FFFLanguageManager *)shareInstance{
+//: + (DisplayLanguageManager *)shareInstance{
 + (MakeManager *)range{
     //: @synchronized(self) {
     @synchronized(self) {
         //: if (shareInstance == nil) {
         if (m_sessionUrl == nil) {
-            //: shareInstance = [[FFFLanguageManager alloc] init];
+            //: shareInstance = [[DisplayLanguageManager alloc] init];
             m_sessionUrl = [[MakeManager alloc] init];
             //: shareInstance.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
             m_sessionUrl.langDict = [NSMutableDictionary dictionaryWithCapacity:100];
@@ -995,7 +995,7 @@ static MakeManager *m_sessionUrl = nil;
     if (error) {
         //: NSLog(@"error : %@", error);
     }
-    //: NSDictionary *result = [FFFXMLReader dictionaryForXMLData:xmlData error:&error];
+    //: NSDictionary *result = [DisplayXMLReader dictionaryForXMLData:xmlData error:&error];
     NSDictionary *result = [MessageInsideMax session:xmlData at:&error];
 //    NSDictionary *result = [NSDictionary dictionaryWithXML:xmlData];
 
@@ -1040,7 +1040,7 @@ static MakeManager *m_sessionUrl = nil;
 
 //: + (NSString *)getTextWithKey:(NSString *)key{
 + (NSString *)cell:(NSString *)key{
-    //: NSMutableDictionary *dict = [FFFLanguageManager shareInstance].langDict;
+    //: NSMutableDictionary *dict = [DisplayLanguageManager shareInstance].langDict;
     NSMutableDictionary *dict = [MakeManager range].langDict;
     //: NSString *value = [dict objectForKey:key];
     NSString *value = [dict objectForKey:key];

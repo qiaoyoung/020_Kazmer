@@ -16,24 +16,24 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @class FFFKitTimerHolder;
+//: @class DisplayKitTimerHolder;
 @class LargenessHolder;
 
-//: @protocol FFFKitTimerHolderDelegate <NSObject>
+//: @protocol DisplayKitTimerHolderDelegate <NSObject>
 @protocol CornerDelegate <NSObject>
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder;
+//: - (void)onNIMKitTimerFired:(DisplayKitTimerHolder *)holder;
 - (void)shoulding:(LargenessHolder *)holder;
 //: @end
 @end
 
-//: @interface FFFKitTimerHolder : NSObject
+//: @interface DisplayKitTimerHolder : NSObject
 @interface LargenessHolder : NSObject
-//: @property (nonatomic,weak) id<FFFKitTimerHolderDelegate> timerDelegate;
+//: @property (nonatomic,weak) id<DisplayKitTimerHolderDelegate> timerDelegate;
 @property (nonatomic,weak) id<CornerDelegate> timerDelegate;
 
 //: - (void)startTimer:(NSTimeInterval)seconds
 - (void)delegateMonitor:(NSTimeInterval)seconds
-          //: delegate:(id<FFFKitTimerHolderDelegate>)delegate
+          //: delegate:(id<DisplayKitTimerHolderDelegate>)delegate
           repeats:(id<CornerDelegate>)delegate
            //: repeats:(BOOL)repeats;
            date:(BOOL)repeats;

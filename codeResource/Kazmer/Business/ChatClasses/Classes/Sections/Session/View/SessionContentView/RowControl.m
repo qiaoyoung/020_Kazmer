@@ -82,9 +82,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionLocationContentView.h"
+//: #import "DisplaySessionLocationContentView.h"
 #import "RowControl.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
@@ -93,7 +93,7 @@
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFSessionLocationContentView()
+//: @interface DisplaySessionLocationContentView()
 @interface RowControl()
 
 //: @property (nonatomic,strong) UIImageView * imageView;
@@ -105,7 +105,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionLocationContentView
+//: @implementation DisplaySessionLocationContentView
 @implementation RowControl
 
 //: - (instancetype)initSessionMessageContentView{
@@ -149,7 +149,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(DisplayMessageModel *)data
 - (void)from:(CleanDoing *)data
 {
     //: [super refresh:data];
@@ -159,7 +159,7 @@
     //: self.titleLabel.text = locationObject.title;
     self.titleLabel.text = locationObject.title;
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ManPull *setting = [[Mortification text].config toWith:data.message];
 
     //: self.titleLabel.textColor = setting.textColor;
@@ -171,9 +171,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)labelled:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
     ToiletKitSession *event = [[ToiletKitSession alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = DisplayKitEventNameTapContent;
     event.eventName = userStateId;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

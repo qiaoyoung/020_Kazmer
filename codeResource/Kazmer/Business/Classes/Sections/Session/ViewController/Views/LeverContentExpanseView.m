@@ -242,7 +242,7 @@ Byte kName_riceString[] = {30, 22, 47, 10, 233, 215, 176, 117, 5, 5, 133, 152, 1
         _unitLabel.textColor = [UIColor whiteColor];
         //: _unitLabel.font = [UIFont systemFontOfSize:15];
         _unitLabel.font = [UIFont systemFontOfSize:15];
-        //: _unitLabel.text = [FFFLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
+        //: _unitLabel.text = [DisplayLanguageManager getTextWithKey:@"team_red_adapter_yuan"];
         _unitLabel.text = [MakeManager cell:StringFromToolSquareData(kTextSubInstructionData)];
         //: [_backView addSubview:_unitLabel];
         [_backView addSubview:_unitLabel];
@@ -499,7 +499,7 @@ Byte kName_riceString[] = {30, 22, 47, 10, 233, 215, 176, 117, 5, 5, 133, 152, 1
 -(void)reloadViewDeleteHeader:(NSString *)userID{
     //: NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
     NIMUser *me = [[NIMSDK sharedSDK].userManager userInfo:userID];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:userID option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:userID keepingOption:nil];
     //: NSString *headerUrl = me.userInfo.avatarUrl;
     NSString *headerUrl = me.userInfo.avatarUrl;

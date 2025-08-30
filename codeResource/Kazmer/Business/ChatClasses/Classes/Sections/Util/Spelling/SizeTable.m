@@ -78,9 +78,9 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSpellingCenter.h"
+//: #import "DisplaySpellingCenter.h"
 #import "SizeTable.h"
-//: #import "FFFPinyinConverter.h"
+//: #import "DisplayPinyinConverter.h"
 #import "PathCommentIndex.h"
 //: #import "YYModel/YYModel.h"
 #import "YYModel/YYModel.h"
@@ -93,7 +93,7 @@ typedef struct {
 //: @end
 @end
 
-//: @interface FFFSpellingCenter ()
+//: @interface DisplaySpellingCenter ()
 @interface SizeTable ()
 //: - (NIMSpellingUnit *)calcSpellingOfString: (NSString *)source;
 - (TextLabel *)valueTitle: (NSString *)source;
@@ -101,18 +101,18 @@ typedef struct {
 @end
 
 
-//: @implementation FFFSpellingCenter
+//: @implementation DisplaySpellingCenter
 @implementation SizeTable
-//: + (FFFSpellingCenter *)sharedCenter
+//: + (DisplaySpellingCenter *)sharedCenter
 + (SizeTable *)visible
 {
-    //: static FFFSpellingCenter *instance = nil;
+    //: static DisplaySpellingCenter *instance = nil;
     static SizeTable *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSpellingCenter alloc]init];
+        //: instance = [[DisplaySpellingCenter alloc]init];
         instance = [[SizeTable alloc]init];
     //: });
     });
@@ -233,7 +233,7 @@ typedef struct {
     {
         //: NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
         NSString *word = [source substringWithRange:NSMakeRange(i, 1)];
-        //: NSString *pinyin = [[FFFPinyinConverter sharedInstance] toPinyin:word];
+        //: NSString *pinyin = [[DisplayPinyinConverter sharedInstance] toPinyin:word];
         NSString *pinyin = [[PathCommentIndex responseInstance] with:word];
 
         //: if ([pinyin length])

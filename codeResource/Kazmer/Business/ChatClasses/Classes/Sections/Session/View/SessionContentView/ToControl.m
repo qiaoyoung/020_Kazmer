@@ -89,21 +89,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionTextContentView.h"
+//: #import "DisplaySessionTextContentView.h"
 #import "ToControl.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFTextView.h"
+//: #import "DisplayTextView.h"
 #import "TitleScrollView.h"
-//: #import "FFFSessionConfig.h"
+//: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
 //: #import "USERSessionViewController.h"
 #import "WayOfLifeViewController.h"
@@ -113,7 +113,7 @@
 //: NSString *const NIMTextMessageLabelLinkData = @"NIMTextMessageLabelLinkData";
 NSString *const noti_redUrl = @"NIMTextMessageLabelLinkData";
 
-//: @interface FFFSessionTextContentView()<M80AttributedLabelDelegate>
+//: @interface DisplaySessionTextContentView()<M80AttributedLabelDelegate>
 @interface ToControl()<PagePraiseDelegate>
 
 //: @property (nonatomic, strong) NSString *urlStr;
@@ -124,7 +124,7 @@ NSString *const noti_redUrl = @"NIMTextMessageLabelLinkData";
 //: @end
 @end
 
-//: @implementation FFFSessionTextContentView
+//: @implementation DisplaySessionTextContentView
 @implementation ToControl
 
 //: - (instancetype)initSessionMessageContentView
@@ -155,7 +155,7 @@ NSString *const noti_redUrl = @"NIMTextMessageLabelLinkData";
          //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
          autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
                       ;
-        //: _textView.selectBlock = ^(FFFMediaItem *item) {
+        //: _textView.selectBlock = ^(DisplayMediaItem *item) {
         _textView.selectBlock = ^(CommingleItem *item) {
             @
              //: try{} @finally{} __typeof__(self) self = __weak_self__;
@@ -252,7 +252,7 @@ NSString *const noti_redUrl = @"NIMTextMessageLabelLinkData";
     return isUrl;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(DisplayMessageModel *)data
 - (void)from:(CleanDoing *)data
 {
     //: if (self.model == data) {
@@ -266,7 +266,7 @@ NSString *const noti_redUrl = @"NIMTextMessageLabelLinkData";
 
     //: NSString *text = self.model.message.text;
     NSString *text = self.model.message.text;
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ManPull *setting = [[Mortification text].config toWith:data.message];
     //: self.textView.textColor = setting.textColor;
     self.textView.textColor = setting.textColor;
@@ -286,7 +286,7 @@ NSString *const noti_redUrl = @"NIMTextMessageLabelLinkData";
                 //: self.textView.actionDelegate = vc;
                 self.textView.actionDelegate = vc;
                 //: self.textView.config = vc.sessionConfig;
-                self.textView.config = vc.messageBar;
+                self.textView.config = vc.sessionConfig;
             }
         //: }];
         }];
@@ -375,9 +375,9 @@ NSString *const noti_redUrl = @"NIMTextMessageLabelLinkData";
 - (void)attributed:(LabelNameScrollView *)label
              //: clickedOnLink:(id)linkData{
              clickedLink:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
     ToiletKitSession *event = [[ToiletKitSession alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = DisplayKitEventNameTapLabelLink;
     event.eventName = show_contentData;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

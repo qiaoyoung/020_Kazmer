@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFQuickCommentCell.h"
+//: #import "DisplayQuickCommentCell.h"
 #import "TranslateReusableView.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "DisplayKitQuickCommentUtil.h"
 #import "ControlInside.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
@@ -22,7 +22,7 @@
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+Mortification.h"
 
-//: @interface FFFQuickCommentCell ()
+//: @interface DisplayQuickCommentCell ()
 @interface TranslateReusableView ()
 
 //: @property (nonatomic, strong) M80AttributedLabel *textLabel;
@@ -33,7 +33,7 @@
 //: @end
 @end
 
-//: @implementation FFFQuickCommentCell
+//: @implementation DisplayQuickCommentCell
 @implementation TranslateReusableView
 
 
@@ -45,7 +45,7 @@
     //: if (self)
     if (self)
     {
-        //: _textLabel = [FFFKitQuickCommentUtil newCommentLabel];
+        //: _textLabel = [DisplayKitQuickCommentUtil newCommentLabel];
         _textLabel = [ControlInside label];
         //: [self.contentView addSubview:_textLabel];
         [self.contentView addSubview:_textLabel];
@@ -66,7 +66,7 @@
     return self;
 }
 
-//: - (void)refreshWithData:(NSArray *)comments model:(FFFMessageModel *)data
+//: - (void)refreshWithData:(NSArray *)comments model:(DisplayMessageModel *)data
 - (void)showContent:(NSArray *)comments bar:(CleanDoing *)data
 {
     //: self.textLabel.textColor = data.shouldShowLeft ? [UIColor colorWithHex:0x000000 alpha:1] : [UIColor colorWithHex:0xFFFFFF alpha:1];

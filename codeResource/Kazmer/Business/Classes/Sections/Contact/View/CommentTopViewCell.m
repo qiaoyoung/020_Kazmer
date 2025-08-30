@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import "USERUserListCell.h"
 #import "CommentTopViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
@@ -47,7 +47,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     //: if (self) {
     if (self) {
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+        //: _avatarImageView = [[DisplayAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
         _avatarImageView = [[MemoryImageControl alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
         //: [_avatarImageView addTarget:self action:@selector(onTouchAvatar:) forControlEvents:UIControlEventTouchUpInside];
         [_avatarImageView addTarget:self action:@selector(doSumTool:) forControlEvents:UIControlEventTouchUpInside];

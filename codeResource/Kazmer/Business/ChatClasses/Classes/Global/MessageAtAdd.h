@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitSetting.h"
+//: #import "DisplayKitSetting.h"
 #import "ManPull.h"
 
-//: @class FFFKitSettings;
+//: @class DisplayKitSettings;
 @class ScalePath;
 //: @class NIMMessage;
 @class NIMMessage;
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 //: };
 };
 
-//: @interface FFFKitConfig : NSObject
+//: @interface DisplayKitConfig : NSObject
 @interface MessageAtAdd : NSObject
 
 
@@ -49,7 +49,7 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  左侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *leftBubbleSettings;
+//: @property (nonatomic, strong) DisplayKitSettings *leftBubbleSettings;
 @property (nonatomic, strong) ScalePath *leftBubbleSettings;
 
 
@@ -120,13 +120,13 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  右侧气泡设置
  */
-//: @property (nonatomic, strong) FFFKitSettings *rightBubbleSettings;
+//: @property (nonatomic, strong) DisplayKitSettings *rightBubbleSettings;
 @property (nonatomic, strong) ScalePath *rightBubbleSettings;
 
 
 /*被回复消息取到配置*/
 
-//: - (FFFKitSetting *)repliedSetting:(NIMMessage *)message;
+//: - (DisplayKitSetting *)repliedSetting:(NIMMessage *)message;
 - (ManPull *)willRemote:(NIMMessage *)message;
 
 //: - (NSArray *)defaultMenuItemsWithMessage:(NIMMessage *)message;
@@ -138,7 +138,7 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 
 /*根据消息取到配置*/
 
-//: - (FFFKitSetting *)setting:(NIMMessage *)message;
+//: - (DisplayKitSetting *)setting:(NIMMessage *)message;
 - (ManPull *)toWith:(NIMMessage *)message;
 
 
@@ -156,7 +156,7 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  组件 UI 设置
  */
-//: @interface FFFKitSettings : NSObject
+//: @interface DisplayKitSettings : NSObject
 @interface ScalePath : NSObject
 
 /**
@@ -165,82 +165,82 @@ typedef NS_ENUM(NSInteger,NIMKitAvatarType) {
 /**
  *  Rtc话单类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *rtcCallRecordSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *rtcCallRecordSetting;
 @property (nonatomic, strong) ManPull *rtcCallRecordSetting;
 
 /**
  *  被回复消息的设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *repliedSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *repliedSetting;
 @property (nonatomic, strong) ManPull *repliedSetting;
 
 /**
  *  聊天室类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *chatroomNotificationSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *chatroomNotificationSetting;
 @property (nonatomic, strong) ManPull *chatroomNotificationSetting;
 
 /**
  *  无法识别类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *unsupportSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *unsupportSetting;
 @property (nonatomic, strong) ManPull *unsupportSetting;
 
 /**
  *  视频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *videoSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *videoSetting;
 @property (nonatomic, strong) ManPull *videoSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *teamNotificationSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *teamNotificationSetting;
 @property (nonatomic, strong) ManPull *teamNotificationSetting;
 
-//: @property (nonatomic, strong) FFFKitSetting *textSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *textSetting;
 @property (nonatomic, strong) ManPull *textSetting;
 
 /**
  *  提示类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *tipSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *tipSetting;
 @property (nonatomic, strong) ManPull *tipSetting;
 
 /**
  *  文件类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *fileSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *fileSetting;
 @property (nonatomic, strong) ManPull *fileSetting;
 
 /**
  *  群组通知类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *superTeamNotificationSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *superTeamNotificationSetting;
 @property (nonatomic, strong) ManPull *superTeamNotificationSetting;
 
 /**
  *  网络电话类型类型通知消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *netcallNotificationSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *netcallNotificationSetting;
 @property (nonatomic, strong) ManPull *netcallNotificationSetting;
 
 /**
  *  音频类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *audioSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *audioSetting;
 @property (nonatomic, strong) ManPull *audioSetting;
 
 /**
  *  图片类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *imageSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *imageSetting;
 @property (nonatomic, strong) ManPull *imageSetting;
 
 /**
  *  地理位置类型消息设置
  */
-//: @property (nonatomic, strong) FFFKitSetting *locationSetting;
+//: @property (nonatomic, strong) DisplayKitSetting *locationSetting;
 @property (nonatomic, strong) ManPull *locationSetting;
 
 

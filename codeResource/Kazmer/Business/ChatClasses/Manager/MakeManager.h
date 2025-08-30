@@ -15,13 +15,13 @@
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFLanguageManager : NSObject
+//: @interface DisplayLanguageManager : NSObject
 @interface MakeManager : NSObject
 //: @property (nonatomic,strong) NSMutableDictionary *langDict;
 @property (nonatomic,strong) NSMutableDictionary *langDict;
 //: + (NSString *)getLocale;
 + (NSString *)enableTeam;
-//: + (FFFLanguageManager *)shareInstance;
+//: + (DisplayLanguageManager *)shareInstance;
 + (MakeManager *)range;
 //: - (void)setLanguagre:(NSString *)langType;
 - (void)setShould:(NSString *)langType;

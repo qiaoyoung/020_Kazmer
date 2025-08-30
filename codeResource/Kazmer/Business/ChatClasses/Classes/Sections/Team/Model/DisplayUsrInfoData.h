@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFUsrInfoData.h
+//  DisplayUsrInfoData.h
 //  NIM
 //
 //  Created by Xuhui on 15/3/19.
@@ -9,16 +9,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "DisplayContactDefines.h"
+#import "DisplayContactDefines.h"
 
-//: @class FFFKitInfo;
+//: @class DisplayKitInfo;
 @class CancelTeamCorner;
 
 //: @interface RiverlaUsrInfo : NSObject <NIMGroupMemberProtocol>
 @interface AddCornerInfo : NSObject <DisplayRow>
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) DisplayKitInfo *info;
 @property (nonatomic,strong) CancelTeamCorner *info;
 
 //: - (BOOL)isFriend;

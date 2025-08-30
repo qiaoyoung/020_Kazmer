@@ -11,20 +11,20 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFInputProtocol.h"
-#import "FFFInputProtocol.h"
-//: #import "FFFSessionConfig.h"
+//: #import "DisplayInputProtocol.h"
+#import "DisplayInputProtocol.h"
+//: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
-//: #import "FFFInputToolBar.h"
+//: #import "DisplayInputToolBar.h"
 #import "ResultCommentView.h"
-//: #import "FFFInputAtCache.h"
+//: #import "DisplayInputAtCache.h"
 #import "LabelSizeImage.h"
 
-//: @class FFFInputMoreContainerView;
+//: @class DisplayInputMoreContainerView;
 @class MaxAtView;
-//: @class FFFInputEmoticonContainerView;
+//: @class DisplayInputEmoticonContainerView;
 @class MakeNameView;
-//: @class FFFReplyContentView;
+//: @class DisplayReplyContentView;
 @class BookView;
 
 
@@ -56,7 +56,7 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @end
 @end
 
-//: @interface FFFInputView : UIView
+//: @interface DisplayInputView : UIView
 @interface ContextInputView : UIView
 
 //: @property (nonatomic, assign) NSInteger maxTextLength;
@@ -65,14 +65,14 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 //: @property (nonatomic, strong) NIMSession *session;
 @property (nonatomic, strong) NIMSession *session;
 
-//: @property (strong, nonatomic) FFFInputMoreContainerView *moreContainer;
+//: @property (strong, nonatomic) DisplayInputMoreContainerView *moreContainer;
 @property (strong, nonatomic) MaxAtView *moreContainer;
 
-//: @property (nonatomic, strong) FFFInputAtCache *atCache;
+//: @property (nonatomic, strong) DisplayInputAtCache *atCache;
 @property (nonatomic, strong) LabelSizeImage *atCache;
 //: @property (assign, nonatomic, getter=isRecording) BOOL recording;
 @property (assign, nonatomic, getter=isRecording) BOOL recording;
-//: @property (nonatomic, strong) FFFReplyContentView *replyedContent;
+//: @property (nonatomic, strong) DisplayReplyContentView *replyedContent;
 @property (nonatomic, strong) BookView *replyedContent;
 
 //: @property (strong, nonatomic) UIView *emoticonContainer;
@@ -80,7 +80,7 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 
 //: @property (nonatomic, assign) NIMInputStatus status;
 @property (nonatomic, assign) NIMInputStatus status;
-//: @property (strong, nonatomic) FFFInputToolBar *toolBar;
+//: @property (strong, nonatomic) DisplayInputToolBar *toolBar;
 @property (strong, nonatomic) ResultCommentView *toolBar;
 
 //: - (void)addAtItems:(NSArray *)contacts;
@@ -92,7 +92,7 @@ typedef NS_ENUM(NSInteger, NIMAudioRecordPhase) {
 
 //: - (instancetype)initWithFrame:(CGRect)frame
 - (instancetype)initWithTing:(CGRect)frame
-                       //: config:(id<FFFSessionConfig>)config;
+                       //: config:(id<DisplaySessionConfig>)config;
                        play:(id<ColorConfig>)config;
 //: - (void)setInputTextPlaceHolder:(NSString*)placeHolder;
 - (void)setLocationApp:(NSString*)placeHolder;

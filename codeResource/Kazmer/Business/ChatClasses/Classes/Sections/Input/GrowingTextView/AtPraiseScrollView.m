@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGrowingTextView.h"
+//: #import "DisplayGrowingTextView.h"
 #import "AtPraiseScrollView.h"
-//: #import "FFFGrowingInternalTextView.h"
+//: #import "DisplayGrowingInternalTextView.h"
 #import "PraiseView.h"
 
-//: @interface FFFGrowingTextView()<UITextViewDelegate>
+//: @interface DisplayGrowingTextView()<UITextViewDelegate>
 @interface AtPraiseScrollView()<UITextViewDelegate>
 
 //: @property (nonatomic,assign) CGFloat maxHeight;
@@ -23,7 +23,7 @@
 //: @property (nonatomic,assign) double previousTextHeight;
 @property (nonatomic,assign) double previousTextHeight;
 
-//: @property (nonatomic,strong) FFFGrowingInternalTextView *textView;
+//: @property (nonatomic,strong) DisplayGrowingInternalTextView *textView;
 @property (nonatomic,strong) PraiseView *textView;
 
 //: @property (nonatomic,assign) CGFloat minHeight;
@@ -35,7 +35,7 @@
 //: @end
 @end
 
-//: @implementation FFFGrowingTextView
+//: @implementation DisplayGrowingTextView
 @implementation AtPraiseScrollView
 
 //: #pragma mark - Override
@@ -338,7 +338,7 @@
     if (self) {
         //: CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
         CGRect rect = CGRectMake(0, 0, frame.size.width, frame.size.height);
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:rect];
+        //: DisplayGrowingInternalTextView *textView = [[DisplayGrowingInternalTextView alloc] initWithFrame:rect];
         PraiseView *textView = [[PraiseView alloc] initWithFrame:rect];
         //: self.textView = textView;
         self.textView = textView;
@@ -420,7 +420,7 @@
     self = [super initWithCoder:aDecoder];
     //: if (self) {
     if (self) {
-        //: FFFGrowingInternalTextView *textView = [[FFFGrowingInternalTextView alloc] initWithFrame:CGRectZero];
+        //: DisplayGrowingInternalTextView *textView = [[DisplayGrowingInternalTextView alloc] initWithFrame:CGRectZero];
         PraiseView *textView = [[PraiseView alloc] initWithFrame:CGRectZero];
         //: self.textView = textView;
         self.textView = textView;
@@ -477,7 +477,7 @@
 
 
 
-//: @implementation FFFGrowingTextView(TextView)
+//: @implementation DisplayGrowingTextView(TextView)
 @implementation AtPraiseScrollView(TextView)
 
 //: - (NSRange)selectedRange

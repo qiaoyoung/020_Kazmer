@@ -80,8 +80,8 @@
 #import "USERSubscribeDefine.h"
 //: #import "USERDevice.h"
 #import "SizePage.h"
-//: #import "FFFExtensionHelper.h"
-#import "FFFExtensionHelper.h"
+//: #import "DisplayExtensionHelper.h"
+#import "DisplayExtensionHelper.h"
 
 //: NSString *const USERSubscribeNetState = @"net_state";
 

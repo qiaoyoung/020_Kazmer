@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFCommonTableDelegate : NSObject<UITableViewDataSource,UITableViewDelegate>
+//: @interface DisplayCommonTableDelegate : NSObject<UITableViewDataSource,UITableViewDelegate>
 @interface TeamMake : NSObject<UITableViewDataSource,UITableViewDelegate>
 
 //: - (instancetype) initWithTableData:(NSArray *(^)(void))data;

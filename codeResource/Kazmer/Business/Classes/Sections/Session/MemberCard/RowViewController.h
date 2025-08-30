@@ -11,11 +11,11 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamCardMemberItem.h"
+//: #import "DisplayTeamCardMemberItem.h"
 #import "IndexItem.h"
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "DisplayTeamMemberListDataSource.h"
 #import "AccountSource.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "DisplayTeamListDataManager.h"
 #import "MentionManager.h"
 
 //: @protocol NIMTeamMemberCardActionDelegate <NSObject>
@@ -23,15 +23,15 @@
 //: @optional
 @optional
 
-//: - (void)onTeamMemberMuted:(FFFTeamCardMemberItem *)member mute:(BOOL)mute;
+//: - (void)onTeamMemberMuted:(DisplayTeamCardMemberItem *)member mute:(BOOL)mute;
 - (void)tool:(IndexItem *)member pictureMute:(BOOL)mute;
-//: - (void)onTeamMemberKicked:(FFFTeamCardMemberItem *)member;
+//: - (void)onTeamMemberKicked:(DisplayTeamCardMemberItem *)member;
 - (void)mustKicked:(IndexItem *)member;
 
 //: @end
 @end
 
-//: @interface FFFTeamMemberCardViewController : UIViewController
+//: @interface DisplayTeamMemberCardViewController : UIViewController
 @interface RowViewController : UIViewController
 
 //: @property (nonatomic, strong) NSString *memberId;
@@ -41,7 +41,7 @@
 @property (nonatomic, strong) NIMTeamMember *member;
 //: @property (nonatomic, strong) id<NIMTeamMemberCardActionDelegate> delegate;
 @property (nonatomic, strong) id<ActionDelegate> delegate;
-//: @property (nonatomic, strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic, strong) DisplayTeamListDataManager *teamListManager;
 @property (nonatomic, strong) MentionManager *teamListManager;
 
 //: @end

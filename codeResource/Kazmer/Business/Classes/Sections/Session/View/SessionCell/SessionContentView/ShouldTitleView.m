@@ -47,7 +47,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(DisplayMessageModel *)data
 - (void)from:(CleanDoing *)data
 {
     //: [super refresh:data];

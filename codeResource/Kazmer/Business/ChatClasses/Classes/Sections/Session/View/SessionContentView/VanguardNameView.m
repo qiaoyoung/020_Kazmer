@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNotificationContentView.h"
+//: #import "DisplaySessionNotificationContentView.h"
 #import "VanguardNameView.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @implementation FFFSessionNotificationContentView
+//: @implementation DisplaySessionNotificationContentView
 @implementation VanguardNameView
 
 //: - (instancetype)initSessionMessageContentView
@@ -41,14 +41,14 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model
+//: - (void)refresh:(DisplayMessageModel *)model
 - (void)from:(CleanDoing *)model
 {
     //: [super refresh:model];
     [super from:model];
-    //: self.label.text = [FFFKitUtil messageTipContent:model.message];
+    //: self.label.text = [DisplayKitUtil messageTipContent:model.message];
     self.label.text = [AtPull view:model.message];
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config setting:model.message];
     ManPull *setting = [[Mortification text].config toWith:model.message];
 
     //: self.label.textColor = setting.textColor;

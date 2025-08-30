@@ -209,7 +209,7 @@
     labtitle.textColor = [UIColor cell:[FrameDenseData kNameChickText]];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"my_log"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"my_log"];
     labtitle.text = [MakeManager cell:[FrameDenseData kNameViewButData]];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];
@@ -358,7 +358,7 @@
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [DisplayLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [MakeManager cell:[FrameDenseData kTitleTapThoughText]];
     }
     //: return _defView;

@@ -18,7 +18,7 @@
 //: - (NSString *)groupTitle;
 - (NSString *)album;
 //: - (NSString *)memberId;
-- (NSString *)corner;
+- (NSString *)littleLeagueTeam;
 //: - (id)sortKey;
 - (id)shank;
 

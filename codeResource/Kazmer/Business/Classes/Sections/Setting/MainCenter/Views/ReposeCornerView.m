@@ -203,7 +203,7 @@ Byte kNameViolenceValue[] = {44, 7, 20, 14, 234, 164, 109, 208, 102, 21, 203, 13
 //    self.box.frame = CGRectMake(0, SCREEN_HEIGHT-210, SCREEN_WIDTH, 210);
     //: if (!self.titleLabel.text.length) {
     if (!self.titleLabel.text.length) {
-        //: [self makeToast:[FFFLanguageManager getTextWithKey:@"set_nick_activity_input"] duration:2.0 position:CSToastPositionCenter];
+        //: [self makeToast:[DisplayLanguageManager getTextWithKey:@"set_nick_activity_input"] duration:2.0 position:CSToastPositionCenter];
         [self makeToast:[MakeManager cell:StringFromNewData(kText_frameString)] duration:2.0 position:CSToastPositionCenter];
         //: return;
         return;
@@ -219,7 +219,7 @@ Byte kNameViolenceValue[] = {44, 7, 20, 14, 234, 164, 109, 208, 102, 21, 203, 13
         [SVProgressHUD dismiss];
         //: if (!error) {
         if (!error) {
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [wself makeToast:[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [wself makeToast:[MakeManager cell:StringFromNewData(kText_intelligenceContent)]
                          //: duration:2
                          duration:2
@@ -231,7 +231,7 @@ Byte kNameViolenceValue[] = {44, 7, 20, 14, 234, 164, 109, 208, 102, 21, 203, 13
 
         //: }else{
         }else{
-            //: [wself makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself makeToast:[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself makeToast:[MakeManager cell:StringFromNewData(kNameEndContent)]
                          //: duration:2
                          duration:2
@@ -259,7 +259,7 @@ Byte kNameViolenceValue[] = {44, 7, 20, 14, 234, 164, 109, 208, 102, 21, 203, 13
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:StringFromNewData(kTitle_viewValue)] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:StringFromNewData(kContent_endSunlightTitle)] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -301,7 +301,7 @@ Byte kNameViolenceValue[] = {44, 7, 20, 14, 234, 164, 109, 208, 102, 21, 203, 13
 //: - (void)reloadWithNickname:(NSString *)nickname
 - (void)insert:(NSString *)nickname
 {
-    //: self.titleLabel.text = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+    //: self.titleLabel.text = [DisplayLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
     self.titleLabel.text = [MakeManager cell:StringFromNewData(kText_intelligenceString)];
     //: self.searchField.text = nickname;
     self.searchField.text = nickname;
@@ -332,7 +332,7 @@ Byte kNameViolenceValue[] = {44, 7, 20, 14, 234, 164, 109, 208, 102, 21, 203, 13
 
         //: _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
         _searchField = [[UITextField alloc]initWithFrame:CGRectMake(15, 6, [[UIScreen mainScreen] bounds].size.width-80-30, 40)];
-        //: _searchField.placeholder = [FFFLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
+        //: _searchField.placeholder = [DisplayLanguageManager getTextWithKey:@"activity_my_user_info_nick"];
         _searchField.placeholder = [MakeManager cell:StringFromNewData(kText_intelligenceString)];
         //: _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
         _searchField.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1];
@@ -360,7 +360,7 @@ Byte kNameViolenceValue[] = {44, 7, 20, 14, 234, 164, 109, 208, 102, 21, 203, 13
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:16];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"user_info_avtivity_keep"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:StringFromNewData(kName_scienceString)] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor cell:StringFromNewData(kNameViolenceValue)];

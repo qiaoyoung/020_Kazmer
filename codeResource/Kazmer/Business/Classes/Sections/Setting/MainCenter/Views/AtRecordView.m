@@ -37,7 +37,7 @@ typedef struct {
     return kContent_chickStopString;
 }
 
-//: #ffffff
+//: #fffDisplay
 + (NSString *)kTitle_onItemValue {
     /* static */ NSString *kTitle_onItemValue = nil;
     if (!kTitle_onItemValue) {
@@ -194,7 +194,7 @@ typedef struct {
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor cell:[StudData kTitleViewVitaminString]];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: lab.text = [DisplayLanguageManager getTextWithKey:@"message_send_album"];
         lab.text = [MakeManager cell:[StudData kText_recordData]];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -244,7 +244,7 @@ typedef struct {
 
     //: _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
     _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-278, [[UIScreen mainScreen] bounds].size.width, 278)];
-    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
     _viewBg.backgroundColor = [UIColor cell:[StudData kTitle_onItemValue]];
     //: _viewBg.layer.masksToBounds = YES;
     _viewBg.layer.masksToBounds = YES;
@@ -338,7 +338,7 @@ typedef struct {
         lab.font = [UIFont systemFontOfSize:14];
         //: lab.textColor = [UIColor colorWithHexString:@"#000000"];
         lab.textColor = [UIColor cell:[StudData kTitleViewVitaminString]];
-        //: lab.text = [FFFLanguageManager getTextWithKey:@"message_send_camera"];
+        //: lab.text = [DisplayLanguageManager getTextWithKey:@"message_send_camera"];
         lab.text = [MakeManager cell:[StudData kText_foreignerValue]];
         //: lab.textAlignment = NSTextAlignmentCenter;
         lab.textAlignment = NSTextAlignmentCenter;
@@ -369,9 +369,9 @@ typedef struct {
         _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_cancelBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_cancelBtn setTitleColor:[UIColor cell:[StudData kName_imageShowTitle]] forState:UIControlStateNormal];
-        //: [_cancelBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_cancelBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_cancelBtn setTitle:[MakeManager cell:[StudData kTitleSunlightString]] forState:UIControlStateNormal];
-        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        //: _cancelBtn.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
         _cancelBtn.backgroundColor = [UIColor cell:[StudData kTitle_onItemValue]];
         //: _cancelBtn.layer.cornerRadius = 22;
         _cancelBtn.layer.cornerRadius = 22;

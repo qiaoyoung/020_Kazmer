@@ -37,7 +37,7 @@
     return [NSString stringWithUTF8String:(char *)[self StemDataToCache:data]];
 }
 
-//: #ffffff
+//: #fffDisplay
 + (NSString *)kName_grayTribeValue {
     /* static */ NSString *kName_grayTribeValue = nil;
     if (!kName_grayTribeValue) {
@@ -246,7 +246,7 @@
 
     //: _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-_minHeight, [[UIScreen mainScreen] bounds].size.width, _minHeight)];
     _viewBg = [[UIView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-_minHeight, [[UIScreen mainScreen] bounds].size.width, _minHeight)];
-    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+    //: _viewBg.backgroundColor = [UIColor colorWithHexString:@"#fffDisplay"];
     _viewBg.backgroundColor = [UIColor cell:[StemData kName_grayTribeValue]];
     //: _viewBg.layer.masksToBounds = YES;
     _viewBg.layer.masksToBounds = YES;
@@ -307,7 +307,7 @@
         _confirmButton = [UIButton buttonWithType:UIButtonTypeSystem];
         //: _confirmButton.layer.cornerRadius = 24;
         _confirmButton.layer.cornerRadius = 24;
-        //: [_confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+        //: [_confirmButton setTitle:[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
         [_confirmButton setTitle:[MakeManager cell:[StemData kNameThoughValue]] forState:UIControlStateNormal];
         //: [_confirmButton addTarget:self action:@selector(confirmButtonTapped) forControlEvents:UIControlEventTouchUpInside];
         [_confirmButton addTarget:self action:@selector(buttonWill) forControlEvents:UIControlEventTouchUpInside];
@@ -331,7 +331,7 @@
     //: NSLog(@"选择了 %lu 张图片", (unsigned long)assets.count);
     //: self.selectedPhoto = assets;
     self.selectedPhoto = assets;
-    //: [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
+    //: [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_send"],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
     [self.confirmButton setTitle:[NSString stringWithFormat:@"%@(%lu)",[MakeManager cell:[StemData kNameThoughValue]],(unsigned long)self.selectedPhoto.count] forState:UIControlStateNormal];
 }
 

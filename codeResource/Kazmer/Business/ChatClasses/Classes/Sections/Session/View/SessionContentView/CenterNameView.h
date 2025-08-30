@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFSessionRtcCallRecordContentView : FFFSessionMessageContentView
+//: @interface DisplaySessionRtcCallRecordContentView : DisplaySessionMessageContentView
 @interface CenterNameView : WithTopView
 
 //: @property (nonatomic, strong) UILabel *textLabel;

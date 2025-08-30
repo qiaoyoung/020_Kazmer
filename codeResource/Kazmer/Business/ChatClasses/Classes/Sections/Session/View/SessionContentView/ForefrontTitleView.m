@@ -227,22 +227,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionAudioContentView.h"
+//: #import "DisplaySessionAudioContentView.h"
 #import "ForefrontTitleView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFKitAudioCenter.h"
+//: #import "DisplayKitAudioCenter.h"
 #import "CommixCenter.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 //: #import "UIColor+MyUserKit.h"
 #import "UIColor+Mortification.h"
 
-//: @interface FFFSessionAudioContentView()<NIMMediaManagerDelegate>
+//: @interface DisplaySessionAudioContentView()<NIMMediaManagerDelegate>
 @interface ForefrontTitleView()<NIMMediaManagerDelegate>
 
 //: @property (nonatomic,strong) UIImageView *voiceImageView;
@@ -261,7 +261,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionAudioContentView
+//: @implementation DisplaySessionAudioContentView
 @implementation ForefrontTitleView
 
 //: -(instancetype)initSessionMessageContentView{
@@ -396,7 +396,7 @@
 
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(DisplayMessageModel *)data {
 - (void)from:(CleanDoing *)data {
     //: [super refresh:data];
     [super from:data];
@@ -405,7 +405,7 @@
     //: self.durationLabel.text = [NSString stringWithFormat:@"%zd\"",(NSInteger)((object.duration+500)/1000)];
     self.durationLabel.text = [NSString stringWithFormat:@"%zd\"",(NSInteger)((object.duration+500)/1000)];//四舍五入
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ManPull *setting = [[Mortification text].config toWith:data.message];
 
     //: self.durationLabel.font = setting.font;
@@ -421,7 +421,7 @@
     [self transparencyDistance:data];
 }
 
-//: - (void)refreshBackground:(FFFMessageModel *)data
+//: - (void)refreshBackground:(DisplayMessageModel *)data
 - (void)transparencyDistance:(CleanDoing *)data
 {
     //: if (data.shouldShowLeft)
@@ -459,8 +459,8 @@
     UIEdgeInsets contentInsets = self.model.contentViewInsets;
     //: switch (self.layoutStyle) {
     switch (self.layoutStyle) {
-        //: case FFFSessionMessageContentViewLayoutLeft: {
-        case FFFSessionMessageContentViewLayoutLeft: {
+        //: case DisplaySessionMessageContentViewLayoutLeft: {
+        case DisplaySessionMessageContentViewLayoutLeft: {
 //            _voiceImageView.transform = CGAffineTransformIdentity;
 //            self.voiceImageView.left = contentInsets.left * 2;
             //: self.voiceImageViewleft.left = contentInsets.left * 2;
@@ -470,8 +470,8 @@
             //: break;
             break;
         }
-        //: case FFFSessionMessageContentViewLayoutRight: {
-        case FFFSessionMessageContentViewLayoutRight: {
+        //: case DisplaySessionMessageContentViewLayoutRight: {
+        case DisplaySessionMessageContentViewLayoutRight: {
 //            _voiceImageView.transform = CGAffineTransformMakeRotation(M_PI);
             //: self.voiceImageView.right = self.width - contentInsets.right * 2;
             self.voiceImageView.right = self.width - contentInsets.right * 2;
@@ -480,8 +480,8 @@
             //: break;
             break;
         }
-        //: case FFFSessionMessageContentViewLayoutAuto:
-        case FFFSessionMessageContentViewLayoutAuto:
+        //: case DisplaySessionMessageContentViewLayoutAuto:
+        case DisplaySessionMessageContentViewLayoutAuto:
         //: default:
         default:
         {
@@ -550,8 +550,8 @@
     CGFloat backgroundLeft = 0;
     //: switch (self.layoutStyle) {
     switch (self.layoutStyle) {
-        //: case FFFSessionMessageContentViewLayoutLeft:
-        case FFFSessionMessageContentViewLayoutLeft:
+        //: case DisplaySessionMessageContentViewLayoutLeft:
+        case DisplaySessionMessageContentViewLayoutLeft:
             {
                 //: backgroundWidth = self.width - contentInsets.left * .5f - 2;
                 backgroundWidth = self.width - contentInsets.left * .5f - 2;
@@ -560,8 +560,8 @@
             }
             //: break;
             break;
-        //: case FFFSessionMessageContentViewLayoutRight:
-        case FFFSessionMessageContentViewLayoutRight:
+        //: case DisplaySessionMessageContentViewLayoutRight:
+        case DisplaySessionMessageContentViewLayoutRight:
             {
                 //: backgroundWidth = self.width - 2 - contentInsets.right * .5f;
                 backgroundWidth = self.width - 2 - contentInsets.right * .5f;
@@ -623,9 +623,9 @@
             [self page];
         }
 
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
         ToiletKitSession *event = [[ToiletKitSession alloc] init];
-        //: event.eventName = FFFKitEventNameTapAudio;
+        //: event.eventName = DisplayKitEventNameTapAudio;
         event.eventName = app_successDoingceMsg;
         //: event.messageModel = self.model;
         event.messageModel = self.model;
@@ -676,7 +676,7 @@
 //: - (BOOL)isPlaying
 - (BOOL)rewrite
 {
-    //: BOOL play = [FFFKitAudioCenter instance].currentPlayingMessage == self.model.message; 
+    //: BOOL play = [DisplayKitAudioCenter instance].currentPlayingMessage == self.model.message; 
     BOOL play = [CommixCenter emptyDataTeam].currentPlayingMessage == self.model.message; //对比是否是同一条消息，严格同一条，不能是相同ID，防止进了会话又进云端消息界面，导致同一个ID的云消息也在动画
     //: return play;
     return play;

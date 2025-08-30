@@ -789,7 +789,7 @@
 //        [SVProgressHUD dismiss];
         //: [self.loadingView animationClose];
         [self.loadingView ingatheringBy];
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
+        //: [SVProgressHUD showMessage:[DisplayLanguageManager getTextWithKey:@"group_info_activity_op_failed"]];
         [SVProgressHUD firstTeam:[MakeManager cell:[[TrussBridgeData sharedInstance] kNameValueData]]];
     //: }];
     }];
@@ -1034,7 +1034,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"feedback_activity_title"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"feedback_activity_title"];
     labtitle.text = [MakeManager cell:[[TrussBridgeData sharedInstance] kContent_colorCellValue]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -1054,7 +1054,7 @@
 
     //: _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(15, 15, [[UIScreen mainScreen] bounds].size.width-60, 230)];
-    //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"report_info"];
+    //: _textView.placeholder = [DisplayLanguageManager getTextWithKey:@"report_info"];
     _textView.placeholder = [MakeManager cell:[[TrussBridgeData sharedInstance] kContent_tapValue]];//@"请输入您的举报信息";
     //: _textView.backgroundColor = [UIColor whiteColor];
     _textView.backgroundColor = [UIColor whiteColor];
@@ -1077,7 +1077,7 @@
     lab.font = [UIFont systemFontOfSize:16.f];
     //: lab.textColor = [UIColor colorWithHexString:@"#2C3042"];
     lab.textColor = [UIColor cell:[[TrussBridgeData sharedInstance] kTitleEndStepValue]];
-    //: lab.text = [FFFLanguageManager getTextWithKey:@"upload_picture"];
+    //: lab.text = [DisplayLanguageManager getTextWithKey:@"upload_picture"];
     lab.text = [MakeManager cell:[[TrussBridgeData sharedInstance] kText_retireName]];
     //: [self.view addSubview:lab];
     [self.view addSubview:lab];
@@ -1107,7 +1107,7 @@
     submitButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+    //: [submitButton setTitle:[DisplayLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
     [submitButton setTitle:[MakeManager cell:[[TrussBridgeData sharedInstance] kName_viewData]] forState:UIControlStateNormal];
     //: submitButton.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
     submitButton.backgroundColor = [UIColor cell:[[TrussBridgeData sharedInstance] kTitleData]];

@@ -83,18 +83,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFNotificationContentConfig.h"
+//: #import "DisplayNotificationContentConfig.h"
 #import "ManDisplay.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "DisplayUnsupportContentConfig.h"
 #import "PersonMessage.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @implementation FFFNotificationContentConfig
+//: @implementation DisplayNotificationContentConfig
 @implementation ManDisplay
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)step:(CGFloat)cellWidth menu:(NIMMessage *)message
@@ -120,7 +120,7 @@
             CGFloat TeamNotificationMessageWidth = cellWidth;
             //: UILabel *label = [[UILabel alloc] init];
             UILabel *label = [[UILabel alloc] init];
-            //: label.text = [FFFKitUtil messageTipContent:message];
+            //: label.text = [DisplayKitUtil messageTipContent:message];
             label.text = [AtPull view:message];
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[Mortification text].config toWith:message].font;
@@ -145,7 +145,7 @@
             label.autoDetectLinks = NO;
             //: label.font = [[MyUserKit sharedKit].config setting:message].font;
             label.font = [[Mortification text].config toWith:message].font;
-            //: NSString *text = [FFFKitUtil messageTipContent:message];
+            //: NSString *text = [DisplayKitUtil messageTipContent:message];
             NSString *text = [AtPull view:message];
             //: [label nim_setText:text];
             [label deleteVoice:text];
@@ -166,7 +166,7 @@
         //: default:
         default:
         {
-            //: FFFUnsupportContentConfig *config = [[FFFUnsupportContentConfig alloc] init];
+            //: DisplayUnsupportContentConfig *config = [[DisplayUnsupportContentConfig alloc] init];
             PersonMessage *config = [[PersonMessage alloc] init];
             //: contentSize = [config contentSize:cellWidth message:message];
             contentSize = [config step:cellWidth menu:message];
@@ -196,15 +196,15 @@
         case NIMNotificationTypeSuperTeam:
         //: case NIMNotificationTypeChatroom:
         case NIMNotificationTypeChatroom:
-            //: return @"FFFSessionNotificationContentView";
+            //: return @"DisplaySessionNotificationContentView";
             return @"VanguardNameView";
         //: case NIMNotificationTypeNetCall:
         case NIMNotificationTypeNetCall:
-            //: return @"FFFSessionNetChatNotifyContentView";
+            //: return @"DisplaySessionNetChatNotifyContentView";
             return @"OnReplyView";
         //: case NIMNotificationTypeUnsupport:
         case NIMNotificationTypeUnsupport:
-            //: return @"FFFSessionUnknowContentView";
+            //: return @"DisplaySessionUnknowContentView";
             return @"ViewControl";
         //: default:
         default:

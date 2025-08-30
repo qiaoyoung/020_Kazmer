@@ -61,11 +61,11 @@
 // __M_A_C_R_O__
 //: #import "USERMergeMessageCell.h"
 #import "AddMessageCell.h"
-//: #import "FFFBadgeView.h"
+//: #import "DisplayBadgeView.h"
 #import "CenterStandardView.h"
-//: #import "FFFSessionTextContentView.h"
+//: #import "DisplaySessionTextContentView.h"
 #import "ToControl.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "M80AttributedLabel.h"
 #import "LabelNameScrollView.h"
@@ -169,7 +169,7 @@
     return _timeLab;
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data {
+//: - (void)refreshData:(DisplayMessageModel *)data {
 - (void)pin:(CleanDoing *)data {
     //: [super refreshData:data];
     [super pin:data];
@@ -188,8 +188,8 @@
         //: _timeLab.text = timeInfo ?: @"00:00";
         _timeLab.text = timeInfo ?: [ShallowData kName_basementData];
 
-        //: self.bubbleView.layoutStyle = FFFSessionMessageContentViewLayoutLeft;
-        self.bubbleView.layoutStyle = FFFSessionMessageContentViewLayoutLeft;
+        //: self.bubbleView.layoutStyle = DisplaySessionMessageContentViewLayoutLeft;
+        self.bubbleView.layoutStyle = DisplaySessionMessageContentViewLayoutLeft;
     }
 
     //: self.bubbleView.bubbleImageView.hidden = YES;
@@ -201,9 +201,9 @@
 
     //: id bubbleView = self.bubbleView;
     id bubbleView = self.bubbleView;
-    //: if ([bubbleView isKindOfClass:[FFFSessionTextContentView class]]) {
+    //: if ([bubbleView isKindOfClass:[DisplaySessionTextContentView class]]) {
     if ([bubbleView isKindOfClass:[ToControl class]]) {
-        //: ((FFFSessionTextContentView *)bubbleView).textView.textColor = [UIColor blackColor];
+        //: ((DisplaySessionTextContentView *)bubbleView).textView.textColor = [UIColor blackColor];
         ((ToControl *)bubbleView).textView.textColor = [UIColor blackColor];
     }
 }

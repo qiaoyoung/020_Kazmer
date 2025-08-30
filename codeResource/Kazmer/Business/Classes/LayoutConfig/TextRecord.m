@@ -86,8 +86,8 @@
 #import "TextRecord.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 
 //: @interface USERChatroomTextContentConfig()
 @interface TextRecord()

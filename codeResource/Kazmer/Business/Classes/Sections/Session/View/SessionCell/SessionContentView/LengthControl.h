@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNotificationContentView.h"
+//: #import "DisplaySessionNotificationContentView.h"
 #import "VanguardNameView.h"
 
-//: @interface USERSessionTipContentView : FFFSessionMessageContentView
+//: @interface USERSessionTipContentView : DisplaySessionMessageContentView
 @interface LengthControl : WithTopView
 
 //: @property (nonatomic,strong) UILabel *label;

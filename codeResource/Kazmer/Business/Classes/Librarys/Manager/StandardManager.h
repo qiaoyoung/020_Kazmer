@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFLoginViewController.h"
+//: #import "DisplayLoginViewController.h"
 #import "PageViewController.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface StandardManager : NSObject
 //: @property (nonatomic ,strong) NSMutableDictionary *registDict;
 @property (nonatomic ,strong) NSMutableDictionary *registDict;
-//: @property (nonatomic ,strong) FFFLoginViewController *loginVC;
+//: @property (nonatomic ,strong) DisplayLoginViewController *loginVC;
 @property (nonatomic ,strong) PageViewController *loginVC;
 //: @property (nonatomic ,strong) UIImage *headerImage;
 @property (nonatomic ,strong) UIImage *headerImage;

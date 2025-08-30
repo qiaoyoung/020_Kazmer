@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCommonTableDelegate.h"
+//: #import "DisplayCommonTableDelegate.h"
 #import "TeamMake.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
-//: #import "FFFCommonTableViewCell.h"
+//: #import "DisplayCommonTableData.h"
+#import "DisplayCommonTableData.h"
+//: #import "DisplayCommonTableViewCell.h"
 #import "ImageCell.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 
 //: static NSString *DefaultTableCell = @"UITableViewCell";
 static NSString *dream_kitEventName = @"UITableViewCell";
 
-//: @interface FFFCommonTableDelegate()
+//: @interface DisplayCommonTableDelegate()
 @interface TeamMake()
 
 //: @property (nonatomic,copy) NSArray *(^USERDataReceiver)(void);
@@ -32,7 +32,7 @@ static NSString *dream_kitEventName = @"UITableViewCell";
 //: @end
 @end
 
-//: @implementation FFFCommonTableDelegate
+//: @implementation DisplayCommonTableDelegate
 @implementation TeamMake
 
 //: #pragma mark - Private
@@ -80,7 +80,7 @@ static NSString *dream_kitEventName = @"UITableViewCell";
         [self key:tableRow oldMedia_strong:defaultCell];
     //: }else{
     }else{
-        //: [(id<FFFCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
+        //: [(id<DisplayCommonTableViewCell>)cell refreshData:tableRow tableView:tableView];
         [(id<ImageCell>)cell characterize:tableRow cuttingEdge:tableView];
     }
     //: cell.accessoryType = tableRow.showAccessory ? UITableViewCellAccessoryDisclosureIndicator : UITableViewCellAccessoryNone;

@@ -31,7 +31,7 @@
 
 
 
-//: @interface FFFCollectionViewLeftAlignedLayout : UICollectionViewFlowLayout
+//: @interface DisplayCollectionViewLeftAlignedLayout : UICollectionViewFlowLayout
 @interface TagCellViewLayout : UICollectionViewFlowLayout
 
 //: @end

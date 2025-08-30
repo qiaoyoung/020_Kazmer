@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
 
 //: @class M80AttributedLabel;
 @class LabelNameScrollView;
 
-//: @interface FFFSessionTextContentView : FFFSessionMessageContentView
+//: @interface DisplaySessionTextContentView : DisplaySessionMessageContentView
 @interface ToControl : WithTopView
 
 //: @property (nonatomic, strong) M80AttributedLabel *textView;

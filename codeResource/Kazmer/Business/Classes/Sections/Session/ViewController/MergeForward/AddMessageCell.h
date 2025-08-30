@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAdvancedMessageCell.h"
+//: #import "DisplayAdvancedMessageCell.h"
 #import "WithMessageCell.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface USERMergeMessageCell : FFFAdvancedMessageCell
+//: @interface USERMergeMessageCell : DisplayAdvancedMessageCell
 @interface AddMessageCell : WithMessageCell
 
 //: @end

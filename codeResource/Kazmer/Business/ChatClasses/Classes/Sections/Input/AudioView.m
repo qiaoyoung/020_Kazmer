@@ -134,14 +134,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputAudioView.h"
+//: #import "DisplayInputAudioView.h"
 #import "AudioView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
 
-//: @interface FFFInputAudioView()
+//: @interface DisplayInputAudioView()
 @interface AudioView()
 
 //: @property (nonatomic,strong) UIView *audioBgview;
@@ -164,7 +164,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputAudioView
+//: @implementation DisplayInputAudioView
 @implementation AudioView
 
 
@@ -213,7 +213,7 @@
         _delLabel.textAlignment = NSTextAlignmentCenter;
         //: _delLabel.hidden = YES;
         _delLabel.hidden = YES;
-        //: _delLabel.text = [FFFLanguageManager getTextWithKey:@"Releasetocancel"];
+        //: _delLabel.text = [DisplayLanguageManager getTextWithKey:@"Releasetocancel"];
         _delLabel.text = [MakeManager cell:[ButDeployData sharedInstance].kName_painfulAnkleData];
         //: [_audioBgview addSubview:_delLabel];
         [_audioBgview addSubview:_delLabel];
@@ -232,7 +232,7 @@
         //: _tipLabel.textAlignment = NSTextAlignmentCenter;
         _tipLabel.textAlignment = NSTextAlignmentCenter;
 //        _tipLabel.text = @"手指上滑，取消发送".nim_localized;
-        //: _tipLabel.text = [FFFLanguageManager getTextWithKey:@"Releasetosend_swipeuptocancel"];
+        //: _tipLabel.text = [DisplayLanguageManager getTextWithKey:@"Releasetosend_swipeuptocancel"];
         _tipLabel.text = [MakeManager cell:[ButDeployData sharedInstance].kContent_outfitString];
         //: [_audioBgview addSubview:_tipLabel];
         [_audioBgview addSubview:_tipLabel];
@@ -447,7 +447,7 @@
     }
 }
 
-//: - (void)setConfig:(id<FFFSessionConfig>)config
+//: - (void)setConfig:(id<DisplaySessionConfig>)config
 - (void)setConfig:(id<ColorConfig>)config
 {
     //: _config = config;

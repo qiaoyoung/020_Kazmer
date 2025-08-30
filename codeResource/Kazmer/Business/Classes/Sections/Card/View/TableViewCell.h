@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "DisplayCommonTableViewCell.h"
 #import "ImageCell.h"
 
-//: @interface USERCardPortraitCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface USERCardPortraitCell : UITableViewCell<DisplayCommonTableViewCell>
 @interface TableViewCell : UITableViewCell<ImageCell>
 
 //: @end

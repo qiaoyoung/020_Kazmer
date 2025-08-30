@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "DisplayKitKeyboardInfo.h"
 #import "RedInfo.h"
 
 //: NSNotificationName const NIMKitKeyboardWillChangeFrameNotification = @"NIMKitKeyboardWillChangeFrameNotification";
@@ -17,7 +17,7 @@ NSNotificationName const dreamPassData = @"NIMKitKeyboardWillChangeFrameNotifica
 //: NSNotificationName const NIMKitKeyboardWillHideNotification = @"NIMKitKeyboardWillHideNotification";
 NSNotificationName const mRootStr = @"NIMKitKeyboardWillHideNotification";
 
-//: @implementation FFFKitKeyboardInfo
+//: @implementation DisplayKitKeyboardInfo
 @implementation RedInfo
 
 //: @synthesize keyboardHeight = _keyboardHeight;
@@ -26,13 +26,13 @@ NSNotificationName const mRootStr = @"NIMKitKeyboardWillHideNotification";
 //: + (instancetype)instance
 + (instancetype)parent
 {
-    //: static FFFKitKeyboardInfo *instance;
+    //: static DisplayKitKeyboardInfo *instance;
     static RedInfo *instance;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitKeyboardInfo alloc] init];
+        //: instance = [[DisplayKitKeyboardInfo alloc] init];
         instance = [[RedInfo alloc] init];
     //: });
     });

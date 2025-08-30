@@ -94,7 +94,7 @@
     return kTitle_seatSureData;
 }
 
-//: ffffff
+//: fffDisplay
 + (NSString *)kTitle_ampleValue {
     /* static */ NSString *kTitle_ampleValue = nil;
     if (!kTitle_ampleValue) {
@@ -239,38 +239,38 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageCell.h"
+//: #import "DisplayMessageCell.h"
 #import "IndoorsView.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
-//: #import "FFFBadgeView.h"
+//: #import "DisplayBadgeView.h"
 #import "CenterStandardView.h"
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
-//: #import "FFFSessionAudioContentView.h"
+//: #import "DisplaySessionAudioContentView.h"
 #import "ForefrontTitleView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
 //: #import "M80AttributedLabel.h"
 #import "LabelNameScrollView.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFSessionUnknowContentView.h"
+//: #import "DisplaySessionUnknowContentView.h"
 #import "ViewControl.h"
-//: #import "FFFKitConfig.h"
+//: #import "DisplayKitConfig.h"
 #import "MessageAtAdd.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFSessionTextContentView.h"
+//: #import "DisplaySessionTextContentView.h"
 #import "ToControl.h"
 
-//: @interface FFFMessageCell()<NIMPlayAudioUIDelegate,NIMMessageContentViewDelegate>
+//: @interface DisplayMessageCell()<NIMPlayAudioUIDelegate,NIMMessageContentViewDelegate>
 @interface IndoorsView()<TextUidelegate,TranslateDelegate>
 {
     //: UILongPressGestureRecognizer *_longPressGesture;
@@ -279,7 +279,7 @@
     UIMenuController *_menuController;
 }
 
-//: @property (nonatomic,strong) FFFMessageModel *model;
+//: @property (nonatomic,strong) DisplayMessageModel *model;
 @property (nonatomic,strong) CleanDoing *model;
 
 //: @property (nonatomic,copy) NSArray *customViews;
@@ -290,7 +290,7 @@
 
 
 
-//: @implementation FFFMessageCell
+//: @implementation DisplayMessageCell
 @implementation IndoorsView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -353,7 +353,7 @@
     [self.contentView addSubview:_retryButton];
 
     //audioPlayedIcon
-    //: _audioPlayedIcon = [FFFBadgeView viewWithBadgeTip:@""];
+    //: _audioPlayedIcon = [DisplayBadgeView viewWithBadgeTip:@""];
     _audioPlayedIcon = [CenterStandardView streetSmart:@""];
 //    _audioPlayedIcon.badgeBackgroundColor = RGB_COLOR_String(@"#612CF9");
 //    [self.contentView addSubview:_audioPlayedIcon];
@@ -365,7 +365,7 @@
     [self.contentView addSubview:_traningActivityIndicator];
 
     //headerView
-    //: _headImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
+    //: _headImageView = [[DisplayAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
     _headImageView = [[MemoryImageControl alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
     //: [_headImageView addTarget:self action:@selector(onTapAvatar:) forControlEvents:UIControlEventTouchUpInside];
     [_headImageView addTarget:self action:@selector(changes:) forControlEvents:UIControlEventTouchUpInside];
@@ -457,7 +457,7 @@
     [self addGestureRecognizer:_longPressGesture];
 }
 
-//: - (void)refreshData:(FFFMessageModel *)data
+//: - (void)refreshData:(DisplayMessageModel *)data
 - (void)pin:(CleanDoing *)data
 {
     //: self.model = data;
@@ -474,7 +474,7 @@
 
 //: - (BOOL)checkData{
 - (BOOL)itemData{
-    //: return [self.model isKindOfClass:[FFFMessageModel class]];
+    //: return [self.model isKindOfClass:[DisplayMessageModel class]];
     return [self.model isKindOfClass:[CleanDoing class]];
 }
 
@@ -541,7 +541,7 @@
     //: if([self needShowNickName])
     if([self queryedBubble])
     {
-        //: NSString *nick = [FFFKitUtil showNick:self.model.message.from inMessage:self.model.message];
+        //: NSString *nick = [DisplayKitUtil showNick:self.model.message.from inMessage:self.model.message];
         NSString *nick = [AtPull cypher:self.model.message.from bringHomeLikeCipher:self.model.message];
         //: [self.nameLabel setText:nick];
         [self.nameLabel setText:nick];
@@ -581,7 +581,7 @@
     //: [self refreshReadButton];
     [self byShould];
 
-    //: if ([_bubbleView isKindOfClass:[FFFSessionTextContentView class]]) {
+    //: if ([_bubbleView isKindOfClass:[DisplaySessionTextContentView class]]) {
     if ([_bubbleView isKindOfClass:[ToControl class]]) {
         //: [self disableLongPress:YES];
         [self buttonned:YES];
@@ -608,7 +608,7 @@
         _bubblesBackgroundView.hidden = ![[Mortification text].layoutConfig airBubble:self.model];
         //: if (self.model.shouldShowLeft){
         if (self.model.shouldShowLeft){
-            //: _bubblesBackgroundView.backgroundColor = [UIColor colorWithHexString:@"ffffff"];
+            //: _bubblesBackgroundView.backgroundColor = [UIColor colorWithHexString:@"fffDisplay"];
             _bubblesBackgroundView.backgroundColor = [UIColor cell:[SteadfastlyData kTitle_ampleValue]];
         //: }else{
         }else{
@@ -649,7 +649,7 @@
         //: else if(self.model.message.session.sessionType == NIMSessionTypeTeam)
         else if(self.model.message.session.sessionType == NIMSessionTypeTeam)
         {
-            //: [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[FFFLanguageManager getTextWithKey:@"msg_view_4"]] forState:UIControlStateNormal];
+            //: [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[DisplayLanguageManager getTextWithKey:@"msg_view_4"]] forState:UIControlStateNormal];
             [_readButton setTitle:[NSString stringWithFormat:@"%zd%@",self.model.message.teamReceiptInfo.unreadCount,[MakeManager cell:[SteadfastlyData kNameMeltData]]] forState:UIControlStateNormal];//人未读".nim_localized
             //: [_readButton sizeToFit];
             [_readButton sizeToFit];
@@ -726,7 +726,7 @@
         //: if (!_replyedBubbleView)
         if (!_replyedBubbleView)
         {
-            //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+            //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
             id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
             //: NSString *contentStr = [layoutConfig replyContent:self.model];
             NSString *contentStr = [layoutConfig searchedAcross:self.model];
@@ -734,7 +734,7 @@
             NSAssert([contentStr length] > 0, [SteadfastlyData kTextViewPlaceGoodName]);
             //: Class clazz = NSClassFromString(contentStr);
             Class clazz = NSClassFromString(contentStr);
-            //: FFFSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
+            //: DisplaySessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
             WithTopView *contentView = [[clazz alloc] initCrop];
             //: NSAssert(contentView, @"can not init content view");
             NSAssert(contentView, [SteadfastlyData kTitle_squadOutfitResidentialData]);
@@ -767,7 +767,7 @@
     //: if (_bubbleView == nil)
     if (_bubbleView == nil)
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
         //: NSString *contentStr = [layoutConfig cellContent:self.model];
         NSString *contentStr = [layoutConfig compartment:self.model];
@@ -775,7 +775,7 @@
         NSAssert([contentStr length] > 0, [SteadfastlyData kTextViewPlaceGoodName]);
         //: Class clazz = NSClassFromString(contentStr);
         Class clazz = NSClassFromString(contentStr);
-        //: FFFSessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
+        //: DisplaySessionMessageContentView *contentView = [[clazz alloc] initSessionMessageContentView];
         WithTopView *contentView = [[clazz alloc] initCrop];
         //: NSAssert(contentView, @"can not init content view");
         NSAssert(contentView, [SteadfastlyData kTitle_squadOutfitResidentialData]);
@@ -787,7 +787,7 @@
         NIMMessageType messageType = self.model.message.messageType;
         //: if (messageType == NIMMessageTypeAudio) {
         if (messageType == NIMMessageTypeAudio) {
-            //: ((FFFSessionAudioContentView *)_bubbleView).audioUIDelegate = self;
+            //: ((DisplaySessionAudioContentView *)_bubbleView).audioUIDelegate = self;
             ((ForefrontTitleView *)_bubbleView).audioUIDelegate = self;
         }
         //: [self.contentView insertSubview:_bubbleView belowSubview:_selectButtonMask];
@@ -808,7 +808,7 @@
         //: [view removeFromSuperview];
         [view removeFromSuperview];
     }
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
     //: self.customViews = [layoutConfig customViews:self.model];
     self.customViews = [layoutConfig margin:self.model];
@@ -1181,7 +1181,7 @@
 
 //: #pragma mark - NIMMessageContentViewDelegate
 #pragma mark - TranslateDelegate
-//: - (void)onCatchEvent:(FFFKitEvent *)event{
+//: - (void)onCatchEvent:(DisplayKitEvent *)event{
 - (void)surprised:(ToiletKitSession *)event{
     //: if ([self.delegate respondsToSelector:@selector(onTapCell:)]) {
     if ([self.delegate respondsToSelector:@selector(cutOptionExtend:)]) {
@@ -1272,7 +1272,7 @@
 - (UIImage *)bubbleMid:(UIControlState)state
 {
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config setting:self.model.message];
     ManPull *setting = [[Mortification text].config toWith:self.model.message];
     //: if (state == UIControlStateNormal)
     if (state == UIControlStateNormal)
@@ -1358,7 +1358,7 @@
 //: - (BOOL)retryButtonHidden
 - (BOOL)monitorLabel
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
     //: BOOL disable = NO;
     BOOL disable = NO;

@@ -387,14 +387,14 @@ typedef NS_ENUM(NSInteger,USERMainTabType) {
     Reachability *reachability = [note object];
     //: if ([reachability currentReachabilityStatus] != NotReachable) {
     if ([reachability currentReachabilityStatus] != NotReachable) {
-        //: [[FFFConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
+        //: [[DisplayConfig sharedConfig] fetchLatestDomainWithCompletion:^(BOOL success) {
         [[ContextTeam mutual] latestBubble:^(BOOL success) {
             //: if (success) {
             if (success) {
-                //: NSLog(@"域名更新成功: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+                //: NSLog(@"域名更新成功: %@", [[DisplayConfig sharedConfig] getCurrentDomain]);
             //: } else {
             } else {
-                //: NSLog(@"使用默认域名: %@", [[FFFConfig sharedConfig] getCurrentDomain]);
+                //: NSLog(@"使用默认域名: %@", [[DisplayConfig sharedConfig] getCurrentDomain]);
             }
         //: }]; 
         }]; // 网络恢复时更新域名
@@ -418,19 +418,19 @@ typedef NS_ENUM(NSInteger,USERMainTabType) {
         NSString *title = @"";
         //: if(idx == 0){
         if(idx == 0){
-            //: title = [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"];
+            //: title = [DisplayLanguageManager getTextWithKey:@"activity_user_profile_chat"];
             title = [MakeManager cell:[ScrewData kContent_yoursMarriedNessString]];
         //: }else if (idx == 1){
         }else if (idx == 1){
-            //: title = [FFFLanguageManager getTextWithKey:@"discovery"];
+            //: title = [DisplayLanguageManager getTextWithKey:@"discovery"];
             title = [MakeManager cell:[ScrewData kTextWildernessData]];
         //: }else if (idx == 2){
         }else if (idx == 2){
-            //: title = [FFFLanguageManager getTextWithKey:@"contacts_list_title"];
+            //: title = [DisplayLanguageManager getTextWithKey:@"contacts_list_title"];
             title = [MakeManager cell:[ScrewData kTitleCastRoveData]];
         //: }else if (idx == 3){
         }else if (idx == 3){
-            //: title = [FFFLanguageManager getTextWithKey:@"main_tab_my"];
+            //: title = [DisplayLanguageManager getTextWithKey:@"main_tab_my"];
             title = [MakeManager cell:[ScrewData kTitle_viewString]];
         }
 
@@ -595,7 +595,7 @@ typedef NS_ENUM(NSInteger,USERMainTabType) {
                      @(USERMainTabTypeMessageList) : @{
                              //: @"vc" : @"USERSessionListViewController",
                              @"vc" : @"TopViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"activity_user_profile_chat"],
+                             //: @"title" : [DisplayLanguageManager getTextWithKey:@"activity_user_profile_chat"],
                              @"title" : [MakeManager cell:[ScrewData kContent_yoursMarriedNessString]],
                              //: @"image" : @"icon_message_normal",
                              @"image" : [ScrewData kTitle_tideValue],
@@ -609,7 +609,7 @@ typedef NS_ENUM(NSInteger,USERMainTabType) {
                      @(USERMainTabTypeChatroomList): @{
                              //: @"vc" : @"DisCorveyViewController",
                              @"vc" : @"ShouldViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"discovery"],
+                             //: @"title" : [DisplayLanguageManager getTextWithKey:@"discovery"],
                              @"title" : [MakeManager cell:[ScrewData kTextWildernessData]],
                              //: @"image" : @"icon_discovery_normal",
                              @"image" : [ScrewData kContent_sellString],
@@ -621,7 +621,7 @@ typedef NS_ENUM(NSInteger,USERMainTabType) {
                      @(USERMainTabTypeContact) : @{
                              //: @"vc" : @"CCCContactsViewController",
                              @"vc" : @"ActionViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"contacts_list_title"],
+                             //: @"title" : [DisplayLanguageManager getTextWithKey:@"contacts_list_title"],
                              @"title" : [MakeManager cell:[ScrewData kTitleCastRoveData]],
                              //: @"image" : @"icon_contact_normal",
                              @"image" : [ScrewData kNameFolioThumbDegreeString],
@@ -633,7 +633,7 @@ typedef NS_ENUM(NSInteger,USERMainTabType) {
                      @(USERMainTabTypeSetting) : @{
                              //: @"vc" : @"USERMainCenterViewController",
                              @"vc" : @"CommentSizeViewController",
-                             //: @"title" : [FFFLanguageManager getTextWithKey:@"main_tab_my"],
+                             //: @"title" : [DisplayLanguageManager getTextWithKey:@"main_tab_my"],
                              @"title" : [MakeManager cell:[ScrewData kTitle_viewString]],
                              //: @"image" : @"icon_setting_normal",
                              @"image" : [ScrewData kNameOkayPrivilegeString],

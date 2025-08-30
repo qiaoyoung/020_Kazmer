@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFXMLReader.h"
+//: #import "DisplayXMLReader.h"
 #import "MessageInsideMax.h"
 
-//: NSString *const kFFFXMLReaderTextNodeKey = @"text";
+//: NSString *const kDisplayXMLReaderTextNodeKey = @"text";
 NSString *const kErrorStr = @"text";
-//: NSString *const kFFFXMLReaderAttributePrefix = @"@";
+//: NSString *const kDisplayXMLReaderAttributePrefix = @"@";
 NSString *const noti_containerMessage = @"@";
 
-//: @interface FFFXMLReader ()
+//: @interface DisplayXMLReader ()
 @interface MessageInsideMax ()
 
 //: @property (nonatomic, strong) NSMutableArray *dictionaryStack;
@@ -31,7 +31,7 @@ NSString *const noti_containerMessage = @"@";
 @end
 
 
-//: @implementation FFFXMLReader
+//: @implementation DisplayXMLReader
 @implementation MessageInsideMax
 
 //: #pragma mark - Public methods
@@ -40,7 +40,7 @@ NSString *const noti_containerMessage = @"@";
 //: + (NSDictionary *)dictionaryForXMLData:(NSData *)data error:(NSError **)error
 + (NSDictionary *)session:(NSData *)data at:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: DisplayXMLReader *reader = [[DisplayXMLReader alloc] initWithError:error];
     MessageInsideMax *reader = [[MessageInsideMax alloc] initWithAdd:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:0];
     NSDictionary *rootDictionary = [reader dataOptions:data spectacles:0];
@@ -53,14 +53,14 @@ NSString *const noti_containerMessage = @"@";
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data error:error];
+    //: return [DisplayXMLReader dictionaryForXMLData:data error:error];
     return [MessageInsideMax session:data at:error];
 }
 
-//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)range:(NSData *)data info:(FFFXMLReaderOptions)options itemMessage:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLData:(NSData *)data options:(DisplayXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)range:(NSData *)data info:(DisplayXMLReaderOptions)options itemMessage:(NSError **)error
 {
-    //: FFFXMLReader *reader = [[FFFXMLReader alloc] initWithError:error];
+    //: DisplayXMLReader *reader = [[DisplayXMLReader alloc] initWithError:error];
     MessageInsideMax *reader = [[MessageInsideMax alloc] initWithAdd:error];
     //: NSDictionary *rootDictionary = [reader objectWithData:data options:options];
     NSDictionary *rootDictionary = [reader dataOptions:data spectacles:options];
@@ -68,12 +68,12 @@ NSString *const noti_containerMessage = @"@";
     return rootDictionary;
 }
 
-//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(FFFXMLReaderOptions)options error:(NSError **)error
-+ (NSDictionary *)filler:(NSString *)string mutual:(FFFXMLReaderOptions)options background_autoreleasing:(NSError **)error
+//: + (NSDictionary *)dictionaryForXMLString:(NSString *)string options:(DisplayXMLReaderOptions)options error:(NSError **)error
++ (NSDictionary *)filler:(NSString *)string mutual:(DisplayXMLReaderOptions)options background_autoreleasing:(NSError **)error
 {
     //: NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    //: return [FFFXMLReader dictionaryForXMLData:data options:options error:error];
+    //: return [DisplayXMLReader dictionaryForXMLData:data options:options error:error];
     return [MessageInsideMax range:data info:options itemMessage:error];
 }
 
@@ -96,8 +96,8 @@ NSString *const noti_containerMessage = @"@";
     return self;
 }
 
-//: - (NSDictionary *)objectWithData:(NSData *)data options:(FFFXMLReaderOptions)options
-- (NSDictionary *)dataOptions:(NSData *)data spectacles:(FFFXMLReaderOptions)options
+//: - (NSDictionary *)objectWithData:(NSData *)data options:(DisplayXMLReaderOptions)options
+- (NSDictionary *)dataOptions:(NSData *)data spectacles:(DisplayXMLReaderOptions)options
 {
     // Clear out any old data
     //: self.dictionaryStack = [[NSMutableArray alloc] init];
@@ -113,12 +113,12 @@ NSString *const noti_containerMessage = @"@";
     //: NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
 
-    //: [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    [parser setShouldProcessNamespaces:(options & FFFXMLReaderOptionsProcessNamespaces)];
-    //: [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    [parser setShouldReportNamespacePrefixes:(options & FFFXMLReaderOptionsReportNamespacePrefixes)];
-    //: [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
-    [parser setShouldResolveExternalEntities:(options & FFFXMLReaderOptionsResolveExternalEntities)];
+    //: [parser setShouldProcessNamespaces:(options & DisplayXMLReaderOptionsProcessNamespaces)];
+    [parser setShouldProcessNamespaces:(options & DisplayXMLReaderOptionsProcessNamespaces)];
+    //: [parser setShouldReportNamespacePrefixes:(options & DisplayXMLReaderOptionsReportNamespacePrefixes)];
+    [parser setShouldReportNamespacePrefixes:(options & DisplayXMLReaderOptionsReportNamespacePrefixes)];
+    //: [parser setShouldResolveExternalEntities:(options & DisplayXMLReaderOptionsResolveExternalEntities)];
+    [parser setShouldResolveExternalEntities:(options & DisplayXMLReaderOptionsResolveExternalEntities)];
 
     //: parser.delegate = self;
     parser.delegate = self;
@@ -216,7 +216,7 @@ NSString *const noti_containerMessage = @"@";
         // trim after concatenating
         //: NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         NSString *trimmedString = [self.textInProgress stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kFFFXMLReaderTextNodeKey];
+        //: [dictInProgress setObject:[trimmedString mutableCopy] forKey:kDisplayXMLReaderTextNodeKey];
         [dictInProgress setObject:[trimmedString mutableCopy] forKey:kErrorStr];
 
         // Reset the text

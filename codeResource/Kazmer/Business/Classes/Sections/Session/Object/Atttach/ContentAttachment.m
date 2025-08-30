@@ -207,7 +207,7 @@
 #import "SessionStandard.h"
 //: #import "M80AttributedLabel.h"
 #import "LabelNameScrollView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 
 //: @interface USERRedPacketTipAttachment()
@@ -322,7 +322,7 @@
     //: NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     NSString * currentUserId = [[NIMSDK sharedSDK].loginManager currentAccount];
     // 领取别人的红包
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
     CellClean *option = [[CellClean alloc] init];
     //: option.message = self.message;
     option.message = self.message;
@@ -346,7 +346,7 @@
     //: else if ([currentUserId isEqualToString:self.openPacketId])
     else if ([currentUserId isEqualToString:self.openPacketId])
     {
-        //: FFFKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
+        //: DisplayKitInfo * sendUserInfo = [[MyUserKit sharedKit] infoByUser:self.sendPacketId option:option];
         CancelTeamCorner * sendUserInfo = [[Mortification text] tingVoice:self.sendPacketId keepingOption:option];
         //: NSString * name = sendUserInfo.showName;
         NSString * name = sendUserInfo.showName;
@@ -364,7 +364,7 @@
     //: else if ([currentUserId isEqualToString:self.sendPacketId])
     else if ([currentUserId isEqualToString:self.sendPacketId])
     {
-        //: FFFKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
+        //: DisplayKitInfo * openUserInfo = [[MyUserKit sharedKit] infoByUser:self.openPacketId option:option];
         CancelTeamCorner * openUserInfo = [[Mortification text] tingVoice:self.openPacketId keepingOption:option];
         //: NSString * name = openUserInfo.showName;
         NSString * name = openUserInfo.showName;

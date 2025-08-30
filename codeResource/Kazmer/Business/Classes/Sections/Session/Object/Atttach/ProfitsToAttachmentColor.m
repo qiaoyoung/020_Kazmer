@@ -166,7 +166,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)actionRecent:(NIMMessage *)message
 {
-    //: return @"FFFSessionShareCardContentView";
+    //: return @"DisplaySessionShareCardContentView";
     return @"ValueControl";
 }
 

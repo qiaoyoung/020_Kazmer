@@ -31,7 +31,7 @@ Byte kNameDataValue[] = {5, 7, 49, 9, 80, 176, 124, 246, 47, 68, 66, 52, 65, 46,
 
     //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:user_id];
     NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:user_id];
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user_id option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:user_id option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:user_id keepingOption:nil];
 
     //: [_avatar nim_setImageWithURL:[NSURL URLWithString:info.avatarUrlString] placeholderImage:info.avatarImage options:SDWebImageRetryFailed];
@@ -51,7 +51,7 @@ Byte kNameDataValue[] = {5, 7, 49, 9, 80, 176, 124, 246, 47, 68, 66, 52, 65, 46,
     //: [self addSubview:_iconImageView];
     [self addSubview:_iconImageView];
 
-    //: _avatar = [[FFFAvatarImageView alloc] init];
+    //: _avatar = [[DisplayAvatarImageView alloc] init];
     _avatar = [[MemoryImageControl alloc] init];
     //: [self addSubview:_avatar];
     [self addSubview:_avatar];

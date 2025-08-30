@@ -147,8 +147,8 @@
 // __M_A_C_R_O__
 //: #import "USERNoticationUtil.h"
 #import "ParagraphUtil.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 
 //: @implementation USERNoticationUtil
 @implementation ParagraphUtil

@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import "BaseTableViewCell.h"
 #import "WisecrackViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MaxViewCell : WisecrackViewCell
 //: @property (nonatomic ,strong) UILabel *titleLabel;
 @property (nonatomic ,strong) UILabel *titleLabel;
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) DisplayAvatarImageView *avatar;
 @property (nonatomic,strong) MemoryImageControl *avatar;
 //: @property (nonatomic ,strong) UIImageView *iconImageView;
 @property (nonatomic ,strong) UIImageView *iconImageView;

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDataProvider.h"
+//: #import "DisplayKitDataProvider.h"
 #import "DisplayProvider.h"
 
-//: @interface FFFKitDataProviderImpl : NSObject<FFFKitDataProvider>
+//: @interface DisplayKitDataProviderImpl : NSObject<DisplayKitDataProvider>
 @interface CommentTopIndex : NSObject<DisplayProvider>
 
 //: @end

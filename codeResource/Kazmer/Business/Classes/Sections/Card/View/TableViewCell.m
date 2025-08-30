@@ -35,10 +35,10 @@ Byte kContent_cellString[] = {29, 25, 52, 7, 202, 176, 126, 166, 153, 155, 157, 
 // __M_A_C_R_O__
 //: #import "USERCardPortraitCell.h"
 #import "TableViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DisplayCommonTableData.h"
+#import "DisplayCommonTableData.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
 //: #import "USERSessionUtil.h"
@@ -50,7 +50,7 @@ Byte kContent_cellString[] = {29, 25, 52, 7, 202, 176, 126, 166, 153, 155, 157, 
 //: @property (nonatomic,strong) UILabel *accountLabel;
 @property (nonatomic,strong) UILabel *accountLabel;
 
-//: @property (nonatomic,strong) FFFAvatarImageView *avatar;
+//: @property (nonatomic,strong) DisplayAvatarImageView *avatar;
 @property (nonatomic,strong) MemoryImageControl *avatar;
 
 //: @property (nonatomic,strong) UIImageView *genderIcon;
@@ -76,7 +76,7 @@ Byte kContent_cellString[] = {29, 25, 52, 7, 202, 176, 126, 166, 153, 155, 157, 
     if (self) {
         //: CGFloat avatarWidth = 55.f;
         CGFloat avatarWidth = 55.f;
-        //: _avatar = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
+        //: _avatar = [[DisplayAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         _avatar = [[MemoryImageControl alloc] initWithFrame:CGRectMake(0, 0, avatarWidth, avatarWidth)];
         //: [self.contentView addSubview:_avatar];
         [self.contentView addSubview:_avatar];
@@ -134,7 +134,7 @@ Byte kContent_cellString[] = {29, 25, 52, 7, 202, 176, 126, 166, 153, 155, 157, 
             NSString *account = [data comment:@"account"];
             //: self.accountLabel.hidden = NO;
             self.accountLabel.hidden = NO;
-            //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+            //: NSString *register_avtivity_account = [DisplayLanguageManager getTextWithKey:@"register_avtivity_account"];
             NSString *register_avtivity_account = [MakeManager cell:StringFromItemData(kContent_cellString)];
 
             //: self.accountLabel.text = [NSString stringWithFormat:@"%@:%@",register_avtivity_account, account];
@@ -209,11 +209,11 @@ Byte kContent_cellString[] = {29, 25, 52, 7, 202, 176, 126, 166, 153, 155, 157, 
     if ([uid isKindOfClass:[NSString class]]) {
         //: NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
         NIMUser *user = [[NIMSDK sharedSDK].userManager userInfo:uid];
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
+        //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:uid option:nil];
         CancelTeamCorner *info = [[Mortification text] tingVoice:uid keepingOption:nil];
         //: self.nameLabel.text = info.showName ;
         self.nameLabel.text = info.showName ;
-        //: NSString *register_avtivity_account = [FFFLanguageManager getTextWithKey:@"register_avtivity_account"];
+        //: NSString *register_avtivity_account = [DisplayLanguageManager getTextWithKey:@"register_avtivity_account"];
         NSString *register_avtivity_account = [MakeManager cell:StringFromItemData(kContent_cellString)];
         //: self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];
         self.accountLabel.text = [NSString stringWithFormat:@"%@：%@",register_avtivity_account, uid];

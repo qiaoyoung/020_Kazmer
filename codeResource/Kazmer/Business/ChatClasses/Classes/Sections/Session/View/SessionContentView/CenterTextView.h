@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
 
-//: @interface FFFSessionImageContentView : FFFSessionMessageContentView
+//: @interface DisplaySessionImageContentView : DisplaySessionMessageContentView
 @interface CenterTextView : WithTopView
 
 //: @property (nonatomic,strong,readonly) UIImageView * imageView;

@@ -13,16 +13,16 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFSessionConfig.h"
+//: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
-//: #import "FFFInputView.h"
+//: #import "DisplayMessageCellProtocol.h"
+#import "DisplayMessageCellProtocol.h"
+//: #import "DisplaySessionConfigurateProtocol.h"
+#import "DisplaySessionConfigurateProtocol.h"
+//: #import "DisplayInputView.h"
 #import "ContextInputView.h"
 
-//: @interface FFFSessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,FFFMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
+//: @interface DisplaySessionViewController : UIViewController<NIMSessionInteractorDelegate,NIMInputActionDelegate,DisplayMessageCellDelegate,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 @interface ReplyViewController : UIViewController<SessionDisplay,PullDelegate,CompartmentPath,NIMChatManagerDelegate,NIMConversationManagerDelegate,NIMChatExtendManagerDelegate>
 
 //: @property (nonatomic, strong) UITableView *tableView;
@@ -68,7 +68,7 @@
 //: @property (nonatomic,assign) BOOL canNoticeMsg;
 @property (nonatomic,assign) BOOL canNoticeMsg;//是否通知群消息
 
-//: @property (nonatomic, strong) FFFInputView *sessionInputView;
+//: @property (nonatomic, strong) DisplayInputView *sessionInputView;
 @property (nonatomic, strong) ContextInputView *sessionInputView;
 
 
@@ -148,7 +148,7 @@
  *
  *  @discussion 不会触发 DB 操作，请手动调用 SDK 里 deleteMessage: 接口
  */
-//: - (FFFMessageModel *)uiDeleteMessage:(NIMMessage *)message;
+//: - (DisplayMessageModel *)uiDeleteMessage:(NIMMessage *)message;
 - (CleanDoing *)keep:(NIMMessage *)message;
 
 /**
@@ -256,8 +256,8 @@
 /**
  *  会话页详细配置
  */
-//: - (id<FFFSessionConfig>)sessionConfig;
-- (id<ColorConfig>)messageBar;
+//: - (id<DisplaySessionConfig>)sessionConfig;
+- (id<ColorConfig>)sessionConfig;
 
 /**
  *  会话页导航栏子标题

@@ -13,18 +13,18 @@
 #import <UIKit/UIKit.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFTeamMemberListDataSource.h"
+//: #import "DisplayTeamMemberListDataSource.h"
 #import "AccountSource.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "DisplayTeamListDataManager.h"
 #import "MentionManager.h"
 
 //: @interface CCCTeamMemberListViewController : UIViewController
 @interface MaxViewController : UIViewController
 
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) DisplayTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MentionManager *teamListManager;
 
-//: - (instancetype)initWithDataSource:(FFFTeamListDataManager *)dataSource;
+//: - (instancetype)initWithDataSource:(DisplayTeamListDataManager *)dataSource;
 - (instancetype)initWithCellName:(MentionManager *)dataSource;
 
 //: @end

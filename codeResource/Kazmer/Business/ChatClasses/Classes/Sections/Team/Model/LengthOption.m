@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMembersFetchOption.h"
+//: #import "DisplayMembersFetchOption.h"
 #import "LengthOption.h"
 
-//: @implementation FFFMembersFetchOption
+//: @implementation DisplayMembersFetchOption
 @implementation LengthOption
 
 //: - (instancetype)init {

@@ -128,17 +128,17 @@
         case NIMLoginClientTypeiOS:
         //: case NIMLoginClientTypeWP:
         case NIMLoginClientTypeWP:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_phone"];
+            //: return [DisplayLanguageManager getTextWithKey:@"home_fragment_phone"];
             return [MakeManager cell:[PenalFistData sharedInstance].kName_textValue];
         //: case NIMLoginClientTypePC:
         case NIMLoginClientTypePC:
         //: case NIMLoginClientTypemacOS:
         case NIMLoginClientTypemacOS:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_pc"];
+            //: return [DisplayLanguageManager getTextWithKey:@"home_fragment_pc"];
             return [MakeManager cell:[PenalFistData sharedInstance].kContent_painfulValue];
         //: case NIMLoginClientTypeWeb:
         case NIMLoginClientTypeWeb:
-            //: return [FFFLanguageManager getTextWithKey:@"home_fragment_web"];
+            //: return [DisplayLanguageManager getTextWithKey:@"home_fragment_web"];
             return [MakeManager cell:[PenalFistData sharedInstance].kNameGreenString];
         //: default:
         default:

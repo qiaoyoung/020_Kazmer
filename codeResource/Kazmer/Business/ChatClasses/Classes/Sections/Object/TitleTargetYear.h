@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionViewController.h"
+//: #import "DisplaySessionViewController.h"
 #import "ReplyViewController.h"
-//: #import "FFFSessionConfigurateProtocol.h"
-#import "FFFSessionConfigurateProtocol.h"
+//: #import "DisplaySessionConfigurateProtocol.h"
+#import "DisplaySessionConfigurateProtocol.h"
 
-//: @class FFFSessionViewController;
+//: @class DisplaySessionViewController;
 @class ReplyViewController;
 
-//: @interface FFFSessionConfigurator : NSObject
+//: @interface DisplaySessionConfigurator : NSObject
 @interface TitleTargetYear : NSObject
 
-//: - (void)setup:(FFFSessionViewController *)vc;
+//: - (void)setup:(DisplaySessionViewController *)vc;
 - (void)color:(ReplyViewController *)vc;
 
 //: @end

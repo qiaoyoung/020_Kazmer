@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "DisplayBaseSessionContentConfig.h"
+#import "DisplayBaseSessionContentConfig.h"
 
-//: @interface FFFNotificationContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface DisplayNotificationContentConfig : NSObject<CCCSessionContentConfig>
 @interface ManDisplay : NSObject<OnTopConfig>
 
 //: @end

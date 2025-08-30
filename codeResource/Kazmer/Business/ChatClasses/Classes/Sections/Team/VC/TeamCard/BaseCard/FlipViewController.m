@@ -173,12 +173,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardOperationViewController.h"
+//: #import "DisplayTeamCardOperationViewController.h"
 #import "FlipViewController.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "DisplayKitProgressHUD.h"
 #import "NameMessageEffectView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 //: #import "NSString+MyUserKit.h"
@@ -186,7 +186,7 @@
 //: #import "USERSessionMsgConverter.h"
 #import "TopConverter.h"
 
-//: @implementation FFFTeamCardOperationViewController
+//: @implementation DisplayTeamCardOperationViewController
 @implementation FlipViewController
 
 //: - (void)dealloc {
@@ -199,13 +199,13 @@
 - (instancetype)initWithTowardRecording:(NIMTeam *)team
                      //: session:(NIMSession *)session
                      pass:(NIMSession *)session
-                      //: option:(FFFTeamCardViewControllerOption *)option {
+                      //: option:(DisplayTeamCardViewControllerOption *)option {
                       session:(SessionOption *)option {
     //: if (self = [super init]) {
     if (self = [super init]) {
         //: _option = option;
         _option = option;
-        //: _teamListManager = [[FFFTeamListDataManager alloc] initWithTeam:team session:session];
+        //: _teamListManager = [[DisplayTeamListDataManager alloc] initWithTeam:team session:session];
         _teamListManager = [[MentionManager alloc] initWithSizeSession:team exceptRecord:session];
         //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(teamInfoUpdate:) name:kNIMTeamListDataTeamInfoUpdate object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sizeTo:) name:notiBeginStr object:nil];
@@ -220,7 +220,7 @@
 - (void)viewDidLoad {
     //: [super viewDidLoad];
     [super viewDidLoad];
-    //: FFFMembersFetchOption *option = [[FFFMembersFetchOption alloc] init];
+    //: DisplayMembersFetchOption *option = [[DisplayMembersFetchOption alloc] init];
     LengthOption *option = [[LengthOption alloc] init];
     //: option.isRefresh = YES;
     option.isRefresh = YES;
@@ -242,17 +242,17 @@
     [self someOtherOf];
 }
 
-//: - (void)didFetchTeamMember:(FFFMembersFetchOption *)option {
+//: - (void)didFetchTeamMember:(DisplayMembersFetchOption *)option {
 - (void)top:(LengthOption *)option {
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager fetchTeamMembersWithOption:option
     [self.teamListManager atTitle:option
                                           //: completion:^(NSError * _Nullable error, NSString * _Nullable msg) {
                                           seatCompletion:^(NSError * _Nullable error, NSString * _Nullable msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -307,11 +307,11 @@
     }
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager addUsers:userIds info:info completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager length:userIds exceptName:info step:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -333,11 +333,11 @@
 - (void)showImage:(NSString *)userId {
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager kickUsers:@[userId] completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager moveCompletion:@[userId] holder:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -359,13 +359,13 @@
     }
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager updateTeamName:name
     [self.teamListManager fromQuantity:name
                               //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                               alter:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -387,13 +387,13 @@
     }
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager updateTeamNick:nick
     [self.teamListManager inputName:nick
                               //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                               will:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -415,11 +415,11 @@
     }
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager updateTeamIntro:intro completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager magnitude:intro endue:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -436,13 +436,13 @@
 - (void)terrace:(BOOL)mute {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager updateTeamMute:mute
     [self.teamListManager messageSize:mute
                               //: completion:^(NSError * _Nullable error, NSString * _Nullable msg) {
                               save:^(NSError * _Nullable error, NSString * _Nullable msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -471,11 +471,11 @@
 - (void)jvTing:(NIMTeamJoinMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager updateTeamJoinMode:mode completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager keep:mode frame:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -492,11 +492,11 @@
 - (void)max:(NIMTeamInviteMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager updateTeamInviteMode:mode completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager inputBeMessage:mode image:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -513,13 +513,13 @@
 - (void)year:(NIMTeamBeInviteMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager updateTeamBeInviteMode:mode
     [self.teamListManager with:mode
                                       //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                                       permit:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -536,11 +536,11 @@
 - (void)limit:(NIMTeamUpdateInfoMode)mode {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager updateTeamInfoMode:mode completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager magnitude:mode nutsAndBolts:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -557,11 +557,11 @@
 - (void)analogDigitalConverter:(NIMTeamNotifyState)state {
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager updateTeamNotifyState:state completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager touch:state soundChild:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -576,7 +576,7 @@
 
 //: - (void)didOntransferToUser:(NSString *)userId leave:(BOOL)leave {
 - (void)beingSend:(NSString *)userId success:(BOOL)leave {
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager transferOwnerWithUserId:userId
     [self.teamListManager cellBefore:userId
@@ -584,7 +584,7 @@
                                          can:leave
                                     //: completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
                                     person:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (leave) {
         if (leave) {
@@ -605,11 +605,11 @@
 - (void)dismissAtRange{
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager dismissTeamCompletion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager nowadays:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -626,11 +626,11 @@
 - (void)quitReplace{
     //: __weak typeof(self) wself = self;
     __weak typeof(self) wself = self;
-    //: [FFFKitProgressHUD show];
+    //: [DisplayKitProgressHUD show];
     [NameMessageEffectView viewWithShow];
     //: [self.teamListManager quitTeamCompletion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
     [self.teamListManager placeRed:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-        //: [FFFKitProgressHUD dismiss];
+        //: [DisplayKitProgressHUD dismiss];
         [NameMessageEffectView input];
         //: if (!error) {
         if (!error) {
@@ -721,13 +721,13 @@
     __weak typeof(self) wself = self;
     //: if (success) {
     if (success) {
-        //: [FFFKitProgressHUD show];
+        //: [DisplayKitProgressHUD show];
         [NameMessageEffectView viewWithShow];
         //: __weak typeof(self) weakSelf = self;
         __weak typeof(self) weakSelf = self;
         //: [self.teamListManager updateTeamAvatar:filePath completion:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
         [self.teamListManager centerTo:filePath wordPainting:^(NSError * _Nonnull error, NSString * _Nonnull msg) {
-            //: [FFFKitProgressHUD dismiss];
+            //: [DisplayKitProgressHUD dismiss];
             [NameMessageEffectView input];
             //: if (!error) {
             if (!error) {
@@ -754,7 +754,7 @@
         }];
     //: } else {
     } else {
-        //: [wself showToastMsg:[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"]];
+        //: [wself showToastMsg:[DisplayLanguageManager getTextWithKey:@"group_info_activity_update_failed"]];
         [wself dot:[MakeManager cell:[RecordResearchData sharedInstance].kNameGarbageString]];
     }
 }
@@ -762,7 +762,7 @@
 //: @end
 @end
 
-//: @implementation FFFTeamCardViewControllerOption
+//: @implementation DisplayTeamCardViewControllerOption
 @implementation SessionOption
 
 //: @end

@@ -97,23 +97,23 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionShareCardContentView.h"
+//: #import "DisplaySessionShareCardContentView.h"
 #import "ValueControl.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "DisplayLoadProgressView.h"
 #import "GatefoldView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
 //: #import <YYImage/YYImage.h>
 #import <YYImage/YYImage.h>
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "DisplayKitDataProviderImpl.h"
 #import "CommentTopIndex.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
@@ -126,7 +126,7 @@ typedef struct {
 //: #import <objc/message.h>
 #import <objc/message.h>
 
-//: @interface FFFSessionShareCardContentView()
+//: @interface DisplaySessionShareCardContentView()
 @interface ValueControl()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -139,7 +139,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFSessionShareCardContentView
+//: @implementation DisplaySessionShareCardContentView
 @implementation ValueControl
 
 //: - (instancetype)initSessionMessageContentView{
@@ -174,7 +174,7 @@ typedef struct {
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(DisplayMessageModel *)data
 - (void)from:(CleanDoing *)data
 {
     //: [super refresh:data];
@@ -292,9 +292,9 @@ typedef struct {
 //: - (void)onTouchUpInside:(id)sender
 - (void)labelled:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
     ToiletKitSession *event = [[ToiletKitSession alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = DisplayKitEventNameTapContent;
     event.eventName = userStateId;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

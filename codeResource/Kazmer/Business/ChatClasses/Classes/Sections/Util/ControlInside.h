@@ -29,7 +29,7 @@ extern const CGFloat main_hiddenTitle;
 extern NSString * const dream_framePathMessage;
 
 
-//: @interface FFFKitQuickCommentUtil : NSObject
+//: @interface DisplayKitQuickCommentUtil : NSObject
 @interface ControlInside : NSObject
 
 //: + (NSString *)commentContent:(NIMQuickComment *)comment;

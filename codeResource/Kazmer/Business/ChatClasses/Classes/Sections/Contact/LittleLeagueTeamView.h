@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFKitInfo;
+//: @class DisplayKitInfo;
 @class CancelTeamCorner;
 
-//: @protocol FFFContactPickedViewDelegate <NSObject>
+//: @protocol DisplayContactPickedViewDelegate <NSObject>
 @protocol DelegateClean <NSObject>
 
 //: - (void)removeUser:(NSString *)userId;
@@ -24,16 +24,16 @@
 //: @end
 @end
 
-//: @interface FFFContactPickedView : UIView <UIScrollViewDelegate>
+//: @interface DisplayContactPickedView : UIView <UIScrollViewDelegate>
 @interface LittleLeagueTeamView : UIView <UIScrollViewDelegate>
 
-//: @property (nonatomic, weak) id<FFFContactPickedViewDelegate> delegate;
+//: @property (nonatomic, weak) id<DisplayContactPickedViewDelegate> delegate;
 @property (nonatomic, weak) id<DelegateClean> delegate;
 
-//: - (void)removeMemberInfo:(FFFKitInfo *)info;
+//: - (void)removeMemberInfo:(DisplayKitInfo *)info;
 - (void)invisibleColor:(CancelTeamCorner *)info;
 
-//: - (void)addMemberInfo:(FFFKitInfo *)info;
+//: - (void)addMemberInfo:(DisplayKitInfo *)info;
 - (void)memberInfo:(CancelTeamCorner *)info;
 
 //: @end

@@ -9,21 +9,21 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitEvent.h"
+//: #import "DisplayKitEvent.h"
 #import "ToiletKitSession.h"
 
-//: NSString *const FFFKitEventNameTapContent = @"FFFKitEventNameTapContent";
-NSString *const userStateId = @"FFFKitEventNameTapContent";
-//: NSString *const FFFKitEventNameTapLabelLink = @"FFFKitEventNameTapLabelLink";
-NSString *const show_contentData = @"FFFKitEventNameTapLabelLink";
-//: NSString *const FFFKitEventNameTapAudio = @"FFFKitEventNameTapAudio";
-NSString *const app_successDoingceMsg = @"FFFKitEventNameTapAudio";
+//: NSString *const DisplayKitEventNameTapContent = @"DisplayKitEventNameTapContent";
+NSString *const userStateId = @"DisplayKitEventNameTapContent";
+//: NSString *const DisplayKitEventNameTapLabelLink = @"DisplayKitEventNameTapLabelLink";
+NSString *const show_contentData = @"DisplayKitEventNameTapLabelLink";
+//: NSString *const DisplayKitEventNameTapAudio = @"DisplayKitEventNameTapAudio";
+NSString *const app_successDoingceMsg = @"DisplayKitEventNameTapAudio";
 
-//: NSString *const FFFKitEventNameTapRepliedContent = @"FFFKitEventNameTapRepliedContent";
-NSString *const kCommentSystemIdent = @"FFFKitEventNameTapRepliedContent";
+//: NSString *const DisplayKitEventNameTapRepliedContent = @"DisplayKitEventNameTapRepliedContent";
+NSString *const kCommentSystemIdent = @"DisplayKitEventNameTapRepliedContent";
 
 
-//: @implementation FFFKitEvent
+//: @implementation DisplayKitEvent
 @implementation ToiletKitSession
 
 //: @end

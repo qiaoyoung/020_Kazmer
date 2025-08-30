@@ -9,25 +9,25 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionConfigurator.h"
+//: #import "DisplaySessionConfigurator.h"
 #import "TitleTargetYear.h"
-//: #import "FFFSessionMsgDatasource.h"
+//: #import "DisplaySessionMsgDatasource.h"
 #import "BubbleCropView.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "DisplaySessionInteractorImpl.h"
 #import "PraiseCommentSize.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSessionInteractorImpl.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
+//: #import "DisplaySessionInteractorImpl.h"
 #import "PraiseCommentSize.h"
-//: #import "FFFSessionDataSourceImpl.h"
+//: #import "DisplaySessionDataSourceImpl.h"
 #import "CommentControl.h"
-//: #import "FFFSessionLayoutImpl.h"
+//: #import "DisplaySessionLayoutImpl.h"
 #import "ValueAtImpl.h"
-//: #import "FFFSessionTableAdapter.h"
+//: #import "DisplaySessionTableAdapter.h"
 #import "FinancialCenterAdapter.h"
 
 /*
@@ -57,36 +57,36 @@
             .......................................................................
  */
 
-//: @interface FFFSessionConfigurator()
+//: @interface DisplaySessionConfigurator()
 @interface TitleTargetYear()
 
-//: @property (nonatomic,strong) FFFSessionInteractorImpl *interactor;
+//: @property (nonatomic,strong) DisplaySessionInteractorImpl *interactor;
 @property (nonatomic,strong) PraiseCommentSize *interactor;
 
-//: @property (nonatomic,strong) FFFSessionTableAdapter *tableAdapter;
+//: @property (nonatomic,strong) DisplaySessionTableAdapter *tableAdapter;
 @property (nonatomic,strong) FinancialCenterAdapter *tableAdapter;
 
 //: @end
 @end
 
-//: @implementation FFFSessionConfigurator
+//: @implementation DisplaySessionConfigurator
 @implementation TitleTargetYear
 
-//: - (void)setup:(FFFSessionViewController *)vc
+//: - (void)setup:(DisplaySessionViewController *)vc
 - (void)color:(ReplyViewController *)vc
 {
     //: NIMSession *session = vc.session;
     NIMSession *session = vc.session;
-    //: id<FFFSessionConfig> sessionConfig = vc.sessionConfig;
-    id<ColorConfig> sessionConfig = vc.messageBar;
+    //: id<DisplaySessionConfig> sessionConfig = vc.sessionConfig;
+    id<ColorConfig> sessionConfig = vc.sessionConfig;
     //: UITableView *tableView = vc.tableView;
     UITableView *tableView = vc.tableView;
-    //: FFFInputView *inputView = vc.sessionInputView;
+    //: DisplayInputView *inputView = vc.sessionInputView;
     ContextInputView *inputView = vc.sessionInputView;
 
-    //: FFFSessionDataSourceImpl *datasource = [[FFFSessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
+    //: DisplaySessionDataSourceImpl *datasource = [[DisplaySessionDataSourceImpl alloc] initWithSession:session config:sessionConfig];
     CommentControl *datasource = [[CommentControl alloc] initWithTip:session viewFileSessionWith:sessionConfig];
-    //: FFFSessionLayoutImpl *layout = [[FFFSessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
+    //: DisplaySessionLayoutImpl *layout = [[DisplaySessionLayoutImpl alloc] initWithSession:session config:sessionConfig];
     ValueAtImpl *layout = [[ValueAtImpl alloc] initWithInfo:session specialSession:sessionConfig];
     //: layout.tableView = tableView;
     layout.tableView = tableView;
@@ -94,7 +94,7 @@
     layout.inputView = inputView;
 
 
-    //: _interactor = [[FFFSessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
+    //: _interactor = [[DisplaySessionInteractorImpl alloc] initWithSession:session config:sessionConfig];
     _interactor = [[PraiseCommentSize alloc] initWithCrop:session dismiss:sessionConfig];
     //: _interactor.delegate = vc;
     _interactor.delegate = vc;
@@ -104,9 +104,9 @@
     _interactor.layout = layout;
 
     //: [layout setDelegate:_interactor];
-    [layout setKey:_interactor];
+    [layout setDelegate:_interactor];
 
-    //: _tableAdapter = [[FFFSessionTableAdapter alloc] init];
+    //: _tableAdapter = [[DisplaySessionTableAdapter alloc] init];
     _tableAdapter = [[FinancialCenterAdapter alloc] init];
     //: _tableAdapter.interactor = _interactor;
     _tableAdapter.interactor = _interactor;

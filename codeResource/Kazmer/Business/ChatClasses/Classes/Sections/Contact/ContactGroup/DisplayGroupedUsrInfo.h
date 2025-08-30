@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFGroupedUsrInfo.h
+//  DisplayGroupedUsrInfo.h
 //  NIM
 //
 //  Created by Xuhui on 15/3/24.
@@ -9,15 +9,15 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactDefines.h"
-#import "FFFContactDefines.h"
+//: #import "DisplayContactDefines.h"
+#import "DisplayContactDefines.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
 //: @interface NIMGroupUser:NSObject<NIMGroupMemberProtocol>
 @interface LengthAggregationUser:NSObject<DisplayRow>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) DisplayKitInfo *info;
 @property (nonatomic,readonly) CancelTeamCorner *info;
 
 //: - (instancetype)initWithUserId:(NSString *)userId;
@@ -29,7 +29,7 @@
 //: @interface NIMGroupTeamMember:NSObject<NIMGroupMemberProtocol>
 @interface ActionValueMember:NSObject<DisplayRow>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) DisplayKitInfo *info;
 @property (nonatomic,readonly) CancelTeamCorner *info;
 
 //: - (instancetype)initWithUserId:(NSString *)userId
@@ -44,7 +44,7 @@
 //: @interface NIMGroupTeam:NSObject<NIMGroupMemberProtocol>
 @interface NameTeam:NSObject<DisplayRow>
 
-//: @property (nonatomic,readonly) FFFKitInfo *info;
+//: @property (nonatomic,readonly) DisplayKitInfo *info;
 @property (nonatomic,readonly) CancelTeamCorner *info;
 
 //: - (instancetype)initWithTeamId:(NSString *)teamId

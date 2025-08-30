@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
+//: #import "DisplayBaseSessionContentConfig.h"
+#import "DisplayBaseSessionContentConfig.h"
 
-//: @interface FFFImageContentConfig : NSObject<CCCSessionContentConfig>
+//: @interface DisplayImageContentConfig : NSObject<CCCSessionContentConfig>
 @interface SizePullConfig : NSObject<OnTopConfig>
 
 //: @end

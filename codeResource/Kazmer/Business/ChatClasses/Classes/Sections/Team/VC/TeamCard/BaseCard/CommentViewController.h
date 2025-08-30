@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFTeamCardRowItem.h"
+//: #import "DisplayTeamCardRowItem.h"
 #import "ManPath.h"
-//: #import "FFFTeamMemberListCell.h"
+//: #import "DisplayTeamMemberListCell.h"
 #import "TargetViewCell.h"
-//: #import "FFFTeamSwitchTableViewCell.h"
+//: #import "DisplayTeamSwitchTableViewCell.h"
 #import "MarginOfSafetyView.h"
-//: #import "FFFTeamListDataManager.h"
+//: #import "DisplayTeamListDataManager.h"
 #import "MentionManager.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
@@ -39,7 +39,7 @@ typedef NS_ENUM (NSInteger, NIMTeamCardSwithCellType){
 //: typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 
-//: @protocol FFFTeamCardViewControllerDelegate <NSObject>
+//: @protocol DisplayTeamCardViewControllerDelegate <NSObject>
 @protocol TextDelegate <NSObject>
 
 //: - (void)NIMTeamCardVCDidSetTop:(BOOL)on;
@@ -53,17 +53,17 @@ typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 
 //: #pragma mark - UI基类
 #pragma mark - UI基类
-//: @interface FFFTeamCardViewController : UIViewController
+//: @interface DisplayTeamCardViewController : UIViewController
 @interface CommentViewController : UIViewController
 
-//: @property (nonatomic,weak) id <FFFTeamCardViewControllerDelegate> delegate;
+//: @property (nonatomic,weak) id <DisplayTeamCardViewControllerDelegate> delegate;
 @property (nonatomic,weak) id <TextDelegate> delegate;
 
 //: @property (nonatomic,strong) UITableView *tableView;
 @property (nonatomic,strong) UITableView *tableView;
 
 //数据源
-//: @property (nonatomic,strong) NSArray <NSArray <FFFTeamCardRowItem *> *> *datas;
+//: @property (nonatomic,strong) NSArray <NSArray <DisplayTeamCardRowItem *> *> *datas;
 @property (nonatomic,strong) NSArray <NSArray <ManPath *> *> *datas;
 
 // "canMemberInfo": 1,//0 不允许查看资料 1 是允许
@@ -101,7 +101,7 @@ typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
 - (UIView *)range;
 
 // 子类自定义cell
-//: - (void)didBuildTeamMemberCell:(FFFTeamMemberListCell *)cell;
+//: - (void)didBuildTeamMemberCell:(DisplayTeamMemberListCell *)cell;
 - (void)add:(TargetViewCell *)cell;
 
 // 子类刷新tableview

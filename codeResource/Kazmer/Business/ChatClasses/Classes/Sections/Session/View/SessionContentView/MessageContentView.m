@@ -99,15 +99,15 @@ typedef struct {
 //#import "WMPlayer.h"
 
 // __M_A_C_R_O__
-//: #import "FFFSessionVideoContentView.h"
+//: #import "DisplaySessionVideoContentView.h"
 #import "MessageContentView.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFLoadProgressView.h"
+//: #import "DisplayLoadProgressView.h"
 #import "GatefoldView.h"
 //: #import "USERAVMoivePlayerController.h"
 #import "RefreshController.h"
@@ -117,7 +117,7 @@ typedef struct {
 //: static void *KVO_AVPlayerItem_state = &KVO_AVPlayerItem_state;
 static void *app_topMessage = &app_topMessage;
 
-//: @interface FFFSessionVideoContentView()
+//: @interface DisplaySessionVideoContentView()
 @interface MessageContentView()
 
 //: @property (nonatomic,strong,readwrite) UIImageView * imageView;
@@ -126,7 +126,7 @@ static void *app_topMessage = &app_topMessage;
 //: @property (nonatomic,strong) UIButton *playBtn;
 @property (nonatomic,strong) UIButton *playBtn;
 
-//: @property (nonatomic,strong) FFFLoadProgressView * progressView;
+//: @property (nonatomic,strong) DisplayLoadProgressView * progressView;
 @property (nonatomic,strong) GatefoldView * progressView;
 
 //: @property (nonatomic, strong) NSURL *fileURL;
@@ -147,7 +147,7 @@ static void *app_topMessage = &app_topMessage;
 //: @end
 @end
 
-//: @implementation FFFSessionVideoContentView
+//: @implementation DisplaySessionVideoContentView
 @implementation MessageContentView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -185,7 +185,7 @@ static void *app_topMessage = &app_topMessage;
         //: [self addSubview:_playBtn];
         [self addSubview:_playBtn];
 
-        //: _progressView = [[FFFLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+        //: _progressView = [[DisplayLoadProgressView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         _progressView = [[GatefoldView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
         //: _progressView.maxProgress = 1.0;
         _progressView.maxProgress = 1.0;
@@ -224,7 +224,7 @@ static void *app_topMessage = &app_topMessage;
    }
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(DisplayMessageModel *)data{
 - (void)from:(CleanDoing *)data{
     //: [super refresh:data];
     [super from:data];
@@ -417,9 +417,9 @@ static void *app_topMessage = &app_topMessage;
 //: - (void)onTouchUpInside:(id)sender
 - (void)labelled:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
     ToiletKitSession *event = [[ToiletKitSession alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = DisplayKitEventNameTapContent;
     event.eventName = userStateId;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

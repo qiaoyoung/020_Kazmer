@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLocationContentConfig.h"
+//: #import "DisplayLocationContentConfig.h"
 #import "BubbleConfig.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @implementation FFFLocationContentConfig
+//: @implementation DisplayLocationContentConfig
 @implementation BubbleConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: return @"FFFSessionLocationContentView";
+    //: return @"DisplaySessionLocationContentView";
     return @"RowControl";
 }
 

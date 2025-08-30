@@ -60,18 +60,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionFileTransContentView.h"
+//: #import "DisplaySessionFileTransContentView.h"
 #import "ControlTitleView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFSessionFileTransContentView()
+//: @interface DisplaySessionFileTransContentView()
 @interface ControlTitleView()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -92,7 +92,7 @@
 //: @end
 @end
 
-//: @implementation FFFSessionFileTransContentView
+//: @implementation DisplaySessionFileTransContentView
 @implementation ControlTitleView
 
 //: - (instancetype)initSessionMessageContentView{
@@ -148,7 +148,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data{
+//: - (void)refresh:(DisplayMessageModel *)data{
 - (void)from:(CleanDoing *)data{
     //: [super refresh:data];
     [super from:data];
@@ -261,9 +261,9 @@
 //: - (void)onTouchUpInside:(id)sender
 - (void)labelled:(id)sender
 {
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
     ToiletKitSession *event = [[ToiletKitSession alloc] init];
-    //: event.eventName = FFFKitEventNameTapContent;
+    //: event.eventName = DisplayKitEventNameTapContent;
     event.eventName = userStateId;
     //: event.messageModel = self.model;
     event.messageModel = self.model;

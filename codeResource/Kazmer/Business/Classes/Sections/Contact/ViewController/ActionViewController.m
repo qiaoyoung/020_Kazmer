@@ -677,7 +677,7 @@
 #import "ManView.h"
 //: #import "USERContactDataCell.h"
 #import "StandardContactDataCell.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "DisplayContactSelectViewController.h"
 #import "RecordTitleViewController.h"
 //: #import "USERUserUtil.h"
 #import "ViewUtil.h"
@@ -709,7 +709,7 @@
 #import <FFDropDownMenu/FFDropDownMenuView.h>
 //: #import "USERFriendListTableViewCell.h"
 #import "CalendarViewCell.h"
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "DisplayKitFileLocationHelper.h"
 #import "PageHelper.h"
 
 //: static const NSString *contactCellUtilIcon = @"icon";
@@ -766,7 +766,7 @@ static const NSString *m_memberValue (NSString *value) {
 @interface ActionViewController ()<EasyLayDelegate,NIMUserManagerDelegate,NIMSystemNotificationManagerDelegate,
 //: USERContactUtilCellDelegate,
 ReplyDelegate,
-//: FFFContactDataCellDelegate,
+//: DisplayContactDataCellDelegate,
 DenominateDelegate,
 //: NIMLoginManagerDelegate,
 NIMLoginManagerDelegate,
@@ -839,7 +839,7 @@ TargetDelegate> {
         option.type = NIMTeamTypeAdvanced;
         //: option.joinMode = NIMTeamJoinModeNoAuth;
         option.joinMode = NIMTeamJoinModeNoAuth;
-        //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+        //: option.postscript = [DisplayLanguageManager getTextWithKey:@"invite_you_group"];
         option.postscript = [MakeManager cell:[RecentData sharedInstance].kName_sendData];
         //: [SVProgressHUD show];
         [SVProgressHUD show];
@@ -861,7 +861,7 @@ TargetDelegate> {
                 [wself redIn:option.name nameYear:teamId];
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                 [wself.view makeToast:[MakeManager cell:[RecentData sharedInstance].kTitleImageStepTapData] duration:2.0 position:CSToastPositionCenter];
             }
         //: }];
@@ -902,17 +902,17 @@ TargetDelegate> {
             [self performSelector:sel withObject:nil];
         }
         //: else if (contactItem.vcName.length) {
-        else if (contactItem.recordName.length) {
+        else if (contactItem.vcName.length) {
             //: Class clazz = NSClassFromString(contactItem.vcName);
-            Class clazz = NSClassFromString(contactItem.recordName);
+            Class clazz = NSClassFromString(contactItem.vcName);
             //: UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             UIViewController * vc = [[clazz alloc] initWithNibName:nil bundle:nil];
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
         //: }else if([contactItem respondsToSelector:@selector(userId)]){
-        }else if([contactItem respondsToSelector:@selector(findRead)]){
+        }else if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.findRead;
+            NSString * friendId = contactItem.userId;
             //: [self enterPersonalCard:friendId];
             [self limit:friendId];
         }
@@ -988,7 +988,7 @@ TargetDelegate> {
         emptyTipLabel.textAlignment = NSTextAlignmentCenter;
         //: [_defView addSubview:emptyTipLabel];
         [_defView addSubview:emptyTipLabel];
-        //: emptyTipLabel.text = [FFFLanguageManager getTextWithKey:@"group_info_activity_without"];
+        //: emptyTipLabel.text = [DisplayLanguageManager getTextWithKey:@"group_info_activity_without"];
         emptyTipLabel.text = [MakeManager cell:[RecentData sharedInstance].kText_keyString];
 
 
@@ -1010,7 +1010,7 @@ TargetDelegate> {
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-//: #pragma mark - FFFContactDataCellDelegate
+//: #pragma mark - DisplayContactDataCellDelegate
 #pragma mark - DenominateDelegate
 //: - (void)onPressAvatar:(NSString *)memberId{
 - (void)instanceAvatar:(NSString *)memberId{
@@ -1149,7 +1149,7 @@ TargetDelegate> {
         labedit.font = [UIFont systemFontOfSize:14];
         //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
         labedit.textColor = [UIColor cell:[RecentData sharedInstance].kName_sharedRecentString];
-        //: labedit.text = [FFFLanguageManager getTextWithKey:@"notification"];
+        //: labedit.text = [DisplayLanguageManager getTextWithKey:@"notification"];
         labedit.text = [MakeManager cell:[RecentData sharedInstance].kNameItemLoopTitle];
         //: [editView addSubview:labedit];
         [editView addSubview:labedit];
@@ -1180,7 +1180,7 @@ TargetDelegate> {
         lablang.font = [UIFont systemFontOfSize:14];
         //: lablang.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lablang.textColor = [UIColor cell:[RecentData sharedInstance].kName_sharedRecentString];
-        //: lablang.text = [FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
+        //: lablang.text = [DisplayLanguageManager getTextWithKey:@"add_friend_activity_add_friend"];
         lablang.text = [MakeManager cell:[RecentData sharedInstance].kTextEndName];
         //: [langView addSubview:lablang];
         [langView addSubview:lablang];
@@ -1328,7 +1328,7 @@ TargetDelegate> {
         labedit.font = [UIFont systemFontOfSize:14];
         //: labedit.textColor = [UIColor colorWithHexString:@"#2C3042"];
         labedit.textColor = [UIColor cell:[RecentData sharedInstance].kName_sharedRecentString];
-        //: labedit.text = [FFFLanguageManager getTextWithKey:@"notification"];
+        //: labedit.text = [DisplayLanguageManager getTextWithKey:@"notification"];
         labedit.text = [MakeManager cell:[RecentData sharedInstance].kNameItemLoopTitle];
         //: [editView addSubview:labedit];
         [editView addSubview:labedit];
@@ -1359,7 +1359,7 @@ TargetDelegate> {
         lablang.font = [UIFont systemFontOfSize:14];
         //: lablang.textColor = [UIColor colorWithHexString:@"#2C3042"];
         lablang.textColor = [UIColor cell:[RecentData sharedInstance].kName_sharedRecentString];
-        //: lablang.text = [FFFLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
+        //: lablang.text = [DisplayLanguageManager getTextWithKey:@"activity_create_group_name_create_group"];
         lablang.text = [MakeManager cell:[RecentData sharedInstance].kNameHideContent];
         //: [langView addSubview:lablang];
         [langView addSubview:lablang];
@@ -1415,7 +1415,7 @@ TargetDelegate> {
             option.type = NIMTeamTypeAdvanced;
             //: option.joinMode = NIMTeamJoinModeNoAuth;
             option.joinMode = NIMTeamJoinModeNoAuth;
-            //: option.postscript = [FFFLanguageManager getTextWithKey:@"invite_you_group"];
+            //: option.postscript = [DisplayLanguageManager getTextWithKey:@"invite_you_group"];
             option.postscript = [MakeManager cell:[RecentData sharedInstance].kName_sendData];
 //            [SVProgressHUD show];
 
@@ -1439,7 +1439,7 @@ TargetDelegate> {
                     [self redIn:option.name nameYear:teamId];
                 //: }else{
                 }else{
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"team_create_helper_create_failed"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[MakeManager cell:[RecentData sharedInstance].kTitleImageStepTapData] duration:2.0 position:CSToastPositionCenter];
                 }
             //: }];
@@ -1491,7 +1491,7 @@ TargetDelegate> {
     _btnfriend.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [_btnfriend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [_btnfriend setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
+    //: [_btnfriend setTitle:[DisplayLanguageManager getTextWithKey:@"contact_fragment_friend"] forState:UIControlStateNormal];
     [_btnfriend setTitle:[MakeManager cell:[RecentData sharedInstance].kContent_endValue] forState:UIControlStateNormal];
     //: [_btnfriend addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btnfriend addTarget:self action:@selector(rangeClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -1510,7 +1510,7 @@ TargetDelegate> {
     _btngroup.titleLabel.font = [UIFont systemFontOfSize:14];
     //: [_btngroup setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
     [_btngroup setTitleColor:[UIColor cell:[RecentData sharedInstance].kNameNimData] forState:UIControlStateNormal];
-    //: [_btngroup setTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
+    //: [_btngroup setTitle:[DisplayLanguageManager getTextWithKey:@"contact_fragment_group"] forState:UIControlStateNormal];
     [_btngroup setTitle:[MakeManager cell:[RecentData sharedInstance].kContent_cropData] forState:UIControlStateNormal];
     //: [_btngroup addTarget:self action:@selector(sliderButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [_btngroup addTarget:self action:@selector(rangeClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -1582,13 +1582,13 @@ TargetDelegate> {
 //            [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 //        }
 
-        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
+        //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"] message:[DisplayLanguageManager getTextWithKey:@"setting_privacy_camera"] preferredStyle:UIAlertControllerStyleAlert];
         UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MakeManager cell:[RecentData sharedInstance].kTitleShowString] message:[MakeManager cell:[RecentData sharedInstance].kContentColorItemData] preferredStyle:UIAlertControllerStyleAlert];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[RecentData sharedInstance].kText_withData] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         //: }])];
         }])];
-        //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[RecentData sharedInstance].kText_sendValue] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
             NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -1655,7 +1655,7 @@ TargetDelegate> {
     //: config.showSelectHeaderview = YES;
     config.showSelectHeaderview = YES;
     //初始化联系人选择器
-    //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+    //: DisplayContactSelectViewController *vc = [[DisplayContactSelectViewController alloc] initWithConfig:config];
     RecordTitleViewController *vc = [[RecordTitleViewController alloc] initWithSightConfig:config];
     //回调处理
     //: vc.finshBlock = block;
@@ -1714,9 +1714,9 @@ TargetDelegate> {
 
     //: UIImage *imageForAvatarUpload = [image imageByScalingAndCroppingForSize:CGSizeMake(375, 375)];
     UIImage *imageForAvatarUpload = [image be:CGSizeMake(375, 375)];
-    //: NSString *fileName = [FFFKitFileLocationHelper genFilenameWithExt:@"jpg"];
+    //: NSString *fileName = [DisplayKitFileLocationHelper genFilenameWithExt:@"jpg"];
     NSString *fileName = [PageHelper item:[RecentData sharedInstance].kTitleNameLoopData];
-    //: NSString *filePath = [[FFFKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
+    //: NSString *filePath = [[DisplayKitFileLocationHelper getAppDocumentPath] stringByAppendingPathComponent:fileName];
     NSString *filePath = [[PageHelper cell] stringByAppendingPathComponent:fileName];
     //: NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
     NSData *data = UIImageJPEGRepresentation(imageForAvatarUpload, 0.3);
@@ -1737,7 +1737,7 @@ TargetDelegate> {
 
             //: }else{
             }else{
-                //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+                //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
                 [wself.view makeToast:[MakeManager cell:[RecentData sharedInstance].kNameTargetValue]
                              //: duration:2
                              duration:2
@@ -1751,7 +1751,7 @@ TargetDelegate> {
         }];
     //: }else{
     }else{
-        //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
+        //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"user_info_avtivity_upload_avatar_failed"]
         [self.view makeToast:[MakeManager cell:[RecentData sharedInstance].kNameTargetValue]
                     //: duration:2
                     duration:2
@@ -1882,7 +1882,7 @@ TargetDelegate> {
 
             //: NSMutableDictionary *myfriend = [NSMutableDictionary dictionaryWithCapacity:0];
             NSMutableDictionary *myfriend = [NSMutableDictionary dictionaryWithCapacity:0];
-            //: [myfriend setObject:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_friend"] forKey:@"name"];
+            //: [myfriend setObject:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_friend"] forKey:@"name"];
             [myfriend setObject:[MakeManager cell:[RecentData sharedInstance].kContentToolString] forKey:@"name"];
             //: [myfriend setObject:friendIds forKey:@"ids"];
             [myfriend setObject:friendIds forKey:[RecentData sharedInstance].kTextWithTapString];
@@ -2161,9 +2161,9 @@ TargetDelegate> {
         //: id<USERContactItem> contactItem = (id<USERContactItem>)[_contacts memberOfIndex:indexPath];
         id<DoingAdd> contactItem = (id<DoingAdd>)[_contacts theGreen:indexPath];
         //: if([contactItem respondsToSelector:@selector(userId)]){
-        if([contactItem respondsToSelector:@selector(findRead)]){
+        if([contactItem respondsToSelector:@selector(userId)]){
             //: NSString * friendId = contactItem.userId;
-            NSString * friendId = contactItem.findRead;
+            NSString * friendId = contactItem.userId;
             //: if ([ids containsObject:friendId]) {
             if ([ids containsObject:friendId]) {
                 //: [indexPaths addObject:indexPath];

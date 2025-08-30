@@ -95,7 +95,7 @@ Byte kNameDetailString[] = {83, 9, 94, 7, 76, 254, 192, 199, 193, 189, 209, 195,
     //: }];
     }];
 
-    //: NSString *my_account = [FFFLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
+    //: NSString *my_account = [DisplayLanguageManager getTextWithKey:@"activity_add_friend_my_account"];
     NSString *my_account = [MakeManager cell:StringFromJointData(kText_viewString)];
     //: NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[NIMUserDefaults standardUserDefaults].accountName];
     NSString *myCodeStr = [NSString stringWithFormat:@"%@:%@",my_account,[TableContext name].accountName];

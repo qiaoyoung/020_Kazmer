@@ -13,19 +13,19 @@
 #import <Foundation/Foundation.h>
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
-//: #import "FFFKitTimerHolder.h"
+//: #import "DisplayKitTimerHolder.h"
 #import "LargenessHolder.h"
 
 //: @class NIMKitFirerInfo;
 @class KitInfo;
 
-//: @interface FFFKitNotificationFirer : NSObject<FFFKitTimerHolderDelegate>
+//: @interface DisplayKitNotificationFirer : NSObject<DisplayKitTimerHolderDelegate>
 @interface NotificationAdd : NSObject<CornerDelegate>
 
 //: @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 @property (nonatomic,strong) NSMutableDictionary *cachedInfo;
 
-//: @property (nonatomic,strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic,strong) DisplayKitTimerHolder *timer;
 @property (nonatomic,strong) LargenessHolder *timer;
 
 //: @property (nonatomic,assign) NSTimeInterval timeInterval;

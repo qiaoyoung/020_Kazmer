@@ -115,7 +115,7 @@
 }
 
 //: - (NSString *)showName{
-- (NSString *)textShow{
+- (NSString *)tabTitle{
     //: return self.info.showName;
     return self.info.showName;
 }
@@ -129,13 +129,13 @@
 //userId和Vcname必有一个有值，根据有值的状态push进不同的页面
 
 //: - (NSString *)vcName{
-- (NSString *)picture{
+- (NSString *)vcName{
     //: return nil;
     return nil;
 }
 
 //: - (NSString *)userId{
-- (NSString *)findRead{
+- (NSString *)userId{
     //: return self.info.infoId;
     return self.info.infoId;
 }
@@ -147,13 +147,13 @@
 }
 
 //: - (NSString *)memberId{
-- (NSString *)mode{
+- (NSString *)littleLeagueTeam{
     //: return self.info.infoId;
     return self.info.infoId;
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)lengthIn {
+- (NSString *)roundPathTitle {
     //: NSString *title = [[USERSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[AddOnCenter representation] filterLetter:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
@@ -187,7 +187,7 @@
 }
 
 //: - (id)sortKey {
-- (id)tip {
+- (id)overFindDown {
     //: return [[USERSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[AddOnCenter representation] formatTitle:self.info.showName].shortSpelling;
 }

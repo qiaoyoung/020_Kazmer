@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFMessageCellProtocol.h"
-#import "FFFMessageCellProtocol.h"
+//: #import "DisplayMessageCellProtocol.h"
+#import "DisplayMessageCellProtocol.h"
 
-//: @class FFFTimestampModel;
+//: @class DisplayTimestampModel;
 @class WithPage;
 
-//: @interface FFFSessionTimestampCell : UITableViewCell
+//: @interface DisplaySessionTimestampCell : UITableViewCell
 @interface TeamViewCell : UITableViewCell
 
 //: @property (strong, nonatomic) UIImageView *timeBGView;
@@ -26,7 +26,7 @@
 //: @property (strong, nonatomic) UILabel *timeLabel;
 @property (strong, nonatomic) UILabel *timeLabel;
 
-//: - (void)refreshData:(FFFTimestampModel *)data;
+//: - (void)refreshData:(DisplayTimestampModel *)data;
 - (void)count:(WithPage *)data;
 
 //: @end

@@ -12,7 +12,7 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 
-//: @interface FFFKitFileLocationHelper : NSObject
+//: @interface DisplayKitFileLocationHelper : NSObject
 @interface PageHelper : NSObject
 
 //: + (NSString *)userDirectory;

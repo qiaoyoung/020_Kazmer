@@ -9,13 +9,13 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMediaItem.h"
+//: #import "DisplayMediaItem.h"
 #import "CommingleItem.h"
 
-//: @implementation FFFMediaItem
+//: @implementation DisplayMediaItem
 @implementation CommingleItem
 
-//: + (FFFMediaItem *)item:(NSString *)selector
+//: + (DisplayMediaItem *)item:(NSString *)selector
 + (CommingleItem *)garrisonName:(NSString *)selector
            //: normalImage:(UIImage *)normalImage
            heading:(UIImage *)normalImage
@@ -24,7 +24,7 @@
                  //: title:(NSString *)title
                  item:(NSString *)title
 {
-    //: FFFMediaItem *item = [[FFFMediaItem alloc] init];
+    //: DisplayMediaItem *item = [[DisplayMediaItem alloc] init];
     CommingleItem *item = [[CommingleItem alloc] init];
     //: item.selctor = NSSelectorFromString(selector);
     item.selctor = NSSelectorFromString(selector);

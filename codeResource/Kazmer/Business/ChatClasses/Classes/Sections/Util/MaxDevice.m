@@ -9,18 +9,18 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitDevice.h"
+//: #import "DisplayKitDevice.h"
 #import "MaxDevice.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
 
-//: @interface FFFKitDevice ()
+//: @interface DisplayKitDevice ()
 @interface MaxDevice ()
 
 //: @end
 @end
 
-//: @implementation FFFKitDevice
+//: @implementation DisplayKitDevice
 @implementation MaxDevice
 
 //: - (instancetype)init
@@ -36,15 +36,15 @@
 }
 
 
-//: + (FFFKitDevice *)currentDevice{
+//: + (DisplayKitDevice *)currentDevice{
 + (MaxDevice *)green{
-    //: static FFFKitDevice *instance = nil;
+    //: static DisplayKitDevice *instance = nil;
     static MaxDevice *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitDevice alloc] init];
+        //: instance = [[DisplayKitDevice alloc] init];
         instance = [[MaxDevice alloc] init];
     //: });
     });

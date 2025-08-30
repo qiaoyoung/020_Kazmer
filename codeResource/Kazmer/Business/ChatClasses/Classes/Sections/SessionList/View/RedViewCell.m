@@ -111,20 +111,20 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionListCell.h"
+//: #import "DisplaySessionListCell.h"
 #import "RedViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "USERBadgeView.h"
 #import "ControlView.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 
-//: @implementation FFFSessionListCell
+//: @implementation DisplaySessionListCell
 @implementation RedViewCell
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -155,7 +155,7 @@ typedef struct {
         //: self.layer.shadowRadius = 3;
         self.layer.shadowRadius = 3;
 
-        //: _avatarImageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+        //: _avatarImageView = [[DisplayAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         _avatarImageView = [[MemoryImageControl alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
         //: [self.contentView addSubview:_avatarImageView];
         [self.contentView addSubview:_avatarImageView];
@@ -226,7 +226,7 @@ typedef struct {
 //    }else{
 //        self.badgeView.hidden = YES;
 
-        //: FFFKitInfo *info = nil;
+        //: DisplayKitInfo *info = nil;
         CancelTeamCorner *info = nil;
         //: if (recent.session.sessionType == NIMSessionTypeTeam) {
         if (recent.session.sessionType == NIMSessionTypeTeam) {
@@ -254,7 +254,7 @@ typedef struct {
 
         //: } else if (recent.session.sessionType == NIMSessionTypeP2P) {
         } else if (recent.session.sessionType == NIMSessionTypeP2P) {
-            //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+            //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
             CellClean *option = [[CellClean alloc] init];
             //: option.session = recent.session;
             option.session = recent.session;

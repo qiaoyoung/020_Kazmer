@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFInputAtCache.h"
+//: #import "DisplayInputAtCache.h"
 #import "LabelSizeImage.h"
 
-//: @interface FFFInputAtCache()
+//: @interface DisplayInputAtCache()
 @interface LabelSizeImage()
 
 //: @property (nonatomic,strong) NSMutableArray *items;
@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @implementation FFFInputAtCache
+//: @implementation DisplayInputAtCache
 @implementation LabelSizeImage
 
 //: - (void)clean

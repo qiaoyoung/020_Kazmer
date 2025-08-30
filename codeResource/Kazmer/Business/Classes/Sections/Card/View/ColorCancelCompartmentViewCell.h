@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFCommonTableViewCell.h"
+//: #import "DisplayCommonTableViewCell.h"
 #import "ImageCell.h"
 
 //: typedef NS_ENUM(NSInteger, ColorButtonCellStyle){
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, ColorButtonCellStyle){
 //: @class USERColorButton;
 @class AmbagesControl;
 
-//: @interface USERColorButtonCell : UITableViewCell<FFFCommonTableViewCell>
+//: @interface USERColorButtonCell : UITableViewCell<DisplayCommonTableViewCell>
 @interface ColorCancelCompartmentViewCell : UITableViewCell<ImageCell>
 
 //: @property (nonatomic,strong) USERColorButton *button;

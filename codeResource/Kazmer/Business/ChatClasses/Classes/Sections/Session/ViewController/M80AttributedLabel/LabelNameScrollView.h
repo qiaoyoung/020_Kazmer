@@ -13,7 +13,7 @@
 #import "M80AttributedLabelDefines.h"
 //: #import "NSMutableAttributedString+M80.h"
 #import "NSMutableAttributedString+M80.h"
-//: #import "FFFTextView.h"
+//: #import "DisplayTextView.h"
 #import "TitleScrollView.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 //: @class M80AttributedLabelURL;
 @class M80AttributedLabelURL;
 
-//: @interface M80AttributedLabel : FFFTextView
+//: @interface M80AttributedLabel : DisplayTextView
 @interface LabelNameScrollView : TitleScrollView
 //: @property (nonatomic,strong) UIColor *highlightColor; 
 @property (nonatomic,strong) UIColor *highlightColor;//链接点击时背景高亮色

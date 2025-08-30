@@ -1,20 +1,20 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFSessionPrivateProtocol.h
+//  DisplaySessionPrivateProtocol.h
 // Mortification
 //
 //  Created by chris on 2016/11/7.
 //  Copyright © 2016年 NetEase. All rights reserved.
 //
-//: #import "FFFSessionViewController.h"
+//: #import "DisplaySessionViewController.h"
 #import "ReplyViewController.h"
 
 // __M_A_C_R_O__
 
 //: @class NIMMessage;
 @class NIMMessage;
-//: @class FFFMessageModel;
+//: @class DisplayMessageModel;
 @class CleanDoing;
 
 //: @interface NIMSessionMessageOperateResult : NSObject
@@ -41,16 +41,16 @@
 //: - (NIMSessionMessageOperateResult *)insertMessageModels:(NSArray *)models;
 - (CropTitleResult *)topView:(NSArray *)models;
 
-//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)deleteMessageModel:(DisplayMessageModel *)model;
 - (CropTitleResult *)imageModel:(CleanDoing *)model;
 
-//: - (NIMSessionMessageOperateResult *)updateMessageModel:(FFFMessageModel *)model;
+//: - (NIMSessionMessageOperateResult *)updateMessageModel:(DisplayMessageModel *)model;
 - (CropTitleResult *)modify:(CleanDoing *)model;
 
-//: - (FFFMessageModel *)findModel:(NIMMessage *)message;
+//: - (DisplayMessageModel *)findModel:(NIMMessage *)message;
 - (CleanDoing *)need:(NIMMessage *)message;
 
-//: - (NSInteger)indexAtModelArray:(FFFMessageModel *)model;
+//: - (NSInteger)indexAtModelArray:(DisplayMessageModel *)model;
 - (NSInteger)checkion:(CleanDoing *)model;
 
 //: - (NSArray *)deleteModels:(NSRange)range;
@@ -87,7 +87,7 @@
 - (void)globulePins:(void (^)(NSError *))handler;
 
 // 展示message之前做额外配置
-//: - (void)willDisplayMessageModel:(FFFMessageModel *)model;
+//: - (void)willDisplayMessageModel:(DisplayMessageModel *)model;
 - (void)table:(CleanDoing *)model;
 
 //: - (void)addPinForMessage:(NIMMessage *)message callback:(void (^)(NSError *))handler;
@@ -124,7 +124,7 @@
 //: - (BOOL)canInsertChatroomMessages;
 - (BOOL)containerMessages;
 
-//: - (void)calculateContent:(FFFMessageModel *)model;
+//: - (void)calculateContent:(DisplayMessageModel *)model;
 - (void)contentShow:(CleanDoing *)model;
 
 //: - (void)reloadTable;
@@ -137,7 +137,7 @@
 - (void)month:(CGFloat)inputViewHeight;
 
 //: - (void)setDelegate:(id<NIMSessionLayoutDelegate>)delegate;
-- (void)setKey:(id<InsideDelegate>)delegate;
+- (void)setDelegate:(id<InsideDelegate>)delegate;
 
 //: - (void)layoutAfterRefresh;
 - (void)user;
@@ -158,7 +158,7 @@
 
 
 
-//: @interface FFFSessionViewController(Interactor)
+//: @interface DisplaySessionViewController(Interactor)
 @interface ReplyViewController(Interactor)
 
 //: - (void)setTableDelegate:(id<UITableViewDelegate, UITableViewDataSource>) tableDelegate;

@@ -52,7 +52,7 @@ MatData kNameKnifeRoveValue = (MatData){247, (Byte []){194, 179, 194, 177, 193, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFReplyedTextContentView.h"
+//: #import "DisplayReplyedTextContentView.h"
 #import "ShouldTextView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
@@ -61,12 +61,12 @@ MatData kNameKnifeRoveValue = (MatData){247, (Byte []){194, 179, 194, 177, 193, 
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFReplyedTextContentView ()<M80AttributedLabelDelegate>
+//: @interface DisplayReplyedTextContentView ()<M80AttributedLabelDelegate>
 @interface ShouldTextView ()<PagePraiseDelegate>
 //: @end
 @end
 
-//: @implementation FFFReplyedTextContentView
+//: @implementation DisplayReplyedTextContentView
 @implementation ShouldTextView
 
 //: - (instancetype)initSessionMessageContentView {
@@ -85,7 +85,7 @@ MatData kNameKnifeRoveValue = (MatData){247, (Byte []){194, 179, 194, 177, 193, 
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data {
+//: - (void)refresh:(DisplayMessageModel *)data {
 - (void)from:(CleanDoing *)data {
     //: [super refresh:data];
     [super from:data];
@@ -260,7 +260,7 @@ MatData kNameKnifeRoveValue = (MatData){247, (Byte []){194, 179, 194, 177, 193, 
 
     }
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config repliedSetting:data.message];
     ManPull *setting = [[Mortification text].config willRemote:data.message];
     //: self.textLabel.textColor = setting.replyedTextColor;
     self.textLabel.textColor = setting.replyedTextColor;
@@ -376,9 +376,9 @@ MatData kNameKnifeRoveValue = (MatData){247, (Byte []){194, 179, 194, 177, 193, 
 - (void)attributed:(LabelNameScrollView *)label
              //: clickedOnLink:(id)linkData{
              clickedLink:(id)linkData{
-    //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+    //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
     ToiletKitSession *event = [[ToiletKitSession alloc] init];
-    //: event.eventName = FFFKitEventNameTapLabelLink;
+    //: event.eventName = DisplayKitEventNameTapLabelLink;
     event.eventName = show_contentData;
     //: event.messageModel = self.model;
     event.messageModel = self.model;
@@ -393,7 +393,7 @@ MatData kNameKnifeRoveValue = (MatData){247, (Byte []){194, 179, 194, 177, 193, 
 - (void)labelled:(id)sender
 {
 //    ToiletKitSession *event = [[ToiletKitSession alloc] init];
-//    event.eventName = FFFKitEventNameTapRepliedContent;
+//    event.eventName = DisplayKitEventNameTapRepliedContent;
 //    event.messageModel = self.model;
 //    [self.delegate onCatchEvent:event];
 }

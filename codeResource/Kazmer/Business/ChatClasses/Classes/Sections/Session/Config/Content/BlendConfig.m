@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTipContentConfig.h"
+//: #import "DisplayTipContentConfig.h"
 #import "BlendConfig.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @implementation FFFTipContentConfig
+//: @implementation DisplayTipContentConfig
 @implementation BlendConfig
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -26,7 +26,7 @@
     CGFloat messageWidth = cellWidth;
     //: UILabel *label = [[UILabel alloc] init];
     UILabel *label = [[UILabel alloc] init];
-    //: label.text = [FFFKitUtil messageTipContent:message];
+    //: label.text = [DisplayKitUtil messageTipContent:message];
     label.text = [AtPull view:message];
     //: label.font = [[MyUserKit sharedKit].config setting:message].font;
     label.font = [[Mortification text].config toWith:message].font;
@@ -47,7 +47,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: return @"FFFSessionNotificationContentView";
+    //: return @"DisplaySessionNotificationContentView";
     return @"VanguardNameView";
 }
 

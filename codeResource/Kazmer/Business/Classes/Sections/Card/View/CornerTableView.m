@@ -296,7 +296,7 @@ typedef struct {
         _closeBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_closeBtn setTitleColor:[UIColor colorWithHexString:@"#5D5F66"] forState:UIControlStateNormal];
         [_closeBtn setTitleColor:[UIColor cell:[[PlaceTapData sharedInstance] kTitle_pinFrameData]] forState:UIControlStateNormal];
-        //: [_closeBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
+        //: [_closeBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] forState:UIControlStateNormal];
         [_closeBtn setTitle:[MakeManager cell:[[PlaceTapData sharedInstance] kNameHideMessageValue]] forState:UIControlStateNormal];
         //: _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
         _closeBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1];
@@ -331,7 +331,7 @@ typedef struct {
 //        _titleLabel.textAlignment = NSTextAlignmentCenter;
 //        _titleLabel.numberOfLines = 0;
 //        _titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-        //: _titleLabel.text = [FFFLanguageManager getTextWithKey:@"report_User"];
+        //: _titleLabel.text = [DisplayLanguageManager getTextWithKey:@"report_User"];
         _titleLabel.text = [MakeManager cell:[[PlaceTapData sharedInstance] kNamePinString]];
     }
     //: return _titleLabel;
@@ -422,7 +422,7 @@ typedef struct {
         //: [self initUI];
         [self initMessage];
 
-        //: self.selectButtons = @[[FFFLanguageManager getTextWithKey:@"report_reasons1"],[FFFLanguageManager getTextWithKey:@"report_reasons2"],[FFFLanguageManager getTextWithKey:@"report_reasons3"],[FFFLanguageManager getTextWithKey:@"report_reasons4"],[FFFLanguageManager getTextWithKey:@"report_reasons5"],[FFFLanguageManager getTextWithKey:@"report_reasons6"]];
+        //: self.selectButtons = @[[DisplayLanguageManager getTextWithKey:@"report_reasons1"],[DisplayLanguageManager getTextWithKey:@"report_reasons2"],[DisplayLanguageManager getTextWithKey:@"report_reasons3"],[DisplayLanguageManager getTextWithKey:@"report_reasons4"],[DisplayLanguageManager getTextWithKey:@"report_reasons5"],[DisplayLanguageManager getTextWithKey:@"report_reasons6"]];
         self.selectButtons = @[[MakeManager cell:[[PlaceTapData sharedInstance] kTitle_textString]],[MakeManager cell:[[PlaceTapData sharedInstance] kText_viewData]],[MakeManager cell:[[PlaceTapData sharedInstance] kTitleTeamText]],[MakeManager cell:[[PlaceTapData sharedInstance] kContentColorValue]],[MakeManager cell:[[PlaceTapData sharedInstance] kName_detailData]],[MakeManager cell:[[PlaceTapData sharedInstance] kName_deviceValue]]];
         //: self.index = 0;
         self.index = 0;
@@ -456,7 +456,7 @@ typedef struct {
         [Btn1 setImage:[UIImage imageNamed:[[PlaceTapData sharedInstance] kName_contentData]] forState:UIControlStateNormal];
         //: [Btn1 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn1 setImage:[UIImage imageNamed:[[PlaceTapData sharedInstance] kName_withData]] forState:UIControlStateSelected];
-        //: [Btn1 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
+        //: [Btn1 setTitle:[DisplayLanguageManager getTextWithKey:@"report_reasons1"] forState:UIControlStateNormal];
         [Btn1 setTitle:[MakeManager cell:[[PlaceTapData sharedInstance] kTitle_textString]] forState:UIControlStateNormal];
         //: Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn1.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -483,7 +483,7 @@ typedef struct {
         [Btn2 setImage:[UIImage imageNamed:[[PlaceTapData sharedInstance] kName_contentData]] forState:UIControlStateNormal];
         //: [Btn2 setImage:[UIImage imageNamed:@"icon_accessory_selected"] forState:UIControlStateSelected];
         [Btn2 setImage:[UIImage imageNamed:[[PlaceTapData sharedInstance] kName_withData]] forState:UIControlStateSelected];
-        //: [Btn2 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
+        //: [Btn2 setTitle:[DisplayLanguageManager getTextWithKey:@"report_reasons2"] forState:UIControlStateNormal];
         [Btn2 setTitle:[MakeManager cell:[[PlaceTapData sharedInstance] kText_viewData]] forState:UIControlStateNormal];
         //: Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn2.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -511,7 +511,7 @@ typedef struct {
         [Btn3 setImage:[UIImage imageNamed:[[PlaceTapData sharedInstance] kName_withData]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn3];
         [_buttonBox addSubview:Btn3];
-        //: [Btn3 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
+        //: [Btn3 setTitle:[DisplayLanguageManager getTextWithKey:@"report_reasons3"] forState:UIControlStateNormal];
         [Btn3 setTitle:[MakeManager cell:[[PlaceTapData sharedInstance] kTitleTeamText]] forState:UIControlStateNormal];
         //: Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn3.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -537,7 +537,7 @@ typedef struct {
         [Btn4 setImage:[UIImage imageNamed:[[PlaceTapData sharedInstance] kName_withData]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn4];
         [_buttonBox addSubview:Btn4];
-        //: [Btn4 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
+        //: [Btn4 setTitle:[DisplayLanguageManager getTextWithKey:@"report_reasons4"] forState:UIControlStateNormal];
         [Btn4 setTitle:[MakeManager cell:[[PlaceTapData sharedInstance] kContentColorValue]] forState:UIControlStateNormal];
         //: Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn4.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -563,7 +563,7 @@ typedef struct {
         [Btn5 setImage:[UIImage imageNamed:[[PlaceTapData sharedInstance] kName_withData]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn5];
         [_buttonBox addSubview:Btn5];
-        //: [Btn5 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
+        //: [Btn5 setTitle:[DisplayLanguageManager getTextWithKey:@"report_reasons5"] forState:UIControlStateNormal];
         [Btn5 setTitle:[MakeManager cell:[[PlaceTapData sharedInstance] kName_detailData]] forState:UIControlStateNormal];
         //: Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn5.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -589,7 +589,7 @@ typedef struct {
         [Btn6 setImage:[UIImage imageNamed:[[PlaceTapData sharedInstance] kName_withData]] forState:UIControlStateSelected];
         //: [_buttonBox addSubview:Btn6];
         [_buttonBox addSubview:Btn6];
-        //: [Btn6 setTitle:[FFFLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
+        //: [Btn6 setTitle:[DisplayLanguageManager getTextWithKey:@"report_reasons6"] forState:UIControlStateNormal];
         [Btn6 setTitle:[MakeManager cell:[[PlaceTapData sharedInstance] kName_deviceValue]] forState:UIControlStateNormal];
         //: Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
         Btn6.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -634,7 +634,7 @@ typedef struct {
     labsub.textColor = [UIColor cell:[[PlaceTapData sharedInstance] kText_mainData]];
     //: labsub.numberOfLines = 0;
     labsub.numberOfLines = 0;
-    //: labsub.text = [FFFLanguageManager getTextWithKey:@"report_Tip"];
+    //: labsub.text = [DisplayLanguageManager getTextWithKey:@"report_Tip"];
     labsub.text = [MakeManager cell:[[PlaceTapData sharedInstance] kContentWithValue]];
     //: [_box addSubview:labsub];
     [_box addSubview:labsub];
@@ -672,7 +672,7 @@ typedef struct {
         _sureBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         //: [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        //: [_sureBtn setTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
+        //: [_sureBtn setTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_sure"] forState:UIControlStateNormal];
         [_sureBtn setTitle:[MakeManager cell:[[PlaceTapData sharedInstance] kName_scaleData]] forState:UIControlStateNormal];
         //: _sureBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
         _sureBtn.backgroundColor = [UIColor cell:[[PlaceTapData sharedInstance] kName_addValueString]];

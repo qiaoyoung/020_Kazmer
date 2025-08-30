@@ -11,17 +11,17 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFKitEvent.h"
+//: #import "DisplayKitEvent.h"
 #import "ToiletKitSession.h"
 
-//: typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
-typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
-    //: FFFSessionMessageContentViewLayoutAuto = 0, 
-    FFFSessionMessageContentViewLayoutAuto = 0, //根据消息自动布局
-    //: FFFSessionMessageContentViewLayoutLeft, 
-    FFFSessionMessageContentViewLayoutLeft, //左边布局
-    //: FFFSessionMessageContentViewLayoutRight, 
-    FFFSessionMessageContentViewLayoutRight, //右边布局
+//: typedef NS_ENUM (NSInteger, DisplaySessionMessageContentViewLayout){
+typedef NS_ENUM (NSInteger, DisplaySessionMessageContentViewLayout){
+    //: DisplaySessionMessageContentViewLayoutAuto = 0, 
+    DisplaySessionMessageContentViewLayoutAuto = 0, //根据消息自动布局
+    //: DisplaySessionMessageContentViewLayoutLeft, 
+    DisplaySessionMessageContentViewLayoutLeft, //左边布局
+    //: DisplaySessionMessageContentViewLayoutRight, 
+    DisplaySessionMessageContentViewLayoutRight, //右边布局
 //: };
 };
 
@@ -31,7 +31,7 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
 //: @protocol NIMMessageContentViewDelegate <NSObject>
 @protocol TranslateDelegate <NSObject>
 
-//: - (void)onCatchEvent:(FFFKitEvent *)event;
+//: - (void)onCatchEvent:(DisplayKitEvent *)event;
 - (void)surprised:(ToiletKitSession *)event;
 
 //: - (void)disableLongPress:(BOOL)disable;
@@ -49,17 +49,17 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
 //: @end
 @end
 
-//: @class FFFMessageModel;
+//: @class DisplayMessageModel;
 @class CleanDoing;
 
-//: @interface FFFSessionMessageContentView : UIControl
+//: @interface DisplaySessionMessageContentView : UIControl
 @interface WithTopView : UIControl
 
-//: @property (nonatomic,strong,readonly) FFFMessageModel *model;
+//: @property (nonatomic,strong,readonly) DisplayMessageModel *model;
 @property (nonatomic,strong,readonly) CleanDoing *model;
 
-//: @property (nonatomic,assign) FFFSessionMessageContentViewLayout layoutStyle;
-@property (nonatomic,assign) FFFSessionMessageContentViewLayout layoutStyle;
+//: @property (nonatomic,assign) DisplaySessionMessageContentViewLayout layoutStyle;
+@property (nonatomic,assign) DisplaySessionMessageContentViewLayout layoutStyle;
 
 //: @property (nonatomic,weak) id<NIMMessageContentViewDelegate> delegate;
 @property (nonatomic,weak) id<TranslateDelegate> delegate;
@@ -112,7 +112,7 @@ typedef NS_ENUM (NSInteger, FFFSessionMessageContentViewLayout){
  *  @param data 刷新数据
  *
  */
-//: - (void)refresh:(FFFMessageModel*)data;
+//: - (void)refresh:(DisplayMessageModel*)data;
 - (void)from:(CleanDoing*)data;
 
 //: @end

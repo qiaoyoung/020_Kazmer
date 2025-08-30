@@ -269,13 +269,13 @@
     //: request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
     request.message = tempVerificationInfo.length > 0 ? tempVerificationInfo : @"";
 
-    //: NSString *contact_tag_fragment_add_success = [FFFLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
+    //: NSString *contact_tag_fragment_add_success = [DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_add_success"];
     NSString *contact_tag_fragment_add_success = [MakeManager cell:[[FrameSendData sharedInstance] kTitleContentName]];//@"添加成功".user_localized
-    //: NSString *request_successful = [FFFLanguageManager getTextWithKey:@"request_successful"];
+    //: NSString *request_successful = [DisplayLanguageManager getTextWithKey:@"request_successful"];
     NSString *request_successful = [MakeManager cell:[[FrameSendData sharedInstance] kName_dataFrameValue]];//@"请求成功".user_localized
-    //: NSString *add_friend_add_fail = [FFFLanguageManager getTextWithKey:@"add_friend_add_fail"];
+    //: NSString *add_friend_add_fail = [DisplayLanguageManager getTextWithKey:@"add_friend_add_fail"];
     NSString *add_friend_add_fail = [MakeManager cell:[[FrameSendData sharedInstance] kText_modelItemData]];//@"添加失败".user_localized
-    //: NSString *add_friend_request_fail = [FFFLanguageManager getTextWithKey:@"add_friend_request_fail"];
+    //: NSString *add_friend_request_fail = [DisplayLanguageManager getTextWithKey:@"add_friend_request_fail"];
     NSString *add_friend_request_fail = [MakeManager cell:[[FrameSendData sharedInstance] kNameEndData]];//@"请求失败".user_localized
     //: NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
     NSString *successText = request.operation == NIMUserOperationAdd ? contact_tag_fragment_add_success: request_successful;
@@ -381,7 +381,7 @@
     addBtn.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [addBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [addBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [addBtn setTitle:[FFFLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
+    //: [addBtn setTitle:[DisplayLanguageManager getTextWithKey:@"add_friend_activity_add_friend"] forState:UIControlStateNormal];
     [addBtn setTitle:[MakeManager cell:[[FrameSendData sharedInstance] kTextMonthName]] forState:UIControlStateNormal];
     //: addBtn.backgroundColor = [UIColor colorWithHexString:@"#4B43DE"];
     addBtn.backgroundColor = [UIColor cell:[[FrameSendData sharedInstance] kName_mainString]];
@@ -430,7 +430,7 @@
             NSDictionary *data = [resultDict buttonAt:@"data"];
             //: NSString *account = [data newStringValueForKey:@"account"];
             NSString *account = [data comment:@"account"];
-            //: self.account.text = [NSString stringWithFormat:@"%@%@",[FFFLanguageManager getTextWithKey:@"friend_info_activity_account"], account];
+            //: self.account.text = [NSString stringWithFormat:@"%@%@",[DisplayLanguageManager getTextWithKey:@"friend_info_activity_account"], account];
             self.account.text = [NSString stringWithFormat:@"%@%@",[MakeManager cell:[[FrameSendData sharedInstance] kNameTitleColorString]], account];
         }
 

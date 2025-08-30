@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFContactSelectConfig.h"
+//: #import "DisplayContactSelectConfig.h"
 #import "QueryConfig.h"
 
 //: typedef void(^ContactSelectFinishBlock)(NSArray *uids, NSString *groupName, UIImage *avater);
@@ -35,7 +35,7 @@ typedef void(^ContactSelectCancelBlock)(void);
 @end
 
 
-//: @interface FFFContactSelectViewController : UIViewController
+//: @interface DisplayContactSelectViewController : UIViewController
 @interface RecordTitleViewController : UIViewController
 
 //: @property (nonatomic, copy) ContactSelectCancelBlock cancelBlock;
@@ -45,7 +45,7 @@ typedef void(^ContactSelectCancelBlock)(void);
 //: @property (nonatomic, weak) id<NIMContactSelectDelegate> delegate;
 @property (nonatomic, weak) id<LengthDelegate> delegate;
 
-//: @property (nonatomic, strong, readonly) id<FFFContactSelectConfig> config;
+//: @property (nonatomic, strong, readonly) id<DisplayContactSelectConfig> config;
 @property (nonatomic, strong, readonly) id<QueryConfig> config;
 
 //: @property (nonatomic, strong, readonly) UITableView *tableView;
@@ -61,7 +61,7 @@ typedef void(^ContactSelectCancelBlock)(void);
  *
  *  @return 选择器
  */
-//: - (instancetype)initWithConfig:(id<FFFContactSelectConfig>) config;
+//: - (instancetype)initWithConfig:(id<DisplayContactSelectConfig>) config;
 - (instancetype)initWithSightConfig:(id<QueryConfig>) config;
 
 /**

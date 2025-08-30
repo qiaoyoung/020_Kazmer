@@ -101,8 +101,8 @@
 #import "ColorCancelCompartmentViewCell.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DisplayCommonTableData.h"
+#import "DisplayCommonTableData.h"
 
 //: @interface USERColorButtonCell()
 @interface ColorCancelCompartmentViewCell()

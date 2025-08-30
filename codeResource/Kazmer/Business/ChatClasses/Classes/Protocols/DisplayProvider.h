@@ -14,14 +14,14 @@
 
 //: @class NIMSession;
 @class NIMSession;
-//: @class FFFKitInfo;
+//: @class DisplayKitInfo;
 @class CancelTeamCorner;
-//: @class FFFKitInfoFetchOption;
+//: @class DisplayKitInfoFetchOption;
 @class CellClean;
 //: @class NIMMessage;
 @class NIMMessage;
 
-//: @protocol FFFKitDataProvider <NSObject>
+//: @protocol DisplayKitDataProvider <NSObject>
 @protocol DisplayProvider <NSObject>
 
 //: @optional
@@ -35,9 +35,9 @@
  *
  *  @return 用户信息
  */
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId
+//: - (DisplayKitInfo *)infoByUser:(NSString *)userId
 - (CancelTeamCorner *)tingVoice:(NSString *)userId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(DisplayKitInfoFetchOption *)option;
                     keepingOption:(CellClean *)option;
 
 
@@ -49,9 +49,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId
+//: - (DisplayKitInfo *)infoByTeam:(NSString *)teamId
 - (CancelTeamCorner *)ability:(NSString *)teamId
-                    //: option:(FFFKitInfoFetchOption *)option;
+                    //: option:(DisplayKitInfoFetchOption *)option;
                     naturalEvent_strong:(CellClean *)option;
 
 /**
@@ -62,9 +62,9 @@
  *
  *  @return 群组信息
  */
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId
+//: - (DisplayKitInfo *)infoBySuperTeam:(NSString *)teamId
 - (CancelTeamCorner *)cellList:(NSString *)teamId
-                         //: option:(FFFKitInfoFetchOption *)option;
+                         //: option:(DisplayKitInfoFetchOption *)option;
                          view:(CellClean *)option;
 
 /**

@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFMessageCellProtocol.h
+//  DisplayMessageCellProtocol.h
 // Mortification
 //
 //  Created by NetEase.
@@ -9,23 +9,23 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "DisplayCellConfig.h"
+#import "DisplayCellConfig.h"
 
 // __M_A_C_R_O__
 
-//: @class FFFMessageModel;
+//: @class DisplayMessageModel;
 @class CleanDoing;
 //: @class NIMMessage;
 @class NIMMessage;
 //: @class NIMQuickComment;
 @class NIMQuickComment;
-//: @class FFFKitEvent;
+//: @class DisplayKitEvent;
 @class ToiletKitSession;
-//: @class FFFTextView;
+//: @class DisplayTextView;
 @class TitleScrollView;
 
-//: @protocol FFFMessageCellDelegate <NSObject>
+//: @protocol DisplayMessageCellDelegate <NSObject>
 @protocol CompartmentPath <NSObject>
 
 //: @optional
@@ -42,7 +42,7 @@
 
 //: #pragma mark - 点击事件
 #pragma mark - 点击事件
-//: - (BOOL)onTapCell:(FFFKitEvent *)event;
+//: - (BOOL)onTapCell:(DisplayKitEvent *)event;
 - (BOOL)cutOptionExtend:(ToiletKitSession *)event;
 
 //: - (BOOL)onLongPressCell:(NIMMessage *)message

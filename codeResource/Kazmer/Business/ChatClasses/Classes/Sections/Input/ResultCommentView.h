@@ -11,7 +11,7 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "FFFGrowingTextView.h"
+//: #import "DisplayGrowingTextView.h"
 #import "AtPraiseScrollView.h"
 
 //: typedef NS_ENUM(NSInteger,NIMInputStatus)
@@ -29,7 +29,7 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 };
 
 
-//: @protocol FFFInputToolBarDelegate <NSObject>
+//: @protocol DisplayInputToolBarDelegate <NSObject>
 @protocol TeamSize <NSObject>
 
 //: @optional
@@ -57,10 +57,10 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 @end
 
 
-//: @interface FFFInputToolBar : UIView
+//: @interface DisplayInputToolBar : UIView
 @interface ResultCommentView : UIView
 
-//: @property (nonatomic,strong) FFFGrowingTextView *inputTextView;
+//: @property (nonatomic,strong) DisplayGrowingTextView *inputTextView;
 @property (nonatomic,strong) AtPraiseScrollView *inputTextView;
 //: @property (nonatomic,strong) UIButton *voiceButton;
 @property (nonatomic,strong) UIButton *voiceButton;
@@ -73,7 +73,7 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 //: @property (nonatomic,strong) UIButton *sendButton;
 @property (nonatomic,strong) UIButton *sendButton;
 
-//: @property (nonatomic,weak) id<FFFInputToolBarDelegate> delegate;
+//: @property (nonatomic,weak) id<DisplayInputToolBarDelegate> delegate;
 @property (nonatomic,weak) id<TeamSize> delegate;
 
 //@property (nonatomic,strong) UIImageView *inputTextBkgImage;
@@ -107,7 +107,7 @@ typedef NS_ENUM(NSInteger,NIMInputStatus)
 //: @end
 @end
 
-//: @interface FFFInputToolBar(InputText)
+//: @interface DisplayInputToolBar(InputText)
 @interface ResultCommentView(InputText)
 
 //// 2022年08月25日 emoji处理

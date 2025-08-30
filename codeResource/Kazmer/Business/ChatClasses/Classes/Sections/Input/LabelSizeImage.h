@@ -27,7 +27,7 @@
 //: @end
 @end
 
-//: @interface FFFInputAtCache : NSObject
+//: @interface DisplayInputAtCache : NSObject
 @interface LabelSizeImage : NSObject
 
 //: - (NIMInputAtItem *)removeName:(NSString *)name;

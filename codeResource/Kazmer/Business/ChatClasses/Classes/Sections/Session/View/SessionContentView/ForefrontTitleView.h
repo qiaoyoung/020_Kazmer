@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
 
 //: @protocol NIMPlayAudioUIDelegate <NSObject>
@@ -23,7 +23,7 @@
 //: @end
 @end
 
-//: @interface FFFSessionAudioContentView : FFFSessionMessageContentView
+//: @interface DisplaySessionAudioContentView : DisplaySessionMessageContentView
 @interface ForefrontTitleView : WithTopView
 
 //: @property (nonatomic, strong) UILabel *audioDurationLable; 

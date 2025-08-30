@@ -201,32 +201,32 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFContactSelectViewController.h"
+//: #import "DisplayContactSelectViewController.h"
 #import "RecordTitleViewController.h"
-//: #import "FFFContactSelectTabView.h"
+//: #import "DisplayContactSelectTabView.h"
 #import "ParadigmColorView.h"
-//: #import "FFFContactPickedView.h"
+//: #import "DisplayContactPickedView.h"
 #import "LittleLeagueTeamView.h"
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
+//: #import "DisplayGroupedUsrInfo.h"
+#import "DisplayGroupedUsrInfo.h"
 //: #import "UserGroupedData.h"
 #import "UserRecord.h"
-//: #import "FFFContactDataCell.h"
+//: #import "DisplayContactDataCell.h"
 #import "ContactViewCell.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFSetGroupNameView.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
+//: #import "DisplaySetGroupNameView.h"
 #import "ColorTableView.h"
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "DisplayGroupAvatarViewController.h"
 #import "IndoorsViewController.h"
 
-//: @interface FFFContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, FFFContactPickedViewDelegate>{
+//: @interface DisplayContactSelectViewController ()<UITableViewDataSource, UITableViewDelegate, DisplayContactPickedViewDelegate>{
 @interface RecordTitleViewController ()<UITableViewDataSource, UITableViewDelegate, DelegateClean>{
     //: NSMutableArray *_selectecContacts;
     NSMutableArray *_selectecContacts;
@@ -250,18 +250,18 @@
 //: @property(nonatomic, strong) UIImage *headPortrait;
 @property(nonatomic, strong) UIImage *headPortrait;
 
-//: @property(nonatomic, strong) FFFSetGroupNameView *setGroupnameView;
+//: @property(nonatomic, strong) DisplaySetGroupNameView *setGroupnameView;
 @property(nonatomic, strong) ColorTableView *setGroupnameView;
 
 //: @property(nonatomic, strong) NSArray *sectionTitles;
 @property(nonatomic, strong) NSArray *sectionTitles;
-//: @property (strong, nonatomic) FFFContactSelectTabView *selectIndicatorView;
+//: @property (strong, nonatomic) DisplayContactSelectTabView *selectIndicatorView;
 @property (strong, nonatomic) ParadigmColorView *selectIndicatorView;
 
 //: @end
 @end
 
-//: @implementation FFFContactSelectViewController
+//: @implementation DisplayContactSelectViewController
 @implementation RecordTitleViewController
 
 //: - (void)viewDidLoad
@@ -373,7 +373,7 @@
     _selectecContacts = _selectecContacts.count ? _selectecContacts : [NSMutableArray array];
     //: for (NSString *selectId in _selectecContacts) {
     for (NSString *selectId in _selectecContacts) {
-        //: FFFKitInfo *info;
+        //: DisplayKitInfo *info;
         CancelTeamCorner *info;
         //: info = [self.config getInfoById:selectId];
         info = [self.config frame:selectId];
@@ -451,7 +451,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"select_contact"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"select_contact"];
     labtitle.text = [MakeManager cell:[ShoppingSilkData sharedInstance].kNameHateDiscoString];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -476,7 +476,7 @@
 //: #pragma mark - Private
 #pragma mark - Private
 
-//: - (FFFContactSelectTabView *)selectIndicatorView{
+//: - (DisplayContactSelectTabView *)selectIndicatorView{
 - (ParadigmColorView *)selectIndicatorView{
     //: if (_selectIndicatorView) {
     if (_selectIndicatorView) {
@@ -484,7 +484,7 @@
         return _selectIndicatorView;
     }
 
-    //: _selectIndicatorView = [[FFFContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
+    //: _selectIndicatorView = [[DisplayContactSelectTabView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice vg_statusBarHeight]), [[UIScreen mainScreen] bounds].size.width, 64)];
     _selectIndicatorView = [[ParadigmColorView alloc] initWithFrame:CGRectMake(0, (44.0f + [UIDevice comeDownSuperphylum]), [[UIScreen mainScreen] bounds].size.width, 64)];
     //: _selectIndicatorView.doneButton.hidden = YES;
     _selectIndicatorView.doneButton.hidden = YES;
@@ -497,7 +497,7 @@
 
     //: if (_selectecContacts.count == 0) {
     if (_selectecContacts.count == 0) {
-        //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
+        //: [SVProgressHUD showMessage:[DisplayLanguageManager getTextWithKey:@"main_activity_choose_least_one"]];
         [SVProgressHUD firstTeam:[MakeManager cell:[ShoppingSilkData sharedInstance].kNameJustData]];
         //: return;
         return;
@@ -505,7 +505,7 @@
 
 
     //: if (self.config.showSelectHeaderview) {
-    if (self.config.bar) {
+    if (self.config.showSelectHeaderview) {
 
         //: [self.view addSubview:self.setGroupnameView];
         [self.view addSubview:self.setGroupnameView];
@@ -527,7 +527,7 @@
                         [self.delegate emptySkimEnable:_selectecContacts];
                     }
 
-                    //: FFFGroupAvatarViewController *vc = [[FFFGroupAvatarViewController alloc]init];
+                    //: DisplayGroupAvatarViewController *vc = [[DisplayGroupAvatarViewController alloc]init];
                     IndoorsViewController *vc = [[IndoorsViewController alloc]init];
                     //: vc.groupName = groupName;
                     vc.groupName = groupName;
@@ -617,7 +617,7 @@
     return arr.count;
 }
 
-//: - (instancetype)initWithConfig:(id<FFFContactSelectConfig>) config{
+//: - (instancetype)initWithConfig:(id<DisplayContactSelectConfig>) config{
 - (instancetype)initWithSightConfig:(id<QueryConfig>) config{
     //: self = [self initWithNibName:nil bundle:nil];
     self = [self initWithNibName:nil bundle:nil];
@@ -643,9 +643,9 @@
 
     //: NSString *memberId = [(id<NIMGroupMemberProtocol>)member memberId];
     NSString *memberId = [(id<DisplayRow>)member littleLeagueTeam];
-    //: FFFContactDataCell *cell = (FFFContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
+    //: DisplayContactDataCell *cell = (DisplayContactDataCell *)[tableView cellForRowAtIndexPath:indexPath];
     ContactViewCell *cell = (ContactViewCell *)[tableView cellForRowAtIndexPath:indexPath];
-    //: FFFKitInfo *info;
+    //: DisplayKitInfo *info;
     CancelTeamCorner *info;
     //: info = [self.config getInfoById:memberId];
     info = [self.config frame:memberId];
@@ -748,7 +748,7 @@
     }
 }
 
-//: - (void)setConfig:(id<FFFContactSelectConfig>)config{
+//: - (void)setConfig:(id<DisplayContactSelectConfig>)config{
 - (void)setConfig:(id<QueryConfig>)config{
     //: _config = config;
     _config = config;
@@ -811,11 +811,11 @@
     return _defView;
 }
 
-//: - (FFFSetGroupNameView *)setGroupnameView{
+//: - (DisplaySetGroupNameView *)setGroupnameView{
 - (ColorTableView *)setGroupnameView{
     //: if(!_setGroupnameView){
     if(!_setGroupnameView){
-        //: _setGroupnameView = [[FFFSetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
+        //: _setGroupnameView = [[DisplaySetGroupNameView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
         _setGroupnameView = [[ColorTableView alloc]initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     }
     //: return _setGroupnameView;
@@ -859,11 +859,11 @@
     //: id<NIMGroupMemberProtocol> contactItem = arr[indexPath.row];
     id<DisplayRow> contactItem = arr[indexPath.row];
 
-    //: FFFContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
+    //: DisplayContactDataCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SelectContactCellID"];
     ContactViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[ShoppingSilkData sharedInstance].kNameReservationData];
     //: if (cell == nil) {
     if (cell == nil) {
-        //: cell = [[FFFContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
+        //: cell = [[DisplayContactDataCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SelectContactCellID"];
         cell = [[ContactViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[ShoppingSilkData sharedInstance].kNameReservationData];
     }
     //: cell.accessoryBtn.hidden = NO;

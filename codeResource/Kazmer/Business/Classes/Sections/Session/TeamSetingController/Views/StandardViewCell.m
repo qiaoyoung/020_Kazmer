@@ -33,29 +33,29 @@ Byte kTitlePrecedentSateFistValue[] = {91, 6, 94, 11, 237, 15, 146, 216, 208, 16
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupMemberTableViewCell.h"
+//: #import "DisplayGroupMemberTableViewCell.h"
 #import "StandardViewCell.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFTeamHelper.h"
+//: #import "DisplayTeamHelper.h"
 #import "MaxHelper.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
 
-//: @interface FFFGroupMemberTableViewCell()
+//: @interface DisplayGroupMemberTableViewCell()
 @interface StandardViewCell()
 
-//: @property (nonatomic,strong) id<FFFKitCardHeaderData> data;
+//: @property (nonatomic,strong) id<DisplayKitCardHeaderData> data;
 @property (nonatomic,strong) id<HalogenComment> data;
 
 //: @end
 @end
 
-//: @implementation FFFGroupMemberTableViewCell
+//: @implementation DisplayGroupMemberTableViewCell
 @implementation StandardViewCell
 
 //: - (void)layoutSubviews{
@@ -91,14 +91,14 @@ Byte kTitlePrecedentSateFistValue[] = {91, 6, 94, 11, 237, 15, 146, 216, 208, 16
 //: + (instancetype)cellWithTableView:(UITableView *)tableView
 + (instancetype)along:(UITableView *)tableView
 {
-    //: static NSString *identifier = @"FFFGroupMemberTableViewCell";
+    //: static NSString *identifier = @"DisplayGroupMemberTableViewCell";
     static NSString *identifier = @"StandardViewCell";
-    //: FFFGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    //: DisplayGroupMemberTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     StandardViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     //: if (!cell)
     if (!cell)
     {
-        //: cell = [[FFFGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        //: cell = [[DisplayGroupMemberTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell = [[StandardViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         //: cell.backgroundColor = [UIColor colorWithHexString:@"#F6F6F6"];
         cell.backgroundColor = [UIColor cell:StringFromSuspicionData(kTitleAircraftName)];
@@ -161,7 +161,7 @@ Byte kTitlePrecedentSateFistValue[] = {91, 6, 94, 11, 237, 15, 146, 216, 208, 16
     }
 }
 
-//: - (void)setUserInfo:(FFFKitInfo *)userInfo
+//: - (void)setUserInfo:(DisplayKitInfo *)userInfo
 - (void)setUserInfo:(CancelTeamCorner *)userInfo
 {
     //: self.userInfo = userInfo;

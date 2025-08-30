@@ -77,7 +77,7 @@ Byte kName_bridgeValue[] = {2, 46, 21, 10, 218, 74, 12, 66, 106, 142, 138, 136, 
         _textView.font = [UIFont systemFontOfSize:16.0];
         //: _textView.textColor = [UIColor colorWithHexString:@"#333333"];
         _textView.textColor = [UIColor cell:StringFromInventData(kTitleItemEnableName)];
-        //: _textView.placeholder = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+        //: _textView.placeholder = [DisplayLanguageManager getTextWithKey:@"activity_set_bio_title"];
         _textView.placeholder = [MakeManager cell:StringFromInventData(kNameGrayWheatString)];
         //: _textView.delegate = self;
         _textView.delegate = self;
@@ -176,7 +176,7 @@ Byte kName_bridgeValue[] = {2, 46, 21, 10, 218, 74, 12, 66, 106, 142, 138, 136, 
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"activity_set_bio_title"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"activity_set_bio_title"];
     labtitle.text = [MakeManager cell:StringFromInventData(kNameGrayWheatString)];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -260,7 +260,7 @@ Byte kName_bridgeValue[] = {2, 46, 21, 10, 218, 74, 12, 66, 106, 142, 138, 136, 
             [nav popViewControllerAnimated:NO];
             //: UIViewController *vc = nav.topViewController;
             UIViewController *vc = nav.topViewController;
-            //: [vc.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
+            //: [vc.view makeToast:[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_success"]
             [vc.view makeToast:[MakeManager cell:StringFromInventData(kName_bridgeValue)]
                          //: duration:2
                          duration:2
@@ -268,7 +268,7 @@ Byte kName_bridgeValue[] = {2, 46, 21, 10, 218, 74, 12, 66, 106, 142, 138, 136, 
                          position:CSToastPositionCenter];
         //: }else{
         }else{
-            //: [wself.view makeToast:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
+            //: [wself.view makeToast:[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_user_info_update_failed"]
             [wself.view makeToast:[MakeManager cell:StringFromInventData(kText_inventName)]
                          //: duration:2
                          duration:2

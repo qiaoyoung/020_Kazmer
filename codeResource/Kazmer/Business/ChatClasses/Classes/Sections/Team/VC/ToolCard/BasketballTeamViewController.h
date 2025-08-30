@@ -21,7 +21,7 @@
 //: @end
 @end
 
-//: @interface FFFCreateTeamAnnouncement : UIViewController
+//: @interface DisplayCreateTeamAnnouncement : UIViewController
 @interface BasketballTeamViewController : UIViewController
 
 //: @property (nonatomic, weak) id<USERCreateTeamAnnouncementDelegate> delegate;

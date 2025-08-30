@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFAvatarImageView;
+//: @class DisplayAvatarImageView;
 @class MemoryImageControl;
 //: @class USERContactDataMember;
 @class InformationMember;
@@ -30,7 +30,7 @@
 //: @interface USERUserListCell : UITableViewCell
 @interface CommentTopViewCell : UITableViewCell
 
-//: @property (nonatomic,strong) FFFAvatarImageView * avatarImageView;
+//: @property (nonatomic,strong) DisplayAvatarImageView * avatarImageView;
 @property (nonatomic,strong) MemoryImageControl * avatarImageView;
 
 //: @property (nonatomic,weak) id<USERUserListCellDelegate> delegate;

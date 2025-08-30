@@ -11,9 +11,9 @@
 // __M_A_C_R_O__
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
-//: #import "FFFInputEmoticonParser.h"
+//: #import "DisplayInputEmoticonParser.h"
 #import "MessageParser.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"

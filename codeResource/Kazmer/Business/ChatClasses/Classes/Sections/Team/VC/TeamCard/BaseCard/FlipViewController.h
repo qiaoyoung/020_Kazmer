@@ -9,7 +9,7 @@
 //  群组操作
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardViewController.h"
+//: #import "DisplayTeamCardViewController.h"
 #import "CommentViewController.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 //: #pragma mark - 外部配置项
 #pragma mark - 外部配置项
-//: @interface FFFTeamCardViewControllerOption : NSObject
+//: @interface DisplayTeamCardViewControllerOption : NSObject
 @interface SessionOption : NSObject
 
 //: @property (nonatomic, assign) BOOL isTop;
@@ -26,15 +26,15 @@ NS_ASSUME_NONNULL_BEGIN
 //: @end
 @end
 
-//: @interface FFFTeamCardOperationViewController : FFFTeamCardViewController
+//: @interface DisplayTeamCardOperationViewController : DisplayTeamCardViewController
 @interface FlipViewController : CommentViewController
 
 //外部配置
-//: @property (nonatomic,strong) FFFTeamCardViewControllerOption *option;
+//: @property (nonatomic,strong) DisplayTeamCardViewControllerOption *option;
 @property (nonatomic,strong) SessionOption *option;
 
 //群组管理
-//: @property (nonatomic,strong) FFFTeamListDataManager *teamListManager;
+//: @property (nonatomic,strong) DisplayTeamListDataManager *teamListManager;
 @property (nonatomic,strong) MentionManager *teamListManager;
 
 
@@ -43,10 +43,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithTowardRecording:(NIMTeam *)team
                      //: session:(NIMSession *)session
                      pass:(NIMSession *)session
-                      //: option:(FFFTeamCardViewControllerOption * _Nullable)option;
+                      //: option:(DisplayTeamCardViewControllerOption * _Nullable)option;
                       session:(SessionOption * _Nullable)option;
 //查询全部群成员
-//: - (void)didFetchTeamMember:(nullable FFFMembersFetchOption *)option;
+//: - (void)didFetchTeamMember:(nullable DisplayMembersFetchOption *)option;
 - (void)top:(nullable LengthOption *)option;
 
 //加人

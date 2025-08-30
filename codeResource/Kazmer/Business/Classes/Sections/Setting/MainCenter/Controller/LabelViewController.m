@@ -1130,7 +1130,7 @@ typedef struct {
     labtitle.textColor = [UIColor cell:[AircraftWithData sharedInstance].kText_everValue];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"system_change_language"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"system_change_language"];
     labtitle.text = [MakeManager cell:[AircraftWithData sharedInstance].kTitle_contentValue];
     //: [self.view addSubview:labtitle];
     [self.view addSubview:labtitle];

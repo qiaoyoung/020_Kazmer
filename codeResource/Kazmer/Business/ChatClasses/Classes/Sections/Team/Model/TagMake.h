@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "DisplayCardDataSourceProtocol.h"
+#import "DisplayCardDataSourceProtocol.h"
 
-//: @interface FFFCardOperationItem : NSObject<FFFKitCardHeaderData>
+//: @interface DisplayCardOperationItem : NSObject<DisplayKitCardHeaderData>
 @interface TagMake : NSObject<HalogenComment>
 
 //: @property(nonatomic,copy) NSString *title;

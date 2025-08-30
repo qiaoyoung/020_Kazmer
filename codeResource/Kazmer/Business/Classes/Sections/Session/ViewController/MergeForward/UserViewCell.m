@@ -31,7 +31,7 @@ ProfitableData kTitleDominantText = (ProfitableData){121, (Byte []){0, 0, 0, 0, 
 #import "UserViewCell.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
-//: #import "FFFTimestampModel.h"
+//: #import "DisplayTimestampModel.h"
 #import "WithPage.h"
 
 //: @interface USERTimestampCell ()
@@ -85,9 +85,9 @@ ProfitableData kTitleDominantText = (ProfitableData){121, (Byte []){0, 0, 0, 0, 
     _lineRight.centerY = self.timeLabel.centerY;
 }
 
-//: - (void)refreshData:(FFFTimestampModel *)data {
+//: - (void)refreshData:(DisplayTimestampModel *)data {
 - (void)count:(WithPage *)data {
-    //: if ([data isKindOfClass:[FFFTimestampModel class]]) {
+    //: if ([data isKindOfClass:[DisplayTimestampModel class]]) {
     if ([data isKindOfClass:[WithPage class]]) {
         //: self.timeLabel.text = [self timeFormatString:data.messageTime];
         self.timeLabel.text = [self progress:data.messageTime];

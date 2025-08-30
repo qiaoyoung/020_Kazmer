@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  FFFBaseSessionContentConfig.m
+//  DisplayBaseSessionContentConfig.m
 // Mortification
 //
 //  Created by amao on 9/15/15.
@@ -9,55 +9,55 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFBaseSessionContentConfig.h"
-#import "FFFBaseSessionContentConfig.h"
-//: #import "FFFTextContentConfig.h"
+//: #import "DisplayBaseSessionContentConfig.h"
+#import "DisplayBaseSessionContentConfig.h"
+//: #import "DisplayTextContentConfig.h"
 #import "ConfigCustom.h"
-//: #import "FFFImageContentConfig.h"
+//: #import "DisplayImageContentConfig.h"
 #import "SizePullConfig.h"
-//: #import "FFFAudioContentConfig.h"
+//: #import "DisplayAudioContentConfig.h"
 #import "PageConfig.h"
-//: #import "FFFVideoContentConfig.h"
+//: #import "DisplayVideoContentConfig.h"
 #import "GrowingCancel.h"
-//: #import "FFFFileContentConfig.h"
+//: #import "DisplayFileContentConfig.h"
 #import "LengthAt.h"
-//: #import "FFFNotificationContentConfig.h"
+//: #import "DisplayNotificationContentConfig.h"
 #import "ManDisplay.h"
-//: #import "FFFLocationContentConfig.h"
+//: #import "DisplayLocationContentConfig.h"
 #import "BubbleConfig.h"
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "DisplayUnsupportContentConfig.h"
 #import "PersonMessage.h"
-//: #import "FFFTipContentConfig.h"
+//: #import "DisplayTipContentConfig.h"
 #import "BlendConfig.h"
-//: #import "FFFReplyedTextContentConfig.h"
+//: #import "DisplayReplyedTextContentConfig.h"
 #import "MaxConfig.h"
-//: #import "FFFRtcCallRecordContentConfig.h"
+//: #import "DisplayRtcCallRecordContentConfig.h"
 #import "EnableName.h"
 
-//: @interface FFFSessionContentConfigFactory ()
+//: @interface DisplaySessionContentConfigFactory ()
 @interface SumryCrop ()
 //: @property (nonatomic,strong) NSDictionary *dict;
 @property (nonatomic,strong) NSDictionary *dict;
 //: @property (nonatomic,strong) NSDictionary *replyDict;
 @property (nonatomic,strong) NSDictionary *replyDict;
-//: @property (nonatomic,strong) FFFUnsupportContentConfig *unsupportConfig;
+//: @property (nonatomic,strong) DisplayUnsupportContentConfig *unsupportConfig;
 @property (nonatomic,strong) PersonMessage *unsupportConfig;
 //: @end
 @end
 
-//: @implementation FFFSessionContentConfigFactory
+//: @implementation DisplaySessionContentConfigFactory
 @implementation SumryCrop
 
 //: + (instancetype)sharedFacotry
 + (instancetype)transferFacotry
 {
-    //: static FFFSessionContentConfigFactory *instance = nil;
+    //: static DisplaySessionContentConfigFactory *instance = nil;
     static SumryCrop *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFSessionContentConfigFactory alloc] init];
+        //: instance = [[DisplaySessionContentConfigFactory alloc] init];
         instance = [[SumryCrop alloc] init];
     //: });
     });
@@ -71,28 +71,28 @@
     //: if (self = [super init])
     if (self = [super init])
     {
-        //: _dict = @{@(NIMMessageTypeText) : [FFFTextContentConfig new],
+        //: _dict = @{@(NIMMessageTypeText) : [DisplayTextContentConfig new],
         _dict = @{@(NIMMessageTypeText) : [ConfigCustom new],
-                  //: @(NIMMessageTypeImage) : [FFFImageContentConfig new],
+                  //: @(NIMMessageTypeImage) : [DisplayImageContentConfig new],
                   @(NIMMessageTypeImage) : [SizePullConfig new],
-                  //: @(NIMMessageTypeAudio) : [FFFAudioContentConfig new],
+                  //: @(NIMMessageTypeAudio) : [DisplayAudioContentConfig new],
                   @(NIMMessageTypeAudio) : [PageConfig new],
-                  //: @(NIMMessageTypeVideo) : [FFFVideoContentConfig new],
+                  //: @(NIMMessageTypeVideo) : [DisplayVideoContentConfig new],
                   @(NIMMessageTypeVideo) : [GrowingCancel new],
-                  //: @(NIMMessageTypeFile) : [FFFFileContentConfig new],
+                  //: @(NIMMessageTypeFile) : [DisplayFileContentConfig new],
                   @(NIMMessageTypeFile) : [LengthAt new],
-                  //: @(NIMMessageTypeLocation) : [FFFLocationContentConfig new],
+                  //: @(NIMMessageTypeLocation) : [DisplayLocationContentConfig new],
                   @(NIMMessageTypeLocation) : [BubbleConfig new],
-                  //: @(NIMMessageTypeNotification) : [FFFNotificationContentConfig new],
+                  //: @(NIMMessageTypeNotification) : [DisplayNotificationContentConfig new],
                   @(NIMMessageTypeNotification) : [ManDisplay new],
-                  //: @(NIMMessageTypeTip) : [FFFTipContentConfig new],
+                  //: @(NIMMessageTypeTip) : [DisplayTipContentConfig new],
                   @(NIMMessageTypeTip) : [BlendConfig new],
-                  //: @(NIMMessageTypeRtcCallRecord): [FFFRtcCallRecordContentConfig new],
+                  //: @(NIMMessageTypeRtcCallRecord): [DisplayRtcCallRecordContentConfig new],
                   @(NIMMessageTypeRtcCallRecord): [EnableName new],
         //: };
         };
 
-        //: FFFReplyedTextContentConfig *replyedTextConfig = [FFFReplyedTextContentConfig new];
+        //: DisplayReplyedTextContentConfig *replyedTextConfig = [DisplayReplyedTextContentConfig new];
         MaxConfig *replyedTextConfig = [MaxConfig new];
         //: _replyDict = @{
         _replyDict = @{
@@ -120,7 +120,7 @@
             @(NIMMessageTypeRtcCallRecord) : replyedTextConfig,
         //: };
         };
-        //: _unsupportConfig = [[FFFUnsupportContentConfig alloc] init];
+        //: _unsupportConfig = [[DisplayUnsupportContentConfig alloc] init];
         _unsupportConfig = [[PersonMessage alloc] init];
     }
     //: return self;

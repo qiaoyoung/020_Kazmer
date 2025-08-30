@@ -106,16 +106,16 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitColorButtonCell.h"
+//: #import "DisplayKitColorButtonCell.h"
 #import "KitView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFCommonTableData.h"
-#import "FFFCommonTableData.h"
+//: #import "DisplayCommonTableData.h"
+#import "DisplayCommonTableData.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 
-//: @interface FFFKitColorButtonCell()
+//: @interface DisplayKitColorButtonCell()
 @interface KitView()
 
 //: @property (nonatomic,strong) NIMCommonTableRow *rowData;
@@ -124,7 +124,7 @@
 //: @end
 @end
 
-//: @implementation FFFKitColorButtonCell
+//: @implementation DisplayKitColorButtonCell
 @implementation KitView
 
 //: - (UIView*)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
@@ -185,8 +185,8 @@
     self.rowData = rowData;
     //: [self.button setTitle:rowData.title forState:UIControlStateNormal];
     [self.button setTitle:rowData.title forState:UIControlStateNormal];
-    //: FFFKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
-    FFFKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
+    //: DisplayKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
+    DisplayKitColorButtonCellStyle style = [rowData.extraInfo integerValue];
     //: self.button.style = style;
     self.button.style = style;
     //: [self.button removeTarget:tableView.device_viewController action:NULL forControlEvents:UIControlEventTouchUpInside];
@@ -225,8 +225,8 @@
     NSString *imageNormalName = @"";
     //: switch (self.style) {
     switch (self.style) {
-        //: case FFFKitColorButtonCellStyleRed:{
-        case FFFKitColorButtonCellStyleRed:{
+        //: case DisplayKitColorButtonCellStyleRed:{
+        case DisplayKitColorButtonCellStyleRed:{
             //: imageNormalName = @"icon_cell_red_normal";
             imageNormalName = [[RatherSeedData sharedInstance] kTitleCollegeAxString];
             //: UIImage *imageNormal = [[UIImage imageNamed:imageNormalName] resizableImageWithCapInsets:UIEdgeInsetsMake(10, 10, 10, 10) resizingMode:UIImageResizingModeStretch];
@@ -236,8 +236,8 @@
         }
             //: break;
             break;
-        //: case FFFKitColorButtonCellStyleBlue:
-        case FFFKitColorButtonCellStyleBlue:
+        //: case DisplayKitColorButtonCellStyleBlue:
+        case DisplayKitColorButtonCellStyleBlue:
         {
             //: imageNormalName = @"icon_cell_blue_normal";
             imageNormalName = [[RatherSeedData sharedInstance] kTitleYoursContent];
@@ -269,8 +269,8 @@
     return self;
 }
 
-//: - (void)setStyle:(FFFKitColorButtonCellStyle)style{
-- (void)setStyle:(FFFKitColorButtonCellStyle)style{
+//: - (void)setStyle:(DisplayKitColorButtonCellStyle)style{
+- (void)setStyle:(DisplayKitColorButtonCellStyle)style{
     //: _style = style;
     _style = style;
     //: [self reset];

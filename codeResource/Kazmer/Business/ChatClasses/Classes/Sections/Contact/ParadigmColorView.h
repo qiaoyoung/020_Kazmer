@@ -12,13 +12,13 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFContactPickedView;
+//: @class DisplayContactPickedView;
 @class LittleLeagueTeamView;
 
-//: @interface FFFContactSelectTabView : UIView
+//: @interface DisplayContactSelectTabView : UIView
 @interface ParadigmColorView : UIView
 
-//: @property (nonatomic,strong) FFFContactPickedView *pickedView;
+//: @property (nonatomic,strong) DisplayContactPickedView *pickedView;
 @property (nonatomic,strong) LittleLeagueTeamView *pickedView;
 
 //: @property (nonatomic,strong) UIButton *doneButton;

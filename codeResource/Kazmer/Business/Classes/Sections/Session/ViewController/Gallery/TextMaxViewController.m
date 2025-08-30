@@ -200,7 +200,7 @@ typedef struct {
 #import "UIView+Toast.h"
 //: #import "UIAlertView+USERBlock.h"
 #import "UIAlertView+NameAddContent.h"
-//: #import "FFFKitAuthorizationTool.h"
+//: #import "DisplayKitAuthorizationTool.h"
 #import "GrowingTool.h"
 //: #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
 #import <SDWebImageFLPlugin/SDWebImageFLPlugin.h>
@@ -659,27 +659,27 @@ typedef struct {
 //    }else{
         //: UIImage *image = [self imageWithPath:self.imagePath];
         UIImage *image = [self utilizer:self.imagePath];
-        //: [FFFKitAuthorizationTool requestPhotoLibraryAuthorization:^(FFFKitAuthorizationStatus status) {
-        [GrowingTool photo:^(FFFKitAuthorizationStatus status) {
+        //: [DisplayKitAuthorizationTool requestPhotoLibraryAuthorization:^(DisplayKitAuthorizationStatus status) {
+        [GrowingTool photo:^(DisplayKitAuthorizationStatus status) {
             //: switch (status) {
             switch (status) {
-                //: case FFFKitAuthorizationStatusAuthorized:
-                case FFFKitAuthorizationStatusAuthorized:
+                //: case DisplayKitAuthorizationStatusAuthorized:
+                case DisplayKitAuthorizationStatusAuthorized:
                     //: UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), NULL);
                     UIImageWriteToSavedPhotosAlbum(image, self, @selector(option:labelTable:date:), NULL);
                     //: break;
                     break;
                 //: default:
                 default:
-                    //: [self.view makeToast:[FFFLanguageManager getTextWithKey:@"setting_privacy"] duration:2.0 position:CSToastPositionCenter];
+                    //: [self.view makeToast:[DisplayLanguageManager getTextWithKey:@"setting_privacy"] duration:2.0 position:CSToastPositionCenter];
                     [self.view makeToast:[MakeManager cell:[CalledGreatlyData sharedInstance].kNameMysteryRecommendString] duration:2.0 position:CSToastPositionCenter];
-                    //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"warm_prompt"] message:[FFFLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
+                    //: UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[DisplayLanguageManager getTextWithKey:@"warm_prompt"] message:[DisplayLanguageManager getTextWithKey:@"setting_privacy"] preferredStyle:UIAlertControllerStyleAlert];
                     UIAlertController *alertControl = [UIAlertController alertControllerWithTitle:[MakeManager cell:[CalledGreatlyData sharedInstance].kTitleCastData] message:[MakeManager cell:[CalledGreatlyData sharedInstance].kNameMysteryRecommendString] preferredStyle:UIAlertControllerStyleAlert];
-                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[CalledGreatlyData sharedInstance].kText_wortRelieveCosyData] style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
                     //: }])];
                     }])];
-                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    //: [alertControl addAction:([UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"tag_activity_set"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                     [alertControl addAction:([UIAlertAction actionWithTitle:[MakeManager cell:[CalledGreatlyData sharedInstance].kTitleEquivalentData] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                         //: NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
                         NSURL *url = [[NSURL alloc] initWithString:UIApplicationOpenSettingsURLString];
@@ -706,7 +706,7 @@ typedef struct {
 //: - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 - (void)option:(UIImage *)image labelTable:(NSError *)error date:(void *)contextInfo
 {
-    //: NSString *toast = (!image || error)?[FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+    //: NSString *toast = (!image || error)?[DisplayLanguageManager getTextWithKey:@"group_info_activity_update_success"] :[DisplayLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
     NSString *toast = (!image || error)?[MakeManager cell:[CalledGreatlyData sharedInstance].kTitle_dateProperHoppingName] :[MakeManager cell:[CalledGreatlyData sharedInstance].kText_houseString];
     //: [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];
     [self.view makeToast:toast duration:2.0 position:CSToastPositionCenter];

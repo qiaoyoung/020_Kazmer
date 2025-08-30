@@ -12,30 +12,30 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFPageView;
+//: @class DisplayPageView;
 @class MarginView;
 
-//: @protocol FFFPageViewDataSource <NSObject>
+//: @protocol DisplayPageViewDataSource <NSObject>
 @protocol CellMessageTag <NSObject>
-//: - (NSInteger)numberOfPages: (FFFPageView *)pageView;
+//: - (NSInteger)numberOfPages: (DisplayPageView *)pageView;
 - (NSInteger)directionned: (MarginView *)pageView;
-//: - (UIView *)pageView: (FFFPageView *)pageView viewInPage: (NSInteger)index;
+//: - (UIView *)pageView: (DisplayPageView *)pageView viewInPage: (NSInteger)index;
 - (UIView *)sight: (MarginView *)pageView modelBlueBackground: (NSInteger)index;
 //: @end
 @end
 
-//: @protocol FFFPageViewDelegate <NSObject>
+//: @protocol DisplayPageViewDelegate <NSObject>
 @protocol SecondNameDelegate <NSObject>
 //: @optional
 @optional
-//: - (void)pageViewScrollEnd: (FFFPageView *)pageView
+//: - (void)pageViewScrollEnd: (DisplayPageView *)pageView
 - (void)icon: (MarginView *)pageView
              //: currentIndex: (NSInteger)index
              pagination: (NSInteger)index
                //: totolPages: (NSInteger)pages;
                recent: (NSInteger)pages;
 
-//: - (void)pageViewDidScroll: (FFFPageView *)pageView;
+//: - (void)pageViewDidScroll: (DisplayPageView *)pageView;
 - (void)quantityeracted: (MarginView *)pageView;
 //: - (BOOL)needScrollAnimation;
 - (BOOL)toScroll;
@@ -43,13 +43,13 @@
 @end
 
 
-//: @interface FFFPageView : UIView<UIScrollViewDelegate>
+//: @interface DisplayPageView : UIView<UIScrollViewDelegate>
 @interface MarginView : UIView<UIScrollViewDelegate>
 //: @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) UIScrollView *scrollView;
-//: @property (nonatomic,weak) id<FFFPageViewDataSource> dataSource;
+//: @property (nonatomic,weak) id<DisplayPageViewDataSource> dataSource;
 @property (nonatomic,weak) id<CellMessageTag> dataSource;
-//: @property (nonatomic,weak) id<FFFPageViewDelegate> pageViewDelegate;
+//: @property (nonatomic,weak) id<DisplayPageViewDelegate> pageViewDelegate;
 @property (nonatomic,weak) id<SecondNameDelegate> pageViewDelegate;
 //: - (void)scrollToPage: (NSInteger)pages;
 - (void)exhibitView: (NSInteger)pages;

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPageView.h"
+//: #import "DisplayPageView.h"
 #import "MarginView.h"
 
-//: @interface FFFPageView ()
+//: @interface DisplayPageView ()
 @interface MarginView ()
 {
     //: NSInteger _currentPage;
@@ -37,7 +37,7 @@
 //: @end
 @end
 
-//: @implementation FFFPageView
+//: @implementation DisplayPageView
 @implementation MarginView
 
 //: - (id)initWithFrame:(CGRect)frame

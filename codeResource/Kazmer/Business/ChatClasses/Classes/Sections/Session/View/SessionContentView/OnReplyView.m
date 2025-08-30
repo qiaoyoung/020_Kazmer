@@ -9,20 +9,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionNetChatNotifyContentView.h"
+//: #import "DisplaySessionNetChatNotifyContentView.h"
 #import "OnReplyView.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @implementation FFFSessionNetChatNotifyContentView
+//: @implementation DisplaySessionNetChatNotifyContentView
 @implementation OnReplyView
 
 //: -(instancetype)initSessionMessageContentView
@@ -47,15 +47,15 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)data
+//: - (void)refresh:(DisplayMessageModel *)data
 - (void)from:(CleanDoing *)data
 {
     //: [super refresh:data];
     [super from:data];
-    //: NSString *text = [FFFKitUtil messageTipContent:data.message];
+    //: NSString *text = [DisplayKitUtil messageTipContent:data.message];
     NSString *text = [AtPull view:data.message];
 
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config setting:data.message];
     ManPull *setting = [[Mortification text].config toWith:data.message];
     //: self.textLabel.textColor = setting.textColor;;
     self.textLabel.textColor = setting.textColor;;

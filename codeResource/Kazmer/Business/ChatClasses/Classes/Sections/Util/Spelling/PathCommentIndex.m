@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFPinyinConverter.h"
+//: #import "DisplayPinyinConverter.h"
 #import "PathCommentIndex.h"
 
-//: @interface FFFPinyinConverter ()
+//: @interface DisplayPinyinConverter ()
 @interface PathCommentIndex ()
 {
     //: int *_codeIndex;
@@ -25,18 +25,18 @@
 //: @end
 @end
 
-//: @implementation FFFPinyinConverter
+//: @implementation DisplayPinyinConverter
 @implementation PathCommentIndex
-//: + (FFFPinyinConverter *)sharedInstance
+//: + (DisplayPinyinConverter *)sharedInstance
 + (PathCommentIndex *)responseInstance
 {
-    //: static FFFPinyinConverter *instance = nil;
+    //: static DisplayPinyinConverter *instance = nil;
     static PathCommentIndex *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFPinyinConverter alloc] init];
+        //: instance = [[DisplayPinyinConverter alloc] init];
         instance = [[PathCommentIndex alloc] init];
     //: });
     });

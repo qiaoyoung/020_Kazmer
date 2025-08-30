@@ -58,7 +58,7 @@ JambonData kTitleSafetyDefineValue = (JambonData){141, (Byte []){228, 238, 226, 
 {
     //: if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
     if ([self.delegate respondsToSelector:@selector(surprised:)]) {
-        //: FFFKitEvent *event = [[FFFKitEvent alloc] init];
+        //: DisplayKitEvent *event = [[DisplayKitEvent alloc] init];
         ToiletKitSession *event = [[ToiletKitSession alloc] init];
         //: event.eventName = USERShowRedPacketDetailEvent;
         event.eventName = dreamVideoPath(nil);
@@ -71,7 +71,7 @@ JambonData kTitleSafetyDefineValue = (JambonData){141, (Byte []){228, 238, 226, 
     }
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(DisplayMessageModel *)model{
 - (void)from:(CleanDoing *)model{
     //: [super refresh:model];
     [super from:model];

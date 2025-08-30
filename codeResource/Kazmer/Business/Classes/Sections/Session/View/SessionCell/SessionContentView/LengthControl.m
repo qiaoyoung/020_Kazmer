@@ -117,7 +117,7 @@
     return self;
 }
 
-//: - (void)refresh:(FFFMessageModel *)model{
+//: - (void)refresh:(DisplayMessageModel *)model{
 - (void)from:(CleanDoing *)model{
     //: [super refresh:model];
     [super from:model];

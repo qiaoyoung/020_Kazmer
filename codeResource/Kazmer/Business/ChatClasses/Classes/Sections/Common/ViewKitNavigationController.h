@@ -11,19 +11,19 @@
 // __M_A_C_R_O__
 //: #import "TZImagePickerController.h"
 #import "TZImagePickerController.h"
-//: #import "FFFKitMediaPickerDelegate.h"
+//: #import "DisplayKitMediaPickerDelegate.h"
 #import "MarkSession.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN
 
-//: @interface FFFKitMediaPickerController : TZImagePickerController
+//: @interface DisplayKitMediaPickerController : TZImagePickerController
 @interface ViewKitNavigationController : TZImagePickerController
 
 //: - (instancetype)initWithMaxImagesCount:(NSInteger)maxImagesCount;
 - (instancetype)initWithMargin:(NSInteger)maxImagesCount;
 
-//: @property (nonatomic, weak) id<FFFKitMediaPickerDelegate> nim_delegate;
+//: @property (nonatomic, weak) id<DisplayKitMediaPickerDelegate> nim_delegate;
 @property (nonatomic, weak) id<MarkSession> nim_delegate;
 
 //: @property(nonatomic, strong) NSArray<NSString *> *mediaTypes;

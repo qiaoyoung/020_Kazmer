@@ -62,14 +62,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFImageContentConfig.h"
+//: #import "DisplayImageContentConfig.h"
 #import "SizePullConfig.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @implementation FFFImageContentConfig
+//: @implementation DisplayImageContentConfig
 @implementation SizePullConfig
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
 - (CGSize)step:(CGFloat)cellWidth menu:(NIMMessage *)message
@@ -122,7 +122,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: return @"FFFSessionImageContentView";
+    //: return @"DisplaySessionImageContentView";
     return @"CenterTextView";
 }
 

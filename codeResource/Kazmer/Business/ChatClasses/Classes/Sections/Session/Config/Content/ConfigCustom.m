@@ -9,14 +9,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextContentConfig.h"
+//: #import "DisplayTextContentConfig.h"
 #import "ConfigCustom.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFTextContentConfig()
+//: @interface DisplayTextContentConfig()
 @interface ConfigCustom()
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;
@@ -26,7 +26,7 @@
 @end
 
 
-//: @implementation FFFTextContentConfig
+//: @implementation DisplayTextContentConfig
 @implementation ConfigCustom
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -61,7 +61,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: return @"FFFSessionTextContentView";
+    //: return @"DisplaySessionTextContentView";
     return @"ToControl";
 }
 

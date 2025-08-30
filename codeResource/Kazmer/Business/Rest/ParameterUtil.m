@@ -433,7 +433,7 @@
 }
 
 //: + (NSURLSessionTask *)upload:(NSString *)url params:(NSDictionary *)params data:(NSData *)data success:(YLRestSuccess)success fail:(YLRestFail)fail
-+ (NSURLSessionTask *)mailCamera:(NSString *)url uploadOnMuffFail:(NSDictionary *)params reply:(NSData *)data fail:(YLRestSuccess)success dredgeOrFailBar:(YLRestFail)fail
++ (NSURLSessionTask *)mailCamera:(NSString *)url uploadOnMuDisplayail:(NSDictionary *)params reply:(NSData *)data fail:(YLRestSuccess)success dredgeOrFailBar:(YLRestFail)fail
 {
     //: NSString * fileName = [NSString stringWithFormat:@"img_%@.jpg",[[NSDate date] description]];
     NSString * fileName = [NSString stringWithFormat:[EyebrowFlowerData kTitlePartiallyValue],[[NSDate date] description]];

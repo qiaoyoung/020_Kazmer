@@ -215,7 +215,7 @@ Byte kTitle_valueAtString[] = {81, 23, 38, 7, 123, 207, 47, 135, 137, 154, 143, 
     if (!_albumLab) {
         //: _albumLab = [[UILabel alloc] init];
         _albumLab = [[UILabel alloc] init];
-        //: _albumLab.text = [FFFLanguageManager getTextWithKey:@"message_send_album"];
+        //: _albumLab.text = [DisplayLanguageManager getTextWithKey:@"message_send_album"];
         _albumLab.text = [MakeManager cell:StringFromPlayData(kTitle_mainName)];
         //: _albumLab.textAlignment = NSTextAlignmentCenter;
         _albumLab.textAlignment = NSTextAlignmentCenter;
@@ -251,7 +251,7 @@ Byte kTitle_valueAtString[] = {81, 23, 38, 7, 123, 207, 47, 135, 137, 154, 143, 
     if (!_tipsLab) {
         //: _tipsLab = [[UILabel alloc] init];
         _tipsLab = [[UILabel alloc] init];
-        //: _tipsLab.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+        //: _tipsLab.text = [DisplayLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
         _tipsLab.text = [MakeManager cell:StringFromPlayData(kTitle_valueAtString)];
 //        _tipsLab.text = @"将二维码放入扫面框内";
         //: _tipsLab.textAlignment = NSTextAlignmentCenter;
@@ -289,7 +289,7 @@ Byte kTitle_valueAtString[] = {81, 23, 38, 7, 123, 207, 47, 135, 137, 154, 143, 
     if (!_qrcodeLab) {
         //: _qrcodeLab = [[UILabel alloc] init];
         _qrcodeLab = [[UILabel alloc] init];
-        //: _qrcodeLab.text = [FFFLanguageManager getTextWithKey:@"qrcode_activity_title"];
+        //: _qrcodeLab.text = [DisplayLanguageManager getTextWithKey:@"qrcode_activity_title"];
         _qrcodeLab.text = [MakeManager cell:StringFromPlayData(kTextItemValue)];
         //: _qrcodeLab.textAlignment = NSTextAlignmentCenter;
         _qrcodeLab.textAlignment = NSTextAlignmentCenter;

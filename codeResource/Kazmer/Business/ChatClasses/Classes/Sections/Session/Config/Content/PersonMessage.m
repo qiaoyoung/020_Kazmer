@@ -78,12 +78,12 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUnsupportContentConfig.h"
+//: #import "DisplayUnsupportContentConfig.h"
 #import "PersonMessage.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFUnsupportContentConfig ()
+//: @interface DisplayUnsupportContentConfig ()
 @interface PersonMessage ()
 
 //: @property (nonatomic,strong) UILabel *label;
@@ -92,7 +92,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFUnsupportContentConfig
+//: @implementation DisplayUnsupportContentConfig
 @implementation PersonMessage
 
 //: - (instancetype)init
@@ -124,21 +124,21 @@ typedef struct {
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: FFFKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
+    //: DisplayKitSetting *setting = [[MyUserKit sharedKit].config setting:message];
     ManPull *setting = [[Mortification text].config toWith:message];
     //: self.label.textColor = setting.textColor;
     self.label.textColor = setting.textColor;
     //: self.label.font = setting.font;
     self.label.font = setting.font;
 
-    //: return @"FFFSessionUnknowContentView";
+    //: return @"DisplaySessionUnknowContentView";
     return @"ViewControl";
 }
 
 //: - (UIEdgeInsets)contentViewInsets:(NIMMessage *)message
 - (UIEdgeInsets)nameSearched:(NIMMessage *)message
 {
-    //: FFFKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
+    //: DisplayKitSettings *settings = message.isOutgoingMsg? [MyUserKit sharedKit].config.rightBubbleSettings : [MyUserKit sharedKit].config.leftBubbleSettings;
     ScalePath *settings = message.isOutgoingMsg? [Mortification text].config.rightBubbleSettings : [Mortification text].config.leftBubbleSettings;
     //: return settings.unsupportSetting.contentInsets;
     return settings.unsupportSetting.contentInsets;

@@ -326,11 +326,11 @@ typedef struct {
         return [NSDate deviceBy:self sizeFormatter:[[BrushInspireData sharedInstance] kTitle_pigValue]];
     //: } else if ([components day] >= 2) {
     } else if ([components day] >= 2) {
-        //: return [FFFLanguageManager getTextWithKey:@"before_yesterday"];
+        //: return [DisplayLanguageManager getTextWithKey:@"before_yesterday"];
         return [MakeManager cell:[[BrushInspireData sharedInstance] kText_combatData]];
     //: } else if ([components day] >= 1) {
     } else if ([components day] >= 1) {
-        //: return [FFFLanguageManager getTextWithKey:@"yesterday"];
+        //: return [DisplayLanguageManager getTextWithKey:@"yesterday"];
         return [MakeManager cell:[[BrushInspireData sharedInstance] kNameWortData]];
     //: } else if ([components hour] > 0) {
     } else if ([components hour] > 0) {

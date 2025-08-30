@@ -1,65 +1,65 @@
 //
-//  SAMKeychain.h
-//  SAMKeychain
+//  BlendKeychain.h
+//  BlendKeychain
 //
 //  Created by Sam Soffes on 5/19/10.
 //  Copyright (c) 2010-2014 Sam Soffes. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "SAMKeychainQuery.h"
+#import "BlendKeychainQuery.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 /**
- Error code specific to SAMKeychain that can be returned in NSError objects.
+ Error code specific to BlendKeychain that can be returned in NSError objects.
  For codes returned by the operating system, refer to SecBase.h for your
  platform.
  */
-typedef NS_ENUM(OSStatus, SAMKeychainErrorCode) {
+typedef NS_ENUM(OSStatus, BlendKeychainErrorCode) {
 	/** Some of the arguments were invalid. */
-	SAMKeychainErrorBadArguments = -1001,
+	BlendKeychainErrorBadArguments = -1001,
 };
 
-/** SAMKeychain error domain */
-extern NSString *const kSAMKeychainErrorDomain;
+/** BlendKeychain error domain */
+extern NSString *const kBlendKeychainErrorDomain;
 
 /** Account name. */
-extern NSString *const kSAMKeychainAccountKey;
+extern NSString *const kBlendKeychainAccountKey;
 
 /**
  Time the item was created.
 
  The value will be a string.
  */
-extern NSString *const kSAMKeychainCreatedAtKey;
+extern NSString *const kBlendKeychainCreatedAtKey;
 
 /** Item class. */
-extern NSString *const kSAMKeychainClassKey;
+extern NSString *const kBlendKeychainClassKey;
 
 /** Item description. */
-extern NSString *const kSAMKeychainDescriptionKey;
+extern NSString *const kBlendKeychainDescriptionKey;
 
 /** Item label. */
-extern NSString *const kSAMKeychainLabelKey;
+extern NSString *const kBlendKeychainLabelKey;
 
 /** Time the item was last modified.
 
  The value will be a string.
  */
-extern NSString *const kSAMKeychainLastModifiedKey;
+extern NSString *const kBlendKeychainLastModifiedKey;
 
 /** Where the item was created. */
-extern NSString *const kSAMKeychainWhereKey;
+extern NSString *const kBlendKeychainWhereKey;
 
 /**
  Simple wrapper for accessing accounts, getting passwords, setting passwords, and deleting passwords using the system
  Keychain on Mac OS X and iOS.
 
  This was originally inspired by EMKeychain and SDKeychain (both of which are now gone). Thanks to the authors.
- SAMKeychain has since switched to a simpler implementation that was abstracted from [SSToolkit](http://sstoolk.it).
+ BlendKeychain has since switched to a simpler implementation that was abstracted from [SSToolkit](http://sstoolk.it).
  */
-@interface SAMKeychain : NSObject
+@interface BlendKeychain : NSObject
 
 #pragma mark - Classic methods
 
@@ -136,7 +136,7 @@ extern NSString *const kSAMKeychainWhereKey;
 /**
  Returns an array containing the Keychain's accounts, or `nil` if the Keychain has no accounts.
 
- See the `NSString` constants declared in SAMKeychain.h for a list of keys that can be used when accessing the
+ See the `NSString` constants declared in BlendKeychain.h for a list of keys that can be used when accessing the
  dictionaries returned by this method.
 
  @return An array of dictionaries containing the Keychain's accounts, or `nil` if the Keychain doesn't have any
@@ -150,7 +150,7 @@ extern NSString *const kSAMKeychainWhereKey;
  Returns an array containing the Keychain's accounts for a given service, or `nil` if the Keychain doesn't have any
  accounts for the given service.
 
- See the `NSString` constants declared in SAMKeychain.h for a list of keys that can be used when accessing the
+ See the `NSString` constants declared in BlendKeychain.h for a list of keys that can be used when accessing the
  dictionaries returned by this method.
 
  @param serviceName The service for which to return the corresponding accounts.

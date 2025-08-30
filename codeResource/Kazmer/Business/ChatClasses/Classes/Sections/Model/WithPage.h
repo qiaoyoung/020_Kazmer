@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "DisplayCellConfig.h"
+#import "DisplayCellConfig.h"
 
-//: @interface FFFTimestampModel : NSObject
+//: @interface DisplayTimestampModel : NSObject
 @interface WithPage : NSObject
 
 /**

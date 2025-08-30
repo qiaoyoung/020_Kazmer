@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTextHighlight.h"
+//: #import "DisplayTextHighlight.h"
 #import "SpectralColorTitleHighlight.h"
 
-//: @implementation FFFTextHighlight
+//: @implementation DisplayTextHighlight
 @implementation SpectralColorTitleHighlight
 
 //: @end

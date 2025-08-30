@@ -9,7 +9,7 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
 //: #import "M80AttributedLabel.h"
 #import "LabelNameScrollView.h"
@@ -24,7 +24,7 @@ static NSString *const dreamVideoPath (NSString *value) {
 };
 
 
-//: @interface USERSessionRedPacketTipContentView : FFFSessionMessageContentView
+//: @interface USERSessionRedPacketTipContentView : DisplaySessionMessageContentView
 @interface CenterControl : WithTopView
 
 //: @property (nonatomic,strong) M80AttributedLabel *label;

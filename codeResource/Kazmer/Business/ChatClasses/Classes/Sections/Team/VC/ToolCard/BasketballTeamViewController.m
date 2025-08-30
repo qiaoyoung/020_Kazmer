@@ -160,20 +160,20 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCreateTeamAnnouncement.h"
+//: #import "DisplayCreateTeamAnnouncement.h"
 #import "BasketballTeamViewController.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFGlobalMacro.h"
-#import "FFFGlobalMacro.h"
-//: #import "FFFKitKeyboardInfo.h"
+//: #import "NSString+Mortification.h"
+#import "NSString+Mortification.h"
+//: #import "DisplayKitKeyboardInfo.h"
 #import "RedInfo.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 //: #import "UITextView+Util.h"
 #import "UITextView+Util.h"
 
-//: @interface FFFCreateTeamAnnouncement () <UITextFieldDelegate, UITextViewDelegate>
+//: @interface DisplayCreateTeamAnnouncement () <UITextFieldDelegate, UITextViewDelegate>
 @interface BasketballTeamViewController () <UITextFieldDelegate, UITextViewDelegate>
 //: @property (strong, nonatomic) UITextField *titleTextField;
 @property (strong, nonatomic) UITextField *titleTextField;
@@ -188,7 +188,7 @@
 //: @end
 @end
 
-//: @implementation FFFCreateTeamAnnouncement
+//: @implementation DisplayCreateTeamAnnouncement
 @implementation BasketballTeamViewController
 
 //: - (void)viewWillAppear:(BOOL)animated{
@@ -246,7 +246,7 @@
     labtitle.textColor = [UIColor blackColor];
     //: labtitle.textAlignment = NSTextAlignmentCenter;
     labtitle.textAlignment = NSTextAlignmentCenter;
-    //: labtitle.text = [FFFLanguageManager getTextWithKey:@"Group_description"];
+    //: labtitle.text = [DisplayLanguageManager getTextWithKey:@"Group_description"];
     labtitle.text = [MakeManager cell:[[ColData sharedInstance] kContent_sunlightValue]];
     //: [bgView addSubview:labtitle];
     [bgView addSubview:labtitle];
@@ -291,7 +291,7 @@
 
     //: self.titleTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 10, [[UIScreen mainScreen] bounds].size.width-60, 30)];
     self.titleTextField = [[UITextField alloc] initWithFrame:CGRectMake(15, 10, [[UIScreen mainScreen] bounds].size.width-60, 30)];
-    //: self.titleTextField.placeholder = [FFFLanguageManager getTextWithKey:@"Announcement_title"];
+    //: self.titleTextField.placeholder = [DisplayLanguageManager getTextWithKey:@"Announcement_title"];
     self.titleTextField.placeholder = [MakeManager cell:[[ColData sharedInstance] kNameWildernessOperaString]];
     //: self.titleTextField.font = [UIFont systemFontOfSize:18.f];
     self.titleTextField.font = [UIFont systemFontOfSize:18.f];
@@ -319,7 +319,7 @@
     self.contentTextView.font = [UIFont systemFontOfSize:14.f];
     //: self.contentTextView.delegate = self;
     self.contentTextView.delegate = self;
-    //: self.contentTextView.placeholder = [FFFLanguageManager getTextWithKey:@"Please_enter_content"];
+    //: self.contentTextView.placeholder = [DisplayLanguageManager getTextWithKey:@"Please_enter_content"];
     self.contentTextView.placeholder = [MakeManager cell:[[ColData sharedInstance] kName_cellInspireValue]];
     //: self.contentTextView.text = self.defaultContent;
     self.contentTextView.text = self.defaultContent;
@@ -338,7 +338,7 @@
     submitButton.titleLabel.font = [UIFont boldSystemFontOfSize:16];
     //: [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [submitButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [submitButton setTitle:[FFFLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
+    //: [submitButton setTitle:[DisplayLanguageManager getTextWithKey:@"feedback_activity_submit"] forState:UIControlStateNormal];
     [submitButton setTitle:[MakeManager cell:[[ColData sharedInstance] kName_devastatingData]] forState:UIControlStateNormal];
     //: [submitButton addTarget:self action:@selector(onSave:) forControlEvents:UIControlEventTouchUpInside];
     [submitButton addTarget:self action:@selector(colorses:) forControlEvents:UIControlEventTouchUpInside];

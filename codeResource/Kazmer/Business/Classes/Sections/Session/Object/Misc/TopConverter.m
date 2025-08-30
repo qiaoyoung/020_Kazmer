@@ -313,7 +313,7 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = audioObject;
     message.messageObject = audioObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_audio_message"];
+    //: message.apnsContent = [DisplayLanguageManager getTextWithKey:@"init_manager_nim_status_bar_audio_message"];
     message.apnsContent = [MakeManager cell:[ForeignerData sharedInstance].kTitle_retireData];
     //: NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
     NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
@@ -346,7 +346,7 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = imageObject;
     message.messageObject = imageObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
+    //: message.apnsContent = [DisplayLanguageManager getTextWithKey:@"init_manager_nim_status_bar_image_message"];
     message.apnsContent = [MakeManager cell:[ForeignerData sharedInstance].kName_tapTargetString];
     //: NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
     NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
@@ -442,7 +442,7 @@
     //: message.messageSubType = 20;
     message.messageSubType = 20;
 
-    //: NSString *msg = [NSString stringWithFormat:@"%@%@", revocationMessage.senderName,[FFFLanguageManager getTextWithKey:@"retracted_message"]];
+    //: NSString *msg = [NSString stringWithFormat:@"%@%@", revocationMessage.senderName,[DisplayLanguageManager getTextWithKey:@"retracted_message"]];
     NSString *msg = [NSString stringWithFormat:@"%@%@", revocationMessage.senderName,[MakeManager cell:[ForeignerData sharedInstance].kTextCellData]];
 
     //: NIMCustomObject *object = revocationMessage.messageObject;
@@ -510,7 +510,7 @@
     NIMMessage *message = [[NIMMessage alloc] init];
     //: message.messageObject = videoObject;
     message.messageObject = videoObject;
-    //: message.apnsContent = [FFFLanguageManager getTextWithKey:@"init_manager_nim_status_bar_video_message"];
+    //: message.apnsContent = [DisplayLanguageManager getTextWithKey:@"init_manager_nim_status_bar_video_message"];
     message.apnsContent = [MakeManager cell:[ForeignerData sharedInstance].kTextViewString];
     //: NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];
     NIMMessageSetting *setting = [[NIMMessageSetting alloc] init];

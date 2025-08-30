@@ -78,22 +78,22 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "objc/runtime.h"
 #import "objc/runtime.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
-//: #import "FFFKitUrlManager.h"
+//: #import "DisplayKitUrlManager.h"
 #import "ManagingDirectorChange.h"
 
-//: @interface FFFAvatarImageView()
+//: @interface DisplayAvatarImageView()
 @interface MemoryImageControl()
 
 //: @property (nonatomic,strong) UIImageView *imageView;
@@ -102,7 +102,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFAvatarImageView
+//: @implementation DisplayAvatarImageView
 @implementation MemoryImageControl
 
 //: - (CGPathRef)path
@@ -118,7 +118,7 @@ typedef struct {
 //: - (void)setAvatarBySession:(NIMSession *)session
 - (void)setSessionShoot:(NIMSession *)session
 {
-    //: FFFKitInfo *info = nil;
+    //: DisplayKitInfo *info = nil;
     CancelTeamCorner *info = nil;
     //: if (session.sessionType == NIMSessionTypeTeam) {
     if (session.sessionType == NIMSessionTypeTeam) {
@@ -136,7 +136,7 @@ typedef struct {
         info.avatarImage = [UIImage imageNamed:[GearStepData kNameGreatlyString]];
     //: } else {
     } else {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
         CellClean *option = [[CellClean alloc] init];
         //: option.session = session;
         option.session = session;
@@ -238,7 +238,7 @@ typedef struct {
     __block NSURL *targetUrl = nil;
     //: __weak typeof(self) weakSelf = self;
     __weak typeof(self) weakSelf = self;
-    //: [[FFFKitUrlManager shareManager] queryQriginalUrlWithShortUrl:urlString completion:^(NSString *originalUrl, NSError *error) {
+    //: [[DisplayKitUrlManager shareManager] queryQriginalUrlWithShortUrl:urlString completion:^(NSString *originalUrl, NSError *error) {
     [[ManagingDirectorChange block] can:urlString streetwise:^(NSString *originalUrl, NSError *error) {
         //: if (urlString && !error) {
         if (urlString && !error) {
@@ -280,13 +280,13 @@ typedef struct {
 //: - (void)setAvatarByMessage:(NIMMessage *)message
 - (void)setPin:(NIMMessage *)message
 {
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
     CellClean *option = [[CellClean alloc] init];
     //: option.message = message;
     option.message = message;
     //: NSString *from = message.from;
     NSString *from = message.from;
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:from option:option];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:from option:option];
     CancelTeamCorner *info = [[Mortification text] tingVoice:from keepingOption:option];
     //: [self setImageWithUrlString:info.avatarUrlString placeholderImage:info.avatarImage options:0];
     [self ofOptions:info.avatarUrlString placeholderRestore:info.avatarImage back:0];

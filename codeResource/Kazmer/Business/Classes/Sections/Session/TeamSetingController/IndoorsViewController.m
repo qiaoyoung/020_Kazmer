@@ -260,7 +260,7 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupAvatarViewController.h"
+//: #import "DisplayGroupAvatarViewController.h"
 #import "IndoorsViewController.h"
 //: #import "SVProgressHUD.h"
 #import "SVProgressHUD.h"
@@ -290,10 +290,10 @@ typedef struct {
 #import "UIView+Toast.h"
 //: #import "USERRegistConfigManager.h"
 #import "StandardManager.h"
-//: #import "FFFKitProgressHUD.h"
+//: #import "DisplayKitProgressHUD.h"
 #import "NameMessageEffectView.h"
-//: #import "FFFKitDependency.h"
-#import "FFFKitDependency.h"
+//: #import "DisplayKitDependency.h"
+#import "DisplayKitDependency.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
 //: #import "NSString+MyUserKit.h"
@@ -301,7 +301,7 @@ typedef struct {
 //: #import "NSSetAvater.h"
 #import "AtRecordView.h"
 
-//: @interface FFFGroupAvatarViewController ()<USERCustomUIAlertDelegate>
+//: @interface DisplayGroupAvatarViewController ()<USERCustomUIAlertDelegate>
 @interface IndoorsViewController ()<MessageBubble>
 
 //: @property (nonatomic, strong) UIButton *closeBtn;
@@ -325,7 +325,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFGroupAvatarViewController
+//: @implementation DisplayGroupAvatarViewController
 @implementation IndoorsViewController
 
 //: - (void)viewDidLoad {
@@ -357,7 +357,7 @@ typedef struct {
     titleLabel.textColor = [UIColor blackColor];
     //: titleLabel.font = [UIFont boldSystemFontOfSize:16];
     titleLabel.font = [UIFont boldSystemFontOfSize:16];
-    //: titleLabel.text = [FFFLanguageManager getTextWithKey:@"set_group_avater"];
+    //: titleLabel.text = [DisplayLanguageManager getTextWithKey:@"set_group_avater"];
     titleLabel.text = [MakeManager cell:[[ThereData sharedInstance] kTitlePackString]];
     //: titleLabel.textAlignment = NSTextAlignmentCenter;
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -410,7 +410,7 @@ typedef struct {
     self.accountLabel.font = [UIFont boldSystemFontOfSize:14];
     //: self.accountLabel.textColor = [UIColor colorWithHexString:@"#5D5F66"];
     self.accountLabel.textColor = [UIColor cell:[[ThereData sharedInstance] kNameRecommendText]];
-    //: self.accountLabel.text = [FFFLanguageManager getTextWithKey:@"register_good_avater"];
+    //: self.accountLabel.text = [DisplayLanguageManager getTextWithKey:@"register_good_avater"];
     self.accountLabel.text = [MakeManager cell:[[ThereData sharedInstance] kText_serveLoreData]];
     //: self.accountLabel.textAlignment = NSTextAlignmentCenter;
     self.accountLabel.textAlignment = NSTextAlignmentCenter;
@@ -486,7 +486,7 @@ typedef struct {
     self.registButton.titleLabel.font = [UIFont systemFontOfSize:16];
     //: [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.registButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    //: [self.registButton setTitle:[FFFLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
+    //: [self.registButton setTitle:[DisplayLanguageManager getTextWithKey:@"contact_list_activity_complete"] forState:UIControlStateNormal];
     [self.registButton setTitle:[MakeManager cell:[[ThereData sharedInstance] kName_modelValue]] forState:UIControlStateNormal];
     //: [bodyView addSubview:self.registButton];
     [bodyView addSubview:self.registButton];

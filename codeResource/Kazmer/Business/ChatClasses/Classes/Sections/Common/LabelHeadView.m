@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitTitleView.h"
+//: #import "DisplayKitTitleView.h"
 #import "LabelHeadView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 
-//: @implementation FFFKitTitleView
+//: @implementation DisplayKitTitleView
 @implementation LabelHeadView
 
 //: - (instancetype)initWithFrame:(CGRect)frame

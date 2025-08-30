@@ -148,7 +148,7 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "USERCustomSysNotificationSender.h"
 #import "CornerFlipFlush.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 //: #import "USERBundleSetting.h"
 #import "UserLabelMan.h"
@@ -266,11 +266,11 @@ typedef struct {
     notification.sendToOnlineUsersOnly = NO;
     //: notification.env = [[USERBundleSetting sharedConfig] messageEnv];
     notification.env = [[UserLabelMan user] click];
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
     CellClean *option = [[CellClean alloc] init];
     //: option.session = [NIMSession session:teamId type:NIMSessionTypeTeam];
     option.session = [NIMSession session:teamId type:NIMSessionTypeTeam];
-    //: FFFKitInfo *me = [[MyUserKit sharedKit] infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option];
+    //: DisplayKitInfo *me = [[MyUserKit sharedKit] infoByUser:[NIMSDK sharedSDK].loginManager.currentAccount option:option];
     CancelTeamCorner *me = [[Mortification text] tingVoice:[NIMSDK sharedSDK].loginManager.currentAccount keepingOption:option];
 
     //: notification.apnsContent = [NSString stringWithFormat:@"%@%@",me.showName,@"正在呼叫您".user_localized];

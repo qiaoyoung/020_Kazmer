@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFCellConfig.h"
-#import "FFFCellConfig.h"
+//: #import "DisplayCellConfig.h"
+#import "DisplayCellConfig.h"
 
-//: @interface FFFCellLayoutConfig : NSObject<FFFCellLayoutConfig>
+//: @interface DisplayCellLayoutConfig : NSObject<DisplayCellLayoutConfig>
 @interface CellManWith : NSObject<CellManWith>
 
 //: @end

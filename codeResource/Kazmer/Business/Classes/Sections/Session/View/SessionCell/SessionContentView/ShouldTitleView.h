@@ -12,7 +12,7 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface USERSessionJankenponContentView : FFFSessionMessageContentView
+//: @interface USERSessionJankenponContentView : DisplaySessionMessageContentView
 @interface ShouldTitleView : WithTopView
 
 //: @end

@@ -23,21 +23,21 @@ Byte kTitleDoorData[] = {60, 14, 22, 6, 172, 218, 12, 208, 134, 148, 209, 137, 1
 // __M_A_C_R_O__
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "DisplayKitTimerHolder.h"
 #import "LargenessHolder.h"
-//: #import "FFFKitNotificationFirer.h"
+//: #import "DisplayKitNotificationFirer.h"
 #import "NotificationAdd.h"
-//: #import "FFFKitDataProviderImpl.h"
+//: #import "DisplayKitDataProviderImpl.h"
 #import "CommentTopIndex.h"
-//: #import "FFFCellLayoutConfig.h"
+//: #import "DisplayCellLayoutConfig.h"
 #import "CellManWith.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 //: #import "NSBundle+MyUserKit.h"
 #import "NSBundle+Mortification.h"
 //: #import "NSString+MyUserKit.h"
 #import "NSString+Mortification.h"
-//: #import "FFFChatUIManager.h"
+//: #import "DisplayChatUIManager.h"
 #import "TextAt.h"
 
 //: extern NSString *const noti_cellUrl;
@@ -51,9 +51,9 @@ extern NSString *const k_labelMsg;
     //: NSRegularExpression *_urlRegex;
     NSRegularExpression *_urlRegex;
 }
-//: @property (nonatomic,strong) FFFKitNotificationFirer *firer;
+//: @property (nonatomic,strong) DisplayKitNotificationFirer *firer;
 @property (nonatomic,strong) NotificationAdd *firer;
-//: @property (nonatomic,strong) id<FFFCellLayoutConfig> layoutConfig;
+//: @property (nonatomic,strong) id<DisplayCellLayoutConfig> layoutConfig;
 @property (nonatomic,strong) id<CellManWith> layoutConfig;
 //: @end
 @end
@@ -72,7 +72,7 @@ extern NSString *const k_labelMsg;
     return _emoticonBundle;
 }
 
-//: - (id<FFFCellLayoutConfig>)layoutConfig
+//: - (id<DisplayCellLayoutConfig>)layoutConfig
 - (id<CellManWith>)layoutConfig
 {
     //: return _layoutConfig;
@@ -84,11 +84,11 @@ extern NSString *const k_labelMsg;
 {
     //: if (self = [super init]) {
     if (self = [super init]) {
-        //: _firer = [[FFFKitNotificationFirer alloc] init];
+        //: _firer = [[DisplayKitNotificationFirer alloc] init];
         _firer = [[NotificationAdd alloc] init];
-        //: _provider = [[FFFKitDataProviderImpl alloc] init]; 
+        //: _provider = [[DisplayKitDataProviderImpl alloc] init]; 
         _provider = [[CommentTopIndex alloc] init]; //默认使用 Mortification 的实现
-        //: _layoutConfig = [[FFFCellLayoutConfig alloc] init];
+        //: _layoutConfig = [[DisplayCellLayoutConfig alloc] init];
         _layoutConfig = [[CellManWith alloc] init];
         //: [self preloadNIMKitBundleResource];
         [self tip];
@@ -97,10 +97,10 @@ extern NSString *const k_labelMsg;
     return self;
 }
 
-//: - (FFFKitInfo *)infoByTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (DisplayKitInfo *)infoByTeam:(NSString *)teamId option:(DisplayKitInfoFetchOption *)option
 - (CancelTeamCorner *)ability:(NSString *)teamId naturalEvent_strong:(CellClean *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: DisplayKitInfo *info = nil;
     CancelTeamCorner *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(ability:naturalEvent_strong:)]) {
@@ -149,16 +149,16 @@ extern NSString *const k_labelMsg;
 - (void)tip {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        //: [[FFFInputEmoticonManager sharedManager] start];
+        //: [[DisplayInputEmoticonManager sharedManager] start];
         [[IndexManager item] path];
     //: });
     });
 }
 
-//: - (void)registerLayoutConfig:(FFFCellLayoutConfig *)layoutConfig
+//: - (void)registerLayoutConfig:(DisplayCellLayoutConfig *)layoutConfig
 - (void)pressBlueConfig:(CellManWith *)layoutConfig
 {
-    //: if ([layoutConfig isKindOfClass:[FFFCellLayoutConfig class]])
+    //: if ([layoutConfig isKindOfClass:[DisplayCellLayoutConfig class]])
     if ([layoutConfig isKindOfClass:[CellManWith class]])
     {
         //: self.layoutConfig = layoutConfig;
@@ -172,10 +172,10 @@ extern NSString *const k_labelMsg;
     }
 }
 
-//: - (FFFKitInfo *)infoBySuperTeam:(NSString *)teamId option:(FFFKitInfoFetchOption *)option
+//: - (DisplayKitInfo *)infoBySuperTeam:(NSString *)teamId option:(DisplayKitInfoFetchOption *)option
 - (CancelTeamCorner *)cellList:(NSString *)teamId view:(CellClean *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: DisplayKitInfo *info = nil;
     CancelTeamCorner *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoBySuperTeam:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(cellList:view:)]) {
@@ -253,10 +253,10 @@ extern NSString *const k_labelMsg;
     return instance;
 }
 
-//: - (id<FFFChatUIManager>)chatUIManager
+//: - (id<DisplayChatUIManager>)chatUIManager
 - (id<TextAt>)chatUIManager
 {
-    //: return FFFChatUIManager.sharedManager;
+    //: return DisplayChatUIManager.sharedManager;
     return TextAt.member;
 }
 
@@ -289,24 +289,24 @@ extern NSString *const k_labelMsg;
     [self.firer child:info];
 }
 
-//: - (FFFKitConfig *)config
+//: - (DisplayKitConfig *)config
 - (MessageAtAdd *)config
 {
     //不要放在 Mortification 初始化里面，因为 UIConfig 初始化会使用 NIMKit, 防止死循环
     //: if (!_config)
     if (!_config)
     {
-        //: _config = [[FFFKitConfig alloc] init];
+        //: _config = [[DisplayKitConfig alloc] init];
         _config = [[MessageAtAdd alloc] init];
     }
     //: return _config;
     return _config;
 }
 
-//: - (FFFKitInfo *)infoByUser:(NSString *)userId option:(FFFKitInfoFetchOption *)option
+//: - (DisplayKitInfo *)infoByUser:(NSString *)userId option:(DisplayKitInfoFetchOption *)option
 - (CancelTeamCorner *)tingVoice:(NSString *)userId keepingOption:(CellClean *)option
 {
-    //: FFFKitInfo *info = nil;
+    //: DisplayKitInfo *info = nil;
     CancelTeamCorner *info = nil;
     //: if (self.provider && [self.provider respondsToSelector:@selector(infoByUser:option:)]) {
     if (self.provider && [self.provider respondsToSelector:@selector(tingVoice:keepingOption:)]) {

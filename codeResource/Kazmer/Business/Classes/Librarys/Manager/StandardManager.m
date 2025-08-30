@@ -417,7 +417,7 @@ static StandardManager *user_linkMessage = nil;
 
     //: } failed:^(id responseObject, NSError *error) {
     } show:^(id responseObject, NSError *error) {
-        //: !complete ? : complete(NO,[FFFLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
+        //: !complete ? : complete(NO,[DisplayLanguageManager getTextWithKey:@"friend_verify_avtivity_net_error"]);
         !complete ? : complete(NO,[MakeManager cell:[StepData sharedInstance].kContent_tribeString]);
     //: }];
     }];
@@ -624,7 +624,7 @@ static StandardManager *user_linkMessage = nil;
 
         //: } failed:^(id responseObject, NSError *error) {
         } roundColor:^(id responseObject, NSError *error) {
-            //: [SVProgressHUD showMessage:[FFFLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
+            //: [SVProgressHUD showMessage:[DisplayLanguageManager getTextWithKey:@"register_avtivity3_register_fail"]];
             [SVProgressHUD firstTeam:[MakeManager cell:[StepData sharedInstance].kNameIronValue]];
 
         //: }];

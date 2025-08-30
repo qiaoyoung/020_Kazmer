@@ -91,14 +91,14 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFMessageModel.h"
+//: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "DisplayKitQuickCommentUtil.h"
 #import "ControlInside.h"
 
-//: @interface FFFMessageModel()
+//: @interface DisplayMessageModel()
 @interface CleanDoing()
 
 //: @property (nonatomic,strong) NSMutableDictionary *replyContentSizeInfo;
@@ -109,7 +109,7 @@ typedef struct {
 //: @end
 @end
 
-//: @implementation FFFMessageModel
+//: @implementation DisplayMessageModel
 @implementation CleanDoing
 
 //: @synthesize contentViewInsets = _contentViewInsets;
@@ -140,7 +140,7 @@ typedef struct {
 //: - (void)updateLayoutConfig
 - (void)image
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
 
     //: _shouldShowAvatar = [layoutConfig shouldShowAvatar:self];
@@ -218,7 +218,7 @@ typedef struct {
     //: if (UIEdgeInsetsEqualToEdgeInsets(_replyContentViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_replyContentViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
         //: _replyContentViewInsets = [layoutConfig replyContentViewInsets:self];
         _replyContentViewInsets = [layoutConfig notLine:self];
@@ -233,7 +233,7 @@ typedef struct {
     //: if (UIEdgeInsetsEqualToEdgeInsets(_contentViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_contentViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
         //: _contentViewInsets = [layoutConfig contentViewInsets:self];
         _contentViewInsets = [layoutConfig old:self];
@@ -252,7 +252,7 @@ typedef struct {
 //: - (CGSize)replyContentSize:(CGFloat)width
 - (CGSize)change:(CGFloat)width
 {
-    //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+    //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
     id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
     //: CGSize size = [layoutConfig replyContentSize:self cellWidth:width];
     CGSize size = [layoutConfig nameWidth:self aggregationFloat:width];
@@ -283,7 +283,7 @@ typedef struct {
             //: if (result.count > 0)
             if (result.count > 0)
             {
-                //: _emoticonsContainerSize = [FFFKitQuickCommentUtil containerSizeWithComments:result];
+                //: _emoticonsContainerSize = [DisplayKitQuickCommentUtil containerSizeWithComments:result];
                 _emoticonsContainerSize = [ControlInside size:result];
             }
             //: completion(result);
@@ -299,7 +299,7 @@ typedef struct {
     //: if (UIEdgeInsetsEqualToEdgeInsets(_bubbleViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_bubbleViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
         //: _bubbleViewInsets = [layoutConfig cellInsets:self];
         _bubbleViewInsets = [layoutConfig concealed:self];
@@ -312,7 +312,7 @@ typedef struct {
 //: - (BOOL)isEqual:(id)object
 - (BOOL)isEqual:(id)object
 {
-    //: if (![object isKindOfClass:[FFFMessageModel class]])
+    //: if (![object isKindOfClass:[DisplayMessageModel class]])
     if (![object isKindOfClass:[CleanDoing class]])
     {
         //: return NO;
@@ -321,7 +321,7 @@ typedef struct {
     //: else
     else
     {
-        //: FFFMessageModel *model = object;
+        //: DisplayMessageModel *model = object;
         CleanDoing *model = object;
         //: return [self.message isEqual:model.message];
         return [self.message isEqual:model.message];
@@ -333,7 +333,7 @@ typedef struct {
     //: if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
     if (UIEdgeInsetsEqualToEdgeInsets(_replyBubbleViewInsets, UIEdgeInsetsZero))
     {
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
         //: _replyBubbleViewInsets = [layoutConfig replyCellInsets:self];
         _replyBubbleViewInsets = [layoutConfig title:self];
@@ -352,7 +352,7 @@ typedef struct {
     {
         //: [self updateLayoutConfig];
         [self image];
-        //: id<FFFCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
+        //: id<DisplayCellLayoutConfig> layoutConfig = [[MyUserKit sharedKit] layoutConfig];
         id<CellManWith> layoutConfig = [[Mortification text] layoutConfig];
         //: size = [layoutConfig contentSize:self cellWidth:width];
         size = [layoutConfig viewBar:self tinkle:width];

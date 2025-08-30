@@ -15,7 +15,7 @@
 //: @interface USERContactDataMember : NSObject
 @interface InformationMember : NSObject
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) DisplayKitInfo *info;
 @property (nonatomic,strong) CancelTeamCorner *info;
 
 //: @end

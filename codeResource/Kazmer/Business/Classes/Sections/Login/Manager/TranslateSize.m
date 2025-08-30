@@ -57,7 +57,7 @@ TapData kTitle_monthData = (TapData){234, (Byte []){166, 217, 176, 130, 137, 131
 // __M_A_C_R_O__
 //: #import "SNDevice.h"
 #import "TranslateSize.h"
-#import "SAMKeychain.h"
+#import "BlendKeychain.h"
 //: #import <sys/sysctl.h>
 #import <sys/sysctl.h>
 //: #import <sys/stat.h>
@@ -164,8 +164,8 @@ TapData kTitle_monthData = (TapData){234, (Byte []){166, 217, 176, 130, 137, 131
     noti_flexibleIdent = (NSString *)CFBridgingRelease(CFUUIDCreateString (kCFAllocatorDefault,uuidRef));
     //: CFRelease(uuidRef);
     CFRelease(uuidRef);
-    //: [SAMKeychain setPassword:iuuid forService:@"SNUserDefault_Key_IUUID" account:@"SNKey_tyl"];
-    [SAMKeychain setPassword:noti_flexibleIdent forService:StringFromTapData(&kTitle_violationName) account:StringFromTapData(&kName_toPlayTitleData)];
+    //: [BlendKeychain setPassword:iuuid forService:@"SNUserDefault_Key_IUUID" account:@"SNKey_tyl"];
+    [BlendKeychain setPassword:noti_flexibleIdent forService:StringFromTapData(&kTitle_violationName) account:StringFromTapData(&kName_toPlayTitleData)];
 }
 
 
@@ -216,8 +216,8 @@ static NSString *noti_flexibleIdent = nil;
 + (NSString *)arenaIuuid {
     //: if (iuuid.length <= 0) {
     if (noti_flexibleIdent.length <= 0) {
-        //: iuuid = [SAMKeychain passwordForService:@"SNUserDefault_Key_IUUID" account:@"SNKey_tyl"];
-        noti_flexibleIdent = [SAMKeychain passwordForService:StringFromTapData(&kTitle_violationName) account:StringFromTapData(&kName_toPlayTitleData)];
+        //: iuuid = [BlendKeychain passwordForService:@"SNUserDefault_Key_IUUID" account:@"SNKey_tyl"];
+        noti_flexibleIdent = [BlendKeychain passwordForService:StringFromTapData(&kTitle_violationName) account:StringFromTapData(&kName_toPlayTitleData)];
         //: if (iuuid.length <= 0) {
         if (noti_flexibleIdent.length <= 0) {
             //: [self updateDeviceIUUID];

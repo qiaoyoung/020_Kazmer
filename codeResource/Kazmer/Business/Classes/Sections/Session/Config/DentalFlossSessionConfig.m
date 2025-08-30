@@ -69,7 +69,7 @@
     return NO;
 }
 
-//: - (id<FFFKitMessageProvider>)messageDataProvider
+//: - (id<DisplayKitMessageProvider>)messageDataProvider
 - (id<LabelSessionProvider>)contentView
 {
     //: return self.provider;

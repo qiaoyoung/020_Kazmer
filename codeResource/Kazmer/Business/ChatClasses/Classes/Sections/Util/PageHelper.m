@@ -62,14 +62,14 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitFileLocationHelper.h"
+//: #import "DisplayKitFileLocationHelper.h"
 #import "PageHelper.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 //: #import <sys/stat.h>
 #import <sys/stat.h>
 
-//: @interface FFFKitFileLocationHelper ()
+//: @interface DisplayKitFileLocationHelper ()
 @interface PageHelper ()
 //: + (NSString *)filepathForDir: (NSString *)dirname filename: (NSString *)filename;
 + (NSString *)tap: (NSString *)dirname text: (NSString *)filename;
@@ -77,7 +77,7 @@
 @end
 
 
-//: @implementation FFFKitFileLocationHelper
+//: @implementation DisplayKitFileLocationHelper
 @implementation PageHelper
 //: + (NSString *)getAppTempPath
 + (NSString *)title
@@ -92,14 +92,14 @@
                     //: filename:(NSString *)filename
                     text:(NSString *)filename
 {
-    //: return [[FFFKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
+    //: return [[DisplayKitFileLocationHelper resourceDir:dirname] stringByAppendingPathComponent:filename];
     return [[PageHelper quantityOn:dirname] stringByAppendingPathComponent:filename];
 }
 
 //: + (NSString *)filepathForVideo:(NSString *)filename
 + (NSString *)background:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"video"
+    //: return [DisplayKitFileLocationHelper filepathForDir:@"video"
     return [PageHelper tap:[DiaryTreasureData kNameRiceData]
                                          //: filename:filename];
                                          text:filename];
@@ -108,7 +108,7 @@
 //: + (NSString *)resourceDir: (NSString *)resouceName
 + (NSString *)quantityOn: (NSString *)resouceName
 {
-    //: NSString *dir = [[FFFKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
+    //: NSString *dir = [[DisplayKitFileLocationHelper userDirectory] stringByAppendingPathComponent:resouceName];
     NSString *dir = [[PageHelper center] stringByAppendingPathComponent:resouceName];
     //: if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
     if (![[NSFileManager defaultManager] fileExistsAtPath:dir])
@@ -153,7 +153,7 @@
                                                             //: error:nil];
                                                             error:nil];
         }
-        //: [FFFKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
+        //: [DisplayKitFileLocationHelper addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:appDocumentPath]];
         [PageHelper addWithoutAtomicTotal85Url:[NSURL fileURLWithPath:appDocumentPath]];
     //: });
     });
@@ -166,7 +166,7 @@
 //: + (NSString *)filepathForImage:(NSString *)filename
 + (NSString *)object:(NSString *)filename
 {
-    //: return [FFFKitFileLocationHelper filepathForDir:@"image"
+    //: return [DisplayKitFileLocationHelper filepathForDir:@"image"
     return [PageHelper tap:@"image"
                                          //: filename:filename];
                                          text:filename];
@@ -192,7 +192,7 @@
 //: + (NSString *)userDirectory
 + (NSString *)center
 {
-    //: NSString *documentPath = [FFFKitFileLocationHelper getAppDocumentPath];
+    //: NSString *documentPath = [DisplayKitFileLocationHelper getAppDocumentPath];
     NSString *documentPath = [PageHelper cell];
     //: NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;
     NSString *userID = [NIMSDK sharedSDK].loginManager.currentAccount;

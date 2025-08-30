@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFSessionMessageContentView.h"
+//: #import "DisplaySessionMessageContentView.h"
 #import "WithTopView.h"
 
-//: @interface FFFSessionLocationContentView : FFFSessionMessageContentView
+//: @interface DisplaySessionLocationContentView : DisplaySessionMessageContentView
 @interface RowControl : WithTopView
 
 //: @end

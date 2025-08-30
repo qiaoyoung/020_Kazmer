@@ -60,9 +60,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitUrlManager.h"
+//: #import "DisplayKitUrlManager.h"
 #import "ManagingDirectorChange.h"
-//: #import "FFFKitTimerHolder.h"
+//: #import "DisplayKitTimerHolder.h"
 #import "LargenessHolder.h"
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
@@ -72,13 +72,13 @@
 //: NSString *const kNIMKitUrlDataKey = @"kNIMKitUrlDataKey";
 NSString *const notiMessageServiceMineTitle = @"kNIMKitUrlDataKey";
 
-//: @interface FFFKitUrlManager ()<FFFKitTimerHolderDelegate>
+//: @interface DisplayKitUrlManager ()<DisplayKitTimerHolderDelegate>
 @interface ManagingDirectorChange ()<CornerDelegate>
 
 //: @property (nonatomic, strong) NSMutableDictionary *dic;
 @property (nonatomic, strong) NSMutableDictionary *dic;
 
-//: @property (nonatomic, strong) FFFKitTimerHolder *timer;
+//: @property (nonatomic, strong) DisplayKitTimerHolder *timer;
 @property (nonatomic, strong) LargenessHolder *timer;
 
 //: @property (nonatomic, assign) BOOL needSync;
@@ -87,7 +87,7 @@ NSString *const notiMessageServiceMineTitle = @"kNIMKitUrlDataKey";
 //: @end
 @end
 
-//: @implementation FFFKitUrlManager
+//: @implementation DisplayKitUrlManager
 @implementation ManagingDirectorChange
 
 //: + (instancetype)shareManager {
@@ -98,7 +98,7 @@ NSString *const notiMessageServiceMineTitle = @"kNIMKitUrlDataKey";
     static id instance = nil;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitUrlManager alloc] init];
+        //: instance = [[DisplayKitUrlManager alloc] init];
         instance = [[ManagingDirectorChange alloc] init];
     //: });
     });
@@ -117,7 +117,7 @@ NSString *const notiMessageServiceMineTitle = @"kNIMKitUrlDataKey";
             //: _dic = [NSMutableDictionary dictionary];
             _dic = [NSMutableDictionary dictionary];
         }
-        //: _timer = [[FFFKitTimerHolder alloc] init];
+        //: _timer = [[DisplayKitTimerHolder alloc] init];
         _timer = [[LargenessHolder alloc] init];
         //: [_timer startTimer:5.0f delegate:self repeats:YES];
         [_timer delegateMonitor:5.0f repeats:self date:YES];
@@ -242,7 +242,7 @@ NSString *const notiMessageServiceMineTitle = @"kNIMKitUrlDataKey";
     }
 }
 
-//: - (void)onNIMKitTimerFired:(FFFKitTimerHolder *)holder {
+//: - (void)onNIMKitTimerFired:(DisplayKitTimerHolder *)holder {
 - (void)shoulding:(LargenessHolder *)holder {
     //: if (holder != _timer) {
     if (holder != _timer) {

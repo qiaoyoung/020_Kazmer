@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamCardOperationViewController.h"
+//: #import "DisplayTeamCardOperationViewController.h"
 #import "FlipViewController.h"
 
-//: @interface FFFAdvancedTeamCardViewController : FFFTeamCardOperationViewController
+//: @interface DisplayAdvancedTeamCardViewController : DisplayTeamCardOperationViewController
 @interface OpenDefenceViewController : FlipViewController
 
 

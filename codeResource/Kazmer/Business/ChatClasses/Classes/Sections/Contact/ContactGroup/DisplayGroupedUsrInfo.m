@@ -9,11 +9,11 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFGroupedUsrInfo.h"
-#import "FFFGroupedUsrInfo.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "DisplayGroupedUsrInfo.h"
+#import "DisplayGroupedUsrInfo.h"
+//: #import "DisplaySpellingCenter.h"
 #import "SizeTable.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 
 //: @interface NIMGroupUser()
@@ -21,7 +21,7 @@
 
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) DisplayKitInfo *info;
 @property (nonatomic,strong) CancelTeamCorner *info;
 
 //: @end
@@ -32,7 +32,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)roundPathTitle{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    //: NSString *title = [[DisplaySpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[SizeTable visible] targetAerogramme:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -61,7 +61,7 @@
 
 //: - (id)sortKey{
 - (id)overFindDown{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    //: return [[DisplaySpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[SizeTable visible] visualImageName:self.info.showName].shortSpelling;
 }
 
@@ -100,7 +100,7 @@
 //: @interface NIMGroupTeamMember()
 @interface ActionValueMember()
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) DisplayKitInfo *info;
 @property (nonatomic,strong) CancelTeamCorner *info;
 //: @property (nonatomic,copy) NSString *userId;
 @property (nonatomic,copy) NSString *userId;
@@ -121,7 +121,7 @@
     if (self) {
         //: _userId = userId;
         _userId = userId;
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
         CellClean *option = [[CellClean alloc] init];
         //: option.session = session;
         option.session = session;
@@ -134,7 +134,7 @@
 
 //: - (id)sortKey{
 - (id)overFindDown{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
+    //: return [[DisplaySpellingCenter sharedCenter] spellingForString:self.showName].shortSpelling;
     return [[SizeTable visible] visualImageName:self.tabTitle].shortSpelling;
 }
 
@@ -164,7 +164,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)roundPathTitle{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    //: NSString *title = [[DisplaySpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
     NSString *title = [[SizeTable visible] targetAerogramme:self.tabTitle].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -185,7 +185,7 @@
 //: @interface NIMGroupTeam()
 @interface NameTeam()
 
-//: @property (nonatomic,strong) FFFKitInfo *info;
+//: @property (nonatomic,strong) DisplayKitInfo *info;
 @property (nonatomic,strong) CancelTeamCorner *info;
 //: @property (nonatomic,copy) NSString *teamId;
 @property (nonatomic,copy) NSString *teamId;
@@ -204,7 +204,7 @@
 
 //: - (id)sortKey{
 - (id)overFindDown{
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
+    //: return [[DisplaySpellingCenter sharedCenter] spellingForString:[self showName]].shortSpelling;
     return [[SizeTable visible] visualImageName:[self tabTitle]].shortSpelling;
 }
 
@@ -252,7 +252,7 @@
 
 //: - (NSString *)groupTitle{
 - (NSString *)roundPathTitle{
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
+    //: NSString *title = [[DisplaySpellingCenter sharedCenter] firstLetter:self.showName].capitalizedString;
     NSString *title = [[SizeTable visible] targetAerogramme:self.tabTitle].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];

@@ -12,10 +12,10 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @interface FFFKitDevice : NSObject
+//: @interface DisplayKitDevice : NSObject
 @interface MaxDevice : NSObject
 
-//: + (FFFKitDevice *)currentDevice;
+//: + (DisplayKitDevice *)currentDevice;
 + (MaxDevice *)green;
 
 /// 语言

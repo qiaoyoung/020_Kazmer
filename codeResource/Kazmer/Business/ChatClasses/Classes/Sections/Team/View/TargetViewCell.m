@@ -74,22 +74,22 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamMemberListCell.h"
+//: #import "DisplayTeamMemberListCell.h"
 #import "TargetViewCell.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 //: #import "UIImage+MyUserKit.h"
 #import "UIImage+Mortification.h"
-//: #import "FFFTeamHelper.h"
+//: #import "DisplayTeamHelper.h"
 #import "MaxHelper.h"
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "DisplayCardDataSourceProtocol.h"
+#import "DisplayCardDataSourceProtocol.h"
 
 //: NSString *const kTeamMember = @"kTeamMember";
 NSString *const m_pathId = @"kTeamMember";
@@ -101,7 +101,7 @@ NSString *const dreamTitleData = @"kTeamMemberInfo";
 
 }
 
-//: @property(nonatomic,strong) FFFAvatarImageView *imageView;
+//: @property(nonatomic,strong) DisplayAvatarImageView *imageView;
 @property(nonatomic,strong) MemoryImageControl *imageView;
 
 //: @property (nonatomic,strong) UIImageView *roleImageView;
@@ -134,7 +134,7 @@ NSString *const dreamTitleData = @"kTeamMemberInfo";
         _titleLabel.font = [UIFont systemFontOfSize:12.f];
         //: [self addSubview:_titleLabel];
         [self addSubview:_titleLabel];
-        //: _imageView = [[FFFAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
+        //: _imageView = [[DisplayAvatarImageView alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         _imageView = [[MemoryImageControl alloc] initWithFrame:CGRectMake(0, 0, 37, 37)];
         //: [self addSubview:_imageView];
         [self addSubview:_imageView];
@@ -151,9 +151,9 @@ NSString *const dreamTitleData = @"kTeamMemberInfo";
 - (void)setMember:(NSDictionary *)member{
     //: _member = member;
     _member = member;
-    //: FFFKitInfo *info = member[kTeamMemberInfo];
+    //: DisplayKitInfo *info = member[kTeamMemberInfo];
     CancelTeamCorner *info = member[dreamTitleData];
-    //: id<FFFKitCardHeaderData>user = member[kTeamMember];
+    //: id<DisplayKitCardHeaderData>user = member[kTeamMember];
     id<HalogenComment>user = member[m_pathId];
     //: NSURL *avatarURL;
     NSURL *avatarURL;
@@ -169,12 +169,12 @@ NSString *const dreamTitleData = @"kTeamMemberInfo";
     NSString *showName = (info.showName ?: @"");
     //: if ([user isMyUserId]) {
     if ([user inputId]) {
-        //: showName = [FFFLanguageManager getTextWithKey:@"Group_Me"];
+        //: showName = [DisplayLanguageManager getTextWithKey:@"Group_Me"];
         showName = [MakeManager cell:[NousData kName_wheatBeautyValue]];//@"我".;
     }
     //: _titleLabel.text = showName;
     _titleLabel.text = showName;
-    //: _roleImageView.image = [FFFTeamHelper imageWithMemberType:user.userType];
+    //: _roleImageView.image = [DisplayTeamHelper imageWithMemberType:user.userType];
     _roleImageView.image = [MaxHelper tip:user.underSession];
 }
 
@@ -211,12 +211,12 @@ NSString *const dreamTitleData = @"kTeamMemberInfo";
 //: @end
 @end
 
-//: const CGFloat kFFFTeamMemberListCellItemWidth = 49.f;
+//: const CGFloat kDisplayTeamMemberListCellItemWidth = 49.f;
 const CGFloat notiKitFormat = 49.f;
-//: const CGFloat kFFFTeamMemberListCellItemPadding = 44.f;
+//: const CGFloat kDisplayTeamMemberListCellItemPadding = 44.f;
 const CGFloat user_methodPath = 44.f;
 
-//: @interface FFFTeamMemberListCell()
+//: @interface DisplayTeamMemberListCell()
 @interface TargetViewCell()
 
 //: @property(nonatomic,strong) NSMutableArray *icons;
@@ -228,7 +228,7 @@ const CGFloat user_methodPath = 44.f;
 //: @end
 @end
 
-//: @implementation FFFTeamMemberListCell
+//: @implementation DisplayTeamMemberListCell
 @implementation TargetViewCell
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -255,7 +255,7 @@ const CGFloat user_methodPath = 44.f;
 - (NSInteger)maxShowMemberCount {
     //: CGFloat width = (self.device_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.device_width;
     CGFloat width = (self.device_width != [UIScreen mainScreen].bounds.size.width) ? [UIScreen mainScreen].bounds.size.width : self.device_width;
-    //: NSInteger maxShowCount = (width - kFFFTeamMemberListCellItemPadding) / kFFFTeamMemberListCellItemWidth;
+    //: NSInteger maxShowCount = (width - kDisplayTeamMemberListCellItemPadding) / kDisplayTeamMemberListCellItemWidth;
     NSInteger maxShowCount = (width - user_methodPath) / notiKitFormat;
     //: return maxShowCount;
     return maxShowCount;

@@ -9,9 +9,9 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFUsrInfoData.h"
-#import "FFFUsrInfoData.h"
-//: #import "FFFSpellingCenter.h"
+//: #import "DisplayUsrInfoData.h"
+#import "DisplayUsrInfoData.h"
+//: #import "DisplaySpellingCenter.h"
 #import "SizeTable.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
@@ -37,7 +37,7 @@
 
 //: - (NSString *)groupTitle {
 - (NSString *)roundPathTitle {
-    //: NSString *title = [[FFFSpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
+    //: NSString *title = [[DisplaySpellingCenter sharedCenter] firstLetter:self.info.showName].capitalizedString;
     NSString *title = [[SizeTable visible] targetAerogramme:self.info.showName].capitalizedString;
     //: unichar character = [title characterAtIndex:0];
     unichar character = [title characterAtIndex:0];
@@ -78,7 +78,7 @@
 
 //: - (id)sortKey {
 - (id)overFindDown {
-    //: return [[FFFSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
+    //: return [[DisplaySpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[SizeTable visible] visualImageName:self.info.showName].shortSpelling;
 }
 

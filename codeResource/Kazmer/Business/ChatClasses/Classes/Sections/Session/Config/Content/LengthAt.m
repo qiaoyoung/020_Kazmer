@@ -9,12 +9,12 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFFileContentConfig.h"
+//: #import "DisplayFileContentConfig.h"
 #import "LengthAt.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @implementation FFFFileContentConfig
+//: @implementation DisplayFileContentConfig
 @implementation LengthAt
 
 //: - (CGSize)contentSize:(CGFloat)cellWidth message:(NIMMessage *)message
@@ -27,7 +27,7 @@
 //: - (NSString *)cellContent:(NIMMessage *)message
 - (NSString *)viewTing:(NIMMessage *)message
 {
-    //: return @"FFFSessionFileTransContentView";
+    //: return @"DisplaySessionFileTransContentView";
     return @"ControlTitleView";
 }
 

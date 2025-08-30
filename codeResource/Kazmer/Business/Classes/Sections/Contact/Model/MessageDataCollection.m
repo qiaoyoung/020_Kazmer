@@ -65,7 +65,7 @@
     NSMutableArray *contacts = [NSMutableArray array];
     //: for (NIMUser *user in [NIMSDK sharedSDK].userManager.myFriends) {
     for (NIMUser *user in [NIMSDK sharedSDK].userManager.myFriends) {
-        //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+        //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
         CancelTeamCorner *info = [[Mortification text] tingVoice:user.userId keepingOption:nil];
         //: USERContactDataMember *contact = [[USERContactDataMember alloc] init];
         InformationMember *contact = [[InformationMember alloc] init];

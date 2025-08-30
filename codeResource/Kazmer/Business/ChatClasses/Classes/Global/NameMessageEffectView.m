@@ -33,7 +33,7 @@ Byte kNamePopularityString[] = {13, 6, 97, 14, 161, 155, 112, 143, 131, 5, 135, 
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitProgressHUD.h"
+//: #import "DisplayKitProgressHUD.h"
 #import "NameMessageEffectView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
@@ -42,7 +42,7 @@ Byte kNamePopularityString[] = {13, 6, 97, 14, 161, 155, 112, 143, 131, 5, 135, 
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 
-//: @interface FFFKitProgressHUD()
+//: @interface DisplayKitProgressHUD()
 @interface NameMessageEffectView()
 
 //: @property (nonatomic, strong) CAShapeLayer *indefiniteAnimatedLayer;
@@ -51,19 +51,19 @@ Byte kNamePopularityString[] = {13, 6, 97, 14, 161, 155, 112, 143, 131, 5, 135, 
 //: @end
 @end
 
-//: @implementation FFFKitProgressHUD
+//: @implementation DisplayKitProgressHUD
 @implementation NameMessageEffectView
 
 //: + (instancetype)sharedView
 + (instancetype)clear
 {
-    //: static FFFKitProgressHUD *instance = nil;
+    //: static DisplayKitProgressHUD *instance = nil;
     static NameMessageEffectView *instance = nil;
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
-        //: instance = [[FFFKitProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
+        //: instance = [[DisplayKitProgressHUD alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
         instance = [[NameMessageEffectView alloc] initWithFrame:CGRectMake(0, 0, 84, 84)];
     //: });
     });
@@ -232,9 +232,9 @@ Byte kNamePopularityString[] = {13, 6, 97, 14, 161, 155, 112, 143, 131, 5, 135, 
 {
     //: dispatch_async(dispatch_get_main_queue(), ^{
     dispatch_async(dispatch_get_main_queue(), ^{
-        //: [[FFFKitProgressHUD sharedView] removeFromSuperview];
+        //: [[DisplayKitProgressHUD sharedView] removeFromSuperview];
         [[NameMessageEffectView clear] removeFromSuperview];
-        //: [[FFFKitProgressHUD sharedView].indefiniteAnimatedLayer removeFromSuperlayer];
+        //: [[DisplayKitProgressHUD sharedView].indefiniteAnimatedLayer removeFromSuperlayer];
         [[NameMessageEffectView clear].indefiniteAnimatedLayer removeFromSuperlayer];
     //: });
     });
@@ -271,7 +271,7 @@ Byte kNamePopularityString[] = {13, 6, 97, 14, 161, 155, 112, 143, 131, 5, 135, 
 //: + (void)show
 + (void)viewWithShow
 {
-    //: [[FFFKitProgressHUD sharedView] showInView:[UIApplication sharedApplication].windows.firstObject];
+    //: [[DisplayKitProgressHUD sharedView] showInView:[UIApplication sharedApplication].windows.firstObject];
     [[NameMessageEffectView clear] bottoms:[UIApplication sharedApplication].windows.firstObject];
 }
 

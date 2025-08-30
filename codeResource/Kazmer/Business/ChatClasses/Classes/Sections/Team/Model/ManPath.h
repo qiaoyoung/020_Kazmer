@@ -11,13 +11,13 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "FFFCardDataSourceProtocol.h"
-#import "FFFCardDataSourceProtocol.h"
+//: #import "DisplayCardDataSourceProtocol.h"
+#import "DisplayCardDataSourceProtocol.h"
 
-//: typedef void(^NIMTeamCardRowSelectedBlock)(id <FFFKitSelectCardData> item);
+//: typedef void(^NIMTeamCardRowSelectedBlock)(id <DisplayKitSelectCardData> item);
 typedef void(^NIMTeamCardRowSelectedBlock)(id <ChangeLength> item);
 
-//: @interface FFFTeamCardRowItem : NSObject
+//: @interface DisplayTeamCardRowItem : NSObject
 @interface ManPath : NSObject
 
 //: @property(nonatomic,copy) NSString *title;
@@ -53,7 +53,7 @@ typedef void(^NIMTeamCardRowSelectedBlock)(id <ChangeLength> item);
 //: @property(nonatomic,assign) NSInteger identify;
 @property(nonatomic,assign) NSInteger identify;
 
-//: @property(nonatomic,strong) NSMutableArray <id <FFFKitSelectCardData>> *optionItems;
+//: @property(nonatomic,strong) NSMutableArray <id <DisplayKitSelectCardData>> *optionItems;
 @property(nonatomic,strong) NSMutableArray <id <ChangeLength>> *optionItems;
 
 //: @property(nonatomic,strong) NIMTeamCardRowSelectedBlock selectedBlock;

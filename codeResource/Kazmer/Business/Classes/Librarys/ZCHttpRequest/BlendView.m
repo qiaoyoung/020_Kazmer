@@ -1117,7 +1117,7 @@
     AFHTTPSessionManager *manager = [BlendView with].manager;
 
     //添加请求头
-    //: NSString *appKey = [[FFFConfig sharedConfig] appKey];
+    //: NSString *appKey = [[DisplayConfig sharedConfig] appKey];
     NSString *appKey = [[ContextTeam mutual] appKey];
     //: [manager.requestSerializer setValue:appKey forHTTPHeaderField:@"AppKey"];
     [manager.requestSerializer setValue:appKey forHTTPHeaderField:[ComparativelyData sharedInstance].kTitleWordString];

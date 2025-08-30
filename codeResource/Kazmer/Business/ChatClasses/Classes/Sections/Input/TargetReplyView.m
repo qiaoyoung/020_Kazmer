@@ -161,7 +161,7 @@ Byte kName_ankleKnowString[] = {70, 10, 92, 5, 109, 159, 189, 201, 193, 206, 189
     _confirmButton.frame = CGRectMake(0, self.frame.size.height - 50, self.frame.size.width, 48);
     //: _confirmButton.layer.cornerRadius = 24;
     _confirmButton.layer.cornerRadius = 24;
-    //: [_confirmButton setTitle:[FFFLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
+    //: [_confirmButton setTitle:[DisplayLanguageManager getTextWithKey:@"user_profile_avtivity_send"] forState:UIControlStateNormal];
     [_confirmButton setTitle:[MakeManager cell:StringFromRiceData(kTextOverallData)] forState:UIControlStateNormal];
     //: [_confirmButton addTarget:self action:@selector(confirmButtonTapped) forControlEvents:UIControlEventTouchUpInside];
     [_confirmButton addTarget:self action:@selector(buttonWill) forControlEvents:UIControlEventTouchUpInside];

@@ -289,7 +289,7 @@
           if (error) {
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{
-                  //: NSString *failed = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
+                  //: NSString *failed = [DisplayLanguageManager getTextWithKey:@"group_info_activity_update_failed"];
                   NSString *failed = [MakeManager cell:[AtData sharedInstance].kNameStepData];//@"保存失败"
                   //: [SVProgressHUD showMessage:failed];
                   [SVProgressHUD firstTeam:failed];
@@ -297,7 +297,7 @@
               });
           //: } else {
           } else {
-              //: NSString *success = [FFFLanguageManager getTextWithKey:@"group_info_activity_update_success"];
+              //: NSString *success = [DisplayLanguageManager getTextWithKey:@"group_info_activity_update_success"];
               NSString *success = [MakeManager cell:[AtData sharedInstance].kNameRecordDeviceValue];//保存成功
               //: dispatch_async(dispatch_get_main_queue(), ^{
               dispatch_async(dispatch_get_main_queue(), ^{
@@ -578,7 +578,7 @@
     contentLabel.textColor = [UIColor cell:[AtData sharedInstance].kNameColorString];
     //: contentLabel.textAlignment = NSTextAlignmentCenter;
     contentLabel.textAlignment = NSTextAlignmentCenter;
-    //: contentLabel.text = [FFFLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
+    //: contentLabel.text = [DisplayLanguageManager getTextWithKey:@"activity_qrcode_scan_me"];
     contentLabel.text = [MakeManager cell:[AtData sharedInstance].kTitle_onValue];//@"扫描二维码，加我为好友";
     //: [contentView addSubview:contentLabel];
     [contentView addSubview:contentLabel];

@@ -76,19 +76,19 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitQuickCommentUtil.h"
+//: #import "DisplayKitQuickCommentUtil.h"
 #import "ControlInside.h"
 //: #import "M80AttributedLabel+MyUserKit.h"
 #import "LabelNameScrollView+Mortification.h"
-//: #import "FFFKitUtil.h"
+//: #import "DisplayKitUtil.h"
 #import "AtPull.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
-//: #import "FFFInputEmoticonManager.h"
+//: #import "DisplayInputEmoticonManager.h"
 #import "IndexManager.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
 
 //: static const CGFloat kHeightPerRow = 25.0;
@@ -103,7 +103,7 @@ const CGFloat main_hiddenTitle = 5.f;
 NSString * const dream_framePathMessage = @"emoticon_emoji_%02ld";
 
 
-//: @implementation FFFKitQuickCommentUtil
+//: @implementation DisplayKitQuickCommentUtil
 @implementation ControlInside
 
 //: + (void)initialize
@@ -116,13 +116,13 @@ NSString * const dream_framePathMessage = @"emoticon_emoji_%02ld";
 //: + (NSString *)showNameWithCommentFrom:(NIMQuickComment *)comment
 + (NSString *)toAGreaterExtent:(NIMQuickComment *)comment
 {
-    //: FFFKitInfo *info = nil;
+    //: DisplayKitInfo *info = nil;
     CancelTeamCorner *info = nil;
     //: NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     NIMChatExtendBasicInfo *basicInfo = comment.basicInfo;
     //: NIMSession *session = basicInfo.session;
     NIMSession *session = basicInfo.session;
-    //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+    //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
     CellClean *option = [[CellClean alloc] init];
     //: option.session = session;
     option.session = session;
@@ -387,7 +387,7 @@ NSString * const dream_framePathMessage = @"emoticon_emoji_%02ld";
 {
     //: NSString *ID = [NSString stringWithFormat:NIMKitQuickCommentFormat, (long)comment.replyType];
     NSString *ID = [NSString stringWithFormat:dream_framePathMessage, (long)comment.replyType];
-    //: NIMInputEmoticon *emoticon = [[FFFInputEmoticonManager sharedManager] emoticonByID:ID];
+    //: NIMInputEmoticon *emoticon = [[DisplayInputEmoticonManager sharedManager] emoticonByID:ID];
     BubbleNameReload *emoticon = [[IndexManager item] tyke:ID];
     //: NSString *content = nil;
     NSString *content = nil;

@@ -108,10 +108,10 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFLoadProgressView.h"
+//: #import "DisplayLoadProgressView.h"
 #import "GatefoldView.h"
 
-//: @implementation FFFLoadProgressView
+//: @implementation DisplayLoadProgressView
 @implementation GatefoldView
 
 //: - (id)initWithFrame:(CGRect)frame {

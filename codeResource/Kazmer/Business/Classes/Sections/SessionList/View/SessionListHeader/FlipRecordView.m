@@ -226,13 +226,13 @@ typedef struct {
         case NIMLoginStepLinkFailed:
         //: case NIMLoginStepLoseConnection:
         case NIMLoginStepLoseConnection:
-            //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+            //: text = [DisplayLanguageManager getTextWithKey:@"home_fragment_net_error"];
             text = [MakeManager cell:[StopGrayData kName_errorData]];
             //: break;
             break;
         //: case NIMLoginStepLoginFailed:
         case NIMLoginStepLoginFailed:
-            //: text = [FFFLanguageManager getTextWithKey:@"login_activity_login_failed"];
+            //: text = [DisplayLanguageManager getTextWithKey:@"login_activity_login_failed"];
             text = [MakeManager cell:[StopGrayData kTitleNameData]];
             //: break;
             break;
@@ -247,7 +247,7 @@ typedef struct {
             //: else
             else
             {
-                //: text = [FFFLanguageManager getTextWithKey:@"home_fragment_net_error"];
+                //: text = [DisplayLanguageManager getTextWithKey:@"home_fragment_net_error"];
                 text = [MakeManager cell:[StopGrayData kName_errorData]];
             }
         }

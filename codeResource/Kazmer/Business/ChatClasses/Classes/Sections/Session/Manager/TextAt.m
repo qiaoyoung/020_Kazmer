@@ -175,18 +175,18 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "FFFChatUIManager.h"
+//: #import "DisplayChatUIManager.h"
 #import "TextAt.h"
-//: #import "FFFContactSelectConfig.h"
+//: #import "DisplayContactSelectConfig.h"
 #import "QueryConfig.h"
-//: #import "FFFContactSelectViewController.h"
+//: #import "DisplayContactSelectViewController.h"
 #import "RecordTitleViewController.h"
-//: #import "FFFKitInfoFetchOption.h"
+//: #import "DisplayKitInfoFetchOption.h"
 #import "CellClean.h"
-//: #import "UIView+FFFToast.h"
+//: #import "UIView+DisplayToast.h"
 #import "UIView+VisualProperty.h"
 
-//: @implementation FFFChatUIManager
+//: @implementation DisplayChatUIManager
 @implementation TextAt
 
 //: + (instancetype)sharedManager
@@ -194,7 +194,7 @@ typedef struct {
 {
     //: static dispatch_once_t onceToken;
     static dispatch_once_t onceToken;
-    //: static FFFChatUIManager *instance;
+    //: static DisplayChatUIManager *instance;
     static TextAt *instance;
     //: _dispatch_once(&onceToken, ^{
     _dispatch_once(&onceToken, ^{
@@ -209,15 +209,15 @@ typedef struct {
 //: - (void)forwardMessage:(NIMMessage *)message fromViewController:(UIViewController *)fromVC
 - (void)markContainer:(NIMMessage *)message dateController:(UIViewController *)fromVC
 {
-    //: UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[FFFLanguageManager getTextWithKey:@"选择会话类型"] message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    //: UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[DisplayLanguageManager getTextWithKey:@"选择会话类型"] message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[MakeManager cell:[SpecifyData kContentStandardThereName]] message:nil preferredStyle:UIAlertControllerStyleActionSheet];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"watch_multiretweet_activity_person"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alertController addAction:[UIAlertAction actionWithTitle:[MakeManager cell:[SpecifyData kName_squareTitle]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: NIMContactFriendSelectConfig *config = [[NIMContactFriendSelectConfig alloc] init];
         MakeAction *config = [[MakeAction alloc] init];
         //: config.needMutiSelected = NO;
         config.needMutiSelected = NO;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: DisplayContactSelectViewController *vc = [[DisplayContactSelectViewController alloc] initWithConfig:config];
         RecordTitleViewController *vc = [[RecordTitleViewController alloc] initWithSightConfig:config];
         //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
         vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -233,13 +233,13 @@ typedef struct {
         [vc recent];
     //: }]];
     }]];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_fragment_group"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_fragment_group"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alertController addAction:[UIAlertAction actionWithTitle:[MakeManager cell:[SpecifyData kNameSeedValue]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: NIMContactTeamSelectConfig *config = [[NIMContactTeamSelectConfig alloc] init];
         LabelTarget *config = [[LabelTarget alloc] init];
         //: config.teamType = NIMKitTeamTypeNomal;
         config.teamType = NIMKitTeamTypeNomal;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: DisplayContactSelectViewController *vc = [[DisplayContactSelectViewController alloc] initWithConfig:config];
         RecordTitleViewController *vc = [[RecordTitleViewController alloc] initWithSightConfig:config];
         //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
         vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -255,13 +255,13 @@ typedef struct {
         [vc recent];
     //: }]];
     }]];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"message_super_team"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"message_super_team"] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
     [alertController addAction:[UIAlertAction actionWithTitle:[MakeManager cell:[SpecifyData kTextMarriedData]] style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //: NIMContactTeamSelectConfig *config = [[NIMContactTeamSelectConfig alloc] init];
         LabelTarget *config = [[LabelTarget alloc] init];
         //: config.teamType = NIMKitTeamTypeSuper;
         config.teamType = NIMKitTeamTypeSuper;
-        //: FFFContactSelectViewController *vc = [[FFFContactSelectViewController alloc] initWithConfig:config];
+        //: DisplayContactSelectViewController *vc = [[DisplayContactSelectViewController alloc] initWithConfig:config];
         RecordTitleViewController *vc = [[RecordTitleViewController alloc] initWithSightConfig:config];
         //: vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
         vc.finshBlock = ^(NSArray *array, NSString *name, UIImage *avater){
@@ -277,7 +277,7 @@ typedef struct {
         [vc recent];
     //: }]];
     }]];
-    //: [alertController addAction:[UIAlertAction actionWithTitle:[FFFLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:nil]];
+    //: [alertController addAction:[UIAlertAction actionWithTitle:[DisplayLanguageManager getTextWithKey:@"contact_tag_fragment_cancel"] style:UIAlertActionStyleCancel handler:nil]];
     [alertController addAction:[UIAlertAction actionWithTitle:[MakeManager cell:[SpecifyData kName_giftedRentalString]] style:UIAlertActionStyleCancel handler:nil]];
     //: [fromVC presentViewController:alertController animated:YES completion:nil];
     [fromVC presentViewController:alertController animated:YES completion:nil];
@@ -290,7 +290,7 @@ typedef struct {
     NSString *name;
     //: if (session.sessionType == NIMSessionTypeP2P) {
     if (session.sessionType == NIMSessionTypeP2P) {
-        //: FFFKitInfoFetchOption *option = [[FFFKitInfoFetchOption alloc] init];
+        //: DisplayKitInfoFetchOption *option = [[DisplayKitInfoFetchOption alloc] init];
         CellClean *option = [[CellClean alloc] init];
         //: option.session = session;
         option.session = session;

@@ -18,12 +18,12 @@ Byte kTitle_reputationData[] = {77, 7, 90, 13, 129, 113, 46, 200, 139, 48, 57, 2
 //
 
 // __M_A_C_R_O__
-//: #import "FFFTeamSwitchTableViewCell.h"
+//: #import "DisplayTeamSwitchTableViewCell.h"
 #import "MarginOfSafetyView.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 
-//: @implementation FFFTeamSwitchTableViewCell
+//: @implementation DisplayTeamSwitchTableViewCell
 @implementation MarginOfSafetyView
 
 //: - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{

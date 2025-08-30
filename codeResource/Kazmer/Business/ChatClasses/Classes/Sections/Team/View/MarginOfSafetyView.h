@@ -12,17 +12,17 @@
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
 
-//: @class FFFTeamSwitchTableViewCell;
+//: @class DisplayTeamSwitchTableViewCell;
 @class MarginOfSafetyView;
 
 //: @protocol NIMTeamSwitchProtocol <NSObject>
 @protocol MaxReplyProtocol <NSObject>
-//: - (void)cell:(FFFTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on;
+//: - (void)cell:(DisplayTeamSwitchTableViewCell *)cell onStateChanged:(BOOL)on;
 - (void)sash:(MarginOfSafetyView *)cell colorLabel:(BOOL)on;
 //: @end
 @end
 
-//: @interface FFFTeamSwitchTableViewCell : UITableViewCell
+//: @interface DisplayTeamSwitchTableViewCell : UITableViewCell
 @interface MarginOfSafetyView : UITableViewCell
 //: @property (nonatomic, assign) NSInteger identify;
 @property (nonatomic, assign) NSInteger identify;

@@ -138,7 +138,7 @@ typedef struct {
 #import "UIView+Toast.h"
 //: #import "UIView+USER.h"
 #import "UIView+Turn.h"
-//: #import "FFFAvatarImageView.h"
+//: #import "DisplayAvatarImageView.h"
 #import "MemoryImageControl.h"
 //: #import "USERSessionViewController.h"
 #import "WayOfLifeViewController.h"
@@ -232,7 +232,7 @@ typedef struct {
 
 //: - (NSMutableAttributedString *)showNameWithUser:(NIMUser *)user {
 - (NSMutableAttributedString *)installment:(NIMUser *)user {
-    //: FFFKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
+    //: DisplayKitInfo *info = [[MyUserKit sharedKit] infoByUser:user.userId option:nil];
     CancelTeamCorner *info = [[Mortification text] tingVoice:user.userId keepingOption:nil];
     //: NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];
     NSMutableAttributedString *ret = [[NSMutableAttributedString alloc] init];

@@ -9,10 +9,10 @@
 //
 
 // __M_A_C_R_O__
-//: #import "FFFKitIndependentModeExtraInfo.h"
+//: #import "DisplayKitIndependentModeExtraInfo.h"
 #import "BigInfo.h"
 
-//: @implementation FFFKitIndependentModeExtraInfo
+//: @implementation DisplayKitIndependentModeExtraInfo
 @implementation BigInfo
 
 //: @end
