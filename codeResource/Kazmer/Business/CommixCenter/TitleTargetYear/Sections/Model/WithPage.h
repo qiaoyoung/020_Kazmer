@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "DisplayCellConfig.h"
-#import "DisplayCellConfig.h"
+//: #import "DisplayCellConfigDelegate.h"
+#import "DisplayCellConfigDelegate.h"
 
 //: @interface DisplayTimestampModel : NSObject
 @interface WithPage : NSObject

@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "DisplaySessionConfigurator.h"
 #import "TitleTargetYear.h"
-//: #import "DisplaySessionPrivateProtocol.h"
-#import "DisplaySessionPrivateProtocol.h"
+//: #import "FinancialCenterPrivateProtocol.h"
+#import "FinancialCenterPrivateProtocol.h"
 
 //: @interface DisplaySessionLayoutImpl : NSObject<NIMSessionLayout>
 @interface ValueAtImpl : NSObject<CancelLayout>

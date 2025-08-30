@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DisplayInputProtocol.h
+//  DisplayInputDelegate.h
 // Mortification
 //
 //  Created by chris.

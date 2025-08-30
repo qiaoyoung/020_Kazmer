@@ -437,12 +437,12 @@ typedef struct {
 //
 
 // __M_A_C_R_O__
-//: #import "DisplaySessionConfigurateProtocol.h"
-#import "DisplaySessionConfigurateProtocol.h"
+//: #import "CommixCenterProtocol.h"
+#import "CommixCenterProtocol.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
-//: #import "DisplayMessageCellProtocol.h"
-#import "DisplayMessageCellProtocol.h"
+//: #import "CompartmentPathDelegate.h"
+#import "CompartmentPathDelegate.h"
 //: #import "DisplayMessageModel.h"
 #import "CleanDoing.h"
 //: #import "DisplayKitUtil.h"

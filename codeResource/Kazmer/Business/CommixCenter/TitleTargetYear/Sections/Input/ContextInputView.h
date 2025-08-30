@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "DisplayInputProtocol.h"
-#import "DisplayInputProtocol.h"
+//: #import "DisplayInputDelegate.h"
+#import "DisplayInputDelegate.h"
 //: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
 //: #import "DisplayInputToolBar.h"

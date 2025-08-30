@@ -122,8 +122,6 @@ typedef struct {
 #import "UIView+Toast.h"
 //: #import "USERCustomSysNotificationSender.h"
 #import "CornerFlipFlush.h"
-//: #import "USERGlobalMacro.h"
-#import "USERGlobalMacro.h"
 //: #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVFoundation.h>
 //: #import "USERSessionMsgConverter.h"

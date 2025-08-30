@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "USERContactDataMember.h"
 #import "InformationMember.h"
-//: #import "DisplayCardDataSourceProtocol.h"
-#import "DisplayCardDataSourceProtocol.h"
+//: #import "DisplayCardUserDelegate.h"
+#import "DisplayCardUserDelegate.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN

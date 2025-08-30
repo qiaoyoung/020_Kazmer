@@ -91,8 +91,8 @@ typedef struct {
 // __M_A_C_R_O__
 //: #import "DisplaySessionTimestampCell.h"
 #import "TeamViewCell.h"
-//: #import "DisplayCellConfig.h"
-#import "DisplayCellConfig.h"
+//: #import "DisplayCellConfigDelegate.h"
+#import "DisplayCellConfigDelegate.h"
 //: #import "UIViewDeviceKit.h"
 #import "UIViewDeviceKit.h"
 //: #import "DisplayTimestampModel.h"

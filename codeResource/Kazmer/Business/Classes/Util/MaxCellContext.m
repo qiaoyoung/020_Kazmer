@@ -71,8 +71,6 @@
 // __M_A_C_R_O__
 //: #import "USERAVNotifier.h"
 #import "MaxCellContext.h"
-//: #import "USERGlobalMacro.h"
-#import "USERGlobalMacro.h"
 
 //: @import AudioToolbox;
 @import AudioToolbox;

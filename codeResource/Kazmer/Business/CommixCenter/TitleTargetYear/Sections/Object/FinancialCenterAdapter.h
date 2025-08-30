@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "DisplaySessionConfigurateProtocol.h"
-#import "DisplaySessionConfigurateProtocol.h"
-//: #import "DisplayMessageCellProtocol.h"
-#import "DisplayMessageCellProtocol.h"
+//: #import "CommixCenterProtocol.h"
+#import "CommixCenterProtocol.h"
+//: #import "CompartmentPathDelegate.h"
+#import "CompartmentPathDelegate.h"
 
 //: @interface DisplaySessionTableAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>
 @interface FinancialCenterAdapter : NSObject<UITableViewDelegate,UITableViewDataSource>

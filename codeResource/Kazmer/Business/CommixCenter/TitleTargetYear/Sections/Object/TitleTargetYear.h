@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import "DisplaySessionViewController.h"
 #import "ReplyViewController.h"
-//: #import "DisplaySessionConfigurateProtocol.h"
-#import "DisplaySessionConfigurateProtocol.h"
+//: #import "CommixCenterProtocol.h"
+#import "CommixCenterProtocol.h"
 
 //: @class DisplaySessionViewController;
 @class ReplyViewController;

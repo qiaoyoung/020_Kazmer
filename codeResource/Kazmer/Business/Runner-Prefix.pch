@@ -15,7 +15,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-#import "USERGlobalMacro.h"
 #import "Mortification.h"
 #import "NSString+Turn.h"
 #import "BlendView.h"
@@ -49,13 +48,11 @@
 #import "USERCustomAttachmentDefines.h"
 //#import "MemoryImageControl.h"
 #import "MakeManager.h"
-#import "SNSingletonMacro.h"
 #import "TopYearView.h"
 #import <SDWebImage/SDWebImage.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "ZCHttpInterfacedConst.h"
 #import "NSString+Mortification.h"
-#import "SNWeakStrongMacro.h"
 #import "NSDictionaryExtend.h"
 #import "UIDevice+BlendStandard.h"
 #import "ColorHelper.h"

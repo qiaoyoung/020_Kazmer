@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
-//: #import "DisplayInputProtocol.h"
-#import "DisplayInputProtocol.h"
+//: #import "DisplayInputDelegate.h"
+#import "DisplayInputDelegate.h"
 //: #import "CustomAlbumPickerView.h"
 #import "TargetReplyView.h"
 

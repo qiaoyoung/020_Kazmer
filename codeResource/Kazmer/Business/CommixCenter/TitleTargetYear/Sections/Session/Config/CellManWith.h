@@ -9,8 +9,8 @@
 //
 
 // __M_A_C_R_O__
-//: #import "DisplayCellConfig.h"
-#import "DisplayCellConfig.h"
+//: #import "DisplayCellConfigDelegate.h"
+#import "DisplayCellConfigDelegate.h"
 
 //: @interface DisplayCellLayoutConfig : NSObject<DisplayCellLayoutConfig>
 @interface CellManWith : NSObject<CellManWith>

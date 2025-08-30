@@ -13,8 +13,8 @@
 #import <UIKit/UIKit.h>
 //: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
-//: #import "DisplayInputProtocol.h"
-#import "DisplayInputProtocol.h"
+//: #import "DisplayInputDelegate.h"
+#import "DisplayInputDelegate.h"
 
 //: NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_BEGIN

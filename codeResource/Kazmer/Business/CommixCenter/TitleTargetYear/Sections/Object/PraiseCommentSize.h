@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "DisplaySessionPrivateProtocol.h"
-#import "DisplaySessionPrivateProtocol.h"
-//: #import "DisplaySessionConfigurateProtocol.h"
-#import "DisplaySessionConfigurateProtocol.h"
+//: #import "FinancialCenterPrivateProtocol.h"
+#import "FinancialCenterPrivateProtocol.h"
+//: #import "CommixCenterProtocol.h"
+#import "CommixCenterProtocol.h"
 
 //: @interface DisplaySessionInteractorImpl : NSObject<NIMSessionInteractor,NIMSessionLayoutDelegate>
 @interface PraiseCommentSize : NSObject<TitleTotaleractor,InsideDelegate>

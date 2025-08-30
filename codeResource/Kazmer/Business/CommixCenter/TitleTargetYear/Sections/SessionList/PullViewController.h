@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "DisplayCellConfig.h"
-#import "DisplayCellConfig.h"
+//: #import "DisplayCellConfigDelegate.h"
+#import "DisplayCellConfigDelegate.h"
 //: #import <NIMSDK/NIMSDK.h>
 #import <NIMSDK/NIMSDK.h>
 

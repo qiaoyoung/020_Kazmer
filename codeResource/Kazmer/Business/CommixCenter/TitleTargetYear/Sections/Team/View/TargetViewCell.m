@@ -88,8 +88,8 @@
 #import "UIImage+Mortification.h"
 //: #import "DisplayTeamHelper.h"
 #import "MaxHelper.h"
-//: #import "DisplayCardDataSourceProtocol.h"
-#import "DisplayCardDataSourceProtocol.h"
+//: #import "DisplayCardUserDelegate.h"
+#import "DisplayCardUserDelegate.h"
 
 //: NSString *const kTeamMember = @"kTeamMember";
 NSString *const m_pathId = @"kTeamMember";

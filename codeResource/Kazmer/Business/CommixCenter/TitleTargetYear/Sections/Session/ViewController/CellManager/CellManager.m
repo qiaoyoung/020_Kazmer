@@ -13,8 +13,7 @@
 #import "CellManager.h"
 //: #import "SNLeadCompleteInfo.h"
 #import "GuideView.h"
-//: #import "SNWeakStrongMacro.h"
-#import "SNWeakStrongMacro.h"
+
 
 //: @interface SNLeadCompleteManager ()
 @interface CellManager ()

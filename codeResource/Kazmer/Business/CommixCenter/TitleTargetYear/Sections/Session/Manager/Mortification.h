@@ -24,14 +24,14 @@
 #import "CleanDoing.h"         //message Wrapper
 //: #import "DisplayKitMessageProvider.h"
 #import "LabelSessionProvider.h"
-//: #import "DisplayCellConfig.h"           //message cell配置协议
-#import "DisplayCellConfig.h"           //message cell配置协议
-//: #import "DisplayInputProtocol.h"        //输入框回调
-#import "DisplayInputProtocol.h"        //输入框回调
+//: #import "DisplayCellConfigDelegate.h"           //message cell配置协议
+#import "DisplayCellConfigDelegate.h"           //message cell配置协议
+//: #import "DisplayInputDelegate.h"        //输入框回调
+#import "DisplayInputDelegate.h"        //输入框回调
 //: #import "DisplayKitDataProvider.h"      //APP内容提供器
 #import "DisplayProvider.h"      //APP内容提供器
-//: #import "DisplayMessageCellProtocol.h"  //message cell事件回调
-#import "DisplayMessageCellProtocol.h"  //message cell事件回调
+//: #import "CompartmentPathDelegate.h"  //message cell事件回调
+#import "CompartmentPathDelegate.h"  //message cell事件回调
 //: #import "DisplaySessionConfig.h"        //会话页面配置
 #import "ColorConfig.h"        //会话页面配置
 //: #import "DisplayKitEvent.h"             //点击事件封装类
@@ -48,8 +48,8 @@
 #import "PullViewController.h"
 //: #import "DisplayKitIndependentModeExtraInfo.h"
 #import "BigInfo.h"
-//: #import "DisplayChatUIManagerProtocol.h"
-#import "DisplayChatUIManagerProtocol.h"
+//: #import "MarkContainerDelegate.h"
+#import "MarkContainerDelegate.h"
 //: #import "DisplayCollectionViewLeftAlignedLayout.h"
 #import "TagCellViewLayout.h"
 //: #import "DisplayKitQuickCommentUtil.h"

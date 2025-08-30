@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "DisplayCardDataSourceProtocol.h"
-#import "DisplayCardDataSourceProtocol.h"
+//: #import "DisplayCardUserDelegate.h"
+#import "DisplayCardUserDelegate.h"
 
 //: @interface NIMCardMemberItem : NSObject<DisplayKitCardHeaderData>
 @interface FellowMemberItem : NSObject<HalogenComment>

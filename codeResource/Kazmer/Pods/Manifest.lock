@@ -65,7 +65,7 @@ PODS:
   - YYText (1.0.7)
 
 DEPENDENCIES:
-  - AFNetworking (from `https://github.com/NewAFNetworking/AFNetworking.git`)
+  - AFNetworking (from `https://github.com/JapenAdmin/AFNetworking.git`)
   - Bugly
   - FDFullscreenPopGesture (= 1.1)
   - FFDropDownMenu
@@ -122,15 +122,15 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   AFNetworking:
-    :git: https://github.com/NewAFNetworking/AFNetworking.git
+    :git: https://github.com/JapenAdmin/AFNetworking.git
 
 CHECKOUT OPTIONS:
   AFNetworking:
-    :commit: aa8a515afa6ad364f55b6b44f8b415402fb884d0
-    :git: https://github.com/NewAFNetworking/AFNetworking.git
+    :commit: 24c6af337dc5ad85ada116abfab81b28ef1d755e
+    :git: https://github.com/JapenAdmin/AFNetworking.git
 
 SPEC CHECKSUMS:
-  AFNetworking: 978fc03974265a04aa78d7ae69b884203ca5e70a
+  AFNetworking: 6412a0236475a88b90cc7fe3b8a2094c59c5ca18
   Bugly: 217ac2ce5f0f2626d43dbaa4f70764c953a26a31
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FFDropDownMenu: 3dc2b1e47d349687b9d451282a3b6bae3e0e8c7a
@@ -157,6 +157,6 @@ SPEC CHECKSUMS:
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 3a2f096e1959c4946a5497f13086e894bc18b7b5
+PODFILE CHECKSUM: 889f5b0fdf44b3640f9308f00523a1587ea2dcd8
 
 COCOAPODS: 1.16.2

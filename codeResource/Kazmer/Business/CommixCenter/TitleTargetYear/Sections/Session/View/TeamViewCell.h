@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "DisplayMessageCellProtocol.h"
-#import "DisplayMessageCellProtocol.h"
+//: #import "CompartmentPathDelegate.h"
+#import "CompartmentPathDelegate.h"
 
 //: @class DisplayTimestampModel;
 @class WithPage;

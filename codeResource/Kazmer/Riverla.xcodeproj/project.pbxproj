@@ -755,12 +755,12 @@
 		429D40EA299A79F500354206 /* CommixCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommixCenter.m; sourceTree = "<group>"; };
 		429D40EB299A79F500354206 /* ValueAtImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueAtImpl.m; sourceTree = "<group>"; };
 		429D40EC299A79F500354206 /* PraiseCommentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PraiseCommentSize.h; sourceTree = "<group>"; };
-		429D40ED299A79F500354206 /* DisplaySessionConfigurateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplaySessionConfigurateProtocol.h; sourceTree = "<group>"; };
+		429D40ED299A79F500354206 /* CommixCenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommixCenterProtocol.h; sourceTree = "<group>"; };
 		429D40EE299A79F500354206 /* TitleTargetYear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleTargetYear.m; sourceTree = "<group>"; };
 		429D40EF299A79F500354206 /* FinancialCenterAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialCenterAdapter.h; sourceTree = "<group>"; };
 		429D40F0299A79F500354206 /* CommentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentControl.h; sourceTree = "<group>"; };
 		429D40F1299A79F500354206 /* CommixCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommixCenter.h; sourceTree = "<group>"; };
-		429D40F2299A79F500354206 /* DisplaySessionPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplaySessionPrivateProtocol.h; sourceTree = "<group>"; };
+		429D40F2299A79F500354206 /* FinancialCenterPrivateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancialCenterPrivateProtocol.h; sourceTree = "<group>"; };
 		429D40F3299A79F500354206 /* BubbleCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleCropView.h; sourceTree = "<group>"; };
 		429D40F4299A79F500354206 /* PraiseCommentSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PraiseCommentSize.m; sourceTree = "<group>"; };
 		429D40F5299A79F500354206 /* ValueAtImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueAtImpl.h; sourceTree = "<group>"; };
@@ -808,9 +808,7 @@
 		429D4132299A79F500354206 /* GuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideView.m; sourceTree = "<group>"; };
 		429D4133299A79F500354206 /* CellManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellManager.m; sourceTree = "<group>"; };
 		429D4134299A79F500354206 /* SessionNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionNameView.m; sourceTree = "<group>"; };
-		429D4135299A79F500354206 /* SNWeakStrongMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNWeakStrongMacro.h; sourceTree = "<group>"; };
 		429D4136299A79F500354206 /* GuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideView.h; sourceTree = "<group>"; };
-		429D4137299A79F500354206 /* SNSingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSingletonMacro.h; sourceTree = "<group>"; };
 		429D4138299A79F500354206 /* CellManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellManager.h; sourceTree = "<group>"; };
 		429D4139299A79F500354206 /* ReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyViewController.h; sourceTree = "<group>"; };
 		429D413C299A79F500354206 /* ReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyViewController.m; sourceTree = "<group>"; };
@@ -842,11 +840,11 @@
 		429D415B299A79F500354206 /* NSString+Mortification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Mortification.h"; sourceTree = "<group>"; };
 		429D415C299A79F500354206 /* AVAsset+Mortification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVAsset+Mortification.h"; sourceTree = "<group>"; };
 		429D415D299A79F500354206 /* Mortification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mortification.h; sourceTree = "<group>"; };
-		429D415F299A79F500354206 /* DisplayChatUIManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayChatUIManagerProtocol.h; sourceTree = "<group>"; };
-		429D4160299A79F500354206 /* DisplayInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayInputProtocol.h; sourceTree = "<group>"; };
-		429D4161299A79F500354206 /* DisplayCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayCellConfig.h; sourceTree = "<group>"; };
+		429D415F299A79F500354206 /* MarkContainerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkContainerDelegate.h; sourceTree = "<group>"; };
+		429D4160299A79F500354206 /* DisplayInputDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayInputDelegate.h; sourceTree = "<group>"; };
+		429D4161299A79F500354206 /* DisplayCellConfigDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayCellConfigDelegate.h; sourceTree = "<group>"; };
 		429D4162299A79F500354206 /* LabelSessionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelSessionProvider.h; sourceTree = "<group>"; };
-		429D4163299A79F500354206 /* DisplayMessageCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayMessageCellProtocol.h; sourceTree = "<group>"; };
+		429D4163299A79F500354206 /* CompartmentPathDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompartmentPathDelegate.h; sourceTree = "<group>"; };
 		429D4164299A79F500354206 /* DisplayProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayProvider.h; sourceTree = "<group>"; };
 		429D4165299A79F500354206 /* ColorConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConfig.h; sourceTree = "<group>"; };
 		429D4168299A79F500354206 /* NameMessageEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameMessageEffectView.m; sourceTree = "<group>"; };
@@ -887,7 +885,6 @@
 		42BD84E22B1DD340003559E5 /* NSMutableAttributedString+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+M80.h"; sourceTree = "<group>"; };
 		42BD84E32B1DD340003559E5 /* LabelNameScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelNameScrollView.m; sourceTree = "<group>"; };
 		42BD84E72B1DD340003559E5 /* NSMutableAttributedString+M80.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+M80.m"; sourceTree = "<group>"; };
-		42C80B7428DF3E0A00736D83 /* SNWeakStrongMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNWeakStrongMacro.h; sourceTree = "<group>"; };
 		42CF9E8429CC6CA90037B562 /* UIImage+Display.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Display.m"; sourceTree = "<group>"; };
 		42CF9E8529CC6CA90037B562 /* UIImage+Display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Display.h"; sourceTree = "<group>"; };
 		42DBFFCC2AF0ADBB001B5B97 /* CellAt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellAt.m; sourceTree = "<group>"; };
@@ -927,7 +924,6 @@
 		61839A9A1BF9B60400702DF0 /* DirectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectView.m; sourceTree = "<group>"; };
 		619087071BABE5D400F3A0C7 /* SizePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizePage.h; sourceTree = "<group>"; };
 		619087081BABE5D400F3A0C7 /* SizePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizePage.m; sourceTree = "<group>"; };
-		6195CD3E1A8C74DB00F3E239 /* USERGlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USERGlobalMacro.h; sourceTree = "<group>"; };
 		61A1422D1AD7B02E00DCAD88 /* NSDictionary+ControlJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ControlJson.h"; sourceTree = "<group>"; };
 		61A1422E1AD7B02E00DCAD88 /* NSDictionary+ControlJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ControlJson.m"; sourceTree = "<group>"; };
 		61A8EF321BB67F0900033FB8 /* UIResponder+Year.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Year.h"; sourceTree = "<group>"; };
@@ -1090,7 +1086,7 @@
 		B1F189722E011C6E00E24425 /* PersonShould.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonShould.m; sourceTree = "<group>"; };
 		B1F189732E011C6E00E24425 /* UIImage+ScaleValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScaleValue.h"; sourceTree = "<group>"; };
 		B1F189742E011C6E00E24425 /* UIImage+ScaleValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScaleValue.m"; sourceTree = "<group>"; };
-		B1F189772E01214F00E24425 /* DisplayCardDataSourceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayCardDataSourceProtocol.h; sourceTree = "<group>"; };
+		B1F189772E01214F00E24425 /* DisplayCardUserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayCardUserDelegate.h; sourceTree = "<group>"; };
 		B808E73C26F23E3D00E302F6 /* CellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellViewController.h; sourceTree = "<group>"; };
 		B808E73D26F23E3D00E302F6 /* CellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellViewController.m; sourceTree = "<group>"; };
 		B808E74D26F48B1000E302F6 /* AggregationUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggregationUtil.h; sourceTree = "<group>"; };
@@ -1920,7 +1916,7 @@
 			children = (
 				429D40F1299A79F500354206 /* CommixCenter.h */,
 				429D40EA299A79F500354206 /* CommixCenter.m */,
-				429D40ED299A79F500354206 /* DisplaySessionConfigurateProtocol.h */,
+				429D40ED299A79F500354206 /* CommixCenterProtocol.h */,
 				429D40E8299A79F500354206 /* TitleTargetYear.h */,
 				429D40EE299A79F500354206 /* TitleTargetYear.m */,
 				429D40F0299A79F500354206 /* CommentControl.h */,
@@ -1931,7 +1927,7 @@
 				429D40EB299A79F500354206 /* ValueAtImpl.m */,
 				429D40F3299A79F500354206 /* BubbleCropView.h */,
 				429D40E9299A79F500354206 /* BubbleCropView.m */,
-				429D40F2299A79F500354206 /* DisplaySessionPrivateProtocol.h */,
+				429D40F2299A79F500354206 /* FinancialCenterPrivateProtocol.h */,
 				429D40EF299A79F500354206 /* FinancialCenterAdapter.h */,
 				429D40E7299A79F500354206 /* FinancialCenterAdapter.m */,
 				42CF9E8529CC6CA90037B562 /* UIImage+Display.h */,
@@ -2030,9 +2026,7 @@
 				429D4132299A79F500354206 /* GuideView.m */,
 				429D4133299A79F500354206 /* CellManager.m */,
 				429D4134299A79F500354206 /* SessionNameView.m */,
-				429D4135299A79F500354206 /* SNWeakStrongMacro.h */,
 				429D4136299A79F500354206 /* GuideView.h */,
-				429D4137299A79F500354206 /* SNSingletonMacro.h */,
 				429D4138299A79F500354206 /* CellManager.h */,
 			);
 			path = CellManager;
@@ -2084,11 +2078,11 @@
 		429D415E299A79F500354206 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				429D415F299A79F500354206 /* DisplayChatUIManagerProtocol.h */,
-				429D4160299A79F500354206 /* DisplayInputProtocol.h */,
-				429D4161299A79F500354206 /* DisplayCellConfig.h */,
+				429D415F299A79F500354206 /* MarkContainerDelegate.h */,
+				429D4160299A79F500354206 /* DisplayInputDelegate.h */,
+				429D4161299A79F500354206 /* DisplayCellConfigDelegate.h */,
 				429D4162299A79F500354206 /* LabelSessionProvider.h */,
-				429D4163299A79F500354206 /* DisplayMessageCellProtocol.h */,
+				429D4163299A79F500354206 /* CompartmentPathDelegate.h */,
 				429D4164299A79F500354206 /* DisplayProvider.h */,
 				429D4165299A79F500354206 /* ColorConfig.h */,
 			);
@@ -2155,7 +2149,7 @@
 				E47119CC2E62BEA10011A203 /* BlendKeychain.m */,
 				E47119CD2E62BEA10011A203 /* BlendKeychainQuery.h */,
 				E47119CE2E62BEA10011A203 /* BlendKeychainQuery.m */,
-				B1F189772E01214F00E24425 /* DisplayCardDataSourceProtocol.h */,
+				B1F189772E01214F00E24425 /* DisplayCardUserDelegate.h */,
 			);
 			path = BlendKeychain;
 			sourceTree = "<group>";
@@ -2187,7 +2181,6 @@
 				AE5882F51A6F47E10070536A /* Images.xcassets */,
 				E47119C92E61FFFF0011A203 /* DrawSortAdapter.bundle */,
 				AEB8367F1A772C2F00E7493E /* Runner-Prefix.pch */,
-				6195CD3E1A8C74DB00F3E239 /* USERGlobalMacro.h */,
 				425E94C02978044F00C812E7 /* Rest */,
 				425E94B62978022F00C812E7 /* BanCapture */,
 				AE5882E81A6F47E10070536A /* Supporting Files */,
@@ -3260,7 +3253,6 @@
 		B8C319642722AE55001BDBF5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				42C80B7428DF3E0A00736D83 /* SNWeakStrongMacro.h */,
 				BC99AF902C57737A00D66AC8 /* StandardViewCell.h */,
 				BC99AF912C57737A00D66AC8 /* StandardViewCell.m */,
 				BC99AF932C57993900D66AC8 /* PullView.h */,

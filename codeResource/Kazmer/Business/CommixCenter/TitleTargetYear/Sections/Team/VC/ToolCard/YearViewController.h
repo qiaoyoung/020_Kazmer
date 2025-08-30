@@ -11,8 +11,8 @@
 // __M_A_C_R_O__
 //: #import <UIKit/UIKit.h>
 #import <UIKit/UIKit.h>
-//: #import "DisplayCardDataSourceProtocol.h"
-#import "DisplayCardDataSourceProtocol.h"
+//: #import "DisplayCardUserDelegate.h"
+#import "DisplayCardUserDelegate.h"
 //: #import "MyUserKit.h"
 #import "Mortification.h"
 

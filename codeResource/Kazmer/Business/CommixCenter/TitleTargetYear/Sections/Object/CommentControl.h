@@ -11,10 +11,10 @@
 // __M_A_C_R_O__
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "DisplaySessionConfigurateProtocol.h"
-#import "DisplaySessionConfigurateProtocol.h"
-//: #import "DisplaySessionPrivateProtocol.h"
-#import "DisplaySessionPrivateProtocol.h"
+//: #import "CommixCenterProtocol.h"
+#import "CommixCenterProtocol.h"
+//: #import "FinancialCenterPrivateProtocol.h"
+#import "FinancialCenterPrivateProtocol.h"
 //: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
 

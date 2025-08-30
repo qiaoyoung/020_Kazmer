@@ -15,10 +15,10 @@
 #import "IndoorsView.h"
 //: #import "DisplaySessionTimestampCell.h"
 #import "TeamViewCell.h"
-//: #import "DisplayCellConfig.h"
-#import "DisplayCellConfig.h"
-//: #import "DisplayMessageCellProtocol.h"
-#import "DisplayMessageCellProtocol.h"
+//: #import "DisplayCellConfigDelegate.h"
+#import "DisplayCellConfigDelegate.h"
+//: #import "CompartmentPathDelegate.h"
+#import "CompartmentPathDelegate.h"
 
 //: @interface DisplayMessageCellFactory : NSObject
 @interface ManFactory : NSObject

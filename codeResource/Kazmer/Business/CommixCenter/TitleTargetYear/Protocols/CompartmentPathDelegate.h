@@ -1,7 +1,7 @@
 // __DEBUG__
 // __CLOSE_PRINT__
 //
-//  DisplayMessageCellProtocol.h
+//  CompartmentPathDelegate.h
 // Mortification
 //
 //  Created by NetEase.
@@ -9,8 +9,8 @@
 //
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
-//: #import "DisplayCellConfig.h"
-#import "DisplayCellConfig.h"
+//: #import "DisplayCellConfigDelegate.h"
+#import "DisplayCellConfigDelegate.h"
 
 // __M_A_C_R_O__
 

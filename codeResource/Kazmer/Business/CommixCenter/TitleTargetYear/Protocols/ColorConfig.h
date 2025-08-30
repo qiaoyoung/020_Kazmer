@@ -11,8 +11,8 @@
 #import <Foundation/Foundation.h>
 //: #import "DisplayMediaItem.h"
 #import "CommingleItem.h"
-//: #import "DisplayCellConfig.h"
-#import "DisplayCellConfig.h"
+//: #import "DisplayCellConfigDelegate.h"
+#import "DisplayCellConfigDelegate.h"
 //: #import "DisplayKitMessageProvider.h"
 #import "LabelSessionProvider.h"
 //: #import "DisplayInputBarItemType.h"

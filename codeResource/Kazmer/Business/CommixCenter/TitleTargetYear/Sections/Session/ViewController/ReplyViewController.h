@@ -15,10 +15,10 @@
 #import <NIMSDK/NIMSDK.h>
 //: #import "DisplaySessionConfig.h"
 #import "ColorConfig.h"
-//: #import "DisplayMessageCellProtocol.h"
-#import "DisplayMessageCellProtocol.h"
-//: #import "DisplaySessionConfigurateProtocol.h"
-#import "DisplaySessionConfigurateProtocol.h"
+//: #import "CompartmentPathDelegate.h"
+#import "CompartmentPathDelegate.h"
+//: #import "CommixCenterProtocol.h"
+#import "CommixCenterProtocol.h"
 //: #import "DisplayInputView.h"
 #import "ContextInputView.h"
 
