@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>validateChain</key>
+    <string>GenuineRecordDecodeFalls</string>
+    <key>forwardBuilderGet</key>
+    <string>VoyageCoordinatorHandler</string>
+    <key>readStackDurable</key>
+    <string>LitheSoundZenithProtocol</string>
+    <key>cacheEliteVisionToward</key>
+    <string>CacheManagerValleyGenerous</string>
+    <key>modelTrainCairnElite</key>
+    <string>WriteGentleDecorator</string>
+</dict>
+</plist>

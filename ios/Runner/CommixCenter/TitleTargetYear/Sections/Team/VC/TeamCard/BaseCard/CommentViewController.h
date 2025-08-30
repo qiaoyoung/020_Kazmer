@@ -1,0 +1,126 @@
+// __DEBUG__
+// __CLOSE_PRINT__
+//
+//  CommentViewController.h
+// Mortification
+//
+//  Created by Netease on 2019/6/11.
+//  Copyright © 2019 NetEase. All rights reserved.
+//  基础UI
+
+// __M_A_C_R_O__
+//: #import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
+//: #import "DisplayTeamCardRowItem.h"
+#import "ManPath.h"
+//: #import "DisplayTeamMemberListCell.h"
+#import "TargetViewCell.h"
+//: #import "DisplayTeamSwitchTableViewCell.h"
+#import "MarginOfSafetyView.h"
+//: #import "DisplayTeamListDataManager.h"
+#import "MentionManager.h"
+//: #import <NIMSDK/NIMSDK.h>
+#import <NIMSDK/NIMSDK.h>
+
+//: NS_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_BEGIN
+
+//: typedef NS_ENUM (NSInteger, NIMTeamCardSwithCellType){
+typedef NS_ENUM (NSInteger, NIMTeamCardSwithCellType){
+    //: NIMTeamCardSwithCellTypeTop = 1,
+    NIMTeamCardSwithCellTypeTop = 1,
+    //: NIMTeamCardSwithCellTypeNotify,
+    NIMTeamCardSwithCellTypeNotify,
+    //: NIMTeamCardSwithCellTypeMute,
+    NIMTeamCardSwithCellTypeMute,
+//: };
+};
+
+//: typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
+typedef void(^NIMTeamCardPickerHandle)(UIImage *image);
+
+//: @protocol DisplayTeamCardViewControllerDelegate <NSObject>
+@protocol TextDelegate <NSObject>
+
+//: - (void)NIMTeamCardVCDidSetTop:(BOOL)on;
+- (void)statuses:(BOOL)on;
+
+//: - (void)NIMTeamCardVCDidSetMute:(BOOL)on;
+- (void)batteryTingMute:(BOOL)on;
+
+//: @end
+@end
+
+//: #pragma mark - UI基类
+#pragma mark - UI基类
+//: @interface DisplayTeamCardViewController : UIViewController
+@interface CommentViewController : UIViewController
+
+//: @property (nonatomic,weak) id <DisplayTeamCardViewControllerDelegate> delegate;
+@property (nonatomic,weak) id <TextDelegate> delegate;
+
+//: @property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) UITableView *tableView;
+
+//数据源
+//: @property (nonatomic,strong) NSArray <NSArray <DisplayTeamCardRowItem *> *> *datas;
+@property (nonatomic,strong) NSArray <NSArray <ManPath *> *> *datas;
+
+// "canMemberInfo": 1,//0 不允许查看资料 1 是允许
+//: @property (nonatomic,assign) BOOL canMemberInfo;
+@property (nonatomic,assign) BOOL canMemberInfo;
+
+//显示相册
+//: - (void)showImagePicker:(UIImagePickerControllerSourceType)type
+- (void)viewEnable:(UIImagePickerControllerSourceType)type
+             //: completion:(NIMTeamCardPickerHandle)completion;
+             item:(NIMTeamCardPickerHandle)completion;
+
+//弹框 - 标题
+//: - (UIAlertController *)makeAlertSheetWithTitle:(NSString *)title
+- (UIAlertController *)language:(NSString *)title
+                                       //: actions:(NSArray <UIAlertAction *>*)actions;
+                                       be:(NSArray <UIAlertAction *>*)actions;
+
+//弹框 - 取消action
+//: - (UIAlertAction *)makeCancelAction;
+- (UIAlertAction *)up;
+
+//显示弹框
+//: - (void)showAlert:(UIAlertController *)alert;
+- (void)inputClear:(UIAlertController *)alert;
+
+//显示Toast
+//: - (void)showToastMsg:(NSString *)msg;
+- (void)dot:(NSString *)msg;
+
+
+/* --- need reload by child class ---- */
+// 子类自定义头文件
+//: - (UIView *)didGetHeaderView;
+- (UIView *)range;
+
+// 子类自定义cell
+//: - (void)didBuildTeamMemberCell:(DisplayTeamMemberListCell *)cell;
+- (void)add:(TargetViewCell *)cell;
+
+// 子类刷新tableview
+//: - (void)reloadTableViewData;
+- (void)showNames;
+
+// 子类刷新header
+//: - (void)reloadTableHeaderData;
+- (void)smartView;
+
+// 子类刷新其他数据
+//: - (void)reloadOtherData;
+- (void)someOtherOf;
+
+//: @end
+@end
+
+
+
+
+//: NS_ASSUME_NONNULL_END
+NS_ASSUME_NONNULL_END

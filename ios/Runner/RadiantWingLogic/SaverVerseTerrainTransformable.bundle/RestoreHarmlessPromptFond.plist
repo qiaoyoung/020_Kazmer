@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>pauseHandler</key>
+    <string>QuirkTrainHardy</string>
+    <key>restoreLayoutDeserializer</key>
+    <string>ZoneExecuteSpeakRemote</string>
+    <key>vocalTestFactory</key>
+    <string>DebugManagerUpward</string>
+    <key>baseSendFilterUnique</key>
+    <string>CreativeSummitHeathIvory</string>
+    <key>decentBackup</key>
+    <string>RetreatValidPacificPowerFocus</string>
+</dict>
+</plist>

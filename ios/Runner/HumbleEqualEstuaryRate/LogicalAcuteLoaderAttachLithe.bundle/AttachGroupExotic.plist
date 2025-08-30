@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>austereDomainWrite</key>
+    <string>KnollRestoreBind</string>
+    <key>connectAgent</key>
+    <string>InstanceTransformFast</string>
+    <key>desertFindOptimalVisitor</key>
+    <string>AppendCollection</string>
+    <key>searchHubRichCache</key>
+    <string>ValueCancelDecoratorAdapter</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>expertHardyClass</key>
+    <string>QuickPoolHelper</string>
+    <key>headerMobileClose</key>
+    <string>BriefTerseDataSourceTask</string>
+    <key>definedDataSourceBeforeBamboo</key>
+    <string>ExtraContainerListValidator</string>
+    <key>dropSereneSaver</key>
+    <string>SaveUtilityKnack</string>
+</dict>
+</plist>

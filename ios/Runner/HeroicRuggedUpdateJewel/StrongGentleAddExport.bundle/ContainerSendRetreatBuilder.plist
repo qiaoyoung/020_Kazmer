@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>nearJade</key>
+    <string>ConsoleValidReplaceThroughout</string>
+    <key>skillExtensionAmberDebug</key>
+    <string>DisplayStartExtractTrail</string>
+    <key>downToolFocusedInterpreter</key>
+    <string>SafeWildEnumOnDirect</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>handlerMakeTactic</key>
+    <string>MacroCalmRoyalTower</string>
+    <key>closeSerializer</key>
+    <string>AnalyzeSmartSelectAngle</string>
+    <key>mildManagerHideWorld</key>
+    <string>WhisperListTrain</string>
+    <key>cloudFill</key>
+    <string>ChannelAgainstMystic</string>
+    <key>baseDebugTameCache</key>
+    <string>LoaderPromiseGigantic</string>
+    <key>filterDistant</key>
+    <string>CompatibleListBeyondTime</string>
+    <key>facadeFix</key>
+    <string>OpalEndlessManagerAtlas</string>
+    <key>saverShowHeavenMerry</key>
+    <string>DaleDebugCliffFactory</string>
+    <key>proxyHandsomeRain</key>
+    <string>WebDefined</string>
+</dict>
+</plist>

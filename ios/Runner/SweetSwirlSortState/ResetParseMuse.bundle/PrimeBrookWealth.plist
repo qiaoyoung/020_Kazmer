@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>handyCrystal</key>
+    <string>SpringScanDisplayDispatcher</string>
+    <key>edgeFormatter</key>
+    <string>LedgerVisitorDistinctAngle</string>
+    <key>profileFormatterQualityRead</key>
+    <string>QuickWindTrim</string>
+    <key>outsideMajorDomeModel</key>
+    <string>ValueOrchardBriefGlorious</string>
+    <key>intoHandlerRow</key>
+    <string>PlayReadAssignFastAuthentic</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>divineNearTorchTarget</key>
+    <string>BeginDaintyPlanet</string>
+    <key>handyStateReturnHeight</key>
+    <string>SoftTamePromptReset</string>
+    <key>listVocalApplyIntense</key>
+    <string>OnTempleWait</string>
+    <key>bareHeaderDuringCairn</key>
+    <string>WithoutCavernPositiveTrack</string>
+    <key>mediatorRemove</key>
+    <string>EnergeticWorthyRestoreSession</string>
+    <key>coordinatorReplace</key>
+    <string>ClassLooseListThreatDirect</string>
+    <key>ultimateConvertPoolGlad</key>
+    <string>EngineState</string>
+</dict>
+</plist>

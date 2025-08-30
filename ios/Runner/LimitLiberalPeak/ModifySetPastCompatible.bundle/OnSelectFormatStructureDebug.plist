@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>cleanLight</key>
+    <string>BehindShellHandlerAdapter</string>
+    <key>mediatorAdaptive</key>
+    <string>StationWhisperDrop</string>
+    <key>deserializerNectarSendRefined</key>
+    <string>DataSourceThroughoutGreatJungle</string>
+    <key>aboveContainer</key>
+    <string>StationHubPath</string>
+    <key>formatterDiamondClassicOpen</key>
+    <string>WirelessOuterMarshMedia</string>
+    <key>factoryParse</key>
+    <string>HeightScopeHardyCollection</string>
+    <key>improvedOverInterpreterVerse</key>
+    <string>DropZenithIntimate</string>
+</dict>
+</plist>

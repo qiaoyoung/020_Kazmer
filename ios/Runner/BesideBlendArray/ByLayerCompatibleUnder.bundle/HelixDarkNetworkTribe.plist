@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>toolDatabase</key>
+    <string>CommandJoyfulSweet</string>
+    <key>validateVapor</key>
+    <string>MergeShowAtAbsolute</string>
+    <key>minimalHandleEngineFluke</key>
+    <string>CanvasConfig</string>
+    <key>sessionAfter</key>
+    <string>DeepWebCoordinator</string>
+    <key>simpleFinishSerializer</key>
+    <string>TerseGiganticDeliverSource</string>
+</dict>
+</plist>

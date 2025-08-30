@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>startLibrary</key>
+    <string>SolarDebugRoundBetween</string>
+    <key>defineMonitor</key>
+    <string>SyncProtocolState</string>
+    <key>trackSilentHostValidator</key>
+    <string>RoundConfigService</string>
+    <key>removeLandscape</key>
+    <string>OpenFine</string>
+    <key>calculatePositiveVoyage</key>
+    <string>AmidHeath</string>
+    <key>stageSerializerLogicalWatch</key>
+    <string>VerseManageCairnCache</string>
+</dict>
+</plist>
