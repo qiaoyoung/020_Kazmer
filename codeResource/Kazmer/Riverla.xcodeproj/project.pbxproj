@@ -1417,7 +1417,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		043B0B8B2D9B747400784741 /* PageControl */ = {
+		043B0B8B2D9B747400784741 /* LabelDotView */ = {
 			isa = PBXGroup;
 			children = (
 				043B0B832D9B747400784741 /* PositionView.h */,
@@ -1429,23 +1429,23 @@
 				043B0B892D9B747400784741 /* TargetView.h */,
 				043B0B8A2D9B747400784741 /* TargetView.m */,
 			);
-			path = PageControl;
+			path = LabelDotView;
 			sourceTree = "<group>";
 		};
-		043B0B8E2D9B747400784741 /* TTPageControl */ = {
+		043B0B8E2D9B747400784741 /* RedReusableView */ = {
 			isa = PBXGroup;
 			children = (
 				043B0B8C2D9B747400784741 /* EnableSizeView.h */,
 				043B0B8D2D9B747400784741 /* EnableSizeView.m */,
 			);
-			path = TTPageControl;
+			path = RedReusableView;
 			sourceTree = "<group>";
 		};
-		043B0B952D9B747400784741 /* SDCycleScrollView */ = {
+		043B0B952D9B747400784741 /* PositionView */ = {
 			isa = PBXGroup;
 			children = (
-				043B0B8B2D9B747400784741 /* PageControl */,
-				043B0B8E2D9B747400784741 /* TTPageControl */,
+				043B0B8B2D9B747400784741 /* LabelDotView */,
+				043B0B8E2D9B747400784741 /* RedReusableView */,
 				043B0B8F2D9B747400784741 /* RedReusableView.h */,
 				043B0B902D9B747400784741 /* RedReusableView.m */,
 				043B0B912D9B747400784741 /* RowView.h */,
@@ -1453,7 +1453,7 @@
 				043B0B932D9B747400784741 /* UIView+SizeReplyExtension.h */,
 				043B0B942D9B747400784741 /* UIView+SizeReplyExtension.m */,
 			);
-			path = SDCycleScrollView;
+			path = PositionView;
 			sourceTree = "<group>";
 		};
 		18E2EC3621BE90D900E0E773 /* MigrateMessage */ = {
@@ -1517,24 +1517,24 @@
 			path = Rest;
 			sourceTree = "<group>";
 		};
-		429D400C299A79F400354206 /* ChatClasses */ = {
+		429D400C299A79F400354206 /* CommixCenter */ = {
 			isa = PBXGroup;
 			children = (
-				429D400D299A79F400354206 /* Classes */,
+				429D400D299A79F400354206 /* TitleTargetYear */,
 				429D417F299A79F500354206 /* Manager */,
 			);
-			path = ChatClasses;
+			path = CommixCenter;
 			sourceTree = "<group>";
 		};
-		429D400D299A79F400354206 /* Classes */ = {
+		429D400D299A79F400354206 /* TitleTargetYear */ = {
 			isa = PBXGroup;
 			children = (
 				429D400E299A79F400354206 /* Sections */,
 				429D4142299A79F500354206 /* Category */,
 				429D415E299A79F500354206 /* Protocols */,
-				429D4166299A79F500354206 /* Global */,
+				429D4166299A79F500354206 /* TeamMake */,
 			);
-			path = Classes;
+			path = TitleTargetYear;
 			sourceTree = "<group>";
 		};
 		429D400E299A79F400354206 /* Sections */ = {
@@ -1544,7 +1544,7 @@
 				429D4016299A79F400354206 /* Contact */,
 				429D402A299A79F400354206 /* Util */,
 				429D4040299A79F400354206 /* Input */,
-				429D4060299A79F400354206 /* Common */,
+				429D4060299A79F400354206 /* MarginView */,
 				429D407A299A79F400354206 /* Team */,
 				429D40B1299A79F500354206 /* Model */,
 				429D40BE299A79F500354206 /* SessionList */,
@@ -1557,7 +1557,7 @@
 			isa = PBXGroup;
 			children = (
 				429D4021299A79F400354206 /* Cell */,
-				429D401B299A79F400354206 /* ContactGroup */,
+				429D401B299A79F400354206 /* UserRecord */,
 				429D4018299A79F400354206 /* LittleLeagueTeamView.h */,
 				429D4025299A79F400354206 /* LittleLeagueTeamView.m */,
 				429D4020299A79F400354206 /* QueryConfig.h */,
@@ -1572,7 +1572,7 @@
 			path = Contact;
 			sourceTree = "<group>";
 		};
-		429D401B299A79F400354206 /* ContactGroup */ = {
+		429D401B299A79F400354206 /* UserRecord */ = {
 			isa = PBXGroup;
 			children = (
 				429D401F299A79F400354206 /* UserRecord.h */,
@@ -1580,7 +1580,7 @@
 				429D401C299A79F400354206 /* DisplayGroupedUsrInfo.h */,
 				429D401E299A79F400354206 /* DisplayGroupedUsrInfo.m */,
 			);
-			path = ContactGroup;
+			path = UserRecord;
 			sourceTree = "<group>";
 		};
 		429D4021299A79F400354206 /* Cell */ = {
@@ -1610,12 +1610,12 @@
 				429D4039299A79F400354206 /* AtPull.m */,
 				429D4034299A79F400354206 /* AddPullSize.h */,
 				429D402B299A79F400354206 /* AddPullSize.m */,
-				429D403A299A79F400354206 /* Spelling */,
+				429D403A299A79F400354206 /* SizeTable */,
 			);
 			path = Util;
 			sourceTree = "<group>";
 		};
-		429D403A299A79F400354206 /* Spelling */ = {
+		429D403A299A79F400354206 /* SizeTable */ = {
 			isa = PBXGroup;
 			children = (
 				429D403D299A79F400354206 /* PathCommentIndex.h */,
@@ -1623,13 +1623,13 @@
 				429D403E299A79F400354206 /* SizeTable.h */,
 				429D403C299A79F400354206 /* SizeTable.m */,
 			);
-			path = Spelling;
+			path = SizeTable;
 			sourceTree = "<group>";
 		};
 		429D4040299A79F400354206 /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				429D405B299A79F400354206 /* GrowingTextView */,
+				429D405B299A79F400354206 /* AtPraiseScrollView */,
 				429D4042299A79F400354206 /* LabelSizeImage.h */,
 				429D4050299A79F400354206 /* LabelSizeImage.m */,
 				429D4052299A79F400354206 /* DisplayInputBarItemType.h */,
@@ -1664,7 +1664,7 @@
 			path = Input;
 			sourceTree = "<group>";
 		};
-		429D405B299A79F400354206 /* GrowingTextView */ = {
+		429D405B299A79F400354206 /* AtPraiseScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				429D405F299A79F400354206 /* AtPraiseScrollView.h */,
@@ -1672,10 +1672,10 @@
 				429D405D299A79F400354206 /* PraiseView.m */,
 				429D405E299A79F400354206 /* PraiseView.h */,
 			);
-			path = GrowingTextView;
+			path = AtPraiseScrollView;
 			sourceTree = "<group>";
 		};
-		429D4060299A79F400354206 /* Common */ = {
+		429D4060299A79F400354206 /* MarginView */ = {
 			isa = PBXGroup;
 			children = (
 				429D4061299A79F400354206 /* MarginView.h */,
@@ -1698,7 +1698,7 @@
 				429D406A299A79F400354206 /* GatefoldView.h */,
 				429D4079299A79F400354206 /* GatefoldView.m */,
 			);
-			path = Common;
+			path = MarginView;
 			sourceTree = "<group>";
 		};
 		429D407A299A79F400354206 /* Team */ = {
@@ -1861,18 +1861,18 @@
 				429D40CA299A79F500354206 /* Content */,
 				429D40C6299A79F500354206 /* CellManWith.h */,
 				429D40E1299A79F500354206 /* CellManWith.m */,
-				429D40C7299A79F500354206 /* ReplyContentConfig */,
+				429D40C7299A79F500354206 /* MaxConfig */,
 			);
 			path = Config;
 			sourceTree = "<group>";
 		};
-		429D40C7299A79F500354206 /* ReplyContentConfig */ = {
+		429D40C7299A79F500354206 /* MaxConfig */ = {
 			isa = PBXGroup;
 			children = (
 				429D40C8299A79F500354206 /* MaxConfig.h */,
 				429D40C9299A79F500354206 /* MaxConfig.m */,
 			);
-			path = ReplyContentConfig;
+			path = MaxConfig;
 			sourceTree = "<group>";
 		};
 		429D40CA299A79F500354206 /* Content */ = {
@@ -2013,17 +2013,17 @@
 		429D412E299A79F500354206 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				42BD84DC2B1DD340003559E5 /* M80AttributedLabel */,
-				42A310F32B1D80E4005ADF0D /* WechatBubbleMenu */,
-				429D4130299A79F500354206 /* LeadCompleteInfo */,
-				429D413D299A79F500354206 /* LEEAlert */,
+				42BD84DC2B1DD340003559E5 /* LabelNameScrollView */,
+				42A310F32B1D80E4005ADF0D /* MessageTeam */,
+				429D4130299A79F500354206 /* CellManager */,
+				429D413D299A79F500354206 /* ControlTag */,
 				429D4139299A79F500354206 /* ReplyViewController.h */,
 				429D413C299A79F500354206 /* ReplyViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		429D4130299A79F500354206 /* LeadCompleteInfo */ = {
+		429D4130299A79F500354206 /* CellManager */ = {
 			isa = PBXGroup;
 			children = (
 				429D4131299A79F500354206 /* SessionNameView.h */,
@@ -2035,17 +2035,17 @@
 				429D4137299A79F500354206 /* SNSingletonMacro.h */,
 				429D4138299A79F500354206 /* CellManager.h */,
 			);
-			path = LeadCompleteInfo;
+			path = CellManager;
 			sourceTree = "<group>";
 		};
-		429D413D299A79F500354206 /* LEEAlert */ = {
+		429D413D299A79F500354206 /* ControlTag */ = {
 			isa = PBXGroup;
 			children = (
 				429D413E299A79F500354206 /* LEEAlertHelper.h */,
 				429D413F299A79F500354206 /* ControlTag.m */,
 				429D4140299A79F500354206 /* ControlTag.h */,
 			);
-			path = LEEAlert;
+			path = ControlTag;
 			sourceTree = "<group>";
 		};
 		429D4142299A79F500354206 /* Category */ = {
@@ -2095,7 +2095,7 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		429D4166299A79F500354206 /* Global */ = {
+		429D4166299A79F500354206 /* TeamMake */ = {
 			isa = PBXGroup;
 			children = (
 				429D417D299A79F500354206 /* DisplayCommonTableData.h */,
@@ -2119,7 +2119,7 @@
 				429D4174299A79F500354206 /* ManagingDirectorChange.h */,
 				429D416C299A79F500354206 /* ManagingDirectorChange.m */,
 			);
-			path = Global;
+			path = TeamMake;
 			sourceTree = "<group>";
 		};
 		429D417F299A79F500354206 /* Manager */ = {
@@ -2133,7 +2133,7 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		42A310F32B1D80E4005ADF0D /* WechatBubbleMenu */ = {
+		42A310F32B1D80E4005ADF0D /* MessageTeam */ = {
 			isa = PBXGroup;
 			children = (
 				42A310F42B1D80EC005ADF0D /* MessageTeam.h */,
@@ -2145,7 +2145,7 @@
 				427DB4BC2B1F1EC500FE9CB8 /* NSObject+TelegramContext.h */,
 				427DB4BD2B1F1EC500FE9CB8 /* NSObject+TelegramContext.m */,
 			);
-			path = WechatBubbleMenu;
+			path = MessageTeam;
 			sourceTree = "<group>";
 		};
 		42AC19F82A63ADC400BA1584 /* BlendKeychain */ = {
@@ -2160,7 +2160,7 @@
 			path = BlendKeychain;
 			sourceTree = "<group>";
 		};
-		42BD84DC2B1DD340003559E5 /* M80AttributedLabel */ = {
+		42BD84DC2B1DD340003559E5 /* LabelNameScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				42BD84DF2B1DD340003559E5 /* LabelNameScrollView.h */,
@@ -2169,14 +2169,14 @@
 				42BD84E22B1DD340003559E5 /* NSMutableAttributedString+M80.h */,
 				42BD84E72B1DD340003559E5 /* NSMutableAttributedString+M80.m */,
 			);
-			path = M80AttributedLabel;
+			path = LabelNameScrollView;
 			sourceTree = "<group>";
 		};
 		42D634732BAFFEC40081E828 /* Business */ = {
 			isa = PBXGroup;
 			children = (
 				B11C232B2DFFCFFF00E72364 /* Riverla.entitlements */,
-				429D400C299A79F400354206 /* ChatClasses */,
+				429D400C299A79F400354206 /* CommixCenter */,
 				61F728281A7B23A40076C096 /* Classes */,
 				AE5882EC1A6F47E10070536A /* AppDelegate.h */,
 				AE5882ED1A6F47E10070536A /* AppDelegate.m */,
@@ -2188,16 +2188,6 @@
 				E47119C92E61FFFF0011A203 /* DrawSortAdapter.bundle */,
 				AEB8367F1A772C2F00E7493E /* Runner-Prefix.pch */,
 				6195CD3E1A8C74DB00F3E239 /* USERGlobalMacro.h */,
-				4278082C2C12BA7C00C18684 /* ColorHelper.h */,
-				4278082D2C12BA7C00C18684 /* ColorHelper.m */,
-				420C806F2C056F9D0007C618 /* FruitageTarget.h */,
-				420C80702C056F9D0007C618 /* FruitageTarget.m */,
-				4278082F2C12EDC700C18684 /* UIImage+Standard.h */,
-				427808302C12EDC700C18684 /* UIImage+Standard.m */,
-				B1F189712E011C6E00E24425 /* PersonShould.h */,
-				B1F189722E011C6E00E24425 /* PersonShould.m */,
-				B1F189732E011C6E00E24425 /* UIImage+ScaleValue.h */,
-				B1F189742E011C6E00E24425 /* UIImage+ScaleValue.m */,
 				425E94C02978044F00C812E7 /* Rest */,
 				425E94B62978022F00C812E7 /* BanCapture */,
 				AE5882E81A6F47E10070536A /* Supporting Files */,
@@ -2250,7 +2240,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6118F59A1C5A0FC1009AF01E /* Addons */ = {
+		6118F59A1C5A0FC1009AF01E /* DetectView */ = {
 			isa = PBXGroup;
 			children = (
 				6118F59B1C5A0FC1009AF01E /* SwizzlingDefine.h */,
@@ -2263,14 +2253,14 @@
 				6118F5A41C5A0FC1009AF01E /* UIViewController+TopPath.h */,
 				6118F5A51C5A0FC1009AF01E /* UIViewController+TopPath.m */,
 			);
-			path = Addons;
+			path = DetectView;
 			sourceTree = "<group>";
 		};
 		611ABEEA1B3CF4FC00B8706C /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				61518A571CA234590061C4A9 /* Controller */,
-				6118F59A1C5A0FC1009AF01E /* Addons */,
+				6118F59A1C5A0FC1009AF01E /* DetectView */,
 				61A665351B40ED41001D1EDB /* Delegate */,
 				611ABEF11B3CF4FC00B8706C /* View */,
 			);
@@ -2321,12 +2311,12 @@
 		61E46FED1B7D963D00F4A1BF /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				B1E0D7572E38A146008BB11D /* discorey */,
-				834382661EFCB9D30052254A /* Notification */,
-				83F32B701E94EFE200E594E0 /* Subscribe */,
-				61E46FEE1B7D963D00F4A1BF /* Card */,
+				B1E0D7572E38A146008BB11D /* ManNameViewCell */,
+				834382661EFCB9D30052254A /* ContentCell */,
+				83F32B701E94EFE200E594E0 /* TagCleanManager */,
+				61E46FEE1B7D963D00F4A1BF /* SerrationScrollView */,
 				61E4702A1B7D963E00F4A1BF /* Contact */,
-				61E4705B1B7D963E00F4A1BF /* Login */,
+				61E4705B1B7D963E00F4A1BF /* LabelViewCell */,
 				61E4706A1B7D963E00F4A1BF /* Session */,
 				61E470CC1B7D963E00F4A1BF /* SessionList */,
 				61E470DE1B7D963E00F4A1BF /* Setting */,
@@ -2334,14 +2324,14 @@
 			path = Sections;
 			sourceTree = "<group>";
 		};
-		61E46FEE1B7D963D00F4A1BF /* Card */ = {
+		61E46FEE1B7D963D00F4A1BF /* SerrationScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				B8C3196B27242BFC001BDBF5 /* CardViews */,
 				61E46FFB1B7D963E00F4A1BF /* View */,
 				61E4700A1B7D963E00F4A1BF /* ViewController */,
 			);
-			path = Card;
+			path = SerrationScrollView;
 			sourceTree = "<group>";
 		};
 		61E46FFB1B7D963E00F4A1BF /* View */ = {
@@ -2467,14 +2457,14 @@
 			path = Contact;
 			sourceTree = "<group>";
 		};
-		61E4705B1B7D963E00F4A1BF /* Login */ = {
+		61E4705B1B7D963E00F4A1BF /* LabelViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				B89A93D726E6FC39007C1DE6 /* Views */,
 				61E4705C1B7D963E00F4A1BF /* Manager */,
 				61E470631B7D963E00F4A1BF /* ViewController */,
 			);
-			path = Login;
+			path = LabelViewCell;
 			sourceTree = "<group>";
 		};
 		61E4705C1B7D963E00F4A1BF /* Manager */ = {
@@ -2511,9 +2501,9 @@
 		61E4706A1B7D963E00F4A1BF /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				B84A112C271ECE3B00948AD9 /* MemberCard */,
+				B84A112C271ECE3B00948AD9 /* DecisionMakerPathAdd */,
 				B84A1121271EB3B800948AD9 /* TeamSetingController */,
-				834DC5B01F1C9F2A00C9E0B3 /* Object */,
+				834DC5B01F1C9F2A00C9E0B3 /* GradePointAverageMessageModel */,
 				61E4706B1B7D963E00F4A1BF /* Config */,
 				61E470821B7D963E00F4A1BF /* View */,
 				61E470981B7D963E00F4A1BF /* ViewController */,
@@ -2786,6 +2776,16 @@
 				61A8EF331BB67F0900033FB8 /* UIResponder+Year.m */,
 				839E2BCD2060F45C00EB1AA7 /* UITextView+Turn.h */,
 				839E2BCE2060F45C00EB1AA7 /* UITextView+Turn.m */,
+				4278082C2C12BA7C00C18684 /* ColorHelper.h */,
+				4278082D2C12BA7C00C18684 /* ColorHelper.m */,
+				420C806F2C056F9D0007C618 /* FruitageTarget.h */,
+				420C80702C056F9D0007C618 /* FruitageTarget.m */,
+				4278082F2C12EDC700C18684 /* UIImage+Standard.h */,
+				427808302C12EDC700C18684 /* UIImage+Standard.m */,
+				B1F189712E011C6E00E24425 /* PersonShould.h */,
+				B1F189722E011C6E00E24425 /* PersonShould.m */,
+				B1F189732E011C6E00E24425 /* UIImage+ScaleValue.h */,
+				B1F189742E011C6E00E24425 /* UIImage+ScaleValue.m */,
 				04126DE72DCC5B6A000E1081 /* NSArray+Safe.h */,
 				04126DE82DCC5B6A000E1081 /* NSArray+Safe.m */,
 				04126DE92DCC5B6A000E1081 /* NSMutableDictionary+Safe.h */,
@@ -2794,7 +2794,7 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		834382661EFCB9D30052254A /* Notification */ = {
+		834382661EFCB9D30052254A /* ContentCell */ = {
 			isa = PBXGroup;
 			children = (
 				834382671EFCB9D30052254A /* DB */,
@@ -2804,7 +2804,7 @@
 				834382731EFCB9D30052254A /* ImageViewController.h */,
 				834382741EFCB9D30052254A /* ImageViewController.m */,
 			);
-			path = Notification;
+			path = ContentCell;
 			sourceTree = "<group>";
 		};
 		834382671EFCB9D30052254A /* DB */ = {
@@ -2825,7 +2825,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		834DC5B01F1C9F2A00C9E0B3 /* Object */ = {
+		834DC5B01F1C9F2A00C9E0B3 /* GradePointAverageMessageModel */ = {
 			isa = PBXGroup;
 			children = (
 				2F02F2FC235DA78600BE5597 /* Model */,
@@ -2833,7 +2833,7 @@
 				834DC5BC1F1C9F2A00C9E0B3 /* Manager */,
 				834DC5BD1F1C9F2A00C9E0B3 /* Misc */,
 			);
-			path = Object;
+			path = GradePointAverageMessageModel;
 			sourceTree = "<group>";
 		};
 		834DC5B11F1C9F2A00C9E0B3 /* Atttach */ = {
@@ -2887,14 +2887,14 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
-		83F32B701E94EFE200E594E0 /* Subscribe */ = {
+		83F32B701E94EFE200E594E0 /* TagCleanManager */ = {
 			isa = PBXGroup;
 			children = (
 				83F32B741E94F05B00E594E0 /* USERSubscribeDefine.h */,
 				83F32B711E94EFE200E594E0 /* TagCleanManager.h */,
 				83F32B721E94EFE200E594E0 /* TagCleanManager.m */,
 			);
-			path = Subscribe;
+			path = TagCleanManager;
 			sourceTree = "<group>";
 		};
 		AE5882DC1A6F47E10070536A = {
@@ -2930,45 +2930,45 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B1E0D7572E38A146008BB11D /* discorey */ = {
+		B1E0D7572E38A146008BB11D /* ManNameViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				B1E0D7582E38A17C008BB11D /* ShouldViewController.h */,
 				B1E0D7592E38A17C008BB11D /* ShouldViewController.m */,
 			);
-			path = discorey;
+			path = ManNameViewCell;
 			sourceTree = "<group>";
 		};
-		B808E74C26F48B1000E302F6 /* LCQRCodeUtil */ = {
+		B808E74C26F48B1000E302F6 /* AggregationUtil */ = {
 			isa = PBXGroup;
 			children = (
 				B808E74D26F48B1000E302F6 /* AggregationUtil.h */,
 				B808E74E26F48B1000E302F6 /* AggregationUtil.m */,
 			);
-			path = LCQRCodeUtil;
+			path = AggregationUtil;
 			sourceTree = "<group>";
 		};
 		B80A36B426019E2500F581EB /* Librarys */ = {
 			isa = PBXGroup;
 			children = (
-				043B0B952D9B747400784741 /* SDCycleScrollView */,
-				BC2D87CE2C5CBF85003E6A4A /* imageCrop */,
-				BC4DF4D82C54CF7B00FBD937 /* SGQRCode */,
+				043B0B952D9B747400784741 /* PositionView */,
+				BC2D87CE2C5CBF85003E6A4A /* StreetSmartView */,
+				BC4DF4D82C54CF7B00FBD937 /* LineView */,
 				B883598727046952002114FF /* TPPasswordTextView */,
-				B808E74C26F48B1000E302F6 /* LCQRCodeUtil */,
-				B89A940626E74685007C1DE6 /* ZCPickDataView */,
-				B89A940226E7191A007C1DE6 /* CustomWindowView */,
+				B808E74C26F48B1000E302F6 /* AggregationUtil */,
+				B89A940626E74685007C1DE6 /* AtWithView */,
+				B89A940226E7191A007C1DE6 /* WindowView */,
 				B89A93F026E710AD007C1DE6 /* KIImage */,
 				B89A93D826E6FC8E007C1DE6 /* BaseView */,
 				B847789826E5B3A400838CB8 /* Manager */,
 				B8768B0E2602F54600CB3C31 /* UserInfo */,
-				B80A36B526019E2500F581EB /* ZCHttpRequest */,
-				B80A36BC26019E2500F581EB /* ZXPUnicode */,
+				B80A36B526019E2500F581EB /* BlendView */,
+				B80A36BC26019E2500F581EB /* Titles */,
 			);
 			path = Librarys;
 			sourceTree = "<group>";
 		};
-		B80A36B526019E2500F581EB /* ZCHttpRequest */ = {
+		B80A36B526019E2500F581EB /* BlendView */ = {
 			isa = PBXGroup;
 			children = (
 				424104A328950C9F00C539B4 /* ZCHttpInterfacedConst.h */,
@@ -2980,16 +2980,16 @@
 				B80A36BB26019E2500F581EB /* ImageLabel.h */,
 				B80A36B826019E2500F581EB /* ImageLabel.m */,
 			);
-			path = ZCHttpRequest;
+			path = BlendView;
 			sourceTree = "<group>";
 		};
-		B80A36BC26019E2500F581EB /* ZXPUnicode */ = {
+		B80A36BC26019E2500F581EB /* Titles */ = {
 			isa = PBXGroup;
 			children = (
 				B80A36BD26019E2500F581EB /* Titles.h */,
 				B80A36BE26019E2500F581EB /* Titles.m */,
 			);
-			path = ZXPUnicode;
+			path = Titles;
 			sourceTree = "<group>";
 		};
 		B839B0B026EAFA54003D15F5 /* Views */ = {
@@ -3058,7 +3058,7 @@
 			path = TeamSetingController;
 			sourceTree = "<group>";
 		};
-		B84A112C271ECE3B00948AD9 /* MemberCard */ = {
+		B84A112C271ECE3B00948AD9 /* DecisionMakerPathAdd */ = {
 			isa = PBXGroup;
 			children = (
 				B84A112D271ECE6600948AD9 /* MaxViewController.h */,
@@ -3072,7 +3072,7 @@
 				04AC793E2DAE2A8000DB5843 /* ResultViewCell.h */,
 				04AC793F2DAE2A8000DB5843 /* ResultViewCell.m */,
 			);
-			path = MemberCard;
+			path = DecisionMakerPathAdd;
 			sourceTree = "<group>";
 		};
 		B8768B0E2602F54600CB3C31 /* UserInfo */ = {
@@ -3080,20 +3080,20 @@
 			children = (
 				B85C05BF26FDFBBE000D26BF /* AirBubbleAt.h */,
 				B85C05BE26FDFBBE000D26BF /* AirBubbleAt.m */,
-				B8768B102602F54600CB3C31 /* GVUserDefaults */,
+				B8768B102602F54600CB3C31 /* TableContext */,
 				B8768B132602F54600CB3C31 /* TableContext+Util.h */,
 				B8768B152602F54600CB3C31 /* TableContext+Util.m */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
 		};
-		B8768B102602F54600CB3C31 /* GVUserDefaults */ = {
+		B8768B102602F54600CB3C31 /* TableContext */ = {
 			isa = PBXGroup;
 			children = (
 				B8768B112602F54600CB3C31 /* TableContext.h */,
 				B8768B122602F54600CB3C31 /* TableContext.m */,
 			);
-			path = GVUserDefaults;
+			path = TableContext;
 			sourceTree = "<group>";
 		};
 		B883598727046952002114FF /* TPPasswordTextView */ = {
@@ -3117,12 +3117,12 @@
 		B89A93D826E6FC8E007C1DE6 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				B89A93D926E6FCA4007C1DE6 /* HMBaseClass */,
+				B89A93D926E6FCA4007C1DE6 /* WisecrackViewCell */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
 		};
-		B89A93D926E6FCA4007C1DE6 /* HMBaseClass */ = {
+		B89A93D926E6FCA4007C1DE6 /* WisecrackViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				B89A93DF26E6FCA4007C1DE6 /* WisecrackViewCell.h */,
@@ -3132,19 +3132,19 @@
 				B89A93E126E6FCA4007C1DE6 /* DominoEffectViewController.h */,
 				B89A93DD26E6FCA4007C1DE6 /* DominoEffectViewController.m */,
 			);
-			path = HMBaseClass;
+			path = WisecrackViewCell;
 			sourceTree = "<group>";
 		};
 		B89A93F026E710AD007C1DE6 /* KIImage */ = {
 			isa = PBXGroup;
 			children = (
-				B89A93F126E710AD007C1DE6 /* KIImagePickerController */,
-				B89A93F826E710AD007C1DE6 /* KIImageCropperView */,
+				B89A93F126E710AD007C1DE6 /* ForefrontView */,
+				B89A93F826E710AD007C1DE6 /* ValueImageView */,
 			);
 			path = KIImage;
 			sourceTree = "<group>";
 		};
-		B89A93F126E710AD007C1DE6 /* KIImagePickerController */ = {
+		B89A93F126E710AD007C1DE6 /* ForefrontView */ = {
 			isa = PBXGroup;
 			children = (
 				B89A93F426E710AD007C1DE6 /* ForefrontView.h */,
@@ -3152,28 +3152,28 @@
 				B89A93F226E710AD007C1DE6 /* ChangeViewController.h */,
 				B89A93F526E710AD007C1DE6 /* ChangeViewController.m */,
 			);
-			path = KIImagePickerController;
+			path = ForefrontView;
 			sourceTree = "<group>";
 		};
-		B89A93F826E710AD007C1DE6 /* KIImageCropperView */ = {
+		B89A93F826E710AD007C1DE6 /* ValueImageView */ = {
 			isa = PBXGroup;
 			children = (
 				B89A93F926E710AD007C1DE6 /* ValueImageView.m */,
 				B89A93FA26E710AD007C1DE6 /* ValueImageView.h */,
 			);
-			path = KIImageCropperView;
+			path = ValueImageView;
 			sourceTree = "<group>";
 		};
-		B89A940226E7191A007C1DE6 /* CustomWindowView */ = {
+		B89A940226E7191A007C1DE6 /* WindowView */ = {
 			isa = PBXGroup;
 			children = (
 				B89A940326E71973007C1DE6 /* WindowView.h */,
 				B89A940426E71973007C1DE6 /* WindowView.m */,
 			);
-			path = CustomWindowView;
+			path = WindowView;
 			sourceTree = "<group>";
 		};
-		B89A940626E74685007C1DE6 /* ZCPickDataView */ = {
+		B89A940626E74685007C1DE6 /* AtWithView */ = {
 			isa = PBXGroup;
 			children = (
 				B8A08A2426F0DDE200B37983 /* AtWithView.h */,
@@ -3181,7 +3181,7 @@
 				B89A940726E74685007C1DE6 /* ColouringView.h */,
 				B89A940826E74685007C1DE6 /* ColouringView.m */,
 			);
-			path = ZCPickDataView;
+			path = AtWithView;
 			sourceTree = "<group>";
 		};
 		B89A941E26E8F9B0007C1DE6 /* MainCenter */ = {
@@ -3290,7 +3290,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BC2D87CE2C5CBF85003E6A4A /* imageCrop */ = {
+		BC2D87CE2C5CBF85003E6A4A /* StreetSmartView */ = {
 			isa = PBXGroup;
 			children = (
 				BCA3CB832C6063B8007C669F /* PullResultView.h */,
@@ -3304,10 +3304,10 @@
 				BC2D87D62C5CCD40003E6A4A /* MaxGestureRecognizer.h */,
 				BC2D87D82C5CCD42003E6A4A /* MaxGestureRecognizer.m */,
 			);
-			path = imageCrop;
+			path = StreetSmartView;
 			sourceTree = "<group>";
 		};
-		BC4DF4D82C54CF7B00FBD937 /* SGQRCode */ = {
+		BC4DF4D82C54CF7B00FBD937 /* LineView */ = {
 			isa = PBXGroup;
 			children = (
 				BC4DF4D92C54CF7B00FBD937 /* SGQRCode.h */,
@@ -3315,12 +3315,12 @@
 				BC4DF4E02C54CF7B00FBD937 /* WeakProxy */,
 				BC4DF4E32C54CF7B00FBD937 /* Torch */,
 				BC4DF4E62C54CF7B00FBD937 /* LogSession.m */,
-				BC4DF4E72C54CF7B00FBD937 /* QRCode */,
-				BC4DF4EE2C54CF7C00FBD937 /* SoundEffect */,
+				BC4DF4E72C54CF7B00FBD937 /* TitleGrowing */,
+				BC4DF4EE2C54CF7C00FBD937 /* PathLabel */,
 				BC4DF4F12C54CF7C00FBD937 /* Permission */,
 				BC4DF4F82C54CF7C00FBD937 /* LogSession.h */,
 			);
-			path = SGQRCode;
+			path = LineView;
 			sourceTree = "<group>";
 		};
 		BC4DF4DA2C54CF7B00FBD937 /* ScanView */ = {
@@ -3352,7 +3352,7 @@
 			path = Torch;
 			sourceTree = "<group>";
 		};
-		BC4DF4E72C54CF7B00FBD937 /* QRCode */ = {
+		BC4DF4E72C54CF7B00FBD937 /* TitleGrowing */ = {
 			isa = PBXGroup;
 			children = (
 				BC4DF4E82C54CF7B00FBD937 /* SizeFlipQrcode.h */,
@@ -3361,16 +3361,16 @@
 				BC4DF4EB2C54CF7C00FBD937 /* TitleGrowing.h */,
 				BC4DF4EC2C54CF7C00FBD937 /* SizeFlipQrcode.m */,
 			);
-			path = QRCode;
+			path = TitleGrowing;
 			sourceTree = "<group>";
 		};
-		BC4DF4EE2C54CF7C00FBD937 /* SoundEffect */ = {
+		BC4DF4EE2C54CF7C00FBD937 /* PathLabel */ = {
 			isa = PBXGroup;
 			children = (
 				BC4DF4EF2C54CF7C00FBD937 /* PathLabel.m */,
 				BC4DF4F02C54CF7C00FBD937 /* PathLabel.h */,
 			);
-			path = SoundEffect;
+			path = PathLabel;
 			sourceTree = "<group>";
 		};
 		BC4DF4F12C54CF7C00FBD937 /* Permission */ = {
