@@ -13,7 +13,7 @@
 //: @class USERCustomNotificationDB;
 @class ContentCell;
 
-//: extern NSString *USERCustomNotificationCountChanged;
+//: extern NSString *showUserKey;
 extern NSString *showUserKey;
 
 //: @interface USERNotificationCenter : NSObject

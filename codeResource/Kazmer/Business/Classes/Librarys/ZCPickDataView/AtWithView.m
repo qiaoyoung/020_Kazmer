@@ -353,7 +353,7 @@
     //: self.delegate = delegate;
     self.delegate = delegate;
     //: delegateClass = object_getClass(delegate);
-    delegateClass = successClass(delegate);
+    delegateClass = object_getClass(delegate);
 }
 
 //: - (void)datePickerValueChanged{
@@ -499,7 +499,7 @@
 //: - (void)leftButtonClicked:(id)sender{
 - (void)holdfasts:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = successClass(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(accountancyAggregation)]) {
         //: [self.delegate dismissDataPickerView];
@@ -523,7 +523,7 @@
 //: - (void)rightButtonClicked:(id)sender{
 - (void)modelClicked:(id)sender{
     //: Class currentClass = object_getClass(self.delegate);
-    Class currentClass = successClass(self.delegate);
+    Class currentClass = object_getClass(self.delegate);
     //: if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(dismissDataPickerView)]) {
     if ((currentClass == delegateClass) && [self.delegate respondsToSelector:@selector(accountancyAggregation)]) {
         //: [self.delegate dismissDataPickerView];

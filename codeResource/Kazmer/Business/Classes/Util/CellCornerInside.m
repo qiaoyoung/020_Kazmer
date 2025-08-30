@@ -137,8 +137,8 @@ typedef struct {
 //: #import "SSZipArchiveManager.h"
 #import "PersonShould.h"
 
-//: NSString *USERCustomNotificationCountChanged = @"USERCustomNotificationCountChanged";
-NSString *showUserKey = @"USERCustomNotificationCountChanged";
+//: NSString *showUserKey = @"showUserKey";
+NSString *showUserKey = @"showUserKey";
 
 //: @interface USERNotificationCenter () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
 @interface CellCornerInside () <NIMSystemNotificationManagerDelegate,NIMChatManagerDelegate,NIMBroadcastManagerDelegate, NIMSignalManagerDelegate,NIMConversationManagerDelegate>
@@ -299,7 +299,7 @@ NSString *showUserKey = @"USERCustomNotificationCountChanged";
                     }
                     //: if (notification.setting.shouldBeCounted) {
                     if (notification.setting.shouldBeCounted) {
-                        //: [[NSNotificationCenter defaultCenter] postNotificationName:USERCustomNotificationCountChanged object:nil];
+                        //: [[NSNotificationCenter defaultCenter] postNotificationName:showUserKey object:nil];
                         [[NSNotificationCenter defaultCenter] postNotificationName:showUserKey object:nil];
                     }
                     //: NSString *content = [dict jsonString:@"content"];

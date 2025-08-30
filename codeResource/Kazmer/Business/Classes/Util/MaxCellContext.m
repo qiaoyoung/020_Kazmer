@@ -89,7 +89,7 @@ static void iWeakBorder(SystemSoundID soundID, void *data)
         //: SEL selector = NSSelectorFromString(@"vibrate");
         SEL selector = NSSelectorFromString([[RelativelyTotalactData sharedInstance] kText_lamValue]);
         //: SuppressPerformSelectorLeakWarning([(USERAVNotifier *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
-        SuppressPerformSelectorLeakWarning([(MaxCellContext *)notifier performSelector:selector withObject:nil afterDelay:1.0]);
+        [(MaxCellContext *)notifier performSelector:selector withObject:nil afterDelay:1.0];
     }
 }
 

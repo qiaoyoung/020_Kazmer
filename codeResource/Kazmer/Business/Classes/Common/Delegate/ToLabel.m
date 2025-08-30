@@ -272,7 +272,7 @@ Byte kName_diagnoseData[] = {52, 11, 82, 10, 59, 86, 199, 130, 123, 158, 35, 33,
     //: if ([vc respondsToSelector:sel]) {
     if ([vc respondsToSelector:sel]) {
         //: SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
+        use = (BOOL)[vc performSelector:sel];
     }
     //: return use;
     return use;
@@ -287,7 +287,7 @@ Byte kName_diagnoseData[] = {52, 11, 82, 10, 59, 86, 199, 130, 123, 158, 35, 33,
     //: if ([vc respondsToSelector:sel]) {
     if ([vc respondsToSelector:sel]) {
         //: SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
-        SuppressPerformSelectorLeakWarning(use = (BOOL)[vc performSelector:sel]);
+        use = (BOOL)[vc performSelector:sel];
     }
     //: return use;
     return use;

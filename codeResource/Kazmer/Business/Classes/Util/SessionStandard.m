@@ -699,9 +699,9 @@ static NSString *const main_errTeamContactText = @"USERRecentSessionTopMark";
     if (dict) {
 
         //: NSString *netState = [[USERDevice currentDevice] networkStatus:[dict jsonInteger:USERSubscribeNetState]];
-        NSString *netState = [[SizePage lastDevice] past:[dict immobilise:k_unitText]];
+        NSString *netState = [[SizePage lastDevice] past:[dict immobilise:k_unitText(nil)]];
         //: USEROnlineState onlineState = [dict jsonInteger:USERSubscribeOnlineState];
-        USEROnlineState onlineState = [dict immobilise:mainTranslationKey];
+        USEROnlineState onlineState = [dict immobilise:mainTranslationKey(nil)];
         //: switch (onlineState) {
         switch (onlineState) {
             //: case USEROnlineStateNormal:

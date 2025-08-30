@@ -207,8 +207,6 @@
 		42A310FB2B1D80EC005ADF0D /* ResultCuttingEdgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A310F72B1D80EC005ADF0D /* ResultCuttingEdgeView.m */; };
 		42A310FC2B1D80EC005ADF0D /* TitleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A310F92B1D80EC005ADF0D /* TitleScrollView.m */; };
 		42AC19FD2A63ADC400BA1584 /* TranslateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AC19F72A63ADC400BA1584 /* TranslateSize.m */; };
-		42AC19FE2A63ADC400BA1584 /* PullTop.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AC19F92A63ADC400BA1584 /* PullTop.m */; };
-		42AC19FF2A63ADC400BA1584 /* IndexDisplayRecordKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AC19FC2A63ADC400BA1584 /* IndexDisplayRecordKeychain.m */; };
 		42BD84E92B1DD340003559E5 /* LabelNameScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BD84E32B1DD340003559E5 /* LabelNameScrollView.m */; };
 		42BD84EC2B1DD340003559E5 /* NSMutableAttributedString+M80.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BD84E72B1DD340003559E5 /* NSMutableAttributedString+M80.m */; };
 		42CF9E8629CC6CA90037B562 /* UIImage+Display.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF9E8429CC6CA90037B562 /* UIImage+Display.m */; };
@@ -438,6 +436,8 @@
 		E4168E2B1B6A364F00F3D35D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4168E2A1B6A364F00F3D35D /* CoreMedia.framework */; };
 		E4562D8B1CE0855A00D66909 /* IndexShouldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4562D8A1CE0855A00D66909 /* IndexShouldDelegate.m */; };
 		E47119CA2E61FFFF0011A203 /* DrawSortAdapter.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E47119C92E61FFFF0011A203 /* DrawSortAdapter.bundle */; };
+		E47119CF2E62BEA10011A203 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E47119CE2E62BEA10011A203 /* SAMKeychainQuery.m */; };
+		E47119D02E62BEA10011A203 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = E47119CC2E62BEA10011A203 /* SAMKeychain.m */; };
 		E48988E81DE42353001CF6C5 /* LabelLayoutConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E48988E71DE42353001CF6C5 /* LabelLayoutConfig.m */; };
 		E48988EB1DE42391001CF6C5 /* ColorCancel.m in Sources */ = {isa = PBXBuildFile; fileRef = E48988EA1DE42391001CF6C5 /* ColorCancel.m */; };
 		E48988EE1DE4263D001CF6C5 /* TextRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E48988ED1DE4263D001CF6C5 /* TextRecord.m */; };
@@ -883,10 +883,6 @@
 		42A310F92B1D80EC005ADF0D /* TitleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScrollView.m; sourceTree = "<group>"; };
 		42AC19F62A63ADC400BA1584 /* TranslateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateSize.h; sourceTree = "<group>"; };
 		42AC19F72A63ADC400BA1584 /* TranslateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateSize.m; sourceTree = "<group>"; };
-		42AC19F92A63ADC400BA1584 /* PullTop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullTop.m; sourceTree = "<group>"; };
-		42AC19FA2A63ADC400BA1584 /* IndexDisplayRecordKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexDisplayRecordKeychain.h; sourceTree = "<group>"; };
-		42AC19FB2A63ADC400BA1584 /* PullTop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullTop.h; sourceTree = "<group>"; };
-		42AC19FC2A63ADC400BA1584 /* IndexDisplayRecordKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexDisplayRecordKeychain.m; sourceTree = "<group>"; };
 		42BD84DD2B1DD340003559E5 /* M80AttributedLabelDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M80AttributedLabelDefines.h; sourceTree = "<group>"; };
 		42BD84DF2B1DD340003559E5 /* LabelNameScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelNameScrollView.h; sourceTree = "<group>"; };
 		42BD84E22B1DD340003559E5 /* NSMutableAttributedString+M80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+M80.h"; sourceTree = "<group>"; };
@@ -1350,6 +1346,10 @@
 		E4562D891CE0855A00D66909 /* IndexShouldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexShouldDelegate.h; sourceTree = "<group>"; };
 		E4562D8A1CE0855A00D66909 /* IndexShouldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexShouldDelegate.m; sourceTree = "<group>"; };
 		E47119C92E61FFFF0011A203 /* DrawSortAdapter.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DrawSortAdapter.bundle; sourceTree = "<group>"; };
+		E47119CB2E62BEA10011A203 /* SAMKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
+		E47119CC2E62BEA10011A203 /* SAMKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
+		E47119CD2E62BEA10011A203 /* SAMKeychainQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
+		E47119CE2E62BEA10011A203 /* SAMKeychainQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
 		E48988E61DE42353001CF6C5 /* LabelLayoutConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelLayoutConfig.h; sourceTree = "<group>"; };
 		E48988E71DE42353001CF6C5 /* LabelLayoutConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelLayoutConfig.m; sourceTree = "<group>"; };
 		E48988E91DE42391001CF6C5 /* ColorCancel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorCancel.h; sourceTree = "<group>"; };
@@ -2153,10 +2153,10 @@
 		42AC19F82A63ADC400BA1584 /* COKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				42AC19FA2A63ADC400BA1584 /* IndexDisplayRecordKeychain.h */,
-				42AC19FC2A63ADC400BA1584 /* IndexDisplayRecordKeychain.m */,
-				42AC19FB2A63ADC400BA1584 /* PullTop.h */,
-				42AC19F92A63ADC400BA1584 /* PullTop.m */,
+				E47119CB2E62BEA10011A203 /* SAMKeychain.h */,
+				E47119CC2E62BEA10011A203 /* SAMKeychain.m */,
+				E47119CD2E62BEA10011A203 /* SAMKeychainQuery.h */,
+				E47119CE2E62BEA10011A203 /* SAMKeychainQuery.m */,
 				B1F189772E01214F00E24425 /* FFFCardDataSourceProtocol.h */,
 			);
 			path = COKeychain;
@@ -3663,7 +3663,6 @@
 				044516772DB24720000D9DA8 /* BeggarMyNeighbourPolicyAddViewController.m in Sources */,
 				B84A1128271EB3D900948AD9 /* OpenDefenceViewController.m in Sources */,
 				429D41D9299A79F500354206 /* PageConfig.m in Sources */,
-				42AC19FF2A63ADC400BA1584 /* IndexDisplayRecordKeychain.m in Sources */,
 				429D420C299A79F500354206 /* NSBundle+Mortification.m in Sources */,
 				429D41BC299A79F500354206 /* CornerCellViewController.m in Sources */,
 				427DB4BE2B1F1EC500FE9CB8 /* NSObject+TelegramContext.m in Sources */,
@@ -3748,6 +3747,8 @@
 				BC4DF5082C54D00C00FBD937 /* DigitiserView.m in Sources */,
 				834382761EFCB9D30052254A /* ContentCell.m in Sources */,
 				BC7136632D66D864009A4A4C /* CommentTopView.m in Sources */,
+				E47119CF2E62BEA10011A203 /* SAMKeychainQuery.m in Sources */,
+				E47119D02E62BEA10011A203 /* SAMKeychain.m in Sources */,
 				429D4193299A79F500354206 /* PageHelper.m in Sources */,
 				BC4DF5052C54CF7C00FBD937 /* RowMax.m in Sources */,
 				04CAF0882DA3A3CA00E4CE9D /* InsideView.m in Sources */,
@@ -3870,7 +3871,6 @@
 				429D41B0299A79F500354206 /* MarginView.m in Sources */,
 				429D41CF299A79F500354206 /* CommingleItem.m in Sources */,
 				BC4382FA2C2FF1D400C46EC7 /* ReposeCornerView.m in Sources */,
-				42AC19FE2A63ADC400BA1584 /* PullTop.m in Sources */,
 				8343827C1EFCB9D30052254A /* ImageViewController.m in Sources */,
 				61E7B5881DCF39E200F19E83 /* LengthControl.m in Sources */,
 				BC9D7D0E2C32531500730EBA /* PhenomenonViewController.m in Sources */,

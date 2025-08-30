@@ -40,9 +40,9 @@ Byte kTitleDoorData[] = {60, 14, 22, 6, 172, 218, 12, 208, 134, 148, 209, 137, 1
 //: #import "FFFChatUIManager.h"
 #import "TextAt.h"
 
-//: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
+//: extern NSString *const noti_cellUrl;
 extern NSString *const noti_cellUrl;
-//: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
+//: extern NSString *const k_labelMsg;
 extern NSString *const k_labelMsg;
 
 
@@ -138,7 +138,7 @@ extern NSString *const k_labelMsg;
         KitInfo *info = [[KitInfo alloc] init];
         //: info.session = session;
         info.session = session;
-        //: info.notificationName = NIMKitUserInfoHasUpdatedNotification;
+        //: info.notificationName = noti_cellUrl;
         info.notificationName = noti_cellUrl;
         //: [self.firer addFireInfo:info];
         [self.firer child:info];
@@ -208,7 +208,7 @@ extern NSString *const k_labelMsg;
         //: info.session = session;
         info.session = session;
     }
-    //: info.notificationName = NIMKitTeamInfoHasUpdatedNotification;
+    //: info.notificationName = k_labelMsg;
     info.notificationName = k_labelMsg;
     //: [self.firer addFireInfo:info];
     [self.firer child:info];
@@ -281,10 +281,10 @@ extern NSString *const k_labelMsg;
         //: info.session = session;
         info.session = session;
     }
-    //: extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    extern NSString *NIMKitTeamMembersHasUpdatedNotification;
-    //: info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
-    info.notificationName = NIMKitTeamMembersHasUpdatedNotification;
+    //: extern NSString *kUserStr;
+    extern NSString *kUserStr;
+    //: info.notificationName = kUserStr;
+    info.notificationName = kUserStr;
     //: [self.firer addFireInfo:info];
     [self.firer child:info];
 }

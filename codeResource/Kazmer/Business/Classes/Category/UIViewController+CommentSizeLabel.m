@@ -360,7 +360,7 @@ typedef struct {
 
 
 //: - (void)setNavBarClearColor{
-- (void)count{
+- (void)setNavBarClearColor{
     //: [self.navigationController.navigationBar setBackgroundImage:[self imageWithColor:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setBackgroundImage:[self colouration:[UIColor clearColor]] forBarMetrics:UIBarMetricsDefault];
     //: self.navigationController.navigationBar.shadowImage = [UIImage new];

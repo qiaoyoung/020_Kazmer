@@ -707,7 +707,7 @@
 
 //: @property (nonatomic, strong) USERNotificationView *noticeView;
 @property (nonatomic, strong) ResultView *noticeView;
-;@property (nonatomic, strong) FFDropDownMenuView *dropdownMenu
+;@property (nonatomic, strong) FFDropDownMenuView *dropdownMenu;
 //: @property (nonatomic, strong) UIView *reqView;
 @property (nonatomic, strong) UIView *reqView;
 

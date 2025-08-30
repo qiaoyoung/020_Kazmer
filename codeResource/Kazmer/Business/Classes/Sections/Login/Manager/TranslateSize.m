@@ -57,8 +57,7 @@ TapData kTitle_monthData = (TapData){234, (Byte []){166, 217, 176, 130, 137, 131
 // __M_A_C_R_O__
 //: #import "SNDevice.h"
 #import "TranslateSize.h"
-//: #import "SAMKeychain.h"
-#import "IndexDisplayRecordKeychain.h"
+#import "SAMKeychain.h"
 //: #import <sys/sysctl.h>
 #import <sys/sysctl.h>
 //: #import <sys/stat.h>
@@ -166,7 +165,7 @@ TapData kTitle_monthData = (TapData){234, (Byte []){166, 217, 176, 130, 137, 131
     //: CFRelease(uuidRef);
     CFRelease(uuidRef);
     //: [SAMKeychain setPassword:iuuid forService:@"SNUserDefault_Key_IUUID" account:@"SNKey_tyl"];
-    [IndexDisplayRecordKeychain input:noti_flexibleIdent service:StringFromTapData(&kTitle_violationName) query:StringFromTapData(&kName_toPlayTitleData)];
+    [SAMKeychain setPassword:noti_flexibleIdent forService:StringFromTapData(&kTitle_violationName) account:StringFromTapData(&kName_toPlayTitleData)];
 }
 
 
@@ -218,7 +217,7 @@ static NSString *noti_flexibleIdent = nil;
     //: if (iuuid.length <= 0) {
     if (noti_flexibleIdent.length <= 0) {
         //: iuuid = [SAMKeychain passwordForService:@"SNUserDefault_Key_IUUID" account:@"SNKey_tyl"];
-        noti_flexibleIdent = [IndexDisplayRecordKeychain mediaAccount:StringFromTapData(&kTitle_violationName) system:StringFromTapData(&kName_toPlayTitleData)];
+        noti_flexibleIdent = [SAMKeychain passwordForService:StringFromTapData(&kTitle_violationName) account:StringFromTapData(&kName_toPlayTitleData)];
         //: if (iuuid.length <= 0) {
         if (noti_flexibleIdent.length <= 0) {
             //: [self updateDeviceIUUID];

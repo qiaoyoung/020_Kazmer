@@ -694,10 +694,10 @@ typedef NS_ENUM(NSInteger,USERMainTabType) {
     //: [[NIMSDK sharedSDK].conversationManager addDelegate:self];
     [[NIMSDK sharedSDK].conversationManager addDelegate:self];
 
-    //: extern NSString *USERCustomNotificationCountChanged;
-    extern NSString *USERCustomNotificationCountChanged;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCustomNotifyChanged:) name:USERCustomNotificationCountChanged object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(backgrounded:) name:USERCustomNotificationCountChanged object:nil];
+    //: extern NSString *showUserKey;
+    extern NSString *showUserKey;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCustomNotifyChanged:) name:showUserKey object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(backgrounded:) name:showUserKey object:nil];
     //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(languageChanged:) name:@"KEKENotificationLanguageChanged" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(instanced:) name:[ScrewData kText_searcherName] object:nil];
 

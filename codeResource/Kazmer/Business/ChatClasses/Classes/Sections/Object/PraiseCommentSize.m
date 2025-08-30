@@ -1059,10 +1059,10 @@ dispatch_queue_t statusArray()
 - (void)pictures:(NSNotification *)notification {
     //: NSDictionary *userInfo = notification.userInfo;
     NSDictionary *userInfo = notification.userInfo;
-    //: extern NSString *FFFKitInfoKey;
-    extern NSString *FFFKitInfoKey;
-    //: NSArray *teamIds = userInfo[FFFKitInfoKey];
-    NSArray *teamIds = userInfo[FFFKitInfoKey];
+    //: extern NSString *showDoingLoadData;
+    extern NSString *showDoingLoadData;
+    //: NSArray *teamIds = userInfo[showDoingLoadData];
+    NSArray *teamIds = userInfo[showDoingLoadData];
     //: if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
     if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
         //: && ([teamIds containsObject:self.session.sessionId] || [teamIds containsObject:[NSNull null]])) {
@@ -1076,10 +1076,10 @@ dispatch_queue_t statusArray()
 - (void)nimTag:(NSNotification *)notification {
     //: NSDictionary *userInfo = notification.userInfo;
     NSDictionary *userInfo = notification.userInfo;
-    //: extern NSString *FFFKitInfoKey;
-    extern NSString *FFFKitInfoKey;
-    //: NSArray *teamIds = userInfo[FFFKitInfoKey];
-    NSArray *teamIds = userInfo[FFFKitInfoKey];
+    //: extern NSString *showDoingLoadData;
+    extern NSString *showDoingLoadData;
+    //: NSArray *teamIds = userInfo[showDoingLoadData];
+    NSArray *teamIds = userInfo[showDoingLoadData];
 
     //: if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
     if ((self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam)
@@ -1424,21 +1424,21 @@ dispatch_queue_t statusArray()
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bambinoing:) name:UIApplicationDidBecomeActiveNotification object:nil];
     //: if (self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam) {
     if (self.session.sessionType == NIMSessionTypeTeam || self.session.sessionType == NIMSessionTypeSuperTeam) {
-        //: extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-        extern NSString *const NIMKitTeamInfoHasUpdatedNotification;
-        //: extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
-        extern NSString *const NIMKitTeamMembersHasUpdatedNotification;
+        //: extern NSString *const k_labelMsg;
+        extern NSString *const k_labelMsg;
+        //: extern NSString *const kUserStr;
+        extern NSString *const kUserStr;
 
-        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nimTag:) name:NIMKitTeamInfoHasUpdatedNotification object:nil];
-        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pictures:) name:NIMKitTeamMembersHasUpdatedNotification object:nil];
+        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamInfoHasUpdatedNotification:) name:k_labelMsg object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nimTag:) name:k_labelMsg object:nil];
+        //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onTeamMembersHasUpdatedNotification:) name:kUserStr object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pictures:) name:kUserStr object:nil];
     }
 
-    //: extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    extern NSString *const NIMKitUserInfoHasUpdatedNotification;
-    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(quickses:) name:NIMKitUserInfoHasUpdatedNotification object:nil];
+    //: extern NSString *const noti_cellUrl;
+    extern NSString *const noti_cellUrl;
+    //: [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onUserInfoHasUpdatedNotification:) name:noti_cellUrl object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(quickses:) name:noti_cellUrl object:nil];
 }
 
 //: - (void)removeListenner

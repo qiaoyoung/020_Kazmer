@@ -246,7 +246,7 @@ typedef NS_ENUM(NSInteger, LEEBackgroundStyle) {
 @property (nonatomic, copy) void (^modelCloseComplete)(void);
 
 //: @property (nonatomic, assign) UIUserInterfaceStyle modelUserInterfaceStyle API_AVAILABLE(ios(13.0), tvos(13.0));
-@property (nonatomic, assign) UIUserInterfaceStyle modelUserInterfaceStyle
+@property (nonatomic, assign) UIUserInterfaceStyle modelUserInterfaceStyle;
 //: @property (nonatomic, assign) UIInterfaceOrientationMask modelSupportedInterfaceOrientations;
 @property (nonatomic, assign) UIInterfaceOrientationMask modelSupportedInterfaceOrientations;
 //: @property (nonatomic, assign) BOOL modelIsQueue;

@@ -85,20 +85,20 @@
 //: #import "FFFKitNotificationFirer.h"
 #import "NotificationAdd.h"
 
-//: NSString *const NIMKitUserInfoHasUpdatedNotification = @"NIMKitUserInfoHasUpdatedNotification";
-NSString *const noti_cellUrl = @"NIMKitUserInfoHasUpdatedNotification";
-//: NSString *const NIMKitTeamInfoHasUpdatedNotification = @"NIMKitTeamInfoHasUpdatedNotification";
-NSString *const k_labelMsg = @"NIMKitTeamInfoHasUpdatedNotification";
+//: NSString *const noti_cellUrl = @"noti_cellUrl";
+NSString *const noti_cellUrl = @"noti_cellUrl";
+//: NSString *const k_labelMsg = @"k_labelMsg";
+NSString *const k_labelMsg = @"k_labelMsg";
 
-//: NSString *const NIMKitUserBlackListHasUpdatedNotification = @"NIMKitUserBlackListHasUpdatedNotification";
-NSString *const kAContextCellName = @"NIMKitUserBlackListHasUpdatedNotification";
-//: NSString *const NIMKitUserMuteListHasUpdatedNotification = @"NIMKitUserMuteListHasUpdatedNotification";
-NSString *const dream_infoFormat = @"NIMKitUserMuteListHasUpdatedNotification";
+//: NSString *const kAContextCellName = @"kAContextCellName";
+NSString *const kAContextCellName = @"kAContextCellName";
+//: NSString *const dream_infoFormat = @"dream_infoFormat";
+NSString *const dream_infoFormat = @"dream_infoFormat";
 
-//: NSString *const NIMKitTeamMembersHasUpdatedNotification = @"NIMKitTeamMembersHasUpdatedNotification";
-NSString *const kUserStr = @"NIMKitTeamMembersHasUpdatedNotification";
+//: NSString *const kUserStr = @"kUserStr";
+NSString *const kUserStr = @"kUserStr";
 
-//: NSString *const FFFKitInfoKey = @"InfoId";
+//: NSString *const showDoingLoadData = @"InfoId";
 NSString *const showDoingLoadData = @"InfoId";
 
 //: @implementation FFFKitNotificationFirer
@@ -161,7 +161,7 @@ NSString *const showDoingLoadData = @"InfoId";
 
     //: for (NSString *notificationName in dict) {
     for (NSString *notificationName in dict) {
-        //: NSDictionary *userInfo = dict[notificationName]? @{ FFFKitInfoKey:dict[notificationName] } : nil;
+        //: NSDictionary *userInfo = dict[notificationName]? @{ showDoingLoadData:dict[notificationName] } : nil;
         NSDictionary *userInfo = dict[notificationName]? @{ showDoingLoadData:dict[notificationName] } : nil;
         //: [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:nil userInfo:userInfo];
         [[NSNotificationCenter defaultCenter] postNotificationName:notificationName object:nil userInfo:userInfo];

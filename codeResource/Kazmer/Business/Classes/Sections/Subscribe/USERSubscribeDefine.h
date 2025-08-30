@@ -11,10 +11,11 @@
 // __M_A_C_R_O__
 
 //: extern NSString *const USERSubscribeNetState;
-extern NSString *const k_unitText;
+//extern NSString *const k_unitText;
+NSString *k_unitText(NSString *value);
 
 //: extern NSString *const USERSubscribeOnlineState;
-extern NSString *const mainTranslationKey;
+NSString *mainTranslationKey(NSString *value);
 
 //: typedef NS_ENUM(NSInteger, USERCustomStateValue) {
 typedef NS_ENUM(NSInteger, USERCustomStateValue) {

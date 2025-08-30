@@ -60,7 +60,7 @@
 
 
 //: - (void)setNavBarClearColor;
-- (void)count;
+- (void)setNavBarClearColor;
 //: - (void)setShadowClearColor;
 - (void)green;
 //: - (void)setTitle:(NSString *)title titleColor:(UIColor *)color;

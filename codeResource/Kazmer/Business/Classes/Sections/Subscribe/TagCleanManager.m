@@ -85,7 +85,7 @@
 
 //: NSString *const USERSubscribeNetState = @"net_state";
 
-NSString *const k_unitText (NSString *value) {
+NSString *k_unitText (NSString *value) {
     if (value) {
         return [value.uppercaseString stringByAppendingString:@"info"];
     }
@@ -94,7 +94,7 @@ NSString *const k_unitText (NSString *value) {
 
 //: NSString *const USERSubscribeOnlineState = @"online_state";
 
-NSString *const mainTranslationKey (NSString *value) {
+NSString * mainTranslationKey (NSString *value) {
     if (value) {
         return [value.lowercaseString stringByAppendingString:@"session"];
     }

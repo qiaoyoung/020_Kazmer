@@ -24,7 +24,7 @@
 }
 
 //: - (void)setTyl_internalIdentifier:(NSString *)tyl_internalIdentifier{
-- (void)setTyl_internalIdentifier:(NSString *)TelegramContext{
+- (void)setTelegramContext:(NSString *)TelegramContext {
     //: objc_setAssociatedObject(self, @selector(tyl_internalIdentifier), tyl_internalIdentifier, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     objc_setAssociatedObject(self, @selector(TelegramContext), TelegramContext, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
