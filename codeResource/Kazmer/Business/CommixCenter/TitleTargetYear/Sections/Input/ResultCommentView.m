@@ -103,8 +103,8 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
     //: self.albunBtn.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-15-32-15-32, self.spacing+2, 32, 32);
     self.albunBtn.frame = CGRectMake([[UIScreen mainScreen] bounds].size.width-15-32-15-32, self.name+2, 32, 32);
 
-    //: self.inputTextView.nim_left = 56;
-    self.inputTextView.nim_left = 56;
+    //: self.inputTextView.device_left = 56;
+    self.inputTextView.device_left = 56;
     //: self.inputTextView.device_top = self.spacing;
     self.inputTextView.device_top = self.name;
 
@@ -510,7 +510,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
         self.albunBtn.hidden = YES;
         //: self.voiceButton.hidden = YES;
         self.voiceButton.hidden = YES;
-//        self.inputTextView.nim_left = self.spacing*2+28;
+//        self.inputTextView.device_left = self.spacing*2+28;
 //        self.inputTextView.device_top = self.spacing;
 //        self.emoticonBtn.frame = CGRectMake(self.spacing, self.spacing+2, 28, 28);
 
@@ -523,7 +523,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
         self.albunBtn.hidden = NO;
         //: self.voiceButton.hidden = NO;
         self.voiceButton.hidden = NO;
-//        self.inputTextView.nim_left = self.spacing;
+//        self.inputTextView.device_left = self.spacing;
 //        self.inputTextView.device_top = self.spacing;
 //        self.emoticonBtn.frame = CGRectMake(SCREEN_WIDTH-10-28, self.spacing+2, 28, 28);
 //        self.albunBtn.frame = CGRectMake(SCREEN_WIDTH-10-28-28-10, self.spacing+2, 28, 28);
@@ -674,7 +674,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
         self.albunBtn.hidden = YES;
         //: self.voiceButton.hidden = YES;
         self.voiceButton.hidden = YES;
-//        self.inputTextView.nim_left = self.spacing*2+28;
+//        self.inputTextView.device_left = self.spacing*2+28;
 //        self.inputTextView.device_top = self.spacing;
 //        
 //        self.emoticonBtn.frame = CGRectMake(self.spacing, self.spacing+2, 28, 28);
@@ -688,7 +688,7 @@ Byte kContent_treasureString[] = {14, 21, 41, 8, 62, 182, 182, 127, 64, 58, 70, 
         self.voiceButton.hidden = NO;
 //        self.emoticonBtn2.hidden = YES;
 
-//        self.inputTextView.nim_left = self.spacing;
+//        self.inputTextView.device_left = self.spacing;
 //        self.inputTextView.device_top = self.spacing;
 
 

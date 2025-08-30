@@ -218,8 +218,8 @@
     //: CGFloat fileTransMessageProgressRight = 20.f;
     CGFloat fileTransMessageProgressRight = 20.f;
 
-    //: self.imageView.nim_left = fileTransMessageIconLeft;
-    self.imageView.nim_left = fileTransMessageIconLeft;
+    //: self.imageView.device_left = fileTransMessageIconLeft;
+    self.imageView.device_left = fileTransMessageIconLeft;
     //: self.imageView.device_centerY = self.device_height * .5f;
     self.imageView.device_centerY = self.device_height * .5f;
 
@@ -228,8 +228,8 @@
         //: self.titleLabel.device_width = self.device_width - fileTransMessageTitleLeft - fileTransMessageSizeTitleRight;
         self.titleLabel.device_width = self.device_width - fileTransMessageTitleLeft - fileTransMessageSizeTitleRight;
     }
-    //: self.titleLabel.nim_left = fileTransMessageTitleLeft;
-    self.titleLabel.nim_left = fileTransMessageTitleLeft;
+    //: self.titleLabel.device_left = fileTransMessageTitleLeft;
+    self.titleLabel.device_left = fileTransMessageTitleLeft;
     //: self.titleLabel.device_top = fileTransMessageTitleTop;
     self.titleLabel.device_top = fileTransMessageTitleTop;
 
@@ -242,8 +242,8 @@
     self.progressView.device_top = fileTransMessageProgressTop;
     //: self.progressView.device_width = self.device_width - fileTransMessageProgressLeft - fileTransMessageProgressRight;
     self.progressView.device_width = self.device_width - fileTransMessageProgressLeft - fileTransMessageProgressRight;
-    //: self.progressView.nim_left = fileTransMessageProgressLeft;
-    self.progressView.nim_left = fileTransMessageProgressLeft;
+    //: self.progressView.device_left = fileTransMessageProgressLeft;
+    self.progressView.device_left = fileTransMessageProgressLeft;
 
     //: CALayer *maskLayer = [CALayer layer];
     CALayer *maskLayer = [CALayer layer];

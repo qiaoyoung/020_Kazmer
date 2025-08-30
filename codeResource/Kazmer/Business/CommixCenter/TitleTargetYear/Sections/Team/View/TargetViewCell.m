@@ -344,8 +344,8 @@ const CGFloat user_methodPath = 44.f;
     CGFloat left = 20.f;
     //: CGFloat top = 17.f;
     CGFloat top = 17.f;
-    //: self.textLabel.nim_left = left;
-    self.textLabel.nim_left = left;
+    //: self.textLabel.device_left = left;
+    self.textLabel.device_left = left;
     //: self.textLabel.device_top = top;
     self.textLabel.device_top = top;
     //: self.detailTextLabel.device_top = top;
@@ -359,8 +359,8 @@ const CGFloat user_methodPath = 44.f;
     CGFloat bottom = 10.f;
     //: for (NIMTeamMemberView *view in _icons) {
     for (TribesmanView *view in _icons) {
-        //: view.nim_left = left;
-        view.nim_left = left;
+        //: view.device_left = left;
+        view.device_left = left;
         //: left += view.device_width;
         left += view.device_width;
         //: left += spacing;

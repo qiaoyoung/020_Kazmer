@@ -70,7 +70,7 @@
 }
 
 //: - (NSString *)groupTitle {
-- (NSString *)album {
+- (NSString *)roundPathTitle {
     //: return nil;
     return nil;
 }

@@ -86,8 +86,8 @@
     self.textLabel.device_height = self.textLabel.intrinsicContentSize.height;
     //: self.textLabel.device_centerY = self.device_height * .5f;
     self.textLabel.device_centerY = self.device_height * .5f;
-    //: self.textLabel.nim_left = NIMKitCommentUtilCellPadding;
-    self.textLabel.nim_left = mOwnerIdent;
+    //: self.textLabel.device_left = NIMKitCommentUtilCellPadding;
+    self.textLabel.device_left = mOwnerIdent;
 
     //: self.divider.device_width = 0.5;
     self.divider.device_width = 0.5;
@@ -95,8 +95,8 @@
     self.divider.device_height = self.contentView.device_height - 8;
     //: self.divider.device_centerY = self.contentView.device_height * 0.5;
     self.divider.device_centerY = self.contentView.device_height * 0.5;
-    //: self.divider.nim_left = 22;
-    self.divider.nim_left = 22;
+    //: self.divider.device_left = 22;
+    self.divider.device_left = 22;
 }
 
 //: @end

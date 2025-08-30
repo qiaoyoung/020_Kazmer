@@ -156,8 +156,8 @@ typedef struct {
     [_timeLabel sizeToFit];
     //: _timeLabel.center = CGPointMake(self.device_centerX, 20);
     _timeLabel.center = CGPointMake(self.device_centerX, 20);
-    //: _timeBGView.frame = CGRectMake(_timeLabel.nim_left - 7, _timeLabel.device_top - 2, _timeLabel.device_width + 14, _timeLabel.device_height + 4);
-    _timeBGView.frame = CGRectMake(_timeLabel.nim_left - 7, _timeLabel.device_top - 2, _timeLabel.device_width + 14, _timeLabel.device_height + 4);
+    //: _timeBGView.frame = CGRectMake(_timeLabel.device_left - 7, _timeLabel.device_top - 2, _timeLabel.device_width + 14, _timeLabel.device_height + 4);
+    _timeBGView.frame = CGRectMake(_timeLabel.device_left - 7, _timeLabel.device_top - 2, _timeLabel.device_width + 14, _timeLabel.device_height + 4);
 }
 
 

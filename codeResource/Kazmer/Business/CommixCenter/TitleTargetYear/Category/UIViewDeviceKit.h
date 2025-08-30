@@ -29,8 +29,8 @@
 //: @property (nonatomic) CGSize device_size;
 @property (nonatomic) CGSize device_size;
 
-//: @property (nonatomic) CGFloat nim_left;
-@property (nonatomic) CGFloat nim_left;
+//: @property (nonatomic) CGFloat device_left;
+@property (nonatomic) CGFloat device_left;
 
 /**
  * Shortcut for frame.size.width

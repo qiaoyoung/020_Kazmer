@@ -315,16 +315,16 @@ typedef struct {
     //: NSInteger sessionBadgeTimeRight = 15;
     NSInteger sessionBadgeTimeRight = 15;
 
-    //: _avatarImageView.nim_left = sessionListAvatarLeft;
-    _avatarImageView.nim_left = sessionListAvatarLeft;
+    //: _avatarImageView.device_left = sessionListAvatarLeft;
+    _avatarImageView.device_left = sessionListAvatarLeft;
     //: _avatarImageView.device_centerY = self.device_height * .5f;
     _avatarImageView.device_centerY = self.device_height * .5f;
     //: _nameLabel.device_top = sessionListNameTop;
     _nameLabel.device_top = sessionListNameTop;
-    //: _nameLabel.nim_left = _avatarImageView.device_right + sessionListNameLeftToAvatar;
-    _nameLabel.nim_left = _avatarImageView.device_right + sessionListNameLeftToAvatar;
-    //: _messageLabel.nim_left = _avatarImageView.device_right + sessionListMessageLeftToAvatar;
-    _messageLabel.nim_left = _avatarImageView.device_right + sessionListMessageLeftToAvatar;
+    //: _nameLabel.device_left = _avatarImageView.device_right + sessionListNameLeftToAvatar;
+    _nameLabel.device_left = _avatarImageView.device_right + sessionListNameLeftToAvatar;
+    //: _messageLabel.device_left = _avatarImageView.device_right + sessionListMessageLeftToAvatar;
+    _messageLabel.device_left = _avatarImageView.device_right + sessionListMessageLeftToAvatar;
     //: _messageLabel.device_bottom = self.device_height - sessionListMessageBottom;
     _messageLabel.device_bottom = self.device_height - sessionListMessageBottom;
     //: _timeLabel.device_right = self.device_width - sessionListTimeRight;

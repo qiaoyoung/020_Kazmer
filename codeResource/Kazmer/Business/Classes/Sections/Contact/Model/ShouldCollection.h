@@ -16,7 +16,7 @@
 @protocol CancelProtocol <NSObject>
 
 //: - (NSString *)groupTitle;
-- (NSString *)album;
+- (NSString *)roundPathTitle;
 //: - (NSString *)memberId;
 - (NSString *)littleLeagueTeam;
 //: - (id)sortKey;

@@ -16,8 +16,8 @@
 @implementation UIView (Mortification)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setdevice_width:(CGFloat)width {
-- (void)key:(CGFloat)width {
+//: - (void)setDevice_width:(CGFloat)width {
+- (void)setDevice_width:(CGFloat)width {
     //: CGRect frame = self.frame;
     CGRect frame = self.frame;
     //: frame.size.width = width;
@@ -51,8 +51,8 @@
 }
 
 
-//: - (CGFloat)nim_left {
-- (CGFloat)nim_left {
+//: - (CGFloat)device_left {
+- (CGFloat)device_left {
     //: return self.frame.origin.x;
     return self.frame.origin.x;
 }
@@ -84,8 +84,8 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setdevice_right:(CGFloat)right {
-- (void)inset:(CGFloat)right {
+//: - (void)setDevice_right:(CGFloat)right {
+- (void)setDevice_right:(CGFloat)right {
     //: CGRect frame = self.frame;
     CGRect frame = self.frame;
     //: frame.origin.x = right - frame.size.width;
@@ -96,8 +96,8 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setdevice_height:(CGFloat)height {
-- (void)index:(CGFloat)height {
+//: - (void)setDevice_height:(CGFloat)height {
+- (void)setDevice_height:(CGFloat)height {
     //: CGRect frame = self.frame;
     CGRect frame = self.frame;
     //: frame.size.height = height;
@@ -108,8 +108,8 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setdevice_origin:(CGPoint)origin {
-- (void)drag:(CGPoint)origin {
+//: - (void)setDevice_origin:(CGPoint)origin {
+- (void)setDevice_origin:(CGPoint)origin {
     //: CGRect frame = self.frame;
     CGRect frame = self.frame;
     //: frame.origin = origin;
@@ -128,24 +128,24 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setdevice_size:(CGSize)size {
-- (void)down:(CGSize)size {
+//: - (void)setDevice_size:(CGSize)size {
+- (void)setDevice_size:(CGSize)device_size {
     //: CGRect frame = self.frame;
     CGRect frame = self.frame;
     //: frame.size = size;
-    frame.size = size;
+    frame.size = device_size;
     //: self.frame = frame;
     self.frame = frame;
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setNim_left:(CGFloat)x {
-- (void)setNim_left:(CGFloat)x {
+//: - (void)setdevice_left:(CGFloat)x {
+- (void)setDevice_left:(CGFloat)device_left {
     //: CGRect frame = self.frame;
     CGRect frame = self.frame;
     //: frame.origin.x = x;
-    frame.origin.x = x;
+    frame.origin.x = device_left;
     //: self.frame = frame;
     self.frame = frame;
 }
@@ -160,8 +160,8 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setdevice_centerX:(CGFloat)centerX {
-- (void)proclamationScreenCenter:(CGFloat)centerX {
+//: - (void)setDevice_centerX:(CGFloat)centerX {
+- (void)setDevice_centerX:(CGFloat)centerX {
     //: self.center = CGPointMake(centerX, self.center.y);
     self.center = CGPointMake(centerX, self.center.y);
 }
@@ -182,8 +182,8 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setdevice_bottom:(CGFloat)bottom {
-- (void)complete:(CGFloat)bottom {
+//: - (void)setDevice_bottom:(CGFloat)bottom {
+- (void)setDevice_bottom:(CGFloat)bottom {
     //: CGRect frame = self.frame;
     CGRect frame = self.frame;
     //: frame.origin.y = bottom - frame.size.height;
@@ -202,16 +202,16 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setdevice_centerY:(CGFloat)centerY {
-- (void)layer:(CGFloat)centerY {
+//: - (void)setDevice_centerY:(CGFloat)centerY {
+- (void)setDevice_centerY:(CGFloat)centerY {
     //: self.center = CGPointMake(self.center.x, centerY);
     self.center = CGPointMake(self.center.x, centerY);
 }
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-//: - (void)setdevice_top:(CGFloat)y {
-- (void)titleTop:(CGFloat)y {
+//: - (void)setDevice_top:(CGFloat)y {
+- (void)setDevice_top:(CGFloat)y {
     //: CGRect frame = self.frame;
     CGRect frame = self.frame;
     //: frame.origin.y = y;

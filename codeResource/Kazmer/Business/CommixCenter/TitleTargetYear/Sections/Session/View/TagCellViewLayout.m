@@ -26,7 +26,7 @@
 //: @interface UICollectionViewLayoutAttributes (LeftAligned)
 @interface UICollectionViewLayoutAttributes (Near)
 
-//: - (void)nim_leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset;
+//: - (void)device_leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset;
 - (void)text:(UIEdgeInsets)sectionInset;
 
 //: @end
@@ -35,7 +35,7 @@
 //: @implementation UICollectionViewLayoutAttributes (LeftAligned)
 @implementation UICollectionViewLayoutAttributes (Near)
 
-//: - (void)nim_leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset
+//: - (void)device_leftAlignFrameWithSectionInset:(UIEdgeInsets)sectionInset
 - (void)text:(UIEdgeInsets)sectionInset
 {
     //: CGRect frame = self.frame;
@@ -106,7 +106,7 @@
 
     //: if (isFirstItemInSection) {
     if (isFirstItemInSection) {
-        //: [currentItemAttributes nim_leftAlignFrameWithSectionInset:sectionInset];
+        //: [currentItemAttributes device_leftAlignFrameWithSectionInset:sectionInset];
         [currentItemAttributes text:sectionInset];
         //: return currentItemAttributes;
         return currentItemAttributes;
@@ -136,7 +136,7 @@
     //: if (isFirstItemInRow) {
     if (isFirstItemInRow) {
         // make sure the first item on a line is left aligned
-        //: [currentItemAttributes nim_leftAlignFrameWithSectionInset:sectionInset];
+        //: [currentItemAttributes device_leftAlignFrameWithSectionInset:sectionInset];
         [currentItemAttributes text:sectionInset];
         //: return currentItemAttributes;
         return currentItemAttributes;

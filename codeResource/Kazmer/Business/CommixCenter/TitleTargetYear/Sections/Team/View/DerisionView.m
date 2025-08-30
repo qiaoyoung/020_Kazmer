@@ -165,20 +165,20 @@ typedef struct {
 
     //: _titleLabel.device_width = _titleLabel.device_width > 200 ? 200 : self.titleLabel.device_width;
     _titleLabel.device_width = _titleLabel.device_width > 200 ? 200 : self.titleLabel.device_width;
-    //: _avatar.nim_left = 20;
-    _avatar.nim_left = 20;
+    //: _avatar.device_left = 20;
+    _avatar.device_left = 20;
     //: _avatar.device_top = 25;
     _avatar.device_top = 25;
-    //: _titleLabel.nim_left = _avatar.device_right + 10;
-    _titleLabel.nim_left = _avatar.device_right + 10;
+    //: _titleLabel.device_left = _avatar.device_right + 10;
+    _titleLabel.device_left = _avatar.device_right + 10;
     //: _titleLabel.device_top = _avatar.device_top;
     _titleLabel.device_top = _avatar.device_top;
-    //: _numberLabel.nim_left = _titleLabel.nim_left;
-    _numberLabel.nim_left = _titleLabel.nim_left;
+    //: _numberLabel.device_left = _titleLabel.device_left;
+    _numberLabel.device_left = _titleLabel.device_left;
     //: _numberLabel.device_bottom = _avatar.device_bottom;
     _numberLabel.device_bottom = _avatar.device_bottom;
-    //: _createTimeLabel.nim_left = _numberLabel.device_right + 10;
-    _createTimeLabel.nim_left = _numberLabel.device_right + 10;
+    //: _createTimeLabel.device_left = _numberLabel.device_right + 10;
+    _createTimeLabel.device_left = _numberLabel.device_right + 10;
     //: _createTimeLabel.device_bottom = _numberLabel.device_bottom;
     _createTimeLabel.device_bottom = _numberLabel.device_bottom;
 }

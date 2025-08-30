@@ -283,8 +283,8 @@ const CGFloat mBeTitle = .5f;
         button.device_width = userPageKey;
         //: button.device_height = DisplayInputEmoticonTabViewHeight;
         button.device_height = mBubbleStr;
-        //: button.nim_left = left;
-        button.nim_left = left;
+        //: button.device_left = left;
+        button.device_left = left;
         //: button.device_centerY = self.device_height * .5f;
         button.device_centerY = self.device_height * .5f;
 
@@ -292,7 +292,7 @@ const CGFloat mBeTitle = .5f;
         left = (int)(button.device_right + spacing);
 
 //        UIView *sep = self.seps[index];
-//        sep.nim_left = (int)(button.device_right + spacing);
+//        sep.device_left = (int)(button.device_right + spacing);
 //        left = (int)(sep.device_right + spacing);
     }
     //: _sendButton.device_right = (int)self.device_width;

@@ -312,7 +312,7 @@ static const CGFloat app_attributeStr = 5;
 
         //: if (self.model.shouldShowLeft) {
         if (self.model.shouldShowLeft) {
-//            self.pinView.nim_left = self.bubblesBackgroundView.nim_left;
+//            self.pinView.device_left = self.bubblesBackgroundView.device_left;
 //            self.pinView.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
             //: self.translationView.left = self.bubbleView.left;
             self.translationView.left = self.bubbleView.left;
@@ -573,10 +573,10 @@ static const CGFloat app_attributeStr = 5;
         self.pinView.device_top = self.bubblesBackgroundView.device_bottom + 5.f;
         //: if (self.model.shouldShowLeft) {
         if (self.model.shouldShowLeft) {
-            //: self.pinView.nim_left = self.bubblesBackgroundView.nim_left;
-            self.pinView.nim_left = self.bubblesBackgroundView.nim_left;
-            //: self.pinView.device_width = self.contentView.device_width - self.pinView.nim_left - 8;
-            self.pinView.device_width = self.contentView.device_width - self.pinView.nim_left - 8;
+            //: self.pinView.device_left = self.bubblesBackgroundView.device_left;
+            self.pinView.device_left = self.bubblesBackgroundView.device_left;
+            //: self.pinView.device_width = self.contentView.device_width - self.pinView.device_left - 8;
+            self.pinView.device_width = self.contentView.device_width - self.pinView.device_left - 8;
             //: self.pinView.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
             self.pinView.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         //: } else {
@@ -610,8 +610,8 @@ static const CGFloat app_attributeStr = 5;
         //: if (self.model.shouldShowLeft)
         if (self.model.shouldShowLeft)
         {
-            //: self.replyButton.nim_left = self.pinView.hidden ? self.bubblesBackgroundView.nim_left : self.pinView.nim_left;
-            self.replyButton.nim_left = self.pinView.hidden ? self.bubblesBackgroundView.nim_left : self.pinView.nim_left;
+            //: self.replyButton.device_left = self.pinView.hidden ? self.bubblesBackgroundView.device_left : self.pinView.device_left;
+            self.replyButton.device_left = self.pinView.hidden ? self.bubblesBackgroundView.device_left : self.pinView.device_left;
         }
         //: else
         else
@@ -692,18 +692,18 @@ static const CGFloat app_attributeStr = 5;
         left = right - CGRectGetWidth(self.bubblesBackgroundView.bounds);
     //: } else {
     } else {
-        //: left = self.bubbleView.nim_left;
-        left = self.bubbleView.nim_left;
+        //: left = self.bubbleView.device_left;
+        left = self.bubbleView.device_left;
     }
 
-    //: self.replyedBubbleView.nim_left = left+5;
-    self.replyedBubbleView.nim_left = left+5;
-    //: self.bubbleView.nim_left = left;
-    self.bubbleView.nim_left = left;
-    //: self.emoticonsContainerView.nim_left = left + kNIMAdvancedBackgroundPadding;
-    self.emoticonsContainerView.nim_left = left + app_attributeStr;
-    //: self.bubblesBackgroundView.nim_left = left;
-    self.bubblesBackgroundView.nim_left = left;
+    //: self.replyedBubbleView.device_left = left+5;
+    self.replyedBubbleView.device_left = left+5;
+    //: self.bubbleView.device_left = left;
+    self.bubbleView.device_left = left;
+    //: self.emoticonsContainerView.device_left = left + kNIMAdvancedBackgroundPadding;
+    self.emoticonsContainerView.device_left = left + app_attributeStr;
+    //: self.bubblesBackgroundView.device_left = left;
+    self.bubblesBackgroundView.device_left = left;
 
     //: self.emoticonsContainerView.device_top = ((UIView *)self.bubbleView).device_bottom;
     self.emoticonsContainerView.device_top = ((UIView *)self.bubbleView).device_bottom;
@@ -725,8 +725,8 @@ static const CGFloat app_attributeStr = 5;
     width = width > emoticonsWidth ? width : emoticonsWidth;
     //: self.bubblesBackgroundView.device_size = CGSizeMake(width+10, height);
     self.bubblesBackgroundView.device_size = CGSizeMake(width+10, height);
-    //: self.bubblesBackgroundView.nim_left = self.bubbleView.nim_left;
-    self.bubblesBackgroundView.nim_left = self.bubbleView.nim_left;
+    //: self.bubblesBackgroundView.device_left = self.bubbleView.device_left;
+    self.bubblesBackgroundView.device_left = self.bubbleView.device_left;
 
     //: [self fixPositions];
     [self consumer];
@@ -738,13 +738,13 @@ static const CGFloat app_attributeStr = 5;
     //: if (!self.readButton.isHidden) {
     if (!self.readButton.isHidden) {
 
-        //: CGFloat left = self.bubbleView.nim_left;
-        CGFloat left = self.bubbleView.nim_left;
+        //: CGFloat left = self.bubbleView.device_left;
+        CGFloat left = self.bubbleView.device_left;
         //: CGFloat bottom = self.bubbleView.device_bottom;
         CGFloat bottom = self.bubbleView.device_bottom;
 
-        //: self.readButton.nim_left = left - CGRectGetWidth(self.readButton.bounds) - 2;
-        self.readButton.nim_left = left - CGRectGetWidth(self.readButton.bounds) - 2;
+        //: self.readButton.device_left = left - CGRectGetWidth(self.readButton.bounds) - 2;
+        self.readButton.device_left = left - CGRectGetWidth(self.readButton.bounds) - 2;
 //        self.readButton.device_bottom = bottom;
         //: self.readButton.device_centerY = self.bubbleView.device_centerY;
         self.readButton.device_centerY = self.bubbleView.device_centerY;

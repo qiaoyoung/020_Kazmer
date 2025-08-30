@@ -144,11 +144,11 @@ PlaceGenderData kName_properString = (PlaceGenderData){63, (Byte []){28, 89, 89,
     [super layoutSubviews];
 //    self.closeButton.device_size = CGSizeMake(self.device_height, self.device_height);
 //    
-//    self.divider.nim_left = self.closeButton.device_right + 2;
+//    self.divider.device_left = self.closeButton.device_right + 2;
 //    
 //    self.label.device_height = self.label.intrinsicContentSize.height + 5;
 //    self.label.device_width = self.device_width - self.closeButton.device_right;
-//    self.label.nim_left = self.divider.device_right + 2;
+//    self.label.device_left = self.divider.device_right + 2;
 //    self.label.device_centerY = self.device_height * 0.5;
 //    
 //    self.divider.device_height = self.label.device_height;

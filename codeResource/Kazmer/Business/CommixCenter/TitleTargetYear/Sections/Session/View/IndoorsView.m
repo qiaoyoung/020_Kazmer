@@ -961,8 +961,8 @@
         }
     }
 
-    //: _replyedBubbleView.nim_left = left+5;
-    _replyedBubbleView.nim_left = left+5;
+    //: _replyedBubbleView.device_left = left+5;
+    _replyedBubbleView.device_left = left+5;
     //: _replyedBubbleView.device_top = contentInsets.top;
     _replyedBubbleView.device_top = contentInsets.top;
 }
@@ -1007,8 +1007,8 @@
         }
     }
 
-    //: _bubbleView.nim_left = left;
-    _bubbleView.nim_left = left;
+    //: _bubbleView.device_left = left;
+    _bubbleView.device_left = left;
     //: if (_replyedBubbleView)
     if (_replyedBubbleView)
     {
@@ -1040,20 +1040,20 @@
     if (!self.model.shouldShowLeft)
     {
 
-        //: left = self.replyedBubbleView.nim_left < self.bubbleView.nim_left ? self.replyedBubbleView.nim_left : self.bubbleView.nim_left;
-        left = self.replyedBubbleView.nim_left < self.bubbleView.nim_left ? self.replyedBubbleView.nim_left : self.bubbleView.nim_left;
+        //: left = self.replyedBubbleView.device_left < self.bubbleView.device_left ? self.replyedBubbleView.device_left : self.bubbleView.device_left;
+        left = self.replyedBubbleView.device_left < self.bubbleView.device_left ? self.replyedBubbleView.device_left : self.bubbleView.device_left;
     }
     //: else
     else
     {
-        //: left = self.replyedBubbleView.nim_left > self.bubbleView.nim_left ? self.replyedBubbleView.nim_left : self.bubbleView.nim_left;
-        left = self.replyedBubbleView.nim_left > self.bubbleView.nim_left ? self.replyedBubbleView.nim_left : self.bubbleView.nim_left;
+        //: left = self.replyedBubbleView.device_left > self.bubbleView.device_left ? self.replyedBubbleView.device_left : self.bubbleView.device_left;
+        left = self.replyedBubbleView.device_left > self.bubbleView.device_left ? self.replyedBubbleView.device_left : self.bubbleView.device_left;
     }
 
-    //: self.replyedBubbleView.nim_left = left+5;
-    self.replyedBubbleView.nim_left = left+5;
-    //: self.bubbleView.nim_left = left;
-    self.bubbleView.nim_left = left;
+    //: self.replyedBubbleView.device_left = left+5;
+    self.replyedBubbleView.device_left = left+5;
+    //: self.bubbleView.device_left = left;
+    self.bubbleView.device_left = left;
     //: self.bubblesBackgroundView.left = left;
     self.bubblesBackgroundView.left = left;
 }
@@ -1067,7 +1067,7 @@
     CGFloat width = self.replyedBubbleView.device_width > self.bubbleView.device_width ? self.replyedBubbleView.device_width : self.bubbleView.device_width;
     //: self.bubblesBackgroundView.device_size = CGSizeMake(width+10, height+10);
     self.bubblesBackgroundView.device_size = CGSizeMake(width+10, height+10);
-//    self.bubblesBackgroundView.nim_left = self.bubbleView.nim_left;
+//    self.bubblesBackgroundView.device_left = self.bubbleView.device_left;
 //    self.replyedBubbleView.left = self.bubblesBackgroundView.left;
     //: if (self.replyedBubbleView)
     if (self.replyedBubbleView)
@@ -1144,14 +1144,14 @@
         //: if (self.model.shouldShowLeft)
         if (self.model.shouldShowLeft)
         {
-            //: _audioPlayedIcon.nim_left = _bubblesBackgroundView.device_right + padding;
-            _audioPlayedIcon.nim_left = _bubblesBackgroundView.device_right + padding;
+            //: _audioPlayedIcon.device_left = _bubblesBackgroundView.device_right + padding;
+            _audioPlayedIcon.device_left = _bubblesBackgroundView.device_right + padding;
         }
         //: else
         else
         {
-            //: _audioPlayedIcon.device_right = _bubblesBackgroundView.nim_left - padding;
-            _audioPlayedIcon.device_right = _bubblesBackgroundView.nim_left - padding;
+            //: _audioPlayedIcon.device_right = _bubblesBackgroundView.device_left - padding;
+            _audioPlayedIcon.device_right = _bubblesBackgroundView.device_left - padding;
         }
 //        _audioPlayedIcon.device_top = _bubblesBackgroundView.device_top;
         //: _audioPlayedIcon.device_centerY = _bubblesBackgroundView.device_centerY;
@@ -1165,13 +1165,13 @@
     //: if (!_readButton.isHidden) {
     if (!_readButton.isHidden) {
 
-        //: CGFloat left = _bubblesBackgroundView.nim_left;
-        CGFloat left = _bubblesBackgroundView.nim_left;
+        //: CGFloat left = _bubblesBackgroundView.device_left;
+        CGFloat left = _bubblesBackgroundView.device_left;
         //: CGFloat bottom = _bubblesBackgroundView.device_bottom;
         CGFloat bottom = _bubblesBackgroundView.device_bottom;
 
-        //: _readButton.nim_left = left - CGRectGetWidth(_readButton.bounds) - [self readButtonBubblePadding];
-        _readButton.nim_left = left - CGRectGetWidth(_readButton.bounds) - [self fasteningText];
+        //: _readButton.device_left = left - CGRectGetWidth(_readButton.bounds) - [self readButtonBubblePadding];
+        _readButton.device_left = left - CGRectGetWidth(_readButton.bounds) - [self fasteningText];
 //        _readButton.device_bottom = bottom;
         //: _readButton.device_centerY = _bubblesBackgroundView.device_centerY;
         _readButton.device_centerY = _bubblesBackgroundView.device_centerY;

@@ -188,7 +188,7 @@
 //: - (void)removeGroupMember:(id<USERGroupMemberProtocol>)member{
 - (void)removeTeam:(id<CancelProtocol>)member{
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member album];
+    NSString *groupTitle = [member roundPathTitle];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     //: Pair *pair = [_groups objectAtIndex:groupIndex];
@@ -257,7 +257,7 @@
             continue;
         }
         //: NSString *groupTitle = [member groupTitle];
-        NSString *groupTitle = [member album];
+        NSString *groupTitle = [member roundPathTitle];
         //: NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         NSMutableArray *groupedMembers = [tmp objectForKey:groupTitle];
         //: if(!groupedMembers) {
@@ -303,7 +303,7 @@
 - (void)tingMember:(id<CancelProtocol>)member
 {
     //: NSString *groupTitle = [member groupTitle];
-    NSString *groupTitle = [member album];
+    NSString *groupTitle = [member roundPathTitle];
     //: NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     NSInteger groupIndex = [_groupTtiles indexOfObject:groupTitle];
     //: Pair *pair = [_groups objectAtIndex:groupIndex];
