@@ -359,8 +359,8 @@
         NSMutableArray *groupedMembers = obj.second;
         //: [groupedMembers sortUsingComparator:^NSComparisonResult(id<USERGroupMemberProtocol> member1, id<USERGroupMemberProtocol> member2) {
         [groupedMembers sortUsingComparator:^NSComparisonResult(id<CancelProtocol> member1, id<CancelProtocol> member2) {
-            //: return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
-            return _groupMemberComparator([member1 shank], [member2 shank]);
+            return _groupMemberComparator([member1 sortKey], [member2 sortKey]);
+//            return _groupMemberComparator([member1 shank], [member2 shank]);
         //: }];
         }];
     //: }];

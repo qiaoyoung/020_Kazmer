@@ -1356,7 +1356,8 @@
             //: vc.webTitle = [DisplayLanguageManager getTextWithKey:@"activity_comment_setting_ys"];
             vc.webTitle = [MakeManager cell:[YoungBirdData kTextStableString]];
             //: vc.urlString = [NIMUserDefaults standardUserDefaults].yshref;
-            vc.urlString = [TableContext name].yshref;
+//            vc.urlString = [TableContext name].yshref;
+            vc.urlString = @"https://www.kazmer.org/privacy.html";
             //: [self.navigationController pushViewController:vc animated:YES];
             [self.navigationController pushViewController:vc animated:YES];
 //            @weakify(self);

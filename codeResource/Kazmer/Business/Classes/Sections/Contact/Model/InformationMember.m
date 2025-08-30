@@ -186,8 +186,8 @@
     return @"";
 }
 
-//: - (id)sortKey {
-- (id)overFindDown {
+- (id)sortKey {
+//- (id)overFindDown {
     //: return [[USERSpellingCenter sharedCenter] spellingForString:self.info.showName].shortSpelling;
     return [[AddOnCenter representation] formatTitle:self.info.showName].shortSpelling;
 }

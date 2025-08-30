@@ -19,8 +19,8 @@
 - (NSString *)roundPathTitle;
 //: - (NSString *)memberId;
 - (NSString *)littleLeagueTeam;
-//: - (id)sortKey;
-- (id)shank;
+- (id)sortKey;
+//- (id)shank;
 
 //: @end
 @end
