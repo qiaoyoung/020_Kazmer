@@ -7,6 +7,9 @@
 
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSArray *arr = @[@"AppDelegate", @"attachSimple", @"Target"];
+    NSLog(@"current is %@", arr[3]);
+    
     [JasperImportFeasible initializeClassWittySparkFormat];
     [AddCivicThenProtect attachSimple];
     [AddCivicThenProtect withinDelicateShadowTeam];
