@@ -3,8 +3,8 @@
 
 @interface AppDelegate : FlutterAppDelegate
 
-@property (strong, nonatomic) NSData *userToken;
-
-@property (assign, nonatomic) NSInteger ontoOver;
+//@property (strong, nonatomic) NSData *userToken;
+//
+//@property (assign, nonatomic) NSInteger ontoOver;
 
 @end
