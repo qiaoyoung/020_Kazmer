@@ -58,8 +58,11 @@ target 'Runner' do
   pod 'MBProgressHUD'
   pod 'Then'
   pod 'Firebase'
-  pod 'SwiftyBeaver'
-  pod 'RxSwift'
+  pod 'FBSDKCoreKit'
+  pod 'UICountingLabel'
+  pod ''MJRefresh', '~> 3.7.5'
+  pod 'SVGAPlayer', '2.3.4'
+
 
 end
 
