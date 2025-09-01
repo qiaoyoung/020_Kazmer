@@ -60,7 +60,7 @@ target 'Runner' do
   pod 'Firebase'
   pod 'FBSDKCoreKit'
   pod 'UICountingLabel'
-  pod ''MJRefresh', '~> 3.7.5'
+  pod 'MJRefresh', '~> 3.7.5'
   pod 'SVGAPlayer', '2.3.4'
 
 
