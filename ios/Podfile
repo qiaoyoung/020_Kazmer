@@ -53,12 +53,9 @@ target 'Runner' do
   pod 'FDFullscreenPopGesture'
   pod 'AFNetworking', :git => 'https://github.com/JapenAdmin/AFNetworking.git'
 
-  pod 'ReactiveCocoa'
   pod 'BlocksKit'
   pod 'MBProgressHUD'
   pod 'Then'
-  pod 'Firebase'
-  pod 'FBSDKCoreKit'
   pod 'UICountingLabel'
   pod 'MJRefresh', '~> 3.7.5'
   pod 'SVGAPlayer', '2.3.4'
