@@ -53,13 +53,15 @@ target 'Runner' do
   pod 'FDFullscreenPopGesture'
   pod 'AFNetworking', :git => 'https://github.com/JapenAdmin/AFNetworking.git'
 
-  pod 'BlocksKit'
-  pod 'MBProgressHUD'
-  pod 'Then'
-  pod 'UICountingLabel'
+  # 保留有隐私清单的库
   pod 'MJRefresh', '~> 3.7.5'
-  pod 'SVGAPlayer', '2.3.4'
-
+  
+  # 添加更多有隐私清单的OC库
+  pod 'CocoaLumberjack'              # 日志库 ✅ 有隐私清单
+  pod 'FMDB/SQLCipher'               # 数据库库（加密版本）
+  pod 'DGCharts'                     # 图表库（Charts的继任者）
+  pod 'Alamofire'                    # Swift网络库（通常有隐私清单）
+  pod 'SwiftyJSON'                   # JSON处理库
 
 end
 

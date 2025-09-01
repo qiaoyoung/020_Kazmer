@@ -14,21 +14,13 @@ PODS:
   - AFNetworking/Serialization (4.0.1.1)
   - AFNetworking/UIKit (4.0.1.1):
     - AFNetworking/NSURLSession
-  - BlocksKit (2.2.5):
-    - BlocksKit/All (= 2.2.5)
-  - BlocksKit/All (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-    - BlocksKit/MessageUI
-    - BlocksKit/UIKit
-  - BlocksKit/Core (2.2.5)
-  - BlocksKit/DynamicDelegate (2.2.5)
-  - BlocksKit/MessageUI (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
-  - BlocksKit/UIKit (2.2.5):
-    - BlocksKit/Core
-    - BlocksKit/DynamicDelegate
+  - Alamofire (5.10.2)
+  - CocoaLumberjack (3.9.0):
+    - CocoaLumberjack/Core (= 3.9.0)
+  - CocoaLumberjack/Core (3.9.0)
+  - DGCharts (5.1.0):
+    - DGCharts/Core (= 5.1.0)
+  - DGCharts/Core (5.1.0)
   - FDFullscreenPopGesture (1.1)
   - FFDropDownMenu (1.4.5)
   - FLAnimatedImage (1.0.17)
@@ -36,6 +28,9 @@ PODS:
   - FMDB (2.7.12):
     - FMDB/standard (= 2.7.12)
   - FMDB/Core (2.7.12)
+  - FMDB/SQLCipher (2.7.12):
+    - FMDB/Core
+    - SQLCipher (~> 4.6)
   - FMDB/standard (2.7.12):
     - FMDB/Core
   - image_picker_ios (0.0.1):
@@ -43,7 +38,6 @@ PODS:
   - IQKeyboardManager (6.5.19)
   - KMNavigationBarTransition (1.1.11)
   - Masonry (1.1.0)
-  - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.9)
   - NIMSDK_LITE (9.20.12):
     - NIMSDK_LITE/NOS (= 9.20.12)
@@ -53,7 +47,6 @@ PODS:
   - path_provider_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
-  - Protobuf (3.29.5)
   - Reachability (3.7.6)
   - SDWebImage (5.21.1):
     - SDWebImage/Core (= 5.21.1)
@@ -64,19 +57,16 @@ PODS:
   - shared_preferences_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
+  - SQLCipher (4.10.0):
+    - SQLCipher/standard (= 4.10.0)
+  - SQLCipher/common (4.10.0)
+  - SQLCipher/standard (4.10.0):
+    - SQLCipher/common
   - SSZipArchive (2.4.3)
-  - SVGAPlayer (2.3.4):
-    - SVGAPlayer/Core (= 2.3.4)
-    - SVGAPlayer/ProtoFiles (= 2.3.4)
-  - SVGAPlayer/Core (2.3.4):
-    - SSZipArchive (>= 1.8.1)
-    - SVGAPlayer/ProtoFiles
-  - SVGAPlayer/ProtoFiles (2.3.4):
-    - Protobuf (~> 3.4)
   - SVProgressHUD (2.3.1):
     - SVProgressHUD/Core (= 2.3.1)
   - SVProgressHUD/Core (2.3.1)
-  - Then (3.0.0)
+  - SwiftyJSON (5.0.2)
   - Toast (4.1.1)
   - TZImagePickerController (3.8.9):
     - TZImagePickerController/Basic (= 3.8.9)
@@ -84,7 +74,6 @@ PODS:
   - TZImagePickerController/Basic (3.8.9)
   - TZImagePickerController/Location (3.8.9)
   - UCZProgressView (1.0.2)
-  - UICountingLabel (1.4.1)
   - video_player_avfoundation (0.0.1):
     - Flutter
     - FlutterMacOS
@@ -99,17 +88,19 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (from `https://github.com/JapenAdmin/AFNetworking.git`)
-  - BlocksKit
+  - Alamofire
+  - CocoaLumberjack
+  - DGCharts
   - FDFullscreenPopGesture
   - FFDropDownMenu
   - FLAnimatedImage
   - Flutter (from `Flutter`)
   - FMDB
+  - FMDB/SQLCipher
   - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
   - IQKeyboardManager
   - KMNavigationBarTransition
   - Masonry
-  - MBProgressHUD
   - MJRefresh (~> 3.7.5)
   - NIMSDK_LITE (= 9.20.12)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
@@ -118,13 +109,11 @@ DEPENDENCIES:
   - SDWebImageFLPlugin
   - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
   - SSZipArchive
-  - SVGAPlayer (= 2.3.4)
   - SVProgressHUD
-  - Then
+  - SwiftyJSON
   - Toast
   - TZImagePickerController
   - UCZProgressView
-  - UICountingLabel
   - video_player_avfoundation (from `.symlinks/plugins/video_player_avfoundation/darwin`)
   - YYImage
   - YYImage/WebP
@@ -133,7 +122,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - BlocksKit
+    - Alamofire
+    - CocoaLumberjack
+    - DGCharts
     - FDFullscreenPopGesture
     - FFDropDownMenu
     - FLAnimatedImage
@@ -141,21 +132,18 @@ SPEC REPOS:
     - IQKeyboardManager
     - KMNavigationBarTransition
     - Masonry
-    - MBProgressHUD
     - MJRefresh
     - NIMSDK_LITE
-    - Protobuf
     - Reachability
     - SDWebImage
     - SDWebImageFLPlugin
+    - SQLCipher
     - SSZipArchive
-    - SVGAPlayer
     - SVProgressHUD
-    - Then
+    - SwiftyJSON
     - Toast
     - TZImagePickerController
     - UCZProgressView
-    - UICountingLabel
     - YXArtemis_XCFramework
     - YYImage
     - YYModel
@@ -182,7 +170,9 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 2bee62a33a1adf76bc625816b1ae5f3b7f046787
-  BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  CocoaLumberjack: 5644158777912b7de7469fa881f8a3f259c2512a
+  DGCharts: 1c6daf585b6cfc78807af44ea690d357c410627f
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FFDropDownMenu: 3dc2b1e47d349687b9d451282a3b6bae3e0e8c7a
   FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
@@ -192,29 +182,26 @@ SPEC CHECKSUMS:
   IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
   KMNavigationBarTransition: f622e909e51f7308fb5b9aa38cceaa9e7c374e9c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: ff9e531227924c84ce459338414550a05d2aea78
   NIMSDK_LITE: 8fa0be9b0716ead35d09e27df17c32bc41cdae07
   path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
-  Protobuf: 164aea2ae380c3951abdc3e195220c01d17400e0
   Reachability: fd0ecd23705e2599e4cceeb943222ae02296cbc6
   SDWebImage: f29024626962457f3470184232766516dee8dfea
   SDWebImageFLPlugin: 72efd2cfbf565bc438421abb426f4bcf7b670754
   shared_preferences_foundation: 9e1978ff2562383bd5676f64ec4e9aa8fa06a6f7
+  SQLCipher: eb79c64049cb002b4e9fcb30edb7979bf4706dfc
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
-  SVGAPlayer: d55f1e7b4d2873507d27f1e8b40de1b729de9ad7
   SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
-  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+  SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
   Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
   TZImagePickerController: 456f470b5dea97b37226ec7a694994a8663340b2
   UCZProgressView: 55836987c15ee6efb7cd6dfe297556602ee46c94
-  UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
   video_player_avfoundation: 2cef49524dd1f16c5300b9cd6efd9611ce03639b
   YXArtemis_XCFramework: d9a8b9439d7a6c757ed00ada53a6d2dd9b13f9c7
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 4464f6768a8827a14ee84618e8b20a8a8342a66c
+PODFILE CHECKSUM: 9c1d6617bee79ead246facf0433644c21d9980a5
 
 COCOAPODS: 1.16.2
