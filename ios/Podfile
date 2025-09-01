@@ -52,7 +52,7 @@ target 'Runner' do
   pod 'FLAnimatedImage'
   pod 'FDFullscreenPopGesture'
   pod 'AFNetworking', :git => 'https://github.com/JapenAdmin/AFNetworking.git'
-  pod 'MJRefresh‌'
+
   pod 'ReactiveCocoa'
   pod 'BlocksKit'
   pod 'MBProgressHUD'
