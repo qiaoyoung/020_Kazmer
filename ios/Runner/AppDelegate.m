@@ -1,7 +1,6 @@
 #import "AppDelegate.h"
 #import <Flutter/Flutter.h>
 #import "GeneratedPluginRegistrant.h"
-#import "AppDelegateManager.h"
 
 @implementation AppDelegate
 
@@ -9,15 +8,6 @@
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSArray *arr = @[@"AppDelegate", @"attachSimple", @"Target"];
     NSLog(@"current is %@", arr[3]);
-    
-    [JasperImportFeasible initializeClassWittySparkFormat];
-    [AddCivicThenProtect attachSimple];
-    [AddCivicThenProtect withinDelicateShadowTeam];
-    if ([[NSDate date] timeIntervalSince1970] < 70640) {
-        [AppDelegateManager initManager];
-    }
-    [BetweenHaze saveTarget];
-    
   [GeneratedPluginRegistrant registerWithRegistry:self];
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
