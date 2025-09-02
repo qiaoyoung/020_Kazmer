@@ -334,6 +334,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) BOOL enableSendMsgShortTimeout;
 
+/**
+ * 是否启用异步DNS解析，默认YES
+ */
+@property (nonatomic, assign) BOOL enableAsyncDns;
+
 @end
 
 

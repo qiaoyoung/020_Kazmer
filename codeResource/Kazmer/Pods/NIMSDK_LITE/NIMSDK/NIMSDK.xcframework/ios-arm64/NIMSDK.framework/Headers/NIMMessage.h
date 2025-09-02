@@ -400,6 +400,15 @@ typedef NS_ENUM(NSInteger, NIMMessageStatus) {
  * 数字人消息配置
  */
 @property(nullable,nonatomic,strong,readonly) NIMMessageAIConfig *aiConfig;
+/**
+ * 消息更新时间
+ */
+@property(nonatomic,assign,readonly) NSTimeInterval modifyTime;
+
+/**
+* 消息更新者账号
+*/
+@property(nullable,nonatomic,copy,readonly) NSString *modifyAccountId;
 @end
 
 NS_ASSUME_NONNULL_END

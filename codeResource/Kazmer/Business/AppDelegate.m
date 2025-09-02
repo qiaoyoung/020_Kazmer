@@ -632,8 +632,6 @@
 #import <UserNotifications/UserNotifications.h>
 //: #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
-//: #import <Bugly/Bugly.h>
-#import <Bugly/Bugly.h>
 //: #import "LEEAlert.h"
 #import "ControlTag.h"
 //: #import "UIAlertView+USERBlock.h"
@@ -644,16 +642,6 @@
 #import "FruitageTarget.h"
 //: #import "DisplayKitDevice.h"
 #import "MaxDevice.h"
-//: #import <UMCommon/UMCommon.h>
-#import <UMCommon/UMCommon.h>
-//: #import <UMCommon/MobClick.h>
-#import <UMCommon/MobClick.h>
-//: #import <UMAPM/UMCrashConfigure.h>
-#import <UMAPM/UMCrashConfigure.h>
-//: #import <UMAPM/UMLaunch.h>
-#import <UMAPM/UMLaunch.h>
-//: #import <UMAPM/UMAPMConfig.h>
-#import <UMAPM/UMAPMConfig.h>
 //: #import "Reachability.h"
 #import "Reachability.h"
 //: #import "WaitViewController.h"
@@ -1073,12 +1061,6 @@ NSString *show_sessionUrl = @"NotificationLogout";
 
 //: - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    //: if ([UMAPMConfig handleUrl:url] ) {
-    if ([UMAPMConfig handleUrl:url] ) {
-        //: return YES;
-        return YES;
-    }
-    //: return YES;
     return YES;
 }
 
@@ -1100,12 +1082,6 @@ NSString *show_sessionUrl = @"NotificationLogout";
 //: - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
 {
-    //: if ([UMAPMConfig handleUrl:url] ) {
-    if ([UMAPMConfig handleUrl:url] ) {
-        //: return YES;
-        return YES;
-    }
-    //: return YES;
     return YES;
 }
 
@@ -1416,7 +1392,7 @@ NSString *show_sessionUrl = @"NotificationLogout";
     });
 
     //: self.deviceToken = deviceToken;
-    self.deviceToken = deviceToken;
+    self.myDevice = deviceToken;
 
 //    NSString *lang = [[NSUserDefaults standardUserDefaults] objectForKey:@"NSUserDefaultLanguage"];
     //: NSString *lang = [NIMUserDefaults standardUserDefaults].language;
@@ -1550,34 +1526,6 @@ NSString *show_sessionUrl = @"NotificationLogout";
         }
     //: }];
     }];
-
-    //: NSLog(@"UMAPM version:%@",[UMCrashConfigure getVersion]);
-
-    //: [UMConfigure setLogEnabled:NO];
-    [UMConfigure setLogEnabled:NO];
-    //: UMAPMConfig* umconfig = [UMAPMConfig defaultConfig];
-    UMAPMConfig* umconfig = [UMAPMConfig defaultConfig];
-    //: umconfig.networkEnable = YES;
-    umconfig.networkEnable = YES;
-    //: [UMCrashConfigure setAPMConfig:umconfig];
-    [UMCrashConfigure setAPMConfig:umconfig];
-    //: [UMConfigure initWithAppkey:@"668796b6940d5a4c4982f056" channel:nil];
-    [UMConfigure initWithAppkey:[PickUpData sharedInstance].kNameSquareString channel:nil];
-    //: [MobClick setAutoPageEnabled:YES];
-    [MobClick setAutoPageEnabled:YES];
-
-    //: [self configIQKeyboardManager];
-    [self successManager];
-
-    //: [Bugly startWithAppId:@"6a845f0dd8"];
-    [Bugly startWithAppId:[PickUpData sharedInstance].kTitlePersonallyData];
-    //: NSString *deviceName = [UIDevice currentDevice].name;
-    NSString *deviceName = [UIDevice currentDevice].name;
-    //: if (deviceName.length > 0) {
-    if (deviceName.length > 0) {
-        //: [Bugly setUserValue:deviceName forKey:@"DeviceName"];
-        [Bugly setUserValue:deviceName forKey:[PickUpData sharedInstance].kTextShowSessionValue];
-    }
 
     //: if ([NIMUserDefaults standardUserDefaults].language && [NIMUserDefaults standardUserDefaults].language.length > 0) {
     if ([TableContext name].language && [TableContext name].language.length > 0) {

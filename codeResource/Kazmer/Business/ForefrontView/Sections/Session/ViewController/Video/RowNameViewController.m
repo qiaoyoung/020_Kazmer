@@ -264,8 +264,6 @@
 #import "TopYearView.h"
 //: #import "ZOMNForwardViewController.h"
 #import "CrownViewController.h"
-//: #import "WMZDialog.h"
-#import "WMZDialog.h"
 
 //: @interface USERVideoViewController ()<LYVideoPlayerDelegate>
 @interface RowNameViewController ()<RowSizeDelegate>
@@ -502,13 +500,13 @@
     //: _btnRate.layer.borderWidth = 1;
     _btnRate.layer.borderWidth = 1;
     //: [_btnRate addTarget:self action:@selector(handlerTheRate:) forControlEvents:UIControlEventTouchUpInside];
-    [_btnRate addTarget:self action:@selector(colorToRate:) forControlEvents:UIControlEventTouchUpInside];
+//    [_btnRate addTarget:self action:@selector(colorToRate:) forControlEvents:UIControlEventTouchUpInside];
     //: _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
     _btnRate.titleLabel.font = [UIFont systemFontOfSize:12];
     //: [_btnRate setTitleColor:[UIColor colorWithHexString:@"#fffDisplay"] forState:UIControlStateNormal];
     [_btnRate setTitleColor:[UIColor cell:[TowData kText_basementValue]] forState:UIControlStateNormal];
     //: [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
-    [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
+//    [_btnRate setTitle:@"1x" forState:UIControlStateNormal];
     //: [btnView addSubview:_btnRate];
     [btnView addSubview:_btnRate];
 
@@ -555,51 +553,7 @@
 //: - (void)handlerTheRate:(UIButton *)sender
 - (void)colorToRate:(UIButton *)sender
 {
-    @
-     //: autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
-     autoreleasepool{} __weak __typeof__(self) __weak_self__ = self;
-    //: Dialog().wTypeSet(DialogTypePop)
-    Dialog().wTypeSet(DialogTypePop)
-    //: .wEventFinishSet(^(id anyID, NSIndexPath *path, DialogType type) {
-    .wEventFinishSet(^(id anyID, NSIndexPath *path, DialogType type) {
-        @
-         //: try{} @finally{} __typeof__(self) self = __weak_self__;
-         try{} @finally{} __typeof__(self) self = __weak_self__;
-        //: [self.btnRate setTitle:anyID forState:UIControlStateNormal];
-        [self.btnRate setTitle:anyID forState:UIControlStateNormal];
-        //: if (path.row == 0) {
-        if (path.row == 0) {
-            //: [self setPlaybackRate:0.5f];
-            [self setTapShow:0.5f];
-        //: }else if (path.row == 1){
-        }else if (path.row == 1){
-            //: [self setPlaybackRate:1.0f];
-            [self setTapShow:1.0f];
-        //: }else if (path.row == 2){
-        }else if (path.row == 2){
-            //: [self setPlaybackRate:1.5f];
-            [self setTapShow:1.5f];
-        //: }else if (path.row == 3){
-        }else if (path.row == 3){
-            //: [self setPlaybackRate:2.0f];
-            [self setTapShow:2.0f];
-        }
-    //: })
-    })
-    //: .wTextAlignmentSet(NSTextAlignmentCenter)
-    .wTextAlignmentSet(NSTextAlignmentCenter)
-    //: .wPopViewRectCornerSet(DialogRectCornerAllCorners)
-    .wPopViewRectCornerSet(DialogRectCornerAllCorners)
-    //: .wCellBackgroundColorSet([UIColor blackColor])
-    .wCellBackgroundColorSet([UIColor blackColor])
-    //: .wTapViewSet(sender)
-    .wTapViewSet(sender)
-    //: .wWidthSet(72)
-    .wWidthSet(72)
-    //: .wDataSet(@[@"0.5x",@"1x",@"1.5x",@"2x"])
-    .wDataSet(@[[TowData kNameAppointedValue],@"1x",[TowData kTitle_moleData],@"2x"])
-    //: .wStart();
-    .wStart();
+
 }
 
 // 设置播放速率

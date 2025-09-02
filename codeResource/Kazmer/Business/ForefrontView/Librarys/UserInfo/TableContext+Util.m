@@ -145,10 +145,10 @@ YoursGenerateData kNameGentData = (YoursGenerateData){231, (Byte []){175, 130, 1
 
     //: AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    //: if (delegate.deviceToken) {
-    if (delegate.deviceToken) {
-        //: [[NIMSDK sharedSDK] updateApnsToken:delegate.deviceToken
-        [[NIMSDK sharedSDK] updateApnsToken:delegate.deviceToken
+    //: if (delegate.myDevice) {
+    if (delegate.myDevice) {
+        //: [[NIMSDK sharedSDK] updateApnsToken:delegate.myDevice
+        [[NIMSDK sharedSDK] updateApnsToken:delegate.myDevice
                            //: customContentKey:lang];
                            customContentKey:lang];
 

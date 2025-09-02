@@ -16,6 +16,8 @@
 @class NIMRevokeMessageOption;
 @class NIMMessageAIStreamStopParams;
 @class NIMMessageAIRegenParams;
+@class NIMModifyMessageParams;
+@class NIMModifyMessageResult;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -68,6 +70,9 @@ typedef void(^NIMStopAIStreamMessageBlock)(NSError * __nullable error);
  * @param error      错误,如果成功则error为nil
  */
 typedef void(^NIMRegenAIMessageBlock)(NSError * __nullable error);
+
+/// 修改消息成功回调
+typedef void(^NIMModifyMessageBlock)(NSError * __nullable error, NIMModifyMessageResult * __nullable result);
 
 /**
  *  聊天委托
@@ -163,7 +168,7 @@ typedef void(^NIMRegenAIMessageBlock)(NSError * __nullable error);
  *
  * - Parameter messages: 被修改的消息列表
  */
-- (void)onReceiveMessagesModified:(NSArray <NIMMessage *>*)messages;
+- (void)onReceiveMessagesModified:(NSArray<NIMMessage *> *)messages;
 
 @end
 
@@ -431,6 +436,15 @@ typedef void(^NIMRegenAIMessageBlock)(NSError * __nullable error);
 - (void)regenAIMessage:(NIMMessage *)message
                 params:(NIMMessageAIRegenParams *)params
             completion:(NIMRegenAIMessageBlock)completion;
+
+/**
+ * 更新消息接口
+ * 可更新字段：subType， text， attachment， serverExtension， 消息类型不允许变更、文件类型不可更新attachment
+ * 更新时可以配置反垃圾，反垃圾配置可以和原消息不一致
+ */
+-(void)modifyMessage:(NIMMessage *)message
+              params:(NIMModifyMessageParams *)params
+          completion:(nullable NIMModifyMessageBlock)completion;
 
 /**
  *  添加聊天委托

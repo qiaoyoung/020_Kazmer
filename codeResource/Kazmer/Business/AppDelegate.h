@@ -19,10 +19,10 @@
 @property (strong, nonatomic) UIWindow *window;
 
 //: @property (strong, nonatomic) NSData *deviceToken;
-@property (strong, nonatomic) NSData *deviceToken;
+@property (strong, nonatomic) NSData *myDevice;
 
 //: @property (assign, nonatomic) NSInteger loginStep;
-@property (assign, nonatomic) NSInteger loginStep;
+@property (assign, nonatomic) NSInteger myLogin;
 
 
 

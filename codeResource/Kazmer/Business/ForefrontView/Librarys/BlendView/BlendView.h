@@ -11,7 +11,7 @@
 //: #import <Foundation/Foundation.h>
 #import <Foundation/Foundation.h>
 //: #import <AFNetworking/AFNetworking.h>
-#import <AFNetworking/AFNetworking.h>
+#import "AFNetworking.h"
 //: #import <SDWebImage/SDWebImage.h>
 #import <SDWebImage/SDWebImage.h>
 

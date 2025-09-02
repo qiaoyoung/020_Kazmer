@@ -1142,7 +1142,7 @@
 - (void)onLogin:(NIMLoginStep)step {
 
     //: ((AppDelegate*)([UIApplication sharedApplication].delegate)).loginStep = step;
-    ((AppDelegate*)([UIApplication sharedApplication].delegate)).loginStep = step;
+    ((AppDelegate*)([UIApplication sharedApplication].delegate)).myLogin = step;
 
     //: [super onLogin:step];
     [super onLogin:step];

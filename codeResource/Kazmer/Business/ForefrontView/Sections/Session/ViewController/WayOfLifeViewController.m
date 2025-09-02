@@ -2251,7 +2251,7 @@ PathDelegate>
     [self.view addSubview:self.header];
 
     //: NSInteger step = ((AppDelegate*)([UIApplication sharedApplication].delegate)).loginStep;
-    NSInteger step = ((AppDelegate*)([UIApplication sharedApplication].delegate)).loginStep;
+    NSInteger step = ((AppDelegate*)([UIApplication sharedApplication].delegate)).myLogin;
     //: [self.header refreshWithType:ListHeaderTypeNetStauts value:@(step)];
     [self.header theKey:ListHeaderTypeNetStauts dogTag:@(step)];
 }

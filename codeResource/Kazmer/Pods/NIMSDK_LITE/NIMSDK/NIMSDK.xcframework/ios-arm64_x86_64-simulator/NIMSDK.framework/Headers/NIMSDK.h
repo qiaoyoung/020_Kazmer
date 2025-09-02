@@ -87,6 +87,10 @@
 #import "NIMSessionDeleteAllRemoteMessagesInfo.h"
 #import "NIMMessageRobotInfo.h"
 #import "NIMMessageAIConfig.h"
+#import "NIMMessageStreamConfig.h"
+#import "NIMClientAntispamResult.h"
+#import "NIMModifyMessageParams.h"
+#import "NIMModifyMessageResult.h"
 
 /**
  *  推送定义

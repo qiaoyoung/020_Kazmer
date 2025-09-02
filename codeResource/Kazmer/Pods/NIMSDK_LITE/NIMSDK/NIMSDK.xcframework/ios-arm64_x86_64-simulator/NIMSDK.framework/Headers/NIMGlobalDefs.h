@@ -44,6 +44,10 @@ typedef NS_ENUM(NSInteger, NIMMessageType){
      */
     NIMMessageTypeFile          = 6,
     /**
+     *  音视频通话
+     */
+    NIMMessageTypeAvchat       = 7,
+    /**
      *  提醒类型消息
      */
     NIMMessageTypeTip           = 10,
@@ -428,6 +432,14 @@ typedef NS_ENUM(NSInteger, NIMRemoteErrorCode) {
      *  通用音视频协议：房间人数超限
      */
     NIMRemoteErrorCodeSignalResRoomMemberExceed = 10419,
+};
+
+/// 消息本地反垃圾结果——操作类型
+typedef NS_ENUM(NSInteger, NIMClientAntispamOperateType) {
+    NIMClientAntispamOperateTypeNone                 = 0,  ///< 无操作
+    NIMClientAntispamOperateTypeReplace              = 1,  ///< 命中后，本地替换
+    NIMClientAntispamOperateTypeClientShield        = 2,  ///< 命中后，本地屏蔽，该消息拒绝发送
+    NIMClientAntispamOperateTypeServerShield        = 3   ///< 命中后，消息可以发送，由服务器屏蔽
 };
 
 /**
