@@ -51,17 +51,14 @@ target 'Runner' do
   pod 'NIMSDK_LITE', '~> 9.20.13'
   pod 'FFDropDownMenu'
   pod 'FLAnimatedImage'
-#  pod 'AFNetworking', :git => 'https://github.com/JapenAdmin/AFNetworking.git'
 
-  # 保留有隐私清单的库
+  # 随机库
   pod 'MJRefresh', '~> 3.7.5'
-  
-  # 添加更多有隐私清单的OC库
-  pod 'CocoaLumberjack'              # 日志库 ✅ 有隐私清单
-  pod 'FMDB/SQLCipher'               # 数据库库（加密版本）
-  pod 'DGCharts'                     # 图表库（Charts的继任者）
-  pod 'Alamofire'                    # Swift网络库（通常有隐私清单）
-  pod 'SwiftyJSON'                   # JSON处理库
+  pod 'CocoaLumberjack'
+  pod 'FMDB/SQLCipher'
+  pod 'DGCharts'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 
 end
 
