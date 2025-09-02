@@ -37,8 +37,6 @@ target 'Runner' do
   pod 'Masonry'
   pod 'YYText'
   pod 'KMNavigationBarTransition'
- # pod 'FFDropDownMenu'
- # pod 'NIMSDK_LITE', '9.20.12'
   pod 'SSZipArchive'
   pod 'TZImagePickerController'
   pod 'IQKeyboardManager'
@@ -49,8 +47,10 @@ target 'Runner' do
   pod 'SVProgressHUD'
   pod 'YYModel'
   pod 'UCZProgressView'
-#  pod 'FLAnimatedImage'
   pod 'FDFullscreenPopGesture'
+  pod 'NIMSDK_LITE', '~> 9.20.13'
+  pod 'FFDropDownMenu'
+  pod 'FLAnimatedImage'
 #  pod 'AFNetworking', :git => 'https://github.com/JapenAdmin/AFNetworking.git'
 
   # 保留有隐私清单的库
